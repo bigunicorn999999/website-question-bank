@@ -1,0 +1,3388 @@
+{
+  "topics": {
+    "14.1": "Functions of several variables",
+    "14.3": "Partial derivatives",
+    "14.4": "Tangent planes & linear approximations",
+    "14.5": "Chain rule & related rates",
+    "14.6": "Directional derivatives & gradients",
+    "14.7": "Local & absolute extrema",
+    "14.8": "Lagrange multipliers",
+    "integrals-easy": "Easy integrals",
+    "integrals-medium": "Medium integrals",
+    "integration-trig": "Trigonometric identities",
+    "integration-sub": "Substitution",
+    "integration-sym": "Symmetry",
+    "integration-parts": "Integration by parts",
+    "integration-special": "Special functions & recursive expressions",
+    "integration-double": "Double integrals"
+  },
+  "questions": [
+    {
+      "id": "14.1.1",
+      "section": "14.1",
+      "title": "Intersecting domain restrictions",
+      "text": "Let \\(f(x,y)=\\ln(16-4x^2-y^2)+\\dfrac{\\sqrt{y-x^2}}{x-1}\\). (a) Describe the domain using simultaneous inequalities. (b) Sketch the domain, distinguishing included and excluded boundaries. (c) Which points belong to the domain: \\((0,0),\\ (1,2),\\ (0,4),\\ (-1,2)\\)?",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(D=\\{(x,y):4x^2+y^2<16,\\ y\\ge x^2,\\ x\\ne1\\}\\).",
+          "The region lies inside the ellipse and on or above the parabola, with the line \\(x=1\\) removed. The ellipse is excluded; the feasible part of the parabola is included.",
+          "Only \\((0,0)\\) and \\((-1,2)\\) belong to the domain."
+        ],
+        "text": "\\(D=\\{(x,y):4x^2+y^2<16,\\ y\\ge x^2,\\ x\\ne1\\}\\). The region lies inside the ellipse and on or above the parabola, with the line \\(x=1\\) removed. The ellipse is excluded; the feasible part of the parabola is included. Only \\((0,0)\\) and \\((-1,2)\\) belong to the domain."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=\\ln(16-4x^2-y^2)+\\dfrac{\\sqrt{y-x^2}}{x-1}\\).",
+        "(a) Describe the domain using simultaneous inequalities.",
+        "(b) Sketch the domain, distinguishing included and excluded boundaries.",
+        "(c) Which points belong to the domain: \\((0,0),\\ (1,2),\\ (0,4),\\ (-1,2)\\)?"
+      ]
+    },
+    {
+      "id": "14.1.2",
+      "section": "14.1",
+      "title": "Surface and horizontal sections",
+      "text": "Let \\(f(x,y)=\\sqrt{16-4x^2-y^2}\\). (a) Find the domain and range. (b) Identify the graph as a familiar surface, including the restriction on \\(z\\). (c) Describe the level curves for \\(k=0,2,4,5\\), giving axis intercepts when appropriate.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "Domain: \\(4x^2+y^2\\le16\\). Range: \\([0,4]\\).",
+          "The graph is the upper half of the ellipsoid \\(4x^2+y^2+z^2=16\\), with \\(z\\ge0\\).",
+          "For \\(k=0\\): \\(4x^2+y^2=16\\), intercepts \\((\\pm2,0),(0,\\pm4)\\).",
+          "For \\(k=2\\): \\(4x^2+y^2=12\\), intercepts \\((\\pm\\sqrt3,0),(0,\\pm2\\sqrt3)\\).",
+          "For \\(k=4\\): only \\((0,0)\\). For \\(k=5\\): empty."
+        ],
+        "text": "Domain: \\(4x^2+y^2\\le16\\). Range: \\([0,4]\\). The graph is the upper half of the ellipsoid \\(4x^2+y^2+z^2=16\\), with \\(z\\ge0\\). For \\(k=0\\): \\(4x^2+y^2=16\\), intercepts \\((\\pm2,0),(0,\\pm4)\\). For \\(k=2\\): \\(4x^2+y^2=12\\), intercepts \\((\\pm\\sqrt3,0),(0,\\pm2\\sqrt3)\\). For \\(k=4\\): only \\((0,0)\\). For \\(k=5\\): empty."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=\\sqrt{16-4x^2-y^2}\\).",
+        "(a) Find the domain and range.",
+        "(b) Identify the graph as a familiar surface, including the restriction on \\(z\\).",
+        "(c) Describe the level curves for \\(k=0,2,4,5\\), giving axis intercepts when appropriate."
+      ]
+    },
+    {
+      "id": "14.1.3",
+      "section": "14.1",
+      "title": "Three inputs and one output",
+      "text": "Let \\(F(x,y,z)=e^{\\sqrt{z-x^2-y^2}}\\). (a) Find the domain and range. (b) Describe the level surface \\(F=k\\) for every possible \\(k\\). (c) Identify the level surfaces for \\(k=1\\) and \\(k=e^2\\).",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "Domain: \\(z\\ge x^2+y^2\\). Range: \\([1,\\infty)\\).",
+          "For \\(k\\ge1\\): \\(z=x^2+y^2+(\\ln k)^2\\). For \\(k<1\\): empty.",
+          "For \\(k=1\\): \\(z=x^2+y^2\\). For \\(k=e^2\\): \\(z=x^2+y^2+4\\)."
+        ],
+        "text": "Domain: \\(z\\ge x^2+y^2\\). Range: \\([1,\\infty)\\). For \\(k\\ge1\\): \\(z=x^2+y^2+(\\ln k)^2\\). For \\(k<1\\): empty. For \\(k=1\\): \\(z=x^2+y^2\\). For \\(k=e^2\\): \\(z=x^2+y^2+4\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(F(x,y,z)=e^{\\sqrt{z-x^2-y^2}}\\).",
+        "(a) Find the domain and range.",
+        "(b) Describe the level surface \\(F=k\\) for every possible \\(k\\).",
+        "(c) Identify the level surfaces for \\(k=1\\) and \\(k=e^2\\)."
+      ]
+    },
+    {
+      "id": "14.1.4",
+      "section": "14.1",
+      "title": "Shifted saddle contours",
+      "text": "Let \\(f(x,y)=(y-1)^2-(x+2)^2\\). Sketch the level curves for \\(k=-4,0,4\\). Identify their center and orientations, and describe the regions where \\(f\\) is positive or negative.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "Center: \\((-2,1)\\).",
+          "For \\(k=4\\), the hyperbola opens in the \\(y\\)-direction, with vertices \\((-2,3),(-2,-1)\\).",
+          "For \\(k=-4\\), it opens in the \\(x\\)-direction, with vertices \\((0,1),(-4,1)\\).",
+          "For \\(k=0\\): \\(y-1=\\pm(x+2)\\).",
+          "Positive where \\(|y-1|>|x+2|\\); negative where \\(|y-1|<|x+2|\\)."
+        ],
+        "text": "Center: \\((-2,1)\\). For \\(k=4\\), the hyperbola opens in the \\(y\\)-direction, with vertices \\((-2,3),(-2,-1)\\). For \\(k=-4\\), it opens in the \\(x\\)-direction, with vertices \\((0,1),(-4,1)\\). For \\(k=0\\): \\(y-1=\\pm(x+2)\\). Positive where \\(|y-1|>|x+2|\\); negative where \\(|y-1|<|x+2|\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=(y-1)^2-(x+2)^2\\).",
+        "Sketch the level curves for \\(k=-4,0,4\\). Identify their center and orientations, and describe the regions where \\(f\\) is positive or negative."
+      ]
+    },
+    {
+      "id": "14.1.5",
+      "section": "14.1",
+      "title": "Reading contour spacing",
+      "text": "The two contour maps below show levels \\(k=1,2,3,4\\). One represents \\(f(x,y)=\\sqrt{x^2+4y^2}\\); the other represents \\(g(x,y)=x^2+4y^2\\). (a) Match each function to its contour map. (b) For each function, find the positive \\(x\\)-intercepts of the \\(k=2\\) and \\(k=3\\) level curves and their separation. (c) Identify each graph and explain how the contour spacing reflects its radial growth.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "Map A represents \\(f\\), an upper elliptic cone. Its positive intercepts are \\(2\\) and \\(3\\), separated by \\(1\\).",
+          "Map B represents \\(g\\), an elliptic paraboloid. Its positive intercepts are \\(\\sqrt2\\) and \\(\\sqrt3\\), separated by \\(\\sqrt3-\\sqrt2\\).",
+          "Map A has constant spacing for equal height steps. Map B has decreasing spacing as the level increases, reflecting faster outward growth."
+        ],
+        "text": "Map A represents \\(f\\), an upper elliptic cone. Its positive intercepts are \\(2\\) and \\(3\\), separated by \\(1\\). Map B represents \\(g\\), an elliptic paraboloid. Its positive intercepts are \\(\\sqrt2\\) and \\(\\sqrt3\\), separated by \\(\\sqrt3-\\sqrt2\\). Map A has constant spacing for equal height steps. Map B has decreasing spacing as the level increases, reflecting faster outward growth."
+      },
+      "review": "chapter14",
+      "body": [
+        "The two contour maps below show levels \\(k=1,2,3,4\\). One represents \\(f(x,y)=\\sqrt{x^2+4y^2}\\); the other represents \\(g(x,y)=x^2+4y^2\\).",
+        "(a) Match each function to its contour map.",
+        "(b) For each function, find the positive \\(x\\)-intercepts of the \\(k=2\\) and \\(k=3\\) level curves and their separation.",
+        "(c) Identify each graph and explain how the contour spacing reflects its radial growth."
+      ],
+      "figure": "assets/contour-maps.svg"
+    },
+    {
+      "id": "14.1.6",
+      "section": "14.1",
+      "title": "Temperature threshold",
+      "text": "Let \\(T(x,y)=\\dfrac{120}{1+x^2+4y^2}\\). (a) Find the range. (b) Describe the isotherms \\(T=60\\) and \\(T=24\\). (c) Describe the region where the temperature is at least \\(24\\). (d) Is a temperature of \\(0\\) attained?",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "Range: \\((0,120]\\).",
+          "\\(T=60\\): \\(x^2+4y^2=1\\). \\(T=24\\): \\(x^2+4y^2=4\\).",
+          "\\(T\\ge24\\) where \\(x^2+4y^2\\le4\\).",
+          "The temperature approaches \\(0\\) but never equals \\(0\\)."
+        ],
+        "text": "Range: \\((0,120]\\). \\(T=60\\): \\(x^2+4y^2=1\\). \\(T=24\\): \\(x^2+4y^2=4\\). \\(T\\ge24\\) where \\(x^2+4y^2\\le4\\). The temperature approaches \\(0\\) but never equals \\(0\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(T(x,y)=\\dfrac{120}{1+x^2+4y^2}\\).",
+        "(a) Find the range.",
+        "(b) Describe the isotherms \\(T=60\\) and \\(T=24\\).",
+        "(c) Describe the region where the temperature is at least \\(24\\).",
+        "(d) Is a temperature of \\(0\\) attained?"
+      ]
+    },
+    {
+      "id": "14.1.7",
+      "section": "14.1",
+      "title": "Range after restricting the inputs",
+      "text": "Let \\(f(x,y)=\\ln(y-x^2)\\), with the additional restriction \\(y\\le4\\). Find the domain, its projection onto the \\(x\\)-axis, and the range. Find the maximum and all points where it occurs. Does a smallest value exist? Justify your answer.",
+      "extension": true,
+      "answer": {
+        "blocks": [
+          "Domain: \\(x^2<y\\le4\\). Projection: \\(-2<x<2\\).",
+          "Range: \\((-\\infty,\\ln4]\\). The maximum is \\(\\ln4\\), attained only at \\((0,4)\\).",
+          "There is no minimum: \\(\\ln(y-x^2)\\to-\\infty\\) as \\(y-x^2\\to0^+\\)."
+        ],
+        "text": "Domain: \\(x^2<y\\le4\\). Projection: \\(-2<x<2\\). Range: \\((-\\infty,\\ln4]\\). The maximum is \\(\\ln4\\), attained only at \\((0,4)\\). There is no minimum: \\(\\ln(y-x^2)\\to-\\infty\\) as \\(y-x^2\\to0^+\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=\\ln(y-x^2)\\), with the additional restriction \\(y\\le4\\).",
+        "Find the domain, its projection onto the \\(x\\)-axis, and the range. Find the maximum and all points where it occurs. Does a smallest value exist? Justify your answer."
+      ]
+    },
+    {
+      "id": "14.1.8",
+      "section": "14.1",
+      "title": "A parameter changes the entire surface",
+      "text": "Let \\(f_a(x,y)=\\sqrt{a-x^2-y^2}\\). Classify the domain and range for \\(a<0,\\ a=0,\\ a>0\\). When \\(a>0\\), classify the level sets as circles, a single point, or empty.",
+      "extension": true,
+      "answer": {
+        "blocks": [
+          "If \\(a<0\\), the domain and range are empty.",
+          "If \\(a=0\\), the domain is \\(\\{(0,0)\\}\\) and the range is \\(\\{0\\}\\).",
+          "If \\(a>0\\), the domain is \\(x^2+y^2\\le a\\) and the range is \\([0,\\sqrt a]\\).",
+          "For \\(0\\le k<\\sqrt a\\), the level curve is the circle \\(x^2+y^2=a-k^2\\). For \\(k=\\sqrt a\\), it is \\((0,0)\\). All other levels are empty."
+        ],
+        "text": "If \\(a<0\\), the domain and range are empty. If \\(a=0\\), the domain is \\(\\{(0,0)\\}\\) and the range is \\(\\{0\\}\\). If \\(a>0\\), the domain is \\(x^2+y^2\\le a\\) and the range is \\([0,\\sqrt a]\\). For \\(0\\le k<\\sqrt a\\), the level curve is the circle \\(x^2+y^2=a-k^2\\). For \\(k=\\sqrt a\\), it is \\((0,0)\\). All other levels are empty."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f_a(x,y)=\\sqrt{a-x^2-y^2}\\).",
+        "Classify the domain and range for \\(a<0,\\ a=0,\\ a>0\\). When \\(a>0\\), classify the level sets as circles, a single point, or empty."
+      ]
+    },
+    {
+      "id": "14.3.1",
+      "section": "14.3",
+      "title": "Product and composition",
+      "text": "Let \\(f(x,y)=x^2e^{xy}+y\\ln(x+y)\\). Find \\(f_x\\) and \\(f_y\\), stating their domain. Then compute \\(f_x(1,0),\\ f_y(1,0),\\ f_{xy}(1,0)\\).",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(f_x=(2x+x^2y)e^{xy}+\\dfrac{y}{x+y}\\).",
+          "\\(f_y=x^3e^{xy}+\\ln(x+y)+\\dfrac{y}{x+y}\\).",
+          "Domain: \\(x+y>0\\).",
+          "\\(f_x(1,0)=2,\\quad f_y(1,0)=1,\\quad f_{xy}(1,0)=4\\)."
+        ],
+        "text": "\\(f_x=(2x+x^2y)e^{xy}+\\dfrac{y}{x+y}\\). \\(f_y=x^3e^{xy}+\\ln(x+y)+\\dfrac{y}{x+y}\\). Domain: \\(x+y>0\\). \\(f_x(1,0)=2,\\quad f_y(1,0)=1,\\quad f_{xy}(1,0)=4\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=x^2e^{xy}+y\\ln(x+y)\\).",
+        "Find \\(f_x\\) and \\(f_y\\), stating their domain. Then compute \\(f_x(1,0),\\ f_y(1,0),\\ f_{xy}(1,0)\\)."
+      ]
+    },
+    {
+      "id": "14.3.2",
+      "section": "14.3",
+      "title": "Higher partial derivatives",
+      "text": "Let \\(f(x,y)=x^2y^3+e^y\\). Find all four second-order partial derivatives and \\(f_{xxy}\\). Evaluate \\(f_{xxy}(2,-1)\\).",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(f_{xx}=2y^3,\\quad f_{xy}=f_{yx}=6xy^2\\).",
+          "\\(f_{yy}=6x^2y+e^y,\\quad f_{xxy}=6y^2\\).",
+          "\\(f_{xxy}(2,-1)=6\\)."
+        ],
+        "text": "\\(f_{xx}=2y^3,\\quad f_{xy}=f_{yx}=6xy^2\\). \\(f_{yy}=6x^2y+e^y,\\quad f_{xxy}=6y^2\\). \\(f_{xxy}(2,-1)=6\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=x^2y^3+e^y\\).",
+        "Find all four second-order partial derivatives and \\(f_{xxy}\\). Evaluate \\(f_{xxy}(2,-1)\\)."
+      ]
+    },
+    {
+      "id": "14.3.3",
+      "section": "14.3",
+      "title": "Implicit first and mixed partials",
+      "text": "The equation \\(e^z+xz+y^2=2\\) defines \\(z\\) near \\((1,1,0)\\). Find \\(z_x\\) and \\(z_y\\) in terms of \\(x,y,z\\). Then evaluate \\(z_x,\\ z_y,\\ z_{xy}\\) at \\((1,1,0)\\).",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(z_x=-\\dfrac{z}{e^z+x},\\quad z_y=-\\dfrac{2y}{e^z+x}\\).",
+          "At \\((1,1,0)\\): \\(z_x=0,\\ z_y=-1,\\ z_{xy}=\\tfrac12\\)."
+        ],
+        "text": "\\(z_x=-\\dfrac{z}{e^z+x},\\quad z_y=-\\dfrac{2y}{e^z+x}\\). At \\((1,1,0)\\): \\(z_x=0,\\ z_y=-1,\\ z_{xy}=\\tfrac12\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "The equation \\(e^z+xz+y^2=2\\) defines \\(z\\) near \\((1,1,0)\\).",
+        "Find \\(z_x\\) and \\(z_y\\) in terms of \\(x,y,z\\). Then evaluate \\(z_x,\\ z_y,\\ z_{xy}\\) at \\((1,1,0)\\)."
+      ]
+    },
+    {
+      "id": "14.3.4",
+      "section": "14.3",
+      "title": "Rates on a heated plate",
+      "text": "The temperature is \\(T(x,y)=\\dfrac{90}{1+x^2+2y^2}\\) degrees Celsius, with coordinates in meters. Find \\(T_x,T_y,T_{xy}\\) at \\((1,1)\\), including units. Which small positive coordinate change gives the larger first-order temperature drop?",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(T_x(1,1)=-\\dfrac{45}{4}\\ \\mathrm{^{\\circ}C/m}\\).",
+          "\\(T_y(1,1)=-\\dfrac{45}{2}\\ \\mathrm{^{\\circ}C/m}\\).",
+          "\\(T_{xy}(1,1)=\\dfrac{45}{2}\\ \\mathrm{^{\\circ}C/m^2}\\).",
+          "For equal small positive changes, changing \\(y\\) gives the larger drop."
+        ],
+        "text": "\\(T_x(1,1)=-\\dfrac{45}{4}\\ \\mathrm{^{\\circ}C/m}\\). \\(T_y(1,1)=-\\dfrac{45}{2}\\ \\mathrm{^{\\circ}C/m}\\). \\(T_{xy}(1,1)=\\dfrac{45}{2}\\ \\mathrm{^{\\circ}C/m^2}\\). For equal small positive changes, changing \\(y\\) gives the larger drop."
+      },
+      "review": "chapter14",
+      "body": [
+        "The temperature is \\(T(x,y)=\\dfrac{90}{1+x^2+2y^2}\\) degrees Celsius, with coordinates in meters.",
+        "Find \\(T_x,T_y,T_{xy}\\) at \\((1,1)\\), including units. Which small positive coordinate change gives the larger first-order temperature drop?"
+      ]
+    },
+    {
+      "id": "14.3.5",
+      "section": "14.3",
+      "title": "Three variable differentiation",
+      "text": "Let \\(w=ze^{xy}+x\\sin(yz)\\). Find \\(w_x,w_y,w_z\\), evaluate them at \\((1,0,2)\\), and compute \\(w_{yz}(1,0,2)\\).",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(w_x=yze^{xy}+\\sin(yz)\\).",
+          "\\(w_y=xze^{xy}+xz\\cos(yz)\\).",
+          "\\(w_z=e^{xy}+xy\\cos(yz)\\).",
+          "At \\((1,0,2)\\), \\((w_x,w_y,w_z)=(0,4,1)\\) and \\(w_{yz}=2\\)."
+        ],
+        "text": "\\(w_x=yze^{xy}+\\sin(yz)\\). \\(w_y=xze^{xy}+xz\\cos(yz)\\). \\(w_z=e^{xy}+xy\\cos(yz)\\). At \\((1,0,2)\\), \\((w_x,w_y,w_z)=(0,4,1)\\) and \\(w_{yz}=2\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(w=ze^{xy}+x\\sin(yz)\\).",
+        "Find \\(w_x,w_y,w_z\\), evaluate them at \\((1,0,2)\\), and compute \\(w_{yz}(1,0,2)\\)."
+      ]
+    },
+    {
+      "id": "14.3.6",
+      "section": "14.3",
+      "title": "Quotient and equal trace slopes",
+      "text": "Let \\(f(x,y)=\\dfrac{xy}{x+y}\\). Find \\(f_x,f_y,f_{xx},f_{xy},f_{yy}\\). At which points in the domain are the two coordinate slopes equal?",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(f_x=\\dfrac{y^2}{(x+y)^2},\\quad f_y=\\dfrac{x^2}{(x+y)^2}\\).",
+          "\\(f_{xx}=-\\dfrac{2y^2}{(x+y)^3},\\quad f_{xy}=\\dfrac{2xy}{(x+y)^3},\\quad f_{yy}=-\\dfrac{2x^2}{(x+y)^3}\\).",
+          "The domain excludes \\(x+y=0\\). Equal slopes occur at \\((t,t)\\), with \\(t\\ne0\\)."
+        ],
+        "text": "\\(f_x=\\dfrac{y^2}{(x+y)^2},\\quad f_y=\\dfrac{x^2}{(x+y)^2}\\). \\(f_{xx}=-\\dfrac{2y^2}{(x+y)^3},\\quad f_{xy}=\\dfrac{2xy}{(x+y)^3},\\quad f_{yy}=-\\dfrac{2x^2}{(x+y)^3}\\). The domain excludes \\(x+y=0\\). Equal slopes occur at \\((t,t)\\), with \\(t\\ne0\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=\\dfrac{xy}{x+y}\\).",
+        "Find \\(f_x,f_y,f_{xx},f_{xy},f_{yy}\\). At which points in the domain are the two coordinate slopes equal?"
+      ]
+    },
+    {
+      "id": "14.3.7",
+      "section": "14.3",
+      "title": "Can these derivatives belong to one function",
+      "text": "A function with continuous second partials is claimed to satisfy \\(f_x=2xy+y^2\\) and \\(f_y=x^2+axy+3y^2\\), where \\(a\\) is constant. Find the necessary value of \\(a\\), then find \\(f\\) if \\(f(0,0)=4\\).",
+      "extension": true,
+      "answer": {
+        "blocks": [
+          "Equality of mixed partials requires \\(2x+2y=2x+ay\\), so \\(a=2\\).",
+          "\\(f(x,y)=x^2y+xy^2+y^3+4\\)."
+        ],
+        "text": "Equality of mixed partials requires \\(2x+2y=2x+ay\\), so \\(a=2\\). \\(f(x,y)=x^2y+xy^2+y^3+4\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "A function with continuous second partials is claimed to satisfy \\(f_x=2xy+y^2\\) and \\(f_y=x^2+axy+3y^2\\), where \\(a\\) is constant.",
+        "Find the necessary value of \\(a\\), then find \\(f\\) if \\(f(0,0)=4\\)."
+      ]
+    },
+    {
+      "id": "14.3.8",
+      "section": "14.3",
+      "title": "Partial derivatives versus continuity",
+      "text": "Define \\(f(x,y)=\\dfrac{xy}{x^2+y^2}\\) away from the origin, and \\(f(0,0)=0\\). Use the definitions to find both partial derivatives at the origin. Test continuity along \\(y=0\\) and \\(y=x\\). Is the function differentiable at the origin, and does it have a valid linear approximation there?",
+      "extension": true,
+      "answer": {
+        "blocks": [
+          "\\(f_x(0,0)=f_y(0,0)=0\\).",
+          "Along \\(y=0\\), the limit is \\(0\\); along \\(y=x\\), it is \\(\\tfrac12\\).",
+          "The function is not continuous, hence not differentiable, at the origin. It has no valid linear approximation there."
+        ],
+        "text": "\\(f_x(0,0)=f_y(0,0)=0\\). Along \\(y=0\\), the limit is \\(0\\); along \\(y=x\\), it is \\(\\tfrac12\\). The function is not continuous, hence not differentiable, at the origin. It has no valid linear approximation there."
+      },
+      "review": "chapter14",
+      "body": [
+        "Define \\(f(x,y)=\\dfrac{xy}{x^2+y^2}\\) away from the origin, and \\(f(0,0)=0\\).",
+        "Use the definitions to find both partial derivatives at the origin. Test continuity along \\(y=0\\) and \\(y=x\\). Is the function differentiable at the origin, and does it have a valid linear approximation there?"
+      ]
+    },
+    {
+      "id": "14.4.1",
+      "section": "14.4",
+      "title": "A tangent plane with cancellation",
+      "text": "Let \\(f(x,y)=\\ln(2x-y)+xy\\). Find the tangent plane over \\((1,1)\\), and use it to estimate \\(f(1.02,0.97)\\). Does the change in \\(y\\) contribute to this first-order estimate?",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(z=L(x,y)=3x-2\\).",
+          "\\(f(1.02,0.97)\\approx1.06\\).",
+          "The \\(y\\)-change contributes zero to first order because \\(f_y(1,1)=0\\)."
+        ],
+        "text": "\\(z=L(x,y)=3x-2\\). \\(f(1.02,0.97)\\approx1.06\\). The \\(y\\)-change contributes zero to first order because \\(f_y(1,1)=0\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=\\ln(2x-y)+xy\\).",
+        "Find the tangent plane over \\((1,1)\\), and use it to estimate \\(f(1.02,0.97)\\). Does the change in \\(y\\) contribute to this first-order estimate?"
+      ]
+    },
+    {
+      "id": "14.4.2",
+      "section": "14.4",
+      "title": "Three variable approximation",
+      "text": "Let \\(f(x,y,z)=\\sqrt{x^2+2y^2+z^2}\\). Linearize at \\((1,2,0)\\) and estimate \\(f(1.03,1.98,0.04)\\) to four decimal places. Which input change is invisible to first order?",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(L(x,y,z)=3+\\dfrac{x-1}{3}+\\dfrac{4(y-2)}{3}\\).",
+          "The estimate is \\(\\dfrac{179}{60}\\approx2.9833\\).",
+          "The change in \\(z\\) is invisible to first order."
+        ],
+        "text": "\\(L(x,y,z)=3+\\dfrac{x-1}{3}+\\dfrac{4(y-2)}{3}\\). The estimate is \\(\\dfrac{179}{60}\\approx2.9833\\). The change in \\(z\\) is invisible to first order."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y,z)=\\sqrt{x^2+2y^2+z^2}\\).",
+        "Linearize at \\((1,2,0)\\) and estimate \\(f(1.03,1.98,0.04)\\) to four decimal places. Which input change is invisible to first order?"
+      ]
+    },
+    {
+      "id": "14.4.3",
+      "section": "14.4",
+      "title": "Diameter measurements and error",
+      "text": "A cylinder has diameter \\(10\\) cm and height \\(12\\) cm. The maximum measurement errors are \\(0.04\\) cm in diameter and \\(0.03\\) cm in height. Estimate the maximum absolute and percentage volume errors. If only one error can be halved, which choice reduces the estimated error more, and by how much?",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "Maximum absolute error: \\(3.15\\pi\\ \\mathrm{cm^3}\\). Percentage error: \\(1.05\\%\\).",
+          "Halving the diameter error reduces the estimate by \\(1.2\\pi\\ \\mathrm{cm^3}\\); halving the height error reduces it by \\(0.375\\pi\\ \\mathrm{cm^3}\\).",
+          "Halving the diameter error gives the greater reduction, by \\(0.825\\pi\\ \\mathrm{cm^3}\\)."
+        ],
+        "text": "Maximum absolute error: \\(3.15\\pi\\ \\mathrm{cm^3}\\). Percentage error: \\(1.05\\%\\). Halving the diameter error reduces the estimate by \\(1.2\\pi\\ \\mathrm{cm^3}\\); halving the height error reduces it by \\(0.375\\pi\\ \\mathrm{cm^3}\\). Halving the diameter error gives the greater reduction, by \\(0.825\\pi\\ \\mathrm{cm^3}\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "A cylinder has diameter \\(10\\) cm and height \\(12\\) cm. The maximum measurement errors are \\(0.04\\) cm in diameter and \\(0.03\\) cm in height.",
+        "Estimate the maximum absolute and percentage volume errors. If only one error can be halved, which choice reduces the estimated error more, and by how much?"
+      ]
+    },
+    {
+      "id": "14.4.4",
+      "section": "14.4",
+      "title": "Actual change and differential",
+      "text": "Let \\(f(x,y)=x^2-2xy+3y^2\\), with inputs changing from \\((1,1)\\) to \\((1.04,0.98)\\). Compute \\(df,\\ \\Delta f,\\ \\Delta f-df\\). Does the linear approximation overestimate or underestimate the new value?",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(df=-0.08,\\quad\\Delta f=-0.0756,\\quad\\Delta f-df=0.0044\\).",
+          "The linear approximation underestimates the new value."
+        ],
+        "text": "\\(df=-0.08,\\quad\\Delta f=-0.0756,\\quad\\Delta f-df=0.0044\\). The linear approximation underestimates the new value."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=x^2-2xy+3y^2\\), with inputs changing from \\((1,1)\\) to \\((1.04,0.98)\\).",
+        "Compute \\(df,\\ \\Delta f,\\ \\Delta f-df\\). Does the linear approximation overestimate or underestimate the new value?"
+      ]
+    },
+    {
+      "id": "14.4.5",
+      "section": "14.4",
+      "title": "Locate a specified tangent orientation",
+      "text": "Find all points on \\(z=x^2+2y^2\\) where the tangent plane is parallel to \\(2x-4y-z=7\\). Find the tangent plane and its intersection with the \\(z\\)-axis.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "The point is \\((1,-1,3)\\).",
+          "The tangent plane is \\(z=2x-4y-3\\), intersecting the \\(z\\)-axis at \\((0,0,-3)\\)."
+        ],
+        "text": "The point is \\((1,-1,3)\\). The tangent plane is \\(z=2x-4y-3\\), intersecting the \\(z\\)-axis at \\((0,0,-3)\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Find all points on \\(z=x^2+2y^2\\) where the tangent plane is parallel to \\(2x-4y-z=7\\).",
+        "Find the tangent plane and its intersection with the \\(z\\)-axis."
+      ]
+    },
+    {
+      "id": "14.4.6",
+      "section": "14.4",
+      "title": "Metal in a thin container",
+      "text": "A closed cylindrical can has inner radius \\(4\\) cm and inner height \\(10\\) cm. The wall, base, and lid each have thickness \\(0.02\\) cm. Use differentials to estimate the metal volume for the closed can and for a can without a lid, keeping the interior dimensions fixed.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "Closed can: \\(2.24\\pi\\ \\mathrm{cm^3}\\).",
+          "Without a lid: \\(1.92\\pi\\ \\mathrm{cm^3}\\)."
+        ],
+        "text": "Closed can: \\(2.24\\pi\\ \\mathrm{cm^3}\\). Without a lid: \\(1.92\\pi\\ \\mathrm{cm^3}\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "A closed cylindrical can has inner radius \\(4\\) cm and inner height \\(10\\) cm. The wall, base, and lid each have thickness \\(0.02\\) cm.",
+        "Use differentials to estimate the metal volume for the closed can and for a can without a lid, keeping the interior dimensions fixed."
+      ]
+    },
+    {
+      "id": "14.4.7",
+      "section": "14.4",
+      "title": "What a tangent plane cannot determine",
+      "text": "Let \\(f(x,y)=ax^2+bxy+cy^2\\). Its tangent plane over \\((1,1)\\) is \\(z=5x+7y-6\\). Are \\(a,b,c\\) uniquely determined? Find all triples. Then find the triple if \\(f(1,0)=2\\).",
+      "extension": true,
+      "answer": {
+        "blocks": [
+          "They are not uniquely determined: \\((a,b,c)=(t,5-2t,t+1)\\) for every real \\(t\\).",
+          "If \\(f(1,0)=2\\), then \\((a,b,c)=(2,1,3)\\)."
+        ],
+        "text": "They are not uniquely determined: \\((a,b,c)=(t,5-2t,t+1)\\) for every real \\(t\\). If \\(f(1,0)=2\\), then \\((a,b,c)=(2,1,3)\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=ax^2+bxy+cy^2\\). Its tangent plane over \\((1,1)\\) is \\(z=5x+7y-6\\).",
+        "Are \\(a,b,c\\) uniquely determined? Find all triples. Then find the triple if \\(f(1,0)=2\\)."
+      ]
+    },
+    {
+      "id": "14.4.8",
+      "section": "14.4",
+      "title": "An exact approximation error",
+      "text": "Let \\(f(x,y)=x^2+4y^2\\). Find the linearization at \\((1,-1)\\) and the exact error \\(f(1+h,-1+k)-L(1+h,-1+k)\\). Under \\(h^2+k^2\\le0.01\\), find the largest absolute error and all changes that attain it.",
+      "extension": true,
+      "answer": {
+        "blocks": [
+          "\\(L(x,y)=2x-8y-5\\). The exact error is \\(h^2+4k^2\\).",
+          "The maximum absolute error is \\(0.04\\), attained at \\((h,k)=(0,0.1),(0,-0.1)\\)."
+        ],
+        "text": "\\(L(x,y)=2x-8y-5\\). The exact error is \\(h^2+4k^2\\). The maximum absolute error is \\(0.04\\), attained at \\((h,k)=(0,0.1),(0,-0.1)\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=x^2+4y^2\\).",
+        "Find the linearization at \\((1,-1)\\) and the exact error \\(f(1+h,-1+k)-L(1+h,-1+k)\\). Under \\(h^2+k^2\\le0.01\\), find the largest absolute error and all changes that attain it."
+      ]
+    },
+    {
+      "id": "14.5.1",
+      "section": "14.5",
+      "title": "A two parameter composition",
+      "text": "Let \\(w=e^{xy}+z^2\\), where \\(x=s+t^2,\\ y=s-t,\\ z=st\\). Find \\(w_s,w_t\\) at \\((s,t)=(1,1)\\). Give the separate \\(x,y,z\\) contributions to \\(w_t\\).",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(w_s(1,1)=4,\\quad w_t(1,1)=0\\).",
+          "The separate contributions to \\(w_t\\) are \\(0,-2,2\\), respectively."
+        ],
+        "text": "\\(w_s(1,1)=4,\\quad w_t(1,1)=0\\). The separate contributions to \\(w_t\\) are \\(0,-2,2\\), respectively."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(w=e^{xy}+z^2\\), where \\(x=s+t^2,\\ y=s-t,\\ z=st\\).",
+        "Find \\(w_s,w_t\\) at \\((s,t)=(1,1)\\). Give the separate \\(x,y,z\\) contributions to \\(w_t\\)."
+      ]
+    },
+    {
+      "id": "14.5.2",
+      "section": "14.5",
+      "title": "Data instead of formulas",
+      "text": "Let \\(R(s,t)=G(u(s,t),v(s,t))\\). At \\((s,t)=(1,2)\\), \\(u=2,v=-1,u_s=2,u_t=-1,v_s=3,v_t=4\\). Also, \\(G_u(2,-1)=5\\) and \\(G_v(2,-1)=-2\\). Find \\(R_s,R_t\\), then find \\(dR/d\\tau\\) at \\(\\tau=0\\) along \\(s=1+2\\tau,\\ t=2-\\tau\\).",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(R_s=4,\\quad R_t=-13\\).",
+          "\\(\\left.\\dfrac{dR}{d\\tau}\\right|_{\\tau=0}=2(4)-(-13)=21\\)."
+        ],
+        "text": "\\(R_s=4,\\quad R_t=-13\\). \\(\\left.\\dfrac{dR}{d\\tau}\\right|_{\\tau=0}=2(4)-(-13)=21\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(R(s,t)=G(u(s,t),v(s,t))\\). At \\((s,t)=(1,2)\\), \\(u=2,v=-1,u_s=2,u_t=-1,v_s=3,v_t=4\\). Also, \\(G_u(2,-1)=5\\) and \\(G_v(2,-1)=-2\\).",
+        "Find \\(R_s,R_t\\), then find \\(dR/d\\tau\\) at \\(\\tau=0\\) along \\(s=1+2\\tau,\\ t=2-\\tau\\)."
+      ]
+    },
+    {
+      "id": "14.5.3",
+      "section": "14.5",
+      "title": "Motion on an implicit surface",
+      "text": "A particle moves on \\(e^z+xz+y^2=2\\). At \\((1,1,0)\\), \\(x'=2\\) and \\(y'=-1\\). Differentiate the constraint to find \\(z'\\). Then compute \\(z_x,z_y\\) and verify the chain rule.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(z'=1\\).",
+          "At the point, \\(z_x=0\\) and \\(z_y=-1\\), so \\(z'=z_xx'+z_yy'=0(2)+(-1)(-1)=1\\)."
+        ],
+        "text": "\\(z'=1\\). At the point, \\(z_x=0\\) and \\(z_y=-1\\), so \\(z'=z_xx'+z_yy'=0(2)+(-1)(-1)=1\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "A particle moves on \\(e^z+xz+y^2=2\\). At \\((1,1,0)\\), \\(x'=2\\) and \\(y'=-1\\).",
+        "Differentiate the constraint to find \\(z'\\). Then compute \\(z_x,z_y\\) and verify the chain rule."
+      ]
+    },
+    {
+      "id": "14.5.4",
+      "section": "14.5",
+      "title": "A changing parallelogram",
+      "text": "A parallelogram has side lengths \\(x=8\\) cm, \\(y=6\\) cm and included angle \\(\\theta=\\pi/3\\). At that instant, \\(x'=1\\) cm/s and \\(y'=-1/2\\) cm/s, while the area remains constant. Find \\(\\theta'\\) and the rate of change of the perimeter.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(\\theta'=-\\dfrac{\\sqrt3}{24}\\ \\mathrm{rad/s}\\).",
+          "The perimeter increases at \\(1\\ \\mathrm{cm/s}\\)."
+        ],
+        "text": "\\(\\theta'=-\\dfrac{\\sqrt3}{24}\\ \\mathrm{rad/s}\\). The perimeter increases at \\(1\\ \\mathrm{cm/s}\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "A parallelogram has side lengths \\(x=8\\) cm, \\(y=6\\) cm and included angle \\(\\theta=\\pi/3\\). At that instant, \\(x'=1\\) cm/s and \\(y'=-1/2\\) cm/s, while the area remains constant.",
+        "Find \\(\\theta'\\) and the rate of change of the perimeter."
+      ]
+    },
+    {
+      "id": "14.5.5",
+      "section": "14.5",
+      "title": "Constant volume with changing shape",
+      "text": "A rectangular box has \\(\\ell=2,w=3,h=6\\) meters, with \\(\\ell'=1\\) m/s and \\(w'=-1\\) m/s. Its volume remains constant. Find \\(h'\\), the surface-area rate, and the space-diagonal rate.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(h'=-1\\ \\mathrm{m/s}\\).",
+          "\\(S'=-8\\ \\mathrm{m^2/s}\\).",
+          "The space diagonal changes at \\(-1\\ \\mathrm{m/s}\\)."
+        ],
+        "text": "\\(h'=-1\\ \\mathrm{m/s}\\). \\(S'=-8\\ \\mathrm{m^2/s}\\). The space diagonal changes at \\(-1\\ \\mathrm{m/s}\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "A rectangular box has \\(\\ell=2,w=3,h=6\\) meters, with \\(\\ell'=1\\) m/s and \\(w'=-1\\) m/s. Its volume remains constant.",
+        "Find \\(h'\\), the surface-area rate, and the space-diagonal rate."
+      ]
+    },
+    {
+      "id": "14.5.6",
+      "section": "14.5",
+      "title": "A coordinate change that simplifies",
+      "text": "Let \\(R=\\ln(u^2+v^2)\\), where \\(u=x+2y\\) and \\(v=2x-y\\). Use the chain rule to find \\(R_x,R_y\\) in terms of \\(x,y\\), and evaluate them at \\((1,1)\\). Along \\(x=\\cos t,\\ y=\\sin t\\), find \\(dR/dt\\).",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(R_x=\\dfrac{2x}{x^2+y^2},\\quad R_y=\\dfrac{2y}{x^2+y^2}\\), for \\((x,y)\\ne(0,0)\\).",
+          "At \\((1,1)\\), both derivatives are \\(1\\).",
+          "Along the given path, \\(dR/dt=0\\)."
+        ],
+        "text": "\\(R_x=\\dfrac{2x}{x^2+y^2},\\quad R_y=\\dfrac{2y}{x^2+y^2}\\), for \\((x,y)\\ne(0,0)\\). At \\((1,1)\\), both derivatives are \\(1\\). Along the given path, \\(dR/dt=0\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(R=\\ln(u^2+v^2)\\), where \\(u=x+2y\\) and \\(v=2x-y\\).",
+        "Use the chain rule to find \\(R_x,R_y\\) in terms of \\(x,y\\), and evaluate them at \\((1,1)\\). Along \\(x=\\cos t,\\ y=\\sin t\\), find \\(dR/dt\\)."
+      ]
+    },
+    {
+      "id": "14.5.7",
+      "section": "14.5",
+      "title": "A moving sensor in a changing field",
+      "text": "Let \\(T(x,y,t)=100-x^2-2y^2+3t\\). A sensor follows \\(x=t,\\ y=1-t\\), for \\(t\\ge0\\). Find \\(T_t\\) and the sensor's recorded temperature rate at \\(t=0\\). Find all times at which the recorded temperature is stationary.",
+      "extension": true,
+      "answer": {
+        "blocks": [
+          "\\(T_t=3\\). The recorded rate is \\(7\\) at \\(t=0\\).",
+          "Along the path, \\(dT/dt=7-6t\\), so the temperature is stationary at \\(t=7/6\\)."
+        ],
+        "text": "\\(T_t=3\\). The recorded rate is \\(7\\) at \\(t=0\\). Along the path, \\(dT/dt=7-6t\\), so the temperature is stationary at \\(t=7/6\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(T(x,y,t)=100-x^2-2y^2+3t\\). A sensor follows \\(x=t,\\ y=1-t\\), for \\(t\\ge0\\).",
+        "Find \\(T_t\\) and the sensor's recorded temperature rate at \\(t=0\\). Find all times at which the recorded temperature is stationary."
+      ]
+    },
+    {
+      "id": "14.5.8",
+      "section": "14.5",
+      "title": "Recover derivatives from path information",
+      "text": "A differentiable function satisfies \\(\\left.\\dfrac{d}{dt}f(1+t,2+2t)\\right|_{t=0}=7\\) and \\(\\left.\\dfrac{d}{dt}f(1+3t,2-t)\\right|_{t=0}=0\\). Find \\(f_x(1,2),f_y(1,2)\\), then compute \\(\\left.\\dfrac{d}{dt}f(1+t^2,2+\\sin t)\\right|_{t=0}\\).",
+      "extension": true,
+      "answer": {
+        "blocks": [
+          "\\(f_x(1,2)=1,\\quad f_y(1,2)=3\\).",
+          "The final path derivative is \\(3\\)."
+        ],
+        "text": "\\(f_x(1,2)=1,\\quad f_y(1,2)=3\\). The final path derivative is \\(3\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "A differentiable function satisfies \\(\\left.\\dfrac{d}{dt}f(1+t,2+2t)\\right|_{t=0}=7\\) and \\(\\left.\\dfrac{d}{dt}f(1+3t,2-t)\\right|_{t=0}=0\\).",
+        "Find \\(f_x(1,2),f_y(1,2)\\), then compute \\(\\left.\\dfrac{d}{dt}f(1+t^2,2+\\sin t)\\right|_{t=0}\\)."
+      ]
+    },
+    {
+      "id": "14.6.1",
+      "section": "14.6",
+      "title": "Toward a point and away from it",
+      "text": "Let \\(f(x,y)=\\ln(1+x^2+2y^2)\\), with \\(P=(1,1)\\) and \\(Q=(4,-3)\\). Find the gradient at \\(P\\), the directional derivative toward \\(Q\\), and the derivative in the opposite direction. Estimate the change after moving \\(0.1\\) unit toward \\(Q\\).",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(\\nabla f(P)=\\langle\\tfrac12,1\\rangle\\).",
+          "The derivative toward \\(Q\\) is \\(-\\tfrac12\\); in the opposite direction it is \\(\\tfrac12\\).",
+          "The estimated change is \\(-0.05\\)."
+        ],
+        "text": "\\(\\nabla f(P)=\\langle\\tfrac12,1\\rangle\\). The derivative toward \\(Q\\) is \\(-\\tfrac12\\); in the opposite direction it is \\(\\tfrac12\\). The estimated change is \\(-0.05\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=\\ln(1+x^2+2y^2)\\), with \\(P=(1,1)\\) and \\(Q=(4,-3)\\).",
+        "Find the gradient at \\(P\\), the directional derivative toward \\(Q\\), and the derivative in the opposite direction. Estimate the change after moving \\(0.1\\) unit toward \\(Q\\)."
+      ]
+    },
+    {
+      "id": "14.6.2",
+      "section": "14.6",
+      "title": "Steepest change in space",
+      "text": "Let \\(f(x,y,z)=xe^{yz}+z\\). At \\((1,0,2)\\), find the gradient, maximum and minimum signed rates of change and their unit directions, and one unit direction with zero rate of change.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(\\nabla f=\\langle1,2,1\\rangle\\).",
+          "Maximum rate: \\(\\sqrt6\\), in direction \\(\\langle1,2,1\\rangle/\\sqrt6\\).",
+          "Minimum rate: \\(-\\sqrt6\\), in the opposite direction.",
+          "One zero-rate direction is \\(\\langle2,-1,0\\rangle/\\sqrt5\\)."
+        ],
+        "text": "\\(\\nabla f=\\langle1,2,1\\rangle\\). Maximum rate: \\(\\sqrt6\\), in direction \\(\\langle1,2,1\\rangle/\\sqrt6\\). Minimum rate: \\(-\\sqrt6\\), in the opposite direction. One zero-rate direction is \\(\\langle2,-1,0\\rangle/\\sqrt5\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y,z)=xe^{yz}+z\\).",
+        "At \\((1,0,2)\\), find the gradient, maximum and minimum signed rates of change and their unit directions, and one unit direction with zero rate of change."
+      ]
+    },
+    {
+      "id": "14.6.3",
+      "section": "14.6",
+      "title": "Reconstruct a gradient",
+      "text": "At \\(P\\), the directional derivative is \\(2\\) along \\(\\mathbf u=\\langle3/5,4/5\\rangle\\), and \\(1\\) along \\(\\mathbf v=\\langle-4/5,3/5\\rangle\\). Find the gradient, the maximum rate and its unit direction, and the directional derivative in the direction of \\(\\langle1,1\\rangle\\).",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(\\nabla f(P)=\\langle2/5,11/5\\rangle\\).",
+          "Maximum rate: \\(\\sqrt5\\), with unit direction \\(\\langle2,11\\rangle/(5\\sqrt5)\\).",
+          "In the direction of \\(\\langle1,1\\rangle\\), the derivative is \\(13/(5\\sqrt2)\\)."
+        ],
+        "text": "\\(\\nabla f(P)=\\langle2/5,11/5\\rangle\\). Maximum rate: \\(\\sqrt5\\), with unit direction \\(\\langle2,11\\rangle/(5\\sqrt5)\\). In the direction of \\(\\langle1,1\\rangle\\), the derivative is \\(13/(5\\sqrt2)\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "At \\(P\\), the directional derivative is \\(2\\) along \\(\\mathbf u=\\langle3/5,4/5\\rangle\\), and \\(1\\) along \\(\\mathbf v=\\langle-4/5,3/5\\rangle\\).",
+        "Find the gradient, the maximum rate and its unit direction, and the directional derivative in the direction of \\(\\langle1,1\\rangle\\)."
+      ]
+    },
+    {
+      "id": "14.6.4",
+      "section": "14.6",
+      "title": "Implicit geometry and a proposed tangent",
+      "text": "Consider the surface \\(x^2+z^2=5e^{xy}\\) at \\(P=(1,0,2)\\). Find the tangent plane and normal line. Could \\(\\langle1,2,2\\rangle\\) be the velocity of a curve on the surface through \\(P\\)?",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "Tangent plane: \\(2x-5y+4z=10\\).",
+          "Normal line: \\(\\mathbf r(t)=\\langle1,0,2\\rangle+t\\langle2,-5,4\\rangle\\).",
+          "Yes: the velocity is perpendicular to the normal, since \\(2-10+8=0\\)."
+        ],
+        "text": "Tangent plane: \\(2x-5y+4z=10\\). Normal line: \\(\\mathbf r(t)=\\langle1,0,2\\rangle+t\\langle2,-5,4\\rangle\\). Yes: the velocity is perpendicular to the normal, since \\(2-10+8=0\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Consider the surface \\(x^2+z^2=5e^{xy}\\) at \\(P=(1,0,2)\\).",
+        "Find the tangent plane and normal line. Could \\(\\langle1,2,2\\rangle\\) be the velocity of a curve on the surface through \\(P\\)?"
+      ]
+    },
+    {
+      "id": "14.6.5",
+      "section": "14.6",
+      "title": "Find every direction with a prescribed rate",
+      "text": "Let \\(f(x,y)=3x+4y+x^2-y^2\\). At the origin, find all unit vectors for which \\(D_{\\mathbf u}f=3\\), all for which \\(D_{\\mathbf u}f=0\\), and the maximum rate of change.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "For rate \\(3\\): \\(\\langle1,0\\rangle\\) and \\(\\langle-7/25,24/25\\rangle\\).",
+          "For rate \\(0\\): \\(\\pm\\langle4,-3\\rangle/5\\).",
+          "The maximum rate is \\(5\\)."
+        ],
+        "text": "For rate \\(3\\): \\(\\langle1,0\\rangle\\) and \\(\\langle-7/25,24/25\\rangle\\). For rate \\(0\\): \\(\\pm\\langle4,-3\\rangle/5\\). The maximum rate is \\(5\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=3x+4y+x^2-y^2\\).",
+        "At the origin, find all unit vectors for which \\(D_{\\mathbf u}f=3\\), all for which \\(D_{\\mathbf u}f=0\\), and the maximum rate of change."
+      ]
+    },
+    {
+      "id": "14.6.6",
+      "section": "14.6",
+      "title": "A curve constrained to a level surface",
+      "text": "A curve on \\(x^2+2y^2+z^2=7\\) passes through \\((1,1,2)\\) with velocity \\(\\langle a,1,-1\\rangle\\). Find \\(a\\) and the speed. If the surface is written locally as \\(z=f(x,y)\\), find \\(f_x,f_y\\) at this point.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\(a=0\\). The speed is \\(\\sqrt2\\).",
+          "\\(f_x=-\\tfrac12,\\quad f_y=-1\\)."
+        ],
+        "text": "\\(a=0\\). The speed is \\(\\sqrt2\\). \\(f_x=-\\tfrac12,\\quad f_y=-1\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "A curve on \\(x^2+2y^2+z^2=7\\) passes through \\((1,1,2)\\) with velocity \\(\\langle a,1,-1\\rangle\\).",
+        "Find \\(a\\) and the speed. If the surface is written locally as \\(z=f(x,y)\\), find \\(f_x,f_y\\) at this point."
+      ]
+    },
+    {
+      "id": "14.6.7",
+      "section": "14.6",
+      "title": "Steepest change with a motion restriction",
+      "text": "Suppose \\(\\nabla f(P)=\\langle2,-1,2\\rangle\\). For unit motion constrained to have zero \\(z\\)-component, find the maximum rate and its direction. Compare with the unrestricted maximum rate.",
+      "extension": true,
+      "answer": {
+        "blocks": [
+          "Restricted maximum: \\(\\sqrt5\\), in direction \\(\\langle2,-1,0\\rangle/\\sqrt5\\).",
+          "Unrestricted maximum: \\(3\\)."
+        ],
+        "text": "Restricted maximum: \\(\\sqrt5\\), in direction \\(\\langle2,-1,0\\rangle/\\sqrt5\\). Unrestricted maximum: \\(3\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Suppose \\(\\nabla f(P)=\\langle2,-1,2\\rangle\\).",
+        "For unit motion constrained to have zero \\(z\\)-component, find the maximum rate and its direction. Compare with the unrestricted maximum rate."
+      ]
+    },
+    {
+      "id": "14.6.8",
+      "section": "14.6",
+      "title": "Zero first order change is not constant value",
+      "text": "Let \\(f(x,y)=x^2+y^2\\), with \\(P=(1,0)\\). Find the directional derivative along \\(\\langle0,1\\rangle\\). Compare the exact changes from \\(t=0\\) to \\(t=0.1\\) along \\(\\mathbf s(t)=\\langle1,t\\rangle\\) and \\(\\mathbf r(t)=\\langle\\cos t,\\sin t\\rangle\\). Do the paths have the same initial velocity?",
+      "extension": true,
+      "answer": {
+        "blocks": [
+          "The directional derivative is \\(0\\).",
+          "The straight path gives an exact change of \\(0.01\\); the circular path gives \\(0\\).",
+          "Both initial velocities are \\(\\langle0,1\\rangle\\)."
+        ],
+        "text": "The directional derivative is \\(0\\). The straight path gives an exact change of \\(0.01\\); the circular path gives \\(0\\). Both initial velocities are \\(\\langle0,1\\rangle\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=x^2+y^2\\), with \\(P=(1,0)\\).",
+        "Find the directional derivative along \\(\\langle0,1\\rangle\\). Compare the exact changes from \\(t=0\\) to \\(t=0.1\\) along \\(\\mathbf s(t)=\\langle1,t\\rangle\\) and \\(\\mathbf r(t)=\\langle\\cos t,\\sin t\\rangle\\). Do the paths have the same initial velocity?"
+      ]
+    },
+    {
+      "id": "14.7.1",
+      "section": "14.7",
+      "title": "Four critical points and four values",
+      "text": "Let \\(f(x,y)=x^3-3x+y^3-12y\\). Find and classify all critical points, giving their function values. Are any local extrema absolute?",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "Local minimum: \\((1,2)\\), value \\(-18\\).",
+          "Local maximum: \\((-1,-2)\\), value \\(18\\).",
+          "Saddles: \\((1,-2)\\), value \\(14\\), and \\((-1,2)\\), value \\(-14\\).",
+          "There are no absolute extrema; the function is unbounded above and below."
+        ],
+        "text": "Local minimum: \\((1,2)\\), value \\(-18\\). Local maximum: \\((-1,-2)\\), value \\(18\\). Saddles: \\((1,-2)\\), value \\(14\\), and \\((-1,2)\\), value \\(-14\\). There are no absolute extrema; the function is unbounded above and below."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=x^3-3x+y^3-12y\\).",
+        "Find and classify all critical points, giving their function values. Are any local extrema absolute?"
+      ]
+    },
+    {
+      "id": "14.7.2",
+      "section": "14.7",
+      "title": "Coupled quartic terms",
+      "text": "Let \\(f(x,y)=x^4+y^4-8xy+3\\). Find and classify all critical points and their values. Determine whether absolute minima or maxima exist.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "\\((0,0)\\) is a saddle, with value \\(3\\).",
+          "\\((\\sqrt2,\\sqrt2)\\) and \\((-\\sqrt2,-\\sqrt2)\\) are local and absolute minima, both with value \\(-5\\).",
+          "There is no local or absolute maximum."
+        ],
+        "text": "\\((0,0)\\) is a saddle, with value \\(3\\). \\((\\sqrt2,\\sqrt2)\\) and \\((-\\sqrt2,-\\sqrt2)\\) are local and absolute minima, both with value \\(-5\\). There is no local or absolute maximum."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=x^4+y^4-8xy+3\\).",
+        "Find and classify all critical points and their values. Determine whether absolute minima or maxima exist."
+      ]
+    },
+    {
+      "id": "14.7.3",
+      "section": "14.7",
+      "title": "Cases from the first derivatives",
+      "text": "Let \\(f(x,y)=x^3+xy^2-3x^2-y^2+2\\). Find all critical points and classify them using the second derivative test. Give their function values.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "Local maximum: \\((0,0)\\), value \\(2\\).",
+          "Local minimum: \\((2,0)\\), value \\(-2\\).",
+          "Saddles: \\((1,\\sqrt3)\\) and \\((1,-\\sqrt3)\\), both value \\(0\\)."
+        ],
+        "text": "Local maximum: \\((0,0)\\), value \\(2\\). Local minimum: \\((2,0)\\), value \\(-2\\). Saddles: \\((1,\\sqrt3)\\) and \\((1,-\\sqrt3)\\), both value \\(0\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=x^3+xy^2-3x^2-y^2+2\\).",
+        "Find all critical points and classify them using the second derivative test. Give their function values."
+      ]
+    },
+    {
+      "id": "14.7.4",
+      "section": "14.7",
+      "title": "A rectangle with competing boundary values",
+      "text": "Let \\(f(x,y)=x^2-2xy+2y^2-2x\\) on the rectangle \\(0\\le x\\le3,\\ 0\\le y\\le2\\). Check the interior and each edge to find the absolute maximum and minimum, including all points where they occur.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "Absolute minimum: \\(-2\\) at \\((2,1)\\).",
+          "Absolute maximum: \\(8\\) at \\((0,2)\\)."
+        ],
+        "text": "Absolute minimum: \\(-2\\) at \\((2,1)\\). Absolute maximum: \\(8\\) at \\((0,2)\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=x^2-2xy+2y^2-2x\\) on the rectangle \\(0\\le x\\le3,\\ 0\\le y\\le2\\).",
+        "Check the interior and each edge to find the absolute maximum and minimum, including all points where they occur."
+      ]
+    },
+    {
+      "id": "14.7.5",
+      "section": "14.7",
+      "title": "An unconstrained minimum outside the region",
+      "text": "Let \\(f(x,y)=x^2+y^2-6x-4y\\) on the triangular region with vertices \\((0,0),(4,0),(0,4)\\). Find the absolute extrema. Is the unconstrained critical point eligible?",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "The unconstrained critical point \\((3,2)\\) lies outside the triangle.",
+          "Absolute minimum: \\(-25/2\\) at \\((5/2,3/2)\\).",
+          "Absolute maximum: \\(0\\), at both \\((0,0)\\) and \\((0,4)\\)."
+        ],
+        "text": "The unconstrained critical point \\((3,2)\\) lies outside the triangle. Absolute minimum: \\(-25/2\\) at \\((5/2,3/2)\\). Absolute maximum: \\(0\\), at both \\((0,0)\\) and \\((0,4)\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=x^2+y^2-6x-4y\\) on the triangular region with vertices \\((0,0),(4,0),(0,4)\\).",
+        "Find the absolute extrema. Is the unconstrained critical point eligible?"
+      ]
+    },
+    {
+      "id": "14.7.6",
+      "section": "14.7",
+      "title": "A curved boundary and a full set of minima",
+      "text": "Let \\(f(x,y)=xy^2+1\\) on \\(D=\\{(x,y):x\\ge0,\\ y\\ge0,\\ x^2+y^2\\le4\\}\\). Find the absolute extrema, including every point attaining the minimum.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "Maximum: \\(1+\\dfrac{16}{3\\sqrt3}\\), at \\(\\left(\\dfrac2{\\sqrt3},2\\sqrt{\\dfrac23}\\right)\\).",
+          "Minimum: \\(1\\), at all points \\((x,0)\\) with \\(0\\le x\\le2\\), and \\((0,y)\\) with \\(0\\le y\\le2\\)."
+        ],
+        "text": "Maximum: \\(1+\\dfrac{16}{3\\sqrt3}\\), at \\(\\left(\\dfrac2{\\sqrt3},2\\sqrt{\\dfrac23}\\right)\\). Minimum: \\(1\\), at all points \\((x,0)\\) with \\(0\\le x\\le2\\), and \\((0,y)\\) with \\(0\\le y\\le2\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=xy^2+1\\) on \\(D=\\{(x,y):x\\ge0,\\ y\\ge0,\\ x^2+y^2\\le4\\}\\).",
+        "Find the absolute extrema, including every point attaining the minimum."
+      ]
+    },
+    {
+      "id": "14.7.7",
+      "section": "14.7",
+      "title": "The inconclusive parameter cases matter",
+      "text": "Let \\(f_a(x,y)=x^2+2axy+y^2+x^4\\). Classify the origin for every real \\(a\\). Resolve the cases where the second derivative test is inconclusive, and distinguish strict from nonstrict minima.",
+      "extension": true,
+      "answer": {
+        "blocks": [
+          "For \\(|a|\\le1\\), the origin is a strict local and absolute minimum, with value \\(0\\).",
+          "For \\(|a|>1\\), the origin is a saddle.",
+          "At \\(a=\\pm1\\), the second derivative test is inconclusive, but the minimum is still strict."
+        ],
+        "text": "For \\(|a|\\le1\\), the origin is a strict local and absolute minimum, with value \\(0\\). For \\(|a|>1\\), the origin is a saddle. At \\(a=\\pm1\\), the second derivative test is inconclusive, but the minimum is still strict."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f_a(x,y)=x^2+2axy+y^2+x^4\\).",
+        "Classify the origin for every real \\(a\\). Resolve the cases where the second derivative test is inconclusive, and distinguish strict from nonstrict minima."
+      ]
+    },
+    {
+      "id": "14.7.8",
+      "section": "14.7",
+      "title": "Curved paths reveal what straight traces miss",
+      "text": "Let \\(f(x,y)=(y-x^2)^2\\) and \\(g(x,y)=(y-x^2)^2-x^6\\). Classify the origin for both functions. Give the full minimum set for \\(f\\), and positive and negative paths for \\(g\\) arbitrarily near the origin. What does the second derivative test say?",
+      "extension": true,
+      "answer": {
+        "blocks": [
+          "For \\(f\\), the origin is a nonstrict absolute minimum of value \\(0\\). The full minimum set is \\(y=x^2\\).",
+          "For \\(g\\), the origin is a saddle: \\(g(0,y)=y^2>0\\) for \\(y\\ne0\\), while \\(g(x,x^2)=-x^6<0\\) for \\(x\\ne0\\).",
+          "Both have \\(D=0\\), so the second derivative test is inconclusive."
+        ],
+        "text": "For \\(f\\), the origin is a nonstrict absolute minimum of value \\(0\\). The full minimum set is \\(y=x^2\\). For \\(g\\), the origin is a saddle: \\(g(0,y)=y^2>0\\) for \\(y\\ne0\\), while \\(g(x,x^2)=-x^6<0\\) for \\(x\\ne0\\). Both have \\(D=0\\), so the second derivative test is inconclusive."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=(y-x^2)^2\\) and \\(g(x,y)=(y-x^2)^2-x^6\\).",
+        "Classify the origin for both functions. Give the full minimum set for \\(f\\), and positive and negative paths for \\(g\\) arbitrarily near the origin. What does the second derivative test say?"
+      ]
+    },
+    {
+      "id": "14.8.1",
+      "section": "14.8",
+      "title": "A linear function on an ellipsoid",
+      "text": "Use Lagrange multipliers to find the maximum and minimum of \\(f(x,y,z)=2x-y+2z\\) on \\(x^2+2y^2+z^2=9\\). Give all points where the extrema occur.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "Maximum: \\(\\dfrac{3\\sqrt{34}}2\\), at \\(\\dfrac1{\\sqrt{34}}(12,-3,12)\\).",
+          "Minimum: \\(-\\dfrac{3\\sqrt{34}}2\\), at \\(\\dfrac1{\\sqrt{34}}(-12,3,-12)\\)."
+        ],
+        "text": "Maximum: \\(\\dfrac{3\\sqrt{34}}2\\), at \\(\\dfrac1{\\sqrt{34}}(12,-3,12)\\). Minimum: \\(-\\dfrac{3\\sqrt{34}}2\\), at \\(\\dfrac1{\\sqrt{34}}(-12,3,-12)\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Use Lagrange multipliers to find the maximum and minimum of \\(f(x,y,z)=2x-y+2z\\) on \\(x^2+2y^2+z^2=9\\).",
+        "Give all points where the extrema occur."
+      ]
+    },
+    {
+      "id": "14.8.2",
+      "section": "14.8",
+      "title": "A parameter changes the extreme points",
+      "text": "For \\(a>0\\), find the extrema of \\(f_a(x,y)=ax^2+4y^2\\) on \\(\\dfrac{x^2}{9}+\\dfrac{y^2}{4}=1\\). Classify every parameter range and transition value, giving all extremizing points.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "If \\(0<a<16/9\\): minimum \\(9a\\) at \\((\\pm3,0)\\); maximum \\(16\\) at \\((0,\\pm2)\\).",
+          "If \\(a=16/9\\): the function is constantly \\(16\\) on the entire ellipse.",
+          "If \\(a>16/9\\): minimum \\(16\\) at \\((0,\\pm2)\\); maximum \\(9a\\) at \\((\\pm3,0)\\)."
+        ],
+        "text": "If \\(0<a<16/9\\): minimum \\(9a\\) at \\((\\pm3,0)\\); maximum \\(16\\) at \\((0,\\pm2)\\). If \\(a=16/9\\): the function is constantly \\(16\\) on the entire ellipse. If \\(a>16/9\\): minimum \\(16\\) at \\((0,\\pm2)\\); maximum \\(9a\\) at \\((\\pm3,0)\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "For \\(a>0\\), find the extrema of \\(f_a(x,y)=ax^2+4y^2\\) on \\(\\dfrac{x^2}{9}+\\dfrac{y^2}{4}=1\\).",
+        "Classify every parameter range and transition value, giving all extremizing points."
+      ]
+    },
+    {
+      "id": "14.8.3",
+      "section": "14.8",
+      "title": "A disk requires two searches",
+      "text": "Let \\(f(x,y)=2x^2+3y^2-4x+1\\) on \\(x^2+y^2\\le9\\). Use Lagrange multipliers on the boundary and check the interior separately. List the candidates and find the absolute extrema.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "Interior candidate: \\((1,0)\\), value \\(-1\\).",
+          "Boundary candidates: \\((3,0)\\), value \\(7\\); \\((-3,0)\\), value \\(31\\); \\((-2,\\pm\\sqrt5)\\), value \\(32\\).",
+          "Absolute minimum: \\(-1\\) at \\((1,0)\\). Absolute maximum: \\(32\\) at \\((-2,\\pm\\sqrt5)\\)."
+        ],
+        "text": "Interior candidate: \\((1,0)\\), value \\(-1\\). Boundary candidates: \\((3,0)\\), value \\(7\\); \\((-3,0)\\), value \\(31\\); \\((-2,\\pm\\sqrt5)\\), value \\(32\\). Absolute minimum: \\(-1\\) at \\((1,0)\\). Absolute maximum: \\(32\\) at \\((-2,\\pm\\sqrt5)\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Let \\(f(x,y)=2x^2+3y^2-4x+1\\) on \\(x^2+y^2\\le9\\).",
+        "Use Lagrange multipliers on the boundary and check the interior separately. List the candidates and find the absolute extrema."
+      ]
+    },
+    {
+      "id": "14.8.4",
+      "section": "14.8",
+      "title": "Nearest points on two sheets",
+      "text": "Find all points on \\(z^2-x^2-y^2=1\\) nearest to \\((2,-2,0)\\), and the minimum distance. Does a farthest point exist?",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "Nearest points: \\((1,-1,\\sqrt3)\\) and \\((1,-1,-\\sqrt3)\\).",
+          "Minimum distance: \\(\\sqrt5\\).",
+          "No farthest point exists; distances are unbounded."
+        ],
+        "text": "Nearest points: \\((1,-1,\\sqrt3)\\) and \\((1,-1,-\\sqrt3)\\). Minimum distance: \\(\\sqrt5\\). No farthest point exists; distances are unbounded."
+      },
+      "review": "chapter14",
+      "body": [
+        "Find all points on \\(z^2-x^2-y^2=1\\) nearest to \\((2,-2,0)\\), and the minimum distance. Does a farthest point exist?"
+      ]
+    },
+    {
+      "id": "14.8.5",
+      "section": "14.8",
+      "title": "An open box with unequal material costs",
+      "text": "An open rectangular box has dimensions \\(x,y,z>0\\) meters. The base costs \\(3\\) dollars per square meter, the sides cost \\(1\\) dollar per square meter, and the budget is \\(144\\) dollars. Find the cost constraint and the dimensions that maximize volume, and give the maximum volume.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "Constraint: \\(3xy+2xz+2yz=144\\).",
+          "Optimal dimensions: \\(x=y=4\\ \\mathrm m,\\ z=6\\ \\mathrm m\\).",
+          "Maximum volume: \\(96\\ \\mathrm{m^3}\\)."
+        ],
+        "text": "Constraint: \\(3xy+2xz+2yz=144\\). Optimal dimensions: \\(x=y=4\\ \\mathrm m,\\ z=6\\ \\mathrm m\\). Maximum volume: \\(96\\ \\mathrm{m^3}\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "An open rectangular box has dimensions \\(x,y,z>0\\) meters. The base costs \\(3\\) dollars per square meter, the sides cost \\(1\\) dollar per square meter, and the budget is \\(144\\) dollars.",
+        "Find the cost constraint and the dimensions that maximize volume, and give the maximum volume."
+      ]
+    },
+    {
+      "id": "14.8.6",
+      "section": "14.8",
+      "title": "Two simultaneous constraints",
+      "text": "Use two Lagrange multipliers to find the highest and lowest points on the intersection of \\(x^2+y^2+z^2=6\\) and \\(x+y+z=0\\). Give the points and their \\(z\\)-values.",
+      "extension": false,
+      "answer": {
+        "blocks": [
+          "Highest point: \\((-1,-1,2)\\), with \\(z=2\\).",
+          "Lowest point: \\((1,1,-2)\\), with \\(z=-2\\)."
+        ],
+        "text": "Highest point: \\((-1,-1,2)\\), with \\(z=2\\). Lowest point: \\((1,1,-2)\\), with \\(z=-2\\)."
+      },
+      "review": "chapter14",
+      "body": [
+        "Use two Lagrange multipliers to find the highest and lowest points on the intersection of \\(x^2+y^2+z^2=6\\) and \\(x+y+z=0\\).",
+        "Give the points and their \\(z\\)-values."
+      ]
+    },
+    {
+      "id": "14.8.7",
+      "section": "14.8",
+      "title": "A stationary candidate on an unbounded curve",
+      "text": "Find all Lagrange candidates for \\(f(x,y)=x+y\\) under \\(xy=1,\\ x>0\\). Determine which absolute extrema exist. Is selecting the largest candidate value a valid way to find an absolute maximum here?",
+      "extension": true,
+      "answer": {
+        "blocks": [
+          "The only candidate is \\((1,1)\\), with value \\(2\\). It is the absolute minimum.",
+          "There is no absolute maximum: \\(x+1/x\\) is unbounded for \\(x>0\\).",
+          "Choosing the largest candidate value is not valid on this unbounded feasible set."
+        ],
+        "text": "The only candidate is \\((1,1)\\), with value \\(2\\). It is the absolute minimum. There is no absolute maximum: \\(x+1/x\\) is unbounded for \\(x>0\\). Choosing the largest candidate value is not valid on this unbounded feasible set."
+      },
+      "review": "chapter14",
+      "body": [
+        "Find all Lagrange candidates for \\(f(x,y)=x+y\\) under \\(xy=1,\\ x>0\\).",
+        "Determine which absolute extrema exist. Is selecting the largest candidate value a valid way to find an absolute maximum here?"
+      ]
+    },
+    {
+      "id": "14.8.8",
+      "section": "14.8",
+      "title": "Equivalent constraints can behave differently",
+      "text": "Find the extrema of \\(f(x,y)=3x+4y\\) on the unit circle. Now write the same constraint as \\(G(x,y)=(x^2+y^2-1)^2=0\\), instead of \\(g(x,y)=x^2+y^2=1\\). Is the feasible set unchanged? Does \\(\\nabla f=\\lambda\\nabla G\\) find the extrema? Identify the failed condition.",
+      "extension": true,
+      "answer": {
+        "blocks": [
+          "Maximum: \\(5\\) at \\((3/5,4/5)\\). Minimum: \\(-5\\) at \\((-3/5,-4/5)\\).",
+          "The feasible set is unchanged, but \\(\\nabla G=\\mathbf0\\) at every point on the circle, so \\(\\nabla f=\\lambda\\nabla G\\) has no solutions.",
+          "The required nonzero constraint gradient condition fails."
+        ],
+        "text": "Maximum: \\(5\\) at \\((3/5,4/5)\\). Minimum: \\(-5\\) at \\((-3/5,-4/5)\\). The feasible set is unchanged, but \\(\\nabla G=\\mathbf0\\) at every point on the circle, so \\(\\nabla f=\\lambda\\nabla G\\) has no solutions. The required nonzero constraint gradient condition fails."
+      },
+      "review": "chapter14",
+      "body": [
+        "Find the extrema of \\(f(x,y)=3x+4y\\) on the unit circle.",
+        "Now write the same constraint as \\(G(x,y)=(x^2+y^2-1)^2=0\\), instead of \\(g(x,y)=x^2+y^2=1\\). Is the feasible set unchanged? Does \\(\\nabla f=\\lambda\\nabla G\\) find the extrema? Identify the failed condition."
+      ]
+    },
+    {
+      "number": 1,
+      "title": "Angle identities",
+      "latex": "\\int_{-\\pi/4}^{3\\pi/4}\\frac{\\sqrt2\\sin(2x-\\pi/2)(\\cos x+\\sin x)}{-\\cos(2x)}\\,dx",
+      "hints": [
+        "Apply the double-angle identity for cosine and factor the resulting difference of squares to simplify the denominator.",
+        "Use a linear substitution to shift the argument of the trigonometric functions and simplify the integrand to a basic cosine function."
+      ],
+      "answerLatex": "4",
+      "steps": [
+        "\\sin(2x-\\pi/2)=-\\cos(2x)",
+        "I=\\sqrt2\\,[\\sin x-\\cos x]_{-\\pi/4}^{3\\pi/4}=4"
+      ],
+      "note": "The zeros of the original denominator are removable; use the continuous simplified integrand there.",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-1",
+      "review": "easy",
+      "section": "integration-trig",
+      "text": "\\int_{-\\pi/4}^{3\\pi/4}\\frac{\\sqrt2\\sin(2x-\\pi/2)(\\cos x+\\sin x)}{-\\cos(2x)}\\,dx"
+    },
+    {
+      "number": 2,
+      "title": "Perfect squares",
+      "latex": "\\int_0^{\\pi/12}\\left(\\sqrt{\\sin^4x+4\\cos^2x}-\\sqrt{\\cos^4x+4\\sin^2x}\\right)\\,dx",
+      "hints": [
+        "Express the expressions inside the square roots as perfect squares using the Pythagorean identity.",
+        "Simplify using the double-angle identity for cosine, then integrate."
+      ],
+      "answerLatex": "\\frac14",
+      "steps": [
+        "\\sqrt{\\sin^4x+4\\cos^2x}=1+\\cos^2x",
+        "\\sqrt{\\cos^4x+4\\sin^2x}=1+\\sin^2x",
+        "I=\\int_0^{\\pi/12}\\cos(2x)\\,dx=\\frac14"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-2",
+      "review": "easy",
+      "section": "integration-trig",
+      "text": "\\int_0^{\\pi/12}\\left(\\sqrt{\\sin^4x+4\\cos^2x}-\\sqrt{\\cos^4x+4\\sin^2x}\\right)\\,dx"
+    },
+    {
+      "number": 3,
+      "title": "Logarithmic substitution",
+      "latex": "\\int_2^3\\frac{dx}{x\\ln(ex)\\sqrt{\\ln(ex)-1}}",
+      "hints": [
+        "Use \\(u=\\sqrt{\\ln x}\\). Then \\(\\ln(ex)=1+u^2\\)."
+      ],
+      "answerLatex": "2\\left(\\arctan\\sqrt{\\ln3}-\\arctan\\sqrt{\\ln2}\\right)",
+      "steps": [
+        "I=2\\int_{\\sqrt{\\ln2}}^{\\sqrt{\\ln3}}\\frac{du}{1+u^2}"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "added",
+      "id": "integral-easy-3",
+      "review": "easy",
+      "section": "integration-sub",
+      "text": "\\int_2^3\\frac{dx}{x\\ln(ex)\\sqrt{\\ln(ex)-1}}"
+    },
+    {
+      "number": 4,
+      "title": "Sum of cubes",
+      "latex": "\\int_0^1\\frac{(x+1)^3}{x^3+1}\\,dx",
+      "hints": [
+        "Factor the sum of cubes in the denominator to cancel a common linear factor from the numerator.",
+        "Apply the reflection property of definite integrals to simplify the rational expression before completing the square."
+      ],
+      "answerLatex": "1+\\frac{\\pi}{\\sqrt3}",
+      "steps": [
+        "\\frac{(x+1)^3}{x^3+1}=1+\\frac{3x}{x^2-x+1}",
+        "\\int_0^1\\frac{x\\,dx}{x^2-x+1}=\\frac12\\int_0^1\\frac{dx}{x^2-x+1}=\\frac{\\pi}{3\\sqrt3}"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-4",
+      "review": "easy",
+      "section": "integration-trig",
+      "text": "\\int_0^1\\frac{(x+1)^3}{x^3+1}\\,dx"
+    },
+    {
+      "number": 5,
+      "title": "A trig product",
+      "latex": "\\int_{3\\pi/4}^{\\pi}\\left(\\cos x-\\sin(2x)\\sin x-\\sin x+\\sin(2x)\\cos x\\right)\\,dx",
+      "hints": [
+        "Apply the double-angle identity for sine, expand, and factor into a product of trigonometric functions.",
+        "Use a substitution where the new variable is the sum of sine and cosine, then evaluate the power integral."
+      ],
+      "answerLatex": "-\\frac13",
+      "steps": [
+        "(\\cos x-\\sin x)(1+\\sin2x)=(\\cos x-\\sin x)(\\sin x+\\cos x)^2",
+        "u=\\sin x+\\cos x,\\qquad I=\\left[\\frac{u^3}{3}\\right]_0^{-1}=-\\frac13"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-5",
+      "review": "easy",
+      "section": "integration-trig",
+      "text": "\\int_{3\\pi/4}^{\\pi}\\left(\\cos x-\\sin(2x)\\sin x-\\sin x+\\sin(2x)\\cos x\\right)\\,dx"
+    },
+    {
+      "number": 6,
+      "title": "Reciprocal symmetry",
+      "latex": "\\int_0^\\infty\\frac{x}{(x^4+1)(x^\\pi+1)}\\,dx",
+      "hints": [
+        "Apply a reciprocal substitution to exploit the symmetry over the infinite interval.",
+        "Add the transformed integral to the original to cancel the transcendental term in the denominator."
+      ],
+      "answerLatex": "\\frac{\\pi}{8}",
+      "steps": [
+        "x=1/t\\quad\\Longrightarrow\\quad 2I=\\int_0^\\infty\\frac{x}{1+x^4}\\,dx=\\frac{\\pi}{4}"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-6",
+      "review": "easy",
+      "section": "integration-sym",
+      "text": "\\int_0^\\infty\\frac{x}{(x^4+1)(x^\\pi+1)}\\,dx"
+    },
+    {
+      "number": 7,
+      "title": "Inverse function substitution",
+      "latex": "\\int_0^2\\frac{dx}{\\log_2 e+g(x)}",
+      "hints": [
+        "Use the inverse function to transform the integral into an expression involving the original function and its derivative.",
+        "Use the change-of-base formula in the denominator and simplify the product of the derivative and reciprocal function."
+      ],
+      "answerLatex": "1",
+      "steps": [
+        "x=u2^u,\\quad dx=2^u(1+u\\ln2)\\,du,\\quad g(x)=u",
+        "I=\\int_0^1(\\ln2)2^u\\,du=1"
+      ],
+      "note": "",
+      "intro": "Let \\(f(u)=u2^u\\), and let \\(g\\) be its inverse on \\([0,\\infty)\\).",
+      "hintSource": "source",
+      "id": "integral-easy-7",
+      "review": "easy",
+      "section": "integration-sub",
+      "text": "\\int_0^2\\frac{dx}{\\log_2 e+g(x)}"
+    },
+    {
+      "number": 8,
+      "title": "Rationalize a trig denominator",
+      "latex": "\\int_0^{\\pi/4}\\frac{dx}{1+\\sin x}",
+      "hints": [
+        "Multiply by \\((1-\\sin x)/(1-\\sin x)\\), then use \\(1-\\sin^2x=\\cos^2x\\)."
+      ],
+      "answerLatex": "2-\\sqrt2",
+      "steps": [
+        "\\frac1{1+\\sin x}=\\sec^2x-\\sec x\\tan x",
+        "I=[\\tan x-\\sec x]_0^{\\pi/4}=2-\\sqrt2"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "added",
+      "id": "integral-easy-8",
+      "review": "easy",
+      "section": "integration-trig",
+      "text": "\\int_0^{\\pi/4}\\frac{dx}{1+\\sin x}"
+    },
+    {
+      "number": 9,
+      "title": "Exponential change of variable",
+      "latex": "\\int_{\\frac12\\ln(\\pi/6)}^{\\frac12\\ln(\\pi/4)}\\frac{\\csc(2e^{2x})}{\\sec(2e^{2x})}e^{2x}\\,dx",
+      "hints": [
+        "Use \\(u=2e^{2x}\\), so \\(du=4e^{2x}\\,dx\\)."
+      ],
+      "answerLatex": "\\frac14\\ln\\frac2{\\sqrt3}",
+      "steps": [
+        "I=\\frac14\\int_{\\pi/3}^{\\pi/2}\\cot u\\,du=\\frac14[\\ln(\\sin u)]_{\\pi/3}^{\\pi/2}"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "added",
+      "id": "integral-easy-9",
+      "review": "easy",
+      "section": "integration-sub",
+      "text": "\\int_{\\frac12\\ln(\\pi/6)}^{\\frac12\\ln(\\pi/4)}\\frac{\\csc(2e^{2x})}{\\sec(2e^{2x})}e^{2x}\\,dx"
+    },
+    {
+      "number": 10,
+      "title": "Recognize a derivative",
+      "latex": "\\int_0^\\pi\\left(\\pi\\sin x+\\pi x\\cos x+\\pi^2\\cos x\\right)\\,dx",
+      "hints": [
+        "Use integration by parts for the product of the variable and cosine."
+      ],
+      "answerLatex": "0",
+      "steps": [
+        "\\pi\\sin x+\\pi x\\cos x+\\pi^2\\cos x=\\frac{d}{dx}(\\pi x\\sin x+\\pi^2\\sin x)",
+        "I=[\\pi x\\sin x+\\pi^2\\sin x]_0^\\pi=0"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-10",
+      "review": "easy",
+      "section": "integration-sub",
+      "text": "\\int_0^\\pi\\left(\\pi\\sin x+\\pi x\\cos x+\\pi^2\\cos x\\right)\\,dx"
+    },
+    {
+      "number": 11,
+      "title": "Inverse sine and exponential",
+      "latex": "\\int_0^\\infty\\tan\\left(\\arcsin(e^{-2x})\\right)\\,dx",
+      "hints": [
+        "Write \\(\\tan(\\arcsin u)=u/\\sqrt{1-u^2}\\), then use \\(u=e^{-2x}\\)."
+      ],
+      "answerLatex": "\\frac{\\pi}{4}",
+      "steps": [
+        "I=\\frac12\\int_0^1\\frac{du}{\\sqrt{1-u^2}}=\\frac\\pi4"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "added",
+      "id": "integral-easy-11",
+      "review": "easy",
+      "section": "integration-sub",
+      "text": "\\int_0^\\infty\\tan\\left(\\arcsin(e^{-2x})\\right)\\,dx"
+    },
+    {
+      "number": 12,
+      "title": "Reflection symmetry",
+      "latex": "\\int_0^{\\pi/2}\\frac{\\sin^2x}{\\sin x+\\cos x}\\,dx",
+      "hints": [
+        "Replace \\(x\\) by \\(\\pi/2-x\\), then add the two forms of the integral."
+      ],
+      "answerLatex": "\\frac{\\ln(1+\\sqrt2)}{\\sqrt2}",
+      "steps": [
+        "2I=\\int_0^{\\pi/2}\\frac{dx}{\\sin x+\\cos x}",
+        "\\sin x+\\cos x=\\sqrt2\\cos(x-\\pi/4)"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "added",
+      "id": "integral-easy-12",
+      "review": "easy",
+      "section": "integration-trig",
+      "text": "\\int_0^{\\pi/2}\\frac{\\sin^2x}{\\sin x+\\cos x}\\,dx"
+    },
+    {
+      "number": 13,
+      "title": "Split the numerator",
+      "latex": "\\int_0^1\\frac{x^4+x^3+x+1}{x^4+1}\\,dx",
+      "hints": [
+        "Split into three fractions to simplify the integration.",
+        "Use a linear substitution for the cubic term and a quadratic substitution for the linear term."
+      ],
+      "answerLatex": "1+\\frac14\\ln2+\\frac{\\pi}{8}",
+      "steps": [
+        "I=1+\\int_0^1\\frac{x^3}{x^4+1}\\,dx+\\int_0^1\\frac{x}{x^4+1}\\,dx",
+        "I=1+\\left[\\frac14\\ln(1+x^4)\\right]_0^1+\\left[\\frac12\\arctan(x^2)\\right]_0^1"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-13",
+      "review": "easy",
+      "section": "integration-sub",
+      "text": "\\int_0^1\\frac{x^4+x^3+x+1}{x^4+1}\\,dx"
+    },
+    {
+      "number": 14,
+      "title": "Tangent substitution",
+      "latex": "\\int_0^{\\pi/4}\\frac{dx}{\\tan^2x+3}",
+      "hints": [
+        "Use the Pythagorean identity to rewrite tangent in terms of secant.",
+        "Multiply numerator and denominator by cosine squared before substituting."
+      ],
+      "answerLatex": "\\frac\\pi8-\\frac{\\pi}{12\\sqrt3}",
+      "steps": [
+        "t=\\tan x,\\qquad I=\\int_0^1\\frac{dt}{(1+t^2)(3+t^2)}",
+        "\\frac1{(1+t^2)(3+t^2)}=\\frac12\\left(\\frac1{1+t^2}-\\frac1{3+t^2}\\right)"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-14",
+      "review": "easy",
+      "section": "integration-trig",
+      "text": "\\int_0^{\\pi/4}\\frac{dx}{\\tan^2x+3}"
+    },
+    {
+      "number": 15,
+      "title": "Double-angle simplification",
+      "latex": "\\int_0^{\\pi/4}\\frac{2\\sin x}{2\\cos x-\\sin x\\sin(2x)}\\,dx",
+      "hints": [
+        "Use \\(\\sin2x=2\\sin x\\cos x\\) to factor the denominator."
+      ],
+      "answerLatex": "\\frac12",
+      "steps": [
+        "2\\cos x-\\sin x\\sin2x=2\\cos^3x",
+        "I=\\int_0^{\\pi/4}\\tan x\\sec^2x\\,dx=\\left[\\frac12\\tan^2x\\right]_0^{\\pi/4}"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "added",
+      "id": "integral-easy-15",
+      "review": "easy",
+      "section": "integration-trig",
+      "text": "\\int_0^{\\pi/4}\\frac{2\\sin x}{2\\cos x-\\sin x\\sin(2x)}\\,dx"
+    },
+    {
+      "number": 16,
+      "title": "A logarithmic derivative",
+      "latex": "\\int_{-1}^0\\frac{1-e^x}{xe^x+1}\\,dx",
+      "hints": [
+        "Divide numerator and denominator by the exponential to reveal a substitution.",
+        "Choose a variable whose denominator derivative matches the numerator, then evaluate the logarithm."
+      ],
+      "answerLatex": "\\ln(e-1)",
+      "steps": [
+        "\\frac{1-e^x}{xe^x+1}=-\\frac{(x+e^{-x})\\prime}{x+e^{-x}}",
+        "I=-[\\ln(x+e^{-x})]_{-1}^0=\\ln(e-1)"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-16",
+      "review": "easy",
+      "section": "integration-sub",
+      "text": "\\int_{-1}^0\\frac{1-e^x}{xe^x+1}\\,dx"
+    },
+    {
+      "number": 17,
+      "title": "Trig substitution and parts",
+      "latex": "\\int_0^1\\frac{1-2x^2}{\\sqrt{1-x^2}}\\ln\\left(\\frac{\\sqrt{1-x^2}}x\\right)\\,dx",
+      "hints": [
+        "Use a trigonometric substitution to simplify the radical and logarithmic argument.",
+        "Apply integration by parts and evaluate the endpoint limits carefully."
+      ],
+      "answerLatex": "\\frac\\pi2",
+      "steps": [
+        "x=\\sin\\theta,\\qquad I=\\int_0^{\\pi/2}\\cos(2\\theta)\\ln(\\cot\\theta)\\,d\\theta",
+        "v=\\sin\\theta\\cos\\theta,\\quad du=-\\frac{d\\theta}{\\sin\\theta\\cos\\theta}",
+        "I=\\int_0^{\\pi/2}1\\,d\\theta=\\frac\\pi2"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-17",
+      "review": "easy",
+      "section": "integration-parts",
+      "text": "\\int_0^1\\frac{1-2x^2}{\\sqrt{1-x^2}}\\ln\\left(\\frac{\\sqrt{1-x^2}}x\\right)\\,dx"
+    },
+    {
+      "number": 18,
+      "title": "Sine of an arctangent",
+      "latex": "\\int_0^\\infty\\frac{\\sin(\\arctan x)}{(1+x^2)^2}\\,dx",
+      "hints": [
+        "Use \\(\\sin(\\arctan x)=x/\\sqrt{1+x^2}\\)."
+      ],
+      "answerLatex": "\\frac13",
+      "steps": [
+        "I=\\int_0^\\infty\\frac{x}{(1+x^2)^{5/2}}\\,dx=\\left[-\\frac1{3(1+x^2)^{3/2}}\\right]_0^\\infty"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "added",
+      "id": "integral-easy-18",
+      "review": "easy",
+      "section": "integration-sub",
+      "text": "\\int_0^\\infty\\frac{\\sin(\\arctan x)}{(1+x^2)^2}\\,dx"
+    },
+    {
+      "number": 19,
+      "title": "Cancel an endpoint singularity",
+      "latex": "\\int_0^{\\pi/2}\\left(\\frac{\\sin x}{\\sin(\\cos x)}-\\tan x\\right)\\,dx",
+      "hints": [
+        "Factor out sine to prepare a substitution involving cosine.",
+        "Set the variable equal to cosine and evaluate the resulting improper integral using limits."
+      ],
+      "answerLatex": "\\ln\\left(2\\tan\\frac12\\right)",
+      "steps": [
+        "u=\\cos x,\\qquad I=\\int_0^1\\left(\\csc u-\\frac1u\\right)\\,du",
+        "I=\\left[\\ln\\frac{\\tan(u/2)}u\\right]_0^1,\\qquad\\lim_{u\\to0}\\frac{\\tan(u/2)}u=\\frac12"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-19",
+      "review": "easy",
+      "section": "integration-parts",
+      "text": "\\int_0^{\\pi/2}\\left(\\frac{\\sin x}{\\sin(\\cos x)}-\\tan x\\right)\\,dx"
+    },
+    {
+      "number": 20,
+      "title": "An algebraic derivative",
+      "latex": "\\int_{3/4}^{4/3}\\frac{dx}{x^2\\sqrt{x^2+1}}",
+      "hints": [
+        "Differentiate \\(\\sqrt{x^2+1}/x\\) to recognize the integrand."
+      ],
+      "answerLatex": "\\frac5{12}",
+      "steps": [
+        "I=\\left[-\\frac{\\sqrt{x^2+1}}x\\right]_{3/4}^{4/3}=\\frac53-\\frac54"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "added",
+      "id": "integral-easy-20",
+      "review": "easy",
+      "section": "integration-sub",
+      "text": "\\int_{3/4}^{4/3}\\frac{dx}{x^2\\sqrt{x^2+1}}"
+    },
+    {
+      "number": 21,
+      "title": "A polynomial under a root",
+      "latex": "\\int_0^1\\frac{x(2x^2+1)}{\\sqrt{x^4+x^2+1}}\\,dx",
+      "hints": [
+        "Substitute for the squared variable to simplify the polynomial.",
+        "Then substitute for the entire quadratic inside the root to obtain a power integral."
+      ],
+      "answerLatex": "\\sqrt3-1",
+      "steps": [
+        "\\frac{d}{dx}\\sqrt{x^4+x^2+1}=\\frac{x(2x^2+1)}{\\sqrt{x^4+x^2+1}}",
+        "I=[\\sqrt{x^4+x^2+1}]_0^1=\\sqrt3-1"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-21",
+      "review": "easy",
+      "section": "integration-sub",
+      "text": "\\int_0^1\\frac{x(2x^2+1)}{\\sqrt{x^4+x^2+1}}\\,dx"
+    },
+    {
+      "number": 22,
+      "title": "Hyperbolic cosine",
+      "latex": "\\int_0^\\pi\\frac{e^{2x}+1}{4\\cosh x-2e^{-x}}\\,dx",
+      "hints": [
+        "Use the exponential definition of hyperbolic cosine to simplify the denominator.",
+        "Rewrite in terms of hyperbolic sine or cosine before integrating."
+      ],
+      "answerLatex": "\\sinh\\pi",
+      "steps": [
+        "4\\cosh x-2e^{-x}=2e^x",
+        "I=\\int_0^\\pi\\cosh x\\,dx=\\sinh\\pi"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-22",
+      "review": "easy",
+      "section": "integration-sub",
+      "text": "\\int_0^\\pi\\frac{e^{2x}+1}{4\\cosh x-2e^{-x}}\\,dx"
+    },
+    {
+      "number": 23,
+      "title": "Combine and factor",
+      "latex": "\\int_0^{\\pi/3}\\left(\\frac{(\\sec x-\\frac12)^2}{\\tan x}-\\frac14\\cot x\\right)\\,dx",
+      "hints": [
+        "Combine the terms over \\(\\tan x\\) to obtain \\(((\\sec x-1/2)^2-1/4)/\\tan x\\).",
+        "Factor the numerator as \\((\\sec x-1)\\sec x\\), then simplify."
+      ],
+      "answerLatex": "\\ln\\frac32",
+      "steps": [
+        "\\frac{(\\sec x-\\frac12)^2-\\frac14}{\\tan x}=\\frac{\\sin x}{\\cos x(1+\\cos x)}",
+        "I=[\\ln(1+\\sec x)]_0^{\\pi/3}=\\ln\\frac32"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-23",
+      "review": "easy",
+      "section": "integration-trig",
+      "text": "\\int_0^{\\pi/3}\\left(\\frac{(\\sec x-\\frac12)^2}{\\tan x}-\\frac14\\cot x\\right)\\,dx"
+    },
+    {
+      "number": 24,
+      "title": "A hyperbolic substitution",
+      "latex": "\\int_0^1\\sqrt{\\frac{\\sqrt x+\\sqrt{x+1}}x}\\,dx",
+      "hints": [
+        "Set \\(u=\\sqrt x\\), then use \\(u=\\sinh t\\), \\(du=\\cosh t\\,dt\\), to simplify the inner radical."
+      ],
+      "answerLatex": "\\frac23(1+\\sqrt2)^{3/2}-2(1+\\sqrt2)^{-1/2}+\\frac43",
+      "steps": [
+        "I=2\\int_0^1\\sqrt{u+\\sqrt{u^2+1}}\\,du",
+        "I=2\\int_0^{\\ln(1+\\sqrt2)}e^{t/2}\\cosh t\\,dt",
+        "I=\\left[\\frac23e^{3t/2}-2e^{-t/2}\\right]_0^{\\ln(1+\\sqrt2)}"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-24",
+      "review": "easy",
+      "section": "integration-sub",
+      "text": "\\int_0^1\\sqrt{\\frac{\\sqrt x+\\sqrt{x+1}}x}\\,dx"
+    },
+    {
+      "number": 25,
+      "title": "Cancel a radical factor",
+      "latex": "\\int_2^6\\frac{x}{\\sqrt{x+\\frac14}\\left(\\sqrt{x+\\frac14}-\\frac12\\right)}\\,dx",
+      "hints": [
+        "Set \\(u=\\sqrt{x+1/4}\\) and factor \\(x=u^2-1/4\\)."
+      ],
+      "answerLatex": "5",
+      "steps": [
+        "I=\\int_{3/2}^{5/2}(2u+1)\\,du=[u^2+u]_{3/2}^{5/2}=5"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "added",
+      "id": "integral-easy-25",
+      "review": "easy",
+      "section": "integration-sub",
+      "text": "\\int_2^6\\frac{x}{\\sqrt{x+\\frac14}\\left(\\sqrt{x+\\frac14}-\\frac12\\right)}\\,dx"
+    },
+    {
+      "number": 26,
+      "title": "A tangent half-angle",
+      "latex": "\\int_1^{e^{\\pi/3}}\\frac{\\tan(\\ln\\sqrt x)}{x\\cos(\\ln x)(1-\\tan^2(\\ln\\sqrt x))}\\,dx",
+      "hints": [
+        "Set \\(u=\\ln x\\), so \\(du=dx/x\\).",
+        "Use \\(\\tan u=2\\tan(u/2)/(1-\\tan^2(u/2))\\)."
+      ],
+      "answerLatex": "\\frac12",
+      "steps": [
+        "I=\\frac12\\int_0^{\\pi/3}\\sec u\\tan u\\,du=\\frac12[\\sec u]_0^{\\pi/3}"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-26",
+      "review": "easy",
+      "section": "integration-sub",
+      "text": "\\int_1^{e^{\\pi/3}}\\frac{\\tan(\\ln\\sqrt x)}{x\\cos(\\ln x)(1-\\tan^2(\\ln\\sqrt x))}\\,dx"
+    },
+    {
+      "number": 27,
+      "title": "Rationalize a square root",
+      "latex": "\\int_0^{\\pi/2}\\sqrt{\\frac{1-\\sin x}{1+\\sin x}}\\,dx",
+      "hints": [
+        "On this interval, the root equals \\(\\cos x/(1+\\sin x)\\)."
+      ],
+      "answerLatex": "\\ln2",
+      "steps": [
+        "I=\\int_0^{\\pi/2}\\frac{\\cos x}{1+\\sin x}\\,dx=[\\ln(1+\\sin x)]_0^{\\pi/2}"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "added",
+      "id": "integral-easy-27",
+      "review": "easy",
+      "section": "integration-trig",
+      "text": "\\int_0^{\\pi/2}\\sqrt{\\frac{1-\\sin x}{1+\\sin x}}\\,dx"
+    },
+    {
+      "number": 28,
+      "title": "A half-angle root",
+      "latex": "\\int_0^1\\sqrt{\\frac{1-x}{1+x}}\\,dx",
+      "hints": [
+        "Set \\(x=\\cos\\theta\\) and use the half-angle identity."
+      ],
+      "answerLatex": "\\frac\\pi2-1",
+      "steps": [
+        "I=\\int_0^{\\pi/2}\\tan(\\theta/2)\\sin\\theta\\,d\\theta=\\int_0^{\\pi/2}(1-\\cos\\theta)\\,d\\theta"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "added",
+      "id": "integral-easy-28",
+      "review": "easy",
+      "section": "integration-trig",
+      "text": "\\int_0^1\\sqrt{\\frac{1-x}{1+x}}\\,dx"
+    },
+    {
+      "number": 29,
+      "title": "Integration by parts",
+      "latex": "\\int_0^\\infty\\frac{x\\arctan x}{(x^2+1)^2}\\,dx",
+      "hints": [
+        "Use \\(u=\\arctan x\\) and \\(dv=x\\,dx/(1+x^2)^2\\)."
+      ],
+      "answerLatex": "\\frac\\pi8",
+      "steps": [
+        "I=\\frac12\\int_0^\\infty\\frac{dx}{(1+x^2)^2}=\\frac\\pi8"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "added",
+      "id": "integral-easy-29",
+      "review": "easy",
+      "section": "integration-parts",
+      "text": "\\int_0^\\infty\\frac{x\\arctan x}{(x^2+1)^2}\\,dx"
+    },
+    {
+      "number": 30,
+      "title": "Double-angle substitution",
+      "latex": "\\int_0^{\\pi/4}\\frac{\\sin^2(2x)\\sin(4x)}{4-(\\cos^4x+\\sin^4x)^2}\\,dx",
+      "hints": [
+        "Use \\(u=\\sin^2(2x)\\)."
+      ],
+      "answerLatex": "\\ln\\frac{12}{5\\sqrt5}",
+      "steps": [
+        "\\cos^4x+\\sin^4x=1-\\frac u2,\\qquad du=2\\sin4x\\,dx",
+        "I=\\int_0^1\\frac{2u}{12+4u-u^2}\\,du",
+        "I=\\left[-\\ln(12+4u-u^2)+\\frac12\\ln\\frac{u+2}{6-u}\\right]_0^1"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-30",
+      "review": "easy",
+      "section": "integration-trig",
+      "text": "\\int_0^{\\pi/4}\\frac{\\sin^2(2x)\\sin(4x)}{4-(\\cos^4x+\\sin^4x)^2}\\,dx"
+    },
+    {
+      "number": 31,
+      "title": "A logarithm with a radical",
+      "latex": "\\int_{1/\\sqrt2}^1\\frac{\\ln x}{x^2\\sqrt{1-x^2}}\\,dx",
+      "hints": [
+        "Use \\(x=\\sin\\theta\\), \\(dx=\\cos\\theta\\,d\\theta\\)."
+      ],
+      "answerLatex": "1-\\frac\\pi4-\\frac12\\ln2",
+      "steps": [
+        "I=\\int_{\\pi/4}^{\\pi/2}\\ln(\\sin\\theta)\\csc^2\\theta\\,d\\theta",
+        "I=[-\\ln(\\sin\\theta)\\cot\\theta]_{\\pi/4}^{\\pi/2}+\\int_{\\pi/4}^{\\pi/2}\\cot^2\\theta\\,d\\theta"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-31",
+      "review": "easy",
+      "section": "integration-parts",
+      "text": "\\int_{1/\\sqrt2}^1\\frac{\\ln x}{x^2\\sqrt{1-x^2}}\\,dx"
+    },
+    {
+      "number": 32,
+      "title": "Combine trig fractions",
+      "latex": "\\int_0^{\\pi/4}\\left(\\frac1{(1+\\cos2x)(1+\\sin x)}+\\frac1{2(\\cos2x+\\sin^2x)(1-\\sin x)}\\right)\\,dx",
+      "hints": [
+        "Use double-angle and Pythagorean identities to rewrite denominators in terms of cosine squared.",
+        "Combine the fractions and use a tangent substitution to evaluate the polynomial integral."
+      ],
+      "answerLatex": "\\frac43",
+      "steps": [
+        "1+\\cos2x=2\\cos^2x,\\qquad\\cos2x+\\sin^2x=\\cos^2x",
+        "I=\\int_0^{\\pi/4}\\sec^4x\\,dx=[\\tan x+\\tfrac13\\tan^3x]_0^{\\pi/4}"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-32",
+      "review": "easy",
+      "section": "integration-trig",
+      "text": "\\int_0^{\\pi/4}\\left(\\frac1{(1+\\cos2x)(1+\\sin x)}+\\frac1{2(\\cos2x+\\sin^2x)(1-\\sin x)}\\right)\\,dx"
+    },
+    {
+      "number": 33,
+      "title": "A logarithmic oscillation",
+      "latex": "\\int_0^{e^\\pi}\\sin(\\ln(x^2))\\,dx",
+      "hints": [
+        "Set \\(u=\\ln x\\), then integrate \\(e^u\\sin2u\\)."
+      ],
+      "answerLatex": "-\\frac{2e^\\pi}{5}",
+      "steps": [
+        "\\int\\sin(2\\ln x)\\,dx=\\frac x5\\bigl(\\sin(2\\ln x)-2\\cos(2\\ln x)\\bigr)",
+        "\\lim_{x\\to0^+}x\\bigl(\\sin(2\\ln x)-2\\cos(2\\ln x)\\bigr)=0"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "added",
+      "id": "integral-easy-33",
+      "review": "easy",
+      "section": "integration-sub",
+      "text": "\\int_0^{e^\\pi}\\sin(\\ln(x^2))\\,dx"
+    },
+    {
+      "number": 34,
+      "title": "A periodic rational trig integral",
+      "latex": "\\int_{-\\pi}^{\\pi}\\frac{dx}{1+\\cos^2x}",
+      "hints": [
+        "Multiply by \\(\\sec^2x/\\sec^2x\\) to obtain \\(\\sec^2x/(\\tan^2x+2)\\). Split at the tangent poles before substituting."
+      ],
+      "answerLatex": "\\sqrt2\\,\\pi",
+      "steps": [
+        "I=4\\int_0^{\\pi/2}\\frac{dx}{1+\\cos^2x}=4\\int_0^\\infty\\frac{dt}{t^2+2}=\\sqrt2\\pi"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-34",
+      "review": "easy",
+      "section": "integration-trig",
+      "text": "\\int_{-\\pi}^{\\pi}\\frac{dx}{1+\\cos^2x}"
+    },
+    {
+      "number": 35,
+      "title": "Difference of fourth powers",
+      "latex": "\\int_{\\pi/6}^{\\pi/4}\\frac{\\cos^4x-\\sin^4x}{2\\sin x\\cos x\\tan x}\\,dx",
+      "hints": [
+        "Use \\(\\cos^4x-\\sin^4x=\\cos2x\\) and simplify the denominator to \\(2\\sin^2x\\)."
+      ],
+      "answerLatex": "\\frac{\\sqrt3-1}{2}-\\frac\\pi{12}",
+      "steps": [
+        "I=\\int_{\\pi/6}^{\\pi/4}(\\tfrac12\\csc^2x-1)\\,dx=[-\\tfrac12\\cot x-x]_{\\pi/6}^{\\pi/4}"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "added",
+      "id": "integral-easy-35",
+      "review": "easy",
+      "section": "integration-trig",
+      "text": "\\int_{\\pi/6}^{\\pi/4}\\frac{\\cos^4x-\\sin^4x}{2\\sin x\\cos x\\tan x}\\,dx"
+    },
+    {
+      "number": 36,
+      "title": "Arctangent reciprocal symmetry",
+      "latex": "\\int_{\\sqrt2-1}^{\\sqrt2+1}\\frac{\\arctan(x^5)}x\\,dx",
+      "hints": [
+        "Use a reciprocal substitution to obtain a complementary form.",
+        "Use the identity for the sum of inverse tangents of reciprocal arguments."
+      ],
+      "answerLatex": "\\frac\\pi2\\ln(1+\\sqrt2)",
+      "steps": [
+        "\\arctan(x^5)+\\arctan(x^{-5})=\\frac\\pi2",
+        "2I=\\frac\\pi2\\ln\\frac{\\sqrt2+1}{\\sqrt2-1}=\\pi\\ln(1+\\sqrt2)"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-36",
+      "review": "easy",
+      "section": "integration-sym",
+      "text": "\\int_{\\sqrt2-1}^{\\sqrt2+1}\\frac{\\arctan(x^5)}x\\,dx"
+    },
+    {
+      "number": 37,
+      "title": "A hidden Gaussian",
+      "latex": "\\int_0^\\infty\\left(\\frac1{f(x)}\\right)^{\\ln f(x)}(f(x)-x)^{-1}\\,dx",
+      "hints": [
+        "Apply a hyperbolic sine substitution to simplify the radical and composite function.",
+        "Express the functions in exponential form to transform the integral into a Gaussian."
+      ],
+      "answerLatex": "\\frac{\\sqrt\\pi}{2}",
+      "steps": [
+        "x=\\sinh t,\\quad f(x)=e^t,\\quad f(x)-x=\\cosh t",
+        "I=\\int_0^\\infty e^{-t^2}\\,dt=\\frac{\\sqrt\\pi}{2}"
+      ],
+      "note": "",
+      "intro": "Let \\(f(x)=x+\\sqrt{1+x^2}\\).",
+      "hintSource": "source",
+      "id": "integral-easy-37",
+      "review": "easy",
+      "section": "integration-special",
+      "text": "\\int_0^\\infty\\left(\\frac1{f(x)}\\right)^{\\ln f(x)}(f(x)-x)^{-1}\\,dx"
+    },
+    {
+      "number": 38,
+      "title": "Inverse cosine substitution",
+      "latex": "\\int_{-1/2}^{1/2}\\pi\\arccos(\\sin\\pi x)\\cos\\pi x\\,dx",
+      "hints": [
+        "Substitute for the sine function to simplify the composition.",
+        "Use integration by parts on the resulting inverse cosine and evaluate the new boundaries."
+      ],
+      "answerLatex": "\\pi",
+      "steps": [
+        "u=\\sin\\pi x,\\qquad I=\\int_{-1}^1\\arccos u\\,du",
+        "\\arccos u+\\arccos(-u)=\\pi\\quad\\Longrightarrow\\quad I=\\pi"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-38",
+      "review": "easy",
+      "section": "integration-special",
+      "text": "\\int_{-1/2}^{1/2}\\pi\\arccos(\\sin\\pi x)\\cos\\pi x\\,dx"
+    },
+    {
+      "number": 39,
+      "title": "Reflection with a trig product",
+      "latex": "\\int_0^{\\pi/2}\\frac{\\cos x}{\\sec x+\\csc x}\\,dx",
+      "hints": [
+        "Replace the variable by the sum of the bounds minus the variable, then add the two integrals."
+      ],
+      "answerLatex": "\\frac14",
+      "steps": [
+        "I=\\int_0^{\\pi/2}\\frac{\\sin x\\cos^2x}{\\sin x+\\cos x}\\,dx",
+        "2I=\\int_0^{\\pi/2}\\sin x\\cos x\\,dx=\\frac12"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-easy-39",
+      "review": "easy",
+      "section": "integration-trig",
+      "text": "\\int_0^{\\pi/2}\\frac{\\cos x}{\\sec x+\\csc x}\\,dx"
+    },
+    {
+      "number": 1,
+      "title": "An irrational power",
+      "latex": "\\int_0^\\infty\\frac{dx}{(1+x^2)(1+x^\\pi)}",
+      "hints": [
+        "Apply a reciprocal substitution to exploit the symmetry over the infinite interval.",
+        "Add the original and transformed integrals to cancel the irrational power, then integrate the remaining rational function."
+      ],
+      "answerLatex": "\\frac\\pi4",
+      "steps": [
+        "x=1/t\\quad\\Longrightarrow\\quad 2I=\\int_0^\\infty\\frac{dx}{1+x^2}=\\frac\\pi2"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-1",
+      "review": "medium",
+      "section": "integration-sym",
+      "text": "\\int_0^\\infty\\frac{dx}{(1+x^2)(1+x^\\pi)}"
+    },
+    {
+      "number": 2,
+      "title": "Odd and even parts",
+      "latex": "\\int_{-\\pi/6}^{\\pi/6}\\frac{\\pi+4x^{11}}{1-\\sin(|x|+\\pi/6)}\\,dx",
+      "hints": [
+        "Split the integral to handle the constant and odd power separately.",
+        "The odd part integrates to zero on symmetric limits. Use even symmetry and a linear substitution for the remaining part."
+      ],
+      "answerLatex": "4\\pi",
+      "steps": [
+        "I=2\\pi\\int_{\\pi/6}^{\\pi/3}\\frac{du}{1-\\sin u}",
+        "I=2\\pi[\\tan u+\\sec u]_{\\pi/6}^{\\pi/3}=4\\pi"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-2",
+      "review": "medium",
+      "section": "integration-sym",
+      "text": "\\int_{-\\pi/6}^{\\pi/6}\\frac{\\pi+4x^{11}}{1-\\sin(|x|+\\pi/6)}\\,dx"
+    },
+    {
+      "number": 3,
+      "title": "Factor a trig denominator",
+      "latex": "\\int_{-\\pi/4}^{\\pi/4}\\frac{dx}{(\\sin^4x+\\cos^4x\\cos^4x)+(\\cos^4x+\\cos^4x\\sin^4x)}",
+      "hints": [
+        "Group the terms to factor the denominator into a product of trigonometric expressions.",
+        "Use symmetry and a tangent substitution to obtain a rational integral."
+      ],
+      "answerLatex": "I\\approx1.390423186649",
+      "steps": [
+        "D=(\\sin^4x+\\cos^4x)(1+\\cos^4x)",
+        "t=\\tan x,\\qquad I=\\int_{-1}^1\\frac{(1+t^2)^3}{(t^4+1)((1+t^2)^2+1)}\\,dt"
+      ],
+      "note": "The displayed answer is a numerical evaluation; the transformed rational integral gives an exact equivalent form.",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-3",
+      "review": "medium",
+      "section": "integration-trig",
+      "text": "\\int_{-\\pi/4}^{\\pi/4}\\frac{dx}{(\\sin^4x+\\cos^4x\\cos^4x)+(\\cos^4x+\\cos^4x\\sin^4x)}"
+    },
+    {
+      "number": 4,
+      "title": "Sine of an arcsecant",
+      "latex": "\\int_{5/4}^{5/3}\\sin(\\operatorname{arcsec}x)\\,dx",
+      "hints": [
+        "Express the sine of arcsecant in algebraic form using trigonometric identities.",
+        "Use a hyperbolic cosine substitution to transform the algebraic integrand."
+      ],
+      "answerLatex": "\\frac7{12}+\\arccos\\frac45-\\arccos\\frac35",
+      "steps": [
+        "\\sin(\\operatorname{arcsec}x)=\\frac{\\sqrt{x^2-1}}x",
+        "I=[\\sqrt{x^2-1}-\\operatorname{arcsec}x]_{5/4}^{5/3}"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-4",
+      "review": "medium",
+      "section": "integration-trig",
+      "text": "\\int_{5/4}^{5/3}\\sin(\\operatorname{arcsec}x)\\,dx"
+    },
+    {
+      "number": 5,
+      "title": "Iterated polynomial symmetry",
+      "latex": "\\int_0^{16}P^{129}(x)\\,dx",
+      "hints": [
+        "Identify the point symmetry of the cubic by comparing its coefficients with the upper bound.",
+        "Use induction to show that the symmetry survives iteration, then reflect the integral."
+      ],
+      "answerLatex": "128",
+      "steps": [
+        "P(16-x)=16-P(x)\\quad\\Longrightarrow\\quad P^{129}(16-x)=16-P^{129}(x)",
+        "2I=\\int_0^{16}16\\,dx=256"
+      ],
+      "note": "",
+      "intro": "\\(P(x)=2x^3-48x^2+256x+8\\). Here \\(P^1=P\\) and \\(P^n(x)=P(P^{n-1}(x))\\); the superscript denotes iteration, not a power.",
+      "hintSource": "source",
+      "id": "integral-medium-5",
+      "review": "medium",
+      "section": "integration-sym",
+      "text": "\\int_0^{16}P^{129}(x)\\,dx"
+    },
+    {
+      "number": 6,
+      "title": "A log-sine integral with a pole",
+      "latex": "\\int_0^{\\pi/2}\\left(\\frac{\\int_0^x\\ln(2\\sin t)\\,dt}{\\int_0^{2x}\\ln(2\\sin t)\\,dt}+\\frac3{(4x-\\pi)\\ln2}\\right)\\,dx",
+      "hints": [
+        "Define a function for the inner integral and identify its functional equations and symmetries.",
+        "Reflect the entire expression and use the functional identities to simplify the sum."
+      ],
+      "answerLatex": "\\text{Improper integral diverges.}\\qquad\\operatorname{PV}I=\\frac\\pi8",
+      "steps": [
+        "F(x)=\\int_0^x\\ln(2\\sin t)\\,dt,\\quad F(\\pi/4)=-G/2,\\quad F(\\pi/2)=0",
+        "\\text{Near }x=\\pi/4:\\quad\\frac{F(x)}{F(2x)}+\\frac3{(4x-\\pi)\\ln2}\\sim\\frac{3-G}{4\\ln2}\\frac1{x-\\pi/4}",
+        "F(2x)=2(F(x)-F(\\pi/2-x))",
+        "h(x)+h(\\pi/2-x)=\\frac12\\quad\\Longrightarrow\\quad\\operatorname{PV}I=\\frac\\pi8"
+      ],
+      "note": "G is Catalan’s constant (approximately 0.9159655942). The pole does not cancel, so the ordinary improper integral has no finite answer. The principal value uses symmetric exclusions around the pole.",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-6",
+      "review": "medium",
+      "section": "integration-sym",
+      "text": "\\int_0^{\\pi/2}\\left(\\frac{\\int_0^x\\ln(2\\sin t)\\,dt}{\\int_0^{2x}\\ln(2\\sin t)\\,dt}+\\frac3{(4x-\\pi)\\ln2}\\right)\\,dx"
+    },
+    {
+      "number": 7,
+      "title": "Rotational symmetry",
+      "latex": "\\int_{-3/2}^{7/2}\\frac{\\sin(\\pi x/2)}{1+e^{x^3-3x^2+2x}}\\,dx",
+      "hints": [
+        "Identify the rotational symmetry of the cubic exponent about the midpoint of the interval.",
+        "Reflect and combine the original and transformed expressions."
+      ],
+      "answerLatex": "-\\frac{\\sqrt2}{\\pi}",
+      "steps": [
+        "p(2-x)=-p(x),\\quad\\sin(\\pi(2-x)/2)=\\sin(\\pi x/2)",
+        "2I=\\int_{-3/2}^{7/2}\\sin(\\pi x/2)\\,dx=-\\frac{2\\sqrt2}{\\pi}"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-7",
+      "review": "medium",
+      "section": "integration-sym",
+      "text": "\\int_{-3/2}^{7/2}\\frac{\\sin(\\pi x/2)}{1+e^{x^3-3x^2+2x}}\\,dx"
+    },
+    {
+      "number": 8,
+      "title": "Differentiate the exponent",
+      "latex": "\\alpha=\\int_0^1e^{9x+3\\arctan x}\\frac{12+9x^2}{1+x^2}\\,dx",
+      "hints": [
+        "Choose a substitution for the exponent that simplifies the entire integrand.",
+        "Differentiate the exponent and match its derivative with the remaining factor."
+      ],
+      "answerLatex": "9",
+      "steps": [
+        "u=9x+3\\arctan x,\\quad u\\prime=\\frac{12+9x^2}{1+x^2}",
+        "\\alpha=e^{9+3\\pi/4}-1",
+        "\\ln|1+\\alpha|-\\frac{3\\pi}{4}=9"
+      ],
+      "note": "",
+      "intro": "Use principal values of \\(\\arctan x\\). Find \\(\\ln|1+\\alpha|-3\\pi/4\\).",
+      "hintSource": "source",
+      "id": "integral-medium-8",
+      "review": "medium",
+      "section": "integration-sub",
+      "text": "\\alpha=\\int_0^1e^{9x+3\\arctan x}\\frac{12+9x^2}{1+x^2}\\,dx"
+    },
+    {
+      "number": 9,
+      "title": "An exponential rational integral",
+      "latex": "\\int_0^\\infty\\frac{(1-e^x)(1-e^{-x})}{(1+e^x)(e^x+e^{-x})(e^{-x}+1)}\\,dx",
+      "hints": [
+        "Use an exponential substitution to turn the improper integral into one over a finite interval.",
+        "Use a Möbius transformation to simplify the rational function into standard inverse-trigonometric and logarithmic forms."
+      ],
+      "answerLatex": "\\frac\\pi4-1",
+      "steps": [
+        "t=e^{-x},\\quad I=-\\int_0^1\\frac{(1-t)^2}{(1+t)^2(1+t^2)}\\,dt",
+        "-\\frac{(1-t)^2}{(1+t)^2(1+t^2)}=\\frac1{1+t^2}-\\frac2{(1+t)^2}",
+        "I=[\\arctan t+\\tfrac2{1+t}]_0^1=\\frac\\pi4-1"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-9",
+      "review": "medium",
+      "section": "integration-sub",
+      "text": "\\int_0^\\infty\\frac{(1-e^x)(1-e^{-x})}{(1+e^x)(e^x+e^{-x})(e^{-x}+1)}\\,dx"
+    },
+    {
+      "number": 10,
+      "title": "A trig rational function",
+      "latex": "\\int_{\\pi/4}^{3\\pi/4}\\frac{dx}{\\sin^2x+\\tan^2x}",
+      "hints": [
+        "Apply the Weierstrass substitution to transform the integrand into a rational function.",
+        "Set the variable to tangent of half the angle and simplify before polynomial division."
+      ],
+      "answerLatex": "1-\\frac{\\arctan\\sqrt2}{\\sqrt2}",
+      "steps": [
+        "t=\\cot x,\\quad I=\\int_{-1}^1\\frac{t^2}{1+2t^2}\\,dt",
+        "I=\\left[\\frac t2-\\frac{\\arctan(\\sqrt2t)}{2\\sqrt2}\\right]_{-1}^1"
+      ],
+      "note": "At x = π/2 the original expression is undefined; its integrand has a removable limiting value of 0.",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-10",
+      "review": "medium",
+      "section": "integration-trig",
+      "text": "\\int_{\\pi/4}^{3\\pi/4}\\frac{dx}{\\sin^2x+\\tan^2x}"
+    },
+    {
+      "number": 11,
+      "title": "A transcendental exponent",
+      "latex": "\\int_{1/\\sqrt3}^{\\sqrt3}\\frac{dx}{(1+x^2)\\left(1+(\\sqrt3+1)^{\\ln^3(\\sec(\\ln x)+\\tan(\\ln x))}\\right)}",
+      "hints": [
+        "Use a reciprocal substitution and observe how the exponent transforms.",
+        "Add the original and transformed integrals to obtain a standard rational function."
+      ],
+      "answerLatex": "\\frac\\pi{12}",
+      "steps": [
+        "\\ln(\\sec(-u)+\\tan(-u))=-\\ln(\\sec u+\\tan u)",
+        "2I=\\int_{1/\\sqrt3}^{\\sqrt3}\\frac{dx}{1+x^2}=\\frac\\pi6"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-11",
+      "review": "medium",
+      "section": "integration-sym",
+      "text": "\\int_{1/\\sqrt3}^{\\sqrt3}\\frac{dx}{(1+x^2)\\left(1+(\\sqrt3+1)^{\\ln^3(\\sec(\\ln x)+\\tan(\\ln x))}\\right)}"
+    },
+    {
+      "number": 12,
+      "title": "A double-angle secant root",
+      "latex": "\\int_0^{\\pi/4}\\sec x\\sqrt{\\sec(2x)}\\,dx",
+      "hints": [
+        "Express double-angle secant using cosine and simplify the radicand.",
+        "Use a trigonometric substitution to transform the expression into an inverse-sine form."
+      ],
+      "answerLatex": "\\frac\\pi2",
+      "steps": [
+        "t=\\tan x,\\quad\\sec x\\sqrt{\\sec2x}\\,dx=\\frac{dt}{\\sqrt{1-t^2}}",
+        "I=\\int_0^1\\frac{dt}{\\sqrt{1-t^2}}=\\frac\\pi2"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-12",
+      "review": "medium",
+      "section": "integration-trig",
+      "text": "\\int_0^{\\pi/4}\\sec x\\sqrt{\\sec(2x)}\\,dx"
+    },
+    {
+      "number": 13,
+      "title": "Lambert W substitution",
+      "latex": "\\int_0^\\infty\\frac{W(x)}x e^{-W(x)^2}\\,dx",
+      "hints": [
+        "Substitute for the Lambert W function to reach a familiar form.",
+        "Use the relation between x and W to calculate the differential, then split into two standard integrals."
+      ],
+      "answerLatex": "\\frac{1+\\sqrt\\pi}{2}",
+      "steps": [
+        "u=W(x),\\quad x=ue^u,\\quad\\frac{W(x)}x\\,dx=(u+1)\\,du",
+        "I=\\int_0^\\infty(u+1)e^{-u^2}\\,du=\\frac12+\\frac{\\sqrt\\pi}{2}"
+      ],
+      "note": "W denotes the real principal Lambert W branch on x ≥ 0.",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-13",
+      "review": "medium",
+      "section": "integration-special",
+      "text": "\\int_0^\\infty\\frac{W(x)}x e^{-W(x)^2}\\,dx"
+    },
+    {
+      "number": 14,
+      "title": "An infinite nested radical",
+      "latex": "\\int_2^6\\frac{dx}{2\\sqrt{x+\\sqrt{x+\\sqrt{x+\\cdots}}}-1}",
+      "hints": [
+        "Define the nested radical as a variable and write its recursive equation.",
+        "Solve the resulting quadratic and substitute back to simplify."
+      ],
+      "answerLatex": "1",
+      "steps": [
+        "R=\\sqrt{x+R},\\quad R=\\frac{1+\\sqrt{1+4x}}2",
+        "I=\\int_2^6\\frac{dx}{\\sqrt{1+4x}}=\\left[\\frac12\\sqrt{1+4x}\\right]_2^6=1"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-14",
+      "review": "medium",
+      "section": "integration-sub",
+      "text": "\\int_2^6\\frac{dx}{2\\sqrt{x+\\sqrt{x+\\sqrt{x+\\cdots}}}-1}"
+    },
+    {
+      "number": 15,
+      "title": "Reflection with an absolute value",
+      "latex": "\\int_{-1}^1\\frac{(1+\\sqrt{|x|-x})e^x+\\sqrt{|x|-x}\\,e^{-x}}{e^x+e^{-x}}\\,dx",
+      "hints": [
+        "Split the interval and use symmetry-based substitution.",
+        "Combine the expressions over the positive interval and evaluate the remaining square root."
+      ],
+      "answerLatex": "1+\\frac{2\\sqrt2}{3}",
+      "steps": [
+        "h(x)+h(-x)=1+\\sqrt{2x}\\quad(x\\ge0)",
+        "I=\\int_0^1(1+\\sqrt{2x})\\,dx=1+\\frac{2\\sqrt2}{3}"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-15",
+      "review": "medium",
+      "section": "integration-sym",
+      "text": "\\int_{-1}^1\\frac{(1+\\sqrt{|x|-x})e^x+\\sqrt{|x|-x}\\,e^{-x}}{e^x+e^{-x}}\\,dx"
+    },
+    {
+      "number": 16,
+      "title": "Gaussian moments",
+      "latex": "\\int_{-\\infty}^{\\infty}(x+1)^2e^{-\\pi x^2}\\,dx-\\left(\\int_{-\\infty}^{\\infty}(x+1)e^{-\\pi x^2}\\,dx\\right)^2",
+      "hints": [
+        "Recognize the difference between a second moment and the square of a first moment.",
+        "Relate the integral to a normalized Gaussian density to identify its variance."
+      ],
+      "answerLatex": "\\frac1{2\\pi}",
+      "steps": [
+        "\\int_{\\mathbb R}e^{-\\pi x^2}dx=1,\\quad\\int_{\\mathbb R}xe^{-\\pi x^2}dx=0,\\quad\\int_{\\mathbb R}x^2e^{-\\pi x^2}dx=\\frac1{2\\pi}",
+        "I=1+\\frac1{2\\pi}-1=\\frac1{2\\pi}"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-16",
+      "review": "medium",
+      "section": "integration-special",
+      "text": "\\int_{-\\infty}^{\\infty}(x+1)^2e^{-\\pi x^2}\\,dx-\\left(\\int_{-\\infty}^{\\infty}(x+1)e^{-\\pi x^2}\\,dx\\right)^2"
+    },
+    {
+      "number": 17,
+      "title": "A perfect-square radical",
+      "latex": "\\int_0^1\\sqrt{\\frac{2+2\\sqrt{1-x^4}}{1-x^4}}\\,dx",
+      "hints": [
+        "Factor the expression inside the radical by recognizing a perfect-square trinomial.",
+        "Split into simpler fractions and integrate using inverse-trigonometric and logarithmic forms."
+      ],
+      "answerLatex": "\\frac\\pi2+\\ln(1+\\sqrt2)",
+      "steps": [
+        "2+2\\sqrt{1-x^4}=(\\sqrt{1+x^2}+\\sqrt{1-x^2})^2",
+        "I=\\int_0^1\\left(\\frac1{\\sqrt{1-x^2}}+\\frac1{\\sqrt{1+x^2}}\\right)\\,dx"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-17",
+      "review": "medium",
+      "section": "integration-trig",
+      "text": "\\int_0^1\\sqrt{\\frac{2+2\\sqrt{1-x^4}}{1-x^4}}\\,dx"
+    },
+    {
+      "number": 18,
+      "title": "Reflection and a cube of sine",
+      "latex": "\\int_0^\\pi x\\sin^3x\\,dx",
+      "hints": [
+        "Reflect the integral to eliminate the linear factor.",
+        "Reduce the cubic sine to a product and use a cosine substitution."
+      ],
+      "answerLatex": "\\frac{2\\pi}{3}",
+      "steps": [
+        "2I=\\pi\\int_0^\\pi\\sin^3x\\,dx=\\frac{4\\pi}{3}"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-18",
+      "review": "medium",
+      "section": "integration-sym",
+      "text": "\\int_0^\\pi x\\sin^3x\\,dx"
+    },
+    {
+      "number": 19,
+      "title": "An inverse hyperbolic tangent",
+      "latex": "\\int_{-\\infty}^{\\infty}\\operatorname{arctanh}\\left(\\frac1{1+x^2}\\right)\\,dx",
+      "hints": [
+        "Use \\(\\operatorname{arctanh}u=\\frac12\\ln((1+u)/(1-u))\\), then exploit even symmetry."
+      ],
+      "answerLatex": "\\pi\\sqrt2",
+      "steps": [
+        "I=\\int_0^\\infty\\ln\\left(1+\\frac2{x^2}\\right)\\,dx",
+        "\\int_0^\\infty\\ln(1+a^2/x^2)\\,dx=\\pi a\\quad(a>0)"
+      ],
+      "note": "The logarithmic singularity at x = 0 is integrable.",
+      "intro": "",
+      "hintSource": "added",
+      "id": "integral-medium-19",
+      "review": "medium",
+      "section": "integration-special",
+      "text": "\\int_{-\\infty}^{\\infty}\\operatorname{arctanh}\\left(\\frac1{1+x^2}\\right)\\,dx"
+    },
+    {
+      "number": 20,
+      "title": "A sum of sixth powers",
+      "latex": "\\int_0^{\\pi/3}\\frac{dx}{\\sin^6x+\\cos^6x}",
+      "hints": [
+        "Factor using the sum-of-cubes identity and the Pythagorean identity.",
+        "Rewrite in terms of double angles and use a tangent substitution."
+      ],
+      "answerLatex": "\\pi-\\arctan\\frac{\\sqrt3}{2}",
+      "steps": [
+        "\\sin^6x+\\cos^6x=1-\\frac34\\sin^2(2x)",
+        "u=2x,\\quad I=\\frac12\\int_0^{2\\pi/3}\\frac{du}{1-\\frac34\\sin^2u}",
+        "I=\\pi-\\arctan(\\sqrt3/2)"
+      ],
+      "note": "When using tangent, split at u = π/2 so the arctangent branch is handled correctly.",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-20",
+      "review": "medium",
+      "section": "integration-trig",
+      "text": "\\int_0^{\\pi/3}\\frac{dx}{\\sin^6x+\\cos^6x}"
+    },
+    {
+      "number": 21,
+      "title": "A derivative involving a logarithm",
+      "latex": "\\int_1^e\\frac{1-2\\ln x}{2x^2\\sqrt{\\ln x}}\\,dx",
+      "hints": [
+        "Split into fractions and look for a product suggesting integration by parts.",
+        "Substitute for the square root of the logarithm and notice that remaining terms can cancel."
+      ],
+      "answerLatex": "\\frac1e",
+      "steps": [
+        "\\frac{d}{dx}\\left(\\frac{\\sqrt{\\ln x}}x\\right)=\\frac{1-2\\ln x}{2x^2\\sqrt{\\ln x}}",
+        "I=\\left[\\frac{\\sqrt{\\ln x}}x\\right]_1^e=\\frac1e"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-21",
+      "review": "medium",
+      "section": "integration-sub",
+      "text": "\\int_1^e\\frac{1-2\\ln x}{2x^2\\sqrt{\\ln x}}\\,dx"
+    },
+    {
+      "number": 22,
+      "title": "A sine-ratio recurrence",
+      "latex": "\\int_0^\\pi\\frac{\\sin(999x)}{\\sin x}\\,dx",
+      "hints": [
+        "Define an integral with an integer parameter and seek a recurrence.",
+        "Use the difference-of-sines identity to compare consecutive odd terms."
+      ],
+      "answerLatex": "\\pi",
+      "steps": [
+        "\\frac{\\sin(999x)}{\\sin x}=1+2\\sum_{k=1}^{499}\\cos(2kx)",
+        "I=\\pi+2\\sum_{k=1}^{499}\\int_0^\\pi\\cos(2kx)\\,dx=\\pi"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-22",
+      "review": "medium",
+      "section": "integration-trig",
+      "text": "\\int_0^\\pi\\frac{\\sin(999x)}{\\sin x}\\,dx"
+    },
+    {
+      "number": 23,
+      "title": "Arccosine symmetry",
+      "latex": "\\int_{\\arccos(1/6)}^{\\arccos(-1/6)}\\arccos(6\\cos x)\\,dx",
+      "hints": [
+        "Use the symmetry of arccosine and cosine about the interval midpoint.",
+        "Apply the identity for arccosine of a negative argument after a linear substitution."
+      ],
+      "answerLatex": "\\pi\\arcsin\\frac16",
+      "steps": [
+        "h(x)+h(\\pi-x)=\\pi",
+        "I=\\frac\\pi2\\left(\\arccos(-1/6)-\\arccos(1/6)\\right)=\\pi\\arcsin(1/6)"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-23",
+      "review": "medium",
+      "section": "integration-sym",
+      "text": "\\int_{\\arccos(1/6)}^{\\arccos(-1/6)}\\arccos(6\\cos x)\\,dx"
+    },
+    {
+      "number": 24,
+      "title": "Reciprocal arctangents",
+      "latex": "\\int_{1/2}^{2}\\frac{\\arctan x}x\\,dx",
+      "hints": [
+        "Use a reciprocal substitution to transform the limits and integrand.",
+        "Combine using the arctangent identity for a positive value and its reciprocal."
+      ],
+      "answerLatex": "\\frac\\pi2\\ln2",
+      "steps": [
+        "2I=\\int_{1/2}^2\\frac{\\arctan x+\\arctan(1/x)}x\\,dx=\\frac\\pi2\\ln4"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-24",
+      "review": "medium",
+      "section": "integration-sym",
+      "text": "\\int_{1/2}^{2}\\frac{\\arctan x}x\\,dx"
+    },
+    {
+      "number": 25,
+      "title": "An antisymmetric singular double integral",
+      "latex": "\\int_0^1\\int_0^1\\frac{\\sin(xy)}{y/x-x/y}\\,dx\\,dy",
+      "hints": [
+        "Simplify the denominator to identify the symmetry.",
+        "Swap the variables and use the square region’s symmetry."
+      ],
+      "answerLatex": "\\text{Ordinary integral undefined.}\\qquad\\operatorname{PV}I=0",
+      "steps": [
+        "h(x,y)=\\frac{xy\\sin(xy)}{y^2-x^2},\\qquad h(y,x)=-h(x,y)",
+        "\\text{For }0<y<1:\\quad h(x,y)\\sim-\\frac{y\\sin(y^2)}{2(x-y)}\\quad(x\\to y)",
+        "\\iint_{\\{|x-y|>\\varepsilon\\}\\cap[0,1]^2}h(x,y)\\,dx\\,dy=0"
+      ],
+      "note": "There is a non-integrable pole along x = y. Antisymmetry gives 0 only for a symmetric principal-value prescription, not for the ordinary iterated or double integral.",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-25",
+      "review": "medium",
+      "section": "integration-double",
+      "text": "\\int_0^1\\int_0^1\\frac{\\sin(xy)}{y/x-x/y}\\,dx\\,dy"
+    },
+    {
+      "number": 26,
+      "title": "Denominator and its derivative",
+      "latex": "\\int_{\\pi/2}^{\\pi}\\frac{3\\sin x+2\\cos x}{5\\sin x-4\\cos x}\\,dx",
+      "hints": [
+        "Write the numerator as a linear combination of the denominator and its derivative.",
+        "Split into a logarithmic term and a constant term."
+      ],
+      "answerLatex": "\\frac{7\\pi}{82}+\\frac{22}{41}\\ln\\frac45",
+      "steps": [
+        "D=5\\sin x-4\\cos x,\\quad N=\\frac7{41}D+\\frac{22}{41}D\\prime",
+        "I=\\left[\\frac7{41}x+\\frac{22}{41}\\ln D\\right]_{\\pi/2}^{\\pi}"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-26",
+      "review": "medium",
+      "section": "integration-sub",
+      "text": "\\int_{\\pi/2}^{\\pi}\\frac{3\\sin x+2\\cos x}{5\\sin x-4\\cos x}\\,dx"
+    },
+    {
+      "number": 27,
+      "title": "Change variables in a double integral",
+      "latex": "6\\int_0^\\infty\\int_0^\\infty\\frac{xy}{(x+y)^3}e^{-(x+y)}\\,dx\\,dy",
+      "hints": [
+        "Transform the infinite quadrant to a rectangular region by changing variables.",
+        "Use the sum and ratio of the variables, then compute the Jacobian."
+      ],
+      "answerLatex": "1",
+      "steps": [
+        "r=x+y,\\quad u=\\frac{x}{x+y},\\quad x=ru,\\quad y=r(1-u),\\quad|J|=r",
+        "I=6\\int_0^\\infty e^{-r}\\,dr\\int_0^1u(1-u)\\,du=1"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-27",
+      "review": "medium",
+      "section": "integration-double",
+      "text": "6\\int_0^\\infty\\int_0^\\infty\\frac{xy}{(x+y)^3}e^{-(x+y)}\\,dx\\,dy"
+    },
+    {
+      "number": 28,
+      "title": "Integration by parts and half-angle",
+      "latex": "\\int_0^{\\pi/2}\\frac{x\\cos x+6x\\sin x}{(5\\sin x-30\\cos x+31)^2}\\,dx",
+      "hints": [
+        "Recognize the factor of the numerator matching the denominator derivative, then integrate by parts.",
+        "Use the Weierstrass substitution for the remaining reciprocal trig expression."
+      ],
+      "answerLatex": "\\frac\\pi{72}",
+      "steps": [
+        "D=5\\sin x-30\\cos x+31,\\quad x\\cos x+6x\\sin x=\\frac x5D\\prime",
+        "I=\\left[-\\frac{x}{5D}\\right]_0^{\\pi/2}+\\frac15\\int_0^{\\pi/2}\\frac{dx}{D}",
+        "\\int_0^{\\pi/2}\\frac{dx}{D}=2\\int_0^1\\frac{dt}{61t^2+10t+1}=\\frac\\pi{12}",
+        "I=-\\frac\\pi{360}+\\frac\\pi{60}=\\frac\\pi{72}"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-28",
+      "review": "medium",
+      "section": "integration-sub",
+      "text": "\\int_0^{\\pi/2}\\frac{x\\cos x+6x\\sin x}{(5\\sin x-30\\cos x+31)^2}\\,dx"
+    },
+    {
+      "number": 29,
+      "title": "An infinite power tower",
+      "latex": "\\int_0^{1/e}(e^x)^{(e^x)^{(e^x)^{\\cdots}}}\\,dx",
+      "hints": [
+        "Let the infinite tower be \\(T\\). Its defining relation is \\(T=e^{xT}\\).",
+        "Solve for \\(x=\\ln T/T\\) and change variables from \\(x\\) to \\(T\\)."
+      ],
+      "answerLatex": "\\frac12",
+      "steps": [
+        "T=e^{xT},\\quad x=\\frac{\\ln T}{T},\\quad T:1\\longrightarrow e",
+        "I=\\int_1^e\\frac{1-\\ln T}{T}\\,dT=\\left[\\ln T-\\frac12(\\ln T)^2\\right]_1^e"
+      ],
+      "note": "The trailing dots are interpreted as an infinite power tower, converging to its smaller real fixed point on 0 ≤ x ≤ 1/e.",
+      "intro": "",
+      "hintSource": "added",
+      "id": "integral-medium-29",
+      "review": "medium",
+      "section": "integration-special",
+      "text": "\\int_0^{1/e}(e^x)^{(e^x)^{(e^x)^{\\cdots}}}\\,dx"
+    },
+    {
+      "number": 30,
+      "title": "Absolute value and parity",
+      "latex": "\\int_{-\\pi/3}^{\\pi/3}\\frac{\\sqrt3(1+\\pi x^3)}{2-\\cos(|x|+\\pi/3)}\\,dx",
+      "hints": [
+        "The denominator is even, so the \\(x^3\\) term contributes zero.",
+        "Shift the angle and use \\(t=\\tan(u/2)\\) on the remaining integral."
+      ],
+      "answerLatex": "4\\arctan\\frac12",
+      "steps": [
+        "I=2\\sqrt3\\int_{\\pi/3}^{2\\pi/3}\\frac{du}{2-\\cos u}",
+        "I=4[\\arctan(\\sqrt3\\tan(u/2))]_{\\pi/3}^{2\\pi/3}=4(\\arctan3-\\pi/4)"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "added",
+      "id": "integral-medium-30",
+      "review": "medium",
+      "section": "integration-sym",
+      "text": "\\int_{-\\pi/3}^{\\pi/3}\\frac{\\sqrt3(1+\\pi x^3)}{2-\\cos(|x|+\\pi/3)}\\,dx"
+    },
+    {
+      "number": 31,
+      "title": "Reflection and a squared sine",
+      "latex": "\\int_0^{\\pi/2}\\frac{x\\sin x\\cos x}{\\sin^4x+\\cos^4x}\\,dx",
+      "hints": [
+        "Reflect the integral to eliminate the linear factor.",
+        "Substitute for sine squared and complete the square in the denominator."
+      ],
+      "answerLatex": "\\frac{\\pi^2}{16}",
+      "steps": [
+        "I=\\frac\\pi4\\int_0^{\\pi/2}\\frac{\\sin x\\cos x}{\\sin^4x+\\cos^4x}\\,dx",
+        "u=\\sin^2x,\\quad I=\\frac\\pi8\\int_0^1\\frac{du}{u^2+(1-u)^2}=\\frac{\\pi^2}{16}"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-31",
+      "review": "medium",
+      "section": "integration-sym",
+      "text": "\\int_0^{\\pi/2}\\frac{x\\sin x\\cos x}{\\sin^4x+\\cos^4x}\\,dx"
+    },
+    {
+      "number": 32,
+      "title": "Four trig squares",
+      "latex": "\\int_0^{\\pi/2}\\frac{dx}{\\sin^2x+\\cos^2x+\\tan^2x+\\cot^2x}",
+      "hints": [
+        "Use double-angle identities; the source suggests \\(u=\\tfrac12\\sin^2(2x)\\). Split the interval if using that non-monotone substitution."
+      ],
+      "answerLatex": "\\frac\\pi{\\sqrt3}-\\frac\\pi2",
+      "steps": [
+        "\\frac1{1+\\tan^2x+\\cot^2x}=\\frac1{1-\\frac14\\sin^2(2x)}-1",
+        "I=\\int_0^{\\pi/2}\\frac{dx}{1-\\frac14\\sin^2(2x)}-\\frac\\pi2=\\frac\\pi{\\sqrt3}-\\frac\\pi2"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-32",
+      "review": "medium",
+      "section": "integration-trig",
+      "text": "\\int_0^{\\pi/2}\\frac{dx}{\\sin^2x+\\cos^2x+\\tan^2x+\\cot^2x}"
+    },
+    {
+      "number": 33,
+      "title": "Factor a cubic radical",
+      "latex": "\\int_1^\\infty\\frac{dx}{\\sqrt{4x^3-3x+1}}",
+      "hints": [
+        "Factor the cubic inside the root to simplify the denominator.",
+        "Substitute for the root term and use the standard reciprocal-quadratic integral."
+      ],
+      "answerLatex": "\\sqrt{\\frac23}\\ln(2+\\sqrt3)",
+      "steps": [
+        "4x^3-3x+1=(x+1)(2x-1)^2",
+        "u=\\sqrt{x+1},\\quad I=\\int_{\\sqrt2}^\\infty\\frac{du}{u^2-3/2}",
+        "I=\\frac1{\\sqrt6}\\ln\\frac{2+\\sqrt3}{2-\\sqrt3}=\\sqrt{\\frac23}\\ln(2+\\sqrt3)"
+      ],
+      "note": "",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-33",
+      "review": "medium",
+      "section": "integration-sub",
+      "text": "\\int_1^\\infty\\frac{dx}{\\sqrt{4x^3-3x+1}}"
+    },
+    {
+      "number": 34,
+      "title": "Exponential reflection and a sine kernel",
+      "latex": "\\int_{-\\infty}^{\\infty}\\frac{e^x\\sin x}{xe^x+x}\\,dx",
+      "hints": [
+        "Factor the denominator to separate the exponential part from the sine term.",
+        "Reflect the variable, then add the two expressions to eliminate the exponential."
+      ],
+      "answerLatex": "\\frac\\pi2",
+      "steps": [
+        "h(x)=\\frac{\\sin x}{x(1+e^{-x})},\\quad h(x)+h(-x)=\\frac{\\sin x}x",
+        "I=\\int_0^\\infty\\frac{\\sin x}x\\,dx=\\frac\\pi2"
+      ],
+      "note": "The point x = 0 is removable. The positive tail converges conditionally, not absolutely.",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-34",
+      "review": "medium",
+      "section": "integration-sym",
+      "text": "\\int_{-\\infty}^{\\infty}\\frac{e^x\\sin x}{xe^x+x}\\,dx"
+    },
+    {
+      "number": 35,
+      "title": "Two recursive radicals",
+      "latex": "\\int_0^1\\frac{\\sqrt{x-\\sqrt{x-\\sqrt{x-\\cdots}}}}{\\sqrt{x+\\sqrt{x+\\sqrt{x+\\cdots}}}}\\,dx",
+      "hints": [
+        "Express numerator and denominator using the recursive nature of the nested radicals.",
+        "Solve the quadratic equations, then use a root substitution for the resulting rational integral."
+      ],
+      "answerLatex": "2-\\sqrt5+\\ln\\frac{1+\\sqrt5}{2}\\quad\\text{(fixed-point interpretation)}",
+      "steps": [
+        "A^2=x-A,\\quad B^2=x+B,\\quad A=\\frac{\\sqrt{1+4x}-1}2,\\quad B=\\frac{\\sqrt{1+4x}+1}2",
+        "t=\\sqrt{1+4x},\\quad I=\\int_1^{\\sqrt5}\\frac{t(t-1)}{2(t+1)}\\,dt",
+        "I=\\left[\\frac{t^2}4-t+\\ln(t+1)\\right]_1^{\\sqrt5}"
+      ],
+      "note": "This value follows the recursive fixed-point convention intended by the hints. Literal finite truncations of the minus radical are not real for 0 < x < 1: already √(x − √x) is undefined over the reals. Under that literal interpretation the stated real integral is undefined.",
+      "intro": "",
+      "hintSource": "source",
+      "id": "integral-medium-35",
+      "review": "medium",
+      "section": "integration-special",
+      "text": "\\int_0^1\\frac{\\sqrt{x-\\sqrt{x-\\sqrt{x-\\cdots}}}}{\\sqrt{x+\\sqrt{x+\\sqrt{x+\\cdots}}}}\\,dx"
+    },
+    {
+      "id": "14.1.9",
+      "section": "14.1",
+      "title": "A contour map with a restricted domain",
+      "body": [
+        "Let \\(f(x,y)=\\ln(y-x^2)\\) on its natural domain. Find the domain and range. Write the level curves for \\(k=-1,0,1\\), including their vertices.",
+        "As \\(k\\) increases, which way do the curves move? At fixed \\(x\\), do equal increases in \\(k\\) produce equal vertical spacing? Find the vertical separations between these three curves."
+      ],
+      "text": "Let \\(f(x,y)=\\ln(y-x^2)\\) on its natural domain. Find the domain and range. Write the level curves for \\(k=-1,0,1\\), including their vertices. As \\(k\\) increases, which way do the curves move? At fixed \\(x\\), do equal increases in \\(k\\) produce equal vertical spacing? Find the vertical separations between these three curves.",
+      "answer": {
+        "blocks": [
+          "Domain: \\(y>x^2\\). Range: \\(\\mathbb R\\). Levels: \\(y=x^2+e^{-1}\\), \\(y=x^2+1\\), \\(y=x^2+e\\); vertices \\((0,e^{-1}),(0,1),(0,e)\\).",
+          "Upward; spacing increases. Separations: \\(1-e^{-1}\\) and \\(e-1\\)."
+        ],
+        "text": "Domain: \\(y>x^2\\). Range: \\(\\mathbb R\\). Levels: \\(y=x^2+e^{-1}\\), \\(y=x^2+1\\), \\(y=x^2+e\\); vertices \\((0,e^{-1}),(0,1),(0,e)\\). Upward; spacing increases. Separations: \\(1-e^{-1}\\) and \\(e-1\\)."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.1.10",
+      "section": "14.1",
+      "title": "Recover a surface from its level curves",
+      "body": [
+        "A function has level curve \\(y=(x-1)^2+2-3k\\) at height \\(k\\), for every real \\(k\\). Recover \\(f(x,y)\\) and identify its three-dimensional graph.",
+        "Find the level through \\((4,2)\\), its vertex, and the trace in the plane \\(x=1\\). Give the domain and range."
+      ],
+      "text": "A function has level curve \\(y=(x-1)^2+2-3k\\) at height \\(k\\), for every real \\(k\\). Recover \\(f(x,y)\\) and identify its three-dimensional graph. Find the level through \\((4,2)\\), its vertex, and the trace in the plane \\(x=1\\). Give the domain and range.",
+      "answer": {
+        "blocks": [
+          "\\(f(x,y)=\\big((x-1)^2+2-y\\big)/3\\). A parabolic cylinder with ruling direction \\(\\langle0,-3,1\\rangle\\). Domain: \\(\\mathbb R^2\\); range: \\(\\mathbb R\\).",
+          "Through \\((4,2)\\): \\(k=3\\), \\(y=(x-1)^2-7\\), vertex \\((1,-7)\\). Trace: \\(x=1\\), \\(z=(2-y)/3\\), a line."
+        ],
+        "text": "\\(f(x,y)=\\big((x-1)^2+2-y\\big)/3\\). A parabolic cylinder with ruling direction \\(\\langle0,-3,1\\rangle\\). Domain: \\(\\mathbb R^2\\); range: \\(\\mathbb R\\). Through \\((4,2)\\): \\(k=3\\), \\(y=(x-1)^2-7\\), vertex \\((1,-7)\\). Trace: \\(x=1\\), \\(z=(2-y)/3\\), a line."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.3.9",
+      "section": "14.3",
+      "title": "Second derivatives with an unknown parameter",
+      "body": [
+        "Let \\(f(x,y)=e^{ay}\\sin(2x)+b(x^2-y^2)\\), where \\(a,b\\) are real constants. Find all \\(a,b\\) for which \\(f_{xx}+f_{yy}=0\\) everywhere.",
+        "For those choices, find \\(f_{xy}(0,0)\\) and all possible values of it. Does the condition determine \\(b\\)?"
+      ],
+      "text": "Let \\(f(x,y)=e^{ay}\\sin(2x)+b(x^2-y^2)\\), where \\(a,b\\) are real constants. Find all \\(a,b\\) for which \\(f_{xx}+f_{yy}=0\\) everywhere. For those choices, find \\(f_{xy}(0,0)\\) and all possible values of it. Does the condition determine \\(b\\)?",
+      "answer": {
+        "blocks": [
+          "\\(a=\\pm2\\); \\(b\\) is arbitrary. \\(f_{xy}(0,0)=2a\\in\\{-4,4\\}\\). No."
+        ],
+        "text": "\\(a=\\pm2\\); \\(b\\) is arbitrary. \\(f_{xy}(0,0)=2a\\in\\{-4,4\\}\\). No."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.3.10",
+      "section": "14.3",
+      "title": "The dependent variable matters",
+      "body": [
+        "On \\(x^3+y^3+xy+z=0\\), consider \\(P=(1,-1,1)\\). First regard \\(x=x(y,z)\\). Find \\(x_y,x_z,x_{yy}\\) at \\(P\\), with \\(z\\) held fixed when differentiating in \\(y\\).",
+        "Now regard \\(y=y(x,z)\\). Find \\(y_x\\) at \\(P\\) and compare it with \\(x_y\\)."
+      ],
+      "text": "On \\(x^3+y^3+xy+z=0\\), consider \\(P=(1,-1,1)\\). First regard \\(x=x(y,z)\\). Find \\(x_y,x_z,x_{yy}\\) at \\(P\\), with \\(z\\) held fixed when differentiating in \\(y\\). Now regard \\(y=y(x,z)\\). Find \\(y_x\\) at \\(P\\) and compare it with \\(x_y\\).",
+      "answer": {
+        "blocks": [
+          "\\(x_y=-2\\), \\(x_z=-1/2\\), \\(x_{yy}=-7\\). \\(y_x=-1/2\\). The two first partial derivatives are reciprocals at this point."
+        ],
+        "text": "\\(x_y=-2\\), \\(x_z=-1/2\\), \\(x_{yy}=-7\\). \\(y_x=-1/2\\). The two first partial derivatives are reciprocals at this point."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.4.9",
+      "section": "14.4",
+      "title": "A prescribed normal determines the point",
+      "body": [
+        "Find the point on \\(z=x^2+2y^2\\) whose tangent plane has normal vector parallel to \\(\\langle4,-4,-1\\rangle\\). Give the tangent plane.",
+        "Use that plane to estimate the height at \\((2.03,-0.98)\\). Find the exact error, actual value minus estimate, and determine whether this tangent plane underestimates the surface everywhere."
+      ],
+      "text": "Find the point on \\(z=x^2+2y^2\\) whose tangent plane has normal vector parallel to \\(\\langle4,-4,-1\\rangle\\). Give the tangent plane. Use that plane to estimate the height at \\((2.03,-0.98)\\). Find the exact error, actual value minus estimate, and determine whether this tangent plane underestimates the surface everywhere.",
+      "answer": {
+        "blocks": [
+          "Point \\((2,-1,6)\\). Plane \\(z=4x-4y-6\\). Estimate \\(6.04\\); exact error \\(0.0017\\).",
+          "Yes: the error is \\((x-2)^2+2(y+1)^2\\ge0\\), with equality only at the tangency point."
+        ],
+        "text": "Point \\((2,-1,6)\\). Plane \\(z=4x-4y-6\\). Estimate \\(6.04\\); exact error \\(0.0017\\). Yes: the error is \\((x-2)^2+2(y+1)^2\\ge0\\), with equality only at the tangency point."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.4.10",
+      "section": "14.4",
+      "title": "Cancellation versus worst-case error",
+      "body": [
+        "A rectangular box has dimensions \\(x=2\\), \\(y=3\\), \\(z=4\\) meters. Measurement errors satisfy \\(|dx|\\le0.01\\), \\(|dy|\\le0.02\\), \\(|dz|\\le0.01\\). Estimate the largest absolute and percentage errors in volume.",
+        "For signed changes \\(dx=0.01\\) and \\(dy=-0.02\\), choose \\(dz\\) so the first-order volume change is zero. Is that choice within its allowed bound? Find the actual volume change for those three signed changes."
+      ],
+      "text": "A rectangular box has dimensions \\(x=2\\), \\(y=3\\), \\(z=4\\) meters. Measurement errors satisfy \\(|dx|\\le0.01\\), \\(|dy|\\le0.02\\), \\(|dz|\\le0.01\\). Estimate the largest absolute and percentage errors in volume. For signed changes \\(dx=0.01\\) and \\(dy=-0.02\\), choose \\(dz\\) so the first-order volume change is zero. Is that choice within its allowed bound? Find the actual volume change for those three signed changes.",
+      "answer": {
+        "blocks": [
+          "Maximum estimated absolute error: \\(0.34\\text{ m}^3\\). Percentage: \\(17/12\\%\\approx1.4167\\%\\).",
+          "\\(dz=1/150\\text{ m}\\), within the bound. Actual change: \\(-217/250000\\text{ m}^3=-0.000868\\text{ m}^3\\)."
+        ],
+        "text": "Maximum estimated absolute error: \\(0.34\\text{ m}^3\\). Percentage: \\(17/12\\%\\approx1.4167\\%\\). \\(dz=1/150\\text{ m}\\), within the bound. Actual change: \\(-217/250000\\text{ m}^3=-0.000868\\text{ m}^3\\)."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.5.9",
+      "section": "14.5",
+      "title": "Two layers of the chain rule",
+      "body": [
+        "Let \\(F(s,t)=f(x(s,t),y(s,t))\\), where \\(f(x,y)=x^2+y^3\\), \\(x=t+\\sin s\\), and \\(y=s+e^t\\). Find \\(F_s,F_t,F_{st}\\) at \\((s,t)=(0,0)\\).",
+        "Along \\(s(\\tau)=\\tau\\), \\(t(\\tau)=-\\tau\\), find \\(dF/d\\tau\\) at \\(\\tau=0\\). Which point in the \\(xy\\)-plane must be used when evaluating the partial derivatives of \\(f\\)?"
+      ],
+      "text": "Let \\(F(s,t)=f(x(s,t),y(s,t))\\), where \\(f(x,y)=x^2+y^3\\), \\(x=t+\\sin s\\), and \\(y=s+e^t\\). Find \\(F_s,F_t,F_{st}\\) at \\((s,t)=(0,0)\\). Along \\(s(\\tau)=\\tau\\), \\(t(\\tau)=-\\tau\\), find \\(dF/d\\tau\\) at \\(\\tau=0\\). Which point in the \\(xy\\)-plane must be used when evaluating the partial derivatives of \\(f\\)?",
+      "answer": {
+        "blocks": [
+          "\\(F_s=3\\), \\(F_t=3\\), \\(F_{st}=8\\) at \\((0,0)\\). Along the path, \\(dF/d\\tau=0\\) at \\(\\tau=0\\). The input point is \\((x,y)=(0,1)\\)."
+        ],
+        "text": "\\(F_s=3\\), \\(F_t=3\\), \\(F_{st}=8\\) at \\((0,0)\\). Along the path, \\(dF/d\\tau=0\\) at \\(\\tau=0\\). The input point is \\((x,y)=(0,1)\\)."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.5.10",
+      "section": "14.5",
+      "title": "A measured rate reveals the missing velocity",
+      "body": [
+        "Temperature is \\(T(x,y,t)=100-x^2-2y^2+4t\\) degrees Celsius. At \\(t=0\\), a sensor is at \\((1,2)\\), has \\(x\\,\\prime(0)=2\\) m/s, and records \\(dT/dt=-8\\) degrees Celsius per second. Find \\(y\\,\\prime(0)\\) and the sensor speed.",
+        "At this same position and time, what instantaneous velocities of that same speed would make the measured temperature rate zero? Give all possibilities."
+      ],
+      "text": "Temperature is \\(T(x,y,t)=100-x^2-2y^2+4t\\) degrees Celsius. At \\(t=0\\), a sensor is at \\((1,2)\\), has \\(x\\,\\prime(0)=2\\) m/s, and records \\(dT/dt=-8\\) degrees Celsius per second. Find \\(y\\,\\prime(0)\\) and the sensor speed. At this same position and time, what instantaneous velocities of that same speed would make the measured temperature rate zero? Give all possibilities.",
+      "answer": {
+        "blocks": [
+          "\\(y\\,\\prime(0)=1\\) m/s; speed \\(\\sqrt5\\) m/s.",
+          "All zero-rate velocities: \\(\\langle38/17,-1/17\\rangle\\) and \\(\\langle-2,1\\rangle\\) m/s."
+        ],
+        "text": "\\(y\\,\\prime(0)=1\\) m/s; speed \\(\\sqrt5\\) m/s. All zero-rate velocities: \\(\\langle38/17,-1/17\\rangle\\) and \\(\\langle-2,1\\rangle\\) m/s."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.6.9",
+      "section": "14.6",
+      "title": "Recover the gradient from path data",
+      "body": [
+        "A differentiable function satisfies \\(\\frac{d}{dt}f(P+t\\langle2,1\\rangle)|_{t=0}=7\\) and \\(\\frac{d}{dt}f(P+t\\langle1,-1\\rangle)|_{t=0}=-1\\). Find \\(\\nabla f(P)\\).",
+        "Find the greatest directional derivative and its unit direction. Find all unit directions in which the directional derivative equals \\(1\\). Explain why the two given path rates are not themselves directional derivatives for unit vectors."
+      ],
+      "text": "A differentiable function satisfies \\(\\frac{d}{dt}f(P+t\\langle2,1\\rangle)|_{t=0}=7\\) and \\(\\frac{d}{dt}f(P+t\\langle1,-1\\rangle)|_{t=0}=-1\\). Find \\(\\nabla f(P)\\). Find the greatest directional derivative and its unit direction. Find all unit directions in which the directional derivative equals \\(1\\). Explain why the two given path rates are not themselves directional derivatives for unit vectors.",
+      "answer": {
+        "blocks": [
+          "\\(\\nabla f(P)=\\langle2,3\\rangle\\). Maximum \\(\\sqrt{13}\\) in direction \\(\\langle2,3\\rangle/\\sqrt{13}\\).",
+          "Rate \\(1\\) directions: \\(\\langle2-6\\sqrt3,3+4\\sqrt3\\rangle/13\\) and \\(\\langle2+6\\sqrt3,3-4\\sqrt3\\rangle/13\\). The given path speeds are \\(\\sqrt5\\) and \\(\\sqrt2\\), rather than \\(1\\)."
+        ],
+        "text": "\\(\\nabla f(P)=\\langle2,3\\rangle\\). Maximum \\(\\sqrt{13}\\) in direction \\(\\langle2,3\\rangle/\\sqrt{13}\\). Rate \\(1\\) directions: \\(\\langle2-6\\sqrt3,3+4\\sqrt3\\rangle/13\\) and \\(\\langle2+6\\sqrt3,3-4\\sqrt3\\rangle/13\\). The given path speeds are \\(\\sqrt5\\) and \\(\\sqrt2\\), rather than \\(1\\)."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.6.10",
+      "section": "14.6",
+      "title": "Steepest increase while remaining tangent",
+      "body": [
+        "At \\(P=(1,1,1)\\) on the sphere \\(x^2+y^2+z^2=3\\), let \\(f(x,y,z)=x+2y+3z\\). Find the greatest instantaneous increase per unit distance among unit directions tangent to the sphere, and its direction.",
+        "Compare with the unrestricted greatest directional derivative. Find a unit tangent direction with zero instantaneous change in \\(f\\)."
+      ],
+      "text": "At \\(P=(1,1,1)\\) on the sphere \\(x^2+y^2+z^2=3\\), let \\(f(x,y,z)=x+2y+3z\\). Find the greatest instantaneous increase per unit distance among unit directions tangent to the sphere, and its direction. Compare with the unrestricted greatest directional derivative. Find a unit tangent direction with zero instantaneous change in \\(f\\).",
+      "answer": {
+        "blocks": [
+          "Tangent maximum \\(\\sqrt2\\) in direction \\(\\langle-1,0,1\\rangle/\\sqrt2\\). Unrestricted maximum \\(\\sqrt{14}\\) in direction \\(\\langle1,2,3\\rangle/\\sqrt{14}\\).",
+          "Zero-rate tangent directions: \\(\\pm\\langle1,-2,1\\rangle/\\sqrt6\\)."
+        ],
+        "text": "Tangent maximum \\(\\sqrt2\\) in direction \\(\\langle-1,0,1\\rangle/\\sqrt2\\). Unrestricted maximum \\(\\sqrt{14}\\) in direction \\(\\langle1,2,3\\rangle/\\sqrt{14}\\). Zero-rate tangent directions: \\(\\pm\\langle1,-2,1\\rangle/\\sqrt6\\)."
+      },
+      "review": "chapter14",
+      "extension": true,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.7.9",
+      "section": "14.7",
+      "title": "A shifted version of the quiz cubic",
+      "body": [
+        "Find and classify every critical point of \\(f(x,y)=(x-1)^3+(y+2)^3-3(x-1)(y+2)+5\\). Give each critical value.",
+        "Determine whether any local extrema are absolute extrema on \\(\\mathbb R^2\\)."
+      ],
+      "text": "Find and classify every critical point of \\(f(x,y)=(x-1)^3+(y+2)^3-3(x-1)(y+2)+5\\). Give each critical value. Determine whether any local extrema are absolute extrema on \\(\\mathbb R^2\\).",
+      "answer": {
+        "blocks": [
+          "\\((1,-2)\\): saddle, value \\(5\\). \\((2,-1)\\): strict local minimum, value \\(4\\). No local maximum. No absolute maximum or minimum."
+        ],
+        "text": "\\((1,-2)\\): saddle, value \\(5\\). \\((2,-1)\\): strict local minimum, value \\(4\\). No local maximum. No absolute maximum or minimum."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.7.10",
+      "section": "14.7",
+      "title": "Nine critical points without nine long calculations",
+      "body": [
+        "Find all critical points of \\(f(x,y)=x^4+y^4-2x^2-4y^2\\). Classify them and give their values.",
+        "Which local extrema are absolute? State whether an absolute maximum exists."
+      ],
+      "text": "Find all critical points of \\(f(x,y)=x^4+y^4-2x^2-4y^2\\). Classify them and give their values. Which local extrema are absolute? State whether an absolute maximum exists.",
+      "answer": {
+        "blocks": [
+          "\\((0,0)\\): strict local maximum, value \\(0\\). \\((\\pm1,0)\\): saddles, value \\(-1\\). \\((0,\\pm\\sqrt2)\\): saddles, value \\(-4\\).",
+          "\\((\\pm1,\\pm\\sqrt2)\\), with signs independent: strict local and absolute minima, value \\(-5\\). No absolute maximum."
+        ],
+        "text": "\\((0,0)\\): strict local maximum, value \\(0\\). \\((\\pm1,0)\\): saddles, value \\(-1\\). \\((0,\\pm\\sqrt2)\\): saddles, value \\(-4\\). \\((\\pm1,\\pm\\sqrt2)\\), with signs independent: strict local and absolute minima, value \\(-5\\). No absolute maximum."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.7.11",
+      "section": "14.7",
+      "title": "An interior optimum and three boundary edges",
+      "body": [
+        "Find the absolute maximum and minimum of \\(f(x,y)=xy(4-x-y)\\) on the triangle \\(x\\ge0\\), \\(y\\ge0\\), \\(x+y\\le4\\). Give every attaining point or set.",
+        "Find all critical points in the interior and explain whether testing only the three vertices would find both absolute values."
+      ],
+      "text": "Find the absolute maximum and minimum of \\(f(x,y)=xy(4-x-y)\\) on the triangle \\(x\\ge0\\), \\(y\\ge0\\), \\(x+y\\le4\\). Give every attaining point or set. Find all critical points in the interior and explain whether testing only the three vertices would find both absolute values.",
+      "answer": {
+        "blocks": [
+          "Only interior critical point: \\((4/3,4/3)\\). Absolute maximum \\(64/27\\) there. Absolute minimum \\(0\\) on the entire boundary.",
+          "Vertices alone find the minimum value but miss the maximum."
+        ],
+        "text": "Only interior critical point: \\((4/3,4/3)\\). Absolute maximum \\(64/27\\) there. Absolute minimum \\(0\\) on the entire boundary. Vertices alone find the minimum value but miss the maximum."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.7.12",
+      "section": "14.7",
+      "title": "An interior minimum and a non-axial boundary maximum",
+      "body": [
+        "Find the absolute extrema of \\(f(x,y)=x^2+2y^2-2x\\) on \\(x^2+y^2\\le4\\). List the interior critical point and all stationary candidates on the boundary, with their values.",
+        "A student checks only the four axis intersections of the boundary. Which absolute extremum would this miss?"
+      ],
+      "text": "Find the absolute extrema of \\(f(x,y)=x^2+2y^2-2x\\) on \\(x^2+y^2\\le4\\). List the interior critical point and all stationary candidates on the boundary, with their values. A student checks only the four axis intersections of the boundary. Which absolute extremum would this miss?",
+      "answer": {
+        "blocks": [
+          "Interior: \\((1,0)\\), value \\(-1\\). Boundary candidates: \\((2,0)\\), value \\(0\\); \\((-2,0)\\), value \\(8\\); \\((-1,\\pm\\sqrt3)\\), value \\(9\\).",
+          "Absolute minimum \\(-1\\) at \\((1,0)\\); absolute maximum \\(9\\) at \\((-1,\\pm\\sqrt3)\\). The axis-only boundary check misses the maximum; omitting interior points also misses the minimum."
+        ],
+        "text": "Interior: \\((1,0)\\), value \\(-1\\). Boundary candidates: \\((2,0)\\), value \\(0\\); \\((-2,0)\\), value \\(8\\); \\((-1,\\pm\\sqrt3)\\), value \\(9\\). Absolute minimum \\(-1\\) at \\((1,0)\\); absolute maximum \\(9\\) at \\((-1,\\pm\\sqrt3)\\). The axis-only boundary check misses the maximum; omitting interior points also misses the minimum."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.7.13",
+      "section": "14.7",
+      "title": "Extrema on an unbounded domain",
+      "body": [
+        "Find and classify the critical points of \\(f(x,y)=y e^{-x^2-y^2}\\). Determine its absolute maximum and minimum on \\(\\mathbb R^2\\), with all attaining points.",
+        "Is \\((0,0)\\) a critical point? Does the absence of a closed, bounded domain prevent this function from attaining absolute extrema?"
+      ],
+      "text": "Find and classify the critical points of \\(f(x,y)=y e^{-x^2-y^2}\\). Determine its absolute maximum and minimum on \\(\\mathbb R^2\\), with all attaining points. Is \\((0,0)\\) a critical point? Does the absence of a closed, bounded domain prevent this function from attaining absolute extrema?",
+      "answer": {
+        "blocks": [
+          "\\((0,1/\\sqrt2)\\): strict local and absolute maximum \\(1/\\sqrt{2e}\\). \\((0,-1/\\sqrt2)\\): strict local and absolute minimum \\(-1/\\sqrt{2e}\\). These are the only critical points.",
+          "\\((0,0)\\) is not critical. No: absolute extrema are attained here."
+        ],
+        "text": "\\((0,1/\\sqrt2)\\): strict local and absolute maximum \\(1/\\sqrt{2e}\\). \\((0,-1/\\sqrt2)\\): strict local and absolute minimum \\(-1/\\sqrt{2e}\\). These are the only critical points. \\((0,0)\\) is not critical. No: absolute extrema are attained here."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.7.14",
+      "section": "14.7",
+      "title": "All critical points are on one line",
+      "body": [
+        "Find and classify all critical points of \\(f(x,y)=x^2+(y^2-1)^2\\). Give the second derivative discriminant at each critical point.",
+        "Find the absolute extrema, if any. Describe the zero level set and the level set \\(f=1\\) near the origin: does it form a single smooth curve there?"
+      ],
+      "text": "Find and classify all critical points of \\(f(x,y)=x^2+(y^2-1)^2\\). Give the second derivative discriminant at each critical point. Find the absolute extrema, if any. Describe the zero level set and the level set \\(f=1\\) near the origin: does it form a single smooth curve there?",
+      "answer": {
+        "blocks": [
+          "\\((0,0)\\): saddle, value \\(1\\), discriminant \\(-8\\). \\((0,\\pm1)\\): strict local and absolute minima, value \\(0\\), discriminant \\(16\\). No absolute maximum.",
+          "Zero level set: \\((0,\\pm1)\\). Near the origin, \\(f=1\\) has crossing branches with tangent lines \\(x=\\pm\\sqrt2\\,y\\); it is not a single smooth curve."
+        ],
+        "text": "\\((0,0)\\): saddle, value \\(1\\), discriminant \\(-8\\). \\((0,\\pm1)\\): strict local and absolute minima, value \\(0\\), discriminant \\(16\\). No absolute maximum. Zero level set: \\((0,\\pm1)\\). Near the origin, \\(f=1\\) has crossing branches with tangent lines \\(x=\\pm\\sqrt2\\,y\\); it is not a single smooth curve."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.7.15",
+      "section": "14.7",
+      "title": "Removing a boundary changes attainment",
+      "body": [
+        "On \\(D=\\{(x,y):1<x^2+y^2\\le9\\}\\), find the absolute extrema of both \\(f=x^2+y^2\\) and \\(g=(x-2)^2+y^2\\), with all attaining points.",
+        "For any missing minimum, give the greatest lower bound and a sequence in \\(D\\) approaching it. Does failure of closedness force every continuous function on \\(D\\) to lack a minimum?"
+      ],
+      "text": "On \\(D=\\{(x,y):1<x^2+y^2\\le9\\}\\), find the absolute extrema of both \\(f=x^2+y^2\\) and \\(g=(x-2)^2+y^2\\), with all attaining points. For any missing minimum, give the greatest lower bound and a sequence in \\(D\\) approaching it. Does failure of closedness force every continuous function on \\(D\\) to lack a minimum?",
+      "answer": {
+        "blocks": [
+          "\\(f\\): maximum \\(9\\) on \\(x^2+y^2=9\\); no minimum. Greatest lower bound \\(1\\), approached at \\((1+1/n,0)\\) for positive integers \\(n\\).",
+          "\\(g\\): minimum \\(0\\) at \\((2,0)\\); maximum \\(25\\) at \\((-3,0)\\). No: \\(g\\) attains a minimum despite the nonclosed domain."
+        ],
+        "text": "\\(f\\): maximum \\(9\\) on \\(x^2+y^2=9\\); no minimum. Greatest lower bound \\(1\\), approached at \\((1+1/n,0)\\) for positive integers \\(n\\). \\(g\\): minimum \\(0\\) at \\((2,0)\\); maximum \\(25\\) at \\((-3,0)\\). No: \\(g\\) attains a minimum despite the nonclosed domain."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.7.16",
+      "section": "14.7",
+      "title": "A parameter creates two new minima",
+      "body": [
+        "For every real \\(a\\), find and classify all critical points of \\(f_a(x,y)=x^4+ax^2+y^2\\). Give all absolute minima and their values.",
+        "At which parameter value does the second derivative test fail at the origin? Classify that point directly. Are there any local or absolute maxima?"
+      ],
+      "text": "For every real \\(a\\), find and classify all critical points of \\(f_a(x,y)=x^4+ax^2+y^2\\). Give all absolute minima and their values. At which parameter value does the second derivative test fail at the origin? Classify that point directly. Are there any local or absolute maxima?",
+      "answer": {
+        "blocks": [
+          "\\(a\\ge0\\): only \\((0,0)\\), a strict local and absolute minimum of value \\(0\\).",
+          "\\(a<0\\): \\((0,0)\\) is a saddle; \\((\\pm\\sqrt{-a/2},0)\\) are strict local and absolute minima of value \\(-a^2/4\\).",
+          "The test fails at \\(a=0\\); the origin is still a strict minimum. No local or absolute maxima for any \\(a\\)."
+        ],
+        "text": "\\(a\\ge0\\): only \\((0,0)\\), a strict local and absolute minimum of value \\(0\\). \\(a<0\\): \\((0,0)\\) is a saddle; \\((\\pm\\sqrt{-a/2},0)\\) are strict local and absolute minima of value \\(-a^2/4\\). The test fails at \\(a=0\\); the origin is still a strict minimum. No local or absolute maxima for any \\(a\\)."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.7.17",
+      "section": "14.7",
+      "title": "An entire set of critical points",
+      "body": [
+        "Find the entire critical set of \\(f(x,y)=x^2y^2\\). Classify every point in it, distinguishing strict from non-strict extrema.",
+        "Compute the second derivative discriminant on the critical set. Does its value mean these points are saddles? Determine whether any local maxima exist."
+      ],
+      "text": "Find the entire critical set of \\(f(x,y)=x^2y^2\\). Classify every point in it, distinguishing strict from non-strict extrema. Compute the second derivative discriminant on the critical set. Does its value mean these points are saddles? Determine whether any local maxima exist.",
+      "answer": {
+        "blocks": [
+          "Critical set: the union of the two coordinate axes. Every point on it is a non-strict local and absolute minimum, value \\(0\\).",
+          "The discriminant is \\(0\\) everywhere on that set. None are saddles. There are no local maxima."
+        ],
+        "text": "Critical set: the union of the two coordinate axes. Every point on it is a non-strict local and absolute minimum, value \\(0\\). The discriminant is \\(0\\) everywhere on that set. None are saddles. There are no local maxima."
+      },
+      "review": "chapter14",
+      "extension": true,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.7.18",
+      "section": "14.7",
+      "title": "Every straight-line test can be misleading",
+      "body": [
+        "For \\(f(x,y)=(y-x^2)(y-2x^2)\\), find the gradient and the second derivative discriminant at the origin.",
+        "Show that the restriction to every straight line through the origin has a strict local minimum there. Nevertheless, classify the origin for the full function by giving one positive-value path and one negative-value path approaching it."
+      ],
+      "text": "For \\(f(x,y)=(y-x^2)(y-2x^2)\\), find the gradient and the second derivative discriminant at the origin. Show that the restriction to every straight line through the origin has a strict local minimum there. Nevertheless, classify the origin for the full function by giving one positive-value path and one negative-value path approaching it.",
+      "answer": {
+        "blocks": [
+          "\\(\\nabla f(0,0)=\\langle0,0\\rangle\\); discriminant \\(0\\). The origin is a saddle.",
+          "On \\(y=mx\\): \\(f=x^2(m-x)(m-2x)\\); on the vertical line: \\(f=y^2\\). Each line restriction has a strict local minimum at the origin.",
+          "Positive path \\(y=0\\): \\(f=2x^4\\). Negative path \\(y=3x^2/2\\): \\(f=-x^4/4\\)."
+        ],
+        "text": "\\(\\nabla f(0,0)=\\langle0,0\\rangle\\); discriminant \\(0\\). The origin is a saddle. On \\(y=mx\\): \\(f=x^2(m-x)(m-2x)\\); on the vertical line: \\(f=y^2\\). Each line restriction has a strict local minimum at the origin. Positive path \\(y=0\\): \\(f=2x^4\\). Negative path \\(y=3x^2/2\\): \\(f=-x^4/4\\)."
+      },
+      "review": "chapter14",
+      "extension": true,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.8.9",
+      "section": "14.8",
+      "title": "A product on an ellipse",
+      "body": [
+        "Use Lagrange multipliers to find all constrained stationary points and the absolute extrema of \\(f(x,y)=xy\\) on \\(x^2+4y^2=8\\).",
+        "Use the convention \\(\\nabla f=\\lambda\\nabla g\\), where \\(g=x^2+4y^2\\). Give the multiplier at every candidate."
+      ],
+      "text": "Use Lagrange multipliers to find all constrained stationary points and the absolute extrema of \\(f(x,y)=xy\\) on \\(x^2+4y^2=8\\). Use the convention \\(\\nabla f=\\lambda\\nabla g\\), where \\(g=x^2+4y^2\\). Give the multiplier at every candidate.",
+      "answer": {
+        "blocks": [
+          "Maximum \\(2\\) at \\((2,1),(-2,-1)\\), with \\(\\lambda=1/4\\). Minimum \\(-2\\) at \\((2,-1),(-2,1)\\), with \\(\\lambda=-1/4\\). No other stationary points."
+        ],
+        "text": "Maximum \\(2\\) at \\((2,1),(-2,-1)\\), with \\(\\lambda=1/4\\). Minimum \\(-2\\) at \\((2,-1),(-2,1)\\), with \\(\\lambda=-1/4\\). No other stationary points."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.8.10",
+      "section": "14.8",
+      "title": "Division can hide stationary points",
+      "body": [
+        "Use Lagrange multipliers to find every constrained stationary point of \\(f(x,y)=x^2y\\) on \\(x^2+y^2=3\\), including points with a zero coordinate.",
+        "Classify the stationary points as local extrema along the circle, and give the absolute extrema. Which points would be lost by dividing the equations by \\(x\\)?"
+      ],
+      "text": "Use Lagrange multipliers to find every constrained stationary point of \\(f(x,y)=x^2y\\) on \\(x^2+y^2=3\\), including points with a zero coordinate. Classify the stationary points as local extrema along the circle, and give the absolute extrema. Which points would be lost by dividing the equations by \\(x\\)?",
+      "answer": {
+        "blocks": [
+          "Absolute maxima \\(2\\) at \\((\\pm\\sqrt2,1)\\); absolute minima \\(-2\\) at \\((\\pm\\sqrt2,-1)\\).",
+          "\\((0,\\sqrt3)\\): strict constrained local minimum, value \\(0\\). \\((0,-\\sqrt3)\\): strict constrained local maximum, value \\(0\\). These two points are lost by dividing by \\(x\\)."
+        ],
+        "text": "Absolute maxima \\(2\\) at \\((\\pm\\sqrt2,1)\\); absolute minima \\(-2\\) at \\((\\pm\\sqrt2,-1)\\). \\((0,\\sqrt3)\\): strict constrained local minimum, value \\(0\\). \\((0,-\\sqrt3)\\): strict constrained local maximum, value \\(0\\). These two points are lost by dividing by \\(x\\)."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.8.11",
+      "section": "14.8",
+      "title": "The closest points form a circle",
+      "body": [
+        "Find every point on \\(z=x^2+y^2\\) closest to \\(Q=(0,0,3)\\). Give the minimum distance and determine whether a farthest point exists.",
+        "List all stationary candidates for squared distance on the surface, including the vertex. Is the vertex a local minimum or local maximum of distance restricted to the surface?"
+      ],
+      "text": "Find every point on \\(z=x^2+y^2\\) closest to \\(Q=(0,0,3)\\). Give the minimum distance and determine whether a farthest point exists. List all stationary candidates for squared distance on the surface, including the vertex. Is the vertex a local minimum or local maximum of distance restricted to the surface?",
+      "answer": {
+        "blocks": [
+          "Closest points: \\(x^2+y^2=5/2\\), \\(z=5/2\\). Minimum distance \\(\\sqrt{11}/2\\). No farthest point.",
+          "The stationary set consists of that circle and \\((0,0,0)\\). The vertex is a strict constrained local maximum, distance \\(3\\)."
+        ],
+        "text": "Closest points: \\(x^2+y^2=5/2\\), \\(z=5/2\\). Minimum distance \\(\\sqrt{11}/2\\). No farthest point. The stationary set consists of that circle and \\((0,0,0)\\). The vertex is a strict constrained local maximum, distance \\(3\\)."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.8.12",
+      "section": "14.8",
+      "title": "A weighted product under a resource constraint",
+      "body": [
+        "For \\(x,y,z\\ge0\\) with \\(x+y+z=12\\), find the absolute maximum and minimum of \\(f(x,y,z)=xy^2z\\), including all attaining points or sets.",
+        "Use Lagrange multipliers for interior candidates and check the boundary separately. Must the maximizing values of \\(x,y,z\\) be equal?"
+      ],
+      "text": "For \\(x,y,z\\ge0\\) with \\(x+y+z=12\\), find the absolute maximum and minimum of \\(f(x,y,z)=xy^2z\\), including all attaining points or sets. Use Lagrange multipliers for interior candidates and check the boundary separately. Must the maximizing values of \\(x,y,z\\) be equal?",
+      "answer": {
+        "blocks": [
+          "Absolute maximum \\(324\\) at \\((3,6,3)\\). Absolute minimum \\(0\\) at all feasible boundary points, where at least one coordinate is zero.",
+          "No. At the maximum, \\(x:z=1:1\\) and \\(y=2x\\)."
+        ],
+        "text": "Absolute maximum \\(324\\) at \\((3,6,3)\\). Absolute minimum \\(0\\) at all feasible boundary points, where at least one coordinate is zero. No. At the maximum, \\(x:z=1:1\\) and \\(y=2x\\)."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.8.13",
+      "section": "14.8",
+      "title": "Two constraints and a linear objective",
+      "body": [
+        "Use two Lagrange multipliers to find the absolute extrema of \\(f=x+y\\) on the intersection of \\(x^2+y^2+z^2=9\\) and \\(x-y=1\\). Give all attaining points.",
+        "Find the center and radius of the intersection circle. Explain whether this feasible set guarantees that both extrema are attained."
+      ],
+      "text": "Use two Lagrange multipliers to find the absolute extrema of \\(f=x+y\\) on the intersection of \\(x^2+y^2+z^2=9\\) and \\(x-y=1\\). Give all attaining points. Find the center and radius of the intersection circle. Explain whether this feasible set guarantees that both extrema are attained.",
+      "answer": {
+        "blocks": [
+          "Maximum \\(\\sqrt{17}\\) at \\(((1+\\sqrt{17})/2,(-1+\\sqrt{17})/2,0)\\). Minimum \\(-\\sqrt{17}\\) at \\(((1-\\sqrt{17})/2,(-1-\\sqrt{17})/2,0)\\).",
+          "Circle center \\((1/2,-1/2,0)\\), radius \\(\\sqrt{17/2}\\). Yes: the nonempty feasible set is closed and bounded, and \\(f\\) is continuous."
+        ],
+        "text": "Maximum \\(\\sqrt{17}\\) at \\(((1+\\sqrt{17})/2,(-1+\\sqrt{17})/2,0)\\). Minimum \\(-\\sqrt{17}\\) at \\(((1-\\sqrt{17})/2,(-1-\\sqrt{17})/2,0)\\). Circle center \\((1/2,-1/2,0)\\), radius \\(\\sqrt{17/2}\\). Yes: the nonempty feasible set is closed and bounded, and \\(f\\) is continuous."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.8.14",
+      "section": "14.8",
+      "title": "Nearest points are not at the axis endpoints",
+      "body": [
+        "Find the points on \\(x^2/4+y^2=1\\) nearest to and farthest from \\(Q=(1,0)\\). List every stationary candidate for squared distance, including both axis endpoints.",
+        "Classify \\((2,0)\\) as a local maximum or minimum of distance along the ellipse. Is it the farthest point?"
+      ],
+      "text": "Find the points on \\(x^2/4+y^2=1\\) nearest to and farthest from \\(Q=(1,0)\\). List every stationary candidate for squared distance, including both axis endpoints. Classify \\((2,0)\\) as a local maximum or minimum of distance along the ellipse. Is it the farthest point?",
+      "answer": {
+        "blocks": [
+          "Nearest points \\((4/3,\\pm\\sqrt5/3)\\), distance \\(\\sqrt{2/3}\\). Farthest point \\((-2,0)\\), distance \\(3\\).",
+          "Other stationary candidate \\((2,0)\\) has distance \\(1\\) and is a strict constrained local maximum, but is not the farthest point."
+        ],
+        "text": "Nearest points \\((4/3,\\pm\\sqrt5/3)\\), distance \\(\\sqrt{2/3}\\). Farthest point \\((-2,0)\\), distance \\(3\\). Other stationary candidate \\((2,0)\\) has distance \\(1\\) and is a strict constrained local maximum, but is not the farthest point."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.8.15",
+      "section": "14.8",
+      "title": "Coordinate-zero cases on a sphere",
+      "body": [
+        "Find the absolute extrema of \\(f=xyz\\) on \\(x^2+y^2+z^2=12\\). Give all attaining points, using a clear sign convention.",
+        "Find all additional Lagrange stationary points having a zero coordinate. Are these constrained extrema or saddle points on the sphere?"
+      ],
+      "text": "Find the absolute extrema of \\(f=xyz\\) on \\(x^2+y^2+z^2=12\\). Give all attaining points, using a clear sign convention. Find all additional Lagrange stationary points having a zero coordinate. Are these constrained extrema or saddle points on the sphere?",
+      "answer": {
+        "blocks": [
+          "Maximum \\(8\\) at \\((\\pm2,\\pm2,\\pm2)\\) with an even number of negative signs; minimum \\(-8\\) at such points with an odd number of negative signs.",
+          "Additional candidates: \\((\\pm2\\sqrt3,0,0),(0,\\pm2\\sqrt3,0),(0,0,\\pm2\\sqrt3)\\). All six are constrained saddles, value \\(0\\)."
+        ],
+        "text": "Maximum \\(8\\) at \\((\\pm2,\\pm2,\\pm2)\\) with an even number of negative signs; minimum \\(-8\\) at such points with an odd number of negative signs. Additional candidates: \\((\\pm2\\sqrt3,0,0),(0,\\pm2\\sqrt3,0),(0,0,\\pm2\\sqrt3)\\). All six are constrained saddles, value \\(0\\)."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.8.16",
+      "section": "14.8",
+      "title": "Maximum perimeter is not maximum area",
+      "body": [
+        "An axis-aligned rectangle has vertices \\((\\pm x,\\pm y)\\) on \\(x^2/9+y^2/4=1\\), where \\(x,y>0\\). Find the rectangle of greatest perimeter and its area.",
+        "Then find the rectangle of greatest area and its perimeter. Do the two optimizing rectangles coincide? Give half-width \\(x\\) and half-height \\(y\\) for both."
+      ],
+      "text": "An axis-aligned rectangle has vertices \\((\\pm x,\\pm y)\\) on \\(x^2/9+y^2/4=1\\), where \\(x,y>0\\). Find the rectangle of greatest perimeter and its area. Then find the rectangle of greatest area and its perimeter. Do the two optimizing rectangles coincide? Give half-width \\(x\\) and half-height \\(y\\) for both.",
+      "answer": {
+        "blocks": [
+          "Greatest perimeter: \\(x=9/\\sqrt{13}\\), \\(y=4/\\sqrt{13}\\); perimeter \\(4\\sqrt{13}\\); area \\(144/13\\).",
+          "Greatest area: \\(x=3/\\sqrt2\\), \\(y=\\sqrt2\\); area \\(12\\); perimeter \\(10\\sqrt2\\). The rectangles are different."
+        ],
+        "text": "Greatest perimeter: \\(x=9/\\sqrt{13}\\), \\(y=4/\\sqrt{13}\\); perimeter \\(4\\sqrt{13}\\); area \\(144/13\\). Greatest area: \\(x=3/\\sqrt2\\), \\(y=\\sqrt2\\); area \\(12\\); perimeter \\(10\\sqrt2\\). The rectangles are different."
+      },
+      "review": "chapter14",
+      "extension": false,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.8.17",
+      "section": "14.8",
+      "title": "A genuine optimum missed by the equations",
+      "body": [
+        "Minimize \\(f(x,y)=x\\) on \\(y^2=x^3\\). Determine the absolute minimum, its attaining points, and whether an absolute maximum exists.",
+        "With \\(g(x,y)=y^2-x^3\\), attempt \\(\\nabla f=\\lambda\\nabla g\\). Do these equations find the minimum? Identify the regularity condition that fails there, and parametrize the constraint to check the conclusion."
+      ],
+      "text": "Minimize \\(f(x,y)=x\\) on \\(y^2=x^3\\). Determine the absolute minimum, its attaining points, and whether an absolute maximum exists. With \\(g(x,y)=y^2-x^3\\), attempt \\(\\nabla f=\\lambda\\nabla g\\). Do these equations find the minimum? Identify the regularity condition that fails there, and parametrize the constraint to check the conclusion.",
+      "answer": {
+        "blocks": [
+          "Absolute minimum \\(0\\) only at \\((0,0)\\). No absolute maximum. The Lagrange equations have no solutions.",
+          "\\(\\nabla g(0,0)=\\mathbf0\\), so the nonzero constraint-gradient condition fails. A parametrization is \\((x,y)=(t^2,t^3)\\), \\(t\\in\\mathbb R\\); the objective is \\(t^2\\)."
+        ],
+        "text": "Absolute minimum \\(0\\) only at \\((0,0)\\). No absolute maximum. The Lagrange equations have no solutions. \\(\\nabla g(0,0)=\\mathbf0\\), so the nonzero constraint-gradient condition fails. A parametrization is \\((x,y)=(t^2,t^3)\\), \\(t\\in\\mathbb R\\); the objective is \\(t^2\\)."
+      },
+      "review": "chapter14",
+      "extension": true,
+      "practiceSet": "quiz-challenge-oct12"
+    },
+    {
+      "id": "14.8.18",
+      "section": "14.8",
+      "title": "How the optimum changes with the constraint",
+      "body": [
+        "For each \\(c>0\\), minimize \\(f(x,y)=x^2+4y^2\\) subject to \\(x+y=c\\). Find the minimizing point, the minimum value \\(V(c)\\), and the multiplier using \\(\\nabla f=\\lambda\\nabla(x+y)\\).",
+        "Compare \\(V\\,\\prime(c)\\) with \\(\\lambda\\). Starting from \\(c=10\\), estimate the change in the minimum when \\(c\\) increases to \\(10.1\\). Compare that estimate with the exact change."
+      ],
+      "text": "For each \\(c>0\\), minimize \\(f(x,y)=x^2+4y^2\\) subject to \\(x+y=c\\). Find the minimizing point, the minimum value \\(V(c)\\), and the multiplier using \\(\\nabla f=\\lambda\\nabla(x+y)\\). Compare \\(V\\,\\prime(c)\\) with \\(\\lambda\\). Starting from \\(c=10\\), estimate the change in the minimum when \\(c\\) increases to \\(10.1\\). Compare that estimate with the exact change.",
+      "answer": {
+        "blocks": [
+          "Minimizer \\((4c/5,c/5)\\). \\(V(c)=4c^2/5\\); \\(\\lambda=8c/5=V\\,\\prime(c)\\).",
+          "Estimated increase \\(1.6\\); exact increase \\(1.608\\)."
+        ],
+        "text": "Minimizer \\((4c/5,c/5)\\). \\(V(c)=4c^2/5\\); \\(\\lambda=8c/5=V\\,\\prime(c)\\). Estimated increase \\(1.6\\); exact increase \\(1.608\\)."
+      },
+      "review": "chapter14",
+      "extension": true,
+      "practiceSet": "quiz-challenge-oct12"
+    }
+  ],
+  "guides": [
+    {
+      "section": "14.1",
+      "title": "Functions of several variables",
+      "review": "chapter14",
+      "body": [
+        "Domain: impose every restriction simultaneously. Square roots require a nonnegative radicand; logarithms require a positive argument; denominators cannot be zero.",
+        "Use solid boundaries for included points and dashed boundaries for excluded points. Keep the original restrictions when squaring or solving for a level.",
+        "The range is the set of attained output values. Check endpoints rather than assuming they are included.",
+        "Level curves satisfy \\(f(x,y)=k\\); level surfaces satisfy \\(f(x,y,z)=k\\). They live in input space. Vertical traces use \\(x=a\\) or \\(y=b\\).",
+        "For equal height steps, closer contours indicate steeper change. Check the labels and scale."
+      ]
+    },
+    {
+      "section": "14.2",
+      "title": "Brief continuity review",
+      "review": "chapter14",
+      "body": [
+        "Continuity at \\((a,b)\\) requires \\(\\lim_{(x,y)\\to(a,b)}f(x,y)=f(a,b)\\), through every path in the domain.",
+        "Two paths with different limits prove that the limit does not exist. Agreement along a few paths does not prove that a limit exists.",
+        "For continuous elementary functions, substitute directly where the expression is defined.",
+        "Partial derivatives can exist even when the function is not continuous; see question 14.3.8."
+      ]
+    },
+    {
+      "section": "14.3",
+      "title": "Partial derivatives",
+      "review": "chapter14",
+      "body": [
+        "Hold the other variables constant and apply the usual product, quotient, and chain rules.",
+        "\\(f_x\\) and \\(f_y\\) are coordinate trace slopes, not function heights.",
+        "\\(f_{xy}=(f_x)_y\\). Continuous mixed second partials can be interchanged. Differentiate repeatedly before substituting a point.",
+        "If \\(F(x,y,z)=0\\) defines \\(z\\) locally and \\(F_z\\ne0\\), then \\(z_x=-F_x/F_z\\) and \\(z_y=-F_y/F_z\\).",
+        "When computing \\(F_x,F_y,F_z\\), hold the other inputs constant. When differentiating the identity, remember that \\(z\\) depends on \\(x,y\\).",
+        "Existence of partial derivatives alone does not guarantee continuity or differentiability."
+      ]
+    },
+    {
+      "section": "14.4",
+      "title": "Tangent planes and linear approximations",
+      "review": "chapter14",
+      "body": [
+        "Linearization: \\(L(x,y)=f(a,b)+f_x(a,b)(x-a)+f_y(a,b)(y-b)\\). The tangent plane is \\(z=L(x,y)\\).",
+        "Differential: \\(df=f_x\\,dx+f_y\\,dy\\), with an additional \\(f_z\\,dz\\) term for three inputs.",
+        "\\(\\Delta f\\) is the exact new value minus the old value; \\(df\\) approximates it.",
+        "Estimated maximum error: \\(|df|\\le|f_x|\\varepsilon_x+|f_y|\\varepsilon_y\\). Relative error is \\(|df|/|f|\\); multiply by \\(100\\) for a percentage.",
+        "Continuous first partials near the point guarantee differentiability. A zero partial means no first-order contribution, not necessarily zero actual change."
+      ]
+    },
+    {
+      "section": "14.5",
+      "title": "Chain rule and related rates",
+      "review": "chapter14",
+      "body": [
+        "Along a path, \\(df/dt=f_xx'+f_yy'+f_zz'\\).",
+        "For two parameters, \\(f_s=f_xx_s+f_yy_s+f_zz_s\\), and similarly for \\(f_t\\). Include every dependency path.",
+        "In \\(G(u(s,t),v(s,t))\\), evaluate the outer derivatives \\(G_u,G_v\\) at \\((u,v)\\), not at \\((s,t)\\).",
+        "For \\(F(x,y)=0\\), implicit differentiation gives \\(y'=-F_x/F_y\\) when \\(F_y\\ne0\\).",
+        "Use signed rates and consistent units in related-rate problems. With explicit time dependence, \\(dT/dt=T_xx'+T_yy'+T_t\\).",
+        "Change per unit time and change per unit distance are different quantities."
+      ]
+    },
+    {
+      "section": "14.6",
+      "title": "Directional derivatives and gradients",
+      "review": "chapter14",
+      "body": [
+        "The gradient is the vector of partial derivatives. For a unit vector \\(\\mathbf u\\), \\(D_{\\mathbf u}f=\\nabla f\\cdot\\mathbf u\\).",
+        "Toward \\(Q\\) from \\(P\\), normalize \\(Q-P\\) before taking the dot product.",
+        "Maximum rate: \\(\\|\\nabla f\\|\\), in direction \\(\\nabla f/\\|\\nabla f\\|\\). Minimum rate: \\(-\\|\\nabla f\\|\\), in the opposite direction. Perpendicular directions have zero rate.",
+        "For \\(F=c\\) with nonzero gradient, the tangent plane is \\(\\nabla F(P)\\cdot(\\mathbf r-P)=0\\); the normal line is \\(\\mathbf r=P+t\\nabla F(P)\\).",
+        "Along a path, \\(df/dt=\\nabla f\\cdot\\mathbf r'\\). A zero directional derivative at one point does not make a straight path a level curve."
+      ]
+    },
+    {
+      "section": "14.7",
+      "title": "Local and absolute extrema",
+      "review": "chapter14",
+      "body": [
+        "Critical points satisfy \\(f_x=f_y=0\\), or occur where a partial is undefined. A candidate need not be an extremum.",
+        "With continuous second partials, let \\(D=f_{xx}f_{yy}-(f_{xy})^2\\).",
+        "If \\(D>0\\) and \\(f_{xx}>0\\): local minimum. If \\(D>0\\) and \\(f_{xx}<0\\): local maximum. If \\(D<0\\): saddle. If \\(D=0\\): inconclusive.",
+        "A continuous function on a closed bounded region attains absolute extrema. Check interior candidates, every boundary segment, and endpoints; compare original function values.",
+        "When \\(D=0\\), use signs, factorization, sums of squares, or paths. State the extremal values and all attaining points.",
+        "A nonstrict minimum permits nearby points with equal values; a strict minimum does not."
+      ]
+    },
+    {
+      "section": "14.8",
+      "title": "Lagrange multipliers",
+      "review": "chapter14",
+      "body": [
+        "For one constraint \\(g=c\\), solve \\(\\nabla f=\\lambda\\nabla g\\) with the constraint. The usual condition is \\(\\nabla g\\ne\\mathbf0\\); check exceptional points separately.",
+        "Do not divide by variables or multipliers before checking their zero cases. A finite candidate list does not guarantee absolute extrema on an unbounded set.",
+        "For a region \\(g\\le c\\), check both the interior and the boundary.",
+        "Optimize squared distance first, then take its square root. Include all physical restrictions in applied problems.",
+        "With two constraints, solve \\(\\nabla f=\\lambda\\nabla g+\\mu\\nabla h\\) together with both constraints. The constraint gradients must be linearly independent."
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "id": "chapter14",
+      "title": "Chapter 14",
+      "course": "MATH 251"
+    },
+    {
+      "id": "easy",
+      "title": "Easy Daily Integrals",
+      "course": "INTEGRALS"
+    },
+    {
+      "id": "medium",
+      "title": "Medium Daily Integrals",
+      "course": "INTEGRALS"
+    }
+  ]
+}

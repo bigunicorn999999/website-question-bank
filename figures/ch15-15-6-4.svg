@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+<title id="title">Challenge: weighted tetrahedron</title><desc id="desc">xz cross-section at y = 0. Shaded region indicates the integration domain; boundary labels specify exact equations.</desc>
+<rect width="640" height="400" rx="16" fill="#f8fafc"/>
+<text x="28" y="32" font-family="sans-serif" font-size="19" fill="#0f172a">xz cross-section at y = 0</text>
+<polygon points="75.00,335.00 494.12,335.00 75.00,131.00" fill="#bae6fd" fill-opacity="0.65" stroke="#0369a1" stroke-width="2.5"/>
+<path d="M 55,335 H 570 M 75,355 V 60" fill="none" stroke="#475569" stroke-width="1.5"/>
+<text x="501.1" y="335.0" font-family="sans-serif" font-size="15" fill="#0f172a">x</text>
+<text x="75.0" y="110.6" font-family="sans-serif" font-size="15" fill="#0f172a">z</text>
+<text x="214.7" y="171.8" font-family="sans-serif" font-size="15" fill="#0f172a">x + 3z = 6</text>
+<text x="28" y="385" font-family="sans-serif" font-size="13" fill="#475569">Projection / cross-section • use the stated equations for bounds</text></svg>

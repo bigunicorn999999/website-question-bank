@@ -6727,6 +6727,224 @@
           "Absolute Jacobian: \\(24\\). (a) \\(32\\pi\\). (b) \\(4/5\\)."
         ]
       }
+    },
+    {
+      "id": "15.2.4",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Read a curved region in both orders",
+      "body": [
+        "Let D lie between \\(y=x^2\\) and \\(y=x\\) in the first quadrant. Use the diagram to write both orders of integration and evaluate \\(\\iint_D(x+y)\\,dA\\)."
+      ],
+      "figure": "figures/ch15-15-2-4.svg",
+      "figureAlt": "xy projection. x; y; y = x; y = x²",
+      "practiceSet": "illustrated-challenge",
+      "answer": {
+        "blocks": [
+          "The intersections are \\((0,0)\\) and \\((1,1)\\). Vertical slices give \\(0\\le x\\le1,\\ x^2\\le y\\le x\\); horizontal slices give \\(0\\le y\\le1,\\ y\\le x\\le\\sqrt y\\).",
+          "\\(\\int_0^1\\int_{x^2}^x(x+y)\\,dy\\,dx=\\int_0^1\\int_y^{\\sqrt y}(x+y)\\,dx\\,dy=3/20\\)."
+        ]
+      }
+    },
+    {
+      "id": "15.3.4",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Polar coordinates on a shifted disk",
+      "body": [
+        "D is the disk \\((x-1)^2+y^2\\le1\\). Evaluate \\(\\iint_D(x^2+y^2)\\,dA\\) in polar coordinates."
+      ],
+      "figure": "figures/ch15-15-3-4.svg",
+      "figureAlt": "xy projection (upper half; reflect across x-axis). x; y; (x − 1)² + y² = 1; 1; 2",
+      "practiceSet": "illustrated-challenge",
+      "answer": {
+        "blocks": [
+          "The circle becomes \\(r=2\\cos\\theta\\), so \\(-\\pi/2\\le\\theta\\le\\pi/2\\) and \\(0\\le r\\le2\\cos\\theta\\). Remember \\(dA=r\\,dr\\,d\\theta\\).",
+          "\\(\\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta}r^3\\,dr\\,d\\theta=4\\int_{-\\pi/2}^{\\pi/2}\\cos^4\\theta\\,d\\theta=3\\pi/2\\)."
+        ]
+      }
+    },
+    {
+      "id": "15.4.4",
+      "review": "chapter15",
+      "section": "15.4",
+      "title": "A triangular lamina with variable density",
+      "body": [
+        "A lamina occupies \\(x\\ge0,y\\ge0,x+y\\le2\\) with density \\(\\delta=x+y\\). Find its mass and center of mass."
+      ],
+      "figure": "figures/ch15-15-4-4.svg",
+      "figureAlt": "xy projection. x; y; x + y = 2",
+      "practiceSet": "illustrated-challenge",
+      "answer": {
+        "blocks": [
+          "\\(m=\\int_0^2\\int_0^{2-x}(x+y)\\,dy\\,dx=8/3\\). Symmetry about \\(y=x\\) gives \\(\\bar x=\\bar y\\).",
+          "\\(M_y=\\int_0^2\\int_0^{2-x}x(x+y)\\,dy\\,dx=2=M_x\\). Thus \\((\\bar x,\\bar y)=(3/4,3/4)\\)."
+        ]
+      }
+    },
+    {
+      "id": "15.5.4",
+      "review": "chapter15",
+      "section": "15.5",
+      "title": "Surface area of a paraboloid cap",
+      "body": [
+        "Find the area of \\(z=x^2+y^2\\) above the disk \\(x^2+y^2\\le1\\). Explain why this is not the volume under the surface."
+      ],
+      "figure": "figures/ch15-15-5-4.svg",
+      "figureAlt": "rz cross-section (rotate about z-axis). r; z; z = r²; 1",
+      "practiceSet": "illustrated-challenge",
+      "answer": {
+        "blocks": [
+          "\\(f_x=2x,f_y=2y\\), so the surface element is \\(\\sqrt{1+4x^2+4y^2}\\,dA\\).",
+          "\\(A=\\int_0^{2\\pi}\\int_0^1r\\sqrt{1+4r^2}\\,dr\\,d\\theta=\\frac{\\pi}{6}(5\\sqrt5-1)\\). The integrand measures stretched surface area; volume would use height \\(r^2\\)."
+        ]
+      }
+    },
+    {
+      "id": "15.6.4",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Challenge: weighted tetrahedron",
+      "body": [
+        "E is bounded by the coordinate planes and \\(x+2y+3z=6\\). With density \\(\\delta=z\\), find the mass and \\(\\bar z\\)."
+      ],
+      "figure": "figures/ch15-15-6-4.svg",
+      "figureAlt": "xz cross-section at y = 0. x; z; x + 3z = 6",
+      "practiceSet": "illustrated-challenge",
+      "answer": {
+        "blocks": [
+          "Bounds: \\(0\\le z\\le2,\\ 0\\le y\\le(6-3z)/2,\\ 0\\le x\\le6-2y-3z\\). A horizontal slice has area \\(A(z)=(6-3z)^2/4\\).",
+          "\\(m=\\int_0^2 zA(z)\\,dz=3\\). Also \\(\\iiint_E z^2\\,dV=\\int_0^2 z^2A(z)\\,dz=12/5\\), so \\(\\bar z=(12/5)/3=4/5\\)."
+        ]
+      }
+    },
+    {
+      "id": "15.6.5",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Challenge: put z on the outside",
+      "body": [
+        "The solid is \\(0\\le y\\le x\\le1,\\ 0\\le z\\le y^2\\). Rewrite its volume integral in the order \\(dx\\,dy\\,dz\\) and evaluate."
+      ],
+      "figure": "figures/ch15-15-6-5.svg",
+      "figureAlt": "yz projection. y; z; z = y²; 1",
+      "practiceSet": "illustrated-challenge",
+      "answer": {
+        "blocks": [
+          "The yz projection satisfies \\(0\\le z\\le1,\\ \\sqrt z\\le y\\le1\\). For each point in that projection, \\(y\\le x\\le1\\).",
+          "\\(V=\\int_0^1\\int_{\\sqrt z}^1\\int_y^1 1\\,dx\\,dy\\,dz=1/12\\). Check in the original order: \\(\\int_0^1 y^2(1-y)\\,dy=1/12\\)."
+        ]
+      }
+    },
+    {
+      "id": "15.7.4",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Challenge: inertia between two paraboloids",
+      "body": [
+        "E lies between \\(z=x^2+y^2\\) and \\(z=8-x^2-y^2\\). For constant density 1, find the volume and moment of inertia \\(I_z=\\iiint_E(x^2+y^2)\\,dV\\)."
+      ],
+      "figure": "figures/ch15-15-7-4.svg",
+      "figureAlt": "rz cross-section (rotate about z-axis). r; z; z = 8 − r²; z = r²; (2, 4)",
+      "practiceSet": "illustrated-challenge",
+      "answer": {
+        "blocks": [
+          "The surfaces meet at \\(r=2,z=4\\). Bounds: \\(0\\le\\theta\\le2\\pi,0\\le r\\le2,r^2\\le z\\le8-r^2\\).",
+          "\\(V=2\\pi\\int_0^2(8-2r^2)r\\,dr=16\\pi\\).",
+          "\\(I_z=2\\pi\\int_0^2(8-2r^2)r^3\\,dr=64\\pi/3\\). The extra \\(r^2\\) is squared distance to the z-axis."
+        ]
+      }
+    },
+    {
+      "id": "15.7.5",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Challenge: an offset cylinder with density",
+      "body": [
+        "E satisfies \\((x-1)^2+y^2\\le1\\) and \\(0\\le z\\le x^2+y^2\\). Find its mass for density \\(\\delta=z\\)."
+      ],
+      "figure": "figures/ch15-15-7-5.svg",
+      "figureAlt": "xy projection (upper half; reflect across x-axis). x; y; r = 2 cos θ",
+      "practiceSet": "illustrated-challenge",
+      "answer": {
+        "blocks": [
+          "The offset cylinder gives \\(-\\pi/2\\le\\theta\\le\\pi/2,\\ 0\\le r\\le2\\cos\\theta\\). The height is \\(0\\le z\\le r^2\\).",
+          "\\(m=\\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta}\\int_0^{r^2}zr\\,dz\\,dr\\,d\\theta=\\frac{16}{3}\\int_{-\\pi/2}^{\\pi/2}\\cos^6\\theta\\,d\\theta=5\\pi/3\\)."
+        ]
+      }
+    },
+    {
+      "id": "15.8.4",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Challenge: spherical shell inside a cone",
+      "body": [
+        "E lies between spheres \\(\\rho=1\\) and \\(\\rho=3\\), above the cone \\(z=\\sqrt{x^2+y^2}/\\sqrt3\\). Find its mass if \\(\\delta=\\sqrt{x^2+y^2+z^2}\\)."
+      ],
+      "figure": "figures/ch15-15-8-4.svg",
+      "figureAlt": "rz cross-section (rotate about z-axis). r; z; ρ = 3; ρ = 1; φ = π/3",
+      "practiceSet": "illustrated-challenge",
+      "answer": {
+        "blocks": [
+          "The cone is \\(\\phi=\\pi/3\\). Above it means \\(0\\le\\phi\\le\\pi/3\\). Density is \\(\\rho\\), and \\(dV=\\rho^2\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta\\).",
+          "\\(m=\\int_0^{2\\pi}\\int_0^{\\pi/3}\\int_1^3\\rho^3\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta=20\\pi\\)."
+        ]
+      }
+    },
+    {
+      "id": "15.8.5",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Challenge: inside one sphere, outside another",
+      "body": [
+        "Find the volume inside \\(x^2+y^2+z^2\\le2z\\) and outside \\(x^2+y^2+z^2\\ge1\\). Determine where the radial bounds meet."
+      ],
+      "figure": "figures/ch15-15-8-5.svg",
+      "figureAlt": "rz cross-section (rotate about z-axis). r; z; ρ = 2 cos φ; ρ = 1",
+      "practiceSet": "illustrated-challenge",
+      "answer": {
+        "blocks": [
+          "The shifted sphere is \\(\\rho=2\\cos\\phi\\). Since \\(1\\le\\rho\\le2\\cos\\phi\\), the bounds meet at \\(\\phi=\\pi/3\\).",
+          "\\(V=\\int_0^{2\\pi}\\int_0^{\\pi/3}\\int_1^{2\\cos\\phi}\\rho^2\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta=11\\pi/12\\). Integrating to \\(\\pi/2\\) would reverse radial bounds in part of the region."
+        ]
+      }
+    },
+    {
+      "id": "15.7.6",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Challenge: a cylindrical hole through a sphere",
+      "body": [
+        "A sphere \\(x^2+y^2+z^2\\le4\\) has the cylindrical region \\(x^2+y^2<1\\) removed. Find the remaining volume using cylindrical coordinates."
+      ],
+      "figure": "figures/ch15-15-7-6.svg",
+      "figureAlt": "rz cross-section (upper half; reflect across r-axis). r; z; 1; r² + z² = 4",
+      "practiceSet": "illustrated-challenge",
+      "answer": {
+        "blocks": [
+          "The remaining solid has \\(1\\le r\\le2\\) and \\(-\\sqrt{4-r^2}\\le z\\le\\sqrt{4-r^2}\\). Use symmetry across the xy-plane.",
+          "\\(V=\\int_0^{2\\pi}\\int_1^2\\int_{-\\sqrt{4-r^2}}^{\\sqrt{4-r^2}}r\\,dz\\,dr\\,d\\theta=4\\pi\\int_1^2r\\sqrt{4-r^2}\\,dr=4\\pi\\sqrt3\\)."
+        ]
+      }
+    },
+    {
+      "id": "15.9.4",
+      "review": "chapter15",
+      "section": "15.9",
+      "title": "Challenge: ellipsoid moment of inertia",
+      "body": [
+        "For the uniform solid \\(x^2/4+y^2/9+z^2/16\\le1\\) with density 1, use a change of variables to compute \\(I_z=\\iiint_E(x^2+y^2)\\,dV\\)."
+      ],
+      "figure": "figures/ch15-15-9-4.svg",
+      "figureAlt": "xz cross-section at y = 0 (upper half). x; z; x²/4 + z²/16 = 1",
+      "practiceSet": "illustrated-challenge",
+      "answer": {
+        "blocks": [
+          "Set \\(x=2u,y=3v,z=4w\\). The transformed region is the unit ball B and the absolute Jacobian is \\(24\\).",
+          "\\(I_z=24\\iiint_B(4u^2+9v^2)\\,dV\\). By symmetry each of \\(\\iiint_Bu^2\\,dV,\\iiint_Bv^2\\,dV,\\iiint_Bw^2\\,dV\\) equals \\(4\\pi/15\\).",
+          "Therefore \\(I_z=24(13)(4\\pi/15)=416\\pi/5\\). The mass is \\(32\\pi\\), giving the check \\(I_z=m(2^2+3^2)/5\\)."
+        ]
+      }
     }
   ],
   "guides": [

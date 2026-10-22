@@ -4,7 +4,7 @@
 
 GitHub Pages: https://bigunicorn999999.github.io/website-question-bank/
 
-The deployable static site lives at the repository root. Open `?review=chapter15` for nine detailed Chapter 15 guides and 39 original practice problems across 15.1–15.9, including 12 illustrated additions with worked solutions and eight harder triple-integral applications. Subject folders provide unit navigation for Calculus, Chemistry, Engineering, and Daily Integrals. `?review=chapter15&unit=15.8` opens a particular unit. Chemistry and Engineering cards include a Copy button that preserves question text, code, choices, and figure links without copying answers or personal drafts.
+The deployable static site lives at the repository root. Open `?review=chapter15` for nine detailed Chapter 15 guides and 57 original practice problems across 15.1–15.9, including 12 illustrated additions with worked solutions and eight harder triple-integral applications. A further 18 harder challenges add three questions per unit in 15.3–15.8, each with worked solutions; their 138 math expressions and 23 numerical checks were validated. Search for “Harder challenge” on the Questions tab to find them. Subject folders provide unit navigation for Calculus, Chemistry, Engineering, and Daily Integrals. `?review=chapter15&unit=15.8` opens a particular unit. Chemistry and Engineering cards include a Copy button that preserves question text, code, choices, and figure links without copying answers or personal drafts.
 
 The October 22 update carries forward all 301 questions from the newer study library and adds 27 Chapter 15 questions. Existing question IDs remain stable. Progress, bookmarks, choices, and Engineering drafts are browser-local and remain exportable/importable. To transfer progress from the previous Sites domain, export there and import on this GitHub Pages domain.
 
@@ -19,4 +19,5 @@ Chapter 14 images preserve its original typesetting and diagrams. The integral s
 Medium 6 and 25 have poles: ordinary integrals are divergent/undefined, with separately stated principal values. Medium 35 includes the intended recursive fixed-point value and explains the literal radical domain problem. Medium 29 is an infinite power tower. Answers were checked numerically or analytically; do not silently remove these qualifications.
 
 The October 12 quiz challenge adds 30 original questions based on Quiz 4B and Quiz 5B: ten each in 14.7 and 14.8, and two each in 14.1, 14.3, 14.4, 14.5, and 14.6. New IDs continue each section from .9. The New quiz challenges progress filter and ?review=chapter14&set=quiz-challenge-oct12 link isolate the new set. Their answer reveals contain final answers only. Preserve existing IDs and browser progress. Quiz scans and student records are not deployed.
+
 

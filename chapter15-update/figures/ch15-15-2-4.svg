@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+<title id="title">Read a curved region in both orders</title><desc id="desc">xy projection. Shaded region indicates the integration domain; boundary labels specify exact equations.</desc>
+<rect width="640" height="400" rx="16" fill="#f8fafc"/>
+<text x="28" y="32" font-family="sans-serif" font-size="19" fill="#0f172a">xy projection</text>
+<polygon points="75.00,335.00 79.95,334.97 84.90,334.87 89.84,334.70 94.79,334.47 99.74,334.17 104.69,333.80 109.64,333.37 114.58,332.88 119.53,332.31 124.48,331.68 129.43,330.98 134.38,330.22 139.32,329.39 144.27,328.49 149.22,327.53 154.17,326.50 159.11,325.40 164.06,324.24 169.01,323.01 173.96,321.72 178.91,320.36 183.85,318.93 188.80,317.44 193.75,315.88 198.70,314.25 203.65,312.55 208.59,310.79 213.54,308.97 218.49,307.08 223.44,305.12 228.39,303.09 233.33,301.00 238.28,298.84 243.23,296.62 248.18,294.33 253.13,291.97 258.07,289.54 263.02,287.05 267.97,284.50 272.92,281.88 277.86,279.19 282.81,276.43 287.76,273.61 292.71,270.72 297.66,267.76 302.60,264.74 307.55,261.65 312.50,258.50 317.45,255.28 322.40,251.99 327.34,248.64 332.29,245.22 337.24,241.73 342.19,238.18 347.14,234.56 352.08,230.88 357.03,227.12 361.98,223.30 366.93,219.42 371.88,215.47 376.82,211.45 381.77,207.37 386.72,203.22 391.67,199.00 396.61,194.72 401.56,190.37 406.51,185.95 411.46,181.47 416.41,176.92 421.35,172.30 426.30,167.62 431.25,162.88 436.20,158.06 441.15,153.18 446.09,148.23 451.04,143.22 455.99,138.14 460.94,132.99 465.89,127.78 470.83,122.50 75.00,335.00" fill="#bae6fd" fill-opacity="0.65" stroke="#0369a1" stroke-width="2.5"/>
+<path d="M 55,335 H 570 M 75,355 V 60" fill="none" stroke="#475569" stroke-width="1.5"/>
+<text x="490.6" y="335.0" font-family="sans-serif" font-size="15" fill="#0f172a">x</text>
+<text x="75.0" y="84.2" font-family="sans-serif" font-size="15" fill="#0f172a">y</text>
+<text x="292.7" y="154.4" font-family="sans-serif" font-size="15" fill="#0f172a">y = x</text>
+<text x="332.3" y="281.9" font-family="sans-serif" font-size="15" fill="#0f172a">y = x²</text>
+<text x="28" y="385" font-family="sans-serif" font-size="13" fill="#475569">Projection / cross-section • use the stated equations for bounds</text></svg>

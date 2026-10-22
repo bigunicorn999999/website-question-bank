@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+<title id="title">Carbon dioxide phase diagram</title><desc id="desc">Schematic showing solid at low temperature, liquid above the triple pressure and between melting and vaporization curves, gas below the vaporization and sublimation boundaries, and the critical endpoint. Not to scale.</desc>
+<rect width="800" height="500" rx="16" fill="#f8faf5"/><g font-family="Arial,sans-serif" fill="#243323">
+<text x="35" y="37" font-size="20" font-weight="bold">CO₂ · pressure–temperature diagram</text><text x="35" y="62" font-size="14">Schematic only · use the numerical data in the question</text>
+<path d="M100 410 L100 95 M100 410 L735 410" fill="none" stroke="#243323" stroke-width="2"/>
+<path d="M100 410 Q200 395 305 310 Q460 287 540 150 L540 95 L350 95 L305 310" fill="#e8efdb"/>
+<path d="M305 310 L350 95 L100 95 L100 410 Q200 395 305 310" fill="#dee9ee"/>
+<path d="M100 410 Q200 395 305 310 Q460 287 540 150 L735 150 L735 410Z" fill="#fbefcf"/>
+<path d="M100 410 Q200 395 305 310 L350 95 M305 310 Q460 287 540 150" fill="none" stroke="#355d43" stroke-width="3"/>
+<path d="M100 310 H305 M100 150 H540 M305 310 V410 M540 150 V410" stroke="#778477" stroke-dasharray="5 5" fill="none"/>
+<circle cx="305" cy="310" r="6" fill="#243323"/><circle cx="540" cy="150" r="6" fill="#243323"/>
+<text x="155" y="215" font-size="23">SOLID</text><text x="375" y="185" font-size="23">LIQUID</text><text x="480" y="355" font-size="23">GAS</text>
+<text x="566" y="111" font-size="17">Supercritical region</text><text x="553" y="177" font-size="14">Critical point</text><text x="315" y="335" font-size="14">Triple point</text>
+<text x="33" y="155" font-size="14">73.0</text><text x="33" y="315" font-size="14">5.11</text><text x="270" y="433" font-size="14">−56.6</text><text x="524" y="433" font-size="14">31.0</text>
+<text x="330" y="473" font-size="16">Temperature (°C)</text><text transform="translate(21,285) rotate(-90)" font-size="16">Pressure (atm)</text></g></svg>

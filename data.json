@@ -6945,6 +6945,411 @@
           "Therefore \\(I_z=24(13)(4\\pi/15)=416\\pi/5\\). The mass is \\(32\\pi\\), giving the check \\(I_z=m(2^2+3^2)/5\\)."
         ]
       }
+    },
+    {
+      "id": "15.3.5",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Harder challenge: overlapping disks with a radial weight",
+      "practiceSet": "harder-challenge-oct22",
+      "difficulty": "hard",
+      "body": [
+        "Let D be the intersection of \\(x^2+y^2\\le2x\\) and \\(x^2+y^2\\le2y\\). Use polar coordinates to evaluate \\(\\iint_D(x^2+y^2)\\,dA\\). Explain where the radial bound changes."
+      ],
+      "answer": {
+        "blocks": [
+          "Both inequalities require \\(0\\le\\theta\\le\\pi/2\\), and \\(r\\le\\min(2\\cos\\theta,2\\sin\\theta)\\). The bounds switch at \\(\\theta=\\pi/4\\).",
+          {
+            "math": "\\iint_D(x^2+y^2)\\,dA=\\int_0^{\\pi/4}\\int_0^{2\\sin\\theta}r^3\\,dr\\,d\\theta+\\int_{\\pi/4}^{\\pi/2}\\int_0^{2\\cos\\theta}r^3\\,dr\\,d\\theta"
+          },
+          "Reflection across \\(y=x\\) makes the two terms equal.",
+          {
+            "math": "8\\int_0^{\\pi/4}\\sin^4\\theta\\,d\\theta=\\frac{3\\pi}{4}-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "15.3.6",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Harder challenge: a cardioid with a circular cutout",
+      "practiceSet": "harder-challenge-oct22",
+      "difficulty": "hard",
+      "body": [
+        "Find the area inside the cardioid \\(r=1+\\cos\\theta\\) and outside the circle \\(r=1\\). Determine the angular interval before integrating."
+      ],
+      "answer": {
+        "blocks": [
+          "The radial interval \\(1\\le r\\le1+\\cos\\theta\\) is nonempty only when \\(\\cos\\theta\\ge0\\). Use \\(-\\pi/2\\le\\theta\\le\\pi/2\\).",
+          {
+            "math": "A=\\int_{-\\pi/2}^{\\pi/2}\\int_1^{1+\\cos\\theta}r\\,dr\\,d\\theta=\\frac12\\int_{-\\pi/2}^{\\pi/2}(2\\cos\\theta+\\cos^2\\theta)\\,d\\theta=2+\\frac{\\pi}{4}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "15.3.7",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Harder challenge: an improper Gaussian sector",
+      "practiceSet": "harder-challenge-oct22",
+      "difficulty": "hard",
+      "body": [
+        "Evaluate \\(\\iint_D(x^2+y^2)e^{-(x^2+y^2)}\\,dA\\), where D is the unbounded sector \\(x\\ge0,\\ 0\\le y\\le\\sqrt3x\\). Write the improper limit explicitly."
+      ],
+      "answer": {
+        "blocks": [
+          "The sector is \\(0\\le\\theta\\le\\pi/3,\\ 0\\le r<\\infty\\). The radial weight and Jacobian together give \\(r^3\\).",
+          {
+            "math": "\\lim_{R\\to\\infty}\\int_0^{\\pi/3}\\int_0^Rr^3e^{-r^2}\\,dr\\,d\\theta=\\frac{\\pi}{6}\\lim_{R\\to\\infty}\\left[1-(R^2+1)e^{-R^2}\\right]=\\frac{\\pi}{6}"
+          },
+          "Use \\(u=r^2\\) and integration by parts. The limit is finite, so the improper integral converges."
+        ]
+      }
+    },
+    {
+      "id": "15.4.5",
+      "review": "chapter15",
+      "section": "15.4",
+      "title": "Harder challenge: balance and inertia of a curved lamina",
+      "practiceSet": "harder-challenge-oct22",
+      "difficulty": "hard",
+      "body": [
+        "A lamina occupies \\(0\\le x\\le1,\\ x^2\\le y\\le x\\), with density \\(\\delta=x\\). Find its mass, center of mass, and polar moment of inertia about the origin \\(I_O=\\iint_D(x^2+y^2)\\delta\\,dA\\)."
+      ],
+      "answer": {
+        "blocks": [
+          {
+            "math": "m=\\int_0^1x(x-x^2)\\,dx=\\frac1{12}"
+          },
+          {
+            "math": "M_y=\\int_0^1x^2(x-x^2)\\,dx=\\frac1{20},\\qquad M_x=\\frac12\\int_0^1x(x^2-x^4)\\,dx=\\frac1{24}"
+          },
+          "Divide the first moments by mass: \\((\\bar x,\\bar y)=(3/5,1/2)\\).",
+          {
+            "math": "I_O=\\int_0^1\\int_{x^2}^{x}(x^2+y^2)x\\,dy\\,dx=\\frac1{30}+\\frac1{40}=\\frac7{120}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "15.4.6",
+      "review": "chapter15",
+      "section": "15.4",
+      "title": "Harder challenge: a radially weighted quarter annulus",
+      "practiceSet": "harder-challenge-oct22",
+      "difficulty": "hard",
+      "body": [
+        "A lamina occupies \\(1\\le x^2+y^2\\le9\\) in the first quadrant and has density \\(\\delta=\\sqrt{x^2+y^2}\\). Find its mass, center of mass, and polar moment \\(I_O\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "Use \\(1\\le r\\le3,\\ 0\\le\\theta\\le\\pi/2\\). Density contributes one factor of r and the area element contributes another.",
+          {
+            "math": "m=\\int_0^{\\pi/2}\\int_1^3r^2\\,dr\\,d\\theta=\\frac{13\\pi}{3},\\qquad M_y=M_x=\\int_0^{\\pi/2}\\cos\\theta\\,d\\theta\\int_1^3r^3\\,dr=20"
+          },
+          {
+            "math": "(\\bar x,\\bar y)=\\left(\\frac{60}{13\\pi},\\frac{60}{13\\pi}\\right),\\qquad I_O=\\int_0^{\\pi/2}\\int_1^3r^4\\,dr\\,d\\theta=\\frac{121\\pi}{5}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "15.4.7",
+      "review": "chapter15",
+      "section": "15.4",
+      "title": "Harder challenge: a normalized density on a triangle",
+      "practiceSet": "harder-challenge-oct22",
+      "difficulty": "hard",
+      "body": [
+        "A joint probability density is \\(p(x,y)=cxy\\) on \\(x\\ge0,\\ y\\ge0,\\ x+y\\le1\\), and zero elsewhere. Find c and \\(P(Y\\ge2X)\\)."
+      ],
+      "answer": {
+        "blocks": [
+          {
+            "math": "1=c\\int_0^1\\int_0^{1-x}xy\\,dy\\,dx=\\frac{c}{24},\\qquad c=24"
+          },
+          "The event has \\(2x\\le y\\le1-x\\), which requires \\(0\\le x\\le1/3\\).",
+          {
+            "math": "P(Y\\ge2X)=24\\int_0^{1/3}\\int_{2x}^{1-x}xy\\,dy\\,dx=12\\int_0^{1/3}(x-2x^2-3x^3)\\,dx=\\frac7{27}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "15.5.5",
+      "review": "chapter15",
+      "section": "15.5",
+      "title": "Harder challenge: a cubic radial surface",
+      "practiceSet": "harder-challenge-oct22",
+      "difficulty": "hard",
+      "body": [
+        "Find the curved area of \\(z=\\frac23(x^2+y^2)^{3/2}\\) above the unit disk. Give an exact answer using a logarithm."
+      ],
+      "answer": {
+        "blocks": [
+          "For \\(f=\\frac23r^3\\), \\(f_x=2xr\\) and \\(f_y=2yr\\), hence \\(1+f_x^2+f_y^2=1+4r^4\\).",
+          {
+            "math": "A=2\\pi\\int_0^1r\\sqrt{1+4r^4}\\,dr=\\pi\\int_0^1\\sqrt{1+4u^2}\\,du\\quad(u=r^2)"
+          },
+          {
+            "math": "A=\\pi\\left[\\frac u2\\sqrt{1+4u^2}+\\frac14\\ln(2u+\\sqrt{1+4u^2})\\right]_0^1=\\frac{\\pi\\sqrt5}{2}+\\frac{\\pi}{4}\\ln(2+\\sqrt5)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "15.5.6",
+      "review": "chapter15",
+      "section": "15.5",
+      "title": "Harder challenge: a spherical patch over an annular sector",
+      "practiceSet": "harder-challenge-oct22",
+      "difficulty": "hard",
+      "body": [
+        "Find the area of the upper sphere \\(z=\\sqrt{9-x^2-y^2}\\) above \\(1\\le x^2+y^2\\le4,\\ y\\ge x\\ge0\\). Exclude all planar faces."
+      ],
+      "answer": {
+        "blocks": [
+          "The surface factor is \\(\\sqrt{1+f_x^2+f_y^2}=3/\\sqrt{9-r^2}\\). The projection has \\(1\\le r\\le2\\) and \\(\\pi/4\\le\\theta\\le\\pi/2\\).",
+          {
+            "math": "A=\\int_{\\pi/4}^{\\pi/2}\\int_1^2\\frac{3r}{\\sqrt{9-r^2}}\\,dr\\,d\\theta=\\frac{3\\pi}{4}(2\\sqrt2-\\sqrt5)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "15.5.7",
+      "review": "chapter15",
+      "section": "15.5",
+      "title": "Harder challenge: total boundary area of a truncated solid",
+      "practiceSet": "harder-challenge-oct22",
+      "difficulty": "hard",
+      "body": [
+        "Let E be the solid \\(1\\le z\\le4,\\ x^2+y^2\\le z\\). Find its total boundary area, including both flat faces. Identify the projection of the curved face."
+      ],
+      "answer": {
+        "blocks": [
+          "The curved face is \\(z=x^2+y^2\\) over the annulus \\(1\\le r\\le2\\); it is not the full disk. Its surface factor is \\(\\sqrt{1+4r^2}\\).",
+          {
+            "math": "A_{\\mathrm{curved}}=2\\pi\\int_1^2r\\sqrt{1+4r^2}\\,dr=\\frac{\\pi}{6}(17\\sqrt{17}-5\\sqrt5)"
+          },
+          "The bottom disk at z=1 has area \\(\\pi\\), and the top disk at z=4 has area \\(4\\pi\\).",
+          {
+            "math": "A_{\\mathrm{total}}=\\frac{\\pi}{6}(17\\sqrt{17}-5\\sqrt5)+5\\pi"
+          }
+        ]
+      }
+    },
+    {
+      "id": "15.6.6",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Harder challenge: density on an asymmetric tetrahedron",
+      "practiceSet": "harder-challenge-oct22",
+      "difficulty": "hard",
+      "body": [
+        "The solid \\(E=\\{x,y,z\\ge0:x+y+z\\le1\\}\\) has density \\(\\delta=xy\\). Find its mass and all three coordinates of its center of mass."
+      ],
+      "answer": {
+        "blocks": [
+          {
+            "math": "m=\\int_0^1\\int_0^{1-x}\\int_0^{1-x-y}xy\\,dz\\,dy\\,dx=\\frac1{120}"
+          },
+          "Symmetry gives equal x- and y-moments, but z is not interchangeable with them because the density is xy.",
+          {
+            "math": "\\iiint_E x\\delta\\,dV=\\iiint_E y\\delta\\,dV=\\frac1{360},\\qquad \\iiint_E z\\delta\\,dV=\\frac1{720}"
+          },
+          {
+            "math": "(\\bar x,\\bar y,\\bar z)=\\left(\\frac13,\\frac13,\\frac16\\right)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "15.6.7",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Harder challenge: a sloping roof with z outermost",
+      "practiceSet": "harder-challenge-oct22",
+      "difficulty": "hard",
+      "body": [
+        "Let \\(E=\\{0\\le x\\le1,\\ 0\\le y\\le1,\\ 0\\le z\\le x+y\\}\\). Rewrite \\(\\iiint_E z^2\\,dV\\) in the order \\(dx\\,dy\\,dz\\), splitting as needed, and evaluate."
+      ],
+      "answer": {
+        "blocks": [
+          "For fixed z, the square is clipped by \\(x+y\\ge z\\). For \\(0\\le z\\le1\\), split at y=z; for \\(1\\le z\\le2\\), y starts at z−1.",
+          {
+            "math": "\\int_0^1\\int_0^z\\int_{z-y}^1 z^2\\,dx\\,dy\\,dz+\\int_0^1\\int_z^1\\int_0^1 z^2\\,dx\\,dy\\,dz+\\int_1^2\\int_{z-1}^1\\int_{z-y}^1 z^2\\,dx\\,dy\\,dz=\\frac12"
+          },
+          "Check in the original order: \\(\\int_0^1\\int_0^1 (x+y)^3/3\\,dy\\,dx=1/2\\)."
+        ]
+      }
+    },
+    {
+      "id": "15.6.8",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Harder challenge: mass between two sloping planes",
+      "practiceSet": "harder-challenge-oct22",
+      "difficulty": "hard",
+      "body": [
+        "Let \\(E=\\{x,y\\ge0,\\ x+y\\le1,\\ x+y\\le z\\le2-x-y\\}\\), with density \\(\\delta=z\\). Find the mass and \\(\\bar z\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "Integrate in z first. Writing s=x+y only as an abbreviation, the mass integrand becomes \\(((2-s)^2-s^2)/2=2-2s\\).",
+          {
+            "math": "m=\\int_0^1\\int_0^{1-x}\\int_{x+y}^{2-x-y}z\\,dz\\,dy\\,dx=\\frac13"
+          },
+          {
+            "math": "M_{xy}=\\int_0^1\\int_0^{1-x}\\frac{(2-x-y)^3-(x+y)^3}{3}\\,dy\\,dx=\\frac{11}{30}"
+          },
+          {
+            "math": "\\bar z=\\frac{M_{xy}}m=\\frac{11}{10}"
+          },
+          "The geometric solid is symmetric about z=1, but the density increases with z, shifting the balance point above that plane."
+        ]
+      }
+    },
+    {
+      "id": "15.7.7",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Harder challenge: a cone with vertical density",
+      "practiceSet": "harder-challenge-oct22",
+      "difficulty": "hard",
+      "body": [
+        "A solid lies above \\(z=\\sqrt{x^2+y^2}\\) and below \\(z=2\\), with density \\(\\delta=z\\). Find its mass, \\(\\bar z\\), and moment of inertia \\(I_z\\) about the z-axis."
+      ],
+      "answer": {
+        "blocks": [
+          "Use \\(0\\le\\theta\\le2\\pi,\\ 0\\le r\\le2,\\ r\\le z\\le2\\).",
+          {
+            "math": "m=2\\pi\\int_0^2\\int_r^2zr\\,dz\\,dr=4\\pi,\\qquad M_{xy}=2\\pi\\int_0^2\\int_r^2z^2r\\,dz\\,dr=\\frac{32\\pi}{5}"
+          },
+          {
+            "math": "\\bar z=\\frac85,\\qquad I_z=2\\pi\\int_0^2\\int_r^2zr^3\\,dz\\,dr=\\frac{16\\pi}{3}"
+          },
+          "For inertia, multiply density by squared distance \\(r^2\\) before including the Jacobian r."
+        ]
+      }
+    },
+    {
+      "id": "15.7.8",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Harder challenge: competing lower surfaces",
+      "practiceSet": "harder-challenge-oct22",
+      "difficulty": "hard",
+      "body": [
+        "A uniform solid of density 1 lies above both \\(z=\\sqrt{x^2+y^2}\\) and \\(z=x^2+y^2\\), and below \\(z=2\\). Find its volume and \\(\\bar z\\). Explain the necessary radial split."
+      ],
+      "answer": {
+        "blocks": [
+          "The lower surface is \\(\\max(r,r^2)\\): r for \\(0\\le r\\le1\\) and \\(r^2\\) for \\(1\\le r\\le\\sqrt2\\).",
+          {
+            "math": "V=2\\pi\\left[\\int_0^1\\int_r^2r\\,dz\\,dr+\\int_1^{\\sqrt2}\\int_{r^2}^2r\\,dz\\,dr\\right]=\\frac{11\\pi}{6}"
+          },
+          {
+            "math": "M_{xy}=\\pi\\left[\\int_0^1(4-r^2)r\\,dr+\\int_1^{\\sqrt2}(4-r^4)r\\,dr\\right]=\\frac{31\\pi}{12},\\qquad\\bar z=\\frac{31}{22}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "15.7.9",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Harder challenge: an offset cylinder under a plane",
+      "practiceSet": "harder-challenge-oct22",
+      "difficulty": "hard",
+      "body": [
+        "Let E satisfy \\(x^2+y^2\\le2x\\) and \\(0\\le z\\le x\\). For density 1, find its volume and centroid using cylindrical coordinates."
+      ],
+      "answer": {
+        "blocks": [
+          "Bounds are \\(-\\pi/2\\le\\theta\\le\\pi/2,\\ 0\\le r\\le2\\cos\\theta,\\ 0\\le z\\le r\\cos\\theta\\). Reflection in y=0 gives \\(\\bar y=0\\).",
+          {
+            "math": "V=\\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta}\\int_0^{r\\cos\\theta}r\\,dz\\,dr\\,d\\theta=\\pi"
+          },
+          {
+            "math": "\\iiint_E x\\,dV=\\iint_Dx^2\\,dA=4\\int_{-\\pi/2}^{\\pi/2}\\cos^6\\theta\\,d\\theta=\\frac{5\\pi}{4}"
+          },
+          "Integrating z first gives \\(\\iiint_E z\\,dV=\\frac12\\iint_Dx^2\\,dA=5\\pi/8\\). Thus \\((\\bar x,\\bar y,\\bar z)=(5/4,0,5/8)\\)."
+        ]
+      }
+    },
+    {
+      "id": "15.8.6",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Harder challenge: radial density in a spherical cap",
+      "practiceSet": "harder-challenge-oct22",
+      "difficulty": "hard",
+      "body": [
+        "The solid \\(x^2+y^2+z^2\\le4,\\ z\\ge1\\) has density \\(\\delta=\\sqrt{x^2+y^2+z^2}\\). Find its mass using spherical coordinates, with \\(\\phi\\) measured from the positive z-axis."
+      ],
+      "answer": {
+        "blocks": [
+          "The plane gives \\(\\rho\\cos\\phi\\ge1\\), so \\(\\sec\\phi\\le\\rho\\le2\\). These bounds are compatible for \\(0\\le\\phi\\le\\pi/3\\).",
+          {
+            "math": "m=\\int_0^{2\\pi}\\int_0^{\\pi/3}\\int_{\\sec\\phi}^2\\rho^3\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta=\\frac{\\pi}{2}\\int_0^{\\pi/3}(16-\\sec^4\\phi)\\sin\\phi\\,d\\phi"
+          },
+          "With \\(u=\\cos\\phi\\), the remaining integral is \\(\\int_{1/2}^1(16-u^{-4})\\,du=17/3\\). Thus \\(m=17\\pi/6\\)."
+        ]
+      }
+    },
+    {
+      "id": "15.8.7",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Harder challenge: a shifted sphere clipped by a cone",
+      "practiceSet": "harder-challenge-oct22",
+      "difficulty": "hard",
+      "body": [
+        "A uniform solid of density 1 lies inside \\(x^2+y^2+z^2\\le4z\\) and above \\(z=\\sqrt{x^2+y^2}\\). Find its volume and centroid using spherical coordinates."
+      ],
+      "answer": {
+        "blocks": [
+          "The sphere becomes \\(\\rho=4\\cos\\phi\\); the cone restricts \\(0\\le\\phi\\le\\pi/4\\). Use \\(0\\le\\theta\\le2\\pi\\) and \\(0\\le\\rho\\le4\\cos\\phi\\). Rotational symmetry gives \\(\\bar x=\\bar y=0\\).",
+          {
+            "math": "V=\\frac{128\\pi}{3}\\int_0^{\\pi/4}\\cos^3\\phi\\sin\\phi\\,d\\phi=8\\pi"
+          },
+          {
+            "math": "M_{xy}=\\int_0^{2\\pi}\\int_0^{\\pi/4}\\int_0^{4\\cos\\phi}(\\rho\\cos\\phi)\\rho^2\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta=128\\pi\\int_0^{\\pi/4}\\cos^5\\phi\\sin\\phi\\,d\\phi=\\frac{56\\pi}{3}"
+          },
+          {
+            "math": "(\\bar x,\\bar y,\\bar z)=(0,0,7/3)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "15.8.8",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Harder challenge: weighted hemispherical shell",
+      "practiceSet": "harder-challenge-oct22",
+      "difficulty": "hard",
+      "body": [
+        "The upper hemispherical shell \\(1\\le x^2+y^2+z^2\\le4,\\ z\\ge0\\) has density \\(\\delta=x^2+y^2+z^2\\). Find its mass, center of mass, and moment of inertia about the z-axis."
+      ],
+      "answer": {
+        "blocks": [
+          "Use \\(1\\le\\rho\\le2,\\ 0\\le\\phi\\le\\pi/2,\\ 0\\le\\theta\\le2\\pi\\), and density \\(\\rho^2\\).",
+          {
+            "math": "m=2\\pi\\int_1^2\\rho^4\\,d\\rho=\\frac{62\\pi}{5},\\qquad M_{xy}=2\\pi\\int_0^{\\pi/2}\\cos\\phi\\sin\\phi\\,d\\phi\\int_1^2\\rho^5\\,d\\rho=\\frac{21\\pi}{2}"
+          },
+          {
+            "math": "(\\bar x,\\bar y,\\bar z)=\\left(0,0,\\frac{105}{124}\\right)"
+          },
+          "Squared distance to the z-axis is \\(\\rho^2\\sin^2\\phi\\), not \\(\\rho^2\\).",
+          {
+            "math": "I_z=2\\pi\\int_0^{\\pi/2}\\sin^3\\phi\\,d\\phi\\int_1^2\\rho^6\\,d\\rho=\\frac{508\\pi}{21}"
+          }
+        ]
+      }
     }
   ],
   "guides": [
@@ -8040,3 +8445,4 @@
     }
   ]
 }
+

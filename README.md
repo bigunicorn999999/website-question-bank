@@ -1,5 +1,15 @@
 # Practice review library
 
+## CHEM 107 · October 27 course alignment
+
+Chemistry now includes **142 questions**: the original 52 with brief explanations and 90 new problems (26 each in Chapters 6, 7, and 8, plus 12 clearly labeled solution/stoichiometry prerequisites). Open `?review=chem-6-8`.
+
+Use the practice filter for **Guided connections** (26 scaffolded steps with optional hints), **Class-style practice** (52 shorter problems), **Integrated practice** (the original longer set), or **Prerequisite refreshers** (12). `?review=chem-6-8&set=chem-learn` opens the guided set. Every chemistry key gives the answer and a short reason. Written reasoning, choices, bookmarks, and review progress remain browser-local and exportable.
+
+Calibration uses the supplied Chapter 6–8 slides, eight WebAssign homework PDFs, and Quizzes 2–3. New questions are original; no student records or source PDFs are published. No past test paper was supplied for this update, so the guide does not claim exact exam calibration. The guide corrects an inherited radio-wavelength conversion note and flags the actual source inconsistencies. Existing chemistry IDs and all other subjects are preserved.
+
+Validation: `node scripts/validate-chemistry.cjs` checks counts, explanations, numerical answers, electron bookkeeping, and formula rendering. `node scripts/test-chemistry-ui.cjs` checks study filters, topic combinations, deep links, hidden answers, drafts/import, choice sanitization, and cross-subject navigation using the actual application script in a simulated DOM. `node scripts/align-chemistry.cjs` rebuilds the chemistry content deterministically.
+
 ## Current site
 
 GitHub Pages: https://bigunicorn999999.github.io/website-question-bank/
@@ -19,5 +29,6 @@ Chapter 14 images preserve its original typesetting and diagrams. The integral s
 Medium 6 and 25 have poles: ordinary integrals are divergent/undefined, with separately stated principal values. Medium 35 includes the intended recursive fixed-point value and explains the literal radical domain problem. Medium 29 is an infinite power tower. Answers were checked numerically or analytically; do not silently remove these qualifications.
 
 The October 12 quiz challenge adds 30 original questions based on Quiz 4B and Quiz 5B: ten each in 14.7 and 14.8, and two each in 14.1, 14.3, 14.4, 14.5, and 14.6. New IDs continue each section from .9. The New quiz challenges progress filter and ?review=chapter14&set=quiz-challenge-oct12 link isolate the new set. Their answer reveals contain final answers only. Preserve existing IDs and browser progress. Quiz scans and student records are not deployed.
+
 
 

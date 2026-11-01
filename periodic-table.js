@@ -11,3 +11,8 @@ periodicSearch.addEventListener('input',()=>{
 
 const periodicReference=document.querySelector('#periodic-reference');
 document.querySelectorAll('#periodic-container details').forEach(panel=>panel.addEventListener('toggle',()=>document.body.classList.toggle('periodic-open',!!document.querySelector('#periodic-container details[open]')&&!document.querySelector('#periodic-container').hidden)));
+
+// Close controls and Escape return focus to the corresponding reference tab.
+function closeReference(panel){panel.open=false;panel.querySelector('summary').focus()}
+document.querySelectorAll('.reference-close').forEach(button=>button.addEventListener('click',()=>closeReference(button.closest('details'))));
+document.addEventListener('keydown',event=>{if(event.key==='Escape'){const panel=document.querySelector('#periodic-container details[open]');if(panel){event.preventDefault();closeReference(panel)}}});

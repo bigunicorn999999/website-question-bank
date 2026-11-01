@@ -53,3 +53,20 @@ header{justify-content:flex-start;gap:14px}#sidebar-toggle{display:inline-flex;a
 .reference-sheet-scroll img{display:block;width:680px;max-width:none;height:auto}
 .reference-sheet .periodic-source{padding:8px 15px 12px;font-size:10px}
 @media(max-width:650px){#periodic-container{max-height:calc(100dvh - 30px)}.reference-sheet-scroll{max-height:calc(100dvh - 280px)}}
+
+/* Narrow reference tabs keep split-screen question space clear. */
+#periodic-container{right:6px;top:50%;transform:translateY(-50%);width:32px;max-width:32px;max-height:calc(100dvh - 24px);padding:0;gap:5px;overflow:visible;align-items:stretch}
+#periodic-container .periodic-reference,#periodic-container .periodic-reference[open]{position:static;flex:0 0 auto;width:32px;margin:0;max-height:none;overflow:visible;border:0;border-radius:7px;box-shadow:none;background:transparent}
+#periodic-container .periodic-reference>summary{box-sizing:border-box;display:flex;align-items:center;justify-content:center;writing-mode:vertical-rl;text-orientation:mixed;width:32px;min-height:76px;padding:10px 7px;border:1px solid #b7c8b0;border-radius:7px;font-size:11px;line-height:16px;letter-spacing:.2px;list-style:none;box-shadow:0 2px 7px #193b3512}
+#periodic-container summary::-webkit-details-marker{display:none}
+#periodic-container .periodic-reference[open]>summary{background:#244c41;color:white;border-color:#244c41}
+#periodic-container summary:focus-visible,.reference-close:focus-visible{outline:3px solid #7c9d50;outline-offset:2px}
+.reference-panel{position:fixed;right:40px;top:50%;transform:translateY(-50%);width:min(480px,calc(100vw - 58px));max-height:calc(100dvh - 32px);overflow:auto;background:white;border:1px solid #b7c8b0;border-radius:10px;box-shadow:0 8px 30px #193b3533}
+.reference-panel-heading{position:sticky;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;background:#eef3e7;border-bottom:1px solid var(--line)}
+.reference-panel-heading h2{margin:0;font-size:13px;line-height:1.5;letter-spacing:0}
+.reference-close{flex:0 0 28px;width:28px;height:28px;padding:0;border:1px solid #b7c8b0;border-radius:5px;background:white;color:var(--ink);font-size:20px;cursor:pointer}
+.reference-panel .periodic-scroll{max-height:calc(100dvh - 265px)}
+.reference-panel .reference-sheet-scroll{max-height:calc(100dvh - 195px)}
+body:has(#periodic-container:not([hidden])) main{padding-right:max(48px,5%)}
+@media(min-width:1400px){body.periodic-open main,body.sidebar-collapsed.periodic-open main{margin-right:540px}}
+@media(max-height:440px){#periodic-container .periodic-reference>summary{min-height:58px;padding:6px 7px;font-size:10px}}

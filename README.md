@@ -1,6 +1,23 @@
 # Practice review library
 
-## CHEM 107 · October 27 course alignment
+## CHEM 107 · Exam 2 MCQ update (October 31)
+
+Open [the new Exam 2 review](https://bigunicorn999999.github.io/website-question-bank/?review=chem-6-8&set=chem-exam2).
+
+- **120 MCQs total:** 72 new questions, 24 retained and converted lecture-coverage questions, and all 24 questions from the supplied professor review.
+- **24 concept/format families, three variants each**, mapped to the 24 questions in the supplied Exam 2 Review-3.pdf.
+- **32 select-all questions**, clearly labeled; **22 illustrated questions** using 14 original SVG diagrams and five professor-review figure extracts.
+- The previous bank had 142 chemistry questions. Of those, 24 were retained and converted; 118 elementary, redundant, prerequisite, or overly integrated questions were removed from the active chemistry bank. Git history retains the old source.
+- The Concept / pattern filter trains one family; the practice filter selects the new review, professor review, retained lecture coverage, select-all items, or diagram questions. Chapter filters, shuffle, individual answer reveals, and the full key still work.
+- The key gives final choices and one short reason. All chemistry questions now use choices. Revealing a chosen MCQ marks it reviewed; an incorrect exact-set answer also saves it automatically. Correct options turn green and selected incorrect options red. Existing retained question IDs, bookmarks and reviewed status remain valid; obsolete choice indices are discarded when the MCQ version changes.
+- Cr/Cu and ion-removal exceptions, ionization/affinity exceptions, octet exceptions, charged VSEPR centers, nonpolar lone-pair geometries, hydrogen-bond donor/acceptor distinctions, and water's phase-diagram exception are explicitly tested.
+
+Rebuild chemistry with `python scripts/build-chem-exam2.py` and `python scripts/draw-chem-exam2.py`. Validate with `node scripts/validate-exam2.cjs` and `node scripts/test-exam2-ui.cjs` (the older validation entrypoints forward to these). The October 27 generator is retired. See [the coverage map](docs/chemistry-exam2-coverage.md). Other subjects and their content are preserved.
+
+The full source PDFs and student information are not published. The 72 new questions and 14 SVG diagrams are original practice. The supplied professor questions have source labels that can be hidden for mixed practice. A compact, collapsible right-side periodic table provides a static 118-element reference with name/symbol/number search and scrollbars; weights use CIAAW abridged standard values. The sidebar also has its own collapse button.
+
+
+## Historical: CHEM 107 · October 27 course alignment
 
 Chemistry now includes **142 questions**: the original 52 with brief explanations and 90 new problems (26 each in Chapters 6, 7, and 8, plus 12 clearly labeled solution/stoichiometry prerequisites). Open `?review=chem-6-8`.
 
@@ -32,3 +49,9 @@ The October 12 quiz challenge adds 30 original questions based on Quiz 4B and Qu
 
 
 
+
+### MCQ review behavior
+
+Reveal answer grades any selected MCQ response, including an exact-set comparison for select-all. It marks the item reviewed; an incorrect answer also bookmarks it. Correct options are green and selected incorrect options red, with text feedback as well. A reveal with no selection does not change reviewed/bookmark status. Changing a selection clears the current reveal feedback for another attempt. Existing saved bookmarks are not automatically removed by a later correct answer. Show source labels is a browser-local preference; turning it off hides provenance badges and uses neutral question numbering.
+
+The periodic reference is a compact fixed right-side collapsible panel, available at any question. It includes 118 static element cells, element search, scrollbars, and CIAAW abridged weights. Cells have no click actions or property panels. The removed chemistry intro remains absent.

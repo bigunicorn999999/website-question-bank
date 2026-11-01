@@ -1,3 +1,4 @@
+throw new Error('October 27 generator retired. Use python scripts/build-chem-exam2.py and python scripts/draw-chem-exam2.py; the active bank is now Exam 2 MCQ.');
 const fs = require('node:fs');
 const path = require('node:path');
 const root = path.resolve(__dirname, '..');

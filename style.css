@@ -45,3 +45,11 @@ header{justify-content:flex-start;gap:14px}#sidebar-toggle{display:inline-flex;a
 .source-label-control{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);white-space:nowrap}.source-label-control[hidden]{display:none}.source-label-control input{width:16px;height:16px;accent-color:var(--ink);padding:0}.source-badge{display:inline-block;border:1px solid #ccd9d0;border-radius:4px;padding:2px 6px;font-size:11px;background:#f1f5ed}.mcq-options .mcq-option.choice-correct{background:#e3f4e6;border:2px solid #4a8c59}.mcq-options .mcq-option.choice-wrong{background:#fbe5e3;border:2px solid #bc5550}.mcq-feedback{font-weight:600;color:#a33d34;font-size:14px;line-height:1.6}.mcq-feedback.feedback-correct{color:#326b3d}.mcq-feedback[hidden]{display:none}
 
 .mcq-option.choice-wrong input{accent-color:#bc5550}.mcq-option.choice-correct input{accent-color:#4a8c59}
+
+/* Professor reference sheets share the question-side reference drawer. */
+#periodic-container{display:flex;flex-direction:column;align-items:flex-end;gap:8px;max-height:calc(100dvh - 98px);overflow:auto;padding:0 0 12px 10px}
+.reference-sheet-tools{padding:12px 15px 8px;font-size:12px}.reference-sheet-tools a{color:var(--ink);text-underline-offset:3px}
+.reference-sheet-scroll{max-height:calc(100dvh - 360px);overflow:auto;scrollbar-gutter:stable;background:white;padding:0 8px 8px}
+.reference-sheet-scroll img{display:block;width:680px;max-width:none;height:auto}
+.reference-sheet .periodic-source{padding:8px 15px 12px;font-size:10px}
+@media(max-width:650px){#periodic-container{max-height:calc(100dvh - 30px)}.reference-sheet-scroll{max-height:calc(100dvh - 280px)}}

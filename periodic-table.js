@@ -10,4 +10,4 @@ periodicSearch.addEventListener('input',()=>{
 });
 
 const periodicReference=document.querySelector('#periodic-reference');
-periodicReference.addEventListener('toggle',()=>document.body.classList.toggle('periodic-open',periodicReference.open&&!document.querySelector('#periodic-container').hidden));
+document.querySelectorAll('#periodic-container details').forEach(panel=>panel.addEventListener('toggle',()=>document.body.classList.toggle('periodic-open',!!document.querySelector('#periodic-container details[open]')&&!document.querySelector('#periodic-container').hidden)));

@@ -38,18 +38,28 @@ header{justify-content:flex-start;gap:14px}#sidebar-toggle{display:inline-flex;a
 /* Compact periodic-table reference, at the user's requested smaller scale. */
 .periodic-table{width:1120px;border-spacing:3px;zoom:.72}.periodic-table th{font-size:9px;padding:4px}.periodic-table th:first-child{width:43px}.periodic-cell{height:67px;padding:4px 2px}.element-number{font-size:8px}.element-symbol{font-size:17px;line-height:1.2;margin-top:1px}.element-name{font-size:7px;line-height:1.4}.element-weight{font-size:8px;line-height:1.4}.periodic-placeholder{font-size:9px}
 
-/* Persistent, collapsible right-side reference: available at every question. */
-#periodic-container{position:fixed;right:16px;top:82px;z-index:30;max-width:calc(100vw - 32px)}.periodic-reference{margin:0;border-color:#b7c8b0;box-shadow:0 5px 20px #193b351a}.periodic-reference>summary{padding:12px 15px;white-space:nowrap;background:#eef3e7;border-radius:9px}.periodic-reference[open]{width:min(520px,calc(100vw - 32px));max-height:calc(100dvh - 104px);overflow:auto;box-shadow:0 10px 35px #193b3533}.periodic-reference[open]>summary{border-bottom:1px solid var(--line);border-radius:9px 9px 0 0}.periodic-reference .periodic-tools{padding-top:14px}.periodic-reference .periodic-scroll{max-height:min(420px,calc(100dvh - 320px))}.periodic-action{font-size:10px;font-weight:400;color:var(--muted);margin-left:14px}.periodic-hide{display:none}.periodic-reference[open] .periodic-hide{display:inline}.periodic-reference[open] .periodic-show{display:none}.periodic-reference .periodic-source{font-size:10px}@media(min-width:1400px){body.periodic-open main{margin-right:555px;padding-left:4%;padding-right:4%;max-width:none}body.sidebar-collapsed.periodic-open main{margin-left:0;margin-right:555px;max-width:none}}@media(max-width:650px){#periodic-container{top:15px;right:12px;max-width:calc(100vw - 24px)}.periodic-reference[open]{width:calc(100vw - 24px);max-height:calc(100dvh - 40px)}.periodic-reference .periodic-scroll{max-height:calc(100dvh - 270px)}.periodic-reference>summary{font-size:12px;padding:10px 12px}}
+/* Compact vertical chemistry references; keep split-screen content unobstructed. */
+#periodic-container{position:fixed;right:16px;top:82px;z-index:30;display:flex;flex-direction:column;gap:6px;width:320px;max-width:calc(100vw - 32px);max-height:calc(100dvh - 98px);overflow:auto;padding:0 0 10px}
+.periodic-reference{flex:none;width:100%;min-width:0;margin:0;border-color:#b7c8b0;box-shadow:0 3px 12px #193b351a}
+.periodic-reference>summary{display:flex;align-items:center;gap:6px;cursor:pointer;padding:10px 12px;list-style:none;background:#eef3e7;border-radius:9px;font-size:12px;line-height:1.5}
+.periodic-reference>summary::-webkit-details-marker{display:none}
+.periodic-reference>summary:before{content:"▸";flex:none}
+.periodic-reference[open]>summary:before{content:"▾"}
+.periodic-reference[open]{max-height:min(480px,calc(100dvh - 180px));overflow:auto}
+.periodic-reference[open]>summary{border-bottom:1px solid var(--line);border-radius:9px 9px 0 0}
+.periodic-reference .periodic-tools{padding:10px 12px;gap:6px}
+.periodic-reference .periodic-tools input{width:100%;padding:8px 10px;font-size:12px}
+.periodic-reference .periodic-scroll{max-height:min(280px,calc(100dvh - 340px))}
+.periodic-action{flex:none;font-size:10px;font-weight:400;color:var(--muted);margin-left:auto}
+.periodic-hide{display:none}.periodic-reference[open] .periodic-hide{display:inline}.periodic-reference[open] .periodic-show{display:none}
+.periodic-reference .periodic-source{font-size:10px;padding:8px 12px 12px}
+.reference-sheet-tools{padding:10px 12px;font-size:11px}.reference-sheet-tools a{color:var(--ink);text-underline-offset:3px}
+.reference-sheet-scroll{max-height:min(320px,calc(100dvh - 300px));overflow:auto;scrollbar-gutter:stable;background:white;padding:0 8px 8px}
+.reference-sheet-scroll img{display:block;width:100%;max-width:100%;height:auto}
+@media(min-width:1101px){body:has(#periodic-container:not([hidden])) main{margin-right:352px;padding-left:3%;padding-right:3%;max-width:none}body.sidebar-collapsed:has(#periodic-container:not([hidden])) main{margin-left:auto;max-width:1100px}}
+@media(max-width:1100px){#periodic-container{position:static;width:320px;max-width:100%;max-height:none;margin:16px 0;padding:0;overflow:visible}.periodic-reference[open]{max-height:440px}.periodic-reference .periodic-scroll{max-height:240px}.reference-sheet-scroll{max-height:300px}}
 
-/* MCQ feedback and optional source labels. */
-.source-label-control{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);white-space:nowrap}.source-label-control[hidden]{display:none}.source-label-control input{width:16px;height:16px;accent-color:var(--ink);padding:0}.source-badge{display:inline-block;border:1px solid #ccd9d0;border-radius:4px;padding:2px 6px;font-size:11px;background:#f1f5ed}.mcq-options .mcq-option.choice-correct{background:#e3f4e6;border:2px solid #4a8c59}.mcq-options .mcq-option.choice-wrong{background:#fbe5e3;border:2px solid #bc5550}.mcq-feedback{font-weight:600;color:#a33d34;font-size:14px;line-height:1.6}.mcq-feedback.feedback-correct{color:#326b3d}.mcq-feedback[hidden]{display:none}
+/* Answer choice highlights and optional source labels. */
+.source-label-control{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);white-space:nowrap}.source-label-control[hidden]{display:none}.source-label-control input{width:16px;height:16px;accent-color:var(--ink);padding:0}.source-badge{display:inline-block;border:1px solid #ccd9d0;border-radius:4px;padding:2px 6px;font-size:11px;background:#f1f5ed}.mcq-options .mcq-option.choice-correct{background:#e3f4e6;border:2px solid #4a8c59}.mcq-options .mcq-option.choice-wrong{background:#fbe5e3;border:2px solid #bc5550}
 
 .mcq-option.choice-wrong input{accent-color:#bc5550}.mcq-option.choice-correct input{accent-color:#4a8c59}
-
-/* Professor reference sheets share the question-side reference drawer. */
-#periodic-container{display:flex;flex-direction:column;align-items:flex-end;gap:8px;max-height:calc(100dvh - 98px);overflow:auto;padding:0 0 12px 10px}
-.reference-sheet-tools{padding:12px 15px 8px;font-size:12px}.reference-sheet-tools a{color:var(--ink);text-underline-offset:3px}
-.reference-sheet-scroll{max-height:calc(100dvh - 360px);overflow:auto;scrollbar-gutter:stable;background:white;padding:0 8px 8px}
-.reference-sheet-scroll img{display:block;width:680px;max-width:none;height:auto}
-.reference-sheet .periodic-source{padding:8px 15px 12px;font-size:10px}
-@media(max-width:650px){#periodic-container{max-height:calc(100dvh - 30px)}.reference-sheet-scroll{max-height:calc(100dvh - 280px)}}

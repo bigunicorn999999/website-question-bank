@@ -117,3 +117,8 @@ body:has(#periodic-container:not([hidden]) #periodic-reference[open]){--chem-tab
  #periodic-reference[open] .reference-panel{position:static;transform:none;width:100%;max-height:none;margin-top:6px}
 }
 
+
+/* Compact table panel, with the table still scaling to its container. */
+body:has(#periodic-container:not([hidden]) #periodic-reference[open]){--chem-table-width:min(39vw,700px)}
+@media(max-width:1439px){#periodic-reference[open] .reference-panel{width:min(100%,640px)}}
+

@@ -101,3 +101,19 @@ body:has(#periodic-container:not([hidden])) main{margin-right:0}
 @container(max-width:380px){#periodic-reference .periodic-table{border-spacing:1px}#periodic-reference .periodic-cell{border-radius:2px}}
 body:has(#periodic-container:not([hidden])) main{padding-right:max(54px,5%)}
 
+
+/* Reserve space for the open table instead of overlaying practice cards. */
+body:has(#periodic-container:not([hidden]) #periodic-reference[open]){--chem-table-width:min(49vw,960px)}
+@media(min-width:1440px){
+ body.periodic-open:has(#periodic-container:not([hidden]) #periodic-reference[open]) main{margin-right:calc(var(--chem-table-width) + 60px);padding-right:20px;padding-left:20px}
+ #periodic-reference .reference-panel{width:var(--chem-table-width)}
+}
+@media(max-width:1439px){
+ body.periodic-open:has(#periodic-container:not([hidden]) #periodic-reference[open]) main{margin-right:0;padding-right:clamp(12px,3vw,36px)}
+ #periodic-container:has(#periodic-reference[open]){position:static;display:flex;flex-wrap:wrap;align-items:flex-start;transform:none;width:100%;max-width:none;max-height:none;margin:12px 0}
+ #periodic-container:has(#periodic-reference[open]) .periodic-reference{width:auto;max-width:none}
+ #periodic-container:has(#periodic-reference[open]) #periodic-reference{order:1;flex-basis:100%;min-width:0}
+ #periodic-container:has(#periodic-reference[open]) .periodic-reference>summary{writing-mode:horizontal-tb;width:auto;max-width:none;min-height:34px;padding:6px 10px}
+ #periodic-reference[open] .reference-panel{position:static;transform:none;width:100%;max-height:none;margin-top:6px}
+}
+

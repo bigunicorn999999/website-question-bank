@@ -86,3 +86,18 @@ body:has(#periodic-container:not([hidden])) main{padding-right:max(48px,5%)}
 #periodic-container{position:fixed;margin:0}
 body:has(#periodic-container:not([hidden])) main{margin-right:0}
 @media(min-width:1400px){body.periodic-open:has(#periodic-container:not([hidden])) main{margin-right:540px}}
+
+#page-progress{margin:14px 0 0;color:var(--muted);font-size:13px}.progress[hidden],#page-progress[hidden]{display:none}#page-progress+.progress{margin-top:7px}
+#periodic-container,#periodic-container .periodic-reference,#periodic-container .periodic-reference[open],#periodic-container .periodic-reference>summary{width:44px;max-width:44px}
+#periodic-reference .reference-panel{right:52px;width:min(1120px,calc(100vw - 62px));z-index:12;container-type:inline-size}
+#periodic-reference .periodic-scroll{max-height:none;overflow:visible}
+#periodic-reference .periodic-table{width:100%;min-width:0;zoom:1;border-spacing:2px}
+#periodic-reference .periodic-table th{padding:2px 0;font-size:clamp(5px,1.1cqw,10px)}
+#periodic-reference .periodic-table th:first-child{width:4%}
+#periodic-reference .periodic-cell{height:auto;padding:2px 0;overflow-wrap:anywhere}
+#periodic-reference .element-number,#periodic-reference .element-name,#periodic-reference .element-weight{font-size:clamp(6px,1.05cqw,10px)}
+#periodic-reference .element-symbol{font-size:clamp(7px,2cqw,18px)}
+@container(max-width:620px){#periodic-reference .element-name,#periodic-reference .element-weight{display:none}}
+@container(max-width:380px){#periodic-reference .periodic-table{border-spacing:1px}#periodic-reference .periodic-cell{border-radius:2px}}
+body:has(#periodic-container:not([hidden])) main{padding-right:max(54px,5%)}
+

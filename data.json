@@ -30,7 +30,10 @@
     "15.7": "15.7 · Triple Integrals in Cylindrical Coordinates",
     "15.8": "15.8 · Triple Integrals in Spherical Coordinates",
     "15.9": "15.9 · Change of Variables in Multiple Integrals",
-    "CHEM foundations": "Prerequisites · Solutions & stoichiometry"
+    "CHEM foundations": "Prerequisites · Solutions & stoichiometry",
+    "pols-voting": "Participation, voting rights, and elections",
+    "pols-parties": "Parties and campaigns",
+    "pols-legislatures": "Legislatures and Texas government"
   },
   "questions": [
     {
@@ -10676,6 +10679,3156 @@
           "Why: CF₄ lacks a hydrogen bonded to N, O, or F; the other three have appropriate donor H atoms."
         ]
       }
+    },
+    {
+      "id": "pols-exam2-1",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "1870. Prohibits denial of the vote based on race, color, or previous condition of servitude."
+      ],
+      "text": "Which term, case, or fact matches this description? 1870. Prohibits denial of the vote based on race, color, or previous condition of servitude.",
+      "choices": [
+        "15th Amendment",
+        "24th Amendment",
+        "26th Amendment",
+        "19th Amendment",
+        "Plurality"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. 15th Amendment",
+          "1870. Prohibits denial of the vote based on race, color, or previous condition of servitude."
+        ],
+        "text": "A. 15th Amendment 1870. Prohibits denial of the vote based on race, color, or previous condition of servitude."
+      }
+    },
+    {
+      "id": "pols-exam2-2",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "1920. Prohibits denial of the vote based on sex."
+      ],
+      "text": "Which term, case, or fact matches this description? 1920. Prohibits denial of the vote based on sex.",
+      "choices": [
+        "24th Amendment",
+        "26th Amendment",
+        "15th Amendment",
+        "19th Amendment",
+        "Caucus"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. 19th Amendment",
+          "1920. Prohibits denial of the vote based on sex."
+        ],
+        "text": "D. 19th Amendment 1920. Prohibits denial of the vote based on sex."
+      }
+    },
+    {
+      "id": "pols-exam2-3",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "1964. Prohibits poll taxes in federal elections."
+      ],
+      "text": "Which term, case, or fact matches this description? 1964. Prohibits poll taxes in federal elections.",
+      "choices": [
+        "26th Amendment",
+        "24th Amendment",
+        "19th Amendment",
+        "15th Amendment",
+        "Turnout"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. 24th Amendment",
+          "1964. Prohibits poll taxes in federal elections."
+        ],
+        "text": "B. 24th Amendment 1964. Prohibits poll taxes in federal elections."
+      }
+    },
+    {
+      "id": "pols-exam2-4",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "1971. Protects voting rights for citizens 18 and older against denial based on age."
+      ],
+      "text": "Which term, case, or fact matches this description? 1971. Protects voting rights for citizens 18 and older against denial based on age.",
+      "choices": [
+        "15th Amendment",
+        "19th Amendment",
+        "24th Amendment",
+        "Open primary",
+        "26th Amendment"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. 26th Amendment",
+          "1971. Protects voting rights for citizens 18 and older against denial based on age."
+        ],
+        "text": "E. 26th Amendment 1971. Protects voting rights for citizens 18 and older against denial based on age."
+      }
+    },
+    {
+      "id": "pols-exam2-5",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "A traditional blanket primary allows cross-party choices across offices. A top-two primary advances the two leading candidates regardless of party."
+      ],
+      "text": "Which term, case, or fact matches this description? A traditional blanket primary allows cross-party choices across offices. A top-two primary advances the two leading candidates regardless of party.",
+      "choices": [
+        "Shelby County v. Holder",
+        "24th Amendment",
+        "Blanket and top-two primaries",
+        "Preclearance",
+        "Harper v. Virginia Board of Elections"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Blanket and top-two primaries",
+          "A traditional blanket primary allows cross-party choices across offices. A top-two primary advances the two leading candidates regardless of party."
+        ],
+        "text": "C. Blanket and top-two primaries A traditional blanket primary allows cross-party choices across offices. A top-two primary advances the two leading candidates regardless of party."
+      }
+    },
+    {
+      "id": "pols-exam2-6",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "A party meeting used in candidate or delegate selection."
+      ],
+      "text": "Which term, case, or fact matches this description? A party meeting used in candidate or delegate selection.",
+      "choices": [
+        "Caucus",
+        "Blanket and top-two primaries",
+        "Open primary",
+        "Runoff primary",
+        "Voter qualifications"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Caucus",
+          "A party meeting used in candidate or delegate selection."
+        ],
+        "text": "A. Caucus A party meeting used in candidate or delegate selection."
+      }
+    },
+    {
+      "id": "pols-exam2-7",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Intentionally and nonviolently violating a law considered unjust while accepting the consequences."
+      ],
+      "text": "Which term, case, or fact matches this description? Intentionally and nonviolently violating a law considered unjust while accepting the consequences.",
+      "choices": [
+        "Special election",
+        "15th Amendment",
+        "Recall",
+        "Civil disobedience",
+        "Crossover voting"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. Civil disobedience",
+          "Intentionally and nonviolently violating a law considered unjust while accepting the consequences."
+        ],
+        "text": "D. Civil disobedience Intentionally and nonviolently violating a law considered unjust while accepting the consequences."
+      }
+    },
+    {
+      "id": "pols-exam2-8",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "A system in which registered party members choose that party's nominees."
+      ],
+      "text": "Which term, case, or fact matches this description? A system in which registered party members choose that party's nominees.",
+      "choices": [
+        "Semi-closed primary",
+        "Closed primary",
+        "Open primary",
+        "Primary election",
+        "White primary"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. Closed primary",
+          "A system in which registered party members choose that party's nominees."
+        ],
+        "text": "B. Closed primary A system in which registered party members choose that party's nominees."
+      }
+    },
+    {
+      "id": "pols-exam2-9",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Participating in the primary of a party one does not ordinarily support."
+      ],
+      "text": "Which term, case, or fact matches this description? Participating in the primary of a party one does not ordinarily support.",
+      "choices": [
+        "Voting paradox",
+        "Voting Rights Act of 1965",
+        "19th Amendment",
+        "Caucus",
+        "Crossover voting"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. Crossover voting",
+          "Participating in the primary of a party one does not ordinarily support."
+        ],
+        "text": "E. Crossover voting Participating in the primary of a party one does not ordinarily support."
+      }
+    },
+    {
+      "id": "pols-exam2-10",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Citizens vote directly on a policy or removal decision through a mechanism such as initiative, referendum, or recall."
+      ],
+      "text": "Which term, case, or fact matches this description? Citizens vote directly on a policy or removal decision through a mechanism such as initiative, referendum, or recall.",
+      "choices": [
+        "Representative democracy",
+        "Blanket and top-two primaries",
+        "Direct democracy",
+        "Open primary",
+        "Runoff primary"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Direct democracy",
+          "Citizens vote directly on a policy or removal decision through a mechanism such as initiative, referendum, or recall."
+        ],
+        "text": "C. Direct democracy Citizens vote directly on a policy or removal decision through a mechanism such as initiative, referendum, or recall."
+      }
+    },
+    {
+      "id": "pols-exam2-11",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "The 14th Amendment provision central to the voting equality and state legislative districting cases."
+      ],
+      "text": "Which term, case, or fact matches this description? The 14th Amendment provision central to the voting equality and state legislative districting cases.",
+      "choices": [
+        "Equal Protection Clause",
+        "Rational voter",
+        "White primary",
+        "Closed primary",
+        "Crossover voting"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Equal Protection Clause",
+          "The 14th Amendment provision central to the voting equality and state legislative districting cases."
+        ],
+        "text": "A. Equal Protection Clause The 14th Amendment provision central to the voting equality and state legislative districting cases."
+      }
+    },
+    {
+      "id": "pols-exam2-12",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Chooses the person who will hold public office."
+      ],
+      "text": "Which term, case, or fact matches this description? Chooses the person who will hold public office.",
+      "choices": [
+        "Primary election",
+        "Special election",
+        "Shelby County v. Holder",
+        "General election",
+        "Open primary"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. General election",
+          "Chooses the person who will hold public office."
+        ],
+        "text": "D. General election Chooses the person who will hold public office."
+      }
+    },
+    {
+      "id": "pols-exam2-13",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "1966. Invalidated state-election poll taxes under the Equal Protection Clause."
+      ],
+      "text": "Which term, case, or fact matches this description? 1966. Invalidated state-election poll taxes under the Equal Protection Clause.",
+      "choices": [
+        "General election",
+        "Harper v. Virginia Board of Elections",
+        "Special election",
+        "Primary election",
+        "Referendum"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. Harper v. Virginia Board of Elections",
+          "1966. Invalidated state-election poll taxes under the Equal Protection Clause."
+        ],
+        "text": "B. Harper v. Virginia Board of Elections 1966. Invalidated state-election poll taxes under the Equal Protection Clause."
+      }
+    },
+    {
+      "id": "pols-exam2-14",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "time and effort spent learning about candidates and issues."
+      ],
+      "text": "Which term, case, or fact matches this description? time and effort spent learning about candidates and issues.",
+      "choices": [
+        "Blanket and top-two primaries",
+        "Open primary",
+        "Runoff primary",
+        "Voting Rights Act of 1965",
+        "Information costs"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. Information costs",
+          "time and effort spent learning about candidates and issues."
+        ],
+        "text": "E. Information costs time and effort spent learning about candidates and issues."
+      }
+    },
+    {
+      "id": "pols-exam2-15",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "A citizen petition process for putting a proposed law or amendment before voters where authorized."
+      ],
+      "text": "Which term, case, or fact matches this description? A citizen petition process for putting a proposed law or amendment before voters where authorized.",
+      "choices": [
+        "Equal Protection Clause",
+        "Semi-closed primary",
+        "Initiative",
+        "Primary election",
+        "26th Amendment"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Initiative",
+          "A citizen petition process for putting a proposed law or amendment before voters where authorized."
+        ],
+        "text": "C. Initiative A citizen petition process for putting a proposed law or amendment before voters where authorized."
+      }
+    },
+    {
+      "id": "pols-exam2-16",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "More than half of the votes cast."
+      ],
+      "text": "Which term, case, or fact matches this description? More than half of the votes cast.",
+      "choices": [
+        "Majority",
+        "Special election",
+        "Open primary",
+        "Crossover voting",
+        "15th Amendment"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Majority",
+          "More than half of the votes cast."
+        ],
+        "text": "A. Majority More than half of the votes cast."
+      }
+    },
+    {
+      "id": "pols-exam2-17",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "A system in which eligible voters can choose a party primary without prior party registration."
+      ],
+      "text": "Which term, case, or fact matches this description? A system in which eligible voters can choose a party primary without prior party registration.",
+      "choices": [
+        "White primary",
+        "Semi-closed primary",
+        "Runoff primary",
+        "Open primary",
+        "Closed primary"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. Open primary",
+          "A system in which eligible voters can choose a party primary without prior party registration."
+        ],
+        "text": "D. Open primary A system in which eligible voters can choose a party primary without prior party registration."
+      }
+    },
+    {
+      "id": "pols-exam2-18",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "More votes than any other candidate, even if fewer than half of all votes."
+      ],
+      "text": "Which term, case, or fact matches this description? More votes than any other candidate, even if fewer than half of all votes.",
+      "choices": [
+        "Blanket and top-two primaries",
+        "Plurality",
+        "Majority",
+        "Sustained participation",
+        "Runoff primary"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. Plurality",
+          "More votes than any other candidate, even if fewer than half of all votes."
+        ],
+        "text": "B. Plurality More votes than any other candidate, even if fewer than half of all votes."
+      }
+    },
+    {
+      "id": "pols-exam2-19",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Belief in one's ability to understand and influence politics and in government's responsiveness."
+      ],
+      "text": "Which term, case, or fact matches this description? Belief in one's ability to understand and influence politics and in government's responsiveness.",
+      "choices": [
+        "Political participation",
+        "Sustained participation",
+        "Shelby County v. Holder",
+        "Voting paradox",
+        "Political efficacy"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. Political efficacy",
+          "Belief in one's ability to understand and influence politics and in government's responsiveness."
+        ],
+        "text": "E. Political efficacy Belief in one's ability to understand and influence politics and in government's responsiveness."
+      }
+    },
+    {
+      "id": "pols-exam2-20",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Actions intended to influence political leaders, policies, or decisions."
+      ],
+      "text": "Which term, case, or fact matches this description? Actions intended to influence political leaders, policies, or decisions.",
+      "choices": [
+        "Sustained participation",
+        "Political efficacy",
+        "Political participation",
+        "19th Amendment",
+        "26th Amendment"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Political participation",
+          "Actions intended to influence political leaders, policies, or decisions."
+        ],
+        "text": "C. Political participation Actions intended to influence political leaders, policies, or decisions."
+      }
+    },
+    {
+      "id": "pols-exam2-21",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Advance federal approval of voting changes in covered jurisdictions."
+      ],
+      "text": "Which term, case, or fact matches this description? Advance federal approval of voting changes in covered jurisdictions.",
+      "choices": [
+        "Preclearance",
+        "24th Amendment",
+        "Caucus",
+        "Voting paradox",
+        "Crossover voting"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Preclearance",
+          "Advance federal approval of voting changes in covered jurisdictions."
+        ],
+        "text": "A. Preclearance Advance federal approval of voting changes in covered jurisdictions."
+      }
+    },
+    {
+      "id": "pols-exam2-22",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Selects a party's nominee for the general election."
+      ],
+      "text": "Which term, case, or fact matches this description? Selects a party's nominee for the general election.",
+      "choices": [
+        "Runoff primary",
+        "Semi-closed primary",
+        "Open primary",
+        "Primary election",
+        "General election"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. Primary election",
+          "Selects a party's nominee for the general election."
+        ],
+        "text": "D. Primary election Selects a party's nominee for the general election."
+      }
+    },
+    {
+      "id": "pols-exam2-23",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Collective action that draws attention to a demand or seeks concessions."
+      ],
+      "text": "Which term, case, or fact matches this description? Collective action that draws attention to a demand or seeks concessions.",
+      "choices": [
+        "White primary",
+        "Protest",
+        "Voting Rights Act of 1965",
+        "Voting paradox",
+        "15th Amendment"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. Protest",
+          "Collective action that draws attention to a demand or seeks concessions."
+        ],
+        "text": "B. Protest Collective action that draws attention to a demand or seeks concessions."
+      }
+    },
+    {
+      "id": "pols-exam2-24",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Someone who votes when perceived personal benefits exceed the costs."
+      ],
+      "text": "Which term, case, or fact matches this description? Someone who votes when perceived personal benefits exceed the costs.",
+      "choices": [
+        "Voter qualifications",
+        "Protest",
+        "Smith v. Allwright",
+        "15th Amendment",
+        "Rational voter"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. Rational voter",
+          "Someone who votes when perceived personal benefits exceed the costs."
+        ],
+        "text": "E. Rational voter Someone who votes when perceived personal benefits exceed the costs."
+      }
+    },
+    {
+      "id": "pols-exam2-25",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "An election to remove an official before the term ends where authorized."
+      ],
+      "text": "Which term, case, or fact matches this description? An election to remove an official before the term ends where authorized.",
+      "choices": [
+        "Special election",
+        "Preclearance",
+        "Recall",
+        "26th Amendment",
+        "Equal Protection Clause"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Recall",
+          "An election to remove an official before the term ends where authorized."
+        ],
+        "text": "C. Recall An election to remove an official before the term ends where authorized."
+      }
+    },
+    {
+      "id": "pols-exam2-26",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "A vote to approve or reject a measure, including one proposed by a legislature."
+      ],
+      "text": "Which term, case, or fact matches this description? A vote to approve or reject a measure, including one proposed by a legislature.",
+      "choices": [
+        "Referendum",
+        "Blanket and top-two primaries",
+        "Shelby County v. Holder",
+        "Majority",
+        "Plurality"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Referendum",
+          "A vote to approve or reject a measure, including one proposed by a legislature."
+        ],
+        "text": "A. Referendum A vote to approve or reject a measure, including one proposed by a legislature."
+      }
+    },
+    {
+      "id": "pols-exam2-27",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Citizens elect officials who make public decisions on their behalf."
+      ],
+      "text": "Which term, case, or fact matches this description? Citizens elect officials who make public decisions on their behalf.",
+      "choices": [
+        "Direct democracy",
+        "Civil disobedience",
+        "Political participation",
+        "Representative democracy",
+        "Turnout"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. Representative democracy",
+          "Citizens elect officials who make public decisions on their behalf."
+        ],
+        "text": "D. Representative democracy Citizens elect officials who make public decisions on their behalf."
+      }
+    },
+    {
+      "id": "pols-exam2-28",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "A second round, commonly between the top two, when nobody reaches the required majority."
+      ],
+      "text": "Which term, case, or fact matches this description? A second round, commonly between the top two, when nobody reaches the required majority.",
+      "choices": [
+        "Closed primary",
+        "Runoff primary",
+        "Open primary",
+        "Primary election",
+        "White primary"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. Runoff primary",
+          "A second round, commonly between the top two, when nobody reaches the required majority."
+        ],
+        "text": "B. Runoff primary A second round, commonly between the top two, when nobody reaches the required majority."
+      }
+    },
+    {
+      "id": "pols-exam2-29",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Party members use their own primary while unaffiliated voters may choose a party primary."
+      ],
+      "text": "Which term, case, or fact matches this description? Party members use their own primary while unaffiliated voters may choose a party primary.",
+      "choices": [
+        "Closed primary",
+        "Primary election",
+        "White primary",
+        "Runoff primary",
+        "Semi-closed primary"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. Semi-closed primary",
+          "Party members use their own primary while unaffiliated voters may choose a party primary."
+        ],
+        "text": "E. Semi-closed primary Party members use their own primary while unaffiliated voters may choose a party primary."
+      }
+    },
+    {
+      "id": "pols-exam2-30",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "2013. Invalidated the Voting Rights Act’s formula for identifying jurisdictions subject to preclearance."
+      ],
+      "text": "Which term, case, or fact matches this description? 2013. Invalidated the Voting Rights Act’s formula for identifying jurisdictions subject to preclearance.",
+      "choices": [
+        "White primary",
+        "Blanket and top-two primaries",
+        "Shelby County v. Holder",
+        "Referendum",
+        "Majority"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Shelby County v. Holder",
+          "2013. Invalidated the Voting Rights Act’s formula for identifying jurisdictions subject to preclearance."
+        ],
+        "text": "C. Shelby County v. Holder 2013. Invalidated the Voting Rights Act’s formula for identifying jurisdictions subject to preclearance."
+      }
+    },
+    {
+      "id": "pols-exam2-31",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "1944. Invalidated the exclusion of Black voters from the Texas Democratic primary."
+      ],
+      "text": "Which term, case, or fact matches this description? 1944. Invalidated the exclusion of Black voters from the Texas Democratic primary.",
+      "choices": [
+        "Smith v. Allwright",
+        "19th Amendment",
+        "Caucus",
+        "Direct democracy",
+        "Information costs"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Smith v. Allwright",
+          "1944. Invalidated the exclusion of Black voters from the Texas Democratic primary."
+        ],
+        "text": "A. Smith v. Allwright 1944. Invalidated the exclusion of Black voters from the Texas Democratic primary."
+      }
+    },
+    {
+      "id": "pols-exam2-32",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "An election called to fill a vacancy or decide a particular matter outside the ordinary election schedule."
+      ],
+      "text": "Which term, case, or fact matches this description? An election called to fill a vacancy or decide a particular matter outside the ordinary election schedule.",
+      "choices": [
+        "General election",
+        "Primary election",
+        "Equal Protection Clause",
+        "Special election",
+        "Runoff primary"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. Special election",
+          "An election called to fill a vacancy or decide a particular matter outside the ordinary election schedule."
+        ],
+        "text": "D. Special election An election called to fill a vacancy or decide a particular matter outside the ordinary election schedule."
+      }
+    },
+    {
+      "id": "pols-exam2-33",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Consistent voting in presidential and nonpresidential elections."
+      ],
+      "text": "Which term, case, or fact matches this description? Consistent voting in presidential and nonpresidential elections.",
+      "choices": [
+        "Political participation",
+        "Sustained participation",
+        "15th Amendment",
+        "Closed primary",
+        "Initiative"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. Sustained participation",
+          "Consistent voting in presidential and nonpresidential elections."
+        ],
+        "text": "B. Sustained participation Consistent voting in presidential and nonpresidential elections."
+      }
+    },
+    {
+      "id": "pols-exam2-34",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Ballots cast divided by the chosen population, multiplied by 100. Check whether the denominator is eligible voters, registered voters, or voting-age people."
+      ],
+      "text": "Which term, case, or fact matches this description? Ballots cast divided by the chosen population, multiplied by 100. Check whether the denominator is eligible voters, registered voters, or voting-age people.",
+      "choices": [
+        "Smith v. Allwright",
+        "Blanket and top-two primaries",
+        "Political participation",
+        "Majority",
+        "Turnout"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. Turnout",
+          "Ballots cast divided by the chosen population, multiplied by 100. Check whether the denominator is eligible voters, registered voters, or voting-age people."
+        ],
+        "text": "E. Turnout Ballots cast divided by the chosen population, multiplied by 100. Check whether the denominator is eligible voters, registered voters, or voting-age people."
+      }
+    },
+    {
+      "id": "pols-exam2-35",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "States, subject to federal constitutional and statutory limits."
+      ],
+      "text": "Which term, case, or fact matches this description? States, subject to federal constitutional and statutory limits.",
+      "choices": [
+        "Rational voter",
+        "24th Amendment",
+        "Voter qualifications",
+        "General election",
+        "Preclearance"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Voter qualifications",
+          "States, subject to federal constitutional and statutory limits."
+        ],
+        "text": "C. Voter qualifications States, subject to federal constitutional and statutory limits."
+      }
+    },
+    {
+      "id": "pols-exam2-36",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "A single vote is unlikely to determine the outcome, so a narrow cost-benefit calculation may favor abstention even though people still vote."
+      ],
+      "text": "Which term, case, or fact matches this description? A single vote is unlikely to determine the outcome, so a narrow cost-benefit calculation may favor abstention even though people still vote.",
+      "choices": [
+        "Voting paradox",
+        "Voting Rights Act of 1965",
+        "Crossover voting",
+        "Initiative",
+        "Voter qualifications"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Voting paradox",
+          "A single vote is unlikely to determine the outcome, so a narrow cost-benefit calculation may favor abstention even though people still vote."
+        ],
+        "text": "A. Voting paradox A single vote is unlikely to determine the outcome, so a narrow cost-benefit calculation may favor abstention even though people still vote."
+      }
+    },
+    {
+      "id": "pols-exam2-37",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Addresses racial discrimination in voting through federal enforcement and oversight."
+      ],
+      "text": "Which term, case, or fact matches this description? Addresses racial discrimination in voting through federal enforcement and oversight.",
+      "choices": [
+        "Crossover voting",
+        "Voting paradox",
+        "Protest",
+        "Voting Rights Act of 1965",
+        "Plurality"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. Voting Rights Act of 1965",
+          "Addresses racial discrimination in voting through federal enforcement and oversight."
+        ],
+        "text": "D. Voting Rights Act of 1965 Addresses racial discrimination in voting through federal enforcement and oversight."
+      }
+    },
+    {
+      "id": "pols-exam2-38",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "A party primary that excluded nonwhite voters."
+      ],
+      "text": "Which term, case, or fact matches this description? A party primary that excluded nonwhite voters.",
+      "choices": [
+        "Closed primary",
+        "White primary",
+        "Semi-closed primary",
+        "Primary election",
+        "Open primary"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. White primary",
+          "A party primary that excluded nonwhite voters."
+        ],
+        "text": "B. White primary A party primary that excluded nonwhite voters."
+      }
+    },
+    {
+      "id": "pols-exam2-39",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Turning a latent preference into active support or voting."
+      ],
+      "text": "Which term, case, or fact matches this description? Turning a latent preference into active support or voting.",
+      "choices": [
+        "Activation",
+        "Reinforcement",
+        "Political party",
+        "Selective perception",
+        "Party identification"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Activation",
+          "Turning a latent preference into active support or voting."
+        ],
+        "text": "A. Activation Turning a latent preference into active support or voting."
+      }
+    },
+    {
+      "id": "pols-exam2-40",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Individual candidates build organizations, raise funds, choose messages, and employ consultants to run campaigns."
+      ],
+      "text": "Which term, case, or fact matches this description? Individual candidates build organizations, raise funds, choose messages, and employ consultants to run campaigns.",
+      "choices": [
+        "Downs model",
+        "Responsible party model",
+        "Precinct organizations",
+        "Candidate-centered model",
+        "Selective perception"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. Candidate-centered model",
+          "Individual candidates build organizations, raise funds, choose messages, and employ consultants to run campaigns."
+        ],
+        "text": "D. Candidate-centered model Individual candidates build organizations, raise funds, choose messages, and employ consultants to run campaigns."
+      }
+    },
+    {
+      "id": "pols-exam2-41",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Changing a voter's candidate preference."
+      ],
+      "text": "Which term, case, or fact matches this description? Changing a voter's candidate preference.",
+      "choices": [
+        "Doctrine of sufficiency",
+        "Conversion",
+        "Microtargeting",
+        "Party platform",
+        "Responsible party model"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. Conversion",
+          "Changing a voter's candidate preference."
+        ],
+        "text": "B. Conversion Changing a voter's candidate preference."
+      }
+    },
+    {
+      "id": "pols-exam2-42",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Coordinate national strategy, conventions, fundraising, and campaign support, especially presidential campaigns."
+      ],
+      "text": "Which term, case, or fact matches this description? Coordinate national strategy, conventions, fundraising, and campaign support, especially presidential campaigns.",
+      "choices": [
+        "Precinct organizations",
+        "Reinforcement",
+        "Political party",
+        "Responsible party model",
+        "DNC and RNC"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. DNC and RNC",
+          "Coordinate national strategy, conventions, fundraising, and campaign support, especially presidential campaigns."
+        ],
+        "text": "E. DNC and RNC Coordinate national strategy, conventions, fundraising, and campaign support, especially presidential campaigns."
+      }
+    },
+    {
+      "id": "pols-exam2-43",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "A candidate needs enough money to compete effectively but need not outspend the opponent."
+      ],
+      "text": "Which term, case, or fact matches this description? A candidate needs enough money to compete effectively but need not outspend the opponent.",
+      "choices": [
+        "Conversion",
+        "Split-ticket voting",
+        "Doctrine of sufficiency",
+        "Negative campaigning",
+        "National party convention"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Doctrine of sufficiency",
+          "A candidate needs enough money to compete effectively but need not outspend the opponent."
+        ],
+        "text": "C. Doctrine of sufficiency A candidate needs enough money to compete effectively but need not outspend the opponent."
+      }
+    },
+    {
+      "id": "pols-exam2-44",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Two competing parties seek electoral success by appealing near the median voter's preferences."
+      ],
+      "text": "Which term, case, or fact matches this description? Two competing parties seek electoral success by appealing near the median voter's preferences.",
+      "choices": [
+        "Downs model",
+        "Candidate-centered model",
+        "Responsible party model",
+        "Doctrine of sufficiency",
+        "Precinct organizations"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Downs model",
+          "Two competing parties seek electoral success by appealing near the median voter's preferences."
+        ],
+        "text": "A. Downs model Two competing parties seek electoral success by appealing near the median voter's preferences."
+      }
+    },
+    {
+      "id": "pols-exam2-45",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Direct voter outreach through local organizing, conversations, calls, or similar contact."
+      ],
+      "text": "Which term, case, or fact matches this description? Direct voter outreach through local organizing, conversations, calls, or similar contact.",
+      "choices": [
+        "Negative campaigning",
+        "Activation",
+        "Median voter",
+        "Grassroots campaigning",
+        "Reinforcement"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. Grassroots campaigning",
+          "Direct voter outreach through local organizing, conversations, calls, or similar contact."
+        ],
+        "text": "D. Grassroots campaigning Direct voter outreach through local organizing, conversations, calls, or similar contact."
+      }
+    },
+    {
+      "id": "pols-exam2-46",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "An organization that seeks to influence public policy on behalf of its members or cause."
+      ],
+      "text": "Which term, case, or fact matches this description? An organization that seeks to influence public policy on behalf of its members or cause.",
+      "choices": [
+        "Precinct organizations",
+        "Interest group",
+        "State party committees",
+        "National party convention",
+        "DNC and RNC"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. Interest group",
+          "An organization that seeks to influence public policy on behalf of its members or cause."
+        ],
+        "text": "B. Interest group An organization that seeks to influence public policy on behalf of its members or cause."
+      }
+    },
+    {
+      "id": "pols-exam2-47",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "The voter in the middle of the preference distribution."
+      ],
+      "text": "Which term, case, or fact matches this description? The voter in the middle of the preference distribution.",
+      "choices": [
+        "Candidate-centered model",
+        "Downs model",
+        "Name recognition",
+        "Party platform",
+        "Median voter"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. Median voter",
+          "The voter in the middle of the preference distribution."
+        ],
+        "text": "E. Median voter The voter in the middle of the preference distribution."
+      }
+    },
+    {
+      "id": "pols-exam2-48",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Tailoring campaign messages to a particular voter subgroup."
+      ],
+      "text": "Which term, case, or fact matches this description? Tailoring campaign messages to a particular voter subgroup.",
+      "choices": [
+        "Doctrine of sufficiency",
+        "Precinct organizations",
+        "Microtargeting",
+        "Reinforcement",
+        "Downs model"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Microtargeting",
+          "Tailoring campaign messages to a particular voter subgroup."
+        ],
+        "text": "C. Microtargeting Tailoring campaign messages to a particular voter subgroup."
+      }
+    },
+    {
+      "id": "pols-exam2-49",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Voters’ familiarity with a candidate’s name."
+      ],
+      "text": "Which term, case, or fact matches this description? Voters’ familiarity with a candidate’s name.",
+      "choices": [
+        "Name recognition",
+        "Interest group",
+        "Median voter",
+        "Grassroots campaigning",
+        "Microtargeting"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Name recognition",
+          "Voters’ familiarity with a candidate’s name."
+        ],
+        "text": "A. Name recognition Voters’ familiarity with a candidate’s name."
+      }
+    },
+    {
+      "id": "pols-exam2-50",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "A gathering every four years that formally nominates the presidential ticket and adopts the party platform and rules."
+      ],
+      "text": "Which term, case, or fact matches this description? A gathering every four years that formally nominates the presidential ticket and adopts the party platform and rules.",
+      "choices": [
+        "State party committees",
+        "Political party",
+        "Party identification",
+        "National party convention",
+        "Party platform"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. National party convention",
+          "A gathering every four years that formally nominates the presidential ticket and adopts the party platform and rules."
+        ],
+        "text": "D. National party convention A gathering every four years that formally nominates the presidential ticket and adopts the party platform and rules."
+      }
+    },
+    {
+      "id": "pols-exam2-51",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Campaign messages that highlight an opponent’s perceived weaknesses or record."
+      ],
+      "text": "Which term, case, or fact matches this description? Campaign messages that highlight an opponent’s perceived weaknesses or record.",
+      "choices": [
+        "Grassroots campaigning",
+        "Negative campaigning",
+        "National party convention",
+        "Split-ticket voting",
+        "Reinforcement"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. Negative campaigning",
+          "Campaign messages that highlight an opponent’s perceived weaknesses or record."
+        ],
+        "text": "B. Negative campaigning Campaign messages that highlight an opponent’s perceived weaknesses or record."
+      }
+    },
+    {
+      "id": "pols-exam2-52",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "A voter’s psychological attachment to a party. The reading emphasizes it as a predictor of candidate choice."
+      ],
+      "text": "Which term, case, or fact matches this description? A voter’s psychological attachment to a party. The reading emphasizes it as a predictor of candidate choice.",
+      "choices": [
+        "Party platform",
+        "Responsible party model",
+        "National party convention",
+        "State party committees",
+        "Party identification"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. Party identification",
+          "A voter’s psychological attachment to a party. The reading emphasizes it as a predictor of candidate choice."
+        ],
+        "text": "E. Party identification A voter’s psychological attachment to a party. The reading emphasizes it as a predictor of candidate choice."
+      }
+    },
+    {
+      "id": "pols-exam2-53",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "The party's stated policy positions and commitments."
+      ],
+      "text": "Which term, case, or fact matches this description? The party's stated policy positions and commitments.",
+      "choices": [
+        "State party committees",
+        "Responsible party model",
+        "Party platform",
+        "Party identification",
+        "Political party"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Party platform",
+          "The party's stated policy positions and commitments."
+        ],
+        "text": "C. Party platform The party's stated policy positions and commitments."
+      }
+    },
+    {
+      "id": "pols-exam2-54",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "An organization seeking power by electing candidates under its label."
+      ],
+      "text": "Which term, case, or fact matches this description? An organization seeking power by electing candidates under its label.",
+      "choices": [
+        "Political party",
+        "Party platform",
+        "Responsible party model",
+        "Party identification",
+        "State party committees"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Political party",
+          "An organization seeking power by electing candidates under its label."
+        ],
+        "text": "A. Political party An organization seeking power by electing candidates under its label."
+      }
+    },
+    {
+      "id": "pols-exam2-55",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Neighborhood voter contact and grassroots turnout mobilization."
+      ],
+      "text": "Which term, case, or fact matches this description? Neighborhood voter contact and grassroots turnout mobilization.",
+      "choices": [
+        "Activation",
+        "Candidate-centered model",
+        "Conversion",
+        "Precinct organizations",
+        "DNC and RNC"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. Precinct organizations",
+          "Neighborhood voter contact and grassroots turnout mobilization."
+        ],
+        "text": "D. Precinct organizations Neighborhood voter contact and grassroots turnout mobilization."
+      }
+    },
+    {
+      "id": "pols-exam2-56",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Strengthening an existing candidate preference."
+      ],
+      "text": "Which term, case, or fact matches this description? Strengthening an existing candidate preference.",
+      "choices": [
+        "Doctrine of sufficiency",
+        "Reinforcement",
+        "Political party",
+        "State party committees",
+        "Microtargeting"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. Reinforcement",
+          "Strengthening an existing candidate preference."
+        ],
+        "text": "B. Reinforcement Strengthening an existing candidate preference."
+      }
+    },
+    {
+      "id": "pols-exam2-57",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Clear policy alternatives, coordinated candidates and governing, and accountability for party performance."
+      ],
+      "text": "Which term, case, or fact matches this description? Clear policy alternatives, coordinated candidates and governing, and accountability for party performance.",
+      "choices": [
+        "Downs model",
+        "Party identification",
+        "National party convention",
+        "Party platform",
+        "Responsible party model"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. Responsible party model",
+          "Clear policy alternatives, coordinated candidates and governing, and accountability for party performance."
+        ],
+        "text": "E. Responsible party model Clear policy alternatives, coordinated candidates and governing, and accountability for party performance."
+      }
+    },
+    {
+      "id": "pols-exam2-58",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Filtering or interpreting political information through existing beliefs."
+      ],
+      "text": "Which term, case, or fact matches this description? Filtering or interpreting political information through existing beliefs.",
+      "choices": [
+        "Candidate-centered model",
+        "DNC and RNC",
+        "Selective perception",
+        "Downs model",
+        "Interest group"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Selective perception",
+          "Filtering or interpreting political information through existing beliefs."
+        ],
+        "text": "C. Selective perception Filtering or interpreting political information through existing beliefs."
+      }
+    },
+    {
+      "id": "pols-exam2-59",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Voting for candidates from different parties for different offices on the same ballot."
+      ],
+      "text": "Which term, case, or fact matches this description? Voting for candidates from different parties for different offices on the same ballot.",
+      "choices": [
+        "Split-ticket voting",
+        "Conversion",
+        "Downs model",
+        "Median voter",
+        "National party convention"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Split-ticket voting",
+          "Voting for candidates from different parties for different offices on the same ballot."
+        ],
+        "text": "A. Split-ticket voting Voting for candidates from different parties for different offices on the same ballot."
+      }
+    },
+    {
+      "id": "pols-exam2-60",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Coordinate state activity, recruit and support candidates, organize conventions, and support outreach and fundraising."
+      ],
+      "text": "Which term, case, or fact matches this description? Coordinate state activity, recruit and support candidates, organize conventions, and support outreach and fundraising.",
+      "choices": [
+        "Political party",
+        "Party platform",
+        "National party convention",
+        "State party committees",
+        "Party identification"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. State party committees",
+          "Coordinate state activity, recruit and support candidates, organize conventions, and support outreach and fundraising."
+        ],
+        "text": "D. State party committees Coordinate state activity, recruit and support candidates, organize conventions, and support outreach and fundraising."
+      }
+    },
+    {
+      "id": "pols-exam2-61",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Ending a session without setting a day to reconvene."
+      ],
+      "text": "Which term, case, or fact matches this description? Ending a session without setting a day to reconvene.",
+      "choices": [
+        "Post-adjournment veto",
+        "Texas legislative terms",
+        "Adjournment sine die",
+        "Incumbent",
+        "Enrolled bill"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Adjournment sine die",
+          "Ending a session without setting a day to reconvene."
+        ],
+        "text": "C. Adjournment sine die Ending a session without setting a day to reconvene."
+      }
+    },
+    {
+      "id": "pols-exam2-62",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "The executive branch or an administrative agency implementing legislative decisions."
+      ],
+      "text": "Which term, case, or fact matches this description? The executive branch or an administrative agency implementing legislative decisions.",
+      "choices": [
+        "Agent",
+        "Baker v. Carr",
+        "Gerrymandering",
+        "Principal",
+        "Texas legislative terms"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Agent",
+          "The executive branch or an administrative agency implementing legislative decisions."
+        ],
+        "text": "A. Agent The executive branch or an administrative agency implementing legislative decisions."
+      }
+    },
+    {
+      "id": "pols-exam2-63",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Annual regular sessions occur every year. Biennial regular sessions occur every two years. Texas uses a biennial schedule in odd-numbered years."
+      ],
+      "text": "Which term, case, or fact matches this description? Annual regular sessions occur every year. Biennial regular sessions occur every two years. Texas uses a biennial schedule in odd-numbered years.",
+      "choices": [
+        "Texas special session",
+        "Texas regular session",
+        "Unicameral legislature",
+        "Annual and biennial sessions",
+        "Texas legislative terms"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. Annual and biennial sessions",
+          "Annual regular sessions occur every year. Biennial regular sessions occur every two years. Texas uses a biennial schedule in odd-numbered years."
+        ],
+        "text": "D. Annual and biennial sessions Annual regular sessions occur every year. Biennial regular sessions occur every two years. Texas uses a biennial schedule in odd-numbered years."
+      }
+    },
+    {
+      "id": "pols-exam2-64",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Allocating representation or seats according to population."
+      ],
+      "text": "Which term, case, or fact matches this description? Allocating representation or seats according to population.",
+      "choices": [
+        "Gerrymandering",
+        "Apportionment",
+        "Texas legislative terms",
+        "Texas lieutenant governor",
+        "Incumbent"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. Apportionment",
+          "Allocating representation or seats according to population."
+        ],
+        "text": "B. Apportionment Allocating representation or seats according to population."
+      }
+    },
+    {
+      "id": "pols-exam2-65",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "An allocation of government funds to a program, agency, or purpose."
+      ],
+      "text": "Which term, case, or fact matches this description? An allocation of government funds to a program, agency, or purpose.",
+      "choices": [
+        "Redistricting",
+        "Texas legislative terms",
+        "Annual and biennial sessions",
+        "Legislative interim",
+        "Appropriation"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. Appropriation",
+          "An allocation of government funds to a program, agency, or purpose."
+        ],
+        "text": "E. Appropriation An allocation of government funds to a program, agency, or purpose."
+      }
+    },
+    {
+      "id": "pols-exam2-66",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "1962. Federal courts can hear equal-protection challenges to legislative apportionment."
+      ],
+      "text": "Which term, case, or fact matches this description? 1962. Federal courts can hear equal-protection challenges to legislative apportionment.",
+      "choices": [
+        "Appropriation",
+        "Gerrymandering",
+        "Baker v. Carr",
+        "Principal",
+        "Texas legislative terms"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Baker v. Carr",
+          "1962. Federal courts can hear equal-protection challenges to legislative apportionment."
+        ],
+        "text": "C. Baker v. Carr 1962. Federal courts can hear equal-protection challenges to legislative apportionment."
+      }
+    },
+    {
+      "id": "pols-exam2-67",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "A legislature with two chambers."
+      ],
+      "text": "Which term, case, or fact matches this description? A legislature with two chambers.",
+      "choices": [
+        "Bicameral legislature",
+        "Unicameral legislature",
+        "Select committee",
+        "Texas legislative terms",
+        "Adjournment sine die"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Bicameral legislature",
+          "A legislature with two chambers."
+        ],
+        "text": "A. Bicameral legislature A legislature with two chambers."
+      }
+    },
+    {
+      "id": "pols-exam2-68",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Agency implementation departing from legislative intent."
+      ],
+      "text": "Which term, case, or fact matches this description? Agency implementation departing from legislative intent.",
+      "choices": [
+        "Unicameral legislature",
+        "Gerrymandering",
+        "Markup",
+        "Bureaucratic drift",
+        "Texas legislative terms"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. Bureaucratic drift",
+          "Agency implementation departing from legislative intent."
+        ],
+        "text": "D. Bureaucratic drift Agency implementation departing from legislative intent."
+      }
+    },
+    {
+      "id": "pols-exam2-69",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "The Speaker in the House and lieutenant governor in the Senate, under chamber rules."
+      ],
+      "text": "Which term, case, or fact matches this description? The Speaker in the House and lieutenant governor in the Senate, under chamber rules.",
+      "choices": [
+        "Select committee",
+        "Committee assignments",
+        "Conference committee",
+        "Standing committee",
+        "Agent"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. Committee assignments",
+          "The Speaker in the House and lieutenant governor in the Senate, under chamber rules."
+        ],
+        "text": "B. Committee assignments The Speaker in the House and lieutenant governor in the Senate, under chamber rules."
+      }
+    },
+    {
+      "id": "pols-exam2-70",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Members of both chambers negotiating differences between House and Senate bill versions."
+      ],
+      "text": "Which term, case, or fact matches this description? Members of both chambers negotiating differences between House and Senate bill versions.",
+      "choices": [
+        "Select committee",
+        "Committee assignments",
+        "Standing committee",
+        "Appropriation",
+        "Conference committee"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. Conference committee",
+          "Members of both chambers negotiating differences between House and Senate bill versions."
+        ],
+        "text": "E. Conference committee Members of both chambers negotiating differences between House and Senate bill versions."
+      }
+    },
+    {
+      "id": "pols-exam2-71",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Helping a district resident address an individual government-related problem."
+      ],
+      "text": "Which term, case, or fact matches this description? Helping a district resident address an individual government-related problem.",
+      "choices": [
+        "Oversight",
+        "Texas House Speaker",
+        "Constituent service",
+        "Bureaucratic drift",
+        "Committee assignments"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Constituent service",
+          "Helping a district resident address an individual government-related problem."
+        ],
+        "text": "C. Constituent service Helping a district resident address an individual government-related problem."
+      }
+    },
+    {
+      "id": "pols-exam2-72",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Splitting a group across districts to prevent it from forming a winning bloc."
+      ],
+      "text": "Which term, case, or fact matches this description? Splitting a group across districts to prevent it from forming a winning bloc.",
+      "choices": [
+        "Cracking",
+        "Redistricting",
+        "Gerrymandering",
+        "Bicameral legislature",
+        "Texas legislative terms"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Cracking",
+          "Splitting a group across districts to prevent it from forming a winning bloc."
+        ],
+        "text": "A. Cracking Splitting a group across districts to prevent it from forming a winning bloc."
+      }
+    },
+    {
+      "id": "pols-exam2-73",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Authorizing another actor to perform a task on the principal's behalf."
+      ],
+      "text": "Which term, case, or fact matches this description? Authorizing another actor to perform a task on the principal's behalf.",
+      "choices": [
+        "Pigeonholing",
+        "Unicameral legislature",
+        "Cracking",
+        "Delegation",
+        "Bicameral legislature"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. Delegation",
+          "Authorizing another actor to perform a task on the principal's behalf."
+        ],
+        "text": "D. Delegation Authorizing another actor to perform a task on the principal's behalf."
+      }
+    },
+    {
+      "id": "pols-exam2-74",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Officials resembling constituents in demographic or social characteristics."
+      ],
+      "text": "Which term, case, or fact matches this description? Officials resembling constituents in demographic or social characteristics.",
+      "choices": [
+        "Substantive representation",
+        "Descriptive representation",
+        "Appropriation",
+        "Gerrymandering",
+        "Principal"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. Descriptive representation",
+          "Officials resembling constituents in demographic or social characteristics."
+        ],
+        "text": "B. Descriptive representation Officials resembling constituents in demographic or social characteristics."
+      }
+    },
+    {
+      "id": "pols-exam2-75",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "A bill passed by one chamber with amendments incorporated."
+      ],
+      "text": "Which term, case, or fact matches this description? A bill passed by one chamber with amendments incorporated.",
+      "choices": [
+        "Enrolled bill",
+        "Constituent service",
+        "Reapportionment",
+        "Texas legislative terms",
+        "Engrossed bill"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. Engrossed bill",
+          "A bill passed by one chamber with amendments incorporated."
+        ],
+        "text": "E. Engrossed bill A bill passed by one chamber with amendments incorporated."
+      }
+    },
+    {
+      "id": "pols-exam2-76",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "The final version passed by both chambers and prepared for the governor."
+      ],
+      "text": "Which term, case, or fact matches this description? The final version passed by both chambers and prepared for the governor.",
+      "choices": [
+        "Engrossed bill",
+        "Select committee",
+        "Enrolled bill",
+        "Gerrymandering",
+        "Committee assignments"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Enrolled bill",
+          "The final version passed by both chambers and prepared for the governor."
+        ],
+        "text": "C. Enrolled bill The final version passed by both chambers and prepared for the governor."
+      }
+    },
+    {
+      "id": "pols-exam2-77",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Deliberately manipulating district boundaries for electoral advantage."
+      ],
+      "text": "Which term, case, or fact matches this description? Deliberately manipulating district boundaries for electoral advantage.",
+      "choices": [
+        "Gerrymandering",
+        "Texas House qualifications",
+        "Texas chamber sizes",
+        "Texas House Speaker",
+        "Substantive representation"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Gerrymandering",
+          "Deliberately manipulating district boundaries for electoral advantage."
+        ],
+        "text": "A. Gerrymandering Deliberately manipulating district boundaries for electoral advantage."
+      }
+    },
+    {
+      "id": "pols-exam2-78",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "A person who already holds the office they are running for."
+      ],
+      "text": "Which term, case, or fact matches this description? A person who already holds the office they are running for.",
+      "choices": [
+        "Appropriation",
+        "Unicameral legislature",
+        "Enrolled bill",
+        "Incumbent",
+        "Shared Texas qualifications"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. Incumbent",
+          "A person who already holds the office they are running for."
+        ],
+        "text": "D. Incumbent A person who already holds the office they are running for."
+      }
+    },
+    {
+      "id": "pols-exam2-79",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "One party has more relevant information than the other; agencies often know more about implementation."
+      ],
+      "text": "Which term, case, or fact matches this description? One party has more relevant information than the other; agencies often know more about implementation.",
+      "choices": [
+        "Shared Texas qualifications",
+        "Information asymmetry",
+        "Redistricting",
+        "Texas chamber sizes",
+        "Post-adjournment veto"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. Information asymmetry",
+          "One party has more relevant information than the other; agencies often know more about implementation."
+        ],
+        "text": "B. Information asymmetry One party has more relevant information than the other; agencies often know more about implementation."
+      }
+    },
+    {
+      "id": "pols-exam2-80",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Lawmaking, budgeting, representation, and oversight."
+      ],
+      "text": "Which term, case, or fact matches this description? Lawmaking, budgeting, representation, and oversight.",
+      "choices": [
+        "Legislative interim",
+        "Texas legislative terms",
+        "Agent",
+        "Apportionment",
+        "Legislative functions"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. Legislative functions",
+          "Lawmaking, budgeting, representation, and oversight."
+        ],
+        "text": "E. Legislative functions Lawmaking, budgeting, representation, and oversight."
+      }
+    },
+    {
+      "id": "pols-exam2-81",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "The time between sessions, when committees can study issues and prepare recommendations."
+      ],
+      "text": "Which term, case, or fact matches this description? The time between sessions, when committees can study issues and prepare recommendations.",
+      "choices": [
+        "Texas legislative terms",
+        "Legislative functions",
+        "Legislative interim",
+        "Veto override",
+        "Texas Senate qualifications"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Legislative interim",
+          "The time between sessions, when committees can study issues and prepare recommendations."
+        ],
+        "text": "C. Legislative interim The time between sessions, when committees can study issues and prepare recommendations."
+      }
+    },
+    {
+      "id": "pols-exam2-82",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Revising a bill through amendments during committee work."
+      ],
+      "text": "Which term, case, or fact matches this description? Revising a bill through amendments during committee work.",
+      "choices": [
+        "Markup",
+        "Veto override",
+        "Appropriation",
+        "Standing committee",
+        "Enrolled bill"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Markup",
+          "Revising a bill through amendments during committee work."
+        ],
+        "text": "A. Markup Revising a bill through amendments during committee work."
+      }
+    },
+    {
+      "id": "pols-exam2-83",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "The principle that state legislative districts should have substantially equal populations so voters have comparable representation."
+      ],
+      "text": "Which term, case, or fact matches this description? The principle that state legislative districts should have substantially equal populations so voters have comparable representation.",
+      "choices": [
+        "Texas Senate qualifications",
+        "Texas special session",
+        "Texas regular session",
+        "One person, one vote",
+        "Unicameral legislature"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. One person, one vote",
+          "The principle that state legislative districts should have substantially equal populations so voters have comparable representation."
+        ],
+        "text": "D. One person, one vote The principle that state legislative districts should have substantially equal populations so voters have comparable representation."
+      }
+    },
+    {
+      "id": "pols-exam2-84",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Legislative monitoring of executive agencies through hearings, investigations, reports, and audits."
+      ],
+      "text": "Which term, case, or fact matches this description? Legislative monitoring of executive agencies through hearings, investigations, reports, and audits.",
+      "choices": [
+        "One person, one vote",
+        "Oversight",
+        "Reynolds v. Sims",
+        "Adjournment sine die",
+        "Enrolled bill"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. Oversight",
+          "Legislative monitoring of executive agencies through hearings, investigations, reports, and audits."
+        ],
+        "text": "B. Oversight Legislative monitoring of executive agencies through hearings, investigations, reports, and audits."
+      }
+    },
+    {
+      "id": "pols-exam2-85",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Concentrating a group in a few districts to reduce its influence elsewhere."
+      ],
+      "text": "Which term, case, or fact matches this description? Concentrating a group in a few districts to reduce its influence elsewhere.",
+      "choices": [
+        "Select committee",
+        "Legislative interim",
+        "Apportionment",
+        "Texas Senate qualifications",
+        "Packing"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. Packing",
+          "Concentrating a group in a few districts to reduce its influence elsewhere."
+        ],
+        "text": "E. Packing Concentrating a group in a few districts to reduce its influence elsewhere."
+      }
+    },
+    {
+      "id": "pols-exam2-86",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Stopping a bill through inaction, such as not scheduling consideration."
+      ],
+      "text": "Which term, case, or fact matches this description? Stopping a bill through inaction, such as not scheduling consideration.",
+      "choices": [
+        "Texas regular session",
+        "Appropriation",
+        "Pigeonholing",
+        "Redistricting",
+        "Enrolled bill"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Pigeonholing",
+          "Stopping a bill through inaction, such as not scheduling consideration."
+        ],
+        "text": "C. Pigeonholing Stopping a bill through inaction, such as not scheduling consideration."
+      }
+    },
+    {
+      "id": "pols-exam2-87",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "The regular session has ended, preventing an ordinary in-session override response."
+      ],
+      "text": "Which term, case, or fact matches this description? The regular session has ended, preventing an ordinary in-session override response.",
+      "choices": [
+        "Post-adjournment veto",
+        "Veto override",
+        "Adjournment sine die",
+        "Bicameral legislature",
+        "Legislative functions"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Post-adjournment veto",
+          "The regular session has ended, preventing an ordinary in-session override response."
+        ],
+        "text": "A. Post-adjournment veto The regular session has ended, preventing an ordinary in-session override response."
+      }
+    },
+    {
+      "id": "pols-exam2-88",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "The legislature."
+      ],
+      "text": "Which term, case, or fact matches this description? The legislature.",
+      "choices": [
+        "Substantive representation",
+        "Packing",
+        "Annual and biennial sessions",
+        "Principal",
+        "Unicameral legislature"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. Principal",
+          "The legislature."
+        ],
+        "text": "D. Principal The legislature."
+      }
+    },
+    {
+      "id": "pols-exam2-89",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Reallocating representation as populations change."
+      ],
+      "text": "Which term, case, or fact matches this description? Reallocating representation as populations change.",
+      "choices": [
+        "Apportionment",
+        "Reapportionment",
+        "Committee assignments",
+        "Oversight",
+        "Texas lieutenant governor"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. Reapportionment",
+          "Reallocating representation as populations change."
+        ],
+        "text": "B. Reapportionment Reallocating representation as populations change."
+      }
+    },
+    {
+      "id": "pols-exam2-90",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Redrawing electoral district boundaries."
+      ],
+      "text": "Which term, case, or fact matches this description? Redrawing electoral district boundaries.",
+      "choices": [
+        "Texas House Speaker",
+        "Appropriation",
+        "Pigeonholing",
+        "Enrolled bill",
+        "Redistricting"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. Redistricting",
+          "Redrawing electoral district boundaries."
+        ],
+        "text": "E. Redistricting Redrawing electoral district boundaries."
+      }
+    },
+    {
+      "id": "pols-exam2-91",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "1964. Both chambers of a state legislature require districts with substantially equal populations."
+      ],
+      "text": "Which term, case, or fact matches this description? 1964. Both chambers of a state legislature require districts with substantially equal populations.",
+      "choices": [
+        "Agent",
+        "Baker v. Carr",
+        "Reynolds v. Sims",
+        "Conference committee",
+        "Descriptive representation"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Reynolds v. Sims",
+          "1964. Both chambers of a state legislature require districts with substantially equal populations."
+        ],
+        "text": "C. Reynolds v. Sims 1964. Both chambers of a state legislature require districts with substantially equal populations."
+      }
+    },
+    {
+      "id": "pols-exam2-92",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "A committee created for a particular assignment or issue."
+      ],
+      "text": "Which term, case, or fact matches this description? A committee created for a particular assignment or issue.",
+      "choices": [
+        "Select committee",
+        "Standing committee",
+        "Committee assignments",
+        "Conference committee",
+        "Constituent service"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Select committee",
+          "A committee created for a particular assignment or issue."
+        ],
+        "text": "A. Select committee A committee created for a particular assignment or issue."
+      }
+    },
+    {
+      "id": "pols-exam2-93",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "U.S. citizenship and qualified Texas voter status."
+      ],
+      "text": "Which term, case, or fact matches this description? U.S. citizenship and qualified Texas voter status.",
+      "choices": [
+        "Texas House qualifications",
+        "Texas Senate qualifications",
+        "Texas legislative terms",
+        "Shared Texas qualifications",
+        "Texas regular session"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. Shared Texas qualifications",
+          "U.S. citizenship and qualified Texas voter status."
+        ],
+        "text": "D. Shared Texas qualifications U.S. citizenship and qualified Texas voter status."
+      }
+    },
+    {
+      "id": "pols-exam2-94",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Specializes in a policy area, studies bills, hears testimony, amends proposals, and recommends action."
+      ],
+      "text": "Which term, case, or fact matches this description? Specializes in a policy area, studies bills, hears testimony, amends proposals, and recommends action.",
+      "choices": [
+        "Committee assignments",
+        "Standing committee",
+        "Select committee",
+        "Conference committee",
+        "Reynolds v. Sims"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. Standing committee",
+          "Specializes in a policy area, studies bills, hears testimony, amends proposals, and recommends action."
+        ],
+        "text": "B. Standing committee Specializes in a policy area, studies bills, hears testimony, amends proposals, and recommends action."
+      }
+    },
+    {
+      "id": "pols-exam2-95",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Officials advancing constituents' interests."
+      ],
+      "text": "Which term, case, or fact matches this description? Officials advancing constituents' interests.",
+      "choices": [
+        "Descriptive representation",
+        "Annual and biennial sessions",
+        "Cracking",
+        "Legislative interim",
+        "Substantive representation"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. Substantive representation",
+          "Officials advancing constituents' interests."
+        ],
+        "text": "E. Substantive representation Officials advancing constituents' interests."
+      }
+    },
+    {
+      "id": "pols-exam2-96",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "150 members in the House and 31 in the Senate."
+      ],
+      "text": "Which term, case, or fact matches this description? 150 members in the House and 31 in the Senate.",
+      "choices": [
+        "Texas House qualifications",
+        "Texas House Speaker",
+        "Texas chamber sizes",
+        "Texas legislative terms",
+        "Shared Texas qualifications"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Texas chamber sizes",
+          "150 members in the House and 31 in the Senate."
+        ],
+        "text": "C. Texas chamber sizes 150 members in the House and 31 in the Senate."
+      }
+    },
+    {
+      "id": "pols-exam2-97",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Minimum age 21, 2 years in Texas, and the last year in the district before election."
+      ],
+      "text": "Which term, case, or fact matches this description? Minimum age 21, 2 years in Texas, and the last year in the district before election.",
+      "choices": [
+        "Texas House qualifications",
+        "Shared Texas qualifications",
+        "Texas House Speaker",
+        "Texas Senate qualifications",
+        "Texas special session"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Texas House qualifications",
+          "Minimum age 21, 2 years in Texas, and the last year in the district before election."
+        ],
+        "text": "A. Texas House qualifications Minimum age 21, 2 years in Texas, and the last year in the district before election."
+      }
+    },
+    {
+      "id": "pols-exam2-98",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "House members elect one of their own."
+      ],
+      "text": "Which term, case, or fact matches this description? House members elect one of their own.",
+      "choices": [
+        "Texas House qualifications",
+        "Texas legislative terms",
+        "Texas regular session",
+        "Texas House Speaker",
+        "Texas Senate qualifications"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. Texas House Speaker",
+          "House members elect one of their own."
+        ],
+        "text": "D. Texas House Speaker House members elect one of their own."
+      }
+    },
+    {
+      "id": "pols-exam2-99",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "House members serve two years. Senators ordinarily serve four years, with shorter terms in the post-redistricting cycle."
+      ],
+      "text": "Which term, case, or fact matches this description? House members serve two years. Senators ordinarily serve four years, with shorter terms in the post-redistricting cycle.",
+      "choices": [
+        "Texas chamber sizes",
+        "Texas legislative terms",
+        "Texas House Speaker",
+        "Texas regular session",
+        "Legislative interim"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. Texas legislative terms",
+          "House members serve two years. Senators ordinarily serve four years, with shorter terms in the post-redistricting cycle."
+        ],
+        "text": "B. Texas legislative terms House members serve two years. Senators ordinarily serve four years, with shorter terms in the post-redistricting cycle."
+      }
+    },
+    {
+      "id": "pols-exam2-100",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Statewide voters; the lieutenant governor presides over the Senate."
+      ],
+      "text": "Which term, case, or fact matches this description? Statewide voters; the lieutenant governor presides over the Senate.",
+      "choices": [
+        "Texas House Speaker",
+        "Texas special session",
+        "Texas Senate qualifications",
+        "Texas legislative terms",
+        "Texas lieutenant governor"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. Texas lieutenant governor",
+          "Statewide voters; the lieutenant governor presides over the Senate."
+        ],
+        "text": "E. Texas lieutenant governor Statewide voters; the lieutenant governor presides over the Senate."
+      }
+    },
+    {
+      "id": "pols-exam2-101",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Starts the second Tuesday in January of odd-numbered years and lasts up to 140 calendar days."
+      ],
+      "text": "Which term, case, or fact matches this description? Starts the second Tuesday in January of odd-numbered years and lasts up to 140 calendar days.",
+      "choices": [
+        "Texas special session",
+        "Texas legislative terms",
+        "Texas regular session",
+        "Shared Texas qualifications",
+        "Texas House Speaker"
+      ],
+      "correct": [
+        2
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "C. Texas regular session",
+          "Starts the second Tuesday in January of odd-numbered years and lasts up to 140 calendar days."
+        ],
+        "text": "C. Texas regular session Starts the second Tuesday in January of odd-numbered years and lasts up to 140 calendar days."
+      }
+    },
+    {
+      "id": "pols-exam2-102",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Minimum age 26, 5 years in Texas, and the last year in the district before election."
+      ],
+      "text": "Which term, case, or fact matches this description? Minimum age 26, 5 years in Texas, and the last year in the district before election.",
+      "choices": [
+        "Texas Senate qualifications",
+        "Shared Texas qualifications",
+        "Texas House qualifications",
+        "Texas chamber sizes",
+        "Texas House Speaker"
+      ],
+      "correct": [
+        0
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "A. Texas Senate qualifications",
+          "Minimum age 26, 5 years in Texas, and the last year in the district before election."
+        ],
+        "text": "A. Texas Senate qualifications Minimum age 26, 5 years in Texas, and the last year in the district before election."
+      }
+    },
+    {
+      "id": "pols-exam2-103",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "Called by the governor for up to 30 days. Lawmaking is limited to subjects the governor submits."
+      ],
+      "text": "Which term, case, or fact matches this description? Called by the governor for up to 30 days. Lawmaking is limited to subjects the governor submits.",
+      "choices": [
+        "Texas regular session",
+        "Texas House qualifications",
+        "Texas House Speaker",
+        "Texas special session",
+        "Texas chamber sizes"
+      ],
+      "correct": [
+        3
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "D. Texas special session",
+          "Called by the governor for up to 30 days. Lawmaking is limited to subjects the governor submits."
+        ],
+        "text": "D. Texas special session Called by the governor for up to 30 days. Lawmaking is limited to subjects the governor submits."
+      }
+    },
+    {
+      "id": "pols-exam2-104",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "A legislature with one chamber. Nebraska is the only state with this structure."
+      ],
+      "text": "Which term, case, or fact matches this description? A legislature with one chamber. Nebraska is the only state with this structure.",
+      "choices": [
+        "Bicameral legislature",
+        "Unicameral legislature",
+        "Markup",
+        "Information asymmetry",
+        "Packing"
+      ],
+      "correct": [
+        1
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "B. Unicameral legislature",
+          "A legislature with one chamber. Nebraska is the only state with this structure."
+        ],
+        "text": "B. Unicameral legislature A legislature with one chamber. Nebraska is the only state with this structure."
+      }
+    },
+    {
+      "id": "pols-exam2-105",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "Vocabulary check",
+      "kind": "mcq",
+      "body": [
+        "Which term, case, or fact matches this description?",
+        "The required two-thirds vote in each chamber when the legislature is able to act."
+      ],
+      "text": "Which term, case, or fact matches this description? The required two-thirds vote in each chamber when the legislature is able to act.",
+      "choices": [
+        "Post-adjournment veto",
+        "Information asymmetry",
+        "Unicameral legislature",
+        "Legislative interim",
+        "Veto override"
+      ],
+      "correct": [
+        4
+      ],
+      "multiple": false,
+      "answer": {
+        "blocks": [
+          "E. Veto override",
+          "The required two-thirds vote in each chamber when the legislature is able to act."
+        ],
+        "text": "E. Veto override The required two-thirds vote in each chamber when the legislature is able to act."
+      }
     }
   ],
   "guides": [
@@ -11806,6 +14959,11 @@
       "title": "Chapters 6–8 · Exam 2 MCQ",
       "course": "CHEM 107",
       "description": "72 new exam-style variants plus 24 curated lecture-coverage MCQs; calibrated slightly above the supplied Exam 2 Review."
+    },
+    {
+      "id": "pols-exam-2",
+      "title": "Exam 2 · Vocabulary",
+      "course": "POLS 207"
     }
   ],
   "chemistryExam2": {
@@ -12059,3 +15217,4 @@
     "professor": 24
   }
 }
+

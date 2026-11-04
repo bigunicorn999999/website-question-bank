@@ -134,3 +134,13 @@ body:has(#periodic-container:not([hidden]) #periodic-reference[open]){--chem-tab
 .mcq-options .mcq-option.choice-correct{background:#e3f4e6;border:2px solid #397749;color:#163c22}.mcq-options .mcq-option.choice-wrong{background:#fbe5e3;border:2px solid #b34540;color:#642621}.mcq-option.choice-correct input{accent-color:#397749}.mcq-option.choice-wrong input{accent-color:#b34540}.mcq-option.choice-correct:after{content:'✓ Correct';font-size:12px;font-weight:700;display:block;padding:4px}.mcq-option.choice-wrong:after{content:'✕ Incorrect';font-size:12px;font-weight:700;display:block;padding:4px}
 #settings-open{margin-left:auto;border:1px solid var(--line);border-radius:8px;padding:8px 12px;background:white;color:var(--ink);font-size:13px;letter-spacing:0}#settings-dialog{color:var(--ink);background:var(--paper);width:min(380px,calc(100vw - 32px));border:1px solid var(--line);border-radius:14px;padding:22px}#settings-dialog::backdrop{background:#10203970}#settings-dialog h2{font-size:20px;margin:0}#settings-dialog .settings-heading{display:flex;align-items:center;justify-content:space-between}#settings-close{border:0;background:transparent;font-size:24px;color:var(--ink)}#settings-dialog fieldset{border:0;padding:0;margin:22px 0 0}#settings-dialog legend{font-size:13px;margin-bottom:10px}#settings-dialog label{display:flex;align-items:center;gap:12px;padding:12px;border:1px solid var(--line);border-radius:8px;background:white;margin:8px 0;font-size:14px}#settings-dialog input{accent-color:var(--ink)}.theme-dot{width:16px;height:16px;border-radius:50%}
 
+
+/* Compact practice controls on the right. */
+.practice-tools{width:min(300px,100%);margin-left:auto;align-items:stretch;gap:10px}
+.practice-tools label{flex-wrap:wrap}.practice-tools select{max-width:100%}.practice-tools #round-status{font-size:12px}
+@media(min-width:1200px){
+ body:not(.periodic-open) main:has(#practice-tools:not([hidden])){margin-right:320px}
+ body:not(.periodic-open) #practice-tools:not([hidden]){position:fixed;right:16px;top:140px;width:280px;max-height:calc(100dvh - 165px);overflow:auto;margin:0;z-index:5}
+ body:not(.periodic-open) #practice-tools label{width:100%}
+}
+

@@ -155,3 +155,18 @@ body:not(.periodic-open) #practice-tools:not([hidden]),#practice-tools{position:
 body:not(.periodic-open) #practice-tools label{width:auto}.hero:has(#practice-tools[hidden]){grid-template-columns:1fr}
 @media(max-width:850px){.hero{grid-template-columns:1fr}.hero #practice-tools{width:min(100%,420px);margin-top:0}.home-subjects{grid-template-columns:1fr}.home-link{font-size:12px}}
 
+
+/* Align practice actions in one compact row. */
+.hero{grid-template-columns:minmax(0,1fr) 410px;gap:18px}
+#practice-tools{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:10px;padding:14px}
+#practice-tools>label:first-child{grid-column:1/-1}
+#start-practice-round{grid-column:1;grid-row:2}
+#practice-tools .mistakes-toggle{grid-column:2;grid-row:2;display:flex;flex-direction:row;align-items:center;gap:7px;white-space:nowrap;margin:0}
+#practice-tools .mistakes-toggle input{width:16px;height:16px;min-width:16px;margin:0;padding:0}
+#end-practice-round,#pols-direction-label,#round-status{grid-column:1/-1}
+.multi-menu{width:330px;min-width:0;box-sizing:border-box;padding:7px}
+.controls .multi-menu label{display:flex;flex-direction:row;align-items:flex-start;justify-content:flex-start;gap:9px;width:100%;min-width:0;padding:8px;margin:0;text-align:left;white-space:normal;font-size:13px;line-height:1.5;box-sizing:border-box}
+.controls .multi-menu input[type="checkbox"]{appearance:auto;display:block;flex:0 0 16px;width:16px;height:16px;min-width:16px;max-width:16px;margin:2px 0 0;padding:0}
+.multi-menu label:has(input:checked){background:var(--paper);border-radius:5px}.multi-menu button{margin:7px 8px}
+@media(max-width:950px){.hero{grid-template-columns:1fr}.hero #practice-tools{width:min(100%,410px);justify-self:start}}
+

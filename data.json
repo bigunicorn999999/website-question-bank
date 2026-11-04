@@ -15,9 +15,9 @@
     "integration-parts": "Integration by parts",
     "integration-special": "Special functions & recursive expressions",
     "integration-double": "Double integrals",
-    "ENGR 8": "Top-down design and dictionaries",
-    "ENGR 9": "Functions, tuples, scope and mutation",
-    "ENGR 8-9": "Integrated coding challenges",
+    "ENGR 8": "Module 8 · Design & dictionaries",
+    "ENGR 9": "Module 9 · Functions & scope",
+    "ENGR 8-9": "Modules 8–9 · Mixed practice",
     "CHEM 6": "Chapter 6 · Atomic structure",
     "CHEM 7": "Chapter 7 · Bonding & shape",
     "CHEM 8": "Chapter 8 · Molecules & materials",
@@ -34,7 +34,8 @@
     "pols-voting": "Participation, voting rights, and elections",
     "pols-parties": "Parties and campaigns",
     "pols-legislatures": "Legislatures and Texas government",
-    "pols-application": "Application, causality & history"
+    "pols-application": "Application, causality & history",
+    "ENGR 11": "Module 11 · Files & input processing"
   },
   "questions": [
     {
@@ -17495,6 +17496,596 @@
         ],
         "text": "Reapportionment reallocates seats; redistricting redraws district lines. Seat allocation and boundary drawing answer different questions."
       }
+    },
+    {
+      "id": "ENGR11-E01",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Easy · File basics and locations",
+      "kind": "frq",
+      "difficulty": "easy",
+      "body": [
+        "If you rename notes.txt to notes.pdf, does it become a valid PDF? Explain."
+      ],
+      "answer": {
+        "blocks": [
+          "No. The name changes, but the contents remain in their original format."
+        ],
+        "text": "No. The name changes, but the contents remain in their original format."
+      },
+      "text": "If you rename `notes.txt` to `notes.pdf`, does it become a valid PDF? Explain."
+    },
+    {
+      "id": "ENGR11-E02",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Easy · File basics and locations",
+      "kind": "coding",
+      "difficulty": "easy",
+      "body": [
+        "Write a statement opening scores.txt inside a folder named data for reading."
+      ],
+      "answer": {
+        "blocks": [
+          {
+            "code": "f = open(\"data/scores.txt\", \"r\")"
+          }
+        ],
+        "text": "```python\nf = open(\"data/scores.txt\", \"r\")\n```"
+      },
+      "text": "Write a statement opening `scores.txt` inside a folder named `data` for reading."
+    },
+    {
+      "id": "ENGR11-E03",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Easy · Opening files and choosing modes",
+      "kind": "frq",
+      "difficulty": "easy",
+      "body": [
+        "You want to add another entry to journal.txt while keeping previous entries. Which mode should you use?"
+      ],
+      "answer": {
+        "blocks": [
+          "\"a\"."
+        ],
+        "text": "`\"a\"`."
+      },
+      "text": "You want to add another entry to `journal.txt` while keeping previous entries. Which mode should you use?"
+    },
+    {
+      "id": "ENGR11-E04",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Easy · Opening files and choosing modes",
+      "kind": "frq",
+      "difficulty": "easy",
+      "body": [
+        "results.txt contains important data. What happens immediately when this runs?",
+        {
+          "code": "f = open(\"results.txt\", \"w\")"
+        }
+      ],
+      "answer": {
+        "blocks": [
+          "Its previous contents are erased as soon as it successfully opens."
+        ],
+        "text": "Its previous contents are erased as soon as it successfully opens."
+      },
+      "text": "`results.txt` contains important data. What happens immediately when this runs?\n\n```python\nf = open(\"results.txt\", \"w\")\n```"
+    },
+    {
+      "id": "ENGR11-E05",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Easy · Closing files and using `with`",
+      "kind": "coding",
+      "difficulty": "easy",
+      "body": [
+        "Rewrite this using with:",
+        {
+          "code": "f = open(\"message.txt\", \"w\")\nf.write(\"Hello!\")\nf.close()"
+        }
+      ],
+      "answer": {
+        "blocks": [
+          {
+            "code": "with open(\"message.txt\", \"w\") as f:\n    f.write(\"Hello!\")"
+          }
+        ],
+        "text": "```python\nwith open(\"message.txt\", \"w\") as f:\n    f.write(\"Hello!\")\n```"
+      },
+      "text": "Rewrite this using `with`:\n\n```python\nf = open(\"message.txt\", \"w\")\nf.write(\"Hello!\")\nf.close()\n```\n"
+    },
+    {
+      "id": "ENGR11-E06",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Easy · Closing files and using `with`",
+      "kind": "frq",
+      "difficulty": "easy",
+      "body": [
+        "Which statement causes an error, and why?",
+        {
+          "code": "with open(\"data.txt\", \"r\") as f:\n    contents = f.read()\n\nprint(contents)\nprint(f.read())"
+        }
+      ],
+      "answer": {
+        "blocks": [
+          "print(f.read()) causes an error because f is closed. Printing contents works because that string is already in memory."
+        ],
+        "text": "`print(f.read())` causes an error because `f` is closed. Printing `contents` works because that string is already in memory."
+      },
+      "text": "Which statement causes an error, and why?\n\n```python\nwith open(\"data.txt\", \"r\") as f:\n    contents = f.read()\n\nprint(contents)\nprint(f.read())\n```"
+    },
+    {
+      "id": "ENGR11-E07",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Easy · Writing to files",
+      "kind": "frq",
+      "difficulty": "easy",
+      "body": [
+        "What exact text ends up in the file?",
+        {
+          "code": "with open(\"output.txt\", \"w\") as f:\n    f.write(\"Red\")\n    f.write(\"Blue\\n\")\n    f.write(str(12))"
+        }
+      ],
+      "answer": {
+        "blocks": [
+          {
+            "code": "RedBlue\n12"
+          },
+          "There is no final newline after 12."
+        ],
+        "text": "```text\nRedBlue\n12\n```\nThere is no final newline after `12`."
+      },
+      "text": "What exact text ends up in the file?\n\n```python\nwith open(\"output.txt\", \"w\") as f:\n    f.write(\"Red\")\n    f.write(\"Blue\\n\")\n    f.write(str(12))\n```\n"
+    },
+    {
+      "id": "ENGR11-E08",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Easy · Writing to files",
+      "kind": "coding",
+      "difficulty": "easy",
+      "body": [
+        "Write code that creates numbers.txt containing the numbers 1 through 5, each on its own line."
+      ],
+      "answer": {
+        "blocks": [
+          {
+            "code": "with open(\"numbers.txt\", \"w\") as f:\n    for number in range(1, 6):\n        f.write(f\"{number}\\n\")"
+          }
+        ],
+        "text": "```python\nwith open(\"numbers.txt\", \"w\") as f:\n    for number in range(1, 6):\n        f.write(f\"{number}\\n\")\n```"
+      },
+      "text": "Write code that creates `numbers.txt` containing the numbers 1 through 5, each on its own line."
+    },
+    {
+      "id": "ENGR11-E09",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Easy · Reading files and looping through lines",
+      "kind": "frq",
+      "difficulty": "easy",
+      "body": [
+        "A file contains \"10\\n20\\n\". What are a, b, and c?",
+        {
+          "code": "with open(\"numbers.txt\", \"r\") as f:\n    a = f.readline()\n    b = f.read()\n    c = f.readline()"
+        }
+      ],
+      "answer": {
+        "blocks": [
+          {
+            "code": "a = \"10\\n\"\nb = \"20\\n\"\nc = \"\""
+          }
+        ],
+        "text": "```python\na = \"10\\n\"\nb = \"20\\n\"\nc = \"\"\n```"
+      },
+      "text": "A file contains `\"10\\n20\\n\"`. What are `a`, `b`, and `c`?\n\n```python\nwith open(\"numbers.txt\", \"r\") as f:\n    a = f.readline()\n    b = f.read()\n    c = f.readline()\n```\n"
+    },
+    {
+      "id": "ENGR11-E10",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Easy · Reading files and looping through lines",
+      "kind": "coding",
+      "difficulty": "easy",
+      "body": [
+        "Write code to read numbers.txt, which contains one integer per line, and print their sum. Assume there are no blank lines."
+      ],
+      "answer": {
+        "blocks": [
+          {
+            "code": "total = 0\n\nwith open(\"numbers.txt\", \"r\") as f:\n    for line in f:\n        total += int(line)\n\nprint(total)"
+          }
+        ],
+        "text": "```python\ntotal = 0\n\nwith open(\"numbers.txt\", \"r\") as f:\n    for line in f:\n        total += int(line)\n\nprint(total)\n```"
+      },
+      "text": "Write code to read `numbers.txt`, which contains one integer per line, and print their sum. Assume there are no blank lines."
+    },
+    {
+      "id": "ENGR11-E11",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Easy · Splitting strings",
+      "kind": "frq",
+      "difficulty": "easy",
+      "body": [
+        "What does this print?",
+        {
+          "code": "parts = \"4,7,9\".split(\",\")\nprint(parts[0] + parts[1])\nprint(int(parts[0]) + int(parts[1]))"
+        }
+      ],
+      "answer": {
+        "blocks": [
+          {
+            "code": "47\n11"
+          },
+          "Strings concatenate; integers add."
+        ],
+        "text": "```text\n47\n11\n```\nStrings concatenate; integers add."
+      },
+      "text": "What does this print?\n\n```python\nparts = \"4,7,9\".split(\",\")\nprint(parts[0] + parts[1])\nprint(int(parts[0]) + int(parts[1]))\n```\n"
+    },
+    {
+      "id": "ENGR11-E12",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Easy · Splitting strings",
+      "kind": "coding",
+      "difficulty": "easy",
+      "body": [
+        {
+          "code": "record = \"Jordan:87.5\""
+        },
+        "Given record = \"Jordan:87.5\", extract the name as a string and the score as a float."
+      ],
+      "answer": {
+        "blocks": [
+          {
+            "code": "parts = record.split(\":\")\nname = parts[0]\nscore = float(parts[1])"
+          }
+        ],
+        "text": "```python\nparts = record.split(\":\")\nname = parts[0]\nscore = float(parts[1])\n```"
+      },
+      "text": "Given `record = \"Jordan:87.5\"`, extract the name as a string and the score as a float."
+    },
+    {
+      "id": "ENGR11-E13",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Easy · Cleaning and combining strings",
+      "kind": "frq",
+      "difficulty": "easy",
+      "body": [
+        "What does each line print?",
+        {
+          "code": "text = \"  New York  \\n\"\nprint(text.strip())\nprint(\"|\".join([\"A\", \"B\", \"C\"]))"
+        }
+      ],
+      "answer": {
+        "blocks": [
+          {
+            "code": "New York\nA|B|C"
+          }
+        ],
+        "text": "```text\nNew York\nA|B|C\n```"
+      },
+      "text": "What does each line print?\n\n```python\ntext = \"  New York  \\n\"\nprint(text.strip())\nprint(\"|\".join([\"A\", \"B\", \"C\"]))\n```\n"
+    },
+    {
+      "id": "ENGR11-E14",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Easy · Cleaning and combining strings",
+      "kind": "coding",
+      "difficulty": "easy",
+      "body": [
+        "Convert this string into \"10/20/30\" using strip(), split(), and join():",
+        {
+          "code": "text = \" 10,20,30\\n\""
+        }
+      ],
+      "answer": {
+        "blocks": [
+          {
+            "code": "result = \"/\".join(text.strip().split(\",\"))"
+          }
+        ],
+        "text": "```python\nresult = \"/\".join(text.strip().split(\",\"))\n```"
+      },
+      "text": "Convert this string into `\"10/20/30\"` using `strip()`, `split()`, and `join()`:\n\n```python\ntext = \" 10,20,30\\n\"\n```"
+    },
+    {
+      "id": "ENGR11-E15",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Easy · Putting everything together",
+      "kind": "coding",
+      "difficulty": "easy",
+      "body": [
+        "Use grades.csv with header name,grade and rows Alex,92; Sam,85; Taylor,73.",
+        "grades.csv contains:",
+        {
+          "code": "name,grade\nAlex,92\nSam,85\nTaylor,73"
+        },
+        "Build a dictionary mapping each name to a numeric grade, then calculate the average."
+      ],
+      "answer": {
+        "blocks": [
+          {
+            "code": "grades = {}\n\nwith open(\"grades.csv\", \"r\") as f:\n    f.readline()\n    for line in f:\n        parts = line.strip().split(\",\")\n        grades[parts[0]] = float(parts[1])\n\naverage = sum(grades.values()) / len(grades)\nprint(grades)\nprint(average)"
+          },
+          "Dictionary: {\"Alex\": 92.0, \"Sam\": 85.0, \"Taylor\": 73.0}  \nAverage: approximately 83.33."
+        ],
+        "text": "```python\ngrades = {}\n\nwith open(\"grades.csv\", \"r\") as f:\n    f.readline()\n    for line in f:\n        parts = line.strip().split(\",\")\n        grades[parts[0]] = float(parts[1])\n\naverage = sum(grades.values()) / len(grades)\nprint(grades)\nprint(average)\n```\n\nDictionary: `{\"Alex\": 92.0, \"Sam\": 85.0, \"Taylor\": 73.0}`  \nAverage: approximately `83.33`."
+      },
+      "text": "`grades.csv` contains:\n\n```text\nname,grade\nAlex,92\nSam,85\nTaylor,73\n```\n\nBuild a dictionary mapping each name to a numeric grade, then calculate the average.\n"
+    },
+    {
+      "id": "ENGR11-E16",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Easy · Putting everything together",
+      "kind": "coding",
+      "difficulty": "easy",
+      "body": [
+        "Use grades.csv with header name,grade and rows Alex,92; Sam,85; Taylor,73.",
+        "Using the same file, create passing.txt containing only the names of students with grades of at least 80, one per line."
+      ],
+      "answer": {
+        "blocks": [
+          {
+            "code": "with open(\"grades.csv\", \"r\") as infile:\n    with open(\"passing.txt\", \"w\") as outfile:\n        infile.readline()\n\n        for line in infile:\n            parts = line.strip().split(\",\")\n            name = parts[0]\n            grade = float(parts[1])\n\n            if grade >= 80:\n                outfile.write(name + \"\\n\")"
+          },
+          "Output file:",
+          {
+            "code": "Alex\nSam"
+          }
+        ],
+        "text": "```python\nwith open(\"grades.csv\", \"r\") as infile:\n    with open(\"passing.txt\", \"w\") as outfile:\n        infile.readline()\n\n        for line in infile:\n            parts = line.strip().split(\",\")\n            name = parts[0]\n            grade = float(parts[1])\n\n            if grade >= 80:\n                outfile.write(name + \"\\n\")\n```\n\nOutput file:\n```text\nAlex\nSam\n```"
+      },
+      "text": "Using the same file, create `passing.txt` containing only the names of students with grades of at least 80, one per line."
+    },
+    {
+      "id": "ENGR8-EASY-01",
+      "review": "engr-module-8-9",
+      "section": "ENGR 8",
+      "title": "Easy · Break down a task",
+      "kind": "frq",
+      "difficulty": "easy",
+      "body": [
+        "Outline three major tasks for a program that asks for three quiz scores and prints their average."
+      ],
+      "text": "Outline three major tasks for a program that asks for three quiz scores and prints their average.",
+      "answer": {
+        "blocks": [
+          "Read the scores; calculate their sum and average; display the average."
+        ],
+        "text": "Read the scores; calculate their sum and average; display the average."
+      }
+    },
+    {
+      "id": "ENGR8-EASY-02",
+      "review": "engr-module-8-9",
+      "section": "ENGR 8",
+      "title": "Easy · Read a dictionary",
+      "kind": "frq",
+      "difficulty": "easy",
+      "body": [
+        {
+          "code": "scores = {\"Alex\": 82, \"Sam\": 91}\nprint(scores[\"Sam\"])"
+        }
+      ],
+      "text": "{'code': 'scores = {\"Alex\": 82, \"Sam\": 91}\\nprint(scores[\"Sam\"])'}",
+      "answer": {
+        "blocks": [
+          "91"
+        ],
+        "text": "91"
+      }
+    },
+    {
+      "id": "ENGR8-EASY-03",
+      "review": "engr-module-8-9",
+      "section": "ENGR 8",
+      "title": "Easy · Create and update",
+      "kind": "coding",
+      "difficulty": "easy",
+      "body": [
+        "Create a dictionary prices with pen mapped to 2 and book mapped to 8. Change pen to 3."
+      ],
+      "text": "Create a dictionary prices with pen mapped to 2 and book mapped to 8. Change pen to 3.",
+      "answer": {
+        "blocks": [
+          {
+            "code": "prices = {\"pen\": 2, \"book\": 8}\nprices[\"pen\"] = 3"
+          }
+        ],
+        "text": "{'code': 'prices = {\"pen\": 2, \"book\": 8}\\nprices[\"pen\"] = 3'}"
+      }
+    },
+    {
+      "id": "ENGR8-EASY-04",
+      "review": "engr-module-8-9",
+      "section": "ENGR 8",
+      "title": "Easy · Check a key",
+      "kind": "coding",
+      "difficulty": "easy",
+      "body": [
+        "Given scores, print Found if the key Alex exists; otherwise print Missing."
+      ],
+      "text": "Given scores, print Found if the key Alex exists; otherwise print Missing.",
+      "answer": {
+        "blocks": [
+          {
+            "code": "if \"Alex\" in scores:\n    print(\"Found\")\nelse:\n    print(\"Missing\")"
+          }
+        ],
+        "text": "{'code': 'if \"Alex\" in scores:\\n    print(\"Found\")\\nelse:\\n    print(\"Missing\")'}"
+      }
+    },
+    {
+      "id": "ENGR8-EASY-05",
+      "review": "engr-module-8-9",
+      "section": "ENGR 8",
+      "title": "Easy · Sum the values",
+      "kind": "coding",
+      "difficulty": "easy",
+      "body": [
+        "Given scores mapping names to integer scores, use a loop to print their sum."
+      ],
+      "text": "Given scores mapping names to integer scores, use a loop to print their sum.",
+      "answer": {
+        "blocks": [
+          {
+            "code": "total = 0\nfor name in scores:\n    total += scores[name]\nprint(total)"
+          }
+        ],
+        "text": "{'code': 'total = 0\\nfor name in scores:\\n    total += scores[name]\\nprint(total)'}"
+      }
+    },
+    {
+      "id": "ENGR8-EASY-06",
+      "review": "engr-module-8-9",
+      "section": "ENGR 8",
+      "title": "Easy · Count dictionary entries",
+      "kind": "frq",
+      "difficulty": "easy",
+      "body": [
+        {
+          "code": "d = {\"a\": 1, \"b\": 2}\nd[\"a\"] = 9\nprint(len(d))"
+        }
+      ],
+      "text": "{'code': 'd = {\"a\": 1, \"b\": 2}\\nd[\"a\"] = 9\\nprint(len(d))'}",
+      "answer": {
+        "blocks": [
+          "2. Replacing a value does not add a new key."
+        ],
+        "text": "2. Replacing a value does not add a new key."
+      }
+    },
+    {
+      "id": "ENGR9-EASY-07",
+      "review": "engr-module-8-9",
+      "section": "ENGR 9",
+      "title": "Easy · Write a function",
+      "kind": "coding",
+      "difficulty": "easy",
+      "body": [
+        "Write square(x) that returns x squared without printing."
+      ],
+      "text": "Write square(x) that returns x squared without printing.",
+      "answer": {
+        "blocks": [
+          {
+            "code": "def square(x):\n    return x * x"
+          }
+        ],
+        "text": "{'code': 'def square(x):\\n    return x * x'}"
+      }
+    },
+    {
+      "id": "ENGR9-EASY-08",
+      "review": "engr-module-8-9",
+      "section": "ENGR 9",
+      "title": "Easy · A default argument",
+      "kind": "frq",
+      "difficulty": "easy",
+      "body": [
+        {
+          "code": "def add(a, b=2):\n    return a + b\nprint(add(5))"
+        }
+      ],
+      "text": "{'code': 'def add(a, b=2):\\n    return a + b\\nprint(add(5))'}",
+      "answer": {
+        "blocks": [
+          "7"
+        ],
+        "text": "7"
+      }
+    },
+    {
+      "id": "ENGR9-EASY-09",
+      "review": "engr-module-8-9",
+      "section": "ENGR 9",
+      "title": "Easy · Return versus print",
+      "kind": "frq",
+      "difficulty": "easy",
+      "body": [
+        {
+          "code": "def greet():\n    print(\"Hi\")\nresult = greet()\nprint(result)"
+        }
+      ],
+      "text": "{'code': 'def greet():\\n    print(\"Hi\")\\nresult = greet()\\nprint(result)'}",
+      "answer": {
+        "blocks": [
+          "The output is Hi followed by None on a new line. The function has no explicit return value."
+        ],
+        "text": "The output is Hi followed by None on a new line. The function has no explicit return value."
+      }
+    },
+    {
+      "id": "ENGR9-EASY-10",
+      "review": "engr-module-8-9",
+      "section": "ENGR 9",
+      "title": "Easy · Two results",
+      "kind": "coding",
+      "difficulty": "easy",
+      "body": [
+        "Write divide_parts(a, b) that returns the integer quotient and remainder. Assume b is nonzero."
+      ],
+      "text": "Write divide_parts(a, b) that returns the integer quotient and remainder. Assume b is nonzero.",
+      "answer": {
+        "blocks": [
+          {
+            "code": "def divide_parts(a, b):\n    return a // b, a % b"
+          }
+        ],
+        "text": "{'code': 'def divide_parts(a, b):\\n    return a // b, a % b'}"
+      }
+    },
+    {
+      "id": "ENGR9-EASY-11",
+      "review": "engr-module-8-9",
+      "section": "ENGR 9",
+      "title": "Easy · Local assignment",
+      "kind": "frq",
+      "difficulty": "easy",
+      "body": [
+        {
+          "code": "def change(x):\n    x = 10\n    return x\nx = 3\ny = change(x)\nprint(x, y)"
+        }
+      ],
+      "text": "{'code': 'def change(x):\\n    x = 10\\n    return x\\nx = 3\\ny = change(x)\\nprint(x, y)'}",
+      "answer": {
+        "blocks": [
+          "3 10. Rebinding the parameter does not reassign the caller’s variable."
+        ],
+        "text": "3 10. Rebinding the parameter does not reassign the caller’s variable."
+      }
+    },
+    {
+      "id": "ENGR9-EASY-12",
+      "review": "engr-module-8-9",
+      "section": "ENGR 9",
+      "title": "Easy · A list argument",
+      "kind": "coding",
+      "difficulty": "easy",
+      "body": [
+        "Write add_zero(values) that appends 0 to the supplied list. Do not create a copy."
+      ],
+      "text": "Write add_zero(values) that appends 0 to the supplied list. Do not create a copy.",
+      "answer": {
+        "blocks": [
+          {
+            "code": "def add_zero(values):\n    values.append(0)"
+          }
+        ],
+        "text": "{'code': 'def add_zero(values):\\n    values.append(0)'}"
+      }
     }
   ],
   "guides": [
@@ -18591,6 +19182,126 @@
           ]
         }
       ]
+    },
+    {
+      "id": "ENGR11-guide-1",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Module 11 · Files & input processing",
+      "body": [],
+      "sections": [
+        {
+          "title": "File basics and locations",
+          "body": [
+            "- Files store information that remains after a program ends.\n- A file extension (.txt, .csv, .pdf) suggests its format. Renaming an extension doesn’t convert the contents.\n- A file object, stored in a variable, lets your program work with a file.\n- A relative filename is resolved from Python’s current working directory, which is often your script’s folder.",
+            {
+              "code": "myfile = open(\"data.txt\", \"r\")"
+            }
+          ]
+        },
+        {
+          "title": "Opening files and choosing modes",
+          "body": [
+            {
+              "code": "file_variable = open(\"filename\", \"mode\")"
+            },
+            "Mode · Purpose · If the file exists · If it doesn’t exist",
+            "\"r\" · Read · Keeps contents · Raises an error",
+            "\"w\" · Write · Erases existing contents · Creates it",
+            "\"a\" · Append · Adds to the end · Creates it",
+            "\"r+\" · Read and write · Keeps existing contents · Raises an error",
+            "- Leaving out the mode defaults to \"r\".\n- Adding \"b\" selects binary mode, such as \"rb\" or \"wb\"."
+          ]
+        },
+        {
+          "title": "Closing files and using `with`",
+          "body": [
+            "Close files when finished so Python releases resources and flushes buffered output.",
+            {
+              "code": "f = open(\"data.txt\", \"r\")\ntext = f.read()\nf.close()"
+            },
+            "A with block handles closing automatically, including when an error occurs:",
+            {
+              "code": "with open(\"data.txt\", \"r\") as f:\n    text = f.read()"
+            },
+            "After the block, text remains usable, but the file is closed.",
+            "The dot connects a method to its object: f.close() closes that particular file."
+          ]
+        },
+        {
+          "title": "Writing to files",
+          "body": [
+            {
+              "code": "f.write(\"some text\")"
+            },
+            "Unlike print(), text-file write():",
+            "- Accepts one string.\n- Requires numbers to be converted to strings.\n- Adds no spaces or newlines automatically.",
+            {
+              "code": "with open(\"output.txt\", \"w\") as f:\n    score = 95\n    f.write(\"Score: \" + str(score) + \"\\n\")\n    f.write(\"Finished\\n\")"
+            },
+            "You can also use an f-string:",
+            {
+              "code": "f.write(f\"Score: {score}\\n\")"
+            }
+          ]
+        },
+        {
+          "title": "Reading files and looping through lines",
+          "body": [
+            "Text-file reading returns strings, even when the contents look like numbers.",
+            "Operation · Result",
+            "f.readline() · Next line as a string",
+            "f.read() · All remaining contents as one string",
+            "f.readlines() · Remaining lines as a list of strings",
+            "list(f) · Remaining lines as a list of strings",
+            "for line in f: · Processes remaining lines individually",
+            "Reading moves your position forward through the file.",
+            "- A line usually includes its ending \"\\n\".\n- readline() returns \"\" at the end of the file.\n- A blank line is usually \"\\n\", not \"\".\n- Use print(line, end=\"\") to avoid adding an extra newline.",
+            {
+              "code": "with open(\"data.txt\", \"r\") as f:\n    for line in f:\n        print(line, end=\"\")"
+            }
+          ]
+        },
+        {
+          "title": "Splitting strings",
+          "body": [
+            "split() turns a string into a list of strings using a separator.",
+            {
+              "code": "data = \"12,25,38\"\nparts = data.split(\",\")\n# [\"12\", \"25\", \"38\"]"
+            },
+            "The pieces remain strings until you convert them:",
+            {
+              "code": "first_number = int(parts[0])"
+            },
+            "For a date:",
+            {
+              "code": "parts = \"11/04/2026\".split(\"/\")\nmonth = int(parts[0])\nday = int(parts[1])\nyear = int(parts[2])"
+            }
+          ]
+        },
+        {
+          "title": "Cleaning and combining strings",
+          "body": [
+            "*Slide 66*",
+            "- strip() removes whitespace from the beginning and end, including spaces and newlines. It preserves internal spaces.\n- join() combines strings using a chosen separator.\n- Methods can be chained; operations happen from left to right.",
+            {
+              "code": "text = \"  red,green,blue \\n\"\nparts = text.strip().split(\",\")\nresult = \"-\".join(parts)\n# \"red-green-blue\""
+            },
+            "These methods return new values; they don’t change the original string."
+          ]
+        },
+        {
+          "title": "Putting everything together",
+          "body": [
+            "A common file-processing sequence is:",
+            "1. Open the file.\n2. Skip the header if present.\n3. Loop through the data lines.\n4. Remove surrounding whitespace.\n5. Split each line into fields.\n6. Convert numeric fields.\n7. Store, calculate, or write the results.",
+            "For simple comma-separated data:",
+            {
+              "code": "# grades.csv:\n# name,grade\n# Alex,92\n# Sam,85\n\ngrades = {}\n\nwith open(\"grades.csv\", \"r\") as f:\n    f.readline()                 # Skip header\n    for line in f:\n        parts = line.strip().split(\",\")\n        grades[parts[0]] = float(parts[1])"
+            }
+          ]
+        }
+      ]
     }
   ],
   "reviews": [
@@ -18617,7 +19328,7 @@
     },
     {
       "id": "engr-module-8-9",
-      "title": "ENGR Module 8-9",
+      "title": "ENGR 102 · Modules 8, 9 & 11",
       "course": "ENGR 102"
     },
     {

@@ -191,3 +191,16 @@ body.sidebar-collapsed main,body.sidebar-collapsed:has(#periodic-container:not([
 @media(min-width:951px){body.sidebar-collapsed .hero{grid-template-columns:minmax(0,1fr) 410px}}
 
 :root{--theme-hue:215}:root[data-theme="violet"]{--theme-hue:260}:root[data-theme="rose"]{--theme-hue:335}:root[data-theme="amber"]{--theme-hue:38}:root[data-theme="cyan"]{--theme-hue:190}
+
+/* Theme-aware dark surfaces, links, controls and accents. */
+:root{--theme-saturation:65%}:root[data-theme="slate"]{--theme-saturation:18%}
+:root[data-mode="dark"]{--paper:hsl(var(--theme-hue) 18% 8%);--surface:hsl(var(--theme-hue) 17% 13%);--ink:hsl(var(--theme-hue) 22% 91%);--muted:hsl(var(--theme-hue) 15% 70%);--line:hsl(var(--theme-hue) 15% 28%);--theme-accent:hsl(var(--theme-hue) var(--theme-saturation) 72%)}
+:root[data-mode="dark"] a{color:var(--theme-accent)}
+:root[data-mode="dark"] aside,:root[data-mode="dark"] #practice-tools,:root[data-mode="dark"] .disclosure summary,:root[data-mode="dark"] .reference-panel-heading{background:hsl(var(--theme-hue) 18% 16%)}
+:root[data-mode="dark"] button,:root[data-mode="dark"] .home-subject,:root[data-mode="dark"] .multi-filter>summary,:root[data-mode="dark"] #settings-dialog label{background:var(--surface);color:var(--ink);border-color:var(--line)}
+:root[data-mode="dark"] #start-practice-round,:root[data-mode="dark"] .reveal{background:var(--theme-accent);color:#11151c;border-color:var(--theme-accent)}
+:root[data-mode="dark"] .course.active,:root[data-mode="dark"] .course:hover,:root[data-mode="dark"] .multi-menu label:hover,:root[data-mode="dark"] #settings-dialog label:has(input:checked){background:hsl(var(--theme-hue) 25% 23%);color:var(--ink);border-color:var(--theme-accent)}
+:root[data-mode="dark"] input,:root[data-mode="dark"] select{accent-color:var(--theme-accent)}
+:root[data-mode="dark"] .reference-panel .periodic-table thead{background:var(--surface)}
+#settings-open{padding:7px;line-height:1}#settings-open svg{display:block;margin:auto;flex-shrink:0}
+

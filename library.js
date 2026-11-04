@@ -88,3 +88,8 @@ $('#start-practice-round').onclick=()=>{roundIds=null;render();let pool=[...last
 $('#end-practice-round').onclick=()=>{roundIds=null;render()};
 $('#mistakes-only').onchange=$('#pols-direction').onchange=()=>{roundIds=null;render()};
 
+
+const themeKey='question-bank-theme-v1';function applyTheme(theme){if(!['blue','violet','slate'].includes(theme))theme='blue';document.documentElement.dataset.theme=theme;document.querySelectorAll('[name="site-theme"]').forEach(r=>r.checked=r.value===theme);try{localStorage.setItem(themeKey,theme)}catch{}}
+let savedTheme='blue';try{savedTheme=localStorage.getItem(themeKey)||'blue'}catch{}applyTheme(savedTheme);
+$('#settings-open').onclick=()=>$('#settings-dialog').showModal();$('#settings-close').onclick=()=>$('#settings-dialog').close();document.querySelectorAll('[name="site-theme"]').forEach(r=>r.onchange=()=>applyTheme(r.value));
+

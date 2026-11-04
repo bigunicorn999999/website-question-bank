@@ -90,7 +90,7 @@ $('#end-practice-round').onclick=()=>{roundIds=null;render()};
 $('#mistakes-only').onchange=$('#pols-direction').onchange=()=>{roundIds=null;render()};
 
 
-const themeKey='question-bank-theme-v1';function applyTheme(theme){if(!['blue','violet','slate'].includes(theme))theme='blue';document.documentElement.dataset.theme=theme;document.querySelectorAll('[name="site-theme"]').forEach(r=>r.checked=r.value===theme);try{localStorage.setItem(themeKey,theme)}catch{}}
+const themeKey='question-bank-theme-v1';function applyTheme(theme){if(!['blue','violet','slate','rose','amber','cyan'].includes(theme))theme='blue';document.documentElement.dataset.theme=theme;document.querySelectorAll('[name="site-theme"]').forEach(r=>r.checked=r.value===theme);try{localStorage.setItem(themeKey,theme)}catch{}}
 let savedTheme='blue';try{savedTheme=localStorage.getItem(themeKey)||'blue'}catch{}applyTheme(savedTheme);
 $('#settings-open').onclick=()=>$('#settings-dialog').showModal();$('#settings-close').onclick=()=>$('#settings-dialog').close();document.querySelectorAll('[name="site-theme"]').forEach(r=>r.onchange=()=>applyTheme(r.value));
 
@@ -98,4 +98,9 @@ $('#settings-open').onclick=()=>$('#settings-dialog').showModal();$('#settings-c
 function showHome(){document.body.classList.add('home-view');document.body.classList.remove('periodic-open');history.replaceState(null,'',location.pathname);$('#home-page').innerHTML='<h1>Subjects</h1><div class="home-subjects">'+[['Calculus · MATH 251',['chapter14','chapter15']],['Chemistry · CHEM 107',['chem-6-8']],['Engineering · ENGR 102',['engr-module-8-9']],['Political Science · POLS 207',['pols-exam-2']],['Daily Integrals',['easy','medium']]].map(([name,ids])=>'<section class="home-subject"><h2>'+esc(name)+'</h2>'+ids.map(id=>{let r=data.reviews.find(x=>x.id===id);return r?'<button data-home-review="'+id+'">'+esc(r.title)+'</button>':''}).join('')+'</section>').join('')+'</div>';$('#home-page').onclick=e=>{const b=e.target.closest('[data-home-review]');if(b)chooseUnit(b.dataset.homeReview,'')};window.scrollTo({top:0})}
 document.querySelectorAll('.brand,.home-link').forEach(a=>a.onclick=e=>{e.preventDefault();if(data)showHome()});
 
+
+
+const appearanceKey='question-bank-appearance-v1',darkPreference=matchMedia('(prefers-color-scheme: dark)');
+function applyAppearance(mode){if(!['light','dark','system'].includes(mode))mode='light';document.documentElement.dataset.mode=mode==='system'?(darkPreference.matches?'dark':'light'):mode;$('#appearance-mode').value=mode;try{localStorage.setItem(appearanceKey,mode)}catch{}}
+let appearance='light';try{appearance=localStorage.getItem(appearanceKey)||'light'}catch{}applyAppearance(appearance);$('#appearance-mode').onchange=e=>applyAppearance(e.target.value);darkPreference.addEventListener('change',()=>{if($('#appearance-mode').value==='system')applyAppearance('system')});
 

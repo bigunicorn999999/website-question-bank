@@ -105,3 +105,7 @@ function applyAppearance(mode){if(!['light','dark','system'].includes(mode))mode
 let appearance='light';try{appearance=localStorage.getItem(appearanceKey)||'light'}catch{}applyAppearance(appearance);$('#appearance-mode').onchange=e=>applyAppearance(e.target.value);darkPreference.addEventListener('change',()=>{if($('#appearance-mode').value==='system')applyAppearance('system')});
 
 
+
+// Indent editable response boxes without moving focus.
+document.addEventListener('keydown',event=>{const box=event.target;if(event.key!=='Tab'||event.shiftKey||event.ctrlKey||event.altKey||event.metaKey||!(box instanceof HTMLTextAreaElement)||box.readOnly||box.disabled)return;event.preventDefault();box.setRangeText('     ',box.selectionStart,box.selectionEnd,'end');box.dispatchEvent(new Event('input',{bubbles:true}));});
+

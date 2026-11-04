@@ -144,3 +144,14 @@ body:has(#periodic-container:not([hidden]) #periodic-reference[open]){--chem-tab
  body:not(.periodic-open) #practice-tools label{width:100%}
 }
 
+
+/* Title and practice controls share the same header row. */
+#home-page{display:none}body.home-view main> :not(header):not(#home-page){display:none!important}body.home-view #home-page{display:block;padding:40px 0}body.home-view #course-label{display:none}body.home-view main{margin-right:0!important}
+.home-link{font-weight:700;font-size:14px;letter-spacing:0;color:var(--ink);text-decoration:none;margin-right:12px}
+.home-subjects{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}.home-subject{background:white;border:1px solid var(--line);border-radius:12px;padding:20px}.home-subject h2{font-size:17px;line-height:1.5;margin:0 0 14px}.home-subject button{display:block;width:100%;text-align:left;border:1px solid var(--line);border-radius:7px;background:var(--paper);color:var(--ink);padding:12px;margin:8px 0;font:inherit;font-size:14px}.home-subject button:hover{border-color:var(--ink)}#home-page h1{font-size:38px;margin:0 0 26px;letter-spacing:-1px}
+body:not(.periodic-open) main:has(#practice-tools:not([hidden])){margin-right:0}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 290px;align-items:start;gap:24px}.hero-copy{min-width:0}.hero h1{font-size:clamp(30px,3.8vw,54px)}
+body:not(.periodic-open) #practice-tools:not([hidden]),#practice-tools{position:static;right:auto;top:auto;width:100%;max-height:none;overflow:visible;margin:8px 0 0;z-index:auto;box-sizing:border-box}
+body:not(.periodic-open) #practice-tools label{width:auto}.hero:has(#practice-tools[hidden]){grid-template-columns:1fr}
+@media(max-width:850px){.hero{grid-template-columns:1fr}.hero #practice-tools{width:min(100%,420px);margin-top:0}.home-subjects{grid-template-columns:1fr}.home-link{font-size:12px}}
+

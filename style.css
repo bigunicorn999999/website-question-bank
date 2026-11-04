@@ -204,3 +204,14 @@ body.sidebar-collapsed main,body.sidebar-collapsed:has(#periodic-container:not([
 :root[data-mode="dark"] .reference-panel .periodic-table thead{background:var(--surface)}
 #settings-open{padding:7px;line-height:1}#settings-open svg{display:block;margin:auto;flex-shrink:0}
 
+
+/* Opening Settings must not recolor the page behind it. */
+#settings-dialog::backdrop{background:transparent;backdrop-filter:none}
+#settings-dialog{box-shadow:0 12px 50px #0005}
+:root[data-mode="dark"] main>nav{background:transparent;border-bottom:1px solid var(--line);gap:22px}
+:root[data-mode="dark"] main>nav button{background:transparent;border:0;border-bottom:2px solid transparent;border-radius:0;box-shadow:none;color:var(--muted);padding:12px 0}
+:root[data-mode="dark"] main>nav button.selected{color:var(--theme-accent);border-bottom-color:var(--theme-accent)}
+:root[data-mode="dark"] main>nav button:hover{color:var(--ink);background:transparent}
+:root[data-mode="dark"] main>nav span{background:hsl(var(--theme-hue) 14% 19%);color:var(--muted);border:0;border-radius:5px;padding:2px 5px}
+:root[data-mode="dark"] main>nav button.selected span{color:var(--theme-accent)}
+

@@ -18086,6 +18086,998 @@
         ],
         "text": "{'code': 'def add_zero(values):\\n    values.append(0)'}"
       }
+    },
+    {
+      "id": "ENGR11-Q01",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Opening versus reading",
+      "kind": "mcq",
+      "body": [
+        "notes.txt exists and contains Hello.",
+        {
+          "code": "with open(\"notes.txt\", \"r\") as f:\n    print(f.closed)"
+        }
+      ],
+      "choices": [
+        "False",
+        "Hello",
+        "True",
+        "None"
+      ],
+      "answer": {
+        "blocks": [
+          "A. False",
+          "open returns a file object. It does not print or return the contents as a string. The file remains open inside the with block."
+        ],
+        "text": "A. False\n\nopen returns a file object. It does not print or return the contents as a string. The file remains open inside the with block."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        0
+      ]
+    },
+    {
+      "id": "ENGR11-Q02",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Read the whole file",
+      "kind": "mcq",
+      "body": [
+        "notes.txt contains exactly \"Hi\\nBye\\n\". What is printed?",
+        {
+          "code": "with open(\"notes.txt\") as f:\n    text = f.read()\nprint(repr(text))"
+        }
+      ],
+      "choices": [
+        "['Hi\\n', 'Bye\\n']",
+        "'Hi\\nBye\\n'",
+        "'Hi'",
+        "'HiBye'"
+      ],
+      "answer": {
+        "blocks": [
+          "B. 'Hi\\nBye\\n'",
+          "read() returns one string containing all remaining text, including newlines. repr makes the newline characters visible."
+        ],
+        "text": "B. 'Hi\\nBye\\n'\n\nread() returns one string containing all remaining text, including newlines. repr makes the newline characters visible."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        1
+      ]
+    },
+    {
+      "id": "ENGR11-Q03",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Discarded string results",
+      "kind": "mcq",
+      "body": [
+        "What is printed?",
+        {
+          "code": "line = \"  byr:1941 cid:532\\n\"\nline.strip()\nline.split()\nprint(repr(line))"
+        }
+      ],
+      "choices": [
+        "['byr:1941', 'cid:532']",
+        "'byr:1941 cid:532'",
+        "'  byr:1941 cid:532\\n'",
+        "'byr:1941cid:532'"
+      ],
+      "answer": {
+        "blocks": [
+          "C. '  byr:1941 cid:532\\n'",
+          "strip and split return new objects. Neither changes the original string. Their returned results are discarded here."
+        ],
+        "text": "C. '  byr:1941 cid:532\\n'\n\nstrip and split return new objects. Neither changes the original string. Their returned results are discarded here."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        2
+      ]
+    },
+    {
+      "id": "ENGR11-Q04",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Save the cleaned result",
+      "kind": "mcq",
+      "body": [
+        "What is printed?",
+        {
+          "code": "line = \"  hgt:183cm  \\n\"\nline = line.strip()\nprint(repr(line))"
+        }
+      ],
+      "choices": [
+        "'  hgt:183cm  \\n'",
+        "['hgt:183cm']",
+        "'hgt:183cm\\n'",
+        "'hgt:183cm'"
+      ],
+      "answer": {
+        "blocks": [
+          "D. 'hgt:183cm'",
+          "strip removes whitespace at both ends and returns a string. Assigning the result updates line."
+        ],
+        "text": "D. 'hgt:183cm'\n\nstrip removes whitespace at both ends and returns a string. Assigning the result updates line."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        3
+      ]
+    },
+    {
+      "id": "ENGR11-Q05",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Split across whitespace",
+      "kind": "mcq",
+      "body": [
+        "What is printed?",
+        {
+          "code": "text = \"byr:1941  cid:532\\nhgt:154cm\\t\"\nprint(text.split())"
+        }
+      ],
+      "choices": [
+        "['byr:1941', 'cid:532', 'hgt:154cm']",
+        "['byr:1941', '', 'cid:532\\nhgt:154cm\\t']",
+        "['byr', '1941', 'cid', '532', 'hgt', '154cm']",
+        "'byr:1941 cid:532 hgt:154cm'"
+      ],
+      "answer": {
+        "blocks": [
+          "A. ['byr:1941', 'cid:532', 'hgt:154cm']",
+          "split() without a separator groups consecutive whitespace, including tabs and newlines, and omits empty edge pieces. It does not split at colons."
+        ],
+        "text": "A. ['byr:1941', 'cid:532', 'hgt:154cm']\n\nsplit() without a separator groups consecutive whitespace, including tabs and newlines, and omits empty edge pieces. It does not split at colons."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        0
+      ]
+    },
+    {
+      "id": "ENGR11-Q06",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Explicit space separator",
+      "kind": "mcq",
+      "body": [
+        "What is printed?",
+        {
+          "code": "print(\"a  b\\nc\".split(\" \"))"
+        }
+      ],
+      "choices": [
+        "['a', 'b', 'c']",
+        "['a', '', 'b\\nc']",
+        "['a', 'b\\nc']",
+        "['a  b', 'c']"
+      ],
+      "answer": {
+        "blocks": [
+          "B. ['a', '', 'b\\nc']",
+          "split(\" \") splits on each literal space, preserves the empty piece between adjacent spaces, and leaves the newline inside the last piece."
+        ],
+        "text": "B. ['a', '', 'b\\nc']\n\nsplit(\" \") splits on each literal space, preserves the empty piece between adjacent spaces, and leaves the newline inside the last piece."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        1
+      ]
+    },
+    {
+      "id": "ENGR11-Q07",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Only the next line",
+      "kind": "mcq",
+      "body": [
+        "data.txt contains exactly \"A\\nB\\n\". What is printed?",
+        {
+          "code": "with open(\"data.txt\") as f:\n    print(repr(f.readline()))"
+        }
+      ],
+      "choices": [
+        "'A\\nB\\n'",
+        "['A\\n', 'B\\n']",
+        "'A\\n'",
+        "'A'"
+      ],
+      "answer": {
+        "blocks": [
+          "C. 'A\\n'",
+          "readline returns the next line, normally including its terminating newline."
+        ],
+        "text": "C. 'A\\n'\n\nreadline returns the next line, normally including its terminating newline."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        2
+      ]
+    },
+    {
+      "id": "ENGR11-Q08",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "The cursor advances",
+      "kind": "mcq",
+      "body": [
+        "data.txt contains exactly \"A\\nB\\n\". What is printed?",
+        {
+          "code": "with open(\"data.txt\") as f:\n    first = f.readline()\n    print(repr(f.read()))"
+        }
+      ],
+      "choices": [
+        "'A\\nB\\n'",
+        "'A\\n'",
+        "''",
+        "'B\\n'"
+      ],
+      "answer": {
+        "blocks": [
+          "D. 'B\\n'",
+          "The first readline consumes A and its newline. read then starts at the current file position, so only B remains."
+        ],
+        "text": "D. 'B\\n'\n\nThe first readline consumes A and its newline. read then starts at the current file position, so only B remains."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        3
+      ]
+    },
+    {
+      "id": "ENGR11-Q09",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Reading again at EOF",
+      "kind": "mcq",
+      "body": [
+        "data.txt contains exactly \"abc\". What is printed?",
+        {
+          "code": "with open(\"data.txt\") as f:\n    f.read()\n    print(repr(f.read()))"
+        }
+      ],
+      "choices": [
+        "''",
+        "None",
+        "EOFError",
+        "'abc'"
+      ],
+      "answer": {
+        "blocks": [
+          "A. ''",
+          "After the first read reaches end-of-file, another read returns an empty string. It does not restart or raise EOFError."
+        ],
+        "text": "A. ''\n\nAfter the first read reaches end-of-file, another read returns an empty string. It does not restart or raise EOFError."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "medium",
+      "correctChoices": [
+        0
+      ]
+    },
+    {
+      "id": "ENGR11-Q10",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Blank line versus EOF",
+      "kind": "mcq",
+      "body": [
+        "data.txt contains exactly one newline character. What is printed?",
+        {
+          "code": "with open(\"data.txt\") as f:\n    a = f.readline()\n    b = f.readline()\nprint(repr(a), repr(b))"
+        }
+      ],
+      "choices": [
+        "'' ''",
+        "'\\n' ''",
+        "'\\n' '\\n'",
+        "None None"
+      ],
+      "answer": {
+        "blocks": [
+          "B. '\\n' ''",
+          "A blank line is the string \"\\n\". End-of-file is \"\". Stripping first would erase this distinction."
+        ],
+        "text": "B. '\\n' ''\n\nA blank line is the string \"\\n\". End-of-file is \"\". Stripping first would erase this distinction."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "medium",
+      "correctChoices": [
+        1
+      ]
+    },
+    {
+      "id": "ENGR11-Q11",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Empty input file",
+      "kind": "mcq",
+      "body": [
+        "empty.txt contains zero characters. What is printed?",
+        {
+          "code": "with open(\"empty.txt\") as f:\n    text = f.read()\nprint(text.split())\nprint(text.split(\"\\n\\n\"))"
+        }
+      ],
+      "choices": [
+        "[]\n[]",
+        "['']\n['']",
+        "[]\n['']",
+        "ValueError"
+      ],
+      "answer": {
+        "blocks": [
+          "C. []\n['']",
+          "Whitespace splitting an empty string gives []. Splitting it with a nonempty explicit separator gives [\"\"], so do not count that as a passport."
+        ],
+        "text": "C. []\n['']\n\nWhitespace splitting an empty string gives []. Splitting it with a nonempty explicit separator gives [\"\"], so do not count that as a passport."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "medium",
+      "correctChoices": [
+        2
+      ]
+    },
+    {
+      "id": "ENGR11-Q12",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "A list of lines",
+      "kind": "mcq",
+      "body": [
+        "data.txt contains exactly \"A\\nB\" with no final newline. What is printed?",
+        {
+          "code": "with open(\"data.txt\") as f:\n    print(f.readlines())"
+        }
+      ],
+      "choices": [
+        "'A\\nB'",
+        "['A', 'B']",
+        "['A\\n', 'B\\n']",
+        "['A\\n', 'B']"
+      ],
+      "answer": {
+        "blocks": [
+          "D. ['A\\n', 'B']",
+          "readlines returns a list of remaining lines. It preserves existing line endings and does not invent a newline on the final line."
+        ],
+        "text": "D. ['A\\n', 'B']\n\nreadlines returns a list of remaining lines. It preserves existing line endings and does not invent a newline on the final line."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        3
+      ]
+    },
+    {
+      "id": "ENGR11-Q13",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Iterating over a file",
+      "kind": "mcq",
+      "body": [
+        "data.txt contains exactly \"A\\n\\nB\". What is printed?",
+        {
+          "code": "count = 0\nwith open(\"data.txt\") as f:\n    for line in f:\n        count += 1\nprint(count)"
+        }
+      ],
+      "choices": [
+        "3",
+        "2",
+        "4",
+        "1"
+      ],
+      "answer": {
+        "blocks": [
+          "A. 3",
+          "File iteration yields lines, including blank lines. Here the lines are \"A\\n\", \"\\n\", and \"B\"."
+        ],
+        "text": "A. 3\n\nFile iteration yields lines, including blank lines. Here the lines are \"A\\n\", \"\\n\", and \"B\"."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        0
+      ]
+    },
+    {
+      "id": "ENGR11-Q14",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Read a limited number of characters",
+      "kind": "mcq",
+      "body": [
+        "data.txt contains exactly \"ABCDE\". What is printed?",
+        {
+          "code": "with open(\"data.txt\") as f:\n    print(repr(f.read(2)))\n    print(repr(f.read()))"
+        }
+      ],
+      "choices": [
+        "'AB'\n'ABCDE'",
+        "'AB'\n'CDE'",
+        "'AB'\n'AB'",
+        "'ABCDE'\n''"
+      ],
+      "answer": {
+        "blocks": [
+          "B. 'AB'\n'CDE'",
+          "In text mode read(2) reads up to two characters. The next read continues from there."
+        ],
+        "text": "B. 'AB'\n'CDE'\n\nIn text mode read(2) reads up to two characters. The next read continues from there."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        1
+      ]
+    },
+    {
+      "id": "ENGR11-Q15",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Missing input file",
+      "kind": "mcq",
+      "body": [
+        "missing.txt does not exist. Which exception occurs?",
+        {
+          "code": "with open(\"missing.txt\", \"r\") as f:\n    text = f.read()"
+        }
+      ],
+      "choices": [
+        "KeyError",
+        "EOFError",
+        "FileNotFoundError",
+        "No exception; an empty file is created"
+      ],
+      "answer": {
+        "blocks": [
+          "C. FileNotFoundError",
+          "Read mode requires an existing file. It does not create a missing file."
+        ],
+        "text": "C. FileNotFoundError\n\nRead mode requires an existing file. It does not create a missing file."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        2
+      ]
+    },
+    {
+      "id": "ENGR11-Q16",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Write mode truncates immediately",
+      "kind": "mcq",
+      "body": [
+        "out.txt initially contains OLD. What is printed?",
+        {
+          "code": "with open(\"out.txt\", \"w\") as f:\n    pass\nwith open(\"out.txt\") as f:\n    print(repr(f.read()))"
+        }
+      ],
+      "choices": [
+        "'OLD'",
+        "None",
+        "FileExistsError",
+        "''"
+      ],
+      "answer": {
+        "blocks": [
+          "D. ''",
+          "Opening an existing file in write mode truncates it immediately, even when write is never called."
+        ],
+        "text": "D. ''\n\nOpening an existing file in write mode truncates it immediately, even when write is never called."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        3
+      ]
+    },
+    {
+      "id": "ENGR11-Q17",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Append mode",
+      "kind": "mcq",
+      "body": [
+        "out.txt initially contains exactly \"OLD\". What is printed?",
+        {
+          "code": "with open(\"out.txt\", \"a\") as f:\n    f.write(\"NEW\")\nwith open(\"out.txt\") as f:\n    print(repr(f.read()))"
+        }
+      ],
+      "choices": [
+        "'OLDNEW'",
+        "'NEW'",
+        "'OLD\\nNEW'",
+        "'OLD'"
+      ],
+      "answer": {
+        "blocks": [
+          "A. 'OLDNEW'",
+          "Append mode adds text at the end. It does not insert a newline automatically."
+        ],
+        "text": "A. 'OLDNEW'\n\nAppend mode adds text at the end. It does not insert a newline automatically."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        0
+      ]
+    },
+    {
+      "id": "ENGR11-Q18",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Creating a new output file",
+      "kind": "mcq",
+      "body": [
+        "new.txt does not exist. What is printed?",
+        {
+          "code": "with open(\"new.txt\", \"w\") as f:\n    f.write(\"OK\")\nwith open(\"new.txt\") as f:\n    print(repr(f.read()))"
+        }
+      ],
+      "choices": [
+        "FileNotFoundError",
+        "'OK'",
+        "'OK\\n'",
+        "None"
+      ],
+      "answer": {
+        "blocks": [
+          "B. 'OK'",
+          "Write mode creates a missing file when its parent directory exists and writing is allowed."
+        ],
+        "text": "B. 'OK'\n\nWrite mode creates a missing file when its parent directory exists and writing is allowed."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        1
+      ]
+    },
+    {
+      "id": "ENGR11-Q19",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "What write returns",
+      "kind": "mcq",
+      "body": [
+        "What is printed?",
+        {
+          "code": "with open(\"out.txt\", \"w\") as f:\n    result = f.write(\"Hi\\n\")\nprint(result)"
+        }
+      ],
+      "choices": [
+        "Hi",
+        "None",
+        "3",
+        "2"
+      ],
+      "answer": {
+        "blocks": [
+          "C. 3",
+          "For a text file write returns the number of characters written: H, i, and the newline."
+        ],
+        "text": "C. 3\n\nFor a text file write returns the number of characters written: H, i, and the newline."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        2
+      ]
+    },
+    {
+      "id": "ENGR11-Q20",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Two writes do not add a separator",
+      "kind": "mcq",
+      "body": [
+        "What is printed?",
+        {
+          "code": "with open(\"out.txt\", \"w\") as f:\n    f.write(\"A\")\n    f.write(\"B\")\nwith open(\"out.txt\") as f:\n    print(repr(f.read()))"
+        }
+      ],
+      "choices": [
+        "'A\\nB\\n'",
+        "'B'",
+        "'A B'",
+        "'AB'"
+      ],
+      "answer": {
+        "blocks": [
+          "D. 'AB'",
+          "Both writes use the same open file. They write consecutively, and write inserts no spaces or newlines."
+        ],
+        "text": "D. 'AB'\n\nBoth writes use the same open file. They write consecutively, and write inserts no spaces or newlines."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        3
+      ]
+    },
+    {
+      "id": "ENGR11-Q21",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Reopening inside a loop",
+      "kind": "mcq",
+      "body": [
+        "What is printed?",
+        {
+          "code": "for text in [\"A\", \"B\"]:\n    with open(\"out.txt\", \"w\") as f:\n        f.write(text)\nwith open(\"out.txt\") as f:\n    print(repr(f.read()))"
+        }
+      ],
+      "choices": [
+        "'B'",
+        "'AB'",
+        "'A\\nB'",
+        "'A'"
+      ],
+      "answer": {
+        "blocks": [
+          "A. 'B'",
+          "Each new open(..., \"w\") truncates the file. The second iteration erases A. Open once outside the loop to keep both records."
+        ],
+        "text": "A. 'B'\n\nEach new open(..., \"w\") truncates the file. The second iteration erases A. Open once outside the loop to keep both records."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "medium",
+      "correctChoices": [
+        0
+      ]
+    },
+    {
+      "id": "ENGR11-Q22",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Automatic closing",
+      "kind": "mcq",
+      "body": [
+        "data.txt exists. What is printed?",
+        {
+          "code": "with open(\"data.txt\") as f:\n    text = f.read()\nprint(f.closed)"
+        }
+      ],
+      "choices": [
+        "False",
+        "True",
+        "NameError",
+        "None"
+      ],
+      "answer": {
+        "blocks": [
+          "B. True",
+          "Leaving the with block closes the file. The name f still refers to the now-closed file object."
+        ],
+        "text": "B. True\n\nLeaving the with block closes the file. The name f still refers to the now-closed file object."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        1
+      ]
+    },
+    {
+      "id": "ENGR11-Q23",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Reading after the with block",
+      "kind": "mcq",
+      "body": [
+        "data.txt exists. Which exception occurs?",
+        {
+          "code": "with open(\"data.txt\") as f:\n    pass\ntext = f.read()"
+        }
+      ],
+      "choices": [
+        "NameError",
+        "FileNotFoundError",
+        "ValueError",
+        "No exception; text becomes an empty string"
+      ],
+      "answer": {
+        "blocks": [
+          "C. ValueError",
+          "The file is closed after with finishes. Reading a closed file raises ValueError; f itself is still defined."
+        ],
+        "text": "C. ValueError\n\nThe file is closed after with finishes. Reading a closed file raises ValueError; f itself is still defined."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "medium",
+      "correctChoices": [
+        2
+      ]
+    },
+    {
+      "id": "ENGR11-Q24",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Write needs a string",
+      "kind": "mcq",
+      "body": [
+        "Which exception occurs?",
+        {
+          "code": "with open(\"out.txt\", \"w\") as f:\n    f.write(123)"
+        }
+      ],
+      "choices": [
+        "ValueError",
+        "KeyError",
+        "No exception; the digits 123 are written",
+        "TypeError"
+      ],
+      "answer": {
+        "blocks": [
+          "D. TypeError",
+          "A text file write requires a string. Use str(123) if you intend to write digits."
+        ],
+        "text": "D. TypeError\n\nA text file write requires a string. Use str(123) if you intend to write digits."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        3
+      ]
+    },
+    {
+      "id": "ENGR11-Q25",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Write in read mode",
+      "kind": "mcq",
+      "body": [
+        "data.txt exists and is opened in read mode. Which outcome occurs?",
+        {
+          "code": "with open(\"data.txt\", \"r\") as f:\n    f.write(\"X\")"
+        }
+      ],
+      "choices": [
+        "An io.UnsupportedOperation exception occurs.",
+        "The file is replaced with X.",
+        "X is appended.",
+        "The method silently does nothing."
+      ],
+      "answer": {
+        "blocks": [
+          "A. An io.UnsupportedOperation exception occurs.",
+          "A read-only file object cannot write. Python raises io.UnsupportedOperation (an OSError subclass)."
+        ],
+        "text": "A. An io.UnsupportedOperation exception occurs.\n\nA read-only file object cannot write. Python raises io.UnsupportedOperation (an OSError subclass)."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "medium",
+      "correctChoices": [
+        0
+      ]
+    },
+    {
+      "id": "ENGR11-Q26",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Preserve each passport block",
+      "kind": "mcq",
+      "body": [
+        "What is printed?",
+        {
+          "code": "text = \"byr:1941\\ncid:532\\n\\nhgt:154cm\"\nblocks = text.split(\"\\n\\n\")\nprint(repr(blocks[0]))"
+        }
+      ],
+      "choices": [
+        "'byr:1941 cid:532'",
+        "'byr:1941\\ncid:532'",
+        "['byr:1941', 'cid:532']",
+        "'byr:1941'"
+      ],
+      "answer": {
+        "blocks": [
+          "B. 'byr:1941\\ncid:532'",
+          "Splitting at a blank-line separator preserves single newlines inside each passport block. Keep this original block when writing valid scans."
+        ],
+        "text": "B. 'byr:1941\\ncid:532'\n\nSplitting at a blank-line separator preserves single newlines inside each passport block. Keep this original block when writing valid scans."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        1
+      ]
+    },
+    {
+      "id": "ENGR11-Q27",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Trailing separator creates an empty block",
+      "kind": "mcq",
+      "body": [
+        "What is printed?",
+        {
+          "code": "text = \"byr:1941\\n\\n\"\nblocks = text.split(\"\\n\\n\")\nprint(len(blocks))\nprint(repr(blocks[-1]))"
+        }
+      ],
+      "choices": [
+        "1\n'byr:1941'",
+        "1\n''",
+        "2\n''",
+        "IndexError"
+      ],
+      "answer": {
+        "blocks": [
+          "C. 2\n''",
+          "An explicit separator at the end produces a final empty string. Skip blocks with no fields so they are not counted as passports."
+        ],
+        "text": "C. 2\n''\n\nAn explicit separator at the end produces a final empty string. Skip blocks with no fields so they are not counted as passports."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "medium",
+      "correctChoices": [
+        2
+      ]
+    },
+    {
+      "id": "ENGR11-Q28",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Blank lines containing spaces",
+      "kind": "mcq",
+      "body": [
+        "What is printed?",
+        {
+          "code": "text = \"a:1\\n   \\nb:2\"\nprint(len(text.split(\"\\n\\n\")))"
+        }
+      ],
+      "choices": [
+        "2",
+        "3",
+        "0",
+        "1"
+      ],
+      "answer": {
+        "blocks": [
+          "D. 1",
+          "The separator is not two adjacent newlines because spaces lie between them. For more robust line-by-line parsing, line.strip() == \"\" identifies whitespace-only separator lines."
+        ],
+        "text": "D. 1\n\nThe separator is not two adjacent newlines because spaces lie between them. For more robust line-by-line parsing, line.strip() == \"\" identifies whitespace-only separator lines."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "medium",
+      "correctChoices": [
+        3
+      ]
+    },
+    {
+      "id": "ENGR11-Q29",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Parse one key-value pair",
+      "kind": "mcq",
+      "body": [
+        "What is printed?",
+        {
+          "code": "field = \"cid:532\"\nkey, value = field.split(\":\")\nprint(key, value)"
+        }
+      ],
+      "choices": [
+        "cid 532",
+        "['cid', '532']",
+        "cid:532",
+        "TypeError"
+      ],
+      "answer": {
+        "blocks": [
+          "A. cid 532",
+          "split returns two strings, which unpack into key and value. Numeric-looking text stays a string until explicitly converted."
+        ],
+        "text": "A. cid 532\n\nsplit returns two strings, which unpack into key and value. Numeric-looking text stays a string until explicitly converted."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        0
+      ]
+    },
+    {
+      "id": "ENGR11-Q30",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Malformed field without a colon",
+      "kind": "mcq",
+      "body": [
+        "Which exception occurs?",
+        {
+          "code": "key, value = \"cid532\".split(\":\")"
+        }
+      ],
+      "choices": [
+        "KeyError",
+        "ValueError",
+        "IndexError",
+        "No exception; value becomes an empty string"
+      ],
+      "answer": {
+        "blocks": [
+          "B. ValueError",
+          "The split produces a one-element list. Unpacking it into two names raises ValueError."
+        ],
+        "text": "B. ValueError\n\nThe split produces a one-element list. Unpacking it into two names raises ValueError."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "medium",
+      "correctChoices": [
+        1
+      ]
+    },
+    {
+      "id": "ENGR11-Q31",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Keys versus dictionary values",
+      "kind": "mcq",
+      "body": [
+        "What is printed?",
+        {
+          "code": "fields = {\"cid\": \"532\", \"byr\": \"1941\"}\nprint(\"cid\" in fields, \"532\" in fields)"
+        }
+      ],
+      "choices": [
+        "True True",
+        "False True",
+        "True False",
+        "False False"
+      ],
+      "answer": {
+        "blocks": [
+          "C. True False",
+          "Membership in a dictionary checks its keys. This makes key membership useful for checking required passport fields."
+        ],
+        "text": "C. True False\n\nMembership in a dictionary checks its keys. This makes key membership useful for checking required passport fields."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        2
+      ]
+    },
+    {
+      "id": "ENGR11-Q32",
+      "review": "engr-module-8-9",
+      "section": "ENGR 11",
+      "title": "Optional field in this assignment",
+      "kind": "mcq",
+      "body": [
+        "The dictionary contains all listed keys. Under the pasted passport-checker rules, what is printed?",
+        {
+          "code": "fields = {\"byr\": \"1941\", \"iyr\": \"2017\", \"eyr\": \"2031\",\n          \"hgt\": \"154cm\", \"hcl\": \"#12fe04\", \"ecl\": \"amb\",\n          \"cid\": \"532\"}\nrequired = [\"byr\", \"iyr\", \"eyr\", \"hgt\", \"hcl\", \"ecl\", \"cid\"]\nvalid = True\nfor key in required:\n    if key not in fields:\n        valid = False\nprint(valid)"
+        }
+      ],
+      "choices": [
+        "False because pid is missing.",
+        "False because cid is optional.",
+        "KeyError",
+        "True"
+      ],
+      "answer": {
+        "blocks": [
+          "D. True",
+          "This assignment makes pid optional and cid required. The loop checks presence only; no value-range validation is requested in Part A."
+        ],
+        "text": "D. True\n\nThis assignment makes pid optional and cid required. The loop checks presence only; no value-range validation is requested in Part A."
+      },
+      "practiceSet": "file-lines-nov04",
+      "difficulty": "easy",
+      "correctChoices": [
+        3
+      ]
     }
   ],
   "guides": [
@@ -19594,3 +20586,4 @@
     "professor": 24
   }
 }
+

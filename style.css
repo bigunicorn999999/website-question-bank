@@ -216,3 +216,6 @@ body.sidebar-collapsed main,body.sidebar-collapsed:has(#periodic-container:not([
 :root[data-mode="dark"] main>nav button.selected span{color:var(--theme-accent)}
 
 body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:80;background:hsl(var(--theme-hue,215) 35% 50% / .035)}:root[data-mode="dark"] body::after{background:hsl(var(--theme-hue,215) 30% 45% / .055)}
+
+
+#pols-choice-tools{flex-basis:100%;min-width:0;border-top:1px solid var(--line);padding-top:14px}#pols-choice-tools[hidden]{display:none}#pols-choice-tools p{font-size:12px;line-height:1.5;margin:8px 0 0;color:var(--muted)}#pols-shuffle-choices{max-width:100%;white-space:normal}#pols-shuffle-choices:disabled{opacity:.5;cursor:not-allowed}

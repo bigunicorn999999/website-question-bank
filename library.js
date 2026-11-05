@@ -24,7 +24,7 @@ function answerKeyCard(q){return `<article class="card key-card"><div class="car
 function render(){let family=$('#chem-family').value;$('#chem-family').hidden=review!=='chem-6-8'||tab==='guides';let topic=$('#topic').value,query=$('#search').value.toLowerCase(),status=$('#status').value;$('#status').hidden=tab==='guides'||tab==='answers';$('#shuffle').hidden=tab==='guides'||tab==='answers';let items=tab==='guides'?data.guides:currentQuestions();items=items.filter(q=>q.review===review&&multiMatch(q)&&(!query||JSON.stringify(q).toLowerCase().includes(query))&&(tab!=='saved'||state[q.id]?.saved)&&(!$('#mistakes-only').checked||roundIds?.includes(q.id)||state[q.id]?.mistake===true)&&directionMatches(q));lastFilteredIds=items.map(q=>q.id);if(roundIds&&tab!=='guides'&&tab!=='answers')items=items.filter(q=>roundIds.includes(q.id)).sort((a,b)=>roundIds.indexOf(a.id)-roundIds.indexOf(b.id));if(order&&!roundIds&&tab!=='guides'&&tab!=='answers')items.sort((a,b)=>order.indexOf(a.id)-order.indexOf(b.id));$('#list-title').textContent=tab==='guides'?'Review guides':tab==='saved'?'Bookmarks':tab==='answers'?'Answer key · answers & explanations':'Questions';$('#result-count').textContent=items.length+(tab==='guides'?(items.length===1?' guide':' guides'):(items.length===1?' question':' questions'));$('#list').innerHTML=items.map(q=>tab==='guides'?`<article class="card guide"><div class="card-top"><h2>${esc(q.section)} · ${esc(q.title)}</h2></div><div class="chapter-body">${paragraphs(q.body)}${(q.sections||[]).map(s=>`<section class="guide-section"><h3>${esc(s.title)}</h3>${paragraphs(s.body)}</section>`).join('')}</div></article>`:tab==='answers'?answerKeyCard(q):q.latex?integralCard(q):chapterCard(q)).join('')||'<div class="empty">No matches. Try another filter.</div>';summary();syncMultiFilters();syncRoundControls()}
 function setReview(id){document.body.classList.remove('home-view');roundIds=null;$('#mistakes-only').checked=false;$('#pols-direction').value='';$('#source-label-control').hidden=id!=='chem-6-8';$('#chem-family').value='';$('#chem-family').innerHTML='<option value="">All concepts / patterns</option>';for(const f of (data.chemistryExam2?.families||[]))$('#chem-family').add(new Option(f.title,f.id));$('#chem-family').add(new Option('Additional lecture coverage','extras'));review=data.reviews.some(r=>r.id===id)?id:'easy';let r=data.reviews.find(r=>r.id===review);$('#review-title').textContent=r.title;$('#periodic-container').hidden=review!=='chem-6-8';document.body.classList.toggle('periodic-open',review==='chem-6-8'&&!!document.querySelector('#periodic-container details[open]'));document.querySelectorAll('#status option[data-chemistry]').forEach(o=>o.hidden=review!=='chem-6-8');$('#course-label').textContent=r.course;document.querySelectorAll('[data-review]').forEach(b=>{b.classList.toggle('active',b.dataset.review===review);b.setAttribute('aria-pressed',String(b.dataset.review===review))});$('#topic').innerHTML='<option value="">All topics</option>';let topics=new Set([...currentQuestions(),...data.guides.filter(q=>q.review===review)].map(q=>q.section));for(let s of topics)$('#topic').add(new Option(data.topics[s]||s,s));$('#status').value='all';$('#search').value='';$('#status option[value="extension"]').hidden=review!=='chapter14';$('#status option[value="new"]').hidden=review!=='chapter14';$('#status option[value="exam"]').hidden=review!=='chapter14';$('#status option[value="mcq"]').hidden=!currentQuestions().some(q=>q.choices);$('#status option[value="frq"]').hidden=review!=='engr-module-8-9';$('#status option[value="coding"]').hidden=review!=='engr-module-8-9';$('#engr-downloads').hidden=review!=='engr-module-8-9';$('#status option[value="conceptual"]').hidden=review!=='chem-6-8';$('#status option[value="wir56"]').hidden=review!=='chapter14';$('#status option[value="graphs"]').hidden=review!=='chapter14';$('#status option[value="linear"]').hidden=review!=='chapter14';tab=r.defaultTab||(r.guidesOnly?'guides':'questions');$('#search').placeholder=r.guidesOnly?'Search guides, formulas, or concepts…':'Search questions or topics…';document.body.classList.toggle('guides-only',!!r.guidesOnly);order=null;document.querySelectorAll('[data-tab]').forEach(x=>x.classList.toggle('selected',x.dataset.tab===tab));try{localStorage.setItem('practice-selected-review',review)}catch{}history.replaceState(null,'','?review='+review);markUnit();render()}
 document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{tab=b.dataset.tab;document.querySelectorAll('[data-tab]').forEach(x=>x.classList.toggle('selected',x===b));render()});$('#search').oninput=()=>{roundIds=null;render()};$('#chem-family').onchange=()=>{updateUnitUrl();render()};$('#topic').onchange=()=>{updateUnitUrl();render()};$('#status').onchange=()=>{if(review==='chem-6-8'){const p=new URLSearchParams({review});if($('#topic').value)p.set('unit',$('#topic').value);if($('#chem-family').value)p.set('family',$('#chem-family').value);if($('#status').value.startsWith('chem-'))p.set('set',$('#status').value);history.replaceState(null,'','?'+p)}render()};$('#shuffle').onclick=()=>{order=currentQuestions().map(q=>q.id);for(let i=order.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]]}render()};$('#list').onclick=async e=>{let card=e.target.closest('[data-id]');if(!card)return;let id=card.dataset.id;const copy=e.target.closest('.copy-problem');if(copy){await copyProblem(id,copy);return}if(e.target.closest('.bookmark')){state[id]||={};state[id].saved=!state[id].saved;save();let b=card.querySelector('.bookmark');b.classList.toggle('on',state[id].saved);b.textContent=state[id].saved?'★ Saved':'☆ Save';b.setAttribute('aria-pressed',String(state[id].saved));if(tab==='saved')render()}if(e.target.closest('.reveal')){let a=card.querySelector('.answer'),b=card.querySelector('.reveal');a.hidden=!a.hidden;b.textContent=a.hidden?'Reveal answer':'Hide answer';b.setAttribute('aria-expanded',String(!a.hidden));if(!a.hidden)gradeAttempt(card,data.questions.find(q=>q.id===id))}};$('#list').oninput=e=>{if(!e.target.matches('[data-draft]'))return;let id=e.target.closest('[data-id]').dataset.id;state[id]||={};state[id].draft=e.target.value;save()};$('#list').onchange=e=>{if(e.target.matches('[data-draft]'))return;let card=e.target.closest('[data-id]');if(!card)return;state[card.dataset.id]||={};if(e.target.matches('[data-choice]')){clearAttempt(card);state[card.dataset.id].choiceVersion=data.questions.find(q=>q.id===card.dataset.id)?.choiceVersion;state[card.dataset.id].choices=[...card.querySelectorAll('[data-choice]:checked')].map(el=>Number(el.dataset.choice));save();return}if(roundIds?.includes(card.dataset.id)){if(e.target.checked)roundReviewed.add(card.dataset.id);else roundReviewed.delete(card.dataset.id)}state[card.dataset.id].done=e.target.checked;save();if($('#status').value!=='all')render()};$('#export').onclick=()=>{let a=document.createElement('a'),url=URL.createObjectURL(new Blob([JSON.stringify(state,null,2)],{type:'application/json'}));a.href=url;a.download='practice-progress.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};$('#import').onchange=async e=>{try{let s=JSON.parse(await e.target.files[0].text());if(!s||Array.isArray(s)||typeof s!=='object')throw Error();for(let q of data.questions)if(s[q.id]&&typeof s[q.id]==='object')state[q.id]={done:!!s[q.id].done,saved:!!s[q.id].saved,mistake:s[q.id].mistake===true,lastResult:s[q.id].lastResult,...(q.kind==='frq'||q.kind==='coding'?{draft:typeof s[q.id].draft==='string'?s[q.id].draft:''}:{}),...(q.choices?{choices:validChoices(q,!q.choiceVersion||s[q.id].choiceVersion===q.choiceVersion?s[q.id].choices:[]),choiceVersion:q.choiceVersion}:{})};save();render()}catch{alert('Choose a valid progress file exported from this site.')}e.target.value=''};
-fetch('data.json?v=engr-module11').then(r=>{if(!r.ok)throw Error();return r.json()}).then(d=>{data=d;buildFolders();document.querySelectorAll('[data-review]').forEach(b=>b.onclick=()=>chooseUnit(b.dataset.review,b.dataset.unit||''));let saved;try{saved=localStorage.getItem('practice-selected-review')}catch{}const params=new URLSearchParams(location.search);if(!params.get('review')){showHome();return}setReview(params.get('review'));if(review==='chem-6-8'&&['chem-exam2','chem-core','chem-professor','chem-multiple','chem-figures'].includes(params.get('set'))){$('#status').value=params.get('set');$('#status').onchange()}if(review==='chem-6-8'&&[...$('#chem-family').options].some(o=>o.value===params.get('family'))){$('#chem-family').value=params.get('family');render()}if(params.get('unit')&&[...$('#topic').options].some(o=>o.value===params.get('unit'))){$('#topic').value=params.get('unit');updateUnitUrl();render()}if(review==='chapter14'){const sets={'quiz-challenge-oct12':'new','exam-practice-oct13':'exam','wir56-practice':'wir56','level-curves':'graphs','linear-approximation':'linear'};const selectedSet=params.get('set');if(sets[selectedSet]){$('#status').value=sets[selectedSet];history.replaceState(null,'','?review=chapter14&set='+selectedSet);render()}}}).catch(()=>$('#list').innerHTML='<div class="empty">The review could not load. Please refresh to try again.</div>');
+fetch('data.json?v=engr-module11').then(r=>{if(!r.ok)throw Error();return r.json()}).then(d=>{data=d;initializePolsChoiceShuffle();buildFolders();document.querySelectorAll('[data-review]').forEach(b=>b.onclick=()=>chooseUnit(b.dataset.review,b.dataset.unit||''));let saved;try{saved=localStorage.getItem('practice-selected-review')}catch{}const params=new URLSearchParams(location.search);if(!params.get('review')){showHome();return}setReview(params.get('review'));if(review==='chem-6-8'&&['chem-exam2','chem-core','chem-professor','chem-multiple','chem-figures'].includes(params.get('set'))){$('#status').value=params.get('set');$('#status').onchange()}if(review==='chem-6-8'&&[...$('#chem-family').options].some(o=>o.value===params.get('family'))){$('#chem-family').value=params.get('family');render()}if(params.get('unit')&&[...$('#topic').options].some(o=>o.value===params.get('unit'))){$('#topic').value=params.get('unit');updateUnitUrl();render()}if(review==='chapter14'){const sets={'quiz-challenge-oct12':'new','exam-practice-oct13':'exam','wir56-practice':'wir56','level-curves':'graphs','linear-approximation':'linear'};const selectedSet=params.get('set');if(sets[selectedSet]){$('#status').value=sets[selectedSet];history.replaceState(null,'','?review=chapter14&set='+selectedSet);render()}}}).catch(()=>$('#list').innerHTML='<div class="empty">The review could not load. Please refresh to try again.</div>');
 const sidebarToggle=$('#sidebar-toggle');function setSidebar(collapsed){document.body.classList.toggle('sidebar-collapsed',collapsed);$('#sidebar').hidden=collapsed;sidebarToggle.setAttribute('aria-expanded',String(!collapsed));sidebarToggle.setAttribute('aria-label',collapsed?'Show sidebar':'Hide sidebar');try{localStorage.setItem('practice-sidebar-collapsed',String(collapsed))}catch{}}let sidebarCollapsed=false;try{sidebarCollapsed=localStorage.getItem('practice-sidebar-collapsed')==='true'}catch{}setSidebar(sidebarCollapsed);sidebarToggle.onclick=()=>setSidebar(!$('#sidebar').hidden);
 
 
@@ -84,7 +84,7 @@ function syncMultiFilters(){for(const [id,label] of [['topic','Topics'],['status
 let roundIds=null,lastFilteredIds=[],roundReviewed=new Set();
 function reviewedNow(id){return roundIds?.includes(id)?roundReviewed.has(id):!!state[id]?.done}
 function directionMatches(q){const v=$('#pols-direction').value;if(review!=='pols-exam-2'||!v||tab==='guides')return true;return v==='application'?q.id.startsWith('pols-exam2-apply-'):v==='reverse'?q.id.endsWith('-reverse'):q.id.startsWith('pols-exam2-')&&!q.id.endsWith('-reverse')&&!q.id.startsWith('pols-exam2-apply-')}
-function syncRoundControls(){const active=tab!=='guides'&&tab!=='answers';$('#practice-tools').hidden=!active;$('#pols-direction-label').hidden=review!=='pols-exam-2';$('#end-practice-round').hidden=!roundIds;$('#round-status').textContent=roundIds?'Round: '+roundIds.filter(id=>roundReviewed.has(id)).length+' / '+roundIds.length+' reviewed':'';$('#start-practice-round').textContent=roundIds?'New round':'Start round'}
+function syncRoundControls(){const active=tab!=='guides'&&tab!=='answers';$('#practice-tools').hidden=!active;$('#pols-direction-label').hidden=review!=='pols-exam-2';$('#end-practice-round').hidden=!roundIds;$('#round-status').textContent=roundIds?'Round: '+roundIds.filter(id=>roundReviewed.has(id)).length+' / '+roundIds.length+' reviewed':'';$('#start-practice-round').textContent=roundIds?'New round':'Start round';syncPolsChoiceControls()}
 $('#start-practice-round').onclick=()=>{roundIds=null;render();let pool=[...lastFilteredIds];for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]]}roundIds=pool.slice(0,Number($('#round-size').value));if(!roundIds.length){roundIds=null;$('#round-status').textContent='No matches.';return}roundReviewed=new Set();for(const id of roundIds){if(state[id]){delete state[id].choices;delete state[id].draft}}order=null;save();render()};
 $('#end-practice-round').onclick=()=>{roundIds=null;render()};
 $('#mistakes-only').onchange=$('#pols-direction').onchange=()=>{roundIds=null;render()};
@@ -109,3 +109,112 @@ let appearance='light';try{appearance=localStorage.getItem(appearanceKey)||'ligh
 // Indent editable response boxes without moving focus.
 document.addEventListener('keydown',event=>{const box=event.target;if(event.key!=='Tab'||event.shiftKey||event.ctrlKey||event.altKey||event.metaKey||!(box instanceof HTMLTextAreaElement)||box.readOnly||box.disabled)return;event.preventDefault();box.setRangeText('     ',box.selectionStart,box.selectionEnd,'end');box.dispatchEvent(new Event('input',{bubbles:true}));});
 
+
+
+
+// BEGIN RELATED POLS CHOICES
+// Small, curated comparison groups: never draw distractors from the whole bank.
+const polsChoiceGroups = [
+ {name:'Voting-rights amendments', ids:[1,2,3,4]},
+ {name:'Voting-rights and districting cases', ids:[13,30,31,66,91]},
+ {name:'Primary systems', ids:[5,8,17,29]},
+ {name:'Candidate-selection and election mechanisms', ids:[6,12,22,28,32]},
+ {name:'Direct-democracy mechanisms', ids:[15,25,26]},
+ {name:'Campaign persuasion effects', ids:[39,41,56]},
+ {name:'Campaign methods', ids:[45,48,51]},
+ {name:'Party and campaign models', ids:[40,44,57]},
+ {name:'Party organizations', ids:[42,50,55,60]},
+ {name:'Political attitudes and perception', ids:[19,52,58]},
+ {name:'Legislative committee types', ids:[70,92,94]},
+ {name:'Districting and representation', ids:[72,77,83,85,90]},
+ {name:'Legislative control of agencies', ids:[68,73,79,84]},
+ {name:'Representation and constituent service', ids:[71,74,95]},
+ {name:'Legislative sessions and timing', ids:[61,81,101,103]},
+ {name:'Legislative actions', ids:[65,82,86,87,105]}
+];
+const polsVariantKey='pols-related-choice-variants-v1';
+let polsTerms=new Map(),polsMembership=new Map(),polsChoiceBases=new Map(),polsVariants={};
+function polsIdentity(q){
+ if(q?.review!=='pols-exam-2'||q.multiple||q.kind!=='mcq')return null;
+ const match=q.id.match(/^pols-exam2-(\d+)(-reverse)?$/);
+ if(!match)return null;
+ const reverse=!!match[2];
+ if(q.title!==(reverse?'Term → description':'Description → term'))return null;
+ const id=Number(match[1]),group=polsMembership.get(id);
+ return group?{id,reverse,group}:null;
+}
+function polsShuffleArray(values,rng=Math.random){
+ const a=[...values];for(let i=a.length-1;i>0;i--){const j=Math.floor(rng()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a;
+}
+function initializePolsChoiceShuffle(){
+ polsTerms=new Map();polsMembership=new Map();polsChoiceBases=new Map();
+ // Reverse cards retain the canonical term-definition pair, including when a
+ // forward card has separately been rewritten into an exam-style question.
+ for(const q of data.questions){
+  const match=q.id.match(/^pols-exam2-(\d+)-reverse$/);
+  if(q.review!=='pols-exam-2'||!match||q.title!=='Term → description')continue;
+  const term=q.body[0]?.match(/^Which description matches (.+)\?$/)?.[1];
+  const answer=correctChoicesFor(q);
+  if(term&&answer.length===1&&typeof q.choices[answer[0]]==='string')
+   polsTerms.set(Number(match[1]),{term,description:q.choices[answer[0]]});
+ }
+ for(const group of polsChoiceGroups){
+  // If source data changes, an incomplete group safely becomes ineligible.
+  if(group.ids.length<3||!group.ids.every(id=>polsTerms.has(id)))continue;
+  for(const id of group.ids)polsMembership.set(id,group);
+ }
+ for(const q of data.questions){if(polsIdentity(q))polsChoiceBases.set(q.id,JSON.parse(JSON.stringify(q)))}
+ try{const saved=JSON.parse(localStorage.getItem(polsVariantKey)||'{}');polsVariants=saved&&typeof saved==='object'&&!Array.isArray(saved)?saved:{}}catch{polsVariants={}}
+ for(const q of data.questions){const ids=polsVariants[q.id];if(validPolsVariant(q,ids))applyPolsVariant(q,ids)}
+}
+function validPolsVariant(q,ids){
+ const info=polsIdentity(q);if(!info||!Array.isArray(ids))return false;
+ return ids.length===Math.min(4,info.group.ids.length)&&new Set(ids).size===ids.length&&ids.includes(info.id)&&ids.every(id=>info.group.ids.includes(id));
+}
+function applyPolsVariant(q,ids){
+ if(!validPolsVariant(q,ids))return false;
+ const info=polsIdentity(q),base=polsChoiceBases.get(q.id);
+ const field=info.reverse?'description':'term';
+ q.choices=ids.map(id=>polsTerms.get(id)[field]);
+ const correct=ids.indexOf(info.id);q.correct=[correct];q.correctChoices=[correct];
+ q.choiceVersion='pols-related-v1:'+ids.join(',');
+ const blocks=[String.fromCharCode(65+correct)+'. '+q.choices[correct],...base.answer.blocks.slice(1)];
+ q.answer={...base.answer,blocks,text:blocks.filter(x=>typeof x==='string').join('\n\n')};
+ return true;
+}
+function newPolsVariant(q,rng=Math.random){
+ const info=polsIdentity(q);if(!info)return null;
+ const field=info.reverse?'description':'term';
+ let ids;
+ // Retry to prevent an unchanged full option list. With a three-term pool,
+ // the terms must repeat, but their answer positions still change.
+ for(let attempt=0;attempt<8;attempt++){
+  const others=polsShuffleArray(info.group.ids.filter(id=>id!==info.id),rng).slice(0,3);
+  ids=polsShuffleArray([info.id,...others],rng);
+  if(JSON.stringify(ids.map(id=>polsTerms.get(id)[field]))!==JSON.stringify(q.choices))return ids;
+ }
+ return [...ids.slice(1),ids[0]];
+}
+function visiblePolsShuffleQuestions(){
+ if(review!=='pols-exam-2'||tab==='guides'||tab==='answers')return [];
+ const visible=new Set([...$('#list').querySelectorAll('article[data-id]')].map(el=>el.dataset.id));
+ return data.questions.filter(q=>visible.has(q.id)&&polsIdentity(q));
+}
+function syncPolsChoiceControls(){
+ const box=$('#pols-choice-tools');if(!box)return;
+ box.hidden=review!=='pols-exam-2'||tab==='guides'||tab==='answers';
+ const count=visiblePolsShuffleQuestions().length;
+ $('#pols-shuffle-choices').disabled=!count;
+ $('#pols-shuffle-choices').title=count?'Refresh related choices for '+count+' visible vocabulary questions.':'No eligible term or description questions are visible.';
+}
+// END RELATED POLS CHOICES
+$('#pols-shuffle-choices').onclick=()=>{
+ const questions=visiblePolsShuffleQuestions();
+ for(const q of questions){
+  const ids=newPolsVariant(q);applyPolsVariant(q,ids);polsVariants[q.id]=ids;
+  if(state[q.id])delete state[q.id].choices;
+ }
+ let persisted=true;try{localStorage.setItem(polsVariantKey,JSON.stringify(polsVariants))}catch{persisted=false}
+ save();render();
+ $('#pols-choice-status').textContent=questions.length+' vocabulary question'+(questions.length===1?'':'s')+' refreshed. '+(persisted?'':'Choices are available for this visit; browser storage is unavailable.');
+};

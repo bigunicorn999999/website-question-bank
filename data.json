@@ -10896,31 +10896,33 @@
       "id": "pols-exam2-8",
       "review": "pols-exam-2",
       "section": "pols-voting",
-      "title": "Description → term",
+      "title": "Exam format · Closed primary",
       "kind": "mcq",
       "body": [
-        "Which term, case, or fact matches this description?",
-        "A system in which registered party members choose that party's nominees."
+        "An election system restricts a party's nomination contest to its registered party members. This is a ________."
       ],
-      "text": "Which term, case, or fact matches this description? A system in which registered party members choose that party's nominees.",
+      "text": "An election system restricts a party's nomination contest to its registered party members. This is a ________.",
       "choices": [
-        "Semi-closed primary",
-        "Closed primary",
-        "Open primary",
-        "Primary election",
-        "White primary"
+        "closed primary",
+        "open primary",
+        "blanket primary",
+        "general election"
       ],
       "correct": [
-        1
+        0
       ],
       "multiple": false,
       "answer": {
         "blocks": [
-          "B. Closed primary",
-          "A system in which registered party members choose that party's nominees."
+          "A. closed primary",
+          "A closed primary restricts participation to registered party members. An open primary does not require prior party registration."
         ],
-        "text": "B. Closed primary A system in which registered party members choose that party's nominees."
-      }
+        "text": "A. closed primary\n\nA closed primary restricts participation to registered party members. An open primary does not require prior party registration."
+      },
+      "correctChoices": [
+        0
+      ],
+      "choiceVersion": "pols-format-nov04-v1"
     },
     {
       "id": "pols-exam2-9",
@@ -11136,31 +11138,33 @@
       "id": "pols-exam2-16",
       "review": "pols-exam-2",
       "section": "pols-voting",
-      "title": "Description → term",
+      "title": "Exam format · Majority threshold",
       "kind": "mcq",
       "body": [
-        "Which term, case, or fact matches this description?",
-        "More than half of the votes cast."
+        "Out of 1,000 valid votes, which total is the smallest majority?"
       ],
-      "text": "Which term, case, or fact matches this description? More than half of the votes cast.",
+      "text": "Out of 1,000 valid votes, which total is the smallest majority?",
       "choices": [
-        "Majority",
-        "Special election",
-        "Open primary",
-        "Crossover voting",
-        "15th Amendment"
+        "499",
+        "500",
+        "501",
+        "Any total that leads the other candidates"
       ],
       "correct": [
-        0
+        2
       ],
       "multiple": false,
       "answer": {
         "blocks": [
-          "A. Majority",
-          "More than half of the votes cast."
+          "C. 501",
+          "A majority is strictly more than half. Half of 1,000 is 500, so the smallest whole-number majority is 501."
         ],
-        "text": "A. Majority More than half of the votes cast."
-      }
+        "text": "C. 501\n\nA majority is strictly more than half. Half of 1,000 is 500, so the smallest whole-number majority is 501."
+      },
+      "correctChoices": [
+        2
+      ],
+      "choiceVersion": "pols-format-nov04-v1"
     },
     {
       "id": "pols-exam2-17",
@@ -11196,19 +11200,17 @@
       "id": "pols-exam2-18",
       "review": "pols-exam-2",
       "section": "pols-voting",
-      "title": "Description → term",
+      "title": "Exam format · Plurality versus majority",
       "kind": "mcq",
       "body": [
-        "Which term, case, or fact matches this description?",
-        "More votes than any other candidate, even if fewer than half of all votes."
+        "Candidate A receives 42%, B receives 35%, and C receives 23%. A has a ________."
       ],
-      "text": "Which term, case, or fact matches this description? More votes than any other candidate, even if fewer than half of all votes.",
+      "text": "Candidate A receives 42%, B receives 35%, and C receives 23%. A has a ________.",
       "choices": [
-        "Blanket and top-two primaries",
-        "Plurality",
-        "Majority",
-        "Sustained participation",
-        "Runoff primary"
+        "majority but no plurality",
+        "plurality but no majority",
+        "majority and a plurality",
+        "unanimous vote"
       ],
       "correct": [
         1
@@ -11216,11 +11218,15 @@
       "multiple": false,
       "answer": {
         "blocks": [
-          "B. Plurality",
-          "More votes than any other candidate, even if fewer than half of all votes."
+          "B. plurality but no majority",
+          "A leads every opponent, so A has a plurality. Because 42% is below 50%, A does not have a majority."
         ],
-        "text": "B. Plurality More votes than any other candidate, even if fewer than half of all votes."
-      }
+        "text": "B. plurality but no majority\n\nA leads every opponent, so A has a plurality. Because 42% is below 50%, A does not have a majority."
+      },
+      "correctChoices": [
+        1
+      ],
+      "choiceVersion": "pols-format-nov04-v1"
     },
     {
       "id": "pols-exam2-19",
@@ -12006,19 +12012,17 @@
       "id": "pols-exam2-45",
       "review": "pols-exam-2",
       "section": "pols-parties",
-      "title": "Description → term",
+      "title": "Exam format · Campaign method",
       "kind": "mcq",
       "body": [
-        "Which term, case, or fact matches this description?",
-        "Direct voter outreach through local organizing, conversations, calls, or similar contact."
+        "A campaign relies on neighborhood volunteers, door-to-door conversations, and direct phone calls. It is mainly using ________."
       ],
-      "text": "Which term, case, or fact matches this description? Direct voter outreach through local organizing, conversations, calls, or similar contact.",
+      "text": "A campaign relies on neighborhood volunteers, door-to-door conversations, and direct phone calls. It is mainly using ________.",
       "choices": [
-        "Negative campaigning",
-        "Activation",
-        "Median voter",
-        "Grassroots campaigning",
-        "Reinforcement"
+        "professional mass-media campaigning",
+        "legislative oversight",
+        "redistricting",
+        "grassroots campaigning"
       ],
       "correct": [
         3
@@ -12026,11 +12030,15 @@
       "multiple": false,
       "answer": {
         "blocks": [
-          "D. Grassroots campaigning",
-          "Direct voter outreach through local organizing, conversations, calls, or similar contact."
+          "D. grassroots campaigning",
+          "Grassroots campaigning organizes direct voter contact. Mass-media advertising reaches large audiences through paid broadcasts or publications."
         ],
-        "text": "D. Grassroots campaigning Direct voter outreach through local organizing, conversations, calls, or similar contact."
-      }
+        "text": "D. grassroots campaigning\n\nGrassroots campaigning organizes direct voter contact. Mass-media advertising reaches large audiences through paid broadcasts or publications."
+      },
+      "correctChoices": [
+        3
+      ],
+      "choiceVersion": "pols-format-nov04-v1"
     },
     {
       "id": "pols-exam2-46",
@@ -12756,31 +12764,33 @@
       "id": "pols-exam2-70",
       "review": "pols-exam-2",
       "section": "pols-legislatures",
-      "title": "Description → term",
+      "title": "Exam format · Committee comparison",
       "kind": "mcq",
       "body": [
-        "Which term, case, or fact matches this description?",
-        "Members of both chambers negotiating differences between House and Senate bill versions."
+        "The House and Senate pass different versions of a bill. Which committee is formed to negotiate a common version?"
       ],
-      "text": "Which term, case, or fact matches this description? Members of both chambers negotiating differences between House and Senate bill versions.",
+      "text": "The House and Senate pass different versions of a bill. Which committee is formed to negotiate a common version?",
       "choices": [
-        "Select committee",
-        "Committee assignments",
-        "Standing committee",
-        "Appropriation",
-        "Conference committee"
+        "A conference committee",
+        "A standing committee acting as a third chamber",
+        "A party central committee",
+        "A precinct organization"
       ],
       "correct": [
-        4
+        0
       ],
       "multiple": false,
       "answer": {
         "blocks": [
-          "E. Conference committee",
-          "Members of both chambers negotiating differences between House and Senate bill versions."
+          "A. A conference committee",
+          "A conference committee brings members of both chambers together to reconcile their bill versions. Both chambers must still approve the final text."
         ],
-        "text": "E. Conference committee Members of both chambers negotiating differences between House and Senate bill versions."
-      }
+        "text": "A. A conference committee\n\nA conference committee brings members of both chambers together to reconcile their bill versions. Both chambers must still approve the final text."
+      },
+      "correctChoices": [
+        0
+      ],
+      "choiceVersion": "pols-format-nov04-v1"
     },
     {
       "id": "pols-exam2-71",
@@ -13146,31 +13156,33 @@
       "id": "pols-exam2-83",
       "review": "pols-exam-2",
       "section": "pols-legislatures",
-      "title": "Description → term",
+      "title": "Exam format · Representation principle",
       "kind": "mcq",
       "body": [
-        "Which term, case, or fact matches this description?",
-        "The principle that state legislative districts should have substantially equal populations so voters have comparable representation."
+        "Two legislative districts contain 100,000 and 200,000 residents but elect one representative each. Which principle does this disparity most directly implicate?"
       ],
-      "text": "Which term, case, or fact matches this description? The principle that state legislative districts should have substantially equal populations so voters have comparable representation.",
+      "text": "Two legislative districts contain 100,000 and 200,000 residents but elect one representative each. Which principle does this disparity most directly implicate?",
       "choices": [
-        "Texas Senate qualifications",
-        "Texas special session",
-        "Texas regular session",
+        "Party identification",
+        "Legislative immunity",
         "One person, one vote",
-        "Unicameral legislature"
+        "Candidate-centered campaigning"
       ],
       "correct": [
-        3
+        2
       ],
       "multiple": false,
       "answer": {
         "blocks": [
-          "D. One person, one vote",
-          "The principle that state legislative districts should have substantially equal populations so voters have comparable representation."
+          "C. One person, one vote",
+          "The one-person, one-vote principle requires substantially equal state legislative district populations. The relevant comparison is population, not land area or only registered voters."
         ],
-        "text": "D. One person, one vote The principle that state legislative districts should have substantially equal populations so voters have comparable representation."
-      }
+        "text": "C. One person, one vote\n\nThe one-person, one-vote principle requires substantially equal state legislative district populations. The relevant comparison is population, not land area or only registered voters."
+      },
+      "correctChoices": [
+        2
+      ],
+      "choiceVersion": "pols-format-nov04-v1"
     },
     {
       "id": "pols-exam2-84",
@@ -19078,6 +19090,1036 @@
       "correctChoices": [
         3
       ]
+    },
+    {
+      "id": "pols-exam2-pdf-01",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "PDF review · Responsible party functions",
+      "kind": "mcq",
+      "body": [
+        "Under the responsible party model, which function is performed by political parties?"
+      ],
+      "text": "Under the responsible party model, which function is performed by political parties?",
+      "choices": [
+        "Educating voters and simplifying electoral choices",
+        "Recruiting candidates",
+        "Holding elected officials accountable",
+        "All of the above"
+      ],
+      "correct": [
+        3
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "D. All of the above",
+          "All three functions connect party organization to voter choice and accountability. A responsible party offers identifiable alternatives and can be judged on its performance.",
+          "Source: Uploaded POLS review, page 1."
+        ],
+        "text": "D. All of the above\n\nAll three functions connect party organization to voter choice and accountability. A responsible party offers identifiable alternatives and can be judged on its performance.\n\nSource: Uploaded POLS review, page 1."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-02",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "PDF review · Declining party influence",
+      "kind": "mcq",
+      "body": [
+        "The decline of party control over campaigns has contributed to ________."
+      ],
+      "text": "The decline of party control over campaigns has contributed to ________.",
+      "choices": [
+        "a rise in candidate-centered elections",
+        "greater party discipline in every legislative vote",
+        "automatically higher general-election turnout",
+        "the disappearance of campaign consultants"
+      ],
+      "correct": [
+        0
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "A. a rise in candidate-centered elections",
+          "Candidate-centered campaigns rely more on individual candidates, personal fundraising, campaign organizations, and consultants rather than centralized party direction.",
+          "Source: Uploaded POLS review, page 1."
+        ],
+        "text": "A. a rise in candidate-centered elections\n\nCandidate-centered campaigns rely more on individual candidates, personal fundraising, campaign organizations, and consultants rather than centralized party direction.\n\nSource: Uploaded POLS review, page 1."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-03",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "PDF review · Political orientation",
+      "kind": "mcq",
+      "body": [
+        "Which attachment commonly gives U.S. voters a political orientation and a shortcut for evaluating candidates?"
+      ],
+      "text": "Which attachment commonly gives U.S. voters a political orientation and a shortcut for evaluating candidates?",
+      "choices": [
+        "A nonpartisan interest-group membership requirement",
+        "Party identification",
+        "A consistently detailed ideological philosophy",
+        "Direct state assignment to a party"
+      ],
+      "correct": [
+        1
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "B. Party identification",
+          "Party identification is a psychological attachment to a political party. It can guide political judgments even when a voter does not apply a fully developed ideology.",
+          "Source: Uploaded POLS review, page 1."
+        ],
+        "text": "B. Party identification\n\nParty identification is a psychological attachment to a political party. It can guide political judgments even when a voter does not apply a fully developed ideology.\n\nSource: Uploaded POLS review, page 1."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-04",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "PDF review · Dealignment",
+      "kind": "mcq",
+      "body": [
+        "Dealignment is characterized by ________."
+      ],
+      "text": "Dealignment is characterized by ________.",
+      "choices": [
+        "more voters identifying as strict partisans",
+        "national parties becoming more centralized",
+        "more people declining to identify with either major party",
+        "an increase in straight-ticket voting by definition"
+      ],
+      "correct": [
+        2
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "C. more people declining to identify with either major party",
+          "Dealignment means weakening attachments to established parties. It differs from realignment, a durable shift in the groups supporting competing parties.",
+          "Source: Uploaded POLS review, page 2."
+        ],
+        "text": "C. more people declining to identify with either major party\n\nDealignment means weakening attachments to established parties. It differs from realignment, a durable shift in the groups supporting competing parties.\n\nSource: Uploaded POLS review, page 2."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-05",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "PDF review · Split-ticket voting",
+      "kind": "mcq",
+      "body": [
+        "Voting for candidates from different political parties for different offices on the same ballot is called ________."
+      ],
+      "text": "Voting for candidates from different political parties for different offices on the same ballot is called ________.",
+      "choices": [
+        "straight-ticket voting",
+        "split-ticket voting",
+        "absentee voting",
+        "caucus voting"
+      ],
+      "correct": [
+        1
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "B. split-ticket voting",
+          "Split-ticket voting crosses party lines across offices on a general-election ballot. It differs from crossover voting in another party's primary.",
+          "Source: Uploaded POLS review, page 2."
+        ],
+        "text": "B. split-ticket voting\n\nSplit-ticket voting crosses party lines across offices on a general-election ballot. It differs from crossover voting in another party's primary.\n\nSource: Uploaded POLS review, page 2."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-06",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "PDF review · State regulation of parties",
+      "kind": "mcq",
+      "body": [
+        "Which action listed below is an example of states attempting to limit party influence through regulation?"
+      ],
+      "text": "Which action listed below is an example of states attempting to limit party influence through regulation?",
+      "choices": [
+        "Passing state campaign-finance laws",
+        "Eliminating every primary election",
+        "Outlawing all political action committees",
+        "Mandating straight-ticket voting"
+      ],
+      "correct": [
+        0
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "A. Passing state campaign-finance laws",
+          "The supplied review identifies state campaign-finance regulation. Such laws regulate fundraising or spending; they do not imply that all PACs are banned or that primary elections are eliminated.",
+          "Source clarification: The source says states have acted \"primarily\" this way. This version asks for the listed example rather than asserting that it is the main explanation for all historical limits on parties.",
+          "Source: Uploaded POLS review, page 2."
+        ],
+        "text": "A. Passing state campaign-finance laws\n\nThe supplied review identifies state campaign-finance regulation. Such laws regulate fundraising or spending; they do not imply that all PACs are banned or that primary elections are eliminated.\n\nSource clarification: The source says states have acted \"primarily\" this way. This version asks for the listed example rather than asserting that it is the main explanation for all historical limits on parties.\n\nSource: Uploaded POLS review, page 2."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-07",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "PDF review · Party organization",
+      "kind": "mcq",
+      "body": [
+        "American political parties are best described organizationally as ________."
+      ],
+      "text": "American political parties are best described organizationally as ________.",
+      "choices": [
+        "highly centralized",
+        "authoritarian",
+        "rigidly unified",
+        "decentralized"
+      ],
+      "correct": [
+        3
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "D. decentralized",
+          "National, state, and local organizations have separate responsibilities and substantial autonomy. A national party does not operate as a single chain of command controlling every candidate.",
+          "Source: Uploaded POLS review, page 3."
+        ],
+        "text": "D. decentralized\n\nNational, state, and local organizations have separate responsibilities and substantial autonomy. A national party does not operate as a single chain of command controlling every candidate.\n\nSource: Uploaded POLS review, page 3."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-08",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "PDF review · State and local rules",
+      "kind": "mcq",
+      "body": [
+        "Party organizations at the state and local levels operate primarily under ________, subject to applicable federal law."
+      ],
+      "text": "Party organizations at the state and local levels operate primarily under ________, subject to applicable federal law.",
+      "choices": [
+        "presidential executive orders",
+        "national committee rules that displace all state law",
+        "laws of the states",
+        "rules of a single federal campaign commission only"
+      ],
+      "correct": [
+        2
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "C. laws of the states",
+          "States establish many rules governing party organization and nomination procedures. Applicable federal constitutional and statutory limits still matter.",
+          "Source: Uploaded POLS review, page 3."
+        ],
+        "text": "C. laws of the states\n\nStates establish many rules governing party organization and nomination procedures. Applicable federal constitutional and statutory limits still matter.\n\nSource: Uploaded POLS review, page 3."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-09",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "PDF review · Between elections",
+      "kind": "mcq",
+      "body": [
+        "The primary organizational purpose of a state party's central committee is to ________."
+      ],
+      "text": "The primary organizational purpose of a state party's central committee is to ________.",
+      "choices": [
+        "select U.S. Supreme Court nominees",
+        "maintain the party organization between elections",
+        "pass state legislation",
+        "certify federal voting machines"
+      ],
+      "correct": [
+        1
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "B. maintain the party organization between elections",
+          "The committee maintains continuing party activity, supports candidates, and coordinates organization between elections. It does not act as a legislature or court.",
+          "Source: Uploaded POLS review, page 3."
+        ],
+        "text": "B. maintain the party organization between elections\n\nThe committee maintains continuing party activity, supports candidates, and coordinates organization between elections. It does not act as a legislature or court.\n\nSource: Uploaded POLS review, page 3."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-10",
+      "review": "pols-exam-2",
+      "section": "pols-parties",
+      "title": "PDF review · Professional media campaigns",
+      "kind": "mcq",
+      "body": [
+        "Professional media campaigns in statewide races are mainly used to ________."
+      ],
+      "text": "Professional media campaigns in statewide races are mainly used to ________.",
+      "choices": [
+        "reach many potential voters through television, radio, and newspaper advertising",
+        "replace paid advertising with exclusively door-to-door visits",
+        "ensure that candidates spend less on all advertising",
+        "meet every voter in person"
+      ],
+      "correct": [
+        0
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "A. reach many potential voters through television, radio, and newspaper advertising",
+          "Media campaigns communicate across a geographically large electorate. Grassroots campaigns emphasize direct person-to-person outreach instead.",
+          "Source: Uploaded POLS review, page 4."
+        ],
+        "text": "A. reach many potential voters through television, radio, and newspaper advertising\n\nMedia campaigns communicate across a geographically large electorate. Grassroots campaigns emphasize direct person-to-person outreach instead.\n\nSource: Uploaded POLS review, page 4."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-11",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "PDF review · Post-adjournment veto",
+      "kind": "mcq",
+      "body": [
+        "In the Texas regular-session setting, why is a governor's veto after final adjournment especially difficult for the legislature to reverse?"
+      ],
+      "text": "In the Texas regular-session setting, why is a governor's veto after final adjournment especially difficult for the legislature to reverse?",
+      "choices": [
+        "It automatically becomes law despite the veto.",
+        "The Texas Supreme Court votes on whether to override it.",
+        "The next regular session automatically overrides it.",
+        "The adjourned legislature has no ordinary opportunity to reconvene and override that veto."
+      ],
+      "correct": [
+        3
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "D. The adjourned legislature has no ordinary opportunity to reconvene and override that veto.",
+          "An override requires legislative action. After final adjournment there is no ordinary in-session override opportunity. Legislators can consider new legislation later, but that is different from overriding the old veto.",
+          "Source clarification: Texas Legislative Reference Library: https://lrl.texas.gov/genInfo/FAQ.cfm",
+          "Source: Uploaded POLS review, page 4."
+        ],
+        "text": "D. The adjourned legislature has no ordinary opportunity to reconvene and override that veto.\n\nAn override requires legislative action. After final adjournment there is no ordinary in-session override opportunity. Legislators can consider new legislation later, but that is different from overriding the old veto.\n\nSource clarification: Texas Legislative Reference Library: https://lrl.texas.gov/genInfo/FAQ.cfm\n\nSource: Uploaded POLS review, page 4."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-12",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "PDF review · Legislator demographics",
+      "kind": "mcq",
+      "body": [
+        "Compared with the general population, members of the Texas Legislature are generally ________, according to the supplied review."
+      ],
+      "text": "Compared with the general population, members of the Texas Legislature are generally ________, according to the supplied review.",
+      "choices": [
+        "less educated",
+        "a demographic mirror of the population in income and race",
+        "more educated",
+        "younger than the average citizen"
+      ],
+      "correct": [
+        2
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "C. more educated",
+          "The review identifies higher educational attainment. This is a general demographic comparison, not a claim that every legislator has more education than every constituent.",
+          "Source: Uploaded POLS review, page 4."
+        ],
+        "text": "C. more educated\n\nThe review identifies higher educational attainment. This is a general demographic comparison, not a claim that every legislator has more education than every constituent.\n\nSource: Uploaded POLS review, page 4."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-13",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "PDF review · District population",
+      "kind": "mcq",
+      "body": [
+        "Which is the most accurate description of the population basis for Texas state legislative districts?"
+      ],
+      "text": "Which is the most accurate description of the population basis for Texas state legislative districts?",
+      "choices": [
+        "Districts are based on equal land area, regardless of residents.",
+        "Districts must contain equal numbers of registered voters, regardless of population.",
+        "Federal judges draw every district in the ordinary process.",
+        "Districts must have substantially equal populations, with other applicable districting rules also observed."
+      ],
+      "correct": [
+        3
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "D. Districts must have substantially equal populations, with other applicable districting rules also observed.",
+          "One person, one vote uses population equality. Equal land area or equal registration counts are not substitutes for the population standard.",
+          "Source clarification: The PDF says equal numbers of \"voters\" and broadly requires compactness. The accurate general standard is substantially equal population; Texas House and Senate rules differ, and compactness is not a blanket state constitutional requirement. Texas Legislative Council: https://redistricting.capitol.texas.gov/reqs",
+          "Source: Uploaded POLS review, page 5."
+        ],
+        "text": "D. Districts must have substantially equal populations, with other applicable districting rules also observed.\n\nOne person, one vote uses population equality. Equal land area or equal registration counts are not substitutes for the population standard.\n\nSource clarification: The PDF says equal numbers of \"voters\" and broadly requires compactness. The accurate general standard is substantially equal population; Texas House and Senate rules differ, and compactness is not a blanket state constitutional requirement. Texas Legislative Council: https://redistricting.capitol.texas.gov/reqs\n\nSource: Uploaded POLS review, page 5."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-14",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "PDF review · Gerrymandering",
+      "kind": "mcq",
+      "body": [
+        "Drawing legislative district boundaries to favor a political party or group is known as ________."
+      ],
+      "text": "Drawing legislative district boundaries to favor a political party or group is known as ________.",
+      "choices": [
+        "reapportionment",
+        "gerrymandering",
+        "redistricting without any implication of advantage",
+        "logrolling"
+      ],
+      "correct": [
+        1
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "B. gerrymandering",
+          "Redistricting is the general act of drawing boundaries. Gerrymandering adds deliberate electoral advantage. Reapportionment reallocates representation; logrolling exchanges legislative support.",
+          "Source: Uploaded POLS review, page 5."
+        ],
+        "text": "B. gerrymandering\n\nRedistricting is the general act of drawing boundaries. Gerrymandering adds deliberate electoral advantage. Reapportionment reallocates representation; logrolling exchanges legislative support.\n\nSource: Uploaded POLS review, page 5."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-15",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "PDF review · Who draws the map?",
+      "kind": "mcq",
+      "body": [
+        "Which body has primary responsibility for drawing Texas state legislative districts in the ordinary redistricting process?"
+      ],
+      "text": "Which body has primary responsibility for drawing Texas state legislative districts in the ordinary redistricting process?",
+      "choices": [
+        "The Texas Legislature",
+        "The governor acting alone",
+        "A permanent independent citizen commission",
+        "Federal courts in every redistricting cycle"
+      ],
+      "correct": [
+        0
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "A. The Texas Legislature",
+          "The legislature normally enacts districting plans. The governor participates in the legislative process, courts can review plans, and the Legislative Redistricting Board has a specified fallback role for state legislative districts.",
+          "Source clarification: Texas Legislative Council legal requirements: https://redistricting.capitol.texas.gov/reqs",
+          "Source: Uploaded POLS review, page 5."
+        ],
+        "text": "A. The Texas Legislature\n\nThe legislature normally enacts districting plans. The governor participates in the legislative process, courts can review plans, and the Legislative Redistricting Board has a specified fallback role for state legislative districts.\n\nSource clarification: Texas Legislative Council legal requirements: https://redistricting.capitol.texas.gov/reqs\n\nSource: Uploaded POLS review, page 5."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-16",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "PDF review · Committee division of labor",
+      "kind": "mcq",
+      "body": [
+        "The primary organizational function of legislative committees is to ________."
+      ],
+      "text": "The primary organizational function of legislative committees is to ________.",
+      "choices": [
+        "give the governor direct control of all bills",
+        "eliminate floor debate and final chamber votes",
+        "divide legislative work into manageable, specialized tasks",
+        "transfer all legislative power to executive agencies"
+      ],
+      "correct": [
+        2
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "C. divide legislative work into manageable, specialized tasks",
+          "Committees provide a division of labor so legislators can specialize, study bills, hear testimony, and recommend action. Some also conduct oversight, but that is not the broad organizational purpose asked here.",
+          "Source: Uploaded POLS review, page 5."
+        ],
+        "text": "C. divide legislative work into manageable, specialized tasks\n\nCommittees provide a division of labor so legislators can specialize, study bills, hear testimony, and recommend action. Some also conduct oversight, but that is not the broad organizational purpose asked here.\n\nSource: Uploaded POLS review, page 5."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-17",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "PDF review · Pigeonholing",
+      "kind": "mcq",
+      "body": [
+        "Setting aside a bill in committee without considering or acting on it is called ________."
+      ],
+      "text": "Setting aside a bill in committee without considering or acting on it is called ________.",
+      "choices": [
+        "filibustering",
+        "pigeonholing",
+        "clashing",
+        "a veto override"
+      ],
+      "correct": [
+        1
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "B. pigeonholing",
+          "Pigeonholing can stop a bill through inaction. A filibuster delays action through extended debate; an override responds to a governor's veto.",
+          "Source: Uploaded POLS review, page 6."
+        ],
+        "text": "B. pigeonholing\n\nPigeonholing can stop a bill through inaction. A filibuster delays action through extended debate; an override responds to a governor's veto.\n\nSource: Uploaded POLS review, page 6."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-18",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "PDF review · Texas regular sessions",
+      "kind": "mcq",
+      "body": [
+        "Which statement best describes regular sessions of the Texas Legislature?"
+      ],
+      "text": "Which statement best describes regular sessions of the Texas Legislature?",
+      "choices": [
+        "They meet annually for 180 days.",
+        "They continue throughout every year.",
+        "They last 90 days in even-numbered years.",
+        "They occur every two years in odd-numbered years and may last no more than 140 calendar days."
+      ],
+      "correct": [
+        3
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "D. They occur every two years in odd-numbered years and may last no more than 140 calendar days.",
+          "Texas uses biennial regular sessions. Special sessions are a separate category with different rules.",
+          "Source clarification: Texas Legislative Reference Library: https://lrl.texas.gov/genInfo/FAQ.cfm",
+          "Source: Uploaded POLS review, page 6."
+        ],
+        "text": "D. They occur every two years in odd-numbered years and may last no more than 140 calendar days.\n\nTexas uses biennial regular sessions. Special sessions are a separate category with different rules.\n\nSource clarification: Texas Legislative Reference Library: https://lrl.texas.gov/genInfo/FAQ.cfm\n\nSource: Uploaded POLS review, page 6."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-19",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "PDF review · Divided government",
+      "kind": "mcq",
+      "body": [
+        "One political party controls the governorship and another controls one or both legislative chambers. This arrangement is called ________."
+      ],
+      "text": "One political party controls the governorship and another controls one or both legislative chambers. This arrangement is called ________.",
+      "choices": [
+        "divided government",
+        "bipartisan rule by definition",
+        "parliamentary government",
+        "a gridlock system by constitutional requirement"
+      ],
+      "correct": [
+        0
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "A. divided government",
+          "Divided government concerns party control across elected institutions. It may make agreement harder, but gridlock is a possible outcome rather than the definition.",
+          "Source: Uploaded POLS review, page 6."
+        ],
+        "text": "A. divided government\n\nDivided government concerns party control across elected institutions. It may make agreement harder, but gridlock is a possible outcome rather than the definition.\n\nSource: Uploaded POLS review, page 6."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-20",
+      "review": "pols-exam-2",
+      "section": "pols-legislatures",
+      "title": "PDF review · Choosing the Speaker",
+      "kind": "mcq",
+      "body": [
+        "How is the Speaker of the Texas House of Representatives chosen?"
+      ],
+      "text": "How is the Speaker of the Texas House of Representatives chosen?",
+      "choices": [
+        "By the national party committee",
+        "By a statewide popular election",
+        "By election from and by House members",
+        "By appointment of the governor"
+      ],
+      "correct": [
+        2
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "C. By election from and by House members",
+          "House members choose one of their own to preside. This differs from the lieutenant governor, who is elected statewide and presides over the Senate.",
+          "Source clarification: Texas Legislative Directory: https://legdir.capitol.texas.gov/about.aspx",
+          "Source: Uploaded POLS review, page 6."
+        ],
+        "text": "C. By election from and by House members\n\nHouse members choose one of their own to preside. This differs from the lieutenant governor, who is elected statewide and presides over the Senate.\n\nSource clarification: Texas Legislative Directory: https://legdir.capitol.texas.gov/about.aspx\n\nSource: Uploaded POLS review, page 6."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-21",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "PDF review · Poll taxes versus white primaries",
+      "kind": "mcq",
+      "body": [
+        "Which Jim Crow-era device imposed a financial barrier to voting and was prohibited in federal elections by the 24th Amendment?"
+      ],
+      "text": "Which Jim Crow-era device imposed a financial barrier to voting and was prohibited in federal elections by the 24th Amendment?",
+      "choices": [
+        "Poll taxes",
+        "White primaries",
+        "Open primaries",
+        "Strict photo identification requirements"
+      ],
+      "correct": [
+        0
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "A. Poll taxes",
+          "The 24th Amendment addresses poll taxes in federal elections. A white primary excluded voters based on race through party nomination rules; it is a different mechanism.",
+          "Source clarification: The PDF visually marks white primary, but its stem describes poll taxes. This answer corrects that mismatch. U.S. government overview: https://www.usa.gov/voting-rights",
+          "Source: Uploaded POLS review, page 7."
+        ],
+        "text": "A. Poll taxes\n\nThe 24th Amendment addresses poll taxes in federal elections. A white primary excluded voters based on race through party nomination rules; it is a different mechanism.\n\nSource clarification: The PDF visually marks white primary, but its stem describes poll taxes. This answer corrects that mismatch. U.S. government overview: https://www.usa.gov/voting-rights\n\nSource: Uploaded POLS review, page 7."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-22",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "PDF review · Age and turnout",
+      "kind": "mcq",
+      "body": [
+        "Among the groups listed, which generally has the highest turnout rate in U.S. elections?"
+      ],
+      "text": "Among the groups listed, which generally has the highest turnout rate in U.S. elections?",
+      "choices": [
+        "Young adults ages 18–24",
+        "Senior citizens",
+        "Low-income individuals as a category",
+        "Adults without college education as a category"
+      ],
+      "correct": [
+        1
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "B. Senior citizens",
+          "Older adults generally vote at higher rates than younger adults. This is a population-level tendency, not a guarantee about every election or individual.",
+          "Source: Uploaded POLS review, page 7."
+        ],
+        "text": "B. Senior citizens\n\nOlder adults generally vote at higher rates than younger adults. This is a population-level tendency, not a guarantee about every election or individual.\n\nSource: Uploaded POLS review, page 7."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-23",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "PDF review · Nomination elections",
+      "kind": "mcq",
+      "body": [
+        "Elections in which political parties choose nominees for the general election are called ________."
+      ],
+      "text": "Elections in which political parties choose nominees for the general election are called ________.",
+      "choices": [
+        "general elections",
+        "special elections",
+        "primaries",
+        "referendums"
+      ],
+      "correct": [
+        2
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "C. primaries",
+          "Primaries select party nominees. General elections choose officeholders, and referendums ask voters to approve or reject a measure.",
+          "Source: Uploaded POLS review, page 7."
+        ],
+        "text": "C. primaries\n\nPrimaries select party nominees. General elections choose officeholders, and referendums ask voters to approve or reject a measure.\n\nSource: Uploaded POLS review, page 7."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-24",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "PDF review · Women's suffrage",
+      "kind": "mcq",
+      "body": [
+        "Which constitutional amendment, ratified in 1920, prohibited denying the right to vote on the basis of sex?"
+      ],
+      "text": "Which constitutional amendment, ratified in 1920, prohibited denying the right to vote on the basis of sex?",
+      "choices": [
+        "Fifteenth Amendment",
+        "Board of Elections Act",
+        "Twenty-Sixth Amendment",
+        "Nineteenth Amendment"
+      ],
+      "correct": [
+        3
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "D. Nineteenth Amendment",
+          "The 19th Amendment prohibited sex-based denial of voting rights. Other discriminatory barriers still prevented many women from voting in practice.",
+          "Source clarification: National Archives: https://www.archives.gov/milestone-documents/19th-amendment",
+          "Source: Uploaded POLS review, page 7."
+        ],
+        "text": "D. Nineteenth Amendment\n\nThe 19th Amendment prohibited sex-based denial of voting rights. Other discriminatory barriers still prevented many women from voting in practice.\n\nSource clarification: National Archives: https://www.archives.gov/milestone-documents/19th-amendment\n\nSource: Uploaded POLS review, page 7."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-25",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "PDF review · Federal poll-tax prohibition",
+      "kind": "mcq",
+      "body": [
+        "Which constitutional amendment prohibited poll taxes in federal elections?"
+      ],
+      "text": "Which constitutional amendment prohibited poll taxes in federal elections?",
+      "choices": [
+        "Nineteenth Amendment",
+        "Twenty-Fourth Amendment",
+        "Twenty-Second Amendment",
+        "Twenty-Sixth Amendment"
+      ],
+      "correct": [
+        1
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "B. Twenty-Fourth Amendment",
+          "The 24th Amendment barred poll taxes in federal elections. Harper v. Virginia Board of Elections later invalidated state-election poll taxes under equal protection.",
+          "Source clarification: U.S. government overview: https://www.usa.gov/voting-rights",
+          "Source: Uploaded POLS review, page 8."
+        ],
+        "text": "B. Twenty-Fourth Amendment\n\nThe 24th Amendment barred poll taxes in federal elections. Harper v. Virginia Board of Elections later invalidated state-election poll taxes under equal protection.\n\nSource clarification: U.S. government overview: https://www.usa.gov/voting-rights\n\nSource: Uploaded POLS review, page 8."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-26",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "PDF review · Primary versus general election",
+      "kind": "mcq",
+      "body": [
+        "Which type of election lets voters select candidates to represent political parties in a later general election?"
+      ],
+      "text": "Which type of election lets voters select candidates to represent political parties in a later general election?",
+      "choices": [
+        "General election",
+        "Runoff election in every case",
+        "Initiative election",
+        "Primary election"
+      ],
+      "correct": [
+        3
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "D. Primary election",
+          "A primary selects a party nominee. A runoff primary may be a second step when the applicable rules require a majority and no candidate reaches it. This deliberately repeats the nomination distinction in another format, as the PDF does.",
+          "Source: Uploaded POLS review, page 8."
+        ],
+        "text": "D. Primary election\n\nA primary selects a party nominee. A runoff primary may be a second step when the applicable rules require a majority and no candidate reaches it. This deliberately repeats the nomination distinction in another format, as the PDF does.\n\nSource: Uploaded POLS review, page 8."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-27",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "PDF review · Crossover voting",
+      "kind": "mcq",
+      "body": [
+        "A voter normally associated with one party participates in another party's primary, where the rules permit it. This is ________."
+      ],
+      "text": "A voter normally associated with one party participates in another party's primary, where the rules permit it. This is ________.",
+      "choices": [
+        "ticket-splitting",
+        "gerrymandering",
+        "crossover voting",
+        "straight-ticket voting"
+      ],
+      "correct": [
+        2
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "C. crossover voting",
+          "Crossover voting concerns participation in another party's primary. Ticket-splitting concerns choosing different parties for different offices on the same general-election ballot.",
+          "Source: Uploaded POLS review, page 8."
+        ],
+        "text": "C. crossover voting\n\nCrossover voting concerns participation in another party's primary. Ticket-splitting concerns choosing different parties for different offices on the same general-election ballot.\n\nSource: Uploaded POLS review, page 8."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-28",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "PDF review · Off-year election rationale",
+      "kind": "mcq",
+      "body": [
+        "One argument for holding state and local elections in non-presidential election years is that it ________."
+      ],
+      "text": "One argument for holding state and local elections in non-presidential election years is that it ________.",
+      "choices": [
+        "guarantees higher turnout",
+        "allows voters to focus more closely on state and local issues",
+        "necessarily reduces municipal election costs",
+        "eliminates incumbents' advantages"
+      ],
+      "correct": [
+        1
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "B. allows voters to focus more closely on state and local issues",
+          "Separating election timing can reduce competition for attention from presidential campaigns. This rationale does not mean that turnout necessarily rises; off-year contests often have lower turnout.",
+          "Source: Uploaded POLS review, page 9."
+        ],
+        "text": "B. allows voters to focus more closely on state and local issues\n\nSeparating election timing can reduce competition for attention from presidential campaigns. This rationale does not mean that turnout necessarily rises; off-year contests often have lower turnout.\n\nSource: Uploaded POLS review, page 9."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-29",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "PDF review · Education, income, and turnout",
+      "kind": "mcq",
+      "body": [
+        "All else equal, voter turnout tends to be lower in populations with ________."
+      ],
+      "text": "All else equal, voter turnout tends to be lower in populations with ________.",
+      "choices": [
+        "higher educational attainment",
+        "presidential-election timing",
+        "unusually competitive races",
+        "lower educational attainment and lower income"
+      ],
+      "correct": [
+        3
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "D. lower educational attainment and lower income",
+          "Education and income are associated with resources and participation. This is a general tendency; registration rules, competitiveness, age, and other factors also influence actual turnout.",
+          "Source: Uploaded POLS review, page 9."
+        ],
+        "text": "D. lower educational attainment and lower income\n\nEducation and income are associated with resources and participation. This is a general tendency; registration rules, competitiveness, age, and other factors also influence actual turnout.\n\nSource: Uploaded POLS review, page 9."
+      }
+    },
+    {
+      "id": "pols-exam2-pdf-30",
+      "review": "pols-exam-2",
+      "section": "pols-voting",
+      "title": "PDF review · Runoff condition",
+      "kind": "mcq",
+      "body": [
+        "In a primary requiring a majority, the leading candidate wins only 43% and no candidate exceeds 50%. The top two then compete in a ________."
+      ],
+      "text": "In a primary requiring a majority, the leading candidate wins only 43% and no candidate exceeds 50%. The top two then compete in a ________.",
+      "choices": [
+        "runoff primary",
+        "blanket primary",
+        "crossover election",
+        "plurality primary"
+      ],
+      "correct": [
+        0
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "practiceSet": "pols-pdf-nov04",
+      "choiceVersion": "pols-pdf-nov04-v1",
+      "answer": {
+        "blocks": [
+          "A. runoff primary",
+          "A plurality lead alone does not satisfy a majority requirement. In a majority-rule primary, a runoff determines the nominee when no one wins a majority.",
+          "Source clarification: The PDF says a plurality winner automatically triggers a runoff. A runoff depends on the applicable majority requirement and failure to reach it. Texas Secretary of State: https://www.sos.state.tx.us/elections/forms/county-chair-handbook.pdf",
+          "Source: Uploaded POLS review, page 9."
+        ],
+        "text": "A. runoff primary\n\nA plurality lead alone does not satisfy a majority requirement. In a majority-rule primary, a runoff determines the nominee when no one wins a majority.\n\nSource clarification: The PDF says a plurality winner automatically triggers a runoff. A runoff depends on the applicable majority requirement and failure to reach it. Texas Secretary of State: https://www.sos.state.tx.us/elections/forms/county-chair-handbook.pdf\n\nSource: Uploaded POLS review, page 9."
+      }
     }
   ],
   "guides": [
@@ -20586,4 +21628,3 @@
     "professor": 24
   }
 }
-

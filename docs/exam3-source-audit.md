@@ -1,0 +1,5 @@
+Exam 3 rebuild
+
+Imported question statements are transcribed/adapted from WIR 7, WIR 8, Quiz 7A, Quiz 8B, Exam 3 Review, and Practice Exam 3. Drawing requests are replaced by bounds/identification. Some source MCQs are presented as setup FRQs; original select-all Practice Q11 becomes a two-part setup item. The ellipse in Practice Q5 uses its intended disk inequality, and cone sides are explicit. Source WIR 8 Q10b has a factor-of-two error in its printed numerical answer: corrected to 128*pi*(2-sqrt(3))/5. Review bounds typos are corrected. Exam 2 is calibration only, not imported as Chapter 15 material. No student names, grades, IDs, handwriting, or original PDFs are published.
+
+New review: 114 questions, 49 single-answer five-choice MCQs and 65 multipart FRQs. Paired practice across seven main concept families per section, plus six-order setups, coordinate surfaces/conversions, forward/inverse Jacobians, improper Gaussian integrals, and a shifted sphere cut by a plane. Sixteen original figures. All answer panels and the full Chapter 15 key contain final answers only.

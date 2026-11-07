@@ -31,7 +31,9 @@ Validation: `node scripts/validate-chemistry.cjs` checks counts, explanations, n
 
 GitHub Pages: https://bigunicorn999999.github.io/website-question-bank/
 
-The deployable static site lives at the repository root. Open `?review=chapter15` for nine detailed Chapter 15 guides and 57 original practice problems across 15.1–15.9, including 12 illustrated additions with worked solutions and eight harder triple-integral applications. A further 18 harder challenges add three questions per unit in 15.3–15.8, each with worked solutions; their 138 math expressions and 23 numerical checks were validated. Search for “Harder challenge” on the Questions tab to find them. Subject folders provide unit navigation for Calculus, Chemistry, Engineering, and Daily Integrals. `?review=chapter15&unit=15.8` opens a particular unit. Chemistry and Engineering cards include a Copy button that preserves question text, code, choices, and figure links without copying answers or personal drafts.
+The deployable static site lives at the repository root. Open `?review=chapter15` for the Exam 3 bank: **114 original questions plus 72 source-adapted questions**, covering 15.1–15.3 and 15.6–15.9. The original review has 49 five-choice single-answer MCQs and 65 multipart FRQs, with 16 original region/cross-section figures. Source badges identify quizzes, WIR sessions, review, and practice exam. Each problem has an answer-only reveal; the Answer key tab collects the final answers. The nine existing Chapter 15 guides remain available. See [the source audit](docs/exam3-source-audit.md). Other subjects are unchanged.
+
+Subject folders provide unit navigation. `?review=chapter15&unit=15.8` opens a particular unit. Chemistry and Engineering cards retain their Copy buttons.
 
 The October 22 update carries forward all 301 questions from the newer study library and adds 27 Chapter 15 questions. Existing question IDs remain stable. Progress, bookmarks, choices, and Engineering drafts are browser-local and remain exportable/importable. To transfer progress from the previous Sites domain, export there and import on this GitHub Pages domain.
 

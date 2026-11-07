@@ -5487,1005 +5487,4098 @@
       }
     },
     {
-      "id": "15.1.1",
+      "id": "E3-001",
       "review": "chapter15",
       "section": "15.1",
-      "title": "A rectangle and an exponential",
+      "title": "Question 1a",
       "body": [
-        "Evaluate \\(\\iint_R xe^y\\,dA\\), where \\(R=[0,2]\\times[0,\\ln3]\\). Give an iterated integral in each order."
+        "Evaluate \\(\\int_0^1\\int_0^1 \\frac{ye^{y^2}}{1+x^2}\\,dy\\,dx\\)."
       ],
       "answer": {
         "blocks": [
-          "\\(\\int_0^2\\int_0^{\\ln3}xe^y\\,dy\\,dx=\\int_0^{\\ln3}\\int_0^2xe^y\\,dx\\,dy=4\\)."
+          "\\(\\pi(e-1)/8\\)."
         ]
-      }
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "1a",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.1.2",
+      "id": "E3-002",
       "review": "chapter15",
       "section": "15.1",
-      "title": "Average value versus total",
+      "title": "Question 1b",
       "body": [
-        "Let \\(f(x,y)=x^2+2y\\) on \\(R=[-1,1]\\times[0,3]\\). Find (a) its integral over R and (b) its average value. (c) Find the integral of \\(x^3+xy\\) over the same region."
+        "Evaluate \\(\\int_0^1\\int_0^{\\pi/2}x\\sin(xy)\\,dx\\,dy\\)."
       ],
       "answer": {
         "blocks": [
-          "(a) \\(20\\). (b) \\(10/3\\). (c) \\(0\\)."
+          "\\(\\pi/2-1\\)."
         ]
-      }
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "1b",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.1.3",
+      "id": "E3-003",
       "review": "chapter15",
       "section": "15.1",
-      "title": "Midpoints and accuracy",
+      "title": "Question 1c",
       "body": [
-        "Approximate \\(\\iint_{[0,2]\\times[0,2]}(x^2+y^2)\\,dA\\) using four equal square subrectangles and their midpoints. Then find the exact value and the signed error “approximation minus exact.”"
+        "Evaluate \\(\\int_{-5}^5\\int_0^4 \\frac{x\\cos x}{\\sqrt{1+y^2}}\\,dy\\,dx\\)."
       ],
       "answer": {
         "blocks": [
-          "Midpoint approximation: \\(10\\). Exact value: \\(32/3\\). Signed error: \\(-2/3\\), an underestimate."
+          "\\(0\\)."
         ]
-      }
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "1c",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.2.1",
+      "id": "E3-004",
+      "review": "chapter15",
+      "section": "15.1",
+      "title": "Question 1d",
+      "body": [
+        "Evaluate \\(\\int_{-2}^2\\int_{-2}^2xe^{x^2+y^2}\\,dy\\,dx\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(0\\)."
+        ]
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "1d",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-005",
       "review": "chapter15",
       "section": "15.2",
-      "title": "An order that makes integration possible",
+      "title": "Question 2a",
       "body": [
-        "Reverse the order of \\(\\int_0^1\\int_x^1 e^{y^2}\\,dy\\,dx\\), then evaluate it."
+        "Reverse the order and evaluate \\(\\int_0^{16}\\int_{\\sqrt y}^4\\sqrt{x^3+3}\\,dx\\,dy\\)."
       ],
       "answer": {
         "blocks": [
-          "\\(\\int_0^1\\int_0^y e^{y^2}\\,dx\\,dy=(e-1)/2\\)."
+          "\\(\\int_0^4\\int_0^{x^2}\\sqrt{x^3+3}\\,dy\\,dx=\\frac29(67\\sqrt{67}-3\\sqrt3)\\)."
         ]
-      }
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "2a",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.2.2",
+      "id": "E3-006",
       "review": "chapter15",
       "section": "15.2",
-      "title": "A sloping ceiling",
+      "title": "Question 2b",
       "body": [
-        "Find the volume between \\(z=x+y\\) and \\(z=4\\) above the triangle \\(x\\ge0\\), \\(y\\ge0\\), \\(x+y\\le2\\). Give a double integral and its value."
+        "Reverse the order and evaluate \\(\\int_0^8\\int_{x^{1/3}}^2e^{y^4}\\,dy\\,dx\\)."
       ],
       "answer": {
         "blocks": [
-          "\\(\\int_0^2\\int_0^{2-x}(4-x-y)\\,dy\\,dx=16/3\\)."
+          "\\(\\int_0^2\\int_0^{y^3}e^{y^4}\\,dx\\,dy=(e^{16}-1)/4\\)."
         ]
-      }
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "2b",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.2.3",
+      "id": "E3-007",
       "review": "chapter15",
       "section": "15.2",
-      "title": "One region, two descriptions",
+      "title": "Question 2c",
       "body": [
-        "Let D have vertices \\((0,0),(2,0),(1,1)\\). Write \\(\\iint_D f(x,y)\\,dA\\) in each order, splitting if needed. Also find the area of D."
+        "Reverse the order and evaluate \\(\\int_0^1\\int_{\\arcsin y}^{\\pi/2}\\cos x\\sqrt{1+\\cos^2x}\\,dx\\,dy\\)."
       ],
       "answer": {
         "blocks": [
-          "\\(\\int_0^1\\int_0^x f\\,dy\\,dx+\\int_1^2\\int_0^{2-x}f\\,dy\\,dx=\\int_0^1\\int_y^{2-y}f\\,dx\\,dy\\). Area: \\(1\\)."
+          "\\(\\int_0^{\\pi/2}\\int_0^{\\sin x}\\cos x\\sqrt{1+\\cos^2x}\\,dy\\,dx=(2\\sqrt2-1)/3\\)."
         ]
-      }
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "2c",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.3.1",
-      "review": "chapter15",
-      "section": "15.3",
-      "title": "Annular accumulation",
-      "body": [
-        "Use polar coordinates to evaluate \\(\\iint_D(x^2+y^2)\\,dA\\), where \\(1\\le x^2+y^2\\le4\\). Also find the average value of \\(x^2+y^2\\) on D."
-      ],
-      "answer": {
-        "blocks": [
-          "Integral: \\(\\int_0^{2\\pi}\\int_1^2r^3\\,dr\\,d\\theta=15\\pi/2\\). Average: \\(5/2\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.3.2",
-      "review": "chapter15",
-      "section": "15.3",
-      "title": "A disk away from the origin",
-      "body": [
-        "Let \\(D=\\{(x,y):x^2+y^2\\le2x\\}\\). Give polar bounds and evaluate \\(\\iint_Dx\\,dA\\)."
-      ],
-      "answer": {
-        "blocks": [
-          "\\(-\\pi/2\\le\\theta\\le\\pi/2\\), \\(0\\le r\\le2\\cos\\theta\\). Integral: \\(\\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta}r^2\\cos\\theta\\,dr\\,d\\theta=\\pi\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.3.3",
-      "review": "chapter15",
-      "section": "15.3",
-      "title": "Average distance in a quarter disk",
-      "body": [
-        "Find the average distance from the origin of points in the first-quadrant quarter disk \\(x^2+y^2\\le4\\), using a uniform area average."
-      ],
-      "answer": {
-        "blocks": [
-          "\\(\\dfrac{1}{\\pi}\\int_0^{\\pi/2}\\int_0^2r^2\\,dr\\,d\\theta=4/3\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.4.1",
-      "review": "chapter15",
-      "section": "15.4",
-      "title": "A nonuniform triangular lamina",
-      "body": [
-        "A plate occupies \\(x\\ge0,y\\ge0,x+y\\le2\\) and has density \\(\\delta(x,y)=x\\). Find its mass and center of mass."
-      ],
-      "answer": {
-        "blocks": [
-          "\\(m=4/3\\), \\((\\bar x,\\bar y)=(1,1/2)\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.4.2",
-      "review": "chapter15",
-      "section": "15.4",
-      "title": "Axis names matter",
-      "body": [
-        "A rectangular plate \\(0\\le x\\le2,0\\le y\\le1\\) has constant density 3. Find its mass, \\(I_x\\), \\(I_y\\), and its radius of gyration about the x-axis."
-      ],
-      "answer": {
-        "blocks": [
-          "\\(m=6\\), \\(I_x=2\\), \\(I_y=8\\), \\(R_x=1/\\sqrt3\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.4.3",
-      "review": "chapter15",
-      "section": "15.4",
-      "title": "Probability on a curved event region",
-      "body": [
-        "Textbook extension: A joint probability density is \\(p(x,y)=c(x+y)\\) on \\([0,1]\\times[0,1]\\) and zero elsewhere. Find c and \\(P(Y\\ge X^2)\\)."
-      ],
-      "answer": {
-        "blocks": [
-          "\\(c=1\\). \\(P(Y\\ge X^2)=13/20\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.5.1",
-      "review": "chapter15",
-      "section": "15.5",
-      "title": "Tilted area",
-      "body": [
-        "Find the area of the part of \\(z=2x-y+3\\) above the triangle \\(x\\ge0,y\\ge0,x+y\\le2\\)."
-      ],
-      "answer": {
-        "blocks": [
-          "\\(2\\sqrt6\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.5.2",
-      "review": "chapter15",
-      "section": "15.5",
-      "title": "A paraboloid patch",
-      "body": [
-        "Find the curved surface area of \\(z=(x^2+y^2)/2\\) for \\(x^2+y^2\\le4\\). Do not include a flat cap."
-      ],
-      "answer": {
-        "blocks": [
-          "\\(\\int_0^{2\\pi}\\int_0^2\\sqrt{1+r^2}\\,r\\,dr\\,d\\theta=\\frac{2\\pi}{3}(5\\sqrt5-1)\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.5.3",
-      "review": "chapter15",
-      "section": "15.5",
-      "title": "Choose a graph carefully",
-      "body": [
-        "Find the curved area of the upper half of the cylinder \\(x^2+z^2=4\\), between \\(y=0\\) and \\(y=3\\). Exclude the end caps. Give the surface-area integral using \\(z=f(x,y)\\); interpret endpoint singularities as improper limits."
-      ],
-      "answer": {
-        "blocks": [
-          "\\(\\int_0^3\\int_{-2}^{2}\\frac{2}{\\sqrt{4-x^2}}\\,dx\\,dy=6\\pi\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.6.1",
-      "review": "chapter15",
-      "section": "15.6",
-      "title": "A tetrahedron and a weighted total",
-      "body": [
-        "Let \\(E=\\{x,y,z\\ge0:x+y+z\\le2\\}\\). Find (a) its volume, (b) \\(\\iiint_Ez\\,dV\\), and (c) its centroid."
-      ],
-      "answer": {
-        "blocks": [
-          "(a) \\(4/3\\). (b) \\(2/3\\). (c) \\((1/2,1/2,1/2)\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.6.2",
-      "review": "chapter15",
-      "section": "15.6",
-      "title": "Reorder nested inequalities",
-      "body": [
-        "The solid E satisfies \\(0\\le z\\le y\\le x\\le1\\). Write its volume integral in the orders \\(dz\\,dy\\,dx\\) and \\(dx\\,dy\\,dz\\), then evaluate."
-      ],
-      "answer": {
-        "blocks": [
-          "\\(\\int_0^1\\int_0^x\\int_0^y1\\,dz\\,dy\\,dx=\\int_0^1\\int_z^1\\int_y^1 1\\,dx\\,dy\\,dz=1/6\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.6.3",
-      "review": "chapter15",
-      "section": "15.6",
-      "title": "Density changes the balance point",
-      "body": [
-        "A box \\(0\\le x\\le2,0\\le y\\le1,0\\le z\\le3\\) has volume density \\(\\delta=z\\). Find its mass and center of mass."
-      ],
-      "answer": {
-        "blocks": [
-          "\\(m=9\\). \\((\\bar x,\\bar y,\\bar z)=(1,1/2,2)\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.7.1",
-      "review": "chapter15",
-      "section": "15.7",
-      "title": "Paraboloid and plane",
-      "body": [
-        "Use cylindrical coordinates to find the volume above \\(z=x^2+y^2\\) and below \\(z=4\\). Include the complete bounds."
-      ],
-      "answer": {
-        "blocks": [
-          "\\(\\int_0^{2\\pi}\\int_0^2\\int_{r^2}^{4}r\\,dz\\,dr\\,d\\theta=8\\pi\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.7.2",
-      "review": "chapter15",
-      "section": "15.7",
-      "title": "Resistance to rotation",
-      "body": [
-        "A solid cylinder \\(x^2+y^2\\le4,0\\le z\\le3\\) has density 1. Find its moment of inertia about the z-axis, using a triple integral."
-      ],
-      "answer": {
-        "blocks": [
-          "\\(I_z=\\int_0^{2\\pi}\\int_0^2\\int_0^3r^3\\,dz\\,dr\\,d\\theta=24\\pi\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.7.3",
-      "review": "chapter15",
-      "section": "15.7",
-      "title": "A sphere with a cylindrical hole",
-      "body": [
-        "Find the volume inside \\(x^2+y^2+z^2\\le4\\) and outside \\(x^2+y^2<1\\). Give cylindrical bounds and the volume."
-      ],
-      "answer": {
-        "blocks": [
-          "\\(\\int_0^{2\\pi}\\int_1^2\\int_{-\\sqrt{4-r^2}}^{\\sqrt{4-r^2}}r\\,dz\\,dr\\,d\\theta=4\\pi\\sqrt3\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.8.1",
-      "review": "chapter15",
-      "section": "15.8",
-      "title": "Inside a sphere, above a cone",
-      "body": [
-        "Use spherical coordinates to find the volume inside \\(x^2+y^2+z^2\\le9\\) and above \\(z=\\sqrt{x^2+y^2}\\). Phi is measured down from the positive z-axis."
-      ],
-      "answer": {
-        "blocks": [
-          "\\(\\int_0^{2\\pi}\\int_0^{\\pi/4}\\int_0^3\\rho^2\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta=18\\pi(1-1/\\sqrt2)\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.8.2",
-      "review": "chapter15",
-      "section": "15.8",
-      "title": "Radial density",
-      "body": [
-        "The ball \\(x^2+y^2+z^2\\le4\\) has density equal to distance from the origin. Find its mass and center of mass."
-      ],
-      "answer": {
-        "blocks": [
-          "\\(m=\\int_0^{2\\pi}\\int_0^\\pi\\int_0^2\\rho^3\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta=16\\pi\\). Center of mass: \\((0,0,0)\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.8.3",
-      "review": "chapter15",
-      "section": "15.8",
-      "title": "A sphere not centered at the origin",
-      "body": [
-        "Write a spherical-coordinate integral for the volume of \\(x^2+y^2+z^2\\le2z\\), then evaluate. Identify the sphere's center and radius."
-      ],
-      "answer": {
-        "blocks": [
-          "\\(\\int_0^{2\\pi}\\int_0^{\\pi/2}\\int_0^{2\\cos\\phi}\\rho^2\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta=4\\pi/3\\). Center \\((0,0,1)\\), radius \\(1\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.9.1",
-      "review": "chapter15",
-      "section": "15.9",
-      "title": "Straighten a parallelogram",
-      "body": [
-        "Let D be defined by \\(0\\le x+y\\le2\\) and \\(0\\le x-y\\le1\\). Use \\(u=x+y,v=x-y\\) to evaluate \\(\\iint_D(x^2-y^2)\\,dA\\). State the absolute Jacobian."
-      ],
-      "answer": {
-        "blocks": [
-          "\\(|\\partial(x,y)/\\partial(u,v)|=1/2\\). Integral: \\(\\int_0^2\\int_0^1\\frac{uv}{2}\\,dv\\,du=1/2\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.9.2",
-      "review": "chapter15",
-      "section": "15.9",
-      "title": "Scale an ellipse",
-      "body": [
-        "For \\(D=\\{x^2/9+y^2/4\\le1\\}\\), use \\(x=3r\\cos\\theta,y=2r\\sin\\theta\\) to evaluate \\(\\iint_D(x^2/9+y^2/4)\\,dA\\). Give the transformed area element."
-      ],
-      "answer": {
-        "blocks": [
-          "\\(dA=6r\\,dr\\,d\\theta\\). Integral: \\(\\int_0^{2\\pi}\\int_0^1 6r^3\\,dr\\,d\\theta=3\\pi\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.9.3",
-      "review": "chapter15",
-      "section": "15.9",
-      "title": "Scale an ellipsoid",
-      "body": [
-        "Let \\(E=\\{x^2/4+y^2/9+z^2/16\\le1\\}\\). Use \\(x=2u,y=3v,z=4w\\) to find (a) its volume and (b) the average value of \\(x^2\\) on E. State the absolute Jacobian."
-      ],
-      "answer": {
-        "blocks": [
-          "Absolute Jacobian: \\(24\\). (a) \\(32\\pi\\). (b) \\(4/5\\)."
-        ]
-      }
-    },
-    {
-      "id": "15.2.4",
+      "id": "E3-008",
       "review": "chapter15",
       "section": "15.2",
-      "title": "Read a curved region in both orders",
+      "title": "Question 2d",
       "body": [
-        "Let D lie between \\(y=x^2\\) and \\(y=x\\) in the first quadrant. Use the diagram to write both orders of integration and evaluate \\(\\iint_D(x+y)\\,dA\\)."
+        "Reverse the order and evaluate \\(\\int_0^4\\int_{\\sqrt x}^2\\frac{y}{y^4+1}\\,dy\\,dx\\)."
       ],
-      "figure": "figures/ch15-15-2-4.svg",
-      "figureAlt": "xy projection. x; y; y = x; y = x²",
-      "practiceSet": "illustrated-challenge",
       "answer": {
         "blocks": [
-          "The intersections are \\((0,0)\\) and \\((1,1)\\). Vertical slices give \\(0\\le x\\le1,\\ x^2\\le y\\le x\\); horizontal slices give \\(0\\le y\\le1,\\ y\\le x\\le\\sqrt y\\).",
-          "\\(\\int_0^1\\int_{x^2}^x(x+y)\\,dy\\,dx=\\int_0^1\\int_y^{\\sqrt y}(x+y)\\,dx\\,dy=3/20\\)."
+          "\\(\\int_0^2\\int_0^{y^2}\\frac{y}{y^4+1}\\,dx\\,dy=\\ln(17)/4\\)."
         ]
-      }
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "2d",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.3.4",
+      "id": "E3-009",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Question 3a",
+      "body": [
+        "Give area integrals in both orders for the region bounded by \\(x=y^2\\) and \\(y=x-2\\). Do not evaluate."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_{-1}^2\\int_{y^2}^{y+2}1\\,dx\\,dy\\); \\(\\int_0^1\\int_{-\\sqrt x}^{\\sqrt x}1\\,dy\\,dx+\\int_1^4\\int_{x-2}^{\\sqrt x}1\\,dy\\,dx\\)."
+        ]
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "3a",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-010",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Question 3b",
+      "body": [
+        "Give area integrals in both orders for the first-quadrant region between \\(y=\\sin x\\) and \\(y=2x/\\pi\\), from \\(x=0\\) to \\(x=\\pi/2\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_0^{\\pi/2}\\int_{2x/\\pi}^{\\sin x}1\\,dy\\,dx\\); \\(\\int_0^1\\int_{\\arcsin y}^{\\pi y/2}1\\,dx\\,dy\\)."
+        ]
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "3b",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-011",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Question 3c",
+      "body": [
+        "Give area integrals in both orders for the region bounded by \\(y=\\ln x\\), \\(y=0\\), and \\(x=2\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_1^2\\int_0^{\\ln x}1\\,dy\\,dx\\); \\(\\int_0^{\\ln2}\\int_{e^y}^2 1\\,dx\\,dy\\)."
+        ]
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "3c",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-012",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Question 4",
+      "body": [
+        "Set up the volume under \\(z=1+x^2y^2\\) above the first-quadrant region enclosed by \\(x=y^2,y=0,x=4\\). Do not evaluate."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_0^2\\int_{y^2}^4(1+x^2y^2)\\,dx\\,dy\\)."
+        ]
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "4",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-013",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Question 5",
+      "body": [
+        "Find the volume under \\(z=6-x^2-y^2\\) and above \\(z=0\\) over \\(x,y\\ge0,x+y\\le2\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(28/3\\)."
+        ]
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "5",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-014",
       "review": "chapter15",
       "section": "15.3",
-      "title": "Polar coordinates on a shifted disk",
+      "title": "Question 6a-c",
       "body": [
-        "D is the disk \\((x-1)^2+y^2\\le1\\). Evaluate \\(\\iint_D(x^2+y^2)\\,dA\\) in polar coordinates."
+        "Give polar bounds for (a) the unit disk in the first quadrant; (b) \\(1\\le x^2+y^2\\le4\\) between the positive x-axis and \\(y=\\sqrt3x\\); (c) the same annulus between \\(y=x\\) and the positive y-axis."
       ],
-      "figure": "figures/ch15-15-3-4.svg",
-      "figureAlt": "xy projection (upper half; reflect across x-axis). x; y; (x − 1)² + y² = 1; 1; 2",
-      "practiceSet": "illustrated-challenge",
       "answer": {
         "blocks": [
-          "The circle becomes \\(r=2\\cos\\theta\\), so \\(-\\pi/2\\le\\theta\\le\\pi/2\\) and \\(0\\le r\\le2\\cos\\theta\\). Remember \\(dA=r\\,dr\\,d\\theta\\).",
-          "\\(\\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta}r^3\\,dr\\,d\\theta=4\\int_{-\\pi/2}^{\\pi/2}\\cos^4\\theta\\,d\\theta=3\\pi/2\\)."
+          "(a) \\(0\\le r\\le1,0\\le\\theta\\le\\pi/2\\). (b) \\(1\\le r\\le2,0\\le\\theta\\le\\pi/3\\). (c) \\(1\\le r\\le2,\\pi/4\\le\\theta\\le\\pi/2\\)."
         ]
-      }
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "6a-c",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.4.4",
+      "id": "E3-015",
       "review": "chapter15",
-      "section": "15.4",
-      "title": "A triangular lamina with variable density",
+      "section": "15.3",
+      "title": "Question 6d-e",
       "body": [
-        "A lamina occupies \\(x\\ge0,y\\ge0,x+y\\le2\\) with density \\(\\delta=x+y\\). Find its mass and center of mass."
+        "For \\(a,b>0\\), give polar bounds inside (a) the circle centered at \\((a,0)\\) with radius a; (b) the circle centered at \\((0,b)\\) with radius b."
       ],
-      "figure": "figures/ch15-15-4-4.svg",
-      "figureAlt": "xy projection. x; y; x + y = 2",
-      "practiceSet": "illustrated-challenge",
       "answer": {
         "blocks": [
-          "\\(m=\\int_0^2\\int_0^{2-x}(x+y)\\,dy\\,dx=8/3\\). Symmetry about \\(y=x\\) gives \\(\\bar x=\\bar y\\).",
-          "\\(M_y=\\int_0^2\\int_0^{2-x}x(x+y)\\,dy\\,dx=2=M_x\\). Thus \\((\\bar x,\\bar y)=(3/4,3/4)\\)."
+          "(a) \\(-\\pi/2\\le\\theta\\le\\pi/2,0\\le r\\le2a\\cos\\theta\\). (b) \\(0\\le\\theta\\le\\pi,0\\le r\\le2b\\sin\\theta\\)."
         ]
-      }
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "6d-e",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.5.4",
+      "id": "E3-016",
       "review": "chapter15",
-      "section": "15.5",
-      "title": "Surface area of a paraboloid cap",
+      "section": "15.3",
+      "title": "Question 7a-d",
       "body": [
-        "Find the area of \\(z=x^2+y^2\\) above the disk \\(x^2+y^2\\le1\\). Explain why this is not the volume under the surface."
+        "Give polar bounds for the indicated half-disks: (a) \\((x+2)^2+y^2\\le4,y\\ge0\\); (b) the same disk with \\(y\\le0\\); (c) \\(x^2+(y+2)^2\\le4,x\\ge0\\); (d) the same disk with \\(x\\le0\\)."
       ],
-      "figure": "figures/ch15-15-5-4.svg",
-      "figureAlt": "rz cross-section (rotate about z-axis). r; z; z = r²; 1",
-      "practiceSet": "illustrated-challenge",
       "answer": {
         "blocks": [
-          "\\(f_x=2x,f_y=2y\\), so the surface element is \\(\\sqrt{1+4x^2+4y^2}\\,dA\\).",
-          "\\(A=\\int_0^{2\\pi}\\int_0^1r\\sqrt{1+4r^2}\\,dr\\,d\\theta=\\frac{\\pi}{6}(5\\sqrt5-1)\\). The integrand measures stretched surface area; volume would use height \\(r^2\\)."
+          "All lower radial bounds are zero. (a) \\(r\\le-4\\cos\\theta,\\pi/2\\le\\theta\\le\\pi\\). (b) \\(r\\le-4\\cos\\theta,\\pi\\le\\theta\\le3\\pi/2\\). (c) \\(r\\le-4\\sin\\theta,3\\pi/2\\le\\theta\\le2\\pi\\). (d) \\(r\\le-4\\sin\\theta,\\pi\\le\\theta\\le3\\pi/2\\)."
         ]
-      }
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "7a-d",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.6.4",
+      "id": "E3-017",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Question 8",
+      "body": [
+        "Evaluate \\(\\iint_D e^{-x^2-y^2}\\,dA\\) inside \\(x^2+y^2=16\\), between \\(y=x\\) and the positive y-axis in the first quadrant."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\pi(1-e^{-16})/8\\)."
+        ]
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "8",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-018",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Question 9",
+      "body": [
+        "Convert to polar and evaluate \\(\\int_0^1\\int_{\\sqrt3y}^{\\sqrt{4-y^2}}\\sin(x^2+y^2)\\,dx\\,dy\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_0^{\\pi/6}\\int_0^2 r\\sin(r^2)\\,dr\\,d\\theta=\\pi(1-\\cos4)/12\\)."
+        ]
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "9",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-019",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Question 10a-b",
+      "body": [
+        "Evaluate (a) \\(\\iint_Dx^2\\,dA\\) on \\(1\\le x^2+y^2\\le4,y\\ge0\\); (b) \\(\\iint_Dx^2y\\,dA\\) on the same annulus restricted to the first quadrant."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(15\\pi/8\\). (b) \\(31/15\\)."
+        ]
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "10a-b",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-020",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Question 11",
+      "body": [
+        "Find the area common to the disks \\(x^2+y^2\\le1\\) and \\((x-1/\\sqrt2)^2+y^2\\le1/2\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\((\\pi-1)/2\\)."
+        ]
+      },
+      "source": "WIR Session 7",
+      "sourceQuestion": "11",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-021",
       "review": "chapter15",
       "section": "15.6",
-      "title": "Challenge: weighted tetrahedron",
+      "title": "Question 1",
       "body": [
-        "E is bounded by the coordinate planes and \\(x+2y+3z=6\\). With density \\(\\delta=z\\), find the mass and \\(\\bar z\\)."
+        "Evaluate \\(\\int_0^{\\pi/2}\\int_0^y\\int_0^x\\cos(x+y+z)\\,dz\\,dx\\,dy\\)."
       ],
-      "figure": "figures/ch15-15-6-4.svg",
-      "figureAlt": "xz cross-section at y = 0. x; z; x + 3z = 6",
-      "practiceSet": "illustrated-challenge",
       "answer": {
         "blocks": [
-          "Bounds: \\(0\\le z\\le2,\\ 0\\le y\\le(6-3z)/2,\\ 0\\le x\\le6-2y-3z\\). A horizontal slice has area \\(A(z)=(6-3z)^2/4\\).",
-          "\\(m=\\int_0^2 zA(z)\\,dz=3\\). Also \\(\\iiint_E z^2\\,dV=\\int_0^2 z^2A(z)\\,dz=12/5\\), so \\(\\bar z=(12/5)/3=4/5\\)."
+          "\\(-1/3\\)."
         ]
-      }
+      },
+      "source": "WIR Session 8",
+      "sourceQuestion": "1",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.6.5",
+      "id": "E3-022",
       "review": "chapter15",
       "section": "15.6",
-      "title": "Challenge: put z on the outside",
+      "title": "Question 2",
       "body": [
-        "The solid is \\(0\\le y\\le x\\le1,\\ 0\\le z\\le y^2\\). Rewrite its volume integral in the order \\(dx\\,dy\\,dz\\) and evaluate."
+        "Evaluate \\(\\iiint_E x\\,dV\\), where E is the first-octant solid below \\(4x+2y+z=4\\)."
       ],
-      "figure": "figures/ch15-15-6-5.svg",
-      "figureAlt": "yz projection. y; z; z = y²; 1",
-      "practiceSet": "illustrated-challenge",
       "answer": {
         "blocks": [
-          "The yz projection satisfies \\(0\\le z\\le1,\\ \\sqrt z\\le y\\le1\\). For each point in that projection, \\(y\\le x\\le1\\).",
-          "\\(V=\\int_0^1\\int_{\\sqrt z}^1\\int_y^1 1\\,dx\\,dy\\,dz=1/12\\). Check in the original order: \\(\\int_0^1 y^2(1-y)\\,dy=1/12\\)."
+          "\\(1/3\\)."
         ]
-      }
+      },
+      "source": "WIR Session 8",
+      "sourceQuestion": "2",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.7.4",
+      "id": "E3-023",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Question 3",
+      "body": [
+        "Identify the solid using inequalities and evaluate its volume: \\(\\int_0^1\\int_0^{1-x}\\int_0^{2-2z}1\\,dy\\,dz\\,dx\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(x,y,z\\ge0,x+z\\le1,y+2z\\le2\\); volume \\(2/3\\)."
+        ]
+      },
+      "source": "WIR Session 8",
+      "sourceQuestion": "3",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-024",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Question 4",
+      "body": [
+        "Find the mass with density \\(\\delta=x\\) in the first-octant solid bounded by \\(z=1-y^2,x+z=1,x=0,y=0,z=0\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(1/7\\)."
+        ]
+      },
+      "source": "WIR Session 8",
+      "sourceQuestion": "4",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-025",
       "review": "chapter15",
       "section": "15.7",
-      "title": "Challenge: inertia between two paraboloids",
+      "title": "Question 5a-c",
       "body": [
-        "E lies between \\(z=x^2+y^2\\) and \\(z=8-x^2-y^2\\). For constant density 1, find the volume and moment of inertia \\(I_z=\\iiint_E(x^2+y^2)\\,dV\\)."
+        "Convert to cylindrical coordinates with \\(0\\le\\theta<2\\pi\\): (a) \\((8\\sqrt3,8,-1)\\); (b) \\((-2,2,4)\\); (c) \\((\\sqrt3,-3,0)\\)."
       ],
-      "figure": "figures/ch15-15-7-4.svg",
-      "figureAlt": "rz cross-section (rotate about z-axis). r; z; z = 8 − r²; z = r²; (2, 4)",
-      "practiceSet": "illustrated-challenge",
       "answer": {
         "blocks": [
-          "The surfaces meet at \\(r=2,z=4\\). Bounds: \\(0\\le\\theta\\le2\\pi,0\\le r\\le2,r^2\\le z\\le8-r^2\\).",
-          "\\(V=2\\pi\\int_0^2(8-2r^2)r\\,dr=16\\pi\\).",
-          "\\(I_z=2\\pi\\int_0^2(8-2r^2)r^3\\,dr=64\\pi/3\\). The extra \\(r^2\\) is squared distance to the z-axis."
+          "(a) \\((16,\\pi/6,-1)\\). (b) \\((2\\sqrt2,3\\pi/4,4)\\). (c) \\((2\\sqrt3,5\\pi/3,0)\\)."
         ]
-      }
+      },
+      "source": "WIR Session 8",
+      "sourceQuestion": "5a-c",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.7.5",
+      "id": "E3-026",
       "review": "chapter15",
       "section": "15.7",
-      "title": "Challenge: an offset cylinder with density",
+      "title": "Question 6",
       "body": [
-        "E satisfies \\((x-1)^2+y^2\\le1\\) and \\(0\\le z\\le x^2+y^2\\). Find its mass for density \\(\\delta=z\\)."
+        "Convert to cylindrical and evaluate \\(\\int_0^5\\int_{-\\sqrt{25-y^2}}^{\\sqrt{25-y^2}}\\int_0^{\\sqrt{x^2+y^2}}xz\\,dz\\,dx\\,dy\\)."
       ],
-      "figure": "figures/ch15-15-7-5.svg",
-      "figureAlt": "xy projection (upper half; reflect across x-axis). x; y; r = 2 cos θ",
-      "practiceSet": "illustrated-challenge",
       "answer": {
         "blocks": [
-          "The offset cylinder gives \\(-\\pi/2\\le\\theta\\le\\pi/2,\\ 0\\le r\\le2\\cos\\theta\\). The height is \\(0\\le z\\le r^2\\).",
-          "\\(m=\\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta}\\int_0^{r^2}zr\\,dz\\,dr\\,d\\theta=\\frac{16}{3}\\int_{-\\pi/2}^{\\pi/2}\\cos^6\\theta\\,d\\theta=5\\pi/3\\)."
+          "\\(\\int_0^\\pi\\int_0^5\\int_0^r r^2z\\cos\\theta\\,dz\\,dr\\,d\\theta=0\\)."
         ]
-      }
+      },
+      "source": "WIR Session 8",
+      "sourceQuestion": "6",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.8.4",
+      "id": "E3-027",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Question 7",
+      "body": [
+        "Evaluate \\(\\iiint_E x\\,dV\\) between cylinders \\(x^2+y^2=1,4\\), above \\(z=0\\), below \\(z=x+2\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(15\\pi/4\\)."
+        ]
+      },
+      "source": "WIR Session 8",
+      "sourceQuestion": "7",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-028",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Question 8",
+      "body": [
+        "Find the volume inside \\(x^2+y^2+z^2\\le8\\) on the cone side \\(x\\ge\\sqrt{y^2+z^2}\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(32\\pi(\\sqrt2-1)/3\\)."
+        ]
+      },
+      "source": "WIR Session 8",
+      "sourceQuestion": "8",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-029",
       "review": "chapter15",
       "section": "15.8",
-      "title": "Challenge: spherical shell inside a cone",
+      "title": "Question 9a-c",
       "body": [
-        "E lies between spheres \\(\\rho=1\\) and \\(\\rho=3\\), above the cone \\(z=\\sqrt{x^2+y^2}/\\sqrt3\\). Find its mass if \\(\\delta=\\sqrt{x^2+y^2+z^2}\\)."
+        "Convert to spherical \\((\\rho,\\theta,\\phi)\\), using \\(0\\le\\theta<2\\pi\\): (a) \\((-2\\sqrt3,-2,-4)\\); (b) \\((-3,3,\\sqrt6)\\); (c) \\((-2,0,-2\\sqrt3)\\). Phi is measured down from +z."
       ],
-      "figure": "figures/ch15-15-8-4.svg",
-      "figureAlt": "rz cross-section (rotate about z-axis). r; z; ρ = 3; ρ = 1; φ = π/3",
-      "practiceSet": "illustrated-challenge",
       "answer": {
         "blocks": [
-          "The cone is \\(\\phi=\\pi/3\\). Above it means \\(0\\le\\phi\\le\\pi/3\\). Density is \\(\\rho\\), and \\(dV=\\rho^2\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta\\).",
-          "\\(m=\\int_0^{2\\pi}\\int_0^{\\pi/3}\\int_1^3\\rho^3\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta=20\\pi\\)."
+          "(a) \\((4\\sqrt2,7\\pi/6,3\\pi/4)\\). (b) \\((2\\sqrt6,3\\pi/4,\\pi/3)\\). (c) \\((4,\\pi,5\\pi/6)\\)."
         ]
-      }
+      },
+      "source": "WIR Session 8",
+      "sourceQuestion": "9a-c",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.8.5",
+      "id": "E3-030",
       "review": "chapter15",
       "section": "15.8",
-      "title": "Challenge: inside one sphere, outside another",
+      "title": "Question 10a",
       "body": [
-        "Find the volume inside \\(x^2+y^2+z^2\\le2z\\) and outside \\(x^2+y^2+z^2\\ge1\\). Determine where the radial bounds meet."
+        "Evaluate \\(\\iiint_E(x^2+y^2)\\,dV\\) on \\(x^2+y^2+z^2\\le16,x\\le0,z\\ge0\\) using spherical coordinates."
       ],
-      "figure": "figures/ch15-15-8-5.svg",
-      "figureAlt": "rz cross-section (rotate about z-axis). r; z; ρ = 2 cos φ; ρ = 1",
-      "practiceSet": "illustrated-challenge",
       "answer": {
         "blocks": [
-          "The shifted sphere is \\(\\rho=2\\cos\\phi\\). Since \\(1\\le\\rho\\le2\\cos\\phi\\), the bounds meet at \\(\\phi=\\pi/3\\).",
-          "\\(V=\\int_0^{2\\pi}\\int_0^{\\pi/3}\\int_1^{2\\cos\\phi}\\rho^2\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta=11\\pi/12\\). Integrating to \\(\\pi/2\\) would reverse radial bounds in part of the region."
+          "\\(2048\\pi/15\\)."
         ]
-      }
+      },
+      "source": "WIR Session 8",
+      "sourceQuestion": "10a",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.7.6",
+      "id": "E3-031",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Question 10b",
+      "body": [
+        "Use spherical coordinates to evaluate \\(\\iiint_E(x^2+y^2+z^2)\\,dV\\), inside the radius-4 sphere, above \\(z=\\sqrt{3x^2+3y^2}\\), with \\(0\\le y\\le x\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(128\\pi(2-\\sqrt3)/5\\)."
+        ]
+      },
+      "source": "WIR Session 8",
+      "sourceQuestion": "10b",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-032",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Question 11",
+      "body": [
+        "Evaluate \\(\\iiint_Ez\\,dV\\), where \\(1\\le x^2+y^2+z^2\\le4\\) and \\(z\\le\\sqrt{3(x^2+y^2)}\\). Include the lower half-space."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(-15\\pi/16\\)."
+        ]
+      },
+      "source": "WIR Session 8",
+      "sourceQuestion": "11",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-033",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Question 1",
+      "body": [
+        "Evaluate \\(\\iint_D\\frac{5y}{6x^5+1}\\,dA\\), where \\(0\\le x\\le1,0\\le y\\le x^2\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\ln7/12\\)."
+        ]
+      },
+      "source": "Exam 3 Review",
+      "sourceQuestion": "1",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-034",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Question 2",
+      "body": [
+        "Evaluate \\(\\int_{-3}^0\\int_{-\\sqrt{9-y^2}}^0e^{-x^2-y^2}\\,dx\\,dy\\) using polar coordinates."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\pi(1-e^{-9})/4\\)."
+        ]
+      },
+      "source": "Exam 3 Review",
+      "sourceQuestion": "2",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-035",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Question 3",
+      "body": [
+        "Evaluate \\(\\iint_Dx^2\\sin y\\,dA\\), where D is bounded by \\(y=x^3,y=8,x=0\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\((\\sin8-8\\cos8)/3\\)."
+        ]
+      },
+      "source": "Exam 3 Review",
+      "sourceQuestion": "3",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-036",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Question 4",
+      "body": [
+        "Reverse the order and evaluate \\(\\int_0^3\\int_{3y}^9e^{x^2}\\,dx\\,dy\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_0^9\\int_0^{x/3}e^{x^2}\\,dy\\,dx=(e^{81}-1)/6\\)."
+        ]
+      },
+      "source": "Exam 3 Review",
+      "sourceQuestion": "4",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-037",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Question 5",
+      "body": [
+        "Evaluate \\(\\iint_R y\\,dA\\) inside \\(x^2+y^2\\le9\\) with \\(0\\le y\\le\\sqrt3x\\) in the first quadrant."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(9/2\\)."
+        ]
+      },
+      "source": "Exam 3 Review",
+      "sourceQuestion": "5",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-038",
       "review": "chapter15",
       "section": "15.7",
-      "title": "Challenge: a cylindrical hole through a sphere",
+      "title": "Question 6",
       "body": [
-        "A sphere \\(x^2+y^2+z^2\\le4\\) has the cylindrical region \\(x^2+y^2<1\\) removed. Find the remaining volume using cylindrical coordinates."
+        "Find the volume inside both \\(x^2+y^2+z^2\\le16\\) and \\(x^2+y^2\\le9\\)."
       ],
-      "figure": "figures/ch15-15-7-6.svg",
-      "figureAlt": "rz cross-section (upper half; reflect across r-axis). r; z; 1; r² + z² = 4",
-      "practiceSet": "illustrated-challenge",
       "answer": {
         "blocks": [
-          "The remaining solid has \\(1\\le r\\le2\\) and \\(-\\sqrt{4-r^2}\\le z\\le\\sqrt{4-r^2}\\). Use symmetry across the xy-plane.",
-          "\\(V=\\int_0^{2\\pi}\\int_1^2\\int_{-\\sqrt{4-r^2}}^{\\sqrt{4-r^2}}r\\,dz\\,dr\\,d\\theta=4\\pi\\int_1^2r\\sqrt{4-r^2}\\,dr=4\\pi\\sqrt3\\)."
+          "\\(4\\pi(64-7\\sqrt7)/3\\)."
         ]
-      }
+      },
+      "source": "Exam 3 Review",
+      "sourceQuestion": "6",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.9.4",
+      "id": "E3-039",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Question 7",
+      "body": [
+        "For R enclosed by \\(y=x-2\\) and \\(x=y^2\\), express \\(\\iint_R f\\,dA\\) in both orders."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_{-1}^2\\int_{y^2}^{y+2}f\\,dx\\,dy\\); \\(\\int_0^1\\int_{-\\sqrt x}^{\\sqrt x}f\\,dy\\,dx+\\int_1^4\\int_{x-2}^{\\sqrt x}f\\,dy\\,dx\\)."
+        ]
+      },
+      "source": "Exam 3 Review",
+      "sourceQuestion": "7",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-040",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Question 8",
+      "body": [
+        "Convert to spherical coordinates: (a) \\((-1,\\sqrt3,-2)\\); (b) \\((0,-2,0)\\). Use \\(0\\le\\theta<2\\pi\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\((2\\sqrt2,2\\pi/3,3\\pi/4)\\). (b) \\((2,3\\pi/2,\\pi/2)\\)."
+        ]
+      },
+      "source": "Exam 3 Review",
+      "sourceQuestion": "8",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-041",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Question 9",
+      "body": [
+        "E is in the first octant, below \\(z=1-x^2\\) and with \\(y\\le1-x\\). Give the xy-projection as inequalities and write \\(\\iiint_E f\\,dV\\) in order \\(dz\\,dx\\,dy\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "Projection: \\(0\\le y\\le1,0\\le x\\le1-y\\). Integral: \\(\\int_0^1\\int_0^{1-y}\\int_0^{1-x^2}f\\,dz\\,dx\\,dy\\)."
+        ]
+      },
+      "source": "Exam 3 Review",
+      "sourceQuestion": "9",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-042",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Question 10",
+      "body": [
+        "Find the volume inside \\(x^2+y^2\\le9\\), between \\(z=2\\) and \\(z=12-y\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(90\\pi\\)."
+        ]
+      },
+      "source": "Exam 3 Review",
+      "sourceQuestion": "10",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-043",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Question 11",
+      "body": [
+        "Find the volume between \\(y=x^2+z^2\\) and \\(y=32-x^2-z^2\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(256\\pi\\)."
+        ]
+      },
+      "source": "Exam 3 Review",
+      "sourceQuestion": "11",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-044",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Question 12",
+      "body": [
+        "Convert without evaluating: \\(\\int_{-9}^0\\int_{-\\sqrt{81-y^2}}^{\\sqrt{81-y^2}}\\int_{\\sqrt{x^2+y^2}}^{13}xz\\,dz\\,dx\\,dy\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_\\pi^{2\\pi}\\int_0^9\\int_r^{13}r^2z\\cos\\theta\\,dz\\,dr\\,d\\theta\\)."
+        ]
+      },
+      "source": "Exam 3 Review",
+      "sourceQuestion": "12",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-045",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Question 13",
+      "body": [
+        "Evaluate \\(\\iiint_E(x^2+y^2+z^2)\\,dV\\) on the first-octant part of the radius-2 ball."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(16\\pi/5\\)."
+        ]
+      },
+      "source": "Exam 3 Review",
+      "sourceQuestion": "13",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-046",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Question 14",
+      "body": [
+        "Evaluate \\(\\int_0^{10}\\int_0^{\\sqrt{100-x^2}}\\int_{\\sqrt{x^2+y^2}}^{\\sqrt{200-x^2-y^2}}yz\\,dz\\,dy\\,dx\\) using spherical coordinates."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(40000/3\\)."
+        ]
+      },
+      "source": "Exam 3 Review",
+      "sourceQuestion": "14",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-047",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Question 15",
+      "body": [
+        "Find the volume inside the radius-2 sphere, above the xy-plane and below \\(z=\\sqrt{x^2+y^2}\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(8\\pi\\sqrt2/3\\)."
+        ]
+      },
+      "source": "Exam 3 Review",
+      "sourceQuestion": "15",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-048",
       "review": "chapter15",
       "section": "15.9",
-      "title": "Challenge: ellipsoid moment of inertia",
+      "title": "Question 16",
       "body": [
-        "For the uniform solid \\(x^2/4+y^2/9+z^2/16\\le1\\) with density 1, use a change of variables to compute \\(I_z=\\iiint_E(x^2+y^2)\\,dV\\)."
+        "Use \\(x=u-v,y=2u+3v\\) to evaluate \\(\\iint_R(2x+y)\\,dA\\), where R lies between \\(y=2x,y=2x+10,y=-3x,y=-3x+15\\)."
       ],
-      "figure": "figures/ch15-15-9-4.svg",
-      "figureAlt": "xz cross-section at y = 0 (upper half). x; z; x²/4 + z²/16 = 1",
-      "practiceSet": "illustrated-challenge",
       "answer": {
         "blocks": [
-          "Set \\(x=2u,y=3v,z=4w\\). The transformed region is the unit ball B and the absolute Jacobian is \\(24\\).",
-          "\\(I_z=24\\iiint_B(4u^2+9v^2)\\,dV\\). By symmetry each of \\(\\iiint_Bu^2\\,dV,\\iiint_Bv^2\\,dV,\\iiint_Bw^2\\,dV\\) equals \\(4\\pi/15\\).",
-          "Therefore \\(I_z=24(13)(4\\pi/15)=416\\pi/5\\). The mass is \\(32\\pi\\), giving the check \\(I_z=m(2^2+3^2)/5\\)."
+          "\\(210\\)."
         ]
-      }
+      },
+      "source": "Exam 3 Review",
+      "sourceQuestion": "16",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.3.5",
+      "id": "E3-049",
+      "review": "chapter15",
+      "section": "15.1",
+      "title": "Question 1",
+      "body": [
+        "Evaluate \\(\\iint_Rx^2y^3\\,dA\\), \\(R=[0,3]\\times[0,2]\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "C. \\(36\\)."
+        ]
+      },
+      "source": "Quiz 7A",
+      "sourceQuestion": "1",
+      "kind": "mcq",
+      "concept": "",
+      "practiceSet": "exam3-source",
+      "choices": [
+        "18",
+        "27",
+        "36",
+        "54",
+        "None of the above"
+      ],
+      "correctChoices": [
+        2
+      ]
+    },
+    {
+      "id": "E3-050",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Question 2",
+      "body": [
+        "Integrate \\(f(x,y)=x\\) over the region enclosed by \\(y=x^2+4\\) and \\(y=2x^2\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "A. \\(0\\)."
+        ]
+      },
+      "source": "Quiz 7A",
+      "sourceQuestion": "2",
+      "kind": "mcq",
+      "concept": "",
+      "practiceSet": "exam3-source",
+      "choices": [
+        "0",
+        "2",
+        "4",
+        "8",
+        "None of the above"
+      ],
+      "correctChoices": [
+        0
+      ]
+    },
+    {
+      "id": "E3-051",
       "review": "chapter15",
       "section": "15.3",
-      "title": "Harder challenge: overlapping disks with a radial weight",
-      "practiceSet": "harder-challenge-oct22",
-      "difficulty": "hard",
+      "title": "Question 3",
       "body": [
-        "Let D be the intersection of \\(x^2+y^2\\le2x\\) and \\(x^2+y^2\\le2y\\). Use polar coordinates to evaluate \\(\\iint_D(x^2+y^2)\\,dA\\). Explain where the radial bound changes."
+        "Convert to polar and evaluate \\(\\iint_D e^{-x^2-y^2}\\,dA\\), where \\(D=\\{x>0,x^2+y^2<1\\}\\)."
       ],
       "answer": {
         "blocks": [
-          "Both inequalities require \\(0\\le\\theta\\le\\pi/2\\), and \\(r\\le\\min(2\\cos\\theta,2\\sin\\theta)\\). The bounds switch at \\(\\theta=\\pi/4\\).",
-          {
-            "math": "\\iint_D(x^2+y^2)\\,dA=\\int_0^{\\pi/4}\\int_0^{2\\sin\\theta}r^3\\,dr\\,d\\theta+\\int_{\\pi/4}^{\\pi/2}\\int_0^{2\\cos\\theta}r^3\\,dr\\,d\\theta"
-          },
-          "Reflection across \\(y=x\\) makes the two terms equal.",
-          {
-            "math": "8\\int_0^{\\pi/4}\\sin^4\\theta\\,d\\theta=\\frac{3\\pi}{4}-2"
-          }
+          "\\(\\int_{-\\pi/2}^{\\pi/2}\\int_0^1re^{-r^2}\\,dr\\,d\\theta=\\pi(1-e^{-1})/2\\)."
         ]
-      }
+      },
+      "source": "Quiz 7A",
+      "sourceQuestion": "3",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.3.6",
+      "id": "E3-052",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Question 1",
+      "body": [
+        "E lies in the first octant, inside \\(y^2+z^2\\le1\\), between \\(x=0\\) and \\(x=y\\). Write \\(\\iiint_Ef\\,dV\\) in order \\(dx\\,dy\\,dz\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_0^1\\int_0^{\\sqrt{1-z^2}}\\int_0^y f(x,y,z)\\,dx\\,dy\\,dz\\)."
+        ]
+      },
+      "source": "Quiz 8B",
+      "sourceQuestion": "1",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-053",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Question 2",
+      "body": [
+        "Evaluate \\(\\iiint_E1\\,dV\\), where E lies between \\(y=x^2,x=y^2\\), with \\(0\\le z\\le x+y\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "C. \\(3/10\\)."
+        ]
+      },
+      "source": "Quiz 8B",
+      "sourceQuestion": "2",
+      "kind": "mcq",
+      "concept": "",
+      "practiceSet": "exam3-source",
+      "choices": [
+        "1",
+        "0.1",
+        "0.3",
+        "0.5",
+        "None of the above"
+      ],
+      "correctChoices": [
+        2
+      ]
+    },
+    {
+      "id": "E3-054",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Question 3",
+      "body": [
+        "Convert to cylindrical and evaluate \\(\\int_{-1}^1\\int_{-\\sqrt{1-x^2}}^{\\sqrt{1-x^2}}\\int_0^{\\sqrt{x^2+y^2}}z\\,dz\\,dy\\,dx\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_0^{2\\pi}\\int_0^1\\int_0^r zr\\,dz\\,dr\\,d\\theta=\\pi/4\\)."
+        ]
+      },
+      "source": "Quiz 8B",
+      "sourceQuestion": "3",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-055",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Question 1",
+      "body": [
+        "Set up \\(\\iint_Rf(x,y)\\,dA\\) in order \\(dy\\,dx\\) for the region enclosed by \\(y=x+6\\) and \\(y=x^2\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_{-2}^3\\int_{x^2}^{x+6}f(x,y)\\,dy\\,dx\\)."
+        ]
+      },
+      "source": "Practice Exam 3",
+      "sourceQuestion": "1",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-056",
+      "review": "chapter15",
+      "section": "15.1",
+      "title": "Question 2",
+      "body": [
+        "Evaluate \\(\\iint_{[0,1]^2}\\frac{y^2}{\\sqrt{1-x^2}}\\,dA\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "E. \\(\\pi/6\\)."
+        ]
+      },
+      "source": "Practice Exam 3",
+      "sourceQuestion": "2",
+      "kind": "mcq",
+      "concept": "",
+      "practiceSet": "exam3-source",
+      "choices": [
+        "\\(\\pi\\)",
+        "\\(\\pi/2\\)",
+        "\\(\\pi/3\\)",
+        "\\(\\pi/5\\)",
+        "\\(\\pi/6\\)"
+      ],
+      "correctChoices": [
+        4
+      ]
+    },
+    {
+      "id": "E3-057",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Question 3",
+      "body": [
+        "Convert \\((\\sqrt3,-\\sqrt3,-\\sqrt2)\\) to spherical coordinates using \\(0\\le\\theta<2\\pi\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\((2\\sqrt2,7\\pi/4,2\\pi/3)\\)."
+        ]
+      },
+      "source": "Practice Exam 3",
+      "sourceQuestion": "3",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-058",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Question 4",
+      "body": [
+        "Set up a double integral for the volume in the first octant bounded by \\(y=5\\), \\(x/3+z/2=1\\), and the coordinate planes."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_0^3\\int_0^5(2-2x/3)\\,dy\\,dx\\)."
+        ]
+      },
+      "source": "Practice Exam 3",
+      "sourceQuestion": "4",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-059",
+      "review": "chapter15",
+      "section": "15.9",
+      "title": "Question 5",
+      "body": [
+        "For the elliptical disk \\(9x^2+4y^2\\le36\\), set up its area after \\(x=2u\\cos v,y=3u\\sin v\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_0^{2\\pi}\\int_0^1 6u\\,du\\,dv\\)."
+        ]
+      },
+      "source": "Practice Exam 3",
+      "sourceQuestion": "5",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-060",
       "review": "chapter15",
       "section": "15.3",
-      "title": "Harder challenge: a cardioid with a circular cutout",
-      "practiceSet": "harder-challenge-oct22",
-      "difficulty": "hard",
+      "title": "Question 6",
       "body": [
-        "Find the area inside the cardioid \\(r=1+\\cos\\theta\\) and outside the circle \\(r=1\\). Determine the angular interval before integrating."
+        "The region is the upper half of \\((x+2)^2+y^2\\le4\\), with \\(y\\ge0\\). Set up the double integral of a function \\(g(r,\\theta)\\) already expressed in polar coordinates."
       ],
       "answer": {
         "blocks": [
-          "The radial interval \\(1\\le r\\le1+\\cos\\theta\\) is nonempty only when \\(\\cos\\theta\\ge0\\). Use \\(-\\pi/2\\le\\theta\\le\\pi/2\\).",
-          {
-            "math": "A=\\int_{-\\pi/2}^{\\pi/2}\\int_1^{1+\\cos\\theta}r\\,dr\\,d\\theta=\\frac12\\int_{-\\pi/2}^{\\pi/2}(2\\cos\\theta+\\cos^2\\theta)\\,d\\theta=2+\\frac{\\pi}{4}"
-          }
+          "\\(\\int_{\\pi/2}^\\pi\\int_0^{-4\\cos\\theta}g(r,\\theta)r\\,dr\\,d\\theta\\)."
         ]
-      }
+      },
+      "source": "Practice Exam 3",
+      "sourceQuestion": "6",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.3.7",
+      "id": "E3-061",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Question 7",
+      "body": [
+        "Set up the spherical volume integral inside the radius-4 sphere and below the lower cone \\(z=-\\sqrt{3(x^2+y^2)}\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_{5\\pi/6}^{\\pi}\\int_0^{2\\pi}\\int_0^4\\rho^2\\sin\\phi\\,d\\rho\\,d\\theta\\,d\\phi\\)."
+        ]
+      },
+      "source": "Practice Exam 3",
+      "sourceQuestion": "7",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-062",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Question 8",
+      "body": [
+        "Convert \\(\\iiint_E(x^2+y^2+z^2)\\,dV\\) to spherical coordinates, where \\(E=\\{x^2+y^2+z^2\\le a^2,z\\ge0\\}\\), \\(a>0\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_0^{\\pi/2}\\int_0^{2\\pi}\\int_0^a\\rho^4\\sin\\phi\\,d\\rho\\,d\\theta\\,d\\phi\\)."
+        ]
+      },
+      "source": "Practice Exam 3",
+      "sourceQuestion": "8",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-063",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Question 9",
+      "body": [
+        "Use polar coordinates in the yz-plane to set up the volume between \\(x=y^2+z^2\\) and \\(x=4\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_0^{2\\pi}\\int_0^2(4-r^2)r\\,dr\\,d\\theta\\)."
+        ]
+      },
+      "source": "Practice Exam 3",
+      "sourceQuestion": "9",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-064",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Question 10",
+      "body": [
+        "Reverse the order of \\(\\int_0^1\\int_{y^2}^{\\sqrt y}f(x,y)\\,dx\\,dy\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_0^1\\int_{x^2}^{\\sqrt x}f(x,y)\\,dy\\,dx\\)."
+        ]
+      },
+      "source": "Practice Exam 3",
+      "sourceQuestion": "10",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-065",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Question 11",
+      "body": [
+        "For the first-octant tetrahedron \\(2x+4y+z\\le4\\), give a volume integral in order \\(dx\\,dy\\,dz\\) and a double integral in order \\(dx\\,dy\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_0^4\\int_0^{1-z/4}\\int_0^{2-2y-z/2}1\\,dx\\,dy\\,dz\\); \\(\\int_0^1\\int_0^{2-2y}(4-2x-4y)\\,dx\\,dy\\)."
+        ]
+      },
+      "source": "Practice Exam 3",
+      "sourceQuestion": "11",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-066",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Question 12",
+      "body": [
+        "Set up the cylindrical volume integral inside \\(x^2+y^2+z^2\\le25\\), outside \\(x^2+y^2<4\\), and above \\(z=0\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_0^{2\\pi}\\int_2^5\\int_0^{\\sqrt{25-r^2}}r\\,dz\\,dr\\,d\\theta\\)."
+        ]
+      },
+      "source": "Practice Exam 3",
+      "sourceQuestion": "12",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-067",
       "review": "chapter15",
       "section": "15.3",
-      "title": "Harder challenge: an improper Gaussian sector",
-      "practiceSet": "harder-challenge-oct22",
-      "difficulty": "hard",
+      "title": "Question 13",
       "body": [
-        "Evaluate \\(\\iint_D(x^2+y^2)e^{-(x^2+y^2)}\\,dA\\), where D is the unbounded sector \\(x\\ge0,\\ 0\\le y\\le\\sqrt3x\\). Write the improper limit explicitly."
+        "R is in the second quadrant, between \\(y=-x,x=0\\) and circles \\(x^2+y^2=1,2\\). Evaluate \\(\\iint_R(x^2+y^2)^3\\,dA\\)."
       ],
       "answer": {
         "blocks": [
-          "The sector is \\(0\\le\\theta\\le\\pi/3,\\ 0\\le r<\\infty\\). The radial weight and Jacobian together give \\(r^3\\).",
-          {
-            "math": "\\lim_{R\\to\\infty}\\int_0^{\\pi/3}\\int_0^Rr^3e^{-r^2}\\,dr\\,d\\theta=\\frac{\\pi}{6}\\lim_{R\\to\\infty}\\left[1-(R^2+1)e^{-R^2}\\right]=\\frac{\\pi}{6}"
-          },
-          "Use \\(u=r^2\\) and integration by parts. The limit is finite, so the improper integral converges."
+          "D. \\(15\\pi/32\\)."
         ]
-      }
-    },
-    {
-      "id": "15.4.5",
-      "review": "chapter15",
-      "section": "15.4",
-      "title": "Harder challenge: balance and inertia of a curved lamina",
-      "practiceSet": "harder-challenge-oct22",
-      "difficulty": "hard",
-      "body": [
-        "A lamina occupies \\(0\\le x\\le1,\\ x^2\\le y\\le x\\), with density \\(\\delta=x\\). Find its mass, center of mass, and polar moment of inertia about the origin \\(I_O=\\iint_D(x^2+y^2)\\delta\\,dA\\)."
+      },
+      "source": "Practice Exam 3",
+      "sourceQuestion": "13",
+      "kind": "mcq",
+      "concept": "",
+      "practiceSet": "exam3-source",
+      "choices": [
+        "\\(\\pi/32\\)",
+        "\\(15\\pi/16\\)",
+        "\\(17\\pi/32\\)",
+        "\\(15\\pi/32\\)",
+        "None of the above"
       ],
-      "answer": {
-        "blocks": [
-          {
-            "math": "m=\\int_0^1x(x-x^2)\\,dx=\\frac1{12}"
-          },
-          {
-            "math": "M_y=\\int_0^1x^2(x-x^2)\\,dx=\\frac1{20},\\qquad M_x=\\frac12\\int_0^1x(x^2-x^4)\\,dx=\\frac1{24}"
-          },
-          "Divide the first moments by mass: \\((\\bar x,\\bar y)=(3/5,1/2)\\).",
-          {
-            "math": "I_O=\\int_0^1\\int_{x^2}^{x}(x^2+y^2)x\\,dy\\,dx=\\frac1{30}+\\frac1{40}=\\frac7{120}"
-          }
-        ]
-      }
+      "correctChoices": [
+        3
+      ]
     },
     {
-      "id": "15.4.6",
-      "review": "chapter15",
-      "section": "15.4",
-      "title": "Harder challenge: a radially weighted quarter annulus",
-      "practiceSet": "harder-challenge-oct22",
-      "difficulty": "hard",
-      "body": [
-        "A lamina occupies \\(1\\le x^2+y^2\\le9\\) in the first quadrant and has density \\(\\delta=\\sqrt{x^2+y^2}\\). Find its mass, center of mass, and polar moment \\(I_O\\)."
-      ],
-      "answer": {
-        "blocks": [
-          "Use \\(1\\le r\\le3,\\ 0\\le\\theta\\le\\pi/2\\). Density contributes one factor of r and the area element contributes another.",
-          {
-            "math": "m=\\int_0^{\\pi/2}\\int_1^3r^2\\,dr\\,d\\theta=\\frac{13\\pi}{3},\\qquad M_y=M_x=\\int_0^{\\pi/2}\\cos\\theta\\,d\\theta\\int_1^3r^3\\,dr=20"
-          },
-          {
-            "math": "(\\bar x,\\bar y)=\\left(\\frac{60}{13\\pi},\\frac{60}{13\\pi}\\right),\\qquad I_O=\\int_0^{\\pi/2}\\int_1^3r^4\\,dr\\,d\\theta=\\frac{121\\pi}{5}"
-          }
-        ]
-      }
-    },
-    {
-      "id": "15.4.7",
-      "review": "chapter15",
-      "section": "15.4",
-      "title": "Harder challenge: a normalized density on a triangle",
-      "practiceSet": "harder-challenge-oct22",
-      "difficulty": "hard",
-      "body": [
-        "A joint probability density is \\(p(x,y)=cxy\\) on \\(x\\ge0,\\ y\\ge0,\\ x+y\\le1\\), and zero elsewhere. Find c and \\(P(Y\\ge2X)\\)."
-      ],
-      "answer": {
-        "blocks": [
-          {
-            "math": "1=c\\int_0^1\\int_0^{1-x}xy\\,dy\\,dx=\\frac{c}{24},\\qquad c=24"
-          },
-          "The event has \\(2x\\le y\\le1-x\\), which requires \\(0\\le x\\le1/3\\).",
-          {
-            "math": "P(Y\\ge2X)=24\\int_0^{1/3}\\int_{2x}^{1-x}xy\\,dy\\,dx=12\\int_0^{1/3}(x-2x^2-3x^3)\\,dx=\\frac7{27}"
-          }
-        ]
-      }
-    },
-    {
-      "id": "15.5.5",
-      "review": "chapter15",
-      "section": "15.5",
-      "title": "Harder challenge: a cubic radial surface",
-      "practiceSet": "harder-challenge-oct22",
-      "difficulty": "hard",
-      "body": [
-        "Find the curved area of \\(z=\\frac23(x^2+y^2)^{3/2}\\) above the unit disk. Give an exact answer using a logarithm."
-      ],
-      "answer": {
-        "blocks": [
-          "For \\(f=\\frac23r^3\\), \\(f_x=2xr\\) and \\(f_y=2yr\\), hence \\(1+f_x^2+f_y^2=1+4r^4\\).",
-          {
-            "math": "A=2\\pi\\int_0^1r\\sqrt{1+4r^4}\\,dr=\\pi\\int_0^1\\sqrt{1+4u^2}\\,du\\quad(u=r^2)"
-          },
-          {
-            "math": "A=\\pi\\left[\\frac u2\\sqrt{1+4u^2}+\\frac14\\ln(2u+\\sqrt{1+4u^2})\\right]_0^1=\\frac{\\pi\\sqrt5}{2}+\\frac{\\pi}{4}\\ln(2+\\sqrt5)"
-          }
-        ]
-      }
-    },
-    {
-      "id": "15.5.6",
-      "review": "chapter15",
-      "section": "15.5",
-      "title": "Harder challenge: a spherical patch over an annular sector",
-      "practiceSet": "harder-challenge-oct22",
-      "difficulty": "hard",
-      "body": [
-        "Find the area of the upper sphere \\(z=\\sqrt{9-x^2-y^2}\\) above \\(1\\le x^2+y^2\\le4,\\ y\\ge x\\ge0\\). Exclude all planar faces."
-      ],
-      "answer": {
-        "blocks": [
-          "The surface factor is \\(\\sqrt{1+f_x^2+f_y^2}=3/\\sqrt{9-r^2}\\). The projection has \\(1\\le r\\le2\\) and \\(\\pi/4\\le\\theta\\le\\pi/2\\).",
-          {
-            "math": "A=\\int_{\\pi/4}^{\\pi/2}\\int_1^2\\frac{3r}{\\sqrt{9-r^2}}\\,dr\\,d\\theta=\\frac{3\\pi}{4}(2\\sqrt2-\\sqrt5)"
-          }
-        ]
-      }
-    },
-    {
-      "id": "15.5.7",
-      "review": "chapter15",
-      "section": "15.5",
-      "title": "Harder challenge: total boundary area of a truncated solid",
-      "practiceSet": "harder-challenge-oct22",
-      "difficulty": "hard",
-      "body": [
-        "Let E be the solid \\(1\\le z\\le4,\\ x^2+y^2\\le z\\). Find its total boundary area, including both flat faces. Identify the projection of the curved face."
-      ],
-      "answer": {
-        "blocks": [
-          "The curved face is \\(z=x^2+y^2\\) over the annulus \\(1\\le r\\le2\\); it is not the full disk. Its surface factor is \\(\\sqrt{1+4r^2}\\).",
-          {
-            "math": "A_{\\mathrm{curved}}=2\\pi\\int_1^2r\\sqrt{1+4r^2}\\,dr=\\frac{\\pi}{6}(17\\sqrt{17}-5\\sqrt5)"
-          },
-          "The bottom disk at z=1 has area \\(\\pi\\), and the top disk at z=4 has area \\(4\\pi\\).",
-          {
-            "math": "A_{\\mathrm{total}}=\\frac{\\pi}{6}(17\\sqrt{17}-5\\sqrt5)+5\\pi"
-          }
-        ]
-      }
-    },
-    {
-      "id": "15.6.6",
+      "id": "E3-068",
       "review": "chapter15",
       "section": "15.6",
-      "title": "Harder challenge: density on an asymmetric tetrahedron",
-      "practiceSet": "harder-challenge-oct22",
-      "difficulty": "hard",
+      "title": "Question 14",
       "body": [
-        "The solid \\(E=\\{x,y,z\\ge0:x+y+z\\le1\\}\\) has density \\(\\delta=xy\\). Find its mass and all three coordinates of its center of mass."
+        "E is the tetrahedron with vertices \\((0,0,0),(0,0,1),(0,1,1),(1,0,1)\\). Set up \\(\\iiint_Ex^2\\,dV\\) in order \\(dy\\,dz\\,dx\\) and evaluate."
       ],
       "answer": {
         "blocks": [
-          {
-            "math": "m=\\int_0^1\\int_0^{1-x}\\int_0^{1-x-y}xy\\,dz\\,dy\\,dx=\\frac1{120}"
-          },
-          "Symmetry gives equal x- and y-moments, but z is not interchangeable with them because the density is xy.",
-          {
-            "math": "\\iiint_E x\\delta\\,dV=\\iiint_E y\\delta\\,dV=\\frac1{360},\\qquad \\iiint_E z\\delta\\,dV=\\frac1{720}"
-          },
-          {
-            "math": "(\\bar x,\\bar y,\\bar z)=\\left(\\frac13,\\frac13,\\frac16\\right)"
-          }
+          "\\(\\int_0^1\\int_x^1\\int_0^{z-x}x^2\\,dy\\,dz\\,dx=1/60\\)."
         ]
-      }
+      },
+      "source": "Practice Exam 3",
+      "sourceQuestion": "14",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.6.7",
+      "id": "E3-069",
       "review": "chapter15",
       "section": "15.6",
-      "title": "Harder challenge: a sloping roof with z outermost",
-      "practiceSet": "harder-challenge-oct22",
-      "difficulty": "hard",
+      "title": "Question 15",
       "body": [
-        "Let \\(E=\\{0\\le x\\le1,\\ 0\\le y\\le1,\\ 0\\le z\\le x+y\\}\\). Rewrite \\(\\iiint_E z^2\\,dV\\) in the order \\(dx\\,dy\\,dz\\), splitting as needed, and evaluate."
+        "E is in the first octant, with \\(y^2\\le x\\) and \\(x+2z\\le4\\). Express \\(\\iiint_Ef\\,dV\\) in (a) order \\(dy\\,dx\\,dz\\) and (b) order \\(dx\\,dy\\,dz\\)."
       ],
       "answer": {
         "blocks": [
-          "For fixed z, the square is clipped by \\(x+y\\ge z\\). For \\(0\\le z\\le1\\), split at y=z; for \\(1\\le z\\le2\\), y starts at z−1.",
-          {
-            "math": "\\int_0^1\\int_0^z\\int_{z-y}^1 z^2\\,dx\\,dy\\,dz+\\int_0^1\\int_z^1\\int_0^1 z^2\\,dx\\,dy\\,dz+\\int_1^2\\int_{z-1}^1\\int_{z-y}^1 z^2\\,dx\\,dy\\,dz=\\frac12"
-          },
-          "Check in the original order: \\(\\int_0^1\\int_0^1 (x+y)^3/3\\,dy\\,dx=1/2\\)."
+          "(a) \\(\\int_0^2\\int_0^{4-2z}\\int_0^{\\sqrt x}f\\,dy\\,dx\\,dz\\). (b) \\(\\int_0^2\\int_0^{\\sqrt{4-2z}}\\int_{y^2}^{4-2z}f\\,dx\\,dy\\,dz\\)."
         ]
-      }
+      },
+      "source": "Practice Exam 3",
+      "sourceQuestion": "15",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
     },
     {
-      "id": "15.6.8",
+      "id": "E3-070",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Question 16",
+      "body": [
+        "Reverse the order and evaluate \\(\\int_0^8\\int_{y^{1/3}}^2\\sqrt{x^4+9}\\,dx\\,dy\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_0^2\\int_0^{x^3}\\sqrt{x^4+9}\\,dy\\,dx=49/3\\)."
+        ]
+      },
+      "source": "Practice Exam 3",
+      "sourceQuestion": "16",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-071",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Question 17",
+      "body": [
+        "E satisfies \\(x^2+y^2+z^2\\le2,z\\ge x^2+y^2\\). Density equals distance to the z-axis. Set up its mass in cylindrical coordinates; do not evaluate."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(\\int_0^{2\\pi}\\int_0^1\\int_{r^2}^{\\sqrt{2-r^2}}r^2\\,dz\\,dr\\,d\\theta\\)."
+        ]
+      },
+      "source": "Practice Exam 3",
+      "sourceQuestion": "17",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-072",
+      "review": "chapter15",
+      "section": "15.9",
+      "title": "Question 18",
+      "body": [
+        "R is defined by \\(0\\le2x+3y\\le2,0\\le2x-3y\\le3\\). Use \\(u=2x+3y,v=2x-3y\\) to find the transformed region, absolute Jacobian, and \\(\\iint_R6ye^{4x^2-9y^2}\\,dA\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "\\(0\\le u\\le2,0\\le v\\le3\\); \\(1/12\\); \\((7-e^6)/72\\)."
+        ]
+      },
+      "source": "Practice Exam 3",
+      "sourceQuestion": "18",
+      "kind": "frq",
+      "concept": "",
+      "practiceSet": "exam3-source"
+    },
+    {
+      "id": "E3-073",
+      "review": "chapter15",
+      "section": "15.1",
+      "title": "Separate only on a rectangle",
+      "body": [
+        "Evaluate \\(\\iint_R\\frac{y e^{y^2}}{1+x^2}\\,dA\\), where \\(R=[0,1]\\times[0,2]\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "E. \\(- \\frac{\\pi \\left(1 - e^{4}\\right)}{8}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Separable integrands",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(\\frac{\\pi \\left(1 - e^{4}\\right)}{8}\\)",
+        "\\(- \\frac{\\pi \\left(1 - e^{4}\\right)}{16}\\)",
+        "\\(- \\frac{\\pi \\left(1 - e^{4}\\right)}{4}\\)",
+        "\\(1 - \\frac{\\pi \\left(1 - e^{4}\\right)}{8}\\)",
+        "\\(- \\frac{\\pi \\left(1 - e^{4}\\right)}{8}\\)"
+      ],
+      "correctChoices": [
+        4
+      ]
+    },
+    {
+      "id": "E3-074",
+      "review": "chapter15",
+      "section": "15.1",
+      "title": "Choose the useful inner variable",
+      "body": [
+        "Evaluate \\(\\int_0^1\\int_0^{2\\pi}x\\cos(xy)\\,dx\\,dy\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "C. \\(0\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Fubini and order",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(1\\)",
+        "\\(3\\)",
+        "\\(0\\)",
+        "\\(2\\)",
+        "\\(-1\\)"
+      ],
+      "correctChoices": [
+        2
+      ]
+    },
+    {
+      "id": "E3-075",
+      "review": "chapter15",
+      "section": "15.1",
+      "title": "Cancellation with a surviving term",
+      "body": [
+        "Evaluate \\(\\iint_R[xe^{y^2}+2y^2]\\,dA\\) on \\(R=[-1,1]\\times[0,2]\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "A. \\(\\frac{32}{3}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Parity",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(\\frac{32}{3}\\)",
+        "\\(\\frac{16}{3}\\)",
+        "\\(\\frac{35}{3}\\)",
+        "\\(\\frac{64}{3}\\)",
+        "\\(- \\frac{32}{3}\\)"
+      ],
+      "correctChoices": [
+        0
+      ]
+    },
+    {
+      "id": "E3-076",
+      "review": "chapter15",
+      "section": "15.1",
+      "title": "Midpoint readings",
+      "body": [
+        "Partition \\([0,2]\\times[0,4]\\) into a 2-by-2 grid of four equal rectangles. Find the midpoint-rule approximation to \\(\\iint_R(x^2+y)\\,dA\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "B. \\(26\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Riemann sums",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(13\\)",
+        "\\(26\\)",
+        "\\(27\\)",
+        "\\(52\\)",
+        "\\(-26\\)"
+      ],
+      "correctChoices": [
+        1
+      ]
+    },
+    {
+      "id": "E3-077",
+      "review": "chapter15",
+      "section": "15.1",
+      "title": "Signed volume is not geometric volume",
+      "body": [
+        "Find the geometric volume between \\(z=x-2\\) and \\(z=0\\) over \\([0,4]\\times[0,2]\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "D. \\(8\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Absolute versus signed volume",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(4\\)",
+        "\\(16\\)",
+        "\\(9\\)",
+        "\\(8\\)",
+        "\\(-8\\)"
+      ],
+      "correctChoices": [
+        3
+      ]
+    },
+    {
+      "id": "E3-078",
+      "review": "chapter15",
+      "section": "15.1",
+      "title": "A tilted roof over a rectangle",
+      "body": [
+        "Find the volume below \\(z=8-x-y\\) and above \\([0,2]\\times[0,2]\\) in the xy-plane."
+      ],
+      "answer": {
+        "blocks": [
+          "B. \\(24\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Volume",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(12\\)",
+        "\\(24\\)",
+        "\\(25\\)",
+        "\\(-24\\)",
+        "\\(48\\)"
+      ],
+      "correctChoices": [
+        1
+      ]
+    },
+    {
+      "id": "E3-079",
+      "review": "chapter15",
+      "section": "15.1",
+      "title": "Recover a parameter from an average",
+      "body": [
+        "The average of \\(f(x,y)=cx^2+y\\) over \\([-2,2]\\times[0,2]\\) is 5. Find c."
+      ],
+      "answer": {
+        "blocks": [
+          "A. \\(3\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Average and inverse reasoning",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(3\\)",
+        "\\(6\\)",
+        "\\(-3\\)",
+        "\\(\\frac{3}{2}\\)",
+        "\\(4\\)"
+      ],
+      "correctChoices": [
+        0
+      ]
+    },
+    {
+      "id": "E3-080",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Reverse before integrating",
+      "body": [
+        "Evaluate \\(\\int_0^4\\int_{\\sqrt y}^2\\frac{x}{1+x^4}\\,dx\\,dy\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "B. \\(\\frac{\\log{\\left(17 \\right)}}{4}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Reverse order",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(\\frac{\\log{\\left(17 \\right)}}{2}\\)",
+        "\\(\\frac{\\log{\\left(17 \\right)}}{4}\\)",
+        "\\(\\frac{\\log{\\left(17 \\right)}}{8}\\)",
+        "\\(\\frac{\\log{\\left(17 \\right)}}{4} + 1\\)",
+        "\\(- \\frac{\\log{\\left(17 \\right)}}{4}\\)"
+      ],
+      "correctChoices": [
+        1
+      ]
+    },
+    {
+      "id": "E3-081",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Triangle under a plane",
+      "body": [
+        "Over \\(x,y\\ge0,x+y\\le2\\), find the volume between \\(z=x+y\\) and \\(z=4\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "C. \\(\\frac{16}{3}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Projection and height",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(\\frac{32}{3}\\)",
+        "\\(\\frac{8}{3}\\)",
+        "\\(\\frac{16}{3}\\)",
+        "\\(- \\frac{16}{3}\\)",
+        "\\(\\frac{19}{3}\\)"
+      ],
+      "correctChoices": [
+        2
+      ]
+    },
+    {
+      "id": "E3-082",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Curves that exchange roles",
+      "body": [
+        "Use the supplied figure and exact restrictions. Find \\(\\iint_D y\\,dA\\), where \\(D\\) lies between \\(y=x^2\\) and \\(y=2x\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "D. \\(\\frac{32}{15}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Parabolic region",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(\\frac{16}{15}\\)",
+        "\\(\\frac{47}{15}\\)",
+        "\\(- \\frac{32}{15}\\)",
+        "\\(\\frac{32}{15}\\)",
+        "\\(\\frac{64}{15}\\)"
+      ],
+      "figure": "figures/exam3/E3-082.svg",
+      "figureAlt": "Curves that exchange roles; shaded region with the boundaries stated in the question.",
+      "correctChoices": [
+        3
+      ]
+    },
+    {
+      "id": "E3-083",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Split or change direction",
+      "body": [
+        "Use the supplied figure and exact restrictions. D is bounded by \\(x=y^2\\) and \\(x=4\\). Find \\(\\iint_D x\\,dA\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "A. \\(\\frac{128}{5}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Branch selection",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(\\frac{128}{5}\\)",
+        "\\(\\frac{133}{5}\\)",
+        "\\(\\frac{64}{5}\\)",
+        "\\(\\frac{256}{5}\\)",
+        "\\(- \\frac{128}{5}\\)"
+      ],
+      "figure": "figures/exam3/E3-083.svg",
+      "figureAlt": "Split or change direction; shaded region with the boundaries stated in the question.",
+      "correctChoices": [
+        0
+      ]
+    },
+    {
+      "id": "E3-084",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "An exponential boundary",
+      "body": [
+        "Find the area bounded by \\(y=\\ln x,y=0,x=e^2\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "E. \\(1 + e^{2}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Logarithmic region",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(- e^{2} - 1\\)",
+        "\\(2 + e^{2}\\)",
+        "\\(2 + 2 e^{2}\\)",
+        "\\(\\frac{1}{2} + \\frac{e^{2}}{2}\\)",
+        "\\(1 + e^{2}\\)"
+      ],
+      "correctChoices": [
+        4
+      ]
+    },
+    {
+      "id": "E3-085",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "The missing half destroys cancellation",
+      "body": [
+        "Find \\(\\iint_D x\\,dA\\), where \\(0\\le x\\le2,x^2\\le y\\le4\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "B. \\(4\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Symmetry trap",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(-4\\)",
+        "\\(4\\)",
+        "\\(2\\)",
+        "\\(8\\)",
+        "\\(5\\)"
+      ],
+      "correctChoices": [
+        1
+      ]
+    },
+    {
+      "id": "E3-086",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Turn an inverse function into a slice",
+      "body": [
+        "Evaluate \\(\\int_0^1\\int_{\\arcsin y}^{\\pi/2}2\\cos x\\,dx\\,dy\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "E. \\(1\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Nonalgebraic reversal",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(-1\\)",
+        "\\(0\\)",
+        "\\(\\frac{1}{2}\\)",
+        "\\(2\\)",
+        "\\(1\\)"
+      ],
+      "correctChoices": [
+        4
+      ]
+    },
+    {
+      "id": "E3-087",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Gaussian sector",
+      "body": [
+        "Find \\(\\iint_D e^{-x^2-y^2}\\,dA\\), where \\(x^2+y^2\\le4\\), \\(x\\ge0\\), and \\(0\\le y\\le x\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "B. \\(- \\frac{\\pi}{8 e^{4}} + \\frac{\\pi}{8}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Polar sector",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(- \\frac{\\pi}{4 e^{4}} + \\frac{\\pi}{4}\\)",
+        "\\(- \\frac{\\pi}{8 e^{4}} + \\frac{\\pi}{8}\\)",
+        "\\(- \\frac{\\pi}{16 e^{4}} + \\frac{\\pi}{16}\\)",
+        "\\(- \\frac{\\pi}{8} + \\frac{\\pi}{8 e^{4}}\\)",
+        "\\(- \\frac{\\pi}{8 e^{4}} + \\frac{\\pi}{8} + 1\\)"
+      ],
+      "correctChoices": [
+        1
+      ]
+    },
+    {
+      "id": "E3-088",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "A translated disk",
+      "body": [
+        "Use the supplied figure and exact restrictions. Find \\(\\iint_D x\\,dA\\) on \\((x-2)^2+y^2\\le4\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "E. \\(8 \\pi\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Offset circle",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(1 + 8 \\pi\\)",
+        "\\(- 8 \\pi\\)",
+        "\\(16 \\pi\\)",
+        "\\(4 \\pi\\)",
+        "\\(8 \\pi\\)"
+      ],
+      "figure": "figures/exam3/E3-088.svg",
+      "figureAlt": "A translated disk; shaded region with the boundaries stated in the question.",
+      "correctChoices": [
+        4
+      ]
+    },
+    {
+      "id": "E3-089",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Annular wedge",
+      "body": [
+        "Use the supplied figure and exact restrictions. Evaluate \\(\\iint_D(x^2+y^2)\\,dA\\), where \\(1\\le x^2+y^2\\le4\\) and \\(\\pi/2\\le\\theta\\le3\\pi/4\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "E. \\(\\frac{15 \\pi}{16}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Annular sectors",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(- \\frac{15 \\pi}{16}\\)",
+        "\\(\\frac{15 \\pi}{8}\\)",
+        "\\(\\frac{15 \\pi}{32}\\)",
+        "\\(1 + \\frac{15 \\pi}{16}\\)",
+        "\\(\\frac{15 \\pi}{16}\\)"
+      ],
+      "figure": "figures/exam3/E3-089.svg",
+      "figureAlt": "Annular wedge; shaded region with the boundaries stated in the question.",
+      "correctChoices": [
+        4
+      ]
+    },
+    {
+      "id": "E3-090",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "An angular weight",
+      "body": [
+        "Evaluate \\(\\iint_Dxy\\,dA\\) on the first-quadrant disk \\(x^2+y^2\\le4\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "B. \\(2\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Transform the integrand",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(1\\)",
+        "\\(2\\)",
+        "\\(3\\)",
+        "\\(-2\\)",
+        "\\(4\\)"
+      ],
+      "correctChoices": [
+        1
+      ]
+    },
+    {
+      "id": "E3-091",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Overlap of two disks",
+      "body": [
+        "Use the supplied figure and exact restrictions. Find the area common to \\(x^2+y^2\\le4\\) and \\((x-2)^2+y^2\\le4\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "D. \\(- 2 \\sqrt{3} + \\frac{8 \\pi}{3}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Switching radial bounds",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(- \\frac{8 \\pi}{3} + 2 \\sqrt{3}\\)",
+        "\\(- \\sqrt{3} + \\frac{4 \\pi}{3}\\)",
+        "\\(- 2 \\sqrt{3} + 1 + \\frac{8 \\pi}{3}\\)",
+        "\\(- 2 \\sqrt{3} + \\frac{8 \\pi}{3}\\)",
+        "\\(- 4 \\sqrt{3} + \\frac{16 \\pi}{3}\\)"
+      ],
+      "figure": "figures/exam3/E3-091.svg",
+      "figureAlt": "Overlap of two disks; shaded region with the boundaries stated in the question.",
+      "correctChoices": [
+        3
+      ]
+    },
+    {
+      "id": "E3-092",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Repair an omitted area factor",
+      "body": [
+        "A student uses \\(\\int_0^{2\\pi}\\int_0^2r^2\\,dr\\,d\\theta\\) for \\(\\iint_{x^2+y^2\\le4}(x^2+y^2)\\,dA\\). Find the correct value."
+      ],
+      "answer": {
+        "blocks": [
+          "E. \\(8 \\pi\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Jacobian error",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(- 8 \\pi\\)",
+        "\\(1 + 8 \\pi\\)",
+        "\\(16 \\pi\\)",
+        "\\(4 \\pi\\)",
+        "\\(8 \\pi\\)"
+      ],
+      "correctChoices": [
+        4
+      ]
+    },
+    {
+      "id": "E3-093",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Curved upper radial boundary",
+      "body": [
+        "Find the area inside \\(r=2(1+\\cos\\theta)\\). Use \\(-\\pi\\le\\theta\\le\\pi\\), \\(r\\ge0\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "B. \\(6 \\pi\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Polar area",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(- 6 \\pi\\)",
+        "\\(6 \\pi\\)",
+        "\\(1 + 6 \\pi\\)",
+        "\\(12 \\pi\\)",
+        "\\(3 \\pi\\)"
+      ],
+      "correctChoices": [
+        1
+      ]
+    },
+    {
+      "id": "E3-094",
       "review": "chapter15",
       "section": "15.6",
-      "title": "Harder challenge: mass between two sloping planes",
-      "practiceSet": "harder-challenge-oct22",
-      "difficulty": "hard",
+      "title": "A weighted tetrahedron",
       "body": [
-        "Let \\(E=\\{x,y\\ge0,\\ x+y\\le1,\\ x+y\\le z\\le2-x-y\\}\\), with density \\(\\delta=z\\). Find the mass and \\(\\bar z\\)."
+        "E is in the first octant with \\(x+y+z\\le2\\). Find \\(\\iiint_E x\\,dV\\)."
       ],
       "answer": {
         "blocks": [
-          "Integrate in z first. Writing s=x+y only as an abbreviation, the mass integrand becomes \\(((2-s)^2-s^2)/2=2-2s\\).",
-          {
-            "math": "m=\\int_0^1\\int_0^{1-x}\\int_{x+y}^{2-x-y}z\\,dz\\,dy\\,dx=\\frac13"
-          },
-          {
-            "math": "M_{xy}=\\int_0^1\\int_0^{1-x}\\frac{(2-x-y)^3-(x+y)^3}{3}\\,dy\\,dx=\\frac{11}{30}"
-          },
-          {
-            "math": "\\bar z=\\frac{M_{xy}}m=\\frac{11}{10}"
-          },
-          "The geometric solid is symmetric about z=1, but the density increases with z, shifting the balance point above that plane."
+          "B. \\(\\frac{2}{3}\\)"
         ]
-      }
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Tetrahedral bounds",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(- \\frac{2}{3}\\)",
+        "\\(\\frac{2}{3}\\)",
+        "\\(\\frac{4}{3}\\)",
+        "\\(\\frac{5}{3}\\)",
+        "\\(\\frac{1}{3}\\)"
+      ],
+      "correctChoices": [
+        1
+      ]
     },
     {
-      "id": "15.7.7",
+      "id": "E3-095",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Nested inequalities",
+      "body": [
+        "Find the volume of \\(0\\le z\\le y\\le x\\le2\\). Use x as the innermost variable."
+      ],
+      "answer": {
+        "blocks": [
+          "B. \\(\\frac{4}{3}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Reorder triple integral",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(\\frac{2}{3}\\)",
+        "\\(\\frac{4}{3}\\)",
+        "\\(\\frac{8}{3}\\)",
+        "\\(- \\frac{4}{3}\\)",
+        "\\(\\frac{7}{3}\\)"
+      ],
+      "correctChoices": [
+        1
+      ]
+    },
+    {
+      "id": "E3-096",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "A variable-density box",
+      "body": [
+        "Find the mass of \\([0,2]\\times[0,2]\\times[0,3]\\) with density \\(\\delta=xz\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "C. \\(18\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Triple integral mass",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(19\\)",
+        "\\(-18\\)",
+        "\\(18\\)",
+        "\\(36\\)",
+        "\\(9\\)"
+      ],
+      "correctChoices": [
+        2
+      ]
+    },
+    {
+      "id": "E3-097",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Parabolic cylinder and sloping face",
+      "body": [
+        "Find the volume of \\(0\\le y\\le1,0\\le z\\le1-y^2,0\\le x\\le2(1-z)\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "A. \\(\\frac{4}{5}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Projection of curved solid",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(\\frac{4}{5}\\)",
+        "\\(\\frac{8}{5}\\)",
+        "\\(\\frac{9}{5}\\)",
+        "\\(- \\frac{4}{5}\\)",
+        "\\(\\frac{2}{5}\\)"
+      ],
+      "correctChoices": [
+        0
+      ]
+    },
+    {
+      "id": "E3-098",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "A roof over two parabolas",
+      "body": [
+        "Find the volume above the region \\(x^2\\le y\\le\\sqrt x\\), \\(0\\le x\\le1\\), with \\(0\\le z\\le2(x+y)\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "E. \\(\\frac{3}{5}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Nonrectangular footprint",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(\\frac{3}{10}\\)",
+        "\\(\\frac{6}{5}\\)",
+        "\\(\\frac{8}{5}\\)",
+        "\\(- \\frac{3}{5}\\)",
+        "\\(\\frac{3}{5}\\)"
+      ],
+      "correctChoices": [
+        4
+      ]
+    },
+    {
+      "id": "E3-099",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Symmetric base, asymmetric solid",
+      "body": [
+        "Find \\(\\iiint_E x\\,dV\\), where \\(-1\\le x\\le1,0\\le y\\le2,0\\le z\\le x+2\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "C. \\(\\frac{4}{3}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Symmetry of full solid",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(\\frac{7}{3}\\)",
+        "\\(\\frac{2}{3}\\)",
+        "\\(\\frac{4}{3}\\)",
+        "\\(\\frac{8}{3}\\)",
+        "\\(- \\frac{4}{3}\\)"
+      ],
+      "correctChoices": [
+        2
+      ]
+    },
+    {
+      "id": "E3-100",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Read the solid from the integral",
+      "body": [
+        "Find the volume of \\(E=\\{0\\le z\\le2,0\\le x\\le z,0\\le y\\le z-x\\}\\). Use the order \\(dy\\,dz\\,dx\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "E. \\(\\frac{4}{3}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Cross-sections",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(\\frac{8}{3}\\)",
+        "\\(\\frac{2}{3}\\)",
+        "\\(- \\frac{4}{3}\\)",
+        "\\(\\frac{7}{3}\\)",
+        "\\(\\frac{4}{3}\\)"
+      ],
+      "correctChoices": [
+        4
+      ]
+    },
+    {
+      "id": "E3-101",
       "review": "chapter15",
       "section": "15.7",
-      "title": "Harder challenge: a cone with vertical density",
-      "practiceSet": "harder-challenge-oct22",
-      "difficulty": "hard",
+      "title": "Cone capped by a plane",
       "body": [
-        "A solid lies above \\(z=\\sqrt{x^2+y^2}\\) and below \\(z=2\\), with density \\(\\delta=z\\). Find its mass, \\(\\bar z\\), and moment of inertia \\(I_z\\) about the z-axis."
+        "Find the volume above \\(z=\\sqrt{x^2+y^2}\\) and below \\(z=2\\)."
       ],
       "answer": {
         "blocks": [
-          "Use \\(0\\le\\theta\\le2\\pi,\\ 0\\le r\\le2,\\ r\\le z\\le2\\).",
-          {
-            "math": "m=2\\pi\\int_0^2\\int_r^2zr\\,dz\\,dr=4\\pi,\\qquad M_{xy}=2\\pi\\int_0^2\\int_r^2z^2r\\,dz\\,dr=\\frac{32\\pi}{5}"
-          },
-          {
-            "math": "\\bar z=\\frac85,\\qquad I_z=2\\pi\\int_0^2\\int_r^2zr^3\\,dz\\,dr=\\frac{16\\pi}{3}"
-          },
-          "For inertia, multiply density by squared distance \\(r^2\\) before including the Jacobian r."
+          "B. \\(\\frac{8 \\pi}{3}\\)"
         ]
-      }
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Cone and plane",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(\\frac{4 \\pi}{3}\\)",
+        "\\(\\frac{8 \\pi}{3}\\)",
+        "\\(1 + \\frac{8 \\pi}{3}\\)",
+        "\\(- \\frac{8 \\pi}{3}\\)",
+        "\\(\\frac{16 \\pi}{3}\\)"
+      ],
+      "correctChoices": [
+        1
+      ]
     },
     {
-      "id": "15.7.8",
+      "id": "E3-102",
       "review": "chapter15",
       "section": "15.7",
-      "title": "Harder challenge: competing lower surfaces",
-      "practiceSet": "harder-challenge-oct22",
-      "difficulty": "hard",
+      "title": "Facing paraboloids",
       "body": [
-        "A uniform solid of density 1 lies above both \\(z=\\sqrt{x^2+y^2}\\) and \\(z=x^2+y^2\\), and below \\(z=2\\). Find its volume and \\(\\bar z\\). Explain the necessary radial split."
+        "Use the supplied figure and exact restrictions. Find the volume between \\(z=x^2+y^2\\) and \\(z=8-x^2-y^2\\)."
       ],
       "answer": {
         "blocks": [
-          "The lower surface is \\(\\max(r,r^2)\\): r for \\(0\\le r\\le1\\) and \\(r^2\\) for \\(1\\le r\\le\\sqrt2\\).",
-          {
-            "math": "V=2\\pi\\left[\\int_0^1\\int_r^2r\\,dz\\,dr+\\int_1^{\\sqrt2}\\int_{r^2}^2r\\,dz\\,dr\\right]=\\frac{11\\pi}{6}"
-          },
-          {
-            "math": "M_{xy}=\\pi\\left[\\int_0^1(4-r^2)r\\,dr+\\int_1^{\\sqrt2}(4-r^4)r\\,dr\\right]=\\frac{31\\pi}{12},\\qquad\\bar z=\\frac{31}{22}"
-          }
+          "E. \\(16 \\pi\\)"
         ]
-      }
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Intersection radius",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(32 \\pi\\)",
+        "\\(1 + 16 \\pi\\)",
+        "\\(8 \\pi\\)",
+        "\\(- 16 \\pi\\)",
+        "\\(16 \\pi\\)"
+      ],
+      "figure": "figures/exam3/E3-102.svg",
+      "figureAlt": "Facing paraboloids; shaded region with the boundaries stated in the question.",
+      "correctChoices": [
+        4
+      ]
     },
     {
-      "id": "15.7.9",
+      "id": "E3-103",
       "review": "chapter15",
       "section": "15.7",
-      "title": "Harder challenge: an offset cylinder under a plane",
-      "practiceSet": "harder-challenge-oct22",
-      "difficulty": "hard",
+      "title": "Tilted top and a weighted integral",
       "body": [
-        "Let E satisfy \\(x^2+y^2\\le2x\\) and \\(0\\le z\\le x\\). For density 1, find its volume and centroid using cylindrical coordinates."
+        "Find \\(\\iiint_E x\\,dV\\), where \\(x^2+y^2\\le4,0\\le z\\le x+3\\)."
       ],
       "answer": {
         "blocks": [
-          "Bounds are \\(-\\pi/2\\le\\theta\\le\\pi/2,\\ 0\\le r\\le2\\cos\\theta,\\ 0\\le z\\le r\\cos\\theta\\). Reflection in y=0 gives \\(\\bar y=0\\).",
-          {
-            "math": "V=\\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta}\\int_0^{r\\cos\\theta}r\\,dz\\,dr\\,d\\theta=\\pi"
-          },
-          {
-            "math": "\\iiint_E x\\,dV=\\iint_Dx^2\\,dA=4\\int_{-\\pi/2}^{\\pi/2}\\cos^6\\theta\\,d\\theta=\\frac{5\\pi}{4}"
-          },
-          "Integrating z first gives \\(\\iiint_E z\\,dV=\\frac12\\iint_Dx^2\\,dA=5\\pi/8\\). Thus \\((\\bar x,\\bar y,\\bar z)=(5/4,0,5/8)\\)."
+          "D. \\(4 \\pi\\)"
         ]
-      }
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Angular cancellation",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(1 + 4 \\pi\\)",
+        "\\(2 \\pi\\)",
+        "\\(- 4 \\pi\\)",
+        "\\(4 \\pi\\)",
+        "\\(8 \\pi\\)"
+      ],
+      "correctChoices": [
+        3
+      ]
     },
     {
-      "id": "15.8.6",
+      "id": "E3-104",
       "review": "chapter15",
-      "section": "15.8",
-      "title": "Harder challenge: radial density in a spherical cap",
-      "practiceSet": "harder-challenge-oct22",
-      "difficulty": "hard",
+      "section": "15.7",
+      "title": "Drilled upper hemisphere",
       "body": [
-        "The solid \\(x^2+y^2+z^2\\le4,\\ z\\ge1\\) has density \\(\\delta=\\sqrt{x^2+y^2+z^2}\\). Find its mass using spherical coordinates, with \\(\\phi\\) measured from the positive z-axis."
+        "Find the volume inside \\(x^2+y^2+z^2\\le5\\), outside \\(x^2+y^2<1\\), with \\(z\\ge0\\)."
       ],
       "answer": {
         "blocks": [
-          "The plane gives \\(\\rho\\cos\\phi\\ge1\\), so \\(\\sec\\phi\\le\\rho\\le2\\). These bounds are compatible for \\(0\\le\\phi\\le\\pi/3\\).",
-          {
-            "math": "m=\\int_0^{2\\pi}\\int_0^{\\pi/3}\\int_{\\sec\\phi}^2\\rho^3\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta=\\frac{\\pi}{2}\\int_0^{\\pi/3}(16-\\sec^4\\phi)\\sin\\phi\\,d\\phi"
-          },
-          "With \\(u=\\cos\\phi\\), the remaining integral is \\(\\int_{1/2}^1(16-u^{-4})\\,du=17/3\\). Thus \\(m=17\\pi/6\\)."
+          "D. \\(\\frac{16 \\pi}{3}\\)"
         ]
-      }
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Sphere-cylinder intersection",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(1 + \\frac{16 \\pi}{3}\\)",
+        "\\(- \\frac{16 \\pi}{3}\\)",
+        "\\(\\frac{8 \\pi}{3}\\)",
+        "\\(\\frac{16 \\pi}{3}\\)",
+        "\\(\\frac{32 \\pi}{3}\\)"
+      ],
+      "correctChoices": [
+        3
+      ]
     },
     {
-      "id": "15.8.7",
+      "id": "E3-105",
       "review": "chapter15",
-      "section": "15.8",
-      "title": "Harder challenge: a shifted sphere clipped by a cone",
-      "practiceSet": "harder-challenge-oct22",
-      "difficulty": "hard",
+      "section": "15.7",
+      "title": "Rotate around a different axis",
       "body": [
-        "A uniform solid of density 1 lies inside \\(x^2+y^2+z^2\\le4z\\) and above \\(z=\\sqrt{x^2+y^2}\\). Find its volume and centroid using spherical coordinates."
+        "Find the volume between \\(y=x^2+z^2\\) and \\(y=4\\). Use cylindrical coordinates about the y-axis."
       ],
       "answer": {
         "blocks": [
-          "The sphere becomes \\(\\rho=4\\cos\\phi\\); the cone restricts \\(0\\le\\phi\\le\\pi/4\\). Use \\(0\\le\\theta\\le2\\pi\\) and \\(0\\le\\rho\\le4\\cos\\phi\\). Rotational symmetry gives \\(\\bar x=\\bar y=0\\).",
-          {
-            "math": "V=\\frac{128\\pi}{3}\\int_0^{\\pi/4}\\cos^3\\phi\\sin\\phi\\,d\\phi=8\\pi"
-          },
-          {
-            "math": "M_{xy}=\\int_0^{2\\pi}\\int_0^{\\pi/4}\\int_0^{4\\cos\\phi}(\\rho\\cos\\phi)\\rho^2\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta=128\\pi\\int_0^{\\pi/4}\\cos^5\\phi\\sin\\phi\\,d\\phi=\\frac{56\\pi}{3}"
-          },
-          {
-            "math": "(\\bar x,\\bar y,\\bar z)=(0,0,7/3)"
-          }
+          "D. \\(8 \\pi\\)"
         ]
-      }
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Non-z-axis coordinates",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(4 \\pi\\)",
+        "\\(16 \\pi\\)",
+        "\\(- 8 \\pi\\)",
+        "\\(8 \\pi\\)",
+        "\\(1 + 8 \\pi\\)"
+      ],
+      "correctChoices": [
+        3
+      ]
     },
     {
-      "id": "15.8.8",
+      "id": "E3-106",
       "review": "chapter15",
-      "section": "15.8",
-      "title": "Harder challenge: weighted hemispherical shell",
-      "practiceSet": "harder-challenge-oct22",
-      "difficulty": "hard",
+      "section": "15.7",
+      "title": "Density is another factor",
       "body": [
-        "The upper hemispherical shell \\(1\\le x^2+y^2+z^2\\le4,\\ z\\ge0\\) has density \\(\\delta=x^2+y^2+z^2\\). Find its mass, center of mass, and moment of inertia about the z-axis."
+        "A solid satisfies \\(x^2+y^2\\le4,0\\le z\\le2\\). Its density equals distance to the z-axis. Find its mass."
       ],
       "answer": {
         "blocks": [
-          "Use \\(1\\le\\rho\\le2,\\ 0\\le\\phi\\le\\pi/2,\\ 0\\le\\theta\\le2\\pi\\), and density \\(\\rho^2\\).",
-          {
-            "math": "m=2\\pi\\int_1^2\\rho^4\\,d\\rho=\\frac{62\\pi}{5},\\qquad M_{xy}=2\\pi\\int_0^{\\pi/2}\\cos\\phi\\sin\\phi\\,d\\phi\\int_1^2\\rho^5\\,d\\rho=\\frac{21\\pi}{2}"
-          },
-          {
-            "math": "(\\bar x,\\bar y,\\bar z)=\\left(0,0,\\frac{105}{124}\\right)"
-          },
-          "Squared distance to the z-axis is \\(\\rho^2\\sin^2\\phi\\), not \\(\\rho^2\\).",
-          {
-            "math": "I_z=2\\pi\\int_0^{\\pi/2}\\sin^3\\phi\\,d\\phi\\int_1^2\\rho^6\\,d\\rho=\\frac{508\\pi}{21}"
-          }
+          "C. \\(\\frac{32 \\pi}{3}\\)"
         ]
-      }
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Density and Jacobian",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(\\frac{64 \\pi}{3}\\)",
+        "\\(1 + \\frac{32 \\pi}{3}\\)",
+        "\\(\\frac{32 \\pi}{3}\\)",
+        "\\(\\frac{16 \\pi}{3}\\)",
+        "\\(- \\frac{32 \\pi}{3}\\)"
+      ],
+      "correctChoices": [
+        2
+      ]
+    },
+    {
+      "id": "E3-107",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Integrate over a conical floor",
+      "body": [
+        "E satisfies \\(x^2+y^2\\le4,\\sqrt{x^2+y^2}\\le z\\le2\\). Evaluate \\(\\iiint_Ez\\,dV\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "E. \\(4 \\pi\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Height versus radial coordinate",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(8 \\pi\\)",
+        "\\(- 4 \\pi\\)",
+        "\\(2 \\pi\\)",
+        "\\(1 + 4 \\pi\\)",
+        "\\(4 \\pi\\)"
+      ],
+      "correctChoices": [
+        4
+      ]
+    },
+    {
+      "id": "E3-108",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "A spherical cone sector",
+      "body": [
+        "Use the supplied figure and exact restrictions. Find the volume inside the radius-2 sphere centered at the origin above \\(z=\\sqrt{3(x^2+y^2)}\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "D. \\(\\frac{8 \\pi \\left(2 - \\sqrt{3}\\right)}{3}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Cone angle",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(1 + \\frac{8 \\pi \\left(2 - \\sqrt{3}\\right)}{3}\\)",
+        "\\(\\frac{16 \\pi \\left(2 - \\sqrt{3}\\right)}{3}\\)",
+        "\\(\\frac{8 \\pi \\left(-2 + \\sqrt{3}\\right)}{3}\\)",
+        "\\(\\frac{8 \\pi \\left(2 - \\sqrt{3}\\right)}{3}\\)",
+        "\\(\\frac{4 \\pi \\left(2 - \\sqrt{3}\\right)}{3}\\)"
+      ],
+      "figure": "figures/exam3/E3-108.svg",
+      "figureAlt": "A spherical cone sector; shaded region with the boundaries stated in the question.",
+      "correctChoices": [
+        3
+      ]
+    },
+    {
+      "id": "E3-109",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Below the cone, above the plane",
+      "body": [
+        "Find the volume inside the radius-2 sphere centered at the origin with \\(0\\le z\\le\\sqrt{x^2+y^2}\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "E. \\(\\frac{8 \\sqrt{2} \\pi}{3}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Angular inequalities",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(\\frac{4 \\sqrt{2} \\pi}{3}\\)",
+        "\\(- \\frac{8 \\sqrt{2} \\pi}{3}\\)",
+        "\\(1 + \\frac{8 \\sqrt{2} \\pi}{3}\\)",
+        "\\(\\frac{16 \\sqrt{2} \\pi}{3}\\)",
+        "\\(\\frac{8 \\sqrt{2} \\pi}{3}\\)"
+      ],
+      "correctChoices": [
+        4
+      ]
+    },
+    {
+      "id": "E3-110",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "A shell with a signed moment",
+      "body": [
+        "E satisfies \\(1\\le x^2+y^2+z^2\\le4,z\\le0\\). Evaluate \\(\\iiint_E z\\,dV\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "A. \\(- \\frac{15 \\pi}{4}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Shell and hemisphere",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(- \\frac{15 \\pi}{4}\\)",
+        "\\(- \\frac{15 \\pi}{2}\\)",
+        "\\(1 - \\frac{15 \\pi}{4}\\)",
+        "\\(\\frac{15 \\pi}{4}\\)",
+        "\\(- \\frac{15 \\pi}{8}\\)"
+      ],
+      "correctChoices": [
+        0
+      ]
+    },
+    {
+      "id": "E3-111",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Sphere touching the origin",
+      "body": [
+        "Find the volume of \\(x^2+y^2+z^2\\le4z\\) using spherical coordinates."
+      ],
+      "answer": {
+        "blocks": [
+          "B. \\(\\frac{32 \\pi}{3}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Shifted sphere radial bound",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(\\frac{64 \\pi}{3}\\)",
+        "\\(\\frac{32 \\pi}{3}\\)",
+        "\\(1 + \\frac{32 \\pi}{3}\\)",
+        "\\(- \\frac{32 \\pi}{3}\\)",
+        "\\(\\frac{16 \\pi}{3}\\)"
+      ],
+      "correctChoices": [
+        1
+      ]
+    },
+    {
+      "id": "E3-112",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Distance from the origin",
+      "body": [
+        "The radius-2 ball has density equal to squared distance from the origin. Find its mass."
+      ],
+      "answer": {
+        "blocks": [
+          "C. \\(\\frac{128 \\pi}{5}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Radial density",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(1 + \\frac{128 \\pi}{5}\\)",
+        "\\(- \\frac{128 \\pi}{5}\\)",
+        "\\(\\frac{128 \\pi}{5}\\)",
+        "\\(\\frac{64 \\pi}{5}\\)",
+        "\\(\\frac{256 \\pi}{5}\\)"
+      ],
+      "correctChoices": [
+        2
+      ]
+    },
+    {
+      "id": "E3-113",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Recover a Cartesian coordinate",
+      "body": [
+        "A point has spherical coordinates \\((\\rho,\\theta,\\phi)=(4,7\\pi/6,2\\pi/3)\\). Find its x-coordinate."
+      ],
+      "answer": {
+        "blocks": [
+          "C. \\(-3\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Coordinate conversion",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(-6\\)",
+        "\\(-2\\)",
+        "\\(-3\\)",
+        "\\(- \\frac{3}{2}\\)",
+        "\\(3\\)"
+      ],
+      "correctChoices": [
+        2
+      ]
+    },
+    {
+      "id": "E3-114",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Correct a spherical integrand",
+      "body": [
+        "A student uses \\(\\rho^2\\sin\\phi\\) as the complete integrand for \\(\\iiint_E(x^2+y^2)\\,dV\\) on a radius-2 upper hemisphere. Find the correct integral value."
+      ],
+      "answer": {
+        "blocks": [
+          "E. \\(\\frac{128 \\pi}{15}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Two radial factors",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(1 + \\frac{128 \\pi}{15}\\)",
+        "\\(\\frac{64 \\pi}{15}\\)",
+        "\\(- \\frac{128 \\pi}{15}\\)",
+        "\\(\\frac{256 \\pi}{15}\\)",
+        "\\(\\frac{128 \\pi}{15}\\)"
+      ],
+      "correctChoices": [
+        4
+      ]
+    },
+    {
+      "id": "E3-115",
+      "review": "chapter15",
+      "section": "15.9",
+      "title": "Linear combinations define the sides",
+      "body": [
+        "Use the supplied figure and exact restrictions. R satisfies \\(0\\le x+y\\le2,0\\le x-y\\le1\\). Evaluate \\(\\iint_R(x+y)^2\\,dA\\) using \\(u=x+y,v=x-y\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "A. \\(\\frac{4}{3}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Linear Jacobian and region",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(\\frac{4}{3}\\)",
+        "\\(\\frac{2}{3}\\)",
+        "\\(- \\frac{4}{3}\\)",
+        "\\(\\frac{8}{3}\\)",
+        "\\(\\frac{7}{3}\\)"
+      ],
+      "figure": "figures/exam3/E3-115.svg",
+      "figureAlt": "Linear combinations define the sides; shaded region with the boundaries stated in the question.",
+      "correctChoices": [
+        0
+      ]
+    },
+    {
+      "id": "E3-116",
+      "review": "chapter15",
+      "section": "15.9",
+      "title": "Elliptical radial integral",
+      "body": [
+        "Evaluate \\(\\iint_D e^{x^2/4+y^2/4}\\,dA\\), where \\(x^2/4+y^2/4\\le1\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "B. \\(4 \\pi \\left(-1 + e\\right)\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Scaled polar",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(2 \\pi \\left(1 - e\\right)\\)",
+        "\\(4 \\pi \\left(-1 + e\\right)\\)",
+        "\\(2 \\pi \\left(-1 + e\\right)\\)",
+        "\\(1 - 2 \\pi \\left(1 - e\\right)\\)",
+        "\\(\\pi \\left(-1 + e\\right)\\)"
+      ],
+      "correctChoices": [
+        1
+      ]
+    },
+    {
+      "id": "E3-117",
+      "review": "chapter15",
+      "section": "15.9",
+      "title": "A nonlinear transformation",
+      "body": [
+        "Use \\(x=u,y=uv\\) to integrate \\(y/x\\) over \\(1\\le x\\le2,0\\le y\\le x\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "C. \\(\\frac{3}{4}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Variable Jacobian",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(\\frac{3}{8}\\)",
+        "\\(\\frac{3}{2}\\)",
+        "\\(\\frac{3}{4}\\)",
+        "\\(- \\frac{3}{4}\\)",
+        "\\(\\frac{7}{4}\\)"
+      ],
+      "correctChoices": [
+        2
+      ]
+    },
+    {
+      "id": "E3-118",
+      "review": "chapter15",
+      "section": "15.9",
+      "title": "An inverse determinant is not the area factor",
+      "body": [
+        "The transformation \\(u=2x+y,v=x-y\\) maps R onto \\([0,2]\\times[0,3]\\). Find the area of R."
+      ],
+      "answer": {
+        "blocks": [
+          "D. \\(2\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Inverse Jacobian",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(4\\)",
+        "\\(-2\\)",
+        "\\(1\\)",
+        "\\(2\\)",
+        "\\(3\\)"
+      ],
+      "correctChoices": [
+        3
+      ]
+    },
+    {
+      "id": "E3-119",
+      "review": "chapter15",
+      "section": "15.9",
+      "title": "Orientation versus positive area",
+      "body": [
+        "Let \\(x=u+2v,y=2u-v\\), with \\(0\\le u,v\\le1\\). A student integrates the signed coefficient in \\(dx\\wedge dy\\) to compute ordinary area. Find the correct area."
+      ],
+      "answer": {
+        "blocks": [
+          "C. \\(5\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Wedge and absolute determinant",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(10\\)",
+        "\\(\\frac{5}{2}\\)",
+        "\\(5\\)",
+        "\\(-5\\)",
+        "\\(6\\)"
+      ],
+      "correctChoices": [
+        2
+      ]
+    },
+    {
+      "id": "E3-120",
+      "review": "chapter15",
+      "section": "15.9",
+      "title": "A three-dimensional scaling",
+      "body": [
+        "Find the volume of \\(x^2/4+y^2/4+z^2/9\\le1\\) by mapping it to a unit ball."
+      ],
+      "answer": {
+        "blocks": [
+          "D. \\(16 \\pi\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Three-dimensional determinant",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(8 \\pi\\)",
+        "\\(32 \\pi\\)",
+        "\\(- 16 \\pi\\)",
+        "\\(16 \\pi\\)",
+        "\\(1 + 16 \\pi\\)"
+      ],
+      "correctChoices": [
+        3
+      ]
+    },
+    {
+      "id": "E3-121",
+      "review": "chapter15",
+      "section": "15.9",
+      "title": "Choose variables from an exponential",
+      "body": [
+        "Evaluate \\(\\iint_R(x+y)e^{x^2-y^2}\\,dA\\), where \\(0\\le x+y\\le2,0\\le x-y\\le1\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "D. \\(- \\frac{3}{2} + \\frac{e^{2}}{2}\\)"
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "mcq",
+      "concept": "Transformed exponential",
+      "practiceSet": "exam3-new",
+      "choices": [
+        "\\(-3 + e^{2}\\)",
+        "\\(- \\frac{3}{4} + \\frac{e^{2}}{4}\\)",
+        "\\(\\frac{3}{2} - \\frac{e^{2}}{2}\\)",
+        "\\(- \\frac{3}{2} + \\frac{e^{2}}{2}\\)",
+        "\\(- \\frac{1}{2} + \\frac{e^{2}}{2}\\)"
+      ],
+      "correctChoices": [
+        3
+      ]
+    },
+    {
+      "id": "E3-122",
+      "review": "chapter15",
+      "section": "15.1",
+      "title": "Separate only on a rectangle",
+      "body": [
+        "Evaluate \\(\\iint_R\\frac{y e^{y^2}}{1+x^2}\\,dA\\), where \\(R=[0,1]\\times[0,3]\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^1\\int_0^3\\frac{ye^{y^2}}{1+x^2}\\,dy\\,dx\\). (b) \\(- \\frac{\\pi \\left(1 - e^{9}\\right)}{8}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Separable integrands",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-123",
+      "review": "chapter15",
+      "section": "15.1",
+      "title": "Choose the useful inner variable",
+      "body": [
+        "A calculation produces \\(I=\\int_0^1\\int_0^{3\\pi}x\\cos(xy)\\,dx\\,dy\\). Integrating in the displayed order invites integration by parts. (a) Give an equivalent order that avoids it. (b) Evaluate I."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{3\\pi}\\int_0^1x\\cos(xy)\\,dy\\,dx\\). (b) \\(2\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Fubini and order",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-124",
+      "review": "chapter15",
+      "section": "15.1",
+      "title": "Cancellation with a surviving term",
+      "body": [
+        "A sensor has signed reading \\(xe^{y^2}+3y^2\\) on \\([-1,1]\\times[0,2]\\). (a) Reduce its total reading to a single integral using symmetry. (b) Compute that total."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(2\\int_0^2 3y^2\\,dy\\). (b) \\(16\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Parity",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-125",
+      "review": "chapter15",
+      "section": "15.1",
+      "title": "Midpoint readings",
+      "body": [
+        "Partition \\([0,2]\\times[0,6]\\) into a 2-by-2 grid of four equal rectangles. Find the midpoint-rule approximation to \\(\\iint_R(x^2+y)\\,dA\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(3\\sum_{x\\in\\{1/2,3/2\\}}\\sum_{y\\in\\{3/2,9/2\\}}(x^2+y)\\). (b) \\(51\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Riemann sums",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-126",
+      "review": "chapter15",
+      "section": "15.1",
+      "title": "Signed volume is not geometric volume",
+      "body": [
+        "A student reports zero volume between \\(z=x-3\\) and the xy-plane over \\([0,6]\\times[0,2]\\), because the signed integral is zero. (a) Give a corrected volume setup. (b) Compute the geometric volume."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(2\\int_0^3(3-x)\\,dx+2\\int_3^6(x-3)\\,dx\\). (b) \\(18\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Absolute versus signed volume",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-127",
+      "review": "chapter15",
+      "section": "15.1",
+      "title": "A tilted roof over a rectangle",
+      "body": [
+        "Find the volume below \\(z=12-x-y\\) and above \\([0,3]\\times[0,2]\\) in the xy-plane. (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^3\\int_0^2(12-x-y)\\,dy\\,dx\\). (b) \\(57\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Volume",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-128",
+      "review": "chapter15",
+      "section": "15.1",
+      "title": "Recover a parameter from an average",
+      "body": [
+        "The average of \\(f(x,y)=cx^2+y\\) over \\([-3,3]\\times[0,2]\\) is 5. Find c. (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\frac1{12}\\int_{-3}^3\\int_0^2(cx^2+y)\\,dy\\,dx=5\\). (b) \\(\\frac{4}{3}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Average and inverse reasoning",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-129",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Reverse before integrating",
+      "body": [
+        "For \\(D=\\{(x,y):0\\le y\\le9,\\sqrt y\\le x\\le3\\}\\), the integrand is \\(x/(1+x^4)\\). (a) Give a Type I description and a useful iterated integral. (b) Evaluate the integral."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(0\\le x\\le3,0\\le y\\le x^2\\); \\(\\int_0^3\\int_0^{x^2}\\frac{x}{1+x^4}\\,dy\\,dx\\). (b) \\(\\frac{\\log{\\left(82 \\right)}}{4}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Reverse order",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-130",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Triangle under a plane",
+      "body": [
+        "Over \\(x,y\\ge0,x+y\\le3\\), find the volume between \\(z=x+y\\) and \\(z=6\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^3\\int_0^{3-x}(6-x-y)\\,dy\\,dx\\). (b) \\(18\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Projection and height",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-131",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Curves that exchange roles",
+      "body": [
+        "Use the supplied figure and exact restrictions. Find \\(\\iint_D y\\,dA\\), where \\(D\\) lies between \\(y=x^2\\) and \\(y=3x\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^3\\int_{x^2}^{3x}y\\,dy\\,dx\\). (b) \\(\\frac{81}{5}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Parabolic region",
+      "practiceSet": "exam3-new",
+      "figure": "figures/exam3/E3-131.svg",
+      "figureAlt": "Curves that exchange roles; shaded region with the boundaries stated in the question."
+    },
+    {
+      "id": "E3-132",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Split or change direction",
+      "body": [
+        "The supplied region is \\(D=\\{(x,y):y^2\\le x\\le9\\}\\). Its density is x. (a) Use horizontal slices to set up its mass. (b) Find the mass."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_{-3}^3\\int_{y^2}^9x\\,dx\\,dy\\). (b) \\(\\frac{972}{5}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Branch selection",
+      "practiceSet": "exam3-new",
+      "figure": "figures/exam3/E3-132.svg",
+      "figureAlt": "Split or change direction; shaded region with the boundaries stated in the question."
+    },
+    {
+      "id": "E3-133",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "An exponential boundary",
+      "body": [
+        "Find the area bounded by \\(y=\\ln x,y=0,x=e^3\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^3\\int_{e^y}^{e^3}1\\,dx\\,dy\\). (b) \\(1 + 2 e^{3}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Logarithmic region",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-134",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "The missing half destroys cancellation",
+      "body": [
+        "A student claims \\(\\iint_Dx\\,dA=0\\) because x is odd, where \\(D=\\{0\\le x\\le3,x^2\\le y\\le9\\}\\). (a) Give an integral over the actual region. (b) Find its value."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^3\\int_{x^2}^9x\\,dy\\,dx\\). (b) \\(\\frac{81}{4}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Symmetry trap",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-135",
+      "review": "chapter15",
+      "section": "15.2",
+      "title": "Turn an inverse function into a slice",
+      "body": [
+        "Evaluate \\(\\int_0^1\\int_{\\arcsin y}^{\\pi/2}3\\cos x\\,dx\\,dy\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{\\pi/2}\\int_0^{\\sin x}3\\cos x\\,dy\\,dx\\). (b) \\(\\frac{3}{2}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Nonalgebraic reversal",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-136",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Gaussian sector",
+      "body": [
+        "Find \\(\\iint_D e^{-x^2-y^2}\\,dA\\), where \\(x^2+y^2\\le9\\), \\(x\\ge0\\), and \\(0\\le y\\le x\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{\\pi/4}\\int_0^3re^{-r^2}\\,dr\\,d\\theta\\). (b) \\(- \\frac{\\pi}{8 e^{9}} + \\frac{\\pi}{8}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Polar sector",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-137",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "A translated disk",
+      "body": [
+        "Use the supplied figure and exact restrictions. Find \\(\\iint_D x\\,dA\\) on \\((x-3)^2+y^2\\le9\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_{-\\pi/2}^{\\pi/2}\\int_0^{6\\cos\\theta}r^2\\cos\\theta\\,dr\\,d\\theta\\). (b) \\(27 \\pi\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Offset circle",
+      "practiceSet": "exam3-new",
+      "figure": "figures/exam3/E3-137.svg",
+      "figureAlt": "A translated disk; shaded region with the boundaries stated in the question."
+    },
+    {
+      "id": "E3-138",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Annular wedge",
+      "body": [
+        "The figure represents \\(1\\le x^2+y^2\\le9\\), \\(\\pi/2\\le\\theta\\le3\\pi/4\\). Density at a point equals its squared distance from the origin. (a) Set up the mass in polar coordinates. (b) Evaluate."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_{\\pi/2}^{3\\pi/4}\\int_1^3r^3\\,dr\\,d\\theta\\). (b) \\(5 \\pi\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Annular sectors",
+      "practiceSet": "exam3-new",
+      "figure": "figures/exam3/E3-138.svg",
+      "figureAlt": "Annular wedge; shaded region with the boundaries stated in the question."
+    },
+    {
+      "id": "E3-139",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "An angular weight",
+      "body": [
+        "Evaluate \\(\\iint_Dxy\\,dA\\) on the first-quadrant disk \\(x^2+y^2\\le9\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{\\pi/2}\\int_0^3r^3\\cos\\theta\\sin\\theta\\,dr\\,d\\theta\\). (b) \\(\\frac{81}{8}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Transform the integrand",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-140",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Overlap of two disks",
+      "body": [
+        "Use the supplied figure and exact restrictions. Find the area common to \\(x^2+y^2\\le9\\) and \\((x-3)^2+y^2\\le9\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(2\\int_0^{\\pi/3}\\int_0^3r\\,dr\\,d\\theta+2\\int_{\\pi/3}^{\\pi/2}\\int_0^{6\\cos\\theta}r\\,dr\\,d\\theta\\). (b) \\(- \\frac{9 \\sqrt{3}}{2} + 6 \\pi\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Switching radial bounds",
+      "practiceSet": "exam3-new",
+      "figure": "figures/exam3/E3-140.svg",
+      "figureAlt": "Overlap of two disks; shaded region with the boundaries stated in the question."
+    },
+    {
+      "id": "E3-141",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Repair an omitted area factor",
+      "body": [
+        "A student uses \\(\\int_0^{2\\pi}\\int_0^3r^2\\,dr\\,d\\theta\\) for \\(\\iint_{x^2+y^2\\le9}(x^2+y^2)\\,dA\\). Find the correct value. (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{2\\pi}\\int_0^3r^3\\,dr\\,d\\theta\\). (b) \\(\\frac{81 \\pi}{2}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Jacobian error",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-142",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Curved upper radial boundary",
+      "body": [
+        "Find the area inside \\(r=3(1+\\cos\\theta)\\). Use \\(-\\pi\\le\\theta\\le\\pi\\), \\(r\\ge0\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_{-\\pi}^\\pi\\int_0^{3(1+\\cos\\theta)}r\\,dr\\,d\\theta\\). (b) \\(\\frac{27 \\pi}{2}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Polar area",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-143",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "A weighted tetrahedron",
+      "body": [
+        "A tetrahedron has intercepts \\((3,0,0),(0,3,0),(0,0,3)\\) and the origin. Density equals distance from the yz-plane. (a) Set up its mass. (b) Evaluate."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^3\\int_0^{3-x}\\int_0^{3-x-y}x\\,dz\\,dy\\,dx\\). (b) \\(\\frac{27}{8}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Tetrahedral bounds",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-144",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Nested inequalities",
+      "body": [
+        "The solid is described by \\(\\int_0^3\\int_0^x\\int_0^y1\\,dz\\,dy\\,dx\\). (a) Rewrite its volume integral with x innermost. (b) Evaluate."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^3\\int_z^3\\int_y^31\\,dx\\,dy\\,dz\\). (b) \\(\\frac{9}{2}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Reorder triple integral",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-145",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "A variable-density box",
+      "body": [
+        "Find the mass of \\([0,3]\\times[0,2]\\times[0,3]\\) with density \\(\\delta=xz\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^3\\int_0^2\\int_0^3xz\\,dz\\,dy\\,dx\\). (b) \\(\\frac{81}{2}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Triple integral mass",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-146",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Parabolic cylinder and sloping face",
+      "body": [
+        "Find the volume of \\(0\\le y\\le1,0\\le z\\le1-y^2,0\\le x\\le3(1-z)\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^1\\int_0^{1-y^2}\\int_0^{3(1-z)}1\\,dx\\,dz\\,dy\\). (b) \\(\\frac{6}{5}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Projection of curved solid",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-147",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "A roof over two parabolas",
+      "body": [
+        "Find the volume above the region \\(x^2\\le y\\le\\sqrt x\\), \\(0\\le x\\le1\\), with \\(0\\le z\\le3(x+y)\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^1\\int_{x^2}^{\\sqrt x}\\int_0^{3(x+y)}1\\,dz\\,dy\\,dx\\). (b) \\(\\frac{9}{10}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Nonrectangular footprint",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-148",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Symmetric base, asymmetric solid",
+      "body": [
+        "A student says \\(\\iiint_E x\\,dV=0\\) because the base \\([-1,1]\\times[0,3]\\) is symmetric in x. The solid has floor \\(z=0\\) and roof \\(z=x+2\\). (a) Set up the actual integral. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_{-1}^1\\int_0^3\\int_0^{x+2}x\\,dz\\,dy\\,dx\\). (b) \\(2\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Symmetry of full solid",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-149",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Read the solid from the integral",
+      "body": [
+        "Find the volume of \\(E=\\{0\\le z\\le3,0\\le x\\le z,0\\le y\\le z-x\\}\\). Use the order \\(dy\\,dz\\,dx\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^3\\int_x^3\\int_0^{z-x}1\\,dy\\,dz\\,dx\\). (b) \\(\\frac{9}{2}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Cross-sections",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-150",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Cone capped by a plane",
+      "body": [
+        "Find the volume above \\(z=\\sqrt{x^2+y^2}\\) and below \\(z=3\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{2\\pi}\\int_0^3\\int_r^3r\\,dz\\,dr\\,d\\theta\\). (b) \\(9 \\pi\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Cone and plane",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-151",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Facing paraboloids",
+      "body": [
+        "The figure shows the cross-section of a solid with floor \\(z=r^2\\) and roof \\(z=18-r^2\\), rotated fully around the z-axis. (a) Find the intersection radius and give cylindrical volume bounds. (b) Find the volume."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(r=3\\); \\(\\int_0^{2\\pi}\\int_0^3\\int_{r^2}^{18-r^2}r\\,dz\\,dr\\,d\\theta\\). (b) \\(81 \\pi\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Intersection radius",
+      "practiceSet": "exam3-new",
+      "figure": "figures/exam3/E3-151.svg",
+      "figureAlt": "Facing paraboloids; shaded region with the boundaries stated in the question."
+    },
+    {
+      "id": "E3-152",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Tilted top and a weighted integral",
+      "body": [
+        "Find \\(\\iiint_E x\\,dV\\), where \\(x^2+y^2\\le9,0\\le z\\le x+4\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{2\\pi}\\int_0^3\\int_0^{r\\cos\\theta+4}r^2\\cos\\theta\\,dz\\,dr\\,d\\theta\\). (b) \\(\\frac{81 \\pi}{4}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Angular cancellation",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-153",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Drilled upper hemisphere",
+      "body": [
+        "Find the volume inside \\(x^2+y^2+z^2\\le10\\), outside \\(x^2+y^2<1\\), with \\(z\\ge0\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{2\\pi}\\int_1^{\\sqrt{10}}\\int_0^{\\sqrt{10-r^2}}r\\,dz\\,dr\\,d\\theta\\). (b) \\(18 \\pi\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Sphere-cylinder intersection",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-154",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Rotate around a different axis",
+      "body": [
+        "A paraboloid opens along the positive y-axis: \\(y=x^2+z^2\\). The plane \\(y=9\\) caps it. (a) Use polar coordinates in the xz-plane to give a volume integral. (b) Evaluate."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{2\\pi}\\int_0^3\\int_{r^2}^9r\\,dy\\,dr\\,d\\theta\\). (b) \\(\\frac{81 \\pi}{2}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Non-z-axis coordinates",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-155",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Density is another factor",
+      "body": [
+        "A solid satisfies \\(x^2+y^2\\le9,0\\le z\\le2\\). Its density equals distance to the z-axis. Find its mass. (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{2\\pi}\\int_0^3\\int_0^2r^2\\,dz\\,dr\\,d\\theta\\). (b) \\(36 \\pi\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Density and Jacobian",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-156",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Integrate over a conical floor",
+      "body": [
+        "E satisfies \\(x^2+y^2\\le9,\\sqrt{x^2+y^2}\\le z\\le3\\). Evaluate \\(\\iiint_Ez\\,dV\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{2\\pi}\\int_0^3\\int_r^3zr\\,dz\\,dr\\,d\\theta\\). (b) \\(\\frac{81 \\pi}{4}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Height versus radial coordinate",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-157",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "A spherical cone sector",
+      "body": [
+        "Use the supplied figure and exact restrictions. Find the volume inside the radius-3 sphere centered at the origin above \\(z=\\sqrt{3(x^2+y^2)}\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{2\\pi}\\int_0^{\\pi/6}\\int_0^3\\rho^2\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta\\). (b) \\(9 \\pi \\left(2 - \\sqrt{3}\\right)\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Cone angle",
+      "practiceSet": "exam3-new",
+      "figure": "figures/exam3/E3-157.svg",
+      "figureAlt": "A spherical cone sector; shaded region with the boundaries stated in the question."
+    },
+    {
+      "id": "E3-158",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Below the cone, above the plane",
+      "body": [
+        "Find the volume inside the radius-3 sphere centered at the origin with \\(0\\le z\\le\\sqrt{x^2+y^2}\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{2\\pi}\\int_{\\pi/4}^{\\pi/2}\\int_0^3\\rho^2\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta\\). (b) \\(9 \\sqrt{2} \\pi\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Angular inequalities",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-159",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "A shell with a signed moment",
+      "body": [
+        "The lower half of the spherical shell \\(1\\le x^2+y^2+z^2\\le9\\) has unit density. (a) Set up its first moment \\(\\iiint_Ez\\,dV\\) in spherical coordinates. (b) Find the signed value."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{2\\pi}\\int_{\\pi/2}^\\pi\\int_1^3\\rho^3\\cos\\phi\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta\\). (b) \\(- 20 \\pi\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Shell and hemisphere",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-160",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Sphere touching the origin",
+      "body": [
+        "The ball centered at \\((0,0,3)\\) with radius 3 touches the origin. (a) Give a spherical volume integral with the origin as the coordinate center. (b) Evaluate."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{2\\pi}\\int_0^{\\pi/2}\\int_0^{6\\cos\\phi}\\rho^2\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta\\). (b) \\(36 \\pi\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Shifted sphere radial bound",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-161",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Distance from the origin",
+      "body": [
+        "The radius-3 ball has density equal to squared distance from the origin. Find its mass. (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{2\\pi}\\int_0^\\pi\\int_0^3\\rho^4\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta\\). (b) \\(\\frac{972 \\pi}{5}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Radial density",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-162",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Recover a Cartesian coordinate",
+      "body": [
+        "A point has spherical coordinates \\((\\rho,\\theta,\\phi)=(6,7\\pi/6,2\\pi/3)\\). Find its x-coordinate. (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(x=6\\sin(2\\pi/3)\\cos(7\\pi/6)\\). (b) \\(- \\frac{9}{2}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Coordinate conversion",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-163",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Correct a spherical integrand",
+      "body": [
+        "A student uses \\(\\rho^2\\sin\\phi\\) as the complete integrand for \\(\\iiint_E(x^2+y^2)\\,dV\\) on a radius-3 upper hemisphere. Find the correct integral value. (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{2\\pi}\\int_0^{\\pi/2}\\int_0^3\\rho^4\\sin^3\\phi\\,d\\rho\\,d\\phi\\,d\\theta\\). (b) \\(\\frac{324 \\pi}{5}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Two radial factors",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-164",
+      "review": "chapter15",
+      "section": "15.9",
+      "title": "Linear combinations define the sides",
+      "body": [
+        "Use the supplied figure and exact restrictions. R satisfies \\(0\\le x+y\\le3,0\\le x-y\\le1\\). Evaluate \\(\\iint_R(x+y)^2\\,dA\\) using \\(u=x+y,v=x-y\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^3\\int_0^1u^2/2\\,dv\\,du\\). (b) \\(\\frac{9}{2}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Linear Jacobian and region",
+      "practiceSet": "exam3-new",
+      "figure": "figures/exam3/E3-164.svg",
+      "figureAlt": "Linear combinations define the sides; shaded region with the boundaries stated in the question."
+    },
+    {
+      "id": "E3-165",
+      "review": "chapter15",
+      "section": "15.9",
+      "title": "Elliptical radial integral",
+      "body": [
+        "Evaluate \\(\\iint_D e^{x^2/9+y^2/4}\\,dA\\), where \\(x^2/9+y^2/4\\le1\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{2\\pi}\\int_0^1 6re^{r^2}\\,dr\\,d\\theta\\). (b) \\(6 \\pi \\left(-1 + e\\right)\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Scaled polar",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-166",
+      "review": "chapter15",
+      "section": "15.9",
+      "title": "A nonlinear transformation",
+      "body": [
+        "The rectangle \\(1\\le u\\le3,0\\le v\\le1\\) maps to R by \\(x=u,y=uv\\). (a) Transform \\(\\iint_R(y/x)\\,dA\\), including the area factor. (b) Evaluate."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_1^3\\int_0^1uv\\,dv\\,du\\). (b) \\(2\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Variable Jacobian",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-167",
+      "review": "chapter15",
+      "section": "15.9",
+      "title": "An inverse determinant is not the area factor",
+      "body": [
+        "The map \\(u=3x+y,v=x-y\\) sends R to \\([0,2]\\times[0,3]\\). A student multiplies 6 by \\(|\\partial(u,v)/\\partial(x,y)|\\). (a) Give the correct area integral. (b) Find the area of R."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^2\\int_0^3\\frac1{4}\\,dv\\,du\\). (b) \\(\\frac{3}{2}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Inverse Jacobian",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-168",
+      "review": "chapter15",
+      "section": "15.9",
+      "title": "Orientation versus positive area",
+      "body": [
+        "Let \\(x=u+3v,y=2u-v\\), with \\(0\\le u,v\\le1\\). A student integrates the signed coefficient in \\(dx\\wedge dy\\) to compute ordinary area. Find the correct area. (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(J=-7,\\quad A=\\int_0^1\\int_0^1 7\\,du\\,dv\\). (b) \\(7\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Wedge and absolute determinant",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-169",
+      "review": "chapter15",
+      "section": "15.9",
+      "title": "A three-dimensional scaling",
+      "body": [
+        "Find the volume of \\(x^2/9+y^2/4+z^2/9\\le1\\) by mapping it to a unit ball. (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{2\\pi}\\int_0^\\pi\\int_0^118\\rho^2\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta\\). (b) \\(24 \\pi\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Three-dimensional determinant",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-170",
+      "review": "chapter15",
+      "section": "15.9",
+      "title": "Choose variables from an exponential",
+      "body": [
+        "Evaluate \\(\\iint_R(x+y)e^{x^2-y^2}\\,dA\\), where \\(0\\le x+y\\le3,0\\le x-y\\le1\\). (a) Give a suitable iterated integral or transformed expression. (b) Evaluate it."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^3\\int_0^1\\frac12u e^{uv}\\,dv\\,du\\). (b) \\(-2 + \\frac{e^{3}}{2}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "sourceQuestion": "",
+      "kind": "frq",
+      "concept": "Transformed exponential",
+      "practiceSet": "exam3-new"
+    },
+    {
+      "id": "E3-171",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Six orders for one curved solid",
+      "body": [
+        "E is defined by \\(x^2\\le y\\le4,0\\le z\\le4-y\\). (a) Write its volume integral in all six orders. (b) Find its volume."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_{-2}^2\\int_{x^2}^4\\int_0^{4-y}1\\,dz\\,dy\\,dx\\); \\(\\int_{-2}^2\\int_0^{4-x^2}\\int_{x^2}^{4-z}1\\,dy\\,dz\\,dx\\);",
+          "\\(\\int_0^4\\int_{-\\sqrt y}^{\\sqrt y}\\int_0^{4-y}1\\,dz\\,dx\\,dy\\); \\(\\int_0^4\\int_0^{4-y}\\int_{-\\sqrt y}^{\\sqrt y}1\\,dx\\,dz\\,dy\\);",
+          "\\(\\int_0^4\\int_{-\\sqrt{4-z}}^{\\sqrt{4-z}}\\int_{x^2}^{4-z}1\\,dy\\,dx\\,dz\\); \\(\\int_0^4\\int_0^{4-z}\\int_{-\\sqrt y}^{\\sqrt y}1\\,dx\\,dy\\,dz\\). (b) \\(256/15\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "practiceSet": "exam3-new",
+      "kind": "frq",
+      "concept": "Six orders for one curved solid"
+    },
+    {
+      "id": "E3-172",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Coordinate surfaces and quadrants",
+      "body": [
+        "(a) Convert \\((-2,-2,3)\\) to cylindrical coordinates with \\(0\\le\\theta<2\\pi\\). (b) Identify the surface \\(r=2\\). (c) Identify \\(\\theta=5\\pi/4\\), including its restriction."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\((2\\sqrt2,5\\pi/4,3)\\). (b) Cylinder \\(x^2+y^2=4\\). (c) Vertical half-plane \\(y=x,x\\le0\\), with z unrestricted."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "practiceSet": "exam3-new",
+      "kind": "frq",
+      "concept": "Coordinate surfaces and quadrants"
+    },
+    {
+      "id": "E3-173",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Choose coordinates, then calculate",
+      "body": [
+        "The solid satisfies \\(x^2+y^2+z^2\\le4,z\\ge0\\). (a) Choose cylindrical or spherical coordinates to evaluate \\(\\iiint_E\\sqrt{x^2+y^2+z^2}\\,dV\\) with constant coordinate bounds. Give the integral. (b) Evaluate. (c) Give its cylindrical setup for comparison."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) Spherical: \\(\\int_0^{2\\pi}\\int_0^{\\pi/2}\\int_0^2\\rho^3\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta\\). (b) \\(16\\pi/2\\). (c) \\(\\int_0^{2\\pi}\\int_0^2\\int_0^{\\sqrt{4-r^2}}r\\sqrt{r^2+z^2}\\,dz\\,dr\\,d\\theta\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "practiceSet": "exam3-new",
+      "kind": "frq",
+      "concept": "Choose coordinates, then calculate"
+    },
+    {
+      "id": "E3-174",
+      "review": "chapter15",
+      "section": "15.9",
+      "title": "Forward and inverse Jacobians",
+      "body": [
+        "(a) At a point with polar radius \\(r=2\\), find \\(\\partial(x,y)/\\partial(r,\\theta)\\) and \\(\\partial(r,\\theta)/\\partial(x,y)\\). (b) For cylindrical coordinates, find the absolute 3D Jacobian there. (c) For spherical coordinates at \\(\\rho=2,\\phi=\\pi/6\\), find the absolute 3D Jacobian."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(2\\), \\(1/2\\). (b) \\(2\\). (c) \\(4/2\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "practiceSet": "exam3-new",
+      "kind": "frq",
+      "concept": "Forward and inverse Jacobians"
+    },
+    {
+      "id": "E3-175",
+      "review": "chapter15",
+      "section": "15.6",
+      "title": "Six orders for one curved solid",
+      "body": [
+        "E is defined by \\(x^2\\le y\\le9,0\\le z\\le9-y\\). (a) Write its volume integral in all six orders. (b) Find its volume."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_{-3}^3\\int_{x^2}^9\\int_0^{9-y}1\\,dz\\,dy\\,dx\\); \\(\\int_{-3}^3\\int_0^{9-x^2}\\int_{x^2}^{9-z}1\\,dy\\,dz\\,dx\\);",
+          "\\(\\int_0^9\\int_{-\\sqrt y}^{\\sqrt y}\\int_0^{9-y}1\\,dz\\,dx\\,dy\\); \\(\\int_0^9\\int_0^{9-y}\\int_{-\\sqrt y}^{\\sqrt y}1\\,dx\\,dz\\,dy\\);",
+          "\\(\\int_0^9\\int_{-\\sqrt{9-z}}^{\\sqrt{9-z}}\\int_{x^2}^{9-z}1\\,dy\\,dx\\,dz\\); \\(\\int_0^9\\int_0^{9-z}\\int_{-\\sqrt y}^{\\sqrt y}1\\,dx\\,dy\\,dz\\). (b) \\(1944/15\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "practiceSet": "exam3-new",
+      "kind": "frq",
+      "concept": "Six orders for one curved solid"
+    },
+    {
+      "id": "E3-176",
+      "review": "chapter15",
+      "section": "15.7",
+      "title": "Coordinate surfaces and quadrants",
+      "body": [
+        "(a) Convert \\((-3,-3,3)\\) to cylindrical coordinates with \\(0\\le\\theta<2\\pi\\). (b) Identify the surface \\(r=3\\). (c) Identify \\(\\theta=5\\pi/4\\), including its restriction."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\((3\\sqrt2,5\\pi/4,3)\\). (b) Cylinder \\(x^2+y^2=9\\). (c) Vertical half-plane \\(y=x,x\\le0\\), with z unrestricted."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "practiceSet": "exam3-new",
+      "kind": "frq",
+      "concept": "Coordinate surfaces and quadrants"
+    },
+    {
+      "id": "E3-177",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Choose coordinates, then calculate",
+      "body": [
+        "The solid satisfies \\(x^2+y^2+z^2\\le9,z\\ge0\\). (a) Choose cylindrical or spherical coordinates to evaluate \\(\\iiint_E\\sqrt{x^2+y^2+z^2}\\,dV\\) with constant coordinate bounds. Give the integral. (b) Evaluate. (c) Give its cylindrical setup for comparison."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) Spherical: \\(\\int_0^{2\\pi}\\int_0^{\\pi/2}\\int_0^3\\rho^3\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta\\). (b) \\(81\\pi/2\\). (c) \\(\\int_0^{2\\pi}\\int_0^3\\int_0^{\\sqrt{9-r^2}}r\\sqrt{r^2+z^2}\\,dz\\,dr\\,d\\theta\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "practiceSet": "exam3-new",
+      "kind": "frq",
+      "concept": "Choose coordinates, then calculate"
+    },
+    {
+      "id": "E3-178",
+      "review": "chapter15",
+      "section": "15.9",
+      "title": "Forward and inverse Jacobians",
+      "body": [
+        "(a) At a point with polar radius \\(r=3\\), find \\(\\partial(x,y)/\\partial(r,\\theta)\\) and \\(\\partial(r,\\theta)/\\partial(x,y)\\). (b) For cylindrical coordinates, find the absolute 3D Jacobian there. (c) For spherical coordinates at \\(\\rho=3,\\phi=\\pi/6\\), find the absolute 3D Jacobian."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(3\\), \\(1/3\\). (b) \\(3\\). (c) \\(9/2\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "practiceSet": "exam3-new",
+      "kind": "frq",
+      "concept": "Forward and inverse Jacobians"
+    },
+    {
+      "id": "E3-179",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "A Gaussian over the whole plane",
+      "body": [
+        "(a) Use polar coordinates to express \\(\\iint_{\\mathbb R^2}e^{-2x^2-2y^2}\\,dA\\) as a limit of integrals over disks. (b) Evaluate the limit. (c) What fraction of the total lies outside \\(x^2+y^2=1\\)?"
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\lim_{R\\to\\infty}\\int_0^{2\\pi}\\int_0^R re^{-2r^2}\\,dr\\,d\\theta\\). (b) \\(\\pi/2\\). (c) \\(e^{-2}\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "practiceSet": "exam3-new",
+      "kind": "frq",
+      "concept": "A Gaussian over the whole plane"
+    },
+    {
+      "id": "E3-180",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Recover a Gaussian parameter",
+      "body": [
+        "For \\(c>0\\), \\(\\iint_{\\mathbb R^2}e^{-c(x^2+y^2)}\\,dA=\\pi/3\\). (a) Give its polar setup in terms of c. (b) Find c. (c) Evaluate the same integral restricted to \\(x^2+y^2\\ge1\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\int_0^{2\\pi}\\int_0^\\infty re^{-cr^2}\\,dr\\,d\\theta\\). (b) \\(c=3\\). (c) \\(\\pi e^{-3}/3\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "practiceSet": "exam3-new",
+      "kind": "frq",
+      "concept": "Recover a Gaussian parameter"
+    },
+    {
+      "id": "E3-181",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "A plane makes the radial lower bound move",
+      "body": [
+        "E is inside \\(x^2+y^2+z^2\\le4z\\) and above \\(z=2\\). (a) Give spherical bounds, including the intersection angle. (b) Set up and evaluate its volume."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(0\\le\\theta\\le2\\pi,0\\le\\phi\\le\\pi/4,2\\sec\\phi\\le\\rho\\le4\\cos\\phi\\). (b) \\(\\int_0^{2\\pi}\\int_0^{\\pi/4}\\int_{2\\sec\\phi}^{4\\cos\\phi}\\rho^2\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta=16\\pi/3\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "practiceSet": "exam3-new",
+      "kind": "frq",
+      "concept": "A plane makes the radial lower bound move"
+    },
+    {
+      "id": "E3-182",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Find the missing angular endpoint",
+      "body": [
+        "A spherical setup for the volume inside \\(x^2+y^2+z^2\\le6z\\) and above \\(z=3\\) is \\(\\int_0^{2\\pi}\\int_0^\\alpha\\int_{3\\sec\\phi}^{6\\cos\\phi}\\rho^2\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta\\). (a) Find \\(\\alpha\\). (b) Evaluate. (c) Identify the solid using its sphere center and radius."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(\\alpha=\\pi/4\\). (b) \\(18\\pi\\). (c) Upper hemisphere of the radius-3 sphere centered at \\((0,0,3)\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "practiceSet": "exam3-new",
+      "kind": "frq",
+      "concept": "Find the missing angular endpoint"
+    },
+    {
+      "id": "E3-183",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Spherical surfaces and their intersection",
+      "body": [
+        "(a) Give Cartesian equations and any sign restriction for \\(\\rho=4\\) and \\(\\phi=2\\pi/3\\). (b) Their intersection is a horizontal circle. Find its height and radius."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(x^2+y^2+z^2=16\\); \\(x^2+y^2=3z^2,z\\le0\\). (b) Height \\(-2\\), radius \\(2\\sqrt3\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "practiceSet": "exam3-new",
+      "kind": "frq",
+      "concept": "Spherical surfaces and their intersection"
+    },
+    {
+      "id": "E3-184",
+      "review": "chapter15",
+      "section": "15.8",
+      "title": "Do not include the other cone",
+      "body": [
+        "A student replaces \\(\\phi=\\pi/6\\) by \\(z^2=3(x^2+y^2)\\). (a) Supply the missing restriction. (b) Find the radius and height of the intersection with \\(\\rho=6\\). (c) Give the spherical angle of the unwanted lower cone."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(z\\ge0\\). (b) Radius \\(3\\), height \\(3\\sqrt3\\). (c) \\(\\phi=5\\pi/6\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "practiceSet": "exam3-new",
+      "kind": "frq",
+      "concept": "Do not include the other cone"
+    },
+    {
+      "id": "E3-185",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Polar coordinates with quadrant information",
+      "body": [
+        "(a) Convert \\((-\\sqrt3,1)\\) to polar coordinates with \\(r\\ge0,0\\le\\theta<2\\pi\\). (b) Convert the polar point \\((4,5\\pi/3)\\) to Cartesian coordinates. (c) Give a Cartesian equation for \\(r=4\\cos\\theta\\)."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\((2,5\\pi/6)\\). (b) \\((2,-2\\sqrt3)\\). (c) \\((x-2)^2+y^2=4\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "practiceSet": "exam3-new",
+      "kind": "frq",
+      "concept": "Polar coordinates with quadrant information"
+    },
+    {
+      "id": "E3-186",
+      "review": "chapter15",
+      "section": "15.3",
+      "title": "Read a shifted circle from a polar boundary",
+      "body": [
+        "(a) Convert \\(x^2+(y-3)^2=9\\) to polar form. (b) Give bounds covering its interior exactly once with \\(r\\ge0\\). (c) Convert the boundary point with \\(\\theta=5\\pi/6\\) to Cartesian coordinates."
+      ],
+      "answer": {
+        "blocks": [
+          "(a) \\(r=6\\sin\\theta\\). (b) \\(0\\le\\theta\\le\\pi,0\\le r\\le6\\sin\\theta\\). (c) \\((-3\\sqrt3/2,3/2)\\)."
+        ]
+      },
+      "source": "Exam 3 · New review",
+      "practiceSet": "exam3-new",
+      "kind": "frq",
+      "concept": "Read a shifted circle from a polar boundary"
     },
     {
       "id": "CE2-01A",
@@ -21348,7 +24441,7 @@
       "id": "chapter15",
       "title": "Chapter 15",
       "course": "MATH 251",
-      "defaultTab": "guides"
+      "defaultTab": "questions"
     },
     {
       "id": "easy",

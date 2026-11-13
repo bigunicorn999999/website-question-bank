@@ -1,5 +1,10 @@
 {
   "topics": {
+    "Energy, work & enthalpy": "Energy, work & enthalpy",
+    "Heat capacity & calorimetry": "Heat capacity & calorimetry",
+    "Phase changes & heating curves": "Phase changes & heating curves",
+    "Thermochemical stoichiometry & Hess": "Thermochemical stoichiometry & Hess",
+    "Formation enthalpy & bond energies": "Formation enthalpy & bond energies",
     "14.1": "Functions of several variables",
     "14.3": "Partial derivatives",
     "14.4": "Tangent planes & linear approximations",
@@ -38,6 +43,986 @@
     "ENGR 11": "Module 11 · Files & input processing"
   },
   "questions": [
+    {
+      "id": "CH9-01",
+      "review": "chem-9",
+      "section": "Energy, work & enthalpy",
+      "title": "Expansion with two pressure stages",
+      "body": [
+        "A gas absorbs 515 J of heat. It expands from 1.20 to 2.60 L against 1.80 atm, then from 2.60 to 4.00 L against 0.750 atm. Use 1 L·atm = 101.325 J. Find ΔE."
+      ],
+      "choices": [
+        "+153 J",
+        "−153 J",
+        "+877 J",
+        "+372 J"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "A. +153 J",
+          "w = −[1.80(1.40) + 0.750(1.40)](101.325) = −362 J. Add q = +515 J."
+        ]
+      }
+    },
+    {
+      "id": "CH9-02",
+      "review": "chem-9",
+      "section": "Energy, work & enthalpy",
+      "title": "Compression with heat loss",
+      "body": [
+        "A gas loses 196 J of heat during compression from 5.00 L to 2.00 L against 1.25 atm. Use 1 L·atm = 101.325 J. Find w and ΔE."
+      ],
+      "choices": [
+        "w = −380 J, ΔE = −576 J",
+        "w = +380 J, ΔE = +576 J",
+        "w = +380 J, ΔE = +184 J",
+        "w = −380 J, ΔE = −184 J"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "C. w = +380 J, ΔE = +184 J",
+          "ΔV = −3.00 L, so w = +380 J. Heat leaves the gas, so ΔE ≈ 380 − 196 = 184 J."
+        ]
+      }
+    },
+    {
+      "id": "CH9-03",
+      "review": "chem-9",
+      "section": "Energy, work & enthalpy",
+      "title": "Same end states, different path",
+      "body": [
+        "Path A transfers +620 J of heat to a system while the system does 235 J of work. Path B reaches the same final state from the same initial state while 140 J of work is done on the system. What is q for path B?"
+      ],
+      "choices": [
+        "+525 J",
+        "+245 J",
+        "+385 J",
+        "−245 J"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "B. +245 J",
+          "Path A gives ΔE = +385 J. Path B has the same ΔE, so q = 385 − 140 = 245 J."
+        ]
+      }
+    },
+    {
+      "id": "CH9-04",
+      "review": "chem-9",
+      "section": "Energy, work & enthalpy",
+      "title": "Gas mole correction with a sample",
+      "body": [
+        "For N₂(g) + 3 H₂(g) → 2 NH₃(g), ΔH = −92.2 kJ as written at 350 K. Find ΔE when 0.750 mol NH₃ forms. Assume ideal gases and use R = 8.314 J/(mol·K)."
+      ],
+      "choices": [
+        "−36.8 kJ",
+        "−86.4 kJ",
+        "−34.6 kJ",
+        "−32.4 kJ"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "D. −32.4 kJ",
+          "Per equation Δn(gas) = −2, so ΔE = −92.2 − (−2)(8.314)(350)/1000 = −86.38 kJ. Multiply by 0.750/2."
+        ]
+      }
+    },
+    {
+      "id": "CH9-05",
+      "review": "chem-9",
+      "section": "Energy, work & enthalpy",
+      "title": "Gas production at constant pressure",
+      "body": [
+        "A reaction creates 2.00 mol more gas than it consumes at 298 K and has ΔE = −60.0 kJ as written. Assume ideal gases and negligible condensed-phase volumes. Use R = 8.314 J/(mol·K). What heat flows at constant pressure with only PV work?"
+      ],
+      "choices": [
+        "−65.0 kJ",
+        "−60.0 kJ",
+        "−55.0 kJ",
+        "+55.0 kJ"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "C. −55.0 kJ",
+          "qₚ = ΔH ≈ ΔE + ΔnRT = −60.0 + 2.00(8.314)(298)/1000 = −55.0 kJ."
+        ]
+      }
+    },
+    {
+      "id": "CH9-06",
+      "review": "chem-9",
+      "section": "Energy, work & enthalpy",
+      "title": "Identify the system energy balance",
+      "body": [
+        "A rigid calorimeter warms as a reaction takes place. Assume negligible heat escape to the room and only PV work. Which statement about the reacting chemicals is correct?"
+      ],
+      "choices": [
+        "q and ΔE are negative, and w = 0.",
+        "q and ΔE are positive, and w = 0.",
+        "q is negative, w is positive, and ΔE = 0.",
+        "ΔE = 0 because the calorimeter is insulated."
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": true,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "A. q and ΔE are negative, and w = 0.",
+          "The chemicals transfer heat to the calorimeter. Rigid walls make PV work zero. Energy is conserved for the chemicals and calorimeter together."
+        ]
+      }
+    },
+    {
+      "id": "CH9-07",
+      "review": "chem-9",
+      "section": "Heat capacity & calorimetry",
+      "title": "Hot metal with a warm cup",
+      "body": [
+        "An 82.0 g metal sample at 96.0 °C goes into 105.0 g of water at 20.0 °C. The cup starts at 20.0 °C, its heat capacity is 28.0 J/K, and the final temperature is 25.4 °C. Use c(water) = 4.184 J/(g·K). Find c(metal)."
+      ],
+      "choices": [
+        "0.410 J/(g·K)",
+        "0.406 J/(g·K)",
+        "0.468 J/(g·K)",
+        "0.436 J/(g·K)"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "D. 0.436 J/(g·K)",
+          "The water plus cup absorb [105.0(4.184) + 28.0](5.4) J. Divide by 82.0(96.0 − 25.4) to get the specific heat."
+        ]
+      }
+    },
+    {
+      "id": "CH9-08",
+      "review": "chem-9",
+      "section": "Heat capacity & calorimetry",
+      "title": "Calibrate a coffee cup",
+      "body": [
+        "A cup initially at 21.0 °C holds 45.0 g of water at 21.0 °C. Add 55.0 g of water at 65.0 °C. The final temperature is 43.0 °C. Assume no heat leak and c(water) = 4.184 J/(g·K). Find the cup heat capacity."
+      ],
+      "choices": [
+        "0 J/K",
+        "41.8 J/K",
+        "83.7 J/K",
+        "92.0 J/K"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "B. 41.8 J/K",
+          "The cup absorbs the difference between hot-water heat lost and cold-water heat gained: (55.0 − 45.0)(4.184)(22.0). Divide by 22.0 K."
+        ]
+      }
+    },
+    {
+      "id": "CH9-09",
+      "review": "chem-9",
+      "section": "Heat capacity & calorimetry",
+      "title": "Bomb calorimeter with separate water capacity",
+      "body": [
+        "A 1.80 g sample of a fuel (molar mass 60.0 g/mol) burns in a bomb calorimeter. The apparatus alone has C = 0.950 kJ/K and the 825 g water bath has c = 4.184 J/(g·K). The temperature rises 3.75 K. Find molar ΔE."
+      ],
+      "choices": [
+        "−119 kJ/mol",
+        "−431 kJ/mol",
+        "+550 kJ/mol",
+        "−550 kJ/mol"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "D. −550 kJ/mol",
+          "C(total) = 0.950 + 825(4.184)/1000 = 4.402 kJ/K. Reverse the sign of 4.402(3.75) and divide by 0.0300 mol."
+        ]
+      }
+    },
+    {
+      "id": "CH9-10",
+      "review": "chem-9",
+      "section": "Heat capacity & calorimetry",
+      "title": "Calibrate the bomb, then burn an unknown",
+      "body": [
+        "A 0.850 g standard releases 26.4 kJ per gram and raises a bomb calorimeter by 2.55 K. An unknown raises the same setup by 3.40 K. Its sample mass is 1.20 g and molar mass is 84.0 g/mol. Find molar ΔE of the unknown."
+      ],
+      "choices": [
+        "−2.09 × 10³ kJ/mol",
+        "−29.9 kJ/mol",
+        "−1.57 × 10³ kJ/mol",
+        "+2.09 × 10³ kJ/mol"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "A. −2.09 × 10³ kJ/mol",
+          "C = 0.850(26.4)/2.55 = 8.80 kJ/K. The unknown gives q = −8.80(3.40) kJ. Divide by 1.20/84.0 mol."
+        ]
+      }
+    },
+    {
+      "id": "CH9-11",
+      "review": "chem-9",
+      "section": "Heat capacity & calorimetry",
+      "title": "Neutralization with unequal mole amounts",
+      "body": [
+        "Mix 35.0 mL of 0.800 M HCl with 65.0 mL of 0.600 M NaOH at the same initial temperature. The temperature rises 3.60 K. Use solution density 1.00 g/mL, c = 4.184 J/(g·K), and cup capacity 24.0 J/K. Find ΔH per mole of water formed."
+      ],
+      "choices": [
+        "−40.8 kJ/mol",
+        "−56.9 kJ/mol",
+        "−53.8 kJ/mol",
+        "+56.9 kJ/mol"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "B. −56.9 kJ/mol",
+          "HCl limits at 0.0280 mol. The reaction releases [100.0(4.184) + 24.0](3.60) J. Convert to kJ and divide by 0.0280."
+        ]
+      }
+    },
+    {
+      "id": "CH9-12",
+      "review": "chem-9",
+      "section": "Heat capacity & calorimetry",
+      "title": "Predict the second neutralization temperature",
+      "body": [
+        "Run A mixes 100.0 g of solution in a cup with C = 45.0 J/K and warms by 2.50 K. Run B uses the same cup and 200.0 g of solution with the same concentrations and twice the reacting moles. Use c = 4.184 J/(g·K) for both runs. Find ΔT for run B."
+      ],
+      "choices": [
+        "2.50 K",
+        "5.00 K",
+        "2.63 K",
+        "1.31 K"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "C. 2.63 K",
+          "Heat released doubles. Divide 2[100(4.184) + 45](2.50) by [200(4.184) + 45]. The fixed cup capacity keeps the ratio from being exactly one."
+        ]
+      }
+    },
+    {
+      "id": "CH9-13",
+      "review": "chem-9",
+      "section": "Heat capacity & calorimetry",
+      "title": "Thermal equilibrium plus gas pressure",
+      "body": [
+        "In an insulated rigid 18.0 L vessel, 1.80 mol ideal gas starts at 295 K. A hot block has total heat capacity 160 J/K and starts at 510 K. Gas has molar Cᵥ = 20.8 J/(mol·K). Ignore vessel heat and block volume. Find final gas pressure using R = 0.082057 L·atm/(mol·K)."
+      ],
+      "choices": [
+        "3.85 atm",
+        "2.42 atm",
+        "4.19 atm",
+        "3.30 atm"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "A. 3.85 atm",
+          "Energy balance gives T = [160(510) + 1.80(20.8)(295)]/[160 + 1.80(20.8)] = 469 K. Then P = nRT/V ≈ 3.85 atm."
+        ]
+      }
+    },
+    {
+      "id": "CH9-14",
+      "review": "chem-9",
+      "section": "Heat capacity & calorimetry",
+      "title": "Bias from ignoring apparatus heat",
+      "body": [
+        "An exothermic reaction is measured in a coffee cup. The measured temperature rise is accurate, but the analyst omits the cup heat capacity when calculating molar ΔH. What bias results?"
+      ],
+      "choices": [
+        "Calculated ΔH is more negative than the true value.",
+        "Calculated ΔH must become positive.",
+        "Calculated ΔH is less negative than the true value.",
+        "Calculated ΔH is unchanged because the cup begins at the solution temperature."
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": true,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "C. Calculated ΔH is less negative than the true value.",
+          "The positive cup heat is missing from the surroundings’ heat balance, so the magnitude of the negative reaction heat is too small."
+        ]
+      }
+    },
+    {
+      "id": "CH9-15",
+      "review": "chem-9",
+      "section": "Heat capacity & calorimetry",
+      "title": "Find an unknown sample mass",
+      "body": [
+        "A bomb calorimeter with combined heat capacity 5.60 kJ/K warms 5.25 K during combustion. The fuel’s molar ΔE is −980 kJ/mol, and its molar mass is 74.0 g/mol. Find the burned mass."
+      ],
+      "choices": [
+        "0.0300 g",
+        "2.22 g",
+        "4.44 g",
+        "0.397 g"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "B. 2.22 g",
+          "The sample releases 29.4 kJ, corresponding to 29.4/980 = 0.0300 mol. Multiply by 74.0 g/mol."
+        ]
+      }
+    },
+    {
+      "id": "CH9-16",
+      "review": "chem-9",
+      "section": "Phase changes & heating curves",
+      "title": "Ice below freezing with a partial melt",
+      "body": [
+        "Place 150.0 g of ice at −12.0 °C into 350.0 g of water at 18.0 °C in an insulated cup. Ignore cup heat. Use c(ice) = 2.09 J/(g·K), c(water) = 4.184 J/(g·K), and heat of fusion = 333.5 J/g. Find the remaining ice."
+      ],
+      "choices": [
+        "71.0 g",
+        "67.8 g",
+        "150.0 g",
+        "82.2 g"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "D. 82.2 g",
+          "Water can release 26.36 kJ cooling to 0 °C. Ice uses 3.762 kJ to warm to 0 °C. The remainder melts 67.8 g, leaving 82.2 g."
+        ]
+      }
+    },
+    {
+      "id": "CH9-17",
+      "review": "chem-9",
+      "section": "Phase changes & heating curves",
+      "title": "All the ice melts",
+      "body": [
+        "Mix 40.0 g of ice at 0 °C with 250.0 g of water at 33.0 °C in an insulated cup. Ignore cup heat and use c(water) = 4.184 J/(g·K) and heat of fusion = 333.5 J/g. Find the final temperature."
+      ],
+      "choices": [
+        "0 °C",
+        "20.2 °C",
+        "17.5 °C",
+        "28.4 °C"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "C. 17.5 °C",
+          "Cooling warm water to zero could release 34.52 kJ, more than the 13.34 kJ needed to melt the ice. Use remaining heat to warm all 290.0 g."
+        ]
+      }
+    },
+    {
+      "id": "CH9-18",
+      "review": "chem-9",
+      "section": "Phase changes & heating curves",
+      "title": "Steam cools, condenses, then cools again",
+      "body": [
+        "At 1 atm, how much heat is released when 18.0 g of steam at 120.0 °C becomes liquid water at 35.0 °C? Use c(steam) = 2.01 J/(g·K), c(water) = 4.184 J/(g·K), ΔH(vap) = 40.7 kJ/mol, and M(H₂O) = 18.0 g/mol."
+      ],
+      "choices": [
+        "46.3 kJ",
+        "40.7 kJ",
+        "45.6 kJ",
+        "36.5 kJ"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "A. 46.3 kJ",
+          "Add 0.724 kJ for steam cooling, 40.7 kJ for condensation, and 4.90 kJ for liquid cooling."
+        ]
+      }
+    },
+    {
+      "id": "CH9-19",
+      "review": "chem-9",
+      "section": "Phase changes & heating curves",
+      "title": "Slope and plateau lengths",
+      "body": [
+        "A constant-power heater warms a fixed sample. Its liquid slope on a T-versus-time graph is one-third its solid slope. Its vaporization plateau lasts 2.5 times as long as its melting plateau. What follows?"
+      ],
+      "choices": [
+        "c(liquid) = c(solid)/3 and ΔH(vap) = 2.5ΔH(fus).",
+        "c(liquid) = 3c(solid) and ΔH(vap) = ΔH(fus)/2.5.",
+        "c(liquid) = c(solid)/3 and ΔH(vap) = ΔH(fus)/2.5.",
+        "c(liquid) = 3c(solid) and ΔH(vap) = 2.5ΔH(fus)."
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": true,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "D. c(liquid) = 3c(solid) and ΔH(vap) = 2.5ΔH(fus).",
+          "Slope is power divided by mc. Plateau heat is power times duration, and the same sample moles apply to both plateaus."
+        ]
+      }
+    },
+    {
+      "id": "CH9-20",
+      "review": "chem-9",
+      "section": "Phase changes & heating curves",
+      "title": "Stop halfway through a phase change",
+      "body": [
+        "At 1 atm, 36.0 g ice at −10.0 °C absorbs 7.50 kJ. Use c(ice) = 2.09 J/(g·K), heat of fusion = 333.5 J/g, and assume no heat loss. What is present at equilibrium?"
+      ],
+      "choices": [
+        "36.0 g liquid at 0 °C",
+        "About 20.2 g liquid and 15.8 g ice at 0 °C",
+        "About 22.5 g liquid and 13.5 g ice at 0 °C",
+        "About 15.8 g liquid and 20.2 g ice at 0 °C"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "B. About 20.2 g liquid and 15.8 g ice at 0 °C",
+          "Warming the ice takes 0.752 kJ, leaving 6.748 kJ to melt 20.2 g. Both phases remain at the melting temperature."
+        ]
+      }
+    },
+    {
+      "id": "CH9-21",
+      "review": "chem-9",
+      "section": "Phase changes & heating curves",
+      "title": "Condensation coupled to melting",
+      "body": [
+        "At 1 atm, 1.80 g steam at 100.0 °C condenses and cools to 0 °C in an insulated vessel containing 30.0 g ice at 0 °C. Use heat of vaporization = 2260 J/g, heat of fusion = 333.5 J/g, and c(water) = 4.184 J/(g·K). How much original ice remains?"
+      ],
+      "choices": [
+        "17.8 g",
+        "14.5 g",
+        "0 g",
+        "15.5 g"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "D. 15.5 g",
+          "The steam releases 1.80[2260 + 4.184(100)] J. That melts 14.5 g of ice, so 15.5 g remains and the final temperature is 0 °C."
+        ]
+      }
+    },
+    {
+      "id": "CH9-22",
+      "review": "chem-9",
+      "section": "Thermochemical stoichiometry & Hess",
+      "title": "Heat from a limiting reactant",
+      "body": [
+        "For 2 CO(g) + O₂(g) → 2 CO₂(g), ΔH = −566.0 kJ. React 14.0 g CO (28.0 g/mol) with 6.40 g O₂ (32.0 g/mol). Find the reaction heat."
+      ],
+      "choices": [
+        "−113 kJ",
+        "−142 kJ",
+        "−226 kJ",
+        "+113 kJ"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "A. −113 kJ",
+          "0.500 mol CO would need 0.250 mol O₂, but only 0.200 mol O₂ is available. Multiply −566.0 kJ by 0.200."
+        ]
+      }
+    },
+    {
+      "id": "CH9-23",
+      "review": "chem-9",
+      "section": "Thermochemical stoichiometry & Hess",
+      "title": "Heat recovery and maximum product mass",
+      "body": [
+        "A heater supplies 1.20 × 10³ kJ, of which 68.0% reaches CaCO₃(s) → CaO(s) + CO₂(g), ΔH = +178.3 kJ. What mass of CaO can form? M(CaO) = 56.08 g/mol."
+      ],
+      "choices": [
+        "377 g",
+        "257 g",
+        "555 g",
+        "81.6 g"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "B. 257 g",
+          "Useful heat is 816 kJ. Divide by 178.3 kJ per mole CaO and multiply by 56.08 g/mol."
+        ]
+      }
+    },
+    {
+      "id": "CH9-24",
+      "review": "chem-9",
+      "section": "Thermochemical stoichiometry & Hess",
+      "title": "Reverse and change the basis",
+      "body": [
+        "For 2 SO₂(g) + O₂(g) → 2 SO₃(g), ΔH = −197.8 kJ. What heat is needed to decompose 40.0 g SO₃ by the reverse reaction? M(SO₃) = 80.06 g/mol."
+      ],
+      "choices": [
+        "98.8 kJ absorbed",
+        "49.4 kJ released",
+        "49.4 kJ absorbed",
+        "197.8 kJ absorbed"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "C. 49.4 kJ absorbed",
+          "The reverse consumes 2 mol SO₃ per +197.8 kJ. Multiply 40.0/80.06 mol by 197.8/2."
+        ]
+      }
+    },
+    {
+      "id": "CH9-25",
+      "review": "chem-9",
+      "section": "Thermochemical stoichiometry & Hess",
+      "title": "Three-step Hess cycle with liquid water",
+      "body": [
+        "Given C(s, graphite) + O₂(g) → CO₂(g), ΔH = −393.5 kJ; H₂(g) + ½O₂(g) → H₂O(l), ΔH = −285.8 kJ; and CH₃OH(l) + 3/2 O₂(g) → CO₂(g) + 2 H₂O(l), ΔH = −726.5 kJ. Find ΔH for C(s, graphite) + 2 H₂(g) + ½O₂(g) → CH₃OH(l)."
+      ],
+      "choices": [
+        "−238.6 kJ",
+        "+238.6 kJ",
+        "−524.4 kJ",
+        "−1691.6 kJ"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "A. −238.6 kJ",
+          "Add graphite combustion and twice liquid-water formation, then reverse methanol combustion. Sum −393.5 + 2(−285.8) + 726.5."
+        ]
+      }
+    },
+    {
+      "id": "CH9-26",
+      "review": "chem-9",
+      "section": "Thermochemical stoichiometry & Hess",
+      "title": "Hess with a phase correction",
+      "body": [
+        "Combustion of 1 mol ethanol(l) produces CO₂(g) and H₂O(l) with ΔH = −1366.8 kJ. If all product water is instead vapor, use ΔH = +44.0 kJ/mol for H₂O(l) → H₂O(g) at the same reference temperature. What is ΔH per 2 mol ethanol burned?"
+      ],
+      "choices": [
+        "−2997.6 kJ",
+        "−1234.8 kJ",
+        "−2469.6 kJ",
+        "−2645.6 kJ"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "C. −2469.6 kJ",
+          "Each mol ethanol makes 3 mol H₂O. Add 3(44.0) to −1366.8, then multiply by 2."
+        ]
+      }
+    },
+    {
+      "id": "CH9-27",
+      "review": "chem-9",
+      "section": "Thermochemical stoichiometry & Hess",
+      "title": "Allotrope conversion with a new reaction basis",
+      "body": [
+        "Burning 1 mol graphite yields CO₂(g) and has ΔH = −393.51 kJ. Burning 2 mol diamond yields 2 mol CO₂(g) and has ΔH = −791.88 kJ. What is ΔH for converting 3.00 mol graphite to diamond?"
+      ],
+      "choices": [
+        "−7.29 kJ",
+        "+7.29 kJ",
+        "+2.43 kJ",
+        "+14.58 kJ"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "B. +7.29 kJ",
+          "Per mole diamond combustion is −395.94 kJ. Add graphite combustion to the reverse of diamond combustion and multiply +2.43 kJ/mol by 3.00."
+        ]
+      }
+    },
+    {
+      "id": "CH9-28",
+      "review": "chem-9",
+      "section": "Formation enthalpy & bond energies",
+      "title": "Formation reaction for an ionic solid",
+      "body": [
+        "Which equation defines the standard molar enthalpy of formation of Fe₂O₃(s) at 298 K?"
+      ],
+      "choices": [
+        "4 Fe(s) + 3 O₂(g) → 2 Fe₂O₃(s)",
+        "2 Fe(g) + 3 O(g) → Fe₂O₃(s)",
+        "2 FeO(s) + ½O₂(g) → Fe₂O₃(s)",
+        "2 Fe(s) + 3/2 O₂(g) → Fe₂O₃(s)"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": true,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "D. 2 Fe(s) + 3/2 O₂(g) → Fe₂O₃(s)",
+          "The product coefficient is one, and the reactants are the elements in their reference states."
+        ]
+      }
+    },
+    {
+      "id": "CH9-29",
+      "review": "chem-9",
+      "section": "Formation enthalpy & bond energies",
+      "title": "Infer a missing formation enthalpy",
+      "body": [
+        "For C₂H₄(g) + 3 O₂(g) → 2 CO₂(g) + 2 H₂O(l), ΔH° = −1411.0 kJ. Use ΔH°f(CO₂) = −393.5 and ΔH°f(H₂O(l)) = −285.8 kJ/mol. Find ΔH°f(C₂H₄(g))."
+      ],
+      "choices": [
+        "−52.4 kJ/mol",
+        "+1411.0 kJ/mol",
+        "+52.4 kJ/mol",
+        "+140.4 kJ/mol"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "C. +52.4 kJ/mol",
+          "The products sum to −1358.6 kJ. Solve −1411.0 = −1358.6 − ΔH°f(C₂H₄)."
+        ]
+      }
+    },
+    {
+      "id": "CH9-30",
+      "review": "chem-9",
+      "section": "Formation enthalpy & bond energies",
+      "title": "Fuel blend by mass",
+      "body": [
+        "A 9.00 g blend is 40.0% CH₄ (16.04 g/mol) and 60.0% C₂H₆ (30.07 g/mol) by mass. Use ΔH°f in kJ/mol: CH₄(g) −74.8, C₂H₆(g) −84.7, CO₂(g) −393.5, H₂O(l) −285.8, O₂(g) 0. Find the heat released by complete combustion."
+      ],
+      "choices": [
+        "480 kJ",
+        "447 kJ",
+        "505 kJ",
+        "−480 kJ released"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "A. 480 kJ",
+          "Molar combustion heats are −890.3 kJ/mol CH₄ and −1560.6 kJ/mol C₂H₆. Add the released magnitudes for 3.60/16.04 and 5.40/30.07 mol."
+        ]
+      }
+    },
+    {
+      "id": "CH9-31",
+      "review": "chem-9",
+      "section": "Formation enthalpy & bond energies",
+      "title": "Reference forms and physical states",
+      "body": [
+        "Use these ΔH°f values in kJ/mol: O₂(g) = 0, O₃(g) = +142.7, H₂O(g) = −241.8, and H₂O(l) = −285.8. Which pair of reaction enthalpies is correct for 2 O₃(g) → 3 O₂(g) and H₂O(g) → H₂O(l), respectively?"
+      ],
+      "choices": [
+        "+285.4 kJ and +44.0 kJ",
+        "0 kJ and −44.0 kJ",
+        "−142.7 kJ and +44.0 kJ",
+        "−285.4 kJ and −44.0 kJ"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": true,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "D. −285.4 kJ and −44.0 kJ",
+          "Subtract 2(+142.7) for ozone. For condensation, subtract the vapor formation enthalpy from the liquid value."
+        ]
+      }
+    },
+    {
+      "id": "CH9-32",
+      "review": "chem-9",
+      "section": "Formation enthalpy & bond energies",
+      "title": "Bond energies with a triple bond",
+      "body": [
+        "Estimate ΔH for C₂H₂(g) + 2 H₂(g) → C₂H₆(g). Bond energies in kJ/mol: C≡C 839, C–C 347, H–H 436, C–H 413. Use H–C≡C–H and CH₃–CH₃."
+      ],
+      "choices": [
+        "+288 kJ",
+        "−288 kJ",
+        "−1160 kJ",
+        "−220 kJ"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "B. −288 kJ",
+          "Cancel two C–H bonds. Break one C≡C and two H–H, form one C–C and four C–H. 839 + 2(436) − 347 − 4(413) = −288."
+        ]
+      }
+    },
+    {
+      "id": "CH9-33",
+      "review": "chem-9",
+      "section": "Formation enthalpy & bond energies",
+      "title": "Solve for a missing bond energy",
+      "body": [
+        "The gas-phase reaction H₂ + Br₂ → 2 HBr has ΔH ≈ −103 kJ when modeled using average bond energies. If D(H–H) = 436 and D(Br–Br) = 193 kJ/mol, estimate D(H–Br)."
+      ],
+      "choices": [
+        "263 kJ/mol",
+        "732 kJ/mol",
+        "314.5 kJ/mol",
+        "366 kJ/mol"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "D. 366 kJ/mol",
+          "Solve −103 = 436 + 193 − 2D(H–Br), giving D = 366 kJ/mol."
+        ]
+      }
+    },
+    {
+      "id": "CH9-34",
+      "review": "chem-9",
+      "section": "Formation enthalpy & bond energies",
+      "title": "Bond estimate followed by condensation",
+      "body": [
+        "Estimate ΔH for CH₄(g) + 2 O₂(g) → CO₂(g) + 2 H₂O(l). Use bond energies (kJ/mol) C–H 413, O=O 498, C=O in CO₂ 799, O–H 463. Use ΔH(vap) of water = +44.0 kJ/mol at the comparison temperature."
+      ],
+      "choices": [
+        "−890 kJ",
+        "−802 kJ",
+        "−714 kJ",
+        "−846 kJ"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "A. −890 kJ",
+          "Gas-phase estimate = 4(413) + 2(498) − [2(799) + 4(463)] = −802 kJ. Condense two moles of water for another −88 kJ."
+        ]
+      }
+    },
+    {
+      "id": "CH9-35",
+      "review": "chem-9",
+      "section": "Formation enthalpy & bond energies",
+      "title": "Heating efficiency and combustion enthalpy",
+      "body": [
+        "A 5.00 g fuel sample (M = 46.0 g/mol) heats 720 g water from 20.0 to 57.0 °C. The water captures 78.0% of the combustion heat. Use c(water) = 4.184 J/(g·K). Find the signed molar combustion enthalpy."
+      ],
+      "choices": [
+        "−1.03 × 10³ kJ/mol",
+        "−1.31 × 10³ kJ/mol",
+        "−8.00 × 10² kJ/mol",
+        "+1.31 × 10³ kJ/mol"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "conceptual": false,
+      "choiceVersion": "ch9-v1",
+      "answer": {
+        "blocks": [
+          "B. −1.31 × 10³ kJ/mol",
+          "Water absorbs 111.46 kJ. Divide by 0.780 for combustion heat magnitude, then by 5.00/46.0 mol and apply the negative sign."
+        ]
+      }
+    },
     {
       "id": "14.1.1",
       "section": "14.1",
@@ -24432,6 +25417,11 @@
     }
   ],
   "reviews": [
+    {
+      "id": "chem-9",
+      "title": "Chapter 9 · Energy and Chemistry",
+      "course": "CHEM 107"
+    },
     {
       "id": "chapter14",
       "title": "Chapter 14",

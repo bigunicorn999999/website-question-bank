@@ -25618,6 +25618,14 @@
       "body": [],
       "sections": [
         {
+          "title": "What happened in the lab",
+          "body": [
+            "First, you mixed a measured portion of the unknown CuSO₄ solution with sodium carbonate. A solid formed. You collected it on preweighed filter paper, dried it on a watch glass, let it cool, and weighed the paper plus solid. Subtracting the paper mass gave the mass of precipitate. From that mass and the reaction's mole ratio, you calculated how much CuSO₄ was in the original portion.",
+            "Then you used a fresh portion of the same unknown for a light-based measurement. You prepared three standards by successively halving a known CuSO₄ stock, giving 50%, 25%, and 12.5% of the stock concentration. After blanking the spectrophotometer with reverse-osmosis water, you scanned the stock to find its peak wavelength and measured the stock, standards, and unknown at that wavelength.",
+            "Finally, you plotted absorbance against concentration for the known solutions and used the unknown's absorbance to read its concentration from the fit. You compared that value with the one calculated from the precipitate mass."
+          ]
+        },
+        {
           "title": "Purpose",
           "body": [
             "Estimate unknown CuSO₄ molarity by mass of a precipitate and by visible-light absorbance. Both methods report the original concentration but rely on different signals."
@@ -25679,6 +25687,14 @@
       "body": [],
       "sections": [
         {
+          "title": "What happened in the lab",
+          "body": [
+            "First, you checked a stoppered flask and its tubing for leaks. You placed the flask in a hot water bath and sealed the air sample once the bath reached boiling. As the bath cooled toward 0 °C, you recorded the pressure inside the flask and the bath temperature once the readings stabilized. The flask kept gas volume fixed, and the seal kept the amount of air fixed.",
+            "Next, you connected an air-filled syringe directly to the pressure sensor. You moved the plunger to different volume marks and held it still until the pressure stabilized. The amount of air stayed fixed, and the measurements were taken near room temperature. Smaller syringe volumes gave higher pressures.",
+            "In the post-lab, you used the flask data to compare pressure with absolute temperature and extrapolated the Celsius plot to zero pressure. For the syringe data, you plotted both pressure and reciprocal pressure against volume to see which graph gave a straight line."
+          ]
+        },
+        {
           "title": "Purpose",
           "body": [
             "Use a pressure probe with a temperature bath or syringe, determine which plot is linear, and explain the result with molecular motion."
@@ -25724,6 +25740,14 @@
       "body": [],
       "sections": [
         {
+          "title": "What happened in the lab",
+          "body": [
+            "You first made a blue silver nanoparticle dispersion as a baseline. Silver ions were reduced to silver metal, which formed tiny particles suspended in water. You watched the color develop and used a water-blanked spectrophotometer to record the baseline absorbance spectrum and its peak wavelength.",
+            "Next, you made more dispersions to test how a growth condition affected the color. The manual allowed changes to citrate, bromide, or peroxide while keeping the amounts of silver nitrate and reducing agent fixed. The supplied post-lab varied bromide and kept the other reagent amounts fixed.",
+            "You recorded each vial's stable color, scanned each sample in its own labeled cuvette, and compared the spectra on one graph. The lab aimed for four distinct colors including the baseline, with peak wavelengths at least 15 nm apart. The post-lab then asked whether the changes in peak wavelength actually supported your hypothesis."
+          ]
+        },
+        {
           "title": "Purpose",
           "body": [
             "Link an intentionally varied synthesis condition to a measured spectrum and observed solution color. Identify the control condition and record all quantities, times, colors, and peak measurements consistently."
@@ -25768,6 +25792,14 @@
       "title": "Calorimetry",
       "body": [],
       "sections": [
+        {
+          "title": "What happened in the lab",
+          "body": [
+            "First, you mixed measured amounts of hot and cold water in a foam-cup calorimeter and recorded how the temperature changed. You calculated how much heat the hot water lost and the cold water gained. The difference was attributed to the cup. You repeated the calibration three times and averaged the cup constants.",
+            "Then you ran two separate reactions in the calibrated cup. One combined magnesium metal with hydrochloric acid and released hydrogen gas. The other combined magnesium oxide with hydrochloric acid and formed water. For each run you used the temperature rise to calculate heat absorbed by the solution and the cup, then converted the reaction heat to kJ per mole of the solid reacted.",
+            "Finally, you reversed the magnesium oxide reaction on paper and added it to the magnesium reaction. This canceled the shared acid and dissolved magnesium chloride terms and gave the enthalpy for magnesium metal reacting with water to produce magnesium oxide and hydrogen. You compared that indirect result with the post-lab reference of −315.9 kJ/mol."
+          ]
+        },
         {
           "title": "Purpose",
           "body": [

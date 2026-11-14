@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 285" role="img" aria-labelledby="title">
+<title id="title">Cooling-vessel pressure versus temperature</title>
+<rect width="560" height="285" fill="#fff"/>
+<g fill="#1d344d" font-family="sans-serif" font-size="14" text-anchor="middle">
+<text x="280" y="24" font-size="17">Cooling vessel — read from right to left</text>
+<text x="284" y="273">Temperature (K)</text>
+<text transform="translate(19 134) rotate(-90)">Pressure (kPa)</text>
+<text x="79" y="239">300</text><text x="205" y="239">320</text><text x="331" y="239">340</text><text x="457" y="239">360</text>
+<text x="49" y="211">90</text><text x="49" y="137">95</text><text x="49" y="63">100</text>
+</g>
+<g stroke="#d5dfe6"><path d="M65 206H520M65 133H520M65 59H520"/></g>
+<path d="M65 44V218H520" fill="none" stroke="#1d344d" stroke-width="2"/>
+<polyline points="502,56 477,71 452,86 427,106 402,126 377,148 352,169 327,188 302,171 277,131 252,88 227,74 202,59 177,55 151,60 132,58 112,54 93,59 73,58" fill="none" stroke="#1664a0" stroke-width="4" stroke-linejoin="round"/>
+</svg>

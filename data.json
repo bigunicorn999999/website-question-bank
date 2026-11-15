@@ -54,7 +54,7 @@
       "review": "chem-117-lab",
       "section": "Lab 1",
       "title": "Balance drift",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Post-lab template",
       "body": [
         "A calibrated 0.1 mg analytical balance reads 2.1426, 2.1427, and 2.1428 g with the doors closed. How should you report the mass?"
@@ -63,14 +63,25 @@
         "blocks": [
           "Use a representative stable reading near 2.1427 g, retaining four decimal places. Acknowledge last-digit fluctuation if reporting uncertainty."
         ]
-      }
+      },
+      "choices": [
+        "2.14 g, discarding drifting digits",
+        "2.14270 g, with a fifth decimal added",
+        "2.1427 g, retaining four decimals",
+        "2.143 g, rounded to three decimals"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-1-P02",
       "review": "chem-117-lab",
       "section": "Lab 1",
       "title": "Adding salt and withdrawing the probe",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Post-lab template",
       "body": [
         "Predict what happens to conductivity when a pinch of NaCl dissolves in distilled water and when the probe is removed. Explain both changes."
@@ -79,14 +90,25 @@
         "blocks": [
           "Mobile Na⁺ and Cl⁻ increase conductivity. Once the electrodes are out of liquid, the reading falls toward the air baseline. A residual film can delay the drop."
         ]
-      }
+      },
+      "choices": [
+        "Rises because neutral salt grains conduct in water, then remains unchanged",
+        "Rises as ions dissolve, then falls as electrodes leave the liquid",
+        "Stays constant until the probe is removed",
+        "Falls as salt neutralizes water, then rises in air"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-1-R01",
       "review": "chem-117-lab",
       "section": "Lab 1",
       "title": "Equipment ID",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "Name and give a use for (a) a wide spouted vessel, (b) a narrow-necked conical vessel, (c) a tall vessel with many volume marks, (d) a bulb-shaped flask with one line, (e) a long tube with a central bulb and one line, and (f) a small clear rectangular spectrometer cell."
@@ -95,14 +117,25 @@
         "blocks": [
           "(a) Beaker, holding or mixing. (b) Erlenmeyer flask, swirling. (c) Graduated cylinder, measuring variable volumes. (d) Volumetric flask, preparing a fixed final volume. (e) Volumetric pipet, delivering a fixed aliquot. (f) Cuvette, holding a sample in an optical path."
         ]
-      }
+      },
+      "choices": [
+        "Erlenmeyer / beaker / graduated cylinder / volumetric pipet / volumetric flask / cuvette",
+        "Beaker / Erlenmeyer / graduated cylinder / volumetric flask / volumetric pipet / cuvette",
+        "Beaker / Erlenmeyer / volumetric flask / graduated cylinder / cuvette / volumetric pipet",
+        "Beaker / volumetric flask / graduated cylinder / Erlenmeyer / transfer pipet / cuvette"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-1-R02",
       "review": "chem-117-lab",
       "section": "Lab 1",
       "title": "Read and record",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "A water meniscus is four tenths of the way from 18.3 to 18.4 mL on a cylinder marked every 0.1 mL. Record the volume. A balance fluctuates from 2.1426 to 2.1428 g. Give its display increment and record the middle reading."
@@ -111,14 +144,25 @@
         "blocks": [
           "18.34 mL. The increment is 0.0001 g and the middle reading is 2.1427 g."
         ]
-      }
+      },
+      "choices": [
+        "18.34 mL; 0.0001 g; 2.1427 g",
+        "18.34 mL; 0.0002 g; 2.1428 g",
+        "18.3 mL; 0.001 g; 2.143 g",
+        "18.40 mL; 0.0001 g; 2.1427 g"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-1-R03",
       "review": "chem-117-lab",
       "section": "Lab 1",
       "title": "Density and error",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "Empty vial 12.3482 g, filled vial 20.3290 g, liquid volume 10.00 mL. Find density. What if the recorded volume is too high?"
@@ -127,14 +171,25 @@
         "blocks": [
           "Subtract to get 7.9808 g and divide by 10.00 mL for 0.7981 g/mL. An overly large volume gives a low density."
         ]
-      }
+      },
+      "choices": [
+        "2.033 g/mL; density biased low",
+        "0.7981 g/mL; density biased high",
+        "1.253 g/mL; density biased high",
+        "0.7981 g/mL; density biased low"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-1-R04",
       "review": "chem-117-lab",
       "section": "Lab 1",
       "title": "Solution preparation",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "Dissolve 0.5844 g NaCl (58.44 g/mol) to 100.00 mL. Find molarity. What if you fill above the line but calculate using the marked volume?"
@@ -143,14 +198,25 @@
         "blocks": [
           "0.1000 M. The true solution is more dilute, so the calculation is high."
         ]
-      }
+      },
+      "choices": [
+        "0.1000 M; the reported value is too low",
+        "0.01000 M; the reported value is too high",
+        "0.1000 M; the reported value is too high",
+        "1.000 M; the reported value is unchanged"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-1-R05",
       "review": "chem-117-lab",
       "section": "Lab 1",
       "title": "Identify the unknown",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "An unknown gives 0.797 g/mL and 14,400 µS/cm. Compare ethanol (0.798, 22), acetone (0.784, 22), and salt in methanol (0.796, 14,500). Why use both measurements? Why could a probe briefly still read after removal?"
@@ -159,30 +225,52 @@
         "blocks": [
           "Salt in methanol. Its density is close and its conductivity distinguishes it from ethanol. A liquid film can remain on the electrode."
         ]
-      }
+      },
+      "choices": [
+        "Salt in methanol; conductivity separates it from ethanol; a residual film can stay on the probe",
+        "Acetone; its low conductivity explains the reading",
+        "Ethanol; the nearest density outweighs the much higher conductivity",
+        "Salt in methanol; density alone identifies it uniquely; the probe must read zero instantly"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-1-R06",
       "review": "chem-117-lab",
       "section": "Lab 1",
       "title": "Safety decisions",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
-        "A student has no pipet bulb, assumes heated glass is cool because it looks unchanged, and wants to pour a clear unknown down the sink. Correct each decision."
+        "A student has no pipet bulb, assumes heated glass is cool because it looks unchanged, and wants to pour a clear unknown down the sink. Which response addresses all three issues?"
       ],
       "answer": {
         "blocks": [
           "Use the proper bulb, handle recently heated glass as hot with the specified equipment, and follow the unknown waste route specified by the course."
         ]
-      }
+      },
+      "choices": [
+        "Use a bulb, handle clear glass as cool, and use the sink",
+        "Transfer by mouth if there is no bulb, use heat protection, and check the waste directions",
+        "Use a bulb, handle the glass as hot, and check the course waste directions",
+        "Use a bulb and heat protection, and infer disposal from appearance"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-1-N01",
       "review": "chem-117-lab",
       "section": "Lab 1",
       "title": "Cylinder delivery by difference",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) A meniscus moves from 24.63 to 11.42 mL after transfer. What volume left the cylinder?",
@@ -191,18 +279,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. 13.21 mL.",
-          "B. 13.09/13.21 = 0.9909 g/mL.",
-          "C. Low because the receiver mass excludes the spill but the measured volume loss includes it."
+          "Part a: 13.21 mL.",
+          "Part b: 13.09/13.21 = 0.9909 g/mL.",
+          "Part c: Low because the receiver mass excludes the spill but the measured volume loss includes it."
         ]
-      }
+      },
+      "choices": [
+        "13.21 mL; 0.9909 g/mL; biased high",
+        "13.21 mL; 0.9909 g/mL; biased low",
+        "11.42 mL; 1.146 g/mL; biased low",
+        "13.41 mL; 0.9761 g/mL; unaffected"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-1-N02",
       "review": "chem-117-lab",
       "section": "Lab 1",
       "title": "Replicates and closest result",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) For water with reference density 0.997 g/mL, compare set A (0.950, 0.951, 0.949) and B (0.990, 1.000, 1.001). Compute means.",
@@ -211,18 +310,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. A = 0.950 g/mL, B = 0.997 g/mL.",
-          "B. A is tighter.",
-          "C. B is closer. A consistently overread volume could repeatedly bias density low."
+          "Part a: A = 0.950 g/mL, B = 0.997 g/mL.",
+          "Part b: A is tighter.",
+          "Part c: B is closer. A consistently overread volume could repeatedly bias density low."
         ]
-      }
+      },
+      "choices": [
+        "A: 0.950; B: 0.997; A more precise; B more accurate; overread volume could explain A",
+        "A: 0.950; B: 0.997; A more precise and more accurate",
+        "A: 0.950; B: 0.997; A more precise; B more accurate; underread volume could explain A",
+        "A: 0.950; B: 0.997; B more precise; A more accurate"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-1-N03",
       "review": "chem-117-lab",
       "section": "Lab 1",
       "title": "Unknown with carryover",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) Candidate X is 0.800 g/mL and 20 µS/cm, Y is 0.800 and 15,000. Unknown reads 0.801 and 14,900. Pick the best candidate.",
@@ -231,18 +341,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. Y.",
-          "B. Salt solution retained on electrodes can give a higher conductivity in the next sample.",
-          "C. Rinse as directed, check the baseline, then measure a fresh aliquot."
+          "Part a: Y.",
+          "Part b: Salt solution retained on electrodes can give a higher conductivity in the next sample.",
+          "Part c: Rinse as directed, check the baseline, then measure a fresh aliquot."
         ]
-      }
+      },
+      "choices": [
+        "X; salt carryover can lower conductivity; reuse the same aliquot",
+        "Y; carryover affects density only; repeat with the dirty probe",
+        "Y; salt carryover can raise conductivity; rinse and remeasure a fresh aliquot",
+        "X; use only density because conductivity never depends on dissolved ions"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-1-N04",
       "review": "chem-117-lab",
       "section": "Lab 1",
       "title": "Preparing a target concentration",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) What NaCl mass (58.44 g/mol) gives 250.00 mL of 0.0800 M?",
@@ -251,18 +372,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. 1.17 g.",
-          "B. A 250.00 mL volumetric flask.",
-          "C. 0.0720 M if final volume is correct."
+          "Part a: 1.17 g.",
+          "Part b: A 250.00 mL volumetric flask.",
+          "Part c: 0.0720 M if final volume is correct."
         ]
-      }
+      },
+      "choices": [
+        "1.17 g; graduated cylinder; 0.0880 M",
+        "1.17 g; volumetric flask; 0.0800 M",
+        "1.17 g; volumetric flask; 0.0720 M",
+        "4.68 g; volumetric flask; 0.0720 M"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-1-N05",
       "review": "chem-117-lab",
       "section": "Lab 1",
       "title": "Two errors in one measurement",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) A sample truly contains 9.000 g in 10.00 mL. You include 0.100 g of exterior water and read 10.20 mL. Calculate reported density.",
@@ -271,18 +403,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. 9.100/10.20 = 0.8922 g/mL.",
-          "B. Added mass biases high, excess volume biases low.",
-          "C. Volume error dominates compared with true density 0.9000 g/mL."
+          "Part a: 9.100/10.20 = 0.8922 g/mL.",
+          "Part b: Added mass biases high, excess volume biases low.",
+          "Part c: Volume error dominates compared with true density 0.9000 g/mL."
         ]
-      }
+      },
+      "choices": [
+        "0.8922 g/mL; both errors lower density",
+        "0.9100 g/mL; mass wins",
+        "0.8824 g/mL; extra mass has no effect",
+        "0.8922 g/mL; extra mass raises density, extra volume lowers it; volume wins"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-1-N06",
       "review": "chem-117-lab",
       "section": "Lab 1",
       "title": "Choice of glassware and reporting",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) Select apparatus for making 100.00 mL solution and delivering 10.00 mL of it.",
@@ -291,18 +434,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. Volumetric flask, then volumetric pipet.",
-          "B. Beaker graduations are approximate.",
-          "C. Five significant figures. The notation would lose the reported thousandths and ten-thousandths places."
+          "Part a: Volumetric flask, then volumetric pipet.",
+          "Part b: Beaker graduations are approximate.",
+          "Part c: Five significant figures. The notation would lose the reported thousandths and ten-thousandths places."
         ]
-      }
+      },
+      "choices": [
+        "Volumetric flask then volumetric pipet; beaker marks are approximate; five significant figures",
+        "Volumetric flask then transfer pipet; beaker marks are exact; four significant figures",
+        "Volumetric pipet then flask; beaker marks are approximate; three significant figures",
+        "Beaker then cylinder; all are equally precise; five significant figures"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-2-P01",
       "review": "chem-117-lab",
       "section": "Lab 2",
       "title": "Balance the reaction",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Post-lab template",
       "body": [
         "Write the complete balanced chemical equation (including phases) for the reaction between copper (II) sulfate and sodium carbonate."
@@ -311,14 +465,25 @@
         "blocks": [
           "CuSO₄(aq) + Na₂CO₃(aq) → CuCO₃(s) + Na₂SO₄(aq)."
         ]
-      }
+      },
+      "choices": [
+        "CuSO₄(aq) + Na₂CO₃(aq) → CuCO₃(s) + Na₂SO₄(aq)",
+        "2CuSO₄(aq) + Na₂CO₃(aq) → 2CuCO₃(s) + Na₂SO₄(aq)",
+        "CuSO₄(aq) + Na₂CO₃(aq) → CuCO₃(aq) + Na₂SO₄(s)",
+        "CuSO₄(aq) + Na₂CO₃(aq) → Cu(s) + Na₂SO₄(aq) + CO₃²⁻(aq)"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-2-P02",
       "review": "chem-117-lab",
       "section": "Lab 2",
       "title": "Limits of Beer’s law",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Post-lab template",
       "body": [
         "At high concentrations the calibration bends below the fitted line. Near the blank, absorbance scatters as much as the signal changes. What do these observations mean for concentration estimates?"
@@ -327,46 +492,79 @@
         "blocks": [
           "The high end departs from proportionality and should be diluted into the validated range. Near the blank, noise and baseline uncertainty dominate the signal."
         ]
-      }
+      },
+      "choices": [
+        "Dilute high samples into the linear range; noise and baseline variation can dominate at the low end",
+        "Extend the same fit indefinitely; instrumental noise affects only the highest standards",
+        "Convert absorbance to percent transmittance to guarantee a linear fit",
+        "Force the intercept to zero to remove both effects"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-2-P03",
       "review": "chem-117-lab",
       "section": "Lab 2",
       "title": "Two methods for one quantity",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Post-lab template",
       "body": [
-        "Choose two analytical methods that can measure the same quantity in a field you care about. Explain what each directly measures, how it yields the quantity, and what can interfere. Cite sources if researching your own example."
+        "Which comparison correctly describes how two analytical methods can find the same unknown CuSO₄ concentration?"
       ],
       "answer": {
         "blocks": [
           "Example from QRA: gravimetry weighs a reaction product and converts mass to concentration with stoichiometry. Spectrophotometry measures absorbed light and uses a concentration calibration. Wet solids and optical interference are different sources of bias."
         ]
-      }
+      },
+      "choices": [
+        "Both measure precipitate mass, using dry and wet samples respectively",
+        "Gravimetry measures product mass and uses stoichiometry; spectrophotometry measures light and uses calibration",
+        "Both directly measure concentration without a model",
+        "Gravimetry directly measures molarity; spectrophotometry directly weighs dissolved copper"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-2-R01",
       "review": "chem-117-lab",
       "section": "Lab 2",
       "title": "From precipitate to molarity",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
-        "Balance the molecular equation with phases. A 10.00 mL CuSO₄ aliquot yields 0.07413 g dry CuCO₃ (123.55 g/mol) with excess carbonate. Find original molarity."
+        "A 10.00 mL CuSO₄ aliquot yields 0.07413 g dry CuCO₃ (123.55 g/mol) when treated with excess sodium carbonate. Which solid, mole ratio of CuCO₃ to CuSO₄, and original molarity are correct?"
       ],
       "answer": {
         "blocks": [
           "CuSO₄(aq) + Na₂CO₃(aq) → CuCO₃(s) + Na₂SO₄(aq). 0.0006000 mol in 0.01000 L gives 0.06000 M."
         ]
-      }
+      },
+      "choices": [
+        "CuCO₃ is the solid; 0.03000 M from a 2:1 ratio",
+        "CuCO₃ is the solid in a 1:1 ratio; 0.006000 M",
+        "CuCO₃ is the solid in a 1:1 mole ratio; 0.06000 M",
+        "Na₂SO₄ is the solid; 0.06000 M"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-2-R02",
       "review": "chem-117-lab",
       "section": "Lab 2",
       "title": "Carbonate runs out",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "A 10.00 mL aliquot of 0.1200 M CuSO₄ receives 10.00 mL of 0.1000 M Na₂CO₃. Which limits? What concentration would you infer assuming complete precipitation of the copper?"
@@ -375,14 +573,25 @@
         "blocks": [
           "Carbonate has 0.001000 mol versus 0.001200 mol CuSO₄. The inferred result is 0.1000 M, low."
         ]
-      }
+      },
+      "choices": [
+        "CuSO₄ limits; 0.1200 M inferred",
+        "Na₂CO₃ limits; 0.1000 M inferred",
+        "CuSO₄ limits; 0.1000 M inferred",
+        "Na₂CO₃ limits; 0.05000 M inferred"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-2-R03",
       "review": "chem-117-lab",
       "section": "Lab 2",
       "title": "Calibration plus dilution",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "A = 24.0c + 0.015. A 5.00 mL aliquot is diluted to 25.00 mL and reads 0.303. Find diluted and original M. What if you ignore the intercept?"
@@ -391,14 +600,25 @@
         "blocks": [
           "0.0120 M diluted, 0.0600 M original. Ignoring the positive intercept makes the result high."
         ]
-      }
+      },
+      "choices": [
+        "0.0120 M diluted; 0.0600 M original; biases low",
+        "0.0120 M diluted; 0.0600 M original; ignoring intercept biases high",
+        "0.0120 M diluted; 0.00240 M original; biases high",
+        "0.0126 M diluted; 0.0631 M original; no bias"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-2-R04",
       "review": "chem-117-lab",
       "section": "Lab 2",
       "title": "Optical and mass biases",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "Predict the bias from (a) a fingerprint that blocks light in the unknown's light path, (b) wet precipitate, and (c) precipitate lost through a filter."
@@ -407,46 +627,79 @@
         "blocks": [
           "(a) High apparent absorbance and concentration. (b) High mass and concentration. (c) Low mass and concentration."
         ]
-      }
+      },
+      "choices": [
+        "Low, low, high",
+        "High, high, low",
+        "Low, high, low",
+        "High, low, high"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-2-R05",
       "review": "chem-117-lab",
       "section": "Lab 2",
       "title": "Outside the calibration range",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
-        "Standards span 0.0040–0.0200 M. Extrapolation suggests 0.0320 M. Propose a dilution and show the recovery step. Why can readings below the lowest standard be unreliable?"
+        "Standards span 0.0040–0.0200 M. Extrapolation suggests 0.0320 M. Which plan puts the sample near the middle of the range, recovers the original concentration, and correctly describes the problem below the lowest standard?"
       ],
       "answer": {
         "blocks": [
           "A factor of three brings the sample to roughly 0.0107 M. Multiply the in-range result by three. Very low absorbance can be comparable to blank variation."
         ]
-      }
+      },
+      "choices": [
+        "Dilute threefold and divide the measured result by three; low signals have perfect accuracy",
+        "Dilute threefold and multiply the measured result by three; very low signals can approach blank noise",
+        "Use the extrapolation unchanged; any point above the standards is still interpolation",
+        "Dilute twofold and multiply by two; the result near the middle is 0.0200 M"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-2-R06",
       "review": "chem-117-lab",
       "section": "Lab 2",
       "title": "Agreement versus accuracy",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
-        "Methods give 0.0600 and 0.0610 M. A reference is 0.0550 M. What does agreement establish? Give one plausible high bias in each method."
+        "Two methods give 0.0600 and 0.0610 M. A validated reference is 0.0550 M. Which interpretation and pair of possible errors best explain the results?"
       ],
       "answer": {
         "blocks": [
           "They agree closely but both are high relative to the reference. Water on the precipitate and a smudge on only the unknown cuvette could bias their respective methods high."
         ]
-      }
+      },
+      "choices": [
+        "The results disagree because the methods use different instruments",
+        "Both biased low; wet precipitate and a smudge explain the low readings",
+        "Close agreement proves both accurate",
+        "Close agreement, both biased high; wet precipitate and a smudge on the unknown cuvette are possible causes"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-2-N01",
       "review": "chem-117-lab",
       "section": "Lab 2",
       "title": "Serial dilution mishap",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) Dilute 10.00 mL of 0.1200 M stock to 50.00 mL. Then dilute 5.00 mL of that to 25.00 mL. Find both concentrations.",
@@ -455,18 +708,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. 0.02400 M and 0.004800 M.",
-          "B. 0.00432 M.",
-          "C. Its absorbance falls below the ideal line at the assigned concentration."
+          "Part a: 0.02400 M and 0.004800 M.",
+          "Part b: 0.00432 M.",
+          "Part c: Its absorbance falls below the ideal line at the assigned concentration."
         ]
-      }
+      },
+      "choices": [
+        "0.02400 M then 0.004800 M; 0.00432 M after error; point falls below fit",
+        "0.02400 M then 0.004800 M; 0.00432 M after error; point rises above fit",
+        "0.06000 M then 0.03000 M; point falls below fit",
+        "0.02400 M then 0.02400 M; aliquot error leaves point unchanged"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-2-N02",
       "review": "chem-117-lab",
       "section": "Lab 2",
       "title": "Two route cross-check",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) 15.00 mL unknown gives 0.1112 g dry CuCO₃, 123.55 g/mol, with excess carbonate. Calculate M.",
@@ -475,18 +739,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. 0.06000 M to four significant figures.",
-          "B. 0.0600 M.",
-          "C. About 0.0570 M."
+          "Part a: 0.06000 M to four significant figures.",
+          "Part b: 0.0600 M.",
+          "Part c: About 0.0570 M."
         ]
-      }
+      },
+      "choices": [
+        "0.009000 M; 0.0600 M; about 0.0570 M after loss",
+        "0.06000 M; 0.0120 M; about 0.0630 M after loss",
+        "0.06000 M; 0.0600 M; unchanged after loss",
+        "0.06000 M by mass; 0.0600 M by light; about 0.0570 M after loss"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-2-N03",
       "review": "chem-117-lab",
       "section": "Lab 2",
       "title": "Calibration slope and blank choice",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) Standards at 0.0100 and 0.0300 M absorb 0.220 and 0.620. Find slope and intercept.",
@@ -495,18 +770,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. 20.0 M⁻¹ and 0.020.",
-          "B. 0.0200 M.",
-          "C. The unknown absorbance and inferred concentration are low relative to the original fit."
+          "Part a: 20.0 M⁻¹ and 0.020.",
+          "Part b: 0.0200 M.",
+          "Part c: The unknown absorbance and inferred concentration are low relative to the original fit."
         ]
-      }
+      },
+      "choices": [
+        "20.0 M⁻¹; 0.020; 0.0200 M; unknown biased low",
+        "0.0500 M⁻¹; 0.020; 8.00 M; unknown biased low",
+        "22.0 M⁻¹; zero; 0.0191 M; no bias",
+        "20.0 M⁻¹; 0.020; 0.0200 M; unknown biased high"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-2-N04",
       "review": "chem-117-lab",
       "section": "Lab 2",
       "title": "Mass of excess carbonate",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) Mix 20.00 mL of 0.0800 M CuSO₄ with 25.00 mL of 0.1000 M Na₂CO₃. Find the limiting reagent.",
@@ -515,18 +801,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. CuSO₄ limits, 0.00160 mol versus 0.002500 mol carbonate.",
-          "B. 0.198 g.",
-          "C. 0.00090 mol carbonate remains."
+          "Part a: CuSO₄ limits, 0.00160 mol versus 0.002500 mol carbonate.",
+          "Part b: 0.198 g.",
+          "Part c: 0.00090 mol carbonate remains."
         ]
-      }
+      },
+      "choices": [
+        "CuSO₄ limits; 0.099 g; 0.00090 mol carbonate left",
+        "Carbonate limits; 0.309 g; zero carbonate left",
+        "CuSO₄ limits; 0.198 g; 0.00090 mol carbonate left",
+        "CuSO₄ limits; 0.198 g; 0.00250 mol carbonate left"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-2-N05",
       "review": "chem-117-lab",
       "section": "Lab 2",
       "title": "Recovery and bias",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) A 0.0500 M reference gives 0.0475 M by mass and 0.0525 M by absorbance. Compute signed relative errors.",
@@ -535,18 +832,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. −5.0% and +5.0%.",
-          "B. Yes, the mean is 0.0500 M.",
-          "C. Agreement with the reference after averaging could be cancellation. Bias sizes can change with samples or technique."
+          "Part a: −5.0% and +5.0%.",
+          "Part b: Yes, the mean is 0.0500 M.",
+          "Part c: Agreement with the reference after averaging could be cancellation. Bias sizes can change with samples or technique."
         ]
-      }
+      },
+      "choices": [
+        "Both errors are zero because the mean matches",
+        "−5.0% and +5.0%; mean 0.0500 M; biases can cancel by chance",
+        "+5.0% and −5.0%; mean 0.0500 M; biases can cancel by chance",
+        "−5.0% and +5.0%; mean 0.1000 M; averaging always corrects bias"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-2-N06",
       "review": "chem-117-lab",
       "section": "Lab 2",
       "title": "Percent transmittance versus absorbance",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) A sample transmits 25.0% of incident light. Find A = −log₁₀(T), where T is a fraction.",
@@ -555,18 +863,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. 0.602.",
-          "B. 1.204 and 6.25%.",
-          "C. T = 10⁻ᴬ, an exponential function of concentration when A is proportional to concentration."
+          "Part a: 0.602.",
+          "Part b: 1.204 and 6.25%.",
+          "Part c: T = 10⁻ᴬ, an exponential function of concentration when A is proportional to concentration."
         ]
-      }
+      },
+      "choices": [
+        "A = 0.602 then 1.204; 6.25% remains; transmittance is exponential",
+        "A = 0.250 then 0.500; 50.0% remains; transmittance is linear",
+        "A = 0.602 then 0.301; 50.0% remains; transmittance is exponential",
+        "A = 0.602 then 1.204; 12.5% remains; transmittance is linear"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-3-P01",
       "review": "chem-117-lab",
       "section": "Lab 3",
       "title": "Gas mixture and the ideal model",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Post-lab template",
       "body": [
         "You performed this experiment using air, which we know is actually a mixture of several gases. Would the results of this experiment be improved if we used a sample of pure nitrogen? Why or why not?"
@@ -575,14 +894,25 @@
         "blocks": [
           "At the same n, V, and T, ideal pressure is the same. Pure nitrogen does not correct a leak, offsets, or equilibration issues."
         ]
-      }
+      },
+      "choices": [
+        "No guaranteed improvement; ideal pressure depends on total n, V, and T; leaks still matter",
+        "No; pure nitrogen exerts zero pressure",
+        "Yes; a pure gas eliminates sensor offsets",
+        "Yes; at the same n, V, and T nitrogen always has higher pressure"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-3-P02",
       "review": "chem-117-lab",
       "section": "Lab 3",
       "title": "Molecular explanation of both plots",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Post-lab template",
       "body": [
         "Explain the P–T trend for a sealed rigid vessel and the P–V trend during an isothermal compression. For each, describe molecular speed and wall collisions."
@@ -591,14 +921,25 @@
         "blocks": [
           "Heating raises average speed, frequency of wall impacts, and momentum transferred per impact. Isothermal compression leaves average kinetic energy unchanged but impacts the walls more often."
         ]
-      }
+      },
+      "choices": [
+        "Heating and isothermal compression both raise average kinetic energy",
+        "Heating only increases molecule count; isothermal compression raises mean kinetic energy",
+        "Heating slows molecules; isothermal compression reduces impact frequency",
+        "Heating speeds molecules and increases momentum transfer; isothermal compression raises impact frequency with unchanged mean kinetic energy"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-3-P03",
       "review": "chem-117-lab",
       "section": "Lab 3",
       "title": "A cooling curve turns around",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Post-lab template",
       "body": [
         "A vessel cools from about 367 K. The probes are calibrated and functioning. (a) Explain the first segment, where pressure falls. (b) Explain why pressure could climb as the vessel continues to cool. (c) Why might pressure then settle near atmospheric pressure?"
@@ -611,14 +952,25 @@
           "B. Once the internal pressure drops below the surrounding pressure, a developing leak can admit air. Added moles can outweigh the effect of falling temperature.",
           "C. Once the opening allows the gas to equilibrate with the room, the pressure stays close to atmospheric even as the gas keeps cooling. A leak is a plausible diagnosis, and the graph alone does not identify the exact hardware failure."
         ]
-      }
+      },
+      "choices": [
+        "Cooling lowers pressure; gas molecules are created by cooling; pressure stabilizes because the temperature stops changing",
+        "Cooling lowers pressure; a leak admits air below room pressure; exchange brings the pressure near atmospheric",
+        "Cooling raises pressure; a leak expels air at sub-atmospheric pressure; pressure then reaches zero",
+        "A sealed fixed-volume ideal gas curves this way because pressure is proportional to 1/T"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-3-R01",
       "review": "chem-117-lab",
       "section": "Lab 3",
       "title": "Heating at fixed volume",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "A sealed rigid vessel starts at 98.0 kPa and 25.0 °C. Predict pressure at 75.0 °C and explain through wall collisions."
@@ -627,14 +979,25 @@
         "blocks": [
           "114 kPa using 348.15/298.15. Hotter molecules hit walls more frequently and transfer more momentum per collision."
         ]
-      }
+      },
+      "choices": [
+        "114 kPa; faster molecules strike more often and transfer more momentum",
+        "84.0 kPa; pressure drops as molecular speed increases",
+        "114 kPa; heating adds molecules to the sealed flask",
+        "294 kPa; pressure scales by the Celsius ratio"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-3-R02",
       "review": "chem-117-lab",
       "section": "Lab 3",
       "title": "Extrapolate absolute zero",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "P(kPa) = 0.340T(°C) + 94.0. Find its x-intercept, compare to −273.15 °C, and predict what a positive pressure offset will do."
@@ -643,14 +1006,25 @@
         "blocks": [
           "−276 °C, about 3 °C lower. An added positive offset moves the x-intercept to a more negative temperature."
         ]
-      }
+      },
+      "choices": [
+        "About −94 °C; offset cannot move the intercept",
+        "About −276 °C, below reference; positive offset moves it less negative",
+        "About −276 °C, below reference; positive offset moves it more negative",
+        "About +276 °C; positive offset moves it more negative"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-3-R03",
       "review": "chem-117-lab",
       "section": "Lab 3",
       "title": "Compression at fixed temperature",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "A gas occupies 24.0 mL at 82.0 kPa and is compressed to 15.0 mL at constant T. Find pressure. Discuss average kinetic energy and wall impacts."
@@ -659,14 +1033,25 @@
         "blocks": [
           "131 kPa. Average kinetic energy stays fixed. Wall collision frequency increases."
         ]
-      }
+      },
+      "choices": [
+        "82.0 kPa; unchanged mean kinetic energy; same impact frequency",
+        "131 kPa; unchanged mean kinetic energy; more frequent impacts",
+        "131 kPa; higher mean kinetic energy; same impact frequency",
+        "51.3 kPa; unchanged mean kinetic energy; fewer impacts"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-3-R04",
       "review": "chem-117-lab",
       "section": "Lab 3",
       "title": "Predict from a reciprocal fit",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "1/P = (4.50 × 10⁻⁴)V + 0.00100, P in kPa and V in mL. Give slope units and V at 10.0 kPa. Measurements spanned 10–30 mL. Is your value interpolation?"
@@ -675,14 +1060,25 @@
         "blocks": [
           "kPa⁻¹ mL⁻¹. V = 220 mL. It is well outside the measured range, so it is extrapolation."
         ]
-      }
+      },
+      "choices": [
+        "kPa mL⁻¹; 220 mL; interpolation",
+        "kPa⁻¹ mL⁻¹; 224 mL; extrapolation",
+        "kPa⁻¹ mL⁻¹; 220 mL; extrapolation",
+        "kPa⁻¹ mL⁻¹; 22.0 mL; interpolation"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-3-R05",
       "review": "chem-117-lab",
       "section": "Lab 3",
       "title": "Pressure spike in a syringe",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "Rapidly compress a syringe and hold the plunger fixed. Pressure spikes, then levels off lower. Explain with no leak and working probes. How would you take the isothermal measurement?"
@@ -691,14 +1087,25 @@
         "blocks": [
           "Rapid compression transiently heats the gas. At fixed volume the gas cools and the pressure falls. Wait for thermal equilibration."
         ]
-      }
+      },
+      "choices": [
+        "The gas volume increases while the plunger is held fixed",
+        "The drop requires a leak even when temperature changes",
+        "Compression briefly cools gas; record the maximum before it warms",
+        "Compression briefly warms gas; wait until gas cools and pressure stabilizes"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-3-R06",
       "review": "chem-117-lab",
       "section": "Lab 3",
       "title": "Air and nitrogen",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "Two identical vessels contain equal total moles at equal T, one air and one nitrogen. Compare ideal pressures and suggest one check if measured pressures differ."
@@ -707,14 +1114,25 @@
         "blocks": [
           "They are equal by PV = nRT. Check thermal equilibration, leaks, or calibration."
         ]
-      }
+      },
+      "choices": [
+        "Equal ideal pressures; check equilibration, leaks, or sensor offset",
+        "Air has higher pressure because it has a mixture of species",
+        "Nitrogen has higher pressure because its molecules are identical",
+        "Equal ideal pressures only if both gases have identical molar mass"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-3-N01",
       "review": "chem-117-lab",
       "section": "Lab 3",
       "title": "A fit at 200 °C",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) For a sealed constant-volume gas, P(kPa) = 0.320T(K) + 1.5. Predict P at 200 °C.",
@@ -723,18 +1141,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. 153 kPa.",
-          "B. Extrapolation.",
-          "C. The ideal model has zero intercept using absolute pressure and K."
+          "Part a: 153 kPa.",
+          "Part b: Extrapolation.",
+          "Part c: The ideal model has zero intercept using absolute pressure and K."
         ]
-      }
+      },
+      "choices": [
+        "151 kPa; extrapolation; ideal y-intercept 1.5 kPa",
+        "153 kPa; interpolation; ideal y-intercept 1.5 kPa",
+        "65.5 kPa; interpolation; ideal y-intercept zero",
+        "153 kPa; extrapolation; ideal y-intercept zero"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-3-N02",
       "review": "chem-117-lab",
       "section": "Lab 3",
       "title": "Uncounted tubing volume",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) A syringe reads 20.0 mL but its tubing adds 2.0 mL. At 100.0 kPa, compress the syringe to 10.0 mL at fixed T. Predict the pressure including tubing.",
@@ -743,18 +1172,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. 183 kPa from total volumes 22.0 and 12.0 mL.",
-          "B. 200 kPa.",
-          "C. Positive y-intercept since 1/P = (V_indicated + V_dead)/(nRT)."
+          "Part a: 183 kPa from total volumes 22.0 and 12.0 mL.",
+          "Part b: 200 kPa.",
+          "Part c: Positive y-intercept since 1/P = (V_indicated + V_dead)/(nRT)."
         ]
-      }
+      },
+      "choices": [
+        "183 kPa including tubing; 200 kPa ignoring it; negative y-intercept",
+        "183 kPa including tubing; 200 kPa ignoring it; positive y-intercept",
+        "200 kPa including tubing; 183 kPa ignoring it; positive y-intercept",
+        "220 kPa including tubing; 200 kPa ignoring it; zero intercept"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-3-N03",
       "review": "chem-117-lab",
       "section": "Lab 3",
       "title": "Evidence of leakage",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) A rigid vessel goes from 300 K and 100 kPa to 360 K and 108 kPa. What is the expected sealed pressure?",
@@ -763,18 +1203,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. 120 kPa.",
-          "B. 108/120 = 0.900.",
-          "C. At fixed volume and final T, 10% fewer particles means 10% fewer molecules contributing to pressure."
+          "Part a: 120 kPa.",
+          "Part b: 108/120 = 0.900.",
+          "Part c: At fixed volume and final T, 10% fewer particles means 10% fewer molecules contributing to pressure."
         ]
-      }
+      },
+      "choices": [
+        "108 kPa; all moles remain; warming does not affect P",
+        "120 kPa; 1.11 remains; more molecules lower pressure",
+        "100 kPa; 0.900 remains; lower P requires greater volume",
+        "120 kPa; 0.900 remains; fewer molecules lower pressure"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-3-N04",
       "review": "chem-117-lab",
       "section": "Lab 3",
       "title": "Pick the correct axes",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) Data at V = 10, 20, 40 mL give P = 240, 120, 60 kPa. Compute PV.",
@@ -783,18 +1234,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. 2400 kPa·mL throughout.",
-          "B. 1/2400 ≈ 4.17 × 10⁻⁴ kPa⁻¹ mL⁻¹.",
-          "C. A decreasing hyperbola, with constant mean kinetic energy at constant T."
+          "Part a: 2400 kPa·mL throughout.",
+          "Part b: 1/2400 ≈ 4.17 × 10⁻⁴ kPa⁻¹ mL⁻¹.",
+          "Part c: A decreasing hyperbola, with constant mean kinetic energy at constant T."
         ]
-      }
+      },
+      "choices": [
+        "24 kPa·mL; slope 4.17 × 10⁻⁴ kPa⁻¹ mL⁻¹; increasing curve",
+        "2400 kPa·mL; slope 4.17 × 10⁻⁴ kPa⁻¹ mL⁻¹; decreasing hyperbola and decreasing mean kinetic energy",
+        "2400 kPa·mL; slope 2400 kPa·mL; P against V is linear",
+        "2400 kPa·mL; slope 4.17 × 10⁻⁴ kPa⁻¹ mL⁻¹; decreasing hyperbola and unchanged mean kinetic energy"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-3-N05",
       "review": "chem-117-lab",
       "section": "Lab 3",
       "title": "Wrong use of Celsius",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) A rigid vessel at 20.0 °C reads 100.0 kPa. Predict at 40.0 °C correctly.",
@@ -803,18 +1265,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. 106.8 kPa using Kelvin.",
-          "B. 200 kPa.",
-          "C. The scales differ by a constant, which shifts the intercept but preserves slope."
+          "Part a: 106.8 kPa using Kelvin.",
+          "Part b: 200 kPa.",
+          "Part c: The scales differ by a constant, which shifts the intercept but preserves slope."
         ]
-      }
+      },
+      "choices": [
+        "106.8 kPa; wrong ratio gives 50 kPa; scales differ by a constant",
+        "200 kPa; wrong ratio gives 106.8 kPa; both lines go through the origin",
+        "106.8 kPa; wrong ratio gives 200 kPa; converting to Celsius changes slope rather than intercept",
+        "106.8 kPa; wrong Celsius ratio gives 200 kPa; scales differ by a constant"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-3-N06",
       "review": "chem-117-lab",
       "section": "Lab 3",
       "title": "Warm bath then uneven heating",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) A vessel equilibrates at 300 K and 95.0 kPa, then the bath probe jumps to 330 K while the gas is still at 315 K. Calculate the observed pressure immediately and after equilibration.",
@@ -823,18 +1296,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. 99.8 kPa initially and 104.5 kPa after reaching 330 K.",
-          "B. The initial measurement pairs the pressure with too high a temperature.",
-          "C. Check whether n changed via a leak."
+          "Part a: 99.8 kPa initially and 104.5 kPa after reaching 330 K.",
+          "Part b: The initial measurement pairs the pressure with too high a temperature.",
+          "Part c: Check whether n changed via a leak."
         ]
-      }
+      },
+      "choices": [
+        "99.8 then 104.5 kPa; early point is below the line; check for leaks if bias persists",
+        "99.8 then 104.5 kPa; early point is above the line; the leak is ruled out",
+        "104.5 then 99.8 kPa; early point is above the line; check for leaks",
+        "95.0 then 95.0 kPa; both points follow the line"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-4-P01",
       "review": "chem-117-lab",
       "section": "Lab 4",
       "title": "Doubling particles versus capping agent",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Post-lab template",
       "body": [
         "Predict how a spectrum would change if you doubled the concentration of the same silver nanoparticles. Then predict how changing a capping agent during synthesis could affect the spectrum."
@@ -843,14 +1327,25 @@
         "blocks": [
           "In the linear range, identical particles give about twice the absorbance and the same λmax. Changing a capping agent can change growth, so peak position and shape may change. Direction depends on the resulting particles."
         ]
-      }
+      },
+      "choices": [
+        "Same particles: twice the peak wavelength; changing capping agent only changes concentration",
+        "Same particles: about twice the absorbance at the same peak wavelength; changing capping agent can shift the peak and alter its shape",
+        "Same particles: identical spectrum; changing capping agent always doubles absorbance",
+        "Both changes produce exactly the same spectrum"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-4-P02",
       "review": "chem-117-lab",
       "section": "Lab 4",
       "title": "Adding the reducer first",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Post-lab template",
       "body": [
         "In the post-lab scenario, the reducing agent is added to the silver precursor before the capping and other growth-control reagents. What could happen to the dispersion and why?"
@@ -859,14 +1354,25 @@
         "blocks": [
           "Silver can form before growth and aggregation are controlled. The resulting sample could darken, show broad scattering or absorption, or contain visible aggregates."
         ]
-      }
+      },
+      "choices": [
+        "Silver may form before growth is controlled, leading to aggregation and broader or darker optical response",
+        "The addition order cannot affect particle growth",
+        "The silver precursor becomes more positively charged by gaining electrons",
+        "The reducer prevents silver metal from forming"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-4-P03",
       "review": "chem-117-lab",
       "section": "Lab 4",
       "title": "Two absorption peaks",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Post-lab template",
       "body": [
         "A silver nanoparticle sample has peaks at about 407 and 725 nm. Explain a possible particle-level cause and predict a possible color in transmission."
@@ -875,30 +1381,52 @@
         "blocks": [
           "Different populations or optical modes can give two peaks. If the first peak removes violet and the second removes some deep red, a greenish or blue-green color is plausible. Band widths and the rest of the spectrum matter."
         ]
-      }
+      },
+      "choices": [
+        "Only concentration can create a distinct second resonance",
+        "The spectrum shows absorption of green only",
+        "Multiple populations or modes are plausible; removing violet and some deep red can leave a greenish color",
+        "The two peaks prove two exact particle sizes; the sample must be violet"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-4-P04",
       "review": "chem-117-lab",
       "section": "Lab 4",
       "title": "Three forms of silver",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Post-lab template",
       "body": [
-        "Draw water and silver for dissolved silver ions, suspended silver nanoparticles, and a piece of bulk silver in water. Include a legend."
+        "Which particle-level description correctly represents dissolved silver ions, suspended silver nanoparticles, and a piece of bulk silver in water, in that order?"
       ],
       "answer": {
         "blocks": [
           "Show individually dispersed Ag⁺, separate Ag⁰ clusters surrounded by water, and one continuous Ag⁰ region next to the water. Distinguish atoms, ions and water in the legend."
         ]
-      }
+      },
+      "choices": [
+        "Separate Ag⁰ atoms; clusters of Ag⁺; one continuous Ag⁺ region",
+        "Separate Ag⁺ ions; separate Ag⁰ clusters; one continuous Ag⁰ region",
+        "Separate Ag⁺ ions; one continuous Ag⁰ region; isolated Ag⁰ clusters",
+        "Identical Ag⁺ arrangements in all three cases"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-4-R01",
       "review": "chem-117-lab",
       "section": "Lab 4",
       "title": "Same position, double height",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "Samples peak at 430 nm with A = 0.35 and 0.70 and the same normalized shape. Assuming identical particles, path lengths and linear response, compare concentrations."
@@ -907,14 +1435,25 @@
         "blocks": [
           "The second concentration is about twice the first."
         ]
-      }
+      },
+      "choices": [
+        "A is about twice as concentrated as B",
+        "B is about twice as concentrated as A",
+        "B is four times as concentrated as A",
+        "Concentrations must be equal because the wavelengths match"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-4-R02",
       "review": "chem-117-lab",
       "section": "Lab 4",
       "title": "Absorbed versus seen",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "A colloid absorbs strongly near 430 nm. Would the transmitted color be 430 nm? Explain."
@@ -923,14 +1462,25 @@
         "blocks": [
           "It looks like the combination of wavelengths that pass through. Removing violet-blue can leave a yellowish appearance if the rest of the visible spectrum transmits."
         ]
-      }
+      },
+      "choices": [
+        "A yellowish appearance is plausible if violet-blue light is removed and other wavelengths transmit",
+        "It must look violet because the peak is at 430 nm",
+        "It must look black because any single strong peak blocks all light",
+        "Color is determined only by particle concentration, regardless of wavelength"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-4-R03",
       "review": "chem-117-lab",
       "section": "Lab 4",
       "title": "Two signals, multiple explanations",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "A spectrum has peaks at 420 and 660 nm. Give two hypotheses. Can you prove there are exactly two particle sizes?"
@@ -939,14 +1489,25 @@
         "blocks": [
           "Different populations or multiple resonances from anisotropic particles. The spectrum alone cannot distinguish those possibilities conclusively."
         ]
-      }
+      },
+      "choices": [
+        "Different particle populations or separate resonance modes can explain the peaks; exact sizes require independent evidence",
+        "The two peaks establish one particle shape and one size",
+        "Both peaks must result from a miscalibrated wavelength axis",
+        "Each peak proves one exact particle size"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-4-R04",
       "review": "chem-117-lab",
       "section": "Lab 4",
       "title": "A broad outlier",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "At increasing NaBr levels, λmax values are 670, 450, 825 (broad), 425, and 440 nm. Evaluate a claim of a consistently shorter wavelength and recommend a check."
@@ -955,14 +1516,25 @@
         "blocks": [
           "The trend is not monotonic. Repeat the broad-peak condition, check bubbles, blanking, aggregation, and consistency of timing and handling."
         ]
-      }
+      },
+      "choices": [
+        "Monotonic decrease; discard any peak above 700 nm automatically",
+        "Nonmonotonic; repeat the broad-peak condition and inspect optics and aggregation",
+        "No variation; peak wavelengths are essentially equal",
+        "Monotonic increase; broad peaks give exact size estimates"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-4-R05",
       "review": "chem-117-lab",
       "section": "Lab 4",
       "title": "Confounded synthesis",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "One group changes NaBr and addition order at once. Explain the issue. Give a fair comparison and two spectral outcomes to measure."
@@ -971,30 +1543,52 @@
         "blocks": [
           "Either variable could explain the result. Vary one with the other fixed and record λmax and peak height or width."
         ]
-      }
+      },
+      "choices": [
+        "Only order could explain the result; change both again",
+        "Only NaBr could explain the result; compare vial labels alone",
+        "Either factor could explain the result; vary one at a time and record peak wavelength and width",
+        "No confounding occurs because the spectrum was recorded"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-4-R06",
       "review": "chem-117-lab",
       "section": "Lab 4",
       "title": "Sketch the silver",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
-        "Sketch water containing Ag⁺, dispersed nanoparticles, and bulk silver. Label every type of particle. What does reduction change?"
+        "Which option correctly describes dissolved silver ions, nanoparticle dispersions, and bulk silver in water and says what changes when silver ions are reduced?"
       ],
       "answer": {
         "blocks": [
           "Ag⁺ ions are dispersed, nanoparticles are separate clusters of Ag atoms, and bulk silver is one contiguous mass. Reduction adds electrons to make Ag⁰."
         ]
-      }
+      },
+      "choices": [
+        "Nanoparticles are single Ag atoms; bulk is contiguous Ag⁺; reduction loses electrons",
+        "All three contain Ag⁺ only; reduction removes neutrons",
+        "Bulk and nanoparticles are both isolated Ag⁺ ions; reduction does not change charge",
+        "Ag⁺ dispersed; nanoparticles are separate Ag⁰ clusters; bulk is contiguous Ag⁰; reduction gains electrons"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-4-N01",
       "review": "chem-117-lab",
       "section": "Lab 4",
       "title": "Dilution check",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) Mix 2.00 mL of a stable dispersion with 4.00 mL of matching solvent. Starting Amax is 0.900. Predict new Amax.",
@@ -1003,18 +1597,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. 0.300.",
-          "B. No expected change under the stated assumptions.",
-          "C. Investigate a changed particle environment, dispersion stability, or wavelength/reference handling. Matching height alone does not rule out a particle change."
+          "Part a: 0.300.",
+          "Part b: No expected change under the stated assumptions.",
+          "Part c: Investigate a changed particle environment, dispersion stability, or wavelength/reference handling. Matching height alone does not rule out a particle change."
         ]
-      }
+      },
+      "choices": [
+        "0.450; λmax unchanged; shift proves dilution was correct",
+        "0.300; λmax unchanged ideally; check stability or instrument handling if it shifts",
+        "0.300; λmax becomes one third as large; no check needed",
+        "0.900; λmax unchanged; dilution cannot affect absorbance"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-4-N02",
       "review": "chem-117-lab",
       "section": "Lab 4",
       "title": "Replicates versus one lucky trial",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) Controls peak at 436, 438, 437 nm. Treated trials peak at 420, 422, 473 nm, and the last curve is broad. Calculate both means.",
@@ -1023,18 +1628,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. 437 nm and about 438 nm.",
-          "B. No, the broad trial shifts longer.",
-          "C. Inspect spectra and logs, repeat that condition, and apply a documented exclusion only if you establish a reason."
+          "Part a: 437 nm and about 438 nm.",
+          "Part b: No, the broad trial shifts longer.",
+          "Part c: Inspect spectra and logs, repeat that condition, and apply a documented exclusion only if you establish a reason."
         ]
-      }
+      },
+      "choices": [
+        "437 nm and about 438 nm; all treated peaks shift longer",
+        "437 nm and about 438 nm; not always shorter; inspect and repeat before excluding",
+        "437 nm and about 421 nm; always shorter; omit the third trial automatically",
+        "438 nm and about 437 nm; all peaks shift shorter"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-4-N03",
       "review": "chem-117-lab",
       "section": "Lab 4",
       "title": "Wavelength and energy",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) Compare photon energies at 420 and 630 nm using E proportional to 1/λ. Give the ratio E420/E630.",
@@ -1043,18 +1659,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. 1.50.",
-          "B. The 630 nm peak.",
-          "C. No. Geometry, aggregation, and the surrounding medium also affect the peak."
+          "Part a: 1.50.",
+          "Part b: The 630 nm peak.",
+          "Part c: No. Geometry, aggregation, and the surrounding medium also affect the peak."
         ]
-      }
+      },
+      "choices": [
+        "1.50; 630 nm is red-shifted; shift alone cannot identify size",
+        "1.50; 420 nm is red-shifted; shift alone identifies size",
+        "0.667; 630 nm is red-shifted; shift alone cannot identify size",
+        "1.50; 630 nm is red-shifted; shift alone identifies one exact size"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-4-N04",
       "review": "chem-117-lab",
       "section": "Lab 4",
       "title": "Cuvette path length and identity",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) Identical dispersion has Amax = 0.560 in a 1.00 cm cuvette. Predict Amax in a 0.500 cm cuvette in the linear range.",
@@ -1063,18 +1690,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. 0.280.",
-          "B. The same λmax.",
-          "C. No. Path length affects A even when concentration and particle type are unchanged."
+          "Part a: 0.280.",
+          "Part b: The same λmax.",
+          "Part c: No. Path length affects A even when concentration and particle type are unchanged."
         ]
-      }
+      },
+      "choices": [
+        "0.280; half λmax; concentration must be halved",
+        "0.560; same λmax; path length cannot affect A",
+        "0.280; same λmax; unknown path length prevents a concentration inference",
+        "1.120; same λmax; concentration must be unchanged"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-4-N05",
       "review": "chem-117-lab",
       "section": "Lab 4",
       "title": "Identify the dependent variable",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) Design three levels of a single growth-control variable and identify the baseline. specify two controls.",
@@ -1083,18 +1721,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. Use zero, low and high relative levels, with equal measurement timing and cuvette path length and other reagent amounts held fixed.",
-          "B. Peak height increased with stable peak position.",
-          "C. Compare normalized spectral widths and use particle imaging if available, or replicate at matched concentration."
+          "Part a: Use zero, low and high relative levels, with equal measurement timing and cuvette path length and other reagent amounts held fixed.",
+          "Part b: Peak height increased with stable peak position.",
+          "Part c: Compare normalized spectral widths and use particle imaging if available, or replicate at matched concentration."
         ]
-      }
+      },
+      "choices": [
+        "Vary two factors together; only peak position changes; compare sample labels",
+        "Vary one factor; only wavelength changes; use color alone to determine exact size",
+        "Vary one factor from a baseline while holding other conditions fixed; height changes; compare normalized widths and independent imaging",
+        "Hold everything fixed; both height and wavelength change; repeat the same plot"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-4-N06",
       "review": "chem-117-lab",
       "section": "Lab 4",
       "title": "Transmission at two peaks",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) At 410 and 685 nm, A = 0.70 and 0.30. Calculate percent transmitted using %T = 100 × 10⁻ᴬ.",
@@ -1103,18 +1752,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. About 20% and 50%.",
-          "B. 410 nm is attenuated more.",
-          "C. The rest of the spectrum, lighting, scattering, and visual sensitivity matter."
+          "Part a: About 20% and 50%.",
+          "Part b: 410 nm is attenuated more.",
+          "Part c: The rest of the spectrum, lighting, scattering, and visual sensitivity matter."
         ]
-      }
+      },
+      "choices": [
+        "About 20% and 50%; 410 nm attenuated more; the full spectrum matters",
+        "70% and 30%; 685 nm attenuated more; two points determine exact color",
+        "About 50% and 20%; 685 nm attenuated more; the full spectrum matters",
+        "About 20% and 50%; 685 nm attenuated more; exact color is known"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-5-P01",
       "review": "chem-117-lab",
       "section": "Lab 5",
       "title": "Metal instead of foam",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Post-lab template",
       "body": [
         "We used a Styrofoam cup as our calorimeter in this experiment. If we used a metal cup instead of a Styrofoam cup, would the value of the calorimeter constant increase or decrease? Explain your answer using your knowledge of thermochemistry."
@@ -1123,14 +1783,25 @@
         "blocks": [
           "A more massive cup with greater total heat capacity absorbs more energy per degree. Metal can also increase heat transfer to the room. That is a separate effect from the cup's own heat capacity. Material alone does not fix C."
         ]
-      }
+      },
+      "choices": [
+        "Metal must lower Ccal because it conducts better",
+        "Cup heat capacity and heat leakage are the same quantity",
+        "Greater conductivity alone guarantees greater Ccal",
+        "A cup with greater total heat capacity raises Ccal; faster heat exchange with the room is a separate effect"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-5-P02",
       "review": "chem-117-lab",
       "section": "Lab 5",
       "title": "Formation versus bond data",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Post-lab template",
       "body": [
         "Explain why an experimental Mg + H₂O enthalpy can differ from −315.9 kJ/mol. Include an experimental error and distinguish bond enthalpies from standard enthalpies of formation."
@@ -1139,14 +1810,25 @@
         "blocks": [
           "Heat lost to the room or incomplete reaction changes measured q. Average bond enthalpies describe gas-phase bonds and give estimates. Formation data are for specified compounds, states, and standard conditions."
         ]
-      }
+      },
+      "choices": [
+        "Formation enthalpies ignore phase; bond enthalpies always give the exact value",
+        "Heat exchange can alter experimental q; bond enthalpies are gas-phase averages; formation enthalpies include specified states",
+        "Experimental error occurs only when a reaction is endothermic",
+        "Bond enthalpies exactly describe every solid and liquid; heat exchange cannot affect q"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-5-R01",
       "review": "chem-117-lab",
       "section": "Lab 5",
       "title": "Calibrate a cup",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "Mix 50.00 g water at 60.00 °C and 50.00 g at 20.00 °C. Cup starts at 20.00 °C. Final T is 38.00 °C. Use c = 4.184 J/(g·°C) and negligible external heat exchange. Find both water heats and Ccal."
@@ -1155,14 +1837,25 @@
         "blocks": [
           "Hot water −4.602 kJ, cold water +3.766 kJ. The cup gains about 0.837 kJ and Ccal = 46.49 J/°C."
         ]
-      }
+      },
+      "choices": [
+        "−3.766 kJ hot; +4.602 kJ cold; 46.49 J/°C",
+        "+4.602 kJ hot; −3.766 kJ cold; 46.49 J/°C",
+        "−4.602 kJ hot; +3.766 kJ cold; 0 J/°C",
+        "−4.602 kJ hot; +3.766 kJ cold; 46.49 J/°C"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-5-R02",
       "review": "chem-117-lab",
       "section": "Lab 5",
       "title": "Get a molar enthalpy",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "0.2400 g Mg (24.31 g/mol) reacts with excess HCl. Solution 100.0 g, c = 4.184 J/(g·°C), Ccal = 46.5 J/°C, ΔT = +10.00 °C. Find qrxn and ΔH. What if you omit the cup?"
@@ -1171,14 +1864,25 @@
         "blocks": [
           "qrxn = −4.649 kJ. Divide by Mg moles for −470.9 kJ/mol. Omitting the cup makes it less negative."
         ]
-      }
+      },
+      "choices": [
+        "+4.649 kJ; +470.9 kJ/mol; omitting cup makes it less positive",
+        "−4.649 kJ; −470.9 kJ/mol; omitting cup makes it less negative",
+        "−4.649 kJ; −470.9 kJ/mol; omitting cup makes it more negative",
+        "−4.184 kJ; −423.8 kJ/mol; cup has no effect"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-5-R03",
       "review": "chem-117-lab",
       "section": "Lab 5",
       "title": "Hess by subtraction",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "Mg + 2HCl → MgCl₂ + H₂, ΔH = −471 kJ/mol. MgO + 2HCl → MgCl₂ + H₂O, ΔH = −116 kJ/mol. Obtain Mg + H₂O → MgO + H₂ and show what cancels."
@@ -1187,14 +1891,25 @@
         "blocks": [
           "Reverse the MgO reaction and add it. HCl and MgCl₂ cancel. ΔH = −471 + 116 = −355 kJ/mol."
         ]
-      }
+      },
+      "choices": [
+        "Add both as written; −587 kJ/mol",
+        "Reverse MgO reaction; HCl and MgCl₂ cancel; −587 kJ/mol",
+        "Reverse MgO reaction; HCl and MgCl₂ cancel; −355 kJ/mol",
+        "Reverse Mg reaction; +355 kJ/mol for the target as written"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-5-R04",
       "review": "chem-117-lab",
       "section": "Lab 5",
       "title": "Compare to the reference",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "Using −355 kJ/mol experimentally and −315.9 kJ/mol as reference, find absolute percent error. What if heat escaped only in the Mg trial?"
@@ -1203,14 +1918,25 @@
         "blocks": [
           "12.4%. Loss during the Mg trial lowers its observed temperature rise, shifting the Mg result and Hess result toward less negative values."
         ]
-      }
+      },
+      "choices": [
+        "12.4%; shifts more negative",
+        "12.4%; Hess enthalpy shifts less negative",
+        "11.0%; shifts less negative",
+        "0%; heat loss only changes cup calibration"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-5-R05",
       "review": "chem-117-lab",
       "section": "Lab 5",
       "title": "Larger cup heat capacity",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "Under perfect insulation, a cup with a larger heat capacity replaces the old one. For the same exothermic reaction, predict ΔT and the enthalpy bias if the old, smaller cup constant is used."
@@ -1219,14 +1945,25 @@
         "blocks": [
           "Temperature rise is smaller. The old constant undercounts absorption by the cup, so the reported enthalpy is less negative."
         ]
-      }
+      },
+      "choices": [
+        "Smaller ΔT; reporting with the old constant makes ΔH less negative",
+        "Same ΔT; old constant gives the true ΔH",
+        "Larger ΔT; old constant makes ΔH less negative",
+        "Smaller ΔT; old constant makes ΔH more negative"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-5-R06",
       "review": "chem-117-lab",
       "section": "Lab 5",
       "title": "Reference enthalpy method",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "Assessment review",
       "body": [
         "Which gives a better comparison for a reaction with solid Mg, liquid water, solid MgO, and H₂ gas, average bond enthalpies or standard formation enthalpies? Give the equation."
@@ -1235,14 +1972,25 @@
         "blocks": [
           "Formation data include the actual phases. ΔH°rxn = sum of νΔH°f for products − sum for reactants."
         ]
-      }
+      },
+      "choices": [
+        "Average gas-phase bond enthalpies; sum all bonds on both sides",
+        "Standard formation enthalpies; products only because all reactants are elements",
+        "Standard formation enthalpies; stoichiometric products minus reactants",
+        "Standard formation enthalpies; reactants minus products"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-5-N01",
       "review": "chem-117-lab",
       "section": "Lab 5",
       "title": "Cup correction using unequal masses",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) Combine 40.0 g hot water at 65.0 °C with 60.0 g water at 20.0 °C in a cup at 20.0 °C. Final 36.0 °C. Compute Ccal using c = 4.184.",
@@ -1251,18 +1999,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. [40.0(4.184)(29.0) − 60.0(4.184)(16.0)]/16.0 = 52.3 J/°C.",
-          "B. 38.0 °C.",
-          "C. High because loss is wrongly assigned to the cup."
+          "Part a: [40.0(4.184)(29.0) − 60.0(4.184)(16.0)]/16.0 = 52.3 J/°C.",
+          "Part b: 38.0 °C.",
+          "Part c: High because loss is wrongly assigned to the cup."
         ]
-      }
+      },
+      "choices": [
+        "52.3 J/°C; 38.0 °C; room heat loss biases Ccal low",
+        "52.3 J/°C; 38.0 °C; room heat loss biases Ccal high",
+        "28.9 J/°C; 38.0 °C; room heat loss biases Ccal high",
+        "0 J/°C; 36.0 °C; room heat loss gives no bias"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-5-N02",
       "review": "chem-117-lab",
       "section": "Lab 5",
       "title": "Endothermic sign check",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) A process lowers 80.0 g solution by 2.50 °C. Use c = 4.184 and Ccal = 35.0 J/°C. Find qrxn.",
@@ -1271,18 +2030,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. +0.924 kJ.",
-          "B. +61.6 kJ/mol.",
-          "C. The positive value is too small."
+          "Part a: +0.924 kJ.",
+          "Part b: +61.6 kJ/mol.",
+          "Part c: The positive value is too small."
         ]
-      }
+      },
+      "choices": [
+        "−0.924 kJ; −61.6 kJ/mol; omitting cup makes the value too small",
+        "+0.924 kJ; +61.6 kJ/mol; omitting cup makes the value too small",
+        "+0.837 kJ; +55.8 kJ/mol; omitting cup makes no difference",
+        "+0.924 kJ; +61.6 kJ/mol; omitting cup makes the value too large"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-5-N03",
       "review": "chem-117-lab",
       "section": "Lab 5",
       "title": "Hess error directions side by side",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) If Mg + acid gives −440 kJ/mol and MgO + acid gives −130 kJ/mol, find target ΔH = ΔHMg − ΔHMgO.",
@@ -1291,18 +2061,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. −310 kJ/mol.",
-          "B. −290 kJ/mol.",
-          "C. −330 kJ/mol."
+          "Part a: −310 kJ/mol.",
+          "Part b: −290 kJ/mol.",
+          "Part c: −330 kJ/mol."
         ]
-      }
+      },
+      "choices": [
+        "+310, +290, then +330 kJ/mol",
+        "−570, −550, then −550 kJ/mol",
+        "−310, −330, then −290 kJ/mol",
+        "−310, −290, then −330 kJ/mol"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-5-N04",
       "review": "chem-117-lab",
       "section": "Lab 5",
       "title": "Acid turns out to limit",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) 0.4862 g Mg (24.31 g/mol) reacts with 25.00 mL of 0.8000 M HCl. Use Mg + 2HCl → MgCl₂ + H₂. Which reagent limits?",
@@ -1311,18 +2092,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. HCl provides 0.02000 mol and reacts with only 0.01000 mol of the 0.02000 mol added Mg.",
-          "B. −450 kJ/mol.",
-          "C. −225 kJ/mol."
+          "Part a: HCl provides 0.02000 mol and reacts with only 0.01000 mol of the 0.02000 mol added Mg.",
+          "Part b: −450 kJ/mol.",
+          "Part c: −225 kJ/mol."
         ]
-      }
+      },
+      "choices": [
+        "Mg limits; −225 kJ/mol; −450 kJ/mol using total Mg",
+        "HCl limits; −225 kJ/mol; −450 kJ/mol using total Mg",
+        "Neither limits; −450 kJ/mol either way",
+        "HCl limits; −450 kJ/mol; −225 kJ/mol using total Mg"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-5-N05",
       "review": "chem-117-lab",
       "section": "Lab 5",
       "title": "Temperature probe lag",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) The true ΔT is 8.00 °C but a lagging probe reports 6.40 °C. Total heat capacity is 450 J/°C. Find both qrxn values.",
@@ -1331,18 +2123,29 @@
       ],
       "answer": {
         "blocks": [
-          "A. −3.60 kJ true, −2.88 kJ reported.",
-          "B. 20%.",
-          "C. The trace can reveal a delayed or missed peak and cooling behavior. Record the full trace using the course's mixing and analysis procedure."
+          "Part a: −3.60 kJ true, −2.88 kJ reported.",
+          "Part b: 20%.",
+          "Part c: The trace can reveal a delayed or missed peak and cooling behavior. Record the full trace using the course's mixing and analysis procedure."
         ]
-      }
+      },
+      "choices": [
+        "−3.60 and −2.88 kJ; 25% underestimate; the trace has no use",
+        "−2.88 and −3.60 kJ; 20% underestimate; probe lag raises the recorded peak",
+        "−3.60 and −2.88 kJ; 20% underestimate; the trace can show a missed peak",
+        "+3.60 and +2.88 kJ; 20% underestimate; the trace can show a missed peak"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CHEM117-5-N06",
       "review": "chem-117-lab",
       "section": "Lab 5",
       "title": "Formation enthalpy cross-check",
-      "kind": "frq",
+      "kind": "mcq",
       "source": "New multipart practice",
       "body": [
         "(a) Use ΔH°f of MgO(s) = −601.6 and H₂O(l) = −285.8 kJ/mol, with zero for Mg(s) and H₂(g), to find ΔH° for Mg + H₂O → MgO + H₂.",
@@ -1351,11 +2154,1372 @@
       ],
       "answer": {
         "blocks": [
-          "A. −315.8 kJ/mol.",
-          "B. 4.69%, with the measured result less negative.",
-          "C. Heat loss in the Mg trial lowers measured ΔT and makes ΔHMg less negative."
+          "Part a: −315.8 kJ/mol.",
+          "Part b: 4.69%, with the measured result less negative.",
+          "Part c: Heat loss in the Mg trial lowers measured ΔT and makes ΔHMg less negative."
         ]
-      }
+      },
+      "choices": [
+        "−315.8 kJ/mol; 4.69%; heat loss in the Mg trial is consistent",
+        "+315.8 kJ/mol; 195%; heat loss in Mg is consistent",
+        "−315.8 kJ/mol; 4.69%; heat loss only in MgO is consistent",
+        "−887.4 kJ/mol; 66.1%; heat loss in Mg is consistent"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-1-M01",
+      "review": "chem-117-lab",
+      "section": "Lab 1",
+      "title": "Weighing by difference",
+      "body": [
+        "A vial reads 14.8023 g before dispensing and 12.4479 g after. What mass was delivered?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Subtract the after mass from the before mass and retain four decimals."
+        ]
+      },
+      "choices": [
+        "2.354 g",
+        "27.2502 g",
+        "−2.3544 g",
+        "2.3544 g"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-1-M02",
+      "review": "chem-117-lab",
+      "section": "Lab 1",
+      "title": "Misread meniscus",
+      "body": [
+        "Water mass is 9.980 g and its correct volume is 10.00 mL. A student records 9.80 mL. What density is reported and in what direction is it biased?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "9.980/9.80 ≈ 1.02, larger than 0.9980."
+        ]
+      },
+      "choices": [
+        "1.02 g/mL, high",
+        "1.02 g/mL, low",
+        "0.998 g/mL, unchanged",
+        "0.982 g/mL, low"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-1-M03",
+      "review": "chem-117-lab",
+      "section": "Lab 1",
+      "title": "Matching equipment to a task",
+      "body": [
+        "Which pair prepares a solution to one calibrated volume and then delivers one calibrated portion?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "A volumetric flask is calibrated to contain and a volumetric pipet generally to deliver."
+        ]
+      },
+      "choices": [
+        "Graduated cylinder, then beaker",
+        "Volumetric pipet, then volumetric flask",
+        "Volumetric flask, then volumetric pipet",
+        "Erlenmeyer flask, then transfer pipet"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-1-M04",
+      "review": "chem-117-lab",
+      "section": "Lab 1",
+      "title": "Density and conductivity disagreement",
+      "body": [
+        "Two candidates have the same listed conductivity but densities 0.95 and 1.10 g/mL. Your new sample is 1.09 g/mL with the expected conductivity. Which interpretation is best?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "When conductivity ties, the density measurement can resolve the choice."
+        ]
+      },
+      "choices": [
+        "The conductivity distinguishes them despite matching reference values",
+        "The 0.95 candidate must be correct because it is less dense",
+        "The candidate with fewer significant figures is best",
+        "The 1.10 g/mL candidate is better supported; conductivity alone does not distinguish them"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-1-M05",
+      "review": "chem-117-lab",
+      "section": "Lab 1",
+      "title": "Water left in a flask",
+      "body": [
+        "There are a few drops of pure water in a volumetric flask before you add the full intended quantity of solute, dissolve it, and fill exactly to the mark. What happens to the final molarity?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "The wet flask does not change the solute moles or calibrated final solution volume."
+        ]
+      },
+      "choices": [
+        "It decreases by the proportional volume of the drops",
+        "It depends only on the flask's mass",
+        "It increases because the drops carry ions",
+        "It stays at the target value"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-1-M06",
+      "review": "chem-117-lab",
+      "section": "Lab 1",
+      "title": "Density on a graph",
+      "body": [
+        "A plot of total mass in g versus liquid volume in mL has slope 0.809 and intercept 12.0. A new unknown line is steeper and has the same intercept. What does that imply?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Total mass = empty container mass + density times volume."
+        ]
+      },
+      "choices": [
+        "Same density and higher empty mass",
+        "Higher liquid density and the same inferred empty container mass",
+        "Lower liquid density and the same inferred empty container mass",
+        "Higher density and higher empty mass"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-1-M07",
+      "review": "chem-117-lab",
+      "section": "Lab 1",
+      "title": "Conductivity comparison",
+      "body": [
+        "Equal volumes of distilled water and a dilute NaCl solution are tested at the same temperature. Why does the salt solution typically give a bigger signal?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Dissolved NaCl supplies mobile sodium and chloride ions."
+        ]
+      },
+      "choices": [
+        "It contains more mobile charged particles",
+        "The NaCl lowers each ion's charge to zero",
+        "Its dissolved salt contains only neutral molecules",
+        "The liquid volume determines the measured conductivity in both samples"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-1-M08",
+      "review": "chem-117-lab",
+      "section": "Lab 1",
+      "title": "Microliter conversion",
+      "body": [
+        "A reading of 250 µL is entered as 2.50 mL. What is the correct value and by what factor is the entered value too large?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Divide microliters by 1000 to get milliliters."
+        ]
+      },
+      "choices": [
+        "0.250 mL; factor of 10",
+        "2.50 mL; factor of 1",
+        "0.0250 mL; factor of 10",
+        "0.250 mL; factor of 100"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-1-M09",
+      "review": "chem-117-lab",
+      "section": "Lab 1",
+      "title": "Balance tare",
+      "body": [
+        "A student uses a tare reading from a dry vial, but the vial has a water droplet on the outside during the filled reading. The liquid volume is right. What happens to the calculated density?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "The balance also measures the droplet; the dry tare does not remove that contribution."
+        ]
+      },
+      "choices": [
+        "Too high because the droplet adds mass to the numerator",
+        "Too low because the droplet was included in the tare",
+        "Unchanged because exterior water is never weighed",
+        "Too low because the droplet reduces the recorded volume"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-1-M10",
+      "review": "chem-117-lab",
+      "section": "Lab 1",
+      "title": "Significant figures in two steps",
+      "body": [
+        "A liquid weighs 32.419 g with the receiver and 24.200 g without it. The volume is 8.1 mL. Which density should be reported?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Liquid mass is 8.219 g. Division is limited to two significant figures by 8.1 mL."
+        ]
+      },
+      "choices": [
+        "1 g/mL",
+        "1.0 g/mL",
+        "4.0 g/mL",
+        "1.015 g/mL"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-2-M01",
+      "review": "chem-117-lab",
+      "section": "Lab 2",
+      "title": "Net ionic equation",
+      "body": [
+        "Which is the net ionic equation for the course's copper carbonate precipitation model?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Sodium and sulfate are spectators in this model."
+        ]
+      },
+      "choices": [
+        "Cu²⁺(aq) + SO₄²⁻(aq) → CuSO₄(s)",
+        "Cu²⁺(aq) → Cu(s)",
+        "2Na⁺(aq) + SO₄²⁻(aq) → Na₂SO₄(s)",
+        "Cu²⁺(aq) + CO₃²⁻(aq) → CuCO₃(s)"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-2-M02",
+      "review": "chem-117-lab",
+      "section": "Lab 2",
+      "title": "Tare in gravimetry",
+      "body": [
+        "Dry filter paper weighs 0.6120 g; paper plus dry CuCO₃ weighs 0.7356 g. Using 123.55 g/mol, how many moles of precipitate formed?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Subtract paper mass before dividing 0.1236 g by molar mass."
+        ]
+      },
+      "choices": [
+        "0.004953 mol",
+        "0.1236 mol",
+        "0.001000 mol",
+        "0.005954 mol"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-2-M03",
+      "review": "chem-117-lab",
+      "section": "Lab 2",
+      "title": "Standard preparation",
+      "body": [
+        "How much 0.1000 M stock is needed for 50.00 mL of 0.03000 M CuSO₄?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Use C₁V₁ = C₂V₂. The difference between 50.00 and 15.00 mL is approximately how much solvent is added."
+        ]
+      },
+      "choices": [
+        "16.67 mL",
+        "50.00 mL",
+        "35.00 mL",
+        "15.00 mL"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-2-M04",
+      "review": "chem-117-lab",
+      "section": "Lab 2",
+      "title": "Slope choice",
+      "body": [
+        "At comparable noise, wavelengths X and Y give slopes 12 and 32 M⁻¹. Both ranges stay linear. Which better distinguishes a small concentration change?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Sensitivity to concentration is the slope."
+        ]
+      },
+      "choices": [
+        "X, because a lower slope always indicates better precision",
+        "Both, because slope has no effect on the absorbance change",
+        "Y, because the same change in concentration produces a larger change in absorbance",
+        "Y, because it necessarily gives a larger intercept"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-2-M05",
+      "review": "chem-117-lab",
+      "section": "Lab 2",
+      "title": "Concentration by interpolation",
+      "body": [
+        "Standards at 0.0200 and 0.0400 M read 0.300 and 0.600. An unknown reads 0.450 on this linear region. What is its concentration?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "The unknown absorbance is halfway between the two standards."
+        ]
+      },
+      "choices": [
+        "0.0450 M",
+        "0.0300 M",
+        "0.0150 M",
+        "0.0600 M"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-2-M06",
+      "review": "chem-117-lab",
+      "section": "Lab 2",
+      "title": "Water in the unknown cuvette",
+      "body": [
+        "Residual water in a cuvette dilutes only the CuSO₄ unknown. Standards and blank are correct. How does its inferred concentration shift?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "A valid calibration gives the concentration of what is actually in the cuvette."
+        ]
+      },
+      "choices": [
+        "High, because the line's slope changes",
+        "High, because the water adds to analyte moles",
+        "Low, because lower actual concentration in the cell reduces absorbance",
+        "Unchanged, because dilution never changes absorbance"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-2-M07",
+      "review": "chem-117-lab",
+      "section": "Lab 2",
+      "title": "What belongs in the fit",
+      "body": [
+        "You have four known standards and one unknown absorbance. How should the unknown be used?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "The calibration x-values must be known concentrations."
+        ]
+      },
+      "choices": [
+        "Replace the lowest standard with the unknown",
+        "Include the unknown at the average standard concentration",
+        "Fit only the known standards, then solve the line for the unknown",
+        "Include the unknown as a zero-concentration point"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-2-M08",
+      "review": "chem-117-lab",
+      "section": "Lab 2",
+      "title": "Serial dilution labels",
+      "body": [
+        "Starting at 0.1000 M, you dilute a solution by half three times, each from the previous dilution. Which set is correct?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Each step halves the current concentration."
+        ]
+      },
+      "choices": [
+        "0.05000, 0.05000, 0.05000 M",
+        "0.05000, 0.02500, 0.006250 M",
+        "0.05000, 0.02500, 0.01250 M",
+        "0.1000, 0.05000, 0.02500 M"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-2-M09",
+      "review": "chem-117-lab",
+      "section": "Lab 2",
+      "title": "Large absorbance and signal",
+      "body": [
+        "Unknown absorbance lies above the validated curve's upper end. Which action gives the most defensible value?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Dilution permits interpolation and the known factor recovers the concentration before dilution."
+        ]
+      },
+      "choices": [
+        "Extrapolate far beyond the top standard and assume error is unchanged",
+        "Report the highest standard as the unknown's exact concentration",
+        "Remeasure with a dirty cuvette to bring light levels into range",
+        "Dilute by a known factor, remeasure within range, and multiply back"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-2-M10",
+      "review": "chem-117-lab",
+      "section": "Lab 2",
+      "title": "Gravimetry versus absorbance check",
+      "body": [
+        "Gravimetry gives 0.0440 M and the verified light-based result is 0.0500 M. Which issue could explain just the low gravimetric result?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "A portion of the precipitate never reached the balance, reducing the inferred moles."
+        ]
+      },
+      "choices": [
+        "The paper mass was subtracted twice from the optical result",
+        "The weighed precipitate retained water",
+        "A fingerprint raised the unknown absorbance, with the light-based value independently confirmed",
+        "Precipitate was left behind in the reaction beaker"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-3-M01",
+      "review": "chem-117-lab",
+      "section": "Lab 3",
+      "title": "Absolute versus gauge pressure",
+      "body": [
+        "At constant temperature, a syringe contains gas with a gauge reading of 40 kPa when atmospheric pressure is 100 kPa. If volume doubles, what absolute pressure does the ideal model predict?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Initial absolute pressure is 140 kPa. Boyle's law halves it when volume doubles."
+        ]
+      },
+      "choices": [
+        "70 kPa",
+        "280 kPa",
+        "120 kPa",
+        "20 kPa"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-3-M02",
+      "review": "chem-117-lab",
+      "section": "Lab 3",
+      "title": "Comparing gas amounts",
+      "body": [
+        "Vessel A and B have the same volume and temperature. A registers 125 kPa and B 100 kPa. What is nA/nB for ideal gases?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "At constant V and T, pressure scales with total moles."
+        ]
+      },
+      "choices": [
+        "2.25",
+        "0.800",
+        "1.25",
+        "1.00"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-3-M03",
+      "review": "chem-117-lab",
+      "section": "Lab 3",
+      "title": "Cooling a trapped gas",
+      "body": [
+        "Air in a sealed rigid flask cools from 380 K to 304 K. If initial P is 110 kPa, what final P is predicted?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Multiply 110 by 304/380."
+        ]
+      },
+      "choices": [
+        "22.0 kPa",
+        "88.0 kPa",
+        "110 kPa",
+        "137.5 kPa"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-3-M04",
+      "review": "chem-117-lab",
+      "section": "Lab 3",
+      "title": "Axes reversed",
+      "body": [
+        "For Boyle's law, which plot should be linear and increasing through the origin in the ideal limit?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "P = nRT(1/V) is directly proportional to reciprocal volume."
+        ]
+      },
+      "choices": [
+        "P versus 1/V",
+        "1/P versus 1/V",
+        "PV versus V",
+        "P versus V"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-3-M05",
+      "review": "chem-117-lab",
+      "section": "Lab 3",
+      "title": "Graph intercept and tubing",
+      "body": [
+        "For a fixed n and T, 1/P = 0.00050V + 0.0010, with V in mL. If the intercept comes entirely from uncounted volume, what is that volume?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "The intercept is slope times uncounted volume."
+        ]
+      },
+      "choices": [
+        "0.0020 mL",
+        "0.50 mL",
+        "2.0 mL",
+        "20 mL"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-3-M06",
+      "review": "chem-117-lab",
+      "section": "Lab 3",
+      "title": "Leak direction",
+      "body": [
+        "During heating, the pressure in a rigid flask is above room pressure. A fitting leaks. Relative to the sealed prediction at the same temperature, what should happen?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "The initial pressure difference drives gas out, decreasing n."
+        ]
+      },
+      "choices": [
+        "Pressure is unaffected because the volume is fixed",
+        "Pressure must drop to zero regardless of outside air",
+        "Pressure falls below the prediction as gas escapes",
+        "Pressure rises above prediction as gas always enters leaks"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-3-M07",
+      "review": "chem-117-lab",
+      "section": "Lab 3",
+      "title": "Changing two gas variables",
+      "body": [
+        "For fixed moles, absolute temperature doubles while volume triples. What is Pfinal/Pinitial?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "With n fixed, the pressure ratio is the temperature ratio divided by the volume ratio."
+        ]
+      },
+      "choices": [
+        "1/6",
+        "6",
+        "3/2",
+        "2/3"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-3-M08",
+      "review": "chem-117-lab",
+      "section": "Lab 3",
+      "title": "Fit slope at fixed volume",
+      "body": [
+        "Two sealed flasks start with identical moles. B has twice the volume of A. Compare slopes on P versus T in kelvin."
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "The slope at fixed volume is nR/V."
+        ]
+      },
+      "choices": [
+        "B has double the slope of A",
+        "B's slope is negative",
+        "B has half the slope of A",
+        "The slopes are equal"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-3-M09",
+      "review": "chem-117-lab",
+      "section": "Lab 3",
+      "title": "Flask setup control",
+      "body": [
+        "Why wait for the flask and bath to equilibrate before saving a pressure–temperature point?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "A thermal lag pairs the gas pressure with the wrong temperature."
+        ]
+      },
+      "choices": [
+        "The gas must boil before the ideal gas law applies",
+        "Waiting changes the flask's volume enough to improve precision",
+        "The probe measures bath temperature, which should represent the gas temperature",
+        "Equilibration guarantees that the gas pressure equals room pressure"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-3-M10",
+      "review": "chem-117-lab",
+      "section": "Lab 3",
+      "title": "Spot the reciprocal error",
+      "body": [
+        "A Boyle plot gives 1/P = 0.00300 kPa⁻¹ for one point. What absolute pressure is this?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Invert the value and the units."
+        ]
+      },
+      "choices": [
+        "0.00300 kPa",
+        "3.00 kPa",
+        "30.0 kPa",
+        "333 kPa"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-4-M01",
+      "review": "chem-117-lab",
+      "section": "Lab 4",
+      "title": "Read an absorbance spectrum",
+      "body": [
+        "At 410, 450, and 500 nm, a sample gives 0.52, 0.61, and 0.33. Which is the greatest sampled absorbance and at what wavelength?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "The sampled peak is the highest measured absorbance; the true maximum could lie between sampled wavelengths."
+        ]
+      },
+      "choices": [
+        "0.33 at 500 nm",
+        "0.61 at 450 nm",
+        "450 at 0.61 nm",
+        "0.52 at 410 nm"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-4-M02",
+      "review": "chem-117-lab",
+      "section": "Lab 4",
+      "title": "Selecting distinct peaks",
+      "body": [
+        "The baseline is 690 nm and existing variants are 430 and 470 nm. Which candidate gives at least 15 nm separation from each existing peak?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "450 nm is 20 nm from both adjacent existing peaks."
+        ]
+      },
+      "choices": [
+        "679 nm",
+        "450 nm",
+        "479 nm",
+        "441 nm"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-4-M03",
+      "review": "chem-117-lab",
+      "section": "Lab 4",
+      "title": "What silver reduction means",
+      "body": [
+        "What changes when a silver ion becomes a neutral silver atom?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Ag⁺ + e⁻ → Ag⁰."
+        ]
+      },
+      "choices": [
+        "It gains one electron",
+        "It loses one electron",
+        "It loses one neutron",
+        "It gains one proton"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-4-M04",
+      "review": "chem-117-lab",
+      "section": "Lab 4",
+      "title": "Why use high-purity water",
+      "body": [
+        "Why can substituting tap water confound the nanoparticle comparison?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Background ions can influence particle formation and optical response."
+        ]
+      },
+      "choices": [
+        "Water source affects mass only and never the spectra",
+        "Tap water uniquely increases the silver reagent concentration by a known amount",
+        "Dissolved ions introduce an uncontrolled variable that may affect particle growth",
+        "Tap water contains no ions, so every peak vanishes"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-4-M05",
+      "review": "chem-117-lab",
+      "section": "Lab 4",
+      "title": "Normalized spectrum",
+      "body": [
+        "Sample A has A values 0.60 and 0.30 at two wavelengths; B has 0.90 and 0.45. Compare their values relative to the first wavelength."
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Divide by each sample's own first absorbance."
+        ]
+      },
+      "choices": [
+        "Both give normalized values 1.00 and 0.50; absolute absorbance is greater for B",
+        "B gives normalized values 1.50 and 0.50",
+        "A gives 0.60 and 0.30 while B gives 0.90 and 0.45 after normalization",
+        "B must have a different normalized shape because both raw values increase"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-4-M06",
+      "review": "chem-117-lab",
+      "section": "Lab 4",
+      "title": "Path length and dilution together",
+      "body": [
+        "An unchanged dispersion has A = 0.48 at a fixed wavelength in a 1.00 cm cell. It is diluted twofold but read in a 2.00 cm cell. What is A in the linear range?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Concentration halves and the path length doubles, leaving the product unchanged."
+        ]
+      },
+      "choices": [
+        "0.96",
+        "0.48",
+        "0.12",
+        "0.24"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-4-M07",
+      "review": "chem-117-lab",
+      "section": "Lab 4",
+      "title": "Optical setup problem",
+      "body": [
+        "A bubble sits across the light path in an unknown sample. Its plot has an irregular baseline. What is the best way to check whether the bump is real?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Remove the optical artifact while keeping the sample and settings comparable."
+        ]
+      },
+      "choices": [
+        "Accept it as proof of a second nanoparticle population",
+        "Remeasure in a clean, bubble-free cuvette under the same settings",
+        "Divide λmax by two",
+        "Change reagent composition before repeating the measurement"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-4-M08",
+      "review": "chem-117-lab",
+      "section": "Lab 4",
+      "title": "Recording a red shift",
+      "body": [
+        "A sample changes from a 430 nm peak to a 520 nm peak while peak absorbance falls. Which statement follows from the observations alone?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "A longer wavelength is a red shift. A morphology change would prevent direct inference from peak height alone."
+        ]
+      },
+      "choices": [
+        "The peak blue-shifted 90 nm and strengthened",
+        "The particle concentration must have exactly halved",
+        "The peak red-shifted 90 nm and weakened",
+        "The particles doubled in diameter"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-4-M09",
+      "review": "chem-117-lab",
+      "section": "Lab 4",
+      "title": "Unstable color comparison",
+      "body": [
+        "Two samples were scanned 30 seconds and 10 minutes after preparation, respectively, and their spectra differ. What is the strongest follow-up?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Elapsed time could be a confounding variable if particles continue changing."
+        ]
+      },
+      "choices": [
+        "Scan matched replicates at common elapsed times while holding other conditions fixed",
+        "Assign the difference entirely to reagent identity without further testing",
+        "Switch to a different optical path length only for the early sample",
+        "Average the two λmax values and report it as both samples' peak"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-4-M10",
+      "review": "chem-117-lab",
+      "section": "Lab 4",
+      "title": "Blank versus sample spectrum",
+      "body": [
+        "What is the role of the pure-water reference in the lab's spectrophotometer setup?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "A blank sets a reference without the nanoparticle dispersion."
+        ]
+      },
+      "choices": [
+        "It determines particle concentration by weighing the cuvette",
+        "It adds a second peak to the sample spectrum",
+        "It establishes background transmission for comparison with the sample",
+        "It is the standard used to infer particle diameter directly"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-5-M01",
+      "review": "chem-117-lab",
+      "section": "Lab 5",
+      "title": "Energy balance from temperatures",
+      "body": [
+        "Water absorbs 1.70 kJ and a cup absorbs 0.30 kJ in an insulated calorimeter. What is qrxn?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Heat the surroundings gain is heat the reaction releases."
+        ]
+      },
+      "choices": [
+        "−2.00 kJ",
+        "+2.00 kJ",
+        "+1.70 kJ",
+        "−1.40 kJ"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-5-M02",
+      "review": "chem-117-lab",
+      "section": "Lab 5",
+      "title": "Heat capacity units",
+      "body": [
+        "A cup absorbs 360 J while warming from 21.0 °C to 27.0 °C. What is its heat capacity?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Divide heat by the temperature change, with no mass term for total cup heat capacity."
+        ]
+      },
+      "choices": [
+        "13.3 J/°C",
+        "2160 J/°C",
+        "60 J/(g·°C)",
+        "60 J/°C"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-5-M03",
+      "review": "chem-117-lab",
+      "section": "Lab 5",
+      "title": "Changing the solution mass",
+      "body": [
+        "The same reaction releases the same heat in the same cup, but solution mass doubles and specific heat is unchanged. What happens to ΔT if insulation is ideal?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Doubling only the solution contribution makes total heat capacity less than twice as large when the cup contribution is positive."
+        ]
+      },
+      "choices": [
+        "It stays fixed because q is fixed",
+        "It doubles because the solution stores more heat",
+        "It decreases, but generally remains greater than half the old rise",
+        "It exactly halves regardless of cup heat capacity"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-5-M04",
+      "review": "chem-117-lab",
+      "section": "Lab 5",
+      "title": "Calibration trials",
+      "body": [
+        "Three cup constants are 36.0, 39.0, and 42.0 J/°C. The course procedure calls for their mean. What value should be used?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "The arithmetic mean is 117.0/3."
+        ]
+      },
+      "choices": [
+        "3.0 J/°C",
+        "13.0 J/°C",
+        "117.0 J/°C",
+        "39.0 J/°C"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-5-M05",
+      "review": "chem-117-lab",
+      "section": "Lab 5",
+      "title": "Heat sign from a temperature drop",
+      "body": [
+        "A reaction in an ideally insulated cup lowers the solution temperature. What are the signs of qsolution and qrxn?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "The cooling surroundings release heat to the endothermic reaction."
+        ]
+      },
+      "choices": [
+        "Positive and negative",
+        "Both negative",
+        "Both positive",
+        "Negative and positive"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-5-M06",
+      "review": "chem-117-lab",
+      "section": "Lab 5",
+      "title": "Hess with a coefficient change",
+      "body": [
+        "A → B has ΔH = −40.0 kJ per reaction as written. What is ΔH for 2B → 2A?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Reverse the sign and multiply by the same factor as the equation."
+        ]
+      },
+      "choices": [
+        "+40.0 kJ",
+        "−20.0 kJ",
+        "+80.0 kJ",
+        "−80.0 kJ"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-5-M07",
+      "review": "chem-117-lab",
+      "section": "Lab 5",
+      "title": "Incomplete magnesium reaction",
+      "body": [
+        "Only 80% of weighed Mg reacts, but all the added mass is used in the molar calculation. If it is exothermic and the reacted portion behaves normally, what is reported?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Heat is proportional to Mg reacted, and dividing by all added Mg produces a smaller magnitude."
+        ]
+      },
+      "choices": [
+        "A value about 80% of the true exothermic magnitude",
+        "The true value because Mg was weighed accurately",
+        "A positive value because some magnesium remains",
+        "A value about 125% of the true exothermic magnitude"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-5-M08",
+      "review": "chem-117-lab",
+      "section": "Lab 5",
+      "title": "Reference state",
+      "body": [
+        "Which species has zero standard enthalpy of formation under ordinary standard reference conditions?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Elemental hydrogen in its standard molecular form has zero by definition."
+        ]
+      },
+      "choices": [
+        "H₂(g)",
+        "MgO(s)",
+        "Mg²⁺(aq)",
+        "H₂O(l)"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-5-M09",
+      "review": "chem-117-lab",
+      "section": "Lab 5",
+      "title": "Heat leak during MgO trial",
+      "body": [
+        "The MgO trial is exothermic and loses heat to the room, while the Mg trial is accurate. For ΔHtarget = ΔHMg − ΔHMgO, which bias results?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "An MgO value biased toward zero subtracts a smaller negative number, lowering the target."
+        ]
+      },
+      "choices": [
+        "Target becomes exactly zero",
+        "Target becomes less negative",
+        "Target becomes more negative",
+        "Target stays unchanged because Mg was accurate"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
+    },
+    {
+      "id": "CHEM117-5-M10",
+      "review": "chem-117-lab",
+      "section": "Lab 5",
+      "title": "Comparing signed enthalpies",
+      "body": [
+        "The experimental value is −300 kJ/mol and the reference is −320 kJ/mol. What is the absolute percent error?"
+      ],
+      "source": "Additional MCQ practice",
+      "answer": {
+        "blocks": [
+          "Use the absolute difference of 20 divided by the magnitude of the reference, 320."
+        ]
+      },
+      "choices": [
+        "−6.25%",
+        "20.0%",
+        "6.67%",
+        "6.25%"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "kind": "mcq",
+      "choiceVersion": "chem117-mcq-v1"
     },
     {
       "id": "CH9-01",

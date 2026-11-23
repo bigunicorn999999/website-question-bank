@@ -28840,9 +28840,30 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "After executing the two lines of code below, which of the following potential third lines of code will NOT result in an error? Choose all that apply.\n\n# Execute the following two lines of code first\nthe_list = [3, \"5\", 0]\nthe_str = \"A1B2C3\""
+        "After executing the two lines of code below, which of the following potential third lines of code will NOT result in an error? Choose all that apply.",
+        {
+          "code": "# Execute the following two lines of code first\nthe_list = [3, \"5\", 0]\nthe_str = \"A1B2C3\"\n## third line of code goes here ##"
+        },
+        {
+          "code": "1_var = {the_list[1]:the_str}"
+        },
+        {
+          "code": "myvar = the_list[the_str[1]]"
+        },
+        {
+          "code": "a_var = the_list[0] + int(the_str[-1])"
+        },
+        {
+          "code": "some_var = the_str, the_list"
+        },
+        {
+          "code": "the_var = the_str[the_list[1]]"
+        },
+        {
+          "code": "a = the_str[the_list[2]]"
+        }
       ],
-      "text": "After executing the two lines of code below, which of the following potential third lines of code will **NOT** result in an error? Choose all that apply.\n```\n# Execute the following two lines of code first\nthe_list = [3, \"5\", 0]\nthe_str = \"A1B2C3\"",
+      "text": "After executing the two lines of code below, which of the following potential third lines of code will **NOT** result in an error? Choose all that apply.\n```\n# Execute the following two lines of code first\nthe_list = [3, \"5\", 0]\nthe_str = \"A1B2C3\"\n## third line of code goes here ##\n```\n- `1_var = {the_list[1]:the_str}`\n- `myvar = the_list[the_str[1]]`\n- `a_var = the_list[0] + int(the_str[-1])`\n- `some_var = the_str, the_list`\n- `the_var = the_str[the_list[1]]`\n- `a = the_str[the_list[2]]`",
       "answer": {
         "blocks": [
           "The valid third lines are a_var = the_list[0] + int(the_str[-1]), some_var = the_str, the_list, and a = the_str[the_list[2]]. They produce 6, a tuple, and \"A\", respectively. 1_var is an invalid identifier; the other two invalid expressions use strings as indices."
@@ -28859,7 +28880,25 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Which of the following lines of code correctly opens an existing file? Choose all that apply.\n- myfile = open(\"grades.csv\", \"r\")\n- with open(\"data.dat\", \"r+\") as my-file:\n- myfile = open(\"stats.csv\", \"w\")\n- with open(\"datafile.txt\", \"a\") as myfile:\n- this_file = open(\"weather.odb\", a+)\n- with open(\"barcodes.txt\") as bfile:"
+        "Which of the following lines of code correctly opens an existing file? Choose all that apply.",
+        {
+          "code": "myfile = open(\"grades.csv\", \"r\")"
+        },
+        {
+          "code": "with open(\"data.dat\", \"r+\") as my-file:"
+        },
+        {
+          "code": "myfile = open(\"stats.csv\", \"w\")"
+        },
+        {
+          "code": "with open(\"datafile.txt\", \"a\") as myfile:"
+        },
+        {
+          "code": "this_file = open(\"weather.odb\", a+)"
+        },
+        {
+          "code": "with open(\"barcodes.txt\") as bfile:"
+        }
       ],
       "text": "Which of the following lines of code correctly opens an existing file? Choose all that apply.\n- `myfile = open(\"grades.csv\", \"r\")`\n- `with open(\"data.dat\", \"r+\") as my-file:`\n- `myfile = open(\"stats.csv\", \"w\")`\n- `with open(\"datafile.txt\", \"a\") as myfile:`\n- `this_file = open(\"weather.odb\", a+)`\n- `with open(\"barcodes.txt\") as bfile:`",
       "answer": {
@@ -28975,9 +29014,12 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write a single line of code to import either an entire module or just the required functions in such a way that the following code executes without error."
+        "Write a single line of code to import either an entire module or just the required functions in such a way that the following code executes without error.",
+        {
+          "code": "## Your single line of code here ##\nimport numpy as np\nx = np.linspace(0, 10, 21)\ny = 2 * x ** 2 - 6 * x - 4\nz = x ** (1 / 2) + 6\na = x\npyp.plot(x, y, \"k-\", x, z, \"rv\", x, a, \"b1\")\npyp.xlabel(\"Time [ns]\")\npyp.ylabel(\"Space [ly^3]\")\npyp.title(\"Plot of Something Important\")\npyp.show()"
+        }
       ],
-      "text": "Write a single line of code to import either an entire module or just the required functions in such a way that the following code executes without error.\n```",
+      "text": "Write a single line of code to import either an entire module or just the required functions in such a way that the following code executes without error.\n```\n## Your single line of code here ##\nimport numpy as np\nx = np.linspace(0, 10, 21)\ny = 2 * x ** 2 - 6 * x - 4\nz = x ** (1 / 2) + 6\na = x\npyp.plot(x, y, \"k-\", x, z, \"rv\", x, a, \"b1\")\npyp.xlabel(\"Time [ns]\")\npyp.ylabel(\"Space [ly^3]\")\npyp.title(\"Plot of Something Important\")\npyp.show()\n```",
       "answer": {
         "blocks": [
           "import matplotlib.pyplot as pyp"
@@ -28994,9 +29036,12 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write a single line of code to import either an entire module or just the required functions in such a way that the following code executes without error."
+        "Write a single line of code to import either an entire module or just the required functions in such a way that the following code executes without error.",
+        {
+          "code": "## Your single line of code here ##\nx = arange(0, 10.5, 0.5).reshape(7, 3)\nprint(f\"x = {x}\")"
+        }
       ],
-      "text": "Write a single line of code to import either an entire module or just the required functions in such a way that the following code executes without error.\n```",
+      "text": "Write a single line of code to import either an entire module or just the required functions in such a way that the following code executes without error.\n```\n## Your single line of code here ##\nx = arange(0, 10.5, 0.5).reshape(7, 3)\nprint(f\"x = {x}\")\n```",
       "answer": {
         "blocks": [
           "from numpy import arange"

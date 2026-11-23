@@ -5,7 +5,6 @@
     "Lab 3": "Lab 3 · Gas Laws",
     "Lab 4": "Lab 4 · Silver Nanoparticles",
     "Lab 5": "Lab 5 · Calorimetry",
-
     "Energy, work & enthalpy": "Energy, work & enthalpy",
     "Heat capacity & calorimetry": "Heat capacity & calorimetry",
     "Phase changes & heating curves": "Phase changes & heating curves",
@@ -46,7 +45,10 @@
     "pols-parties": "Parties and campaigns",
     "pols-legislatures": "Legislatures and Texas government",
     "pols-application": "Application, causality & history",
-    "ENGR 11": "Module 11 · Files & input processing"
+    "ENGR 11": "Module 11 · Files & input processing",
+    "trace": "Exam 2 · Code tracing & selections",
+    "code": "Exam 2 · Code writing",
+    "concept": "Exam 2 · Concepts"
   },
   "questions": [
     {
@@ -27676,6 +27678,2397 @@
         ],
         "text": "A. runoff primary\n\nA plurality lead alone does not satisfy a majority requirement. In a majority-rule primary, a runoff determines the nominee when no one wins a majority.\n\nSource clarification: The PDF says a plurality winner automatically triggers a runoff. A runoff depends on the applicable majority requirement and failure to reach it. Texas Secretary of State: https://www.sos.state.tx.us/elections/forms/county-chair-handbook.pdf\n\nSource: Uploaded POLS review, page 9."
       }
+    },
+    {
+      "id": "ENGR-E2-001",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 1",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "grades = [77, 82, 85, 88, 96, 97]\nfor i in range(1, 2):\n    print(grades[i:-i], end=\"\")"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\ngrades = [77, 82, 85, 88, 96, 97]\nfor i in range(1, 2):\n    print(grades[i:-i], end=\"\")\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "[82, 85, 88, 96]"
+          },
+          "Exact output as a Python string: '[82, 85, 88, 96]'"
+        ],
+        "text": "[{'code': '[82, 85, 88, 96]'}, \"Exact output as a Python string: '[82, 85, 88, 96]'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-002",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 2",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "i = 0\nj = -1\nwhile i < 3:\n    if j > 1:\n        continue\n        i += 2\n    else:\n        i += 1\n    j += 1\nprint(f\"{i} + j\")"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\ni = 0\nj = -1\nwhile i < 3:\n    if j > 1:\n        continue\n        i += 2\n    else:\n        i += 1\n    j += 1\nprint(f\"{i} + j\")\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "3 + j"
+          },
+          "Exact output as a Python string: '3 + j\\n'"
+        ],
+        "text": "[{'code': '3 + j'}, \"Exact output as a Python string: '3 + j\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-003",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 3 · Harder",
+      "kind": "frq",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "sums = 1\nfor i in range(1, 5):\n    while i < 3:\n        sums += i\n        i += 1\n        if sums % 2 == 0:\n            sums += 1\n            break\n    else:\n        sums *= i\n    sums -= 2\nprint(sums)"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\nsums = 1\nfor i in range(1, 5):\n    while i < 3:\n        sums += i\n        i += 1\n        if sums % 2 == 0:\n            sums += 1\n            break\n    else:\n        sums *= i\n    sums -= 2\nprint(sums)\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "74"
+          },
+          "Exact output as a Python string: '74\\n'"
+        ],
+        "text": "[{'code': '74'}, \"Exact output as a Python string: '74\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-004",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 4",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "a, i = 0, 3\nwhile a <= 3:\n    for i in range(1, 3):\n        if i == 1:\n            i += 1\n            a += 1\n        else:\n            a += 11\nprint(\"\\\"A\\\" is for\", f\"{a}\", \"Apples\", sep=\" \", end=\"!\")"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\na, i = 0, 3\nwhile a <= 3:\n    for i in range(1, 3):\n        if i == 1:\n            i += 1\n            a += 1\n        else:\n            a += 11\nprint(\"\\\"A\\\" is for\", f\"{a}\", \"Apples\", sep=\" \", end=\"!\")\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "\"A\" is for 12 Apples!"
+          },
+          "Exact output as a Python string: '\"A\" is for 12 Apples!'"
+        ],
+        "text": "[{'code': '\"A\" is for 12 Apples!'}, 'Exact output as a Python string: \\'\"A\" is for 12 Apples!\\'']"
+      }
+    },
+    {
+      "id": "ENGR-E2-005",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 5",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "j = 1\nfor i in range(0, 4, 2):\n    print(f\"{i+1}\", f\"{j+1}\", sep=\", \", end=\", \")\n    j += 2\nprint(\"and that's it\", end=\"...or is it? \")"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\nj = 1\nfor i in range(0, 4, 2):\n    print(f\"{i+1}\", f\"{j+1}\", sep=\", \", end=\", \")\n    j += 2\nprint(\"and that's it\", end=\"...or is it? \")\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "1, 2, 3, 4, and that's it...or is it? "
+          },
+          "Exact output as a Python string: \"1, 2, 3, 4, and that's it...or is it? \""
+        ],
+        "text": "[{'code': \"1, 2, 3, 4, and that's it...or is it? \"}, 'Exact output as a Python string: \"1, 2, 3, 4, and that\\'s it...or is it? \"']"
+      }
+    },
+    {
+      "id": "ENGR-E2-006",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 6",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "mydict = {\"Ann\" : 18, \"Bob\" : 20, \"Charlie\" : 19}\nif \"Joe\" in mydict:\n    print(\"Joe is here\")\nelif \"Ann\" in mydict:\n    print(\"Hi Ann\")\nelse:\n    print(\"Anyone?\")"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\nmydict = {\"Ann\" : 18, \"Bob\" : 20, \"Charlie\" : 19}\nif \"Joe\" in mydict:\n    print(\"Joe is here\")\nelif \"Ann\" in mydict:\n    print(\"Hi Ann\")\nelse:\n    print(\"Anyone?\")\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "Hi Ann"
+          },
+          "Exact output as a Python string: 'Hi Ann\\n'"
+        ],
+        "text": "[{'code': 'Hi Ann'}, \"Exact output as a Python string: 'Hi Ann\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-007",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 7",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "name = {\"Two\" : \"Rosewood\"}\nname[4] = \"Lever\"\nname[2] = \"Calendar\"\nname[\"Two\"] = \"Cartograph\"\nname[\"Two\"] = \"Sunspot\"\nprint(name[\"Two\"], name[2], sep=\">\")"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\nname = {\"Two\" : \"Rosewood\"}\nname[4] = \"Lever\"\nname[2] = \"Calendar\"\nname[\"Two\"] = \"Cartograph\"\nname[\"Two\"] = \"Sunspot\"\nprint(name[\"Two\"], name[2], sep=\">\")\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "Sunspot>Calendar"
+          },
+          "Exact output as a Python string: 'Sunspot>Calendar\\n'"
+        ],
+        "text": "[{'code': 'Sunspot>Calendar'}, \"Exact output as a Python string: 'Sunspot>Calendar\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-008",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 8",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "mydict = {}\nmylist = [1, 2, 3, 4, 5]\nmydict[\"Length\"] = len(mylist)\nmydict[\"Max\"] = max(mylist)\nmydict[\"Min\"] = min(mylist)\nmydict[\"Crazy\"] = mylist[1] * mylist[3] - mylist[-1]\nfor key in mydict:\n    print(f\"{key}: {mydict[key]}\")"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\nmydict = {}\nmylist = [1, 2, 3, 4, 5]\nmydict[\"Length\"] = len(mylist)\nmydict[\"Max\"] = max(mylist)\nmydict[\"Min\"] = min(mylist)\nmydict[\"Crazy\"] = mylist[1] * mylist[3] - mylist[-1]\nfor key in mydict:\n    print(f\"{key}: {mydict[key]}\")\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "Length: 5\nMax: 5\nMin: 1\nCrazy: 3"
+          },
+          "Exact output as a Python string: 'Length: 5\\nMax: 5\\nMin: 1\\nCrazy: 3\\n'"
+        ],
+        "text": "[{'code': 'Length: 5\\nMax: 5\\nMin: 1\\nCrazy: 3'}, \"Exact output as a Python string: 'Length: 5\\\\nMax: 5\\\\nMin: 1\\\\nCrazy: 3\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-009",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 9",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "mydict = {\"apple\" : 2, \"orange\" : 3}\nmydict[\"banana\"] = 4\nmylist = []\ni = 0\nprint(\"Total fruit inventory equals: \", end=\"\")   # empty string\nfor key in mydict:\n    mylist.append(mydict[key])\n    if i < len(mydict) - 1:\n        print(mylist[i], key + \"s\", end=\" + \")\n    else:\n        print(mylist[i], key + \"s\", end=\" = \")\n    i += 1\nprint(sum(mylist), \"fruit\")"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\nmydict = {\"apple\" : 2, \"orange\" : 3}\nmydict[\"banana\"] = 4\nmylist = []\ni = 0\nprint(\"Total fruit inventory equals: \", end=\"\")   # empty string\nfor key in mydict:\n    mylist.append(mydict[key])\n    if i < len(mydict) - 1:\n        print(mylist[i], key + \"s\", end=\" + \")\n    else:\n        print(mylist[i], key + \"s\", end=\" = \")\n    i += 1\nprint(sum(mylist), \"fruit\")\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "Total fruit inventory equals: 2 apples + 3 oranges + 4 bananas = 9 fruit"
+          },
+          "Exact output as a Python string: 'Total fruit inventory equals: 2 apples + 3 oranges + 4 bananas = 9 fruit\\n'",
+          "The pasted typographic dash was normalized to Python’s minus sign."
+        ],
+        "text": "[{'code': 'Total fruit inventory equals: 2 apples + 3 oranges + 4 bananas = 9 fruit'}, \"Exact output as a Python string: 'Total fruit inventory equals: 2 apples + 3 oranges + 4 bananas = 9 fruit\\\\n'\", 'The pasted typographic dash was normalized to Python’s minus sign.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-010",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 10 · Harder",
+      "kind": "frq",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "mylist = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]\nmydict = {}\nmysum = 0\nfor i in range(0, len(mylist) - 1, 2):\n    if mylist[i] + mylist[i+1] <= 2 * mylist[i] + 4:\n        mydict[i] = i + 1\n    else:\n        mydict[i] = i\nfor item in mydict:\n    mysum += mydict[item]\nprint(mysum, mydict[4], sep=\" : \")"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\nmylist = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]\nmydict = {}\nmysum = 0\nfor i in range(0, len(mylist) - 1, 2):\n    if mylist[i] + mylist[i+1] <= 2 * mylist[i] + 4:\n        mydict[i] = i + 1\n    else:\n        mydict[i] = i\nfor item in mydict:\n    mysum += mydict[item]\nprint(mysum, mydict[4], sep=\" : \")\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "23 : 5"
+          },
+          "Exact output as a Python string: '23 : 5\\n'",
+          "The pasted typographic dash was normalized to Python’s minus sign."
+        ],
+        "text": "[{'code': '23 : 5'}, \"Exact output as a Python string: '23 : 5\\\\n'\", 'The pasted typographic dash was normalized to Python’s minus sign.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-011",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 11 · Harder",
+      "kind": "frq",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "mylist = [\"apples\", 4.5, True]\nmytuple = (\"oranges\", 3, False)\nmydict = {\"bananas\" : 2, \"strawberries\" : 12}\nfor key in mydict:\n    mylist += [mydict[key]]\nmytuple = [mytuple, mylist]\nmylist[4] = 13\nprint(mytuple[0][1], mytuple[1][4], sep=\"00\", end=\"1\")"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\nmylist = [\"apples\", 4.5, True]\nmytuple = (\"oranges\", 3, False)\nmydict = {\"bananas\" : 2, \"strawberries\" : 12}\nfor key in mydict:\n    mylist += [mydict[key]]\nmytuple = [mytuple, mylist]\nmylist[4] = 13\nprint(mytuple[0][1], mytuple[1][4], sep=\"00\", end=\"1\")\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "300131"
+          },
+          "Exact output as a Python string: '300131'"
+        ],
+        "text": "[{'code': '300131'}, \"Exact output as a Python string: '300131'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-012",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 12",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "vector1 = (1, 2, 3)\nvector2 = (2, 3, 4)\ndotp = vector1 * vector2\nprint(f\"The dot product is {dotp}\")"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\nvector1 = (1, 2, 3)\nvector2 = (2, 3, 4)\ndotp = vector1 * vector2\nprint(f\"The dot product is {dotp}\")\n```",
+      "answer": {
+        "blocks": [
+          "TypeError: can't multiply sequence by non-int of type 'tuple'"
+        ],
+        "text": "[\"TypeError: can't multiply sequence by non-int of type 'tuple'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-013",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 13",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "mystr = \"Howdy\"\nmylist = [2, 0, 2, 0]\nmytuple = (mystr, mylist)\nmytuple[1][3] = 9\nprint(mytuple)"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\nmystr = \"Howdy\"\nmylist = [2, 0, 2, 0]\nmytuple = (mystr, mylist)\nmytuple[1][3] = 9\nprint(mytuple)\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "('Howdy', [2, 0, 2, 9])"
+          },
+          "Exact output as a Python string: \"('Howdy', [2, 0, 2, 9])\\n\""
+        ],
+        "text": "[{'code': \"('Howdy', [2, 0, 2, 9])\"}, 'Exact output as a Python string: \"(\\'Howdy\\', [2, 0, 2, 9])\\\\n\"']"
+      }
+    },
+    {
+      "id": "ENGR-E2-014",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 14",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "def myfunc(x):\n    a = 1\n    print(x)\na = 5\nmyfunc(a)\nprint(a)"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\ndef myfunc(x):\n    a = 1\n    print(x)\na = 5\nmyfunc(a)\nprint(a)\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "5\n5"
+          },
+          "Exact output as a Python string: '5\\n5\\n'"
+        ],
+        "text": "[{'code': '5\\n5'}, \"Exact output as a Python string: '5\\\\n5\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-015",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 15",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "def plus1_3(x):\n    return x + 1, x + 3\nprint(plus1_3(2)[0])"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\ndef plus1_3(x):\n    return x + 1, x + 3\nprint(plus1_3(2)[0])\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "3"
+          },
+          "Exact output as a Python string: '3\\n'"
+        ],
+        "text": "[{'code': '3'}, \"Exact output as a Python string: '3\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-016",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 16",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "def myfun():\n    \"\"\"This function prints a message.\"\"\"\n    print(\"Gig 'em Aggies!\")\nhelp(myfun)"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\ndef myfun():\n    \"\"\"This function prints a message.\"\"\"\n    print(\"Gig 'em Aggies!\")\nhelp(myfun)\n```",
+      "answer": {
+        "blocks": [
+          "help() displays the function signature and docstring; it does not call myfun.",
+          {
+            "code": "Help on function myfun ...\n\nmyfun()\n    This function prints a message."
+          },
+          "The module label and spacing can vary by Python environment."
+        ],
+        "text": "['help() displays the function signature and docstring; it does not call myfun.', {'code': 'Help on function myfun ...\\n\\nmyfun()\\n    This function prints a message.'}, 'The module label and spacing can vary by Python environment.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-017",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 17 · Harder",
+      "kind": "frq",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "def myfunc(b, a):\n    a = 3\n    c = b + a\n    return c, a\na, b = 3, 2\na, b = myfunc(a, b)\nprint(a, f\"{b} = {a / b:.0f}\", sep=\" / \")"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\ndef myfunc(b, a):\n    a = 3\n    c = b + a\n    return c, a\na, b = 3, 2\na, b = myfunc(a, b)\nprint(a, f\"{b} = {a / b:.0f}\", sep=\" / \")\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "6 / 3 = 2"
+          },
+          "Exact output as a Python string: '6 / 3 = 2\\n'"
+        ],
+        "text": "[{'code': '6 / 3 = 2'}, \"Exact output as a Python string: '6 / 3 = 2\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-018",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 18",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "def add1(x):\n    if x + 1 < 10:\n        return x + 1\n    else:\n        return \"Too big!\"\nprint(add1(1), add1(12))"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\ndef add1(x):\n    if x + 1 < 10:\n        return x + 1\n    else:\n        return \"Too big!\"\nprint(add1(1), add1(12))\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "2 Too big!"
+          },
+          "Exact output as a Python string: '2 Too big!\\n'"
+        ],
+        "text": "[{'code': '2 Too big!'}, \"Exact output as a Python string: '2 Too big!\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-019",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 19",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "def myfunction(a, b=5, c):\n    return a * b * c\nprint(myfunction(1, 2, 3))"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\ndef myfunction(a, b=5, c):\n    return a * b * c\nprint(myfunction(1, 2, 3))\n```",
+      "answer": {
+        "blocks": [
+          "SyntaxError: parameter without a default follows parameter with a default"
+        ],
+        "text": "['SyntaxError: parameter without a default follows parameter with a default']"
+      }
+    },
+    {
+      "id": "ENGR-E2-020",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 20",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "def clip(v, lo=0, hi=10):\n    if v < lo:\n        return lo\n    if v > hi:\n        return hi\n    return v\nprint(clip(15), clip(-1), clip(7))"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\ndef clip(v, lo=0, hi=10):\n    if v < lo:\n        return lo\n    if v > hi:\n        return hi\n    return v\nprint(clip(15), clip(-1), clip(7))\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "10 0 7"
+          },
+          "Exact output as a Python string: '10 0 7\\n'"
+        ],
+        "text": "[{'code': '10 0 7'}, \"Exact output as a Python string: '10 0 7\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-021",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 21",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "def myfunc1(x=10, y=3, z=False):\n    if z:\n        var = x * y\n    else:\n        var = x / y\n    return var\ndef myfunc2(myvar):\n    if myvar > 5:\n        return True\n    elif myvar < 5:\n        return False\n    else:\n        return 30\nprint(myfunc2(myfunc1()))"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\ndef myfunc1(x=10, y=3, z=False):\n    if z:\n        var = x * y\n    else:\n        var = x / y\n    return var\ndef myfunc2(myvar):\n    if myvar > 5:\n        return True\n    elif myvar < 5:\n        return False\n    else:\n        return 30\nprint(myfunc2(myfunc1()))\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "False"
+          },
+          "Exact output as a Python string: 'False\\n'"
+        ],
+        "text": "[{'code': 'False'}, \"Exact output as a Python string: 'False\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-022",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 22",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "def myfunc(x, y=\"Green\", z=100, Flag=False):\n    if z == 100:\n        z += 10\n        return z, x\n    elif y == \"Green\":\n        Flag = True\n        print(x, z)\n        return x, z\n    return Flag\nout1, out2 = myfunc(10)\nprint(out1, out2)"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\ndef myfunc(x, y=\"Green\", z=100, Flag=False):\n    if z == 100:\n        z += 10\n        return z, x\n    elif y == \"Green\":\n        Flag = True\n        print(x, z)\n        return x, z\n    return Flag\nout1, out2 = myfunc(10)\nprint(out1, out2)\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "110 10"
+          },
+          "Exact output as a Python string: '110 10\\n'"
+        ],
+        "text": "[{'code': '110 10'}, \"Exact output as a Python string: '110 10\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-023",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 23 · Harder",
+      "kind": "frq",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "def aplus(i):\n    j = 0\n    while i != 1:\n        if i % 2 == 0:\n            i /= 2\n        else:\n            i = i * 3 + 1\n        j += 1\n    return j\nprint(aplus(20))"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\ndef aplus(i):\n    j = 0\n    while i != 1:\n        if i % 2 == 0:\n            i /= 2\n        else:\n            i = i * 3 + 1\n        j += 1\n    return j\nprint(aplus(20))\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "7"
+          },
+          "Exact output as a Python string: '7\\n'"
+        ],
+        "text": "[{'code': '7'}, \"Exact output as a Python string: '7\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-024",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 24",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "def drawStar(a=6):\n    print(\"*\" * int(a))\na = \"4\"\ndrawStar(a)"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\ndef drawStar(a=6):\n    print(\"*\" * int(a))\na = \"4\"\ndrawStar(a)\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "****"
+          },
+          "Exact output as a Python string: '****\\n'"
+        ],
+        "text": "[{'code': '****'}, \"Exact output as a Python string: '****\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-025",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 25 · Harder",
+      "kind": "frq",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "def go(x):\n    s = \"\"\n    for i in range(1, x + 1):\n        for j in range(1, i + 1):\n            s += \"# \"\n        s += \"=\\n\"\n    return s\nprint(go(2))"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\ndef go(x):\n    s = \"\"\n    for i in range(1, x + 1):\n        for j in range(1, i + 1):\n            s += \"# \"\n        s += \"=\\n\"\n    return s\nprint(go(2))\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "# =\n# # ="
+          },
+          "Exact output as a Python string: '# =\\n# # =\\n\\n'"
+        ],
+        "text": "[{'code': '# =\\n# # ='}, \"Exact output as a Python string: '# =\\\\n# # =\\\\n\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-026",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 26 · Harder",
+      "kind": "frq",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "def combo(n):\n    s, i = 0, 0\n    while i < n:\n        j = 0\n        while j < 3:\n            s += 1\n            if j == 1:\n                break\n            j += 1\n        else:\n            s += 10\n        i += 1\n    return s\nprint(combo(2))"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\ndef combo(n):\n    s, i = 0, 0\n    while i < n:\n        j = 0\n        while j < 3:\n            s += 1\n            if j == 1:\n                break\n            j += 1\n        else:\n            s += 10\n        i += 1\n    return s\nprint(combo(2))\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "4"
+          },
+          "Exact output as a Python string: '4\\n'"
+        ],
+        "text": "[{'code': '4'}, \"Exact output as a Python string: '4\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-027",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 27 · Harder",
+      "kind": "frq",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "def A_function(one, two, three):\n    list1 = []\n    list2 = []\n    for i in one:\n        if i <= len(one) - 1:\n            list1.append(one[i])\n        if i % two == 0:\n            list1.append(i)\n        elif i % 3 == 1:\n            list2.append(i + 1)\n        return list1, list2\nmylist = [4, 3, 22, 15, 7]\na, b = 3, 2\nx, y = A_function(mylist, a, b)\nprint(y + x)"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\ndef A_function(one, two, three):\n    list1 = []\n    list2 = []\n    for i in one:\n        if i <= len(one) - 1:\n            list1.append(one[i])\n        if i % two == 0:\n            list1.append(i)\n        elif i % 3 == 1:\n            list2.append(i + 1)\n        return list1, list2\nmylist = [4, 3, 22, 15, 7]\na, b = 3, 2\nx, y = A_function(mylist, a, b)\nprint(y + x)\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "[5, 7]"
+          },
+          "Exact output as a Python string: '[5, 7]\\n'",
+          "The pasted typographic dash was normalized to Python’s minus sign."
+        ],
+        "text": "[{'code': '[5, 7]'}, \"Exact output as a Python string: '[5, 7]\\\\n'\", 'The pasted typographic dash was normalized to Python’s minus sign.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-028",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 28",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "def f(a, b=2):\n    return a * b\nprint(f\"{f(3)}{f(3, 3)}\")  # no space"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\ndef f(a, b=2):\n    return a * b\nprint(f\"{f(3)}{f(3, 3)}\")  # no space\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "69"
+          },
+          "Exact output as a Python string: '69\\n'"
+        ],
+        "text": "[{'code': '69'}, \"Exact output as a Python string: '69\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-029",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 29 · Harder",
+      "kind": "frq",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "def B_function(a, b):\n    for i in a:\n        if i == 5:\n            continue\n        if a[i] == \"Cat\":\n            print(f\"#{str(b.index(10))} {a[i]} {i}\", end=\" \")\n            x = 2010\n            break\na = [5, 10, 15, 20, 25]\nb = {\"Quinn\" : \"Cat\", \"Juliet\" : \"Dog\", \"Banjo\" : \"Dog\"}\nx = \"2017\"\nB_function(b, a)\nprint(x)"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\ndef B_function(a, b):\n    for i in a:\n        if i == 5:\n            continue\n        if a[i] == \"Cat\":\n            print(f\"#{str(b.index(10))} {a[i]} {i}\", end=\" \")\n            x = 2010\n            break\na = [5, 10, 15, 20, 25]\nb = {\"Quinn\" : \"Cat\", \"Juliet\" : \"Dog\", \"Banjo\" : \"Dog\"}\nx = \"2017\"\nB_function(b, a)\nprint(x)\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "#1 Cat Quinn 2017"
+          },
+          "Exact output as a Python string: '#1 Cat Quinn 2017\\n'"
+        ],
+        "text": "[{'code': '#1 Cat Quinn 2017'}, \"Exact output as a Python string: '#1 Cat Quinn 2017\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-030",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 30",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "x = 4\ny = timestwo(x)\ndef timestwo(x):\n    return x * 2\nprint(y)"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\nx = 4\ny = timestwo(x)\ndef timestwo(x):\n    return x * 2\nprint(y)\n```",
+      "answer": {
+        "blocks": [
+          "NameError: name 'timestwo' is not defined"
+        ],
+        "text": "[\"NameError: name 'timestwo' is not defined\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-031",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 31",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "number = input(\"Enter a number: \")  # assume the user enters 5.0\ntry:\n    x = int(number)\n    print(f\"x is the integer {x}\")\nexcept:\n    x = float(number)\n    print(f\"x is the float {x}\")"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\nnumber = input(\"Enter a number: \")  # assume the user enters 5.0\ntry:\n    x = int(number)\n    print(f\"x is the integer {x}\")\nexcept:\n    x = float(number)\n    print(f\"x is the float {x}\")\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "x is the float 5.0"
+          },
+          "Exact output as a Python string: 'x is the float 5.0\\n'",
+          "The input prompt is Enter a number: ; the supplied response 5.0 causes int(\"5.0\") to fail, so the except branch runs."
+        ],
+        "text": "[{'code': 'x is the float 5.0'}, \"Exact output as a Python string: 'x is the float 5.0\\\\n'\", 'The input prompt is Enter a number: ; the supplied response 5.0 causes int(\"5.0\") to fail, so the except branch runs.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-032",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 32 · Harder",
+      "kind": "frq",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "mystr = \"Howdy! Welcome to Texas A&M Engineering!\"\nmylist = mystr.split()\nnewstr = \"\"  # empty string\nfor i in range(3, len(mylist)):\n    newstr += mylist[i] + \" \"\nprint(mylist[0][:5] + \" \" + newstr[:-2] + \" students! \")"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\nmystr = \"Howdy! Welcome to Texas A&M Engineering!\"\nmylist = mystr.split()\nnewstr = \"\"  # empty string\nfor i in range(3, len(mylist)):\n    newstr += mylist[i] + \" \"\nprint(mylist[0][:5] + \" \" + newstr[:-2] + \" students! \")\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "Howdy Texas A&M Engineering students! "
+          },
+          "Exact output as a Python string: 'Howdy Texas A&M Engineering students! \\n'"
+        ],
+        "text": "[{'code': 'Howdy Texas A&M Engineering students! '}, \"Exact output as a Python string: 'Howdy Texas A&M Engineering students! \\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-033",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 33 · Harder",
+      "kind": "frq",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "a, b = 3, 0\ncountStr = \"\"  # empty string\nwhile a > b:\n    try:\n        c = a / b\n        countStr += str(a)\n    except:\n        countStr += str(b)\n        a -= 1\ncountList = list(countStr)\nfor i in range(len(countList)):\n    countList[i] = float(countList[i])\nprint(sum(countList), countList.count(0), sep=\":\", end=\"!\")"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\na, b = 3, 0\ncountStr = \"\"  # empty string\nwhile a > b:\n    try:\n        c = a / b\n        countStr += str(a)\n    except:\n        countStr += str(b)\n        a -= 1\ncountList = list(countStr)\nfor i in range(len(countList)):\n    countList[i] = float(countList[i])\nprint(sum(countList), countList.count(0), sep=\":\", end=\"!\")\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "0.0:3!"
+          },
+          "Exact output as a Python string: '0.0:3!'"
+        ],
+        "text": "[{'code': '0.0:3!'}, \"Exact output as a Python string: '0.0:3!'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-034",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 34",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "mystring = \"   \\t\\n123abc   \\n\"\nout_value = \"::\".join(mystring.strip().split(\"23a\"))\nprint(out_value)"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\nmystring = \"   \\t\\n123abc   \\n\"\nout_value = \"::\".join(mystring.strip().split(\"23a\"))\nprint(out_value)\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "1::bc"
+          },
+          "Exact output as a Python string: '1::bc\\n'"
+        ],
+        "text": "[{'code': '1::bc'}, \"Exact output as a Python string: '1::bc\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-035",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 35 · Harder",
+      "kind": "frq",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "mystring = \"AXVRL:2025/11/07\"\nmylist = mystring.split(\":\")\nmylist[1] = mylist[1].split(\"/\")\nfor i in range(len(mylist)):\n    if i == 0:\n        print(mylist[i][-3:], \"\\t\", sep=\"\", end=\"\")  # both empty str\n    else:\n        print(f\"{mylist[i][1]}\\t{mylist[i][2]}\\t{mylist[i][0]}\")"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\nmystring = \"AXVRL:2025/11/07\"\nmylist = mystring.split(\":\")\nmylist[1] = mylist[1].split(\"/\")\nfor i in range(len(mylist)):\n    if i == 0:\n        print(mylist[i][-3:], \"\\t\", sep=\"\", end=\"\")  # both empty str\n    else:\n        print(f\"{mylist[i][1]}\\t{mylist[i][2]}\\t{mylist[i][0]}\")\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "VRL\t11\t07\t2025"
+          },
+          "Exact output as a Python string: 'VRL\\t11\\t07\\t2025\\n'"
+        ],
+        "text": "[{'code': 'VRL\\t11\\t07\\t2025'}, \"Exact output as a Python string: 'VRL\\\\t11\\\\t07\\\\t2025\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-036",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 36",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "mylist = [5, 3, 7, 9, 1, 2]\nmylist.pop()\nmylist.insert(2, 4)\nmylist.sort()\nfor num in mylist:\n    print(num, end = \" \")"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\nmylist = [5, 3, 7, 9, 1, 2]\nmylist.pop()\nmylist.insert(2, 4)\nmylist.sort()\nfor num in mylist:\n    print(num, end = \" \")\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "1 3 4 5 7 9 "
+          },
+          "Exact output as a Python string: '1 3 4 5 7 9 '"
+        ],
+        "text": "[{'code': '1 3 4 5 7 9 '}, \"Exact output as a Python string: '1 3 4 5 7 9 '\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-037",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 37 · Harder",
+      "kind": "frq",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "def output(mystr, num):\n    outstring = mystr\n    with open(\"results.csv\", \"w\") as outfile:\n        for i in range(num):\n            outfile.write(outstring[-1] + \",\")\n            outstring = outstring[:-1]\n        outfile.write(mystr[0])\n    return outstring\nprint(output(\"reknits\", 6))"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\ndef output(mystr, num):\n    outstring = mystr\n    with open(\"results.csv\", \"w\") as outfile:\n        for i in range(num):\n            outfile.write(outstring[-1] + \",\")\n            outstring = outstring[:-1]\n        outfile.write(mystr[0])\n    return outstring\nprint(output(\"reknits\", 6))\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "r"
+          },
+          "Exact output as a Python string: 'r\\n'",
+          "The question asks for printed output: r. The file results.csv contains s,t,i,n,k,e,r."
+        ],
+        "text": "[{'code': 'r'}, \"Exact output as a Python string: 'r\\\\n'\", 'The question asks for printed output: r. The file results.csv contains s,t,i,n,k,e,r.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-038",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 38",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "import numpy as np\nmygrid = np.arange(1, 10).reshape(3, 3)\nfor i in range(len(mygrid)):\n    mygrid[i][i] = 5\nprint(mygrid)"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\nimport numpy as np\nmygrid = np.arange(1, 10).reshape(3, 3)\nfor i in range(len(mygrid)):\n    mygrid[i][i] = 5\nprint(mygrid)\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "[[5 2 3]\n [4 5 6]\n [7 8 5]]"
+          },
+          "Exact output as a Python string: '[[5 2 3]\\n [4 5 6]\\n [7 8 5]]\\n'"
+        ],
+        "text": "[{'code': '[[5 2 3]\\n [4 5 6]\\n [7 8 5]]'}, \"Exact output as a Python string: '[[5 2 3]\\\\n [4 5 6]\\\\n [7 8 5]]\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-039",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 39 · Harder",
+      "kind": "frq",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "mystr = \"2-g:gig'em\\n3-s:aggies\\n1-o:whoop\"\nmylist = mystr.split(\"\\n\")\ngood = 0\nfor item in mylist:\n    key, word = item.strip().split(\":\")\n    key = key.split(\"-\")\n    if word.count(key[1]) >= int(key[0]):\n        good += 1\nprint(good)"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\nmystr = \"2-g:gig'em\\n3-s:aggies\\n1-o:whoop\"\nmylist = mystr.split(\"\\n\")\ngood = 0\nfor item in mylist:\n    key, word = item.strip().split(\":\")\n    key = key.split(\"-\")\n    if word.count(key[1]) >= int(key[0]):\n        good += 1\nprint(good)\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "2"
+          },
+          "Exact output as a Python string: '2\\n'"
+        ],
+        "text": "[{'code': '2'}, \"Exact output as a Python string: '2\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-040",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 40 · Harder",
+      "kind": "frq",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the output, or identify the error.",
+        {
+          "code": "import numpy as np\nx = np.linspace(1.0, 10.0, 10)\ny = x ** 2 - 1\nwith open(\"zfile.txt\", \"w\") as zfile:\n    zfile.write(\"x\\ty\\n\")\n    for i in range(len(x)):\n        mystr = str(x[i]) + \"\\t\" + str(y[i])\n        zfile.write(mystr + \"\\n\")\nwith open(\"zfile.txt\") as myfile:\n    all_of_it = myfile.read().split(\"\\t\")\noutput = \",\".join(all_of_it)\nprint(output)"
+        }
+      ],
+      "text": "Write the output, or identify the error.\n\n```python\nimport numpy as np\nx = np.linspace(1.0, 10.0, 10)\ny = x ** 2 - 1\nwith open(\"zfile.txt\", \"w\") as zfile:\n    zfile.write(\"x\\ty\\n\")\n    for i in range(len(x)):\n        mystr = str(x[i]) + \"\\t\" + str(y[i])\n        zfile.write(mystr + \"\\n\")\nwith open(\"zfile.txt\") as myfile:\n    all_of_it = myfile.read().split(\"\\t\")\noutput = \",\".join(all_of_it)\nprint(output)\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "x,y\n1.0,0.0\n2.0,3.0\n3.0,8.0\n4.0,15.0\n5.0,24.0\n6.0,35.0\n7.0,48.0\n8.0,63.0\n9.0,80.0\n10.0,99.0"
+          },
+          "Exact output as a Python string: 'x,y\\n1.0,0.0\\n2.0,3.0\\n3.0,8.0\\n4.0,15.0\\n5.0,24.0\\n6.0,35.0\\n7.0,48.0\\n8.0,63.0\\n9.0,80.0\\n10.0,99.0\\n\\n'",
+          "The pasted typographic dash was normalized to Python’s minus sign."
+        ],
+        "text": "[{'code': 'x,y\\n1.0,0.0\\n2.0,3.0\\n3.0,8.0\\n4.0,15.0\\n5.0,24.0\\n6.0,35.0\\n7.0,48.0\\n8.0,63.0\\n9.0,80.0\\n10.0,99.0'}, \"Exact output as a Python string: 'x,y\\\\n1.0,0.0\\\\n2.0,3.0\\\\n3.0,8.0\\\\n4.0,15.0\\\\n5.0,24.0\\\\n6.0,35.0\\\\n7.0,48.0\\\\n8.0,63.0\\\\n9.0,80.0\\\\n10.0,99.0\\\\n\\\\n'\", 'The pasted typographic dash was normalized to Python’s minus sign.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-041",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 41 · Harder",
+      "kind": "frq",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "The file scores.csv contains the following text:",
+        {
+          "code": "ID,Score1,Score2,Score3\n121,30,50,90\n045,90,70,80\n217,60,60,85"
+        },
+        "Write the output of the following code.",
+        {
+          "code": "with open(\"scores.csv\") as file1:\n    count = 0\n    score_dict = {}\n    for i in file1:\n        i = i.strip().split(\",\")\n        score_dict[i[0]] = i[1:]\ndel(score_dict[\"ID\"])\navg1, avg2, avg3 = 0, 0, 0\nfor i in score_dict:\n    avg1 += int(score_dict[i][0])\n    avg2 += int(score_dict[i][1])\n    avg3 += int(score_dict[i][2])\nvalue = [avg1/len(score_dict), avg2/len(score_dict), avg3/len(score_dict)]\nprint(value)"
+        }
+      ],
+      "text": "The file `scores.csv` contains the following text:\n```\nID,Score1,Score2,Score3\n121,30,50,90\n045,90,70,80\n217,60,60,85\n```\nWrite the output of the following code.\n```\nwith open(\"scores.csv\") as file1:\n    count = 0\n    score_dict = {}\n    for i in file1:\n        i = i.strip().split(\",\")\n        score_dict[i[0]] = i[1:]\ndel(score_dict[\"ID\"])\navg1, avg2, avg3 = 0, 0, 0\nfor i in score_dict:\n    avg1 += int(score_dict[i][0])\n    avg2 += int(score_dict[i][1])\n    avg3 += int(score_dict[i][2])\nvalue = [avg1/len(score_dict), avg2/len(score_dict), avg3/len(score_dict)]\nprint(value)\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "[60.0, 60.0, 85.0]"
+          },
+          "Exact output as a Python string: '[60.0, 60.0, 85.0]\\n'"
+        ],
+        "text": "[{'code': '[60.0, 60.0, 85.0]'}, \"Exact output as a Python string: '[60.0, 60.0, 85.0]\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-042",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 42",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "What are the contents of the file afile2.csv after the following lines of code have executed?",
+        {
+          "code": "nextfile = open(\"afile2.csv\", \"w\")\nnextfile.write(\"\\t\".join(\"1,2,3\\n\".split(\",\")))\nnextfile.write(\"\\t\".join(\"4,5,6\\n\".split(\",\")))\nlist1 = \".\".join([\"5\", \"6\", \"7\", \"8\", \"9\"])\nnextfile.write(list1)\nnextfile.close()"
+        }
+      ],
+      "text": "What are the contents of the file `afile2.csv` after the following lines of code have executed?\n```\nnextfile = open(\"afile2.csv\", \"w\")\nnextfile.write(\"\\t\".join(\"1,2,3\\n\".split(\",\")))\nnextfile.write(\"\\t\".join(\"4,5,6\\n\".split(\",\")))\nlist1 = \".\".join([\"5\", \"6\", \"7\", \"8\", \"9\"])\nnextfile.write(list1)\nnextfile.close()\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "1\t2\t3\n4\t5\t6\n5.6.7.8.9"
+          },
+          "Exact output as a Python string: '1\\t2\\t3\\n4\\t5\\t6\\n5.6.7.8.9'",
+          "The gaps between 1/2/3 and 4/5/6 are tab characters, not commas."
+        ],
+        "text": "[{'code': '1\\t2\\t3\\n4\\t5\\t6\\n5.6.7.8.9'}, \"Exact output as a Python string: '1\\\\t2\\\\t3\\\\n4\\\\t5\\\\t6\\\\n5.6.7.8.9'\", 'The gaps between 1/2/3 and 4/5/6 are tab characters, not commas.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-043",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 43",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        {
+          "code": "# problem 43\nmystr = \"1.1\".join(\"1,2,3\".split(\",\"))\nmystr2 = mystr.split(\".\")\nmysum = 0\nfor num in mystr2:\n    mysum += int(num)\nprint(mysum)"
+        }
+      ],
+      "text": "```\n# problem 43\nmystr = \"1.1\".join(\"1,2,3\".split(\",\"))\nmystr2 = mystr.split(\".\")\nmysum = 0\nfor num in mystr2:\n    mysum += int(num)\nprint(mysum)\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "145"
+          },
+          "Exact output as a Python string: '145\\n'"
+        ],
+        "text": "[{'code': '145'}, \"Exact output as a Python string: '145\\\\n'\"]"
+      }
+    },
+    {
+      "id": "ENGR-E2-044",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 44 · Harder",
+      "kind": "frq",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Given the list: my_list = [1, 2, 3, 4, 5], which of the following code snippets below will output 1, 3, 5? Choose all that apply.",
+        {
+          "code": "# answer A\nfor i in range(0, 5, 2):\n    print(my_list[i], end=\", \")"
+        },
+        {
+          "code": "# answer B\ni = 0\nout = my_list[i]\nwhile i < 4:\n    print(out, end=\", \")\n    i += 2\n    out = my_list[i]\nprint(out)"
+        },
+        {
+          "code": "# answer C\nfor i, value in enumerate(my_list):\n    if value % 2 == 1 and i < 4:\n        print(my_list[i], end=\", \")\nprint(my_list[-1])"
+        },
+        {
+          "code": "# answer D\ni = 1\nout = my_list[i]\nwhile i < 5:\n    print(out, end=\", \")\n    i += 2\n    out = my_list[i]\nprint(out)"
+        },
+        {
+          "code": "# answer E\nfor i in range(len(my_list)):\n    if i % 2 == 0:\n        print(my_list[i], end=\"\")\n        if i + 1 < len(my_list):\n            print(\", \", end=\"\")"
+        },
+        {
+          "code": "# answer F\ncount = 0\nfor i in my_list:\n    if i % 2 == 1 and count < 4:\n        print(i, end=\", \")\n    elif count == 4:\n        print(i)\n    count += 1"
+        },
+        {
+          "code": "# answer G\nfor i in my_list:\n    print(my_list[i], end=\", \")"
+        }
+      ],
+      "text": "Given the list: `my_list = [1, 2, 3, 4, 5]`, which of the following code snippets below will output `1, 3, 5`? Choose all that apply.\n```\n# answer A\nfor i in range(0, 5, 2):\n    print(my_list[i], end=\", \")\n```\n```\n# answer B\ni = 0\nout = my_list[i]\nwhile i < 4:\n    print(out, end=\", \")\n    i += 2\n    out = my_list[i]\nprint(out)\n```\n```\n# answer C\nfor i, value in enumerate(my_list):\n    if value % 2 == 1 and i < 4:\n        print(my_list[i], end=\", \")\nprint(my_list[-1])\n```\n```\n# answer D\ni = 1\nout = my_list[i]\nwhile i < 5:\n    print(out, end=\", \")\n    i += 2\n    out = my_list[i]\nprint(out)\n```\n```\n# answer E\nfor i in range(len(my_list)):\n    if i % 2 == 0:\n        print(my_list[i], end=\"\")\n        if i + 1 < len(my_list):\n            print(\", \", end=\"\")\n```\n```\n# answer F\ncount = 0\nfor i in my_list:\n    if i % 2 == 1 and count < 4:\n        print(i, end=\", \")\n    elif count == 4:\n        print(i)\n    count += 1\n```\n```\n# answer G\nfor i in my_list:\n    print(my_list[i], end=\", \")\n```",
+      "answer": {
+        "blocks": [
+          "B, C, E, and F print 1, 3, 5 without a trailing comma. A prints a trailing comma and space (often accepted if only the values matter). D prints 2, 4, then raises IndexError. G treats list values as indices and eventually raises IndexError."
+        ],
+        "text": "['B, C, E, and F print 1, 3, 5 without a trailing comma. A prints a trailing comma and space (often accepted if only the values matter). D prints 2, 4, then raises IndexError. G treats list values as indices and eventually raises IndexError.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-045",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 45",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Which of the code snippets below produces the same output as:",
+        {
+          "code": "for i in range(4):\n    print(f\"{i+1}\", end=\"\")"
+        },
+        "Choose all that apply.",
+        {
+          "code": "# answer A\nfor j in range(4):\n    print(f\"{j+1}\", end=\"\")"
+        },
+        {
+          "code": "# answer B\ni = 0\nwhile i <= 3:\n    print(f\"{i+1}\", end=\"\")\n    i += 1"
+        },
+        {
+          "code": "# answer C\nfor i in range(1, 5):\n    print(i, end=\"\")"
+        },
+        {
+          "code": "# answer D\nfor i in range(5):\n    if i == 4:\n        break\n    print(i + 1, end=\"\")"
+        }
+      ],
+      "text": "Which of the code snippets below produces the same output as: \n```\nfor i in range(4):\n    print(f\"{i+1}\", end=\"\")\n```\nChoose all that apply.\n```\n# answer A\nfor j in range(4):\n    print(f\"{j+1}\", end=\"\")\n```\n```\n# answer B\ni = 0\nwhile i <= 3:\n    print(f\"{i+1}\", end=\"\")\n    i += 1\n```\n```\n# answer C\nfor i in range(1, 5):\n    print(i, end=\"\")\n```\n```\n# answer D\nfor i in range(5):\n    if i == 4:\n        break\n    print(i + 1, end=\"\")\n```",
+      "answer": {
+        "blocks": [
+          "A, B, C, and D all print 1234 with no spaces."
+        ],
+        "text": "['A, B, C, and D all print 1234 with no spaces.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-046",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 46",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "After executing the two lines of code below, which of the following potential third lines of code will NOT result in an error? Choose all that apply.\n\n# Execute the following two lines of code first\nthe_list = [3, \"5\", 0]\nthe_str = \"A1B2C3\""
+      ],
+      "text": "After executing the two lines of code below, which of the following potential third lines of code will **NOT** result in an error? Choose all that apply.\n```\n# Execute the following two lines of code first\nthe_list = [3, \"5\", 0]\nthe_str = \"A1B2C3\"",
+      "answer": {
+        "blocks": [
+          "The valid third lines are a_var = the_list[0] + int(the_str[-1]), some_var = the_str, the_list, and a = the_str[the_list[2]]. They produce 6, a tuple, and \"A\", respectively. 1_var is an invalid identifier; the other two invalid expressions use strings as indices."
+        ],
+        "text": "['The valid third lines are a_var = the_list[0] + int(the_str[-1]), some_var = the_str, the_list, and a = the_str[the_list[2]]. They produce 6, a tuple, and \"A\", respectively. 1_var is an invalid identifier; the other two invalid expressions use strings as indices.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-047",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 47",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Which of the following lines of code correctly opens an existing file? Choose all that apply.\n- myfile = open(\"grades.csv\", \"r\")\n- with open(\"data.dat\", \"r+\") as my-file:\n- myfile = open(\"stats.csv\", \"w\")\n- with open(\"datafile.txt\", \"a\") as myfile:\n- this_file = open(\"weather.odb\", a+)\n- with open(\"barcodes.txt\") as bfile:"
+      ],
+      "text": "Which of the following lines of code correctly opens an existing file? Choose all that apply.\n- `myfile = open(\"grades.csv\", \"r\")`\n- `with open(\"data.dat\", \"r+\") as my-file:`\n- `myfile = open(\"stats.csv\", \"w\")`\n- `with open(\"datafile.txt\", \"a\") as myfile:`\n- `this_file = open(\"weather.odb\", a+)`\n- `with open(\"barcodes.txt\") as bfile:`",
+      "answer": {
+        "blocks": [
+          "Lines 1, 3, 4, and 6 are valid opens, assuming existing accessible paths and permissions. The w mode opens but truncates the file. my-file is not a valid variable name, and a+ must be quoted. A with statement also needs an indented body."
+        ],
+        "text": "['Lines 1, 3, 4, and 6 are valid opens, assuming existing accessible paths and permissions. The w mode opens but truncates the file. my-file is not a valid variable name, and a+ must be quoted. A with statement also needs an indented body.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-048",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 48 · Harder",
+      "kind": "frq",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Which of the following code snippets below will execute without error?",
+        {
+          "code": "# answer A\nlistA = [1, 2, 3, 4, 5]\nlistB = [4, 6, 8, 10, 12]\nlistC = []\nfor i in range(5):\n    listC += [listA[i] + listB[i]]\nprint(listC)"
+        },
+        {
+          "code": "# answer B\nlistA = [6, 5, 4, 3, 2, 1]\nlistB = [1, 3, 5, 7, 9, 11]\nlistC = []\nfor i in range(1, 7):\n    listC += [listA[i] + listB[i]]\nprint(listC)"
+        },
+        {
+          "code": "# answer C\nmyList = [7, 8, 6, 4, 2]\nfor num in myList:\n    if num < 3:\n        print(item)"
+        },
+        {
+          "code": "# answer D\nwith open(\"data.txt\", \"w\") as newfile:\n    newfile.write(\"15\\n30\\n45\\n90\\n60\\n60\")\ndata_list = []\nnumbers.open(\"data.txt\", \"r\")\nfor line in numbers:\n    data_list.append(line.strip())\nprint(data_list)"
+        },
+        {
+          "code": "# answer E\ndef myfunc(a, b=7, c):\n    out1 = a + b / c\n    out2 = a - c * b\n    return out1, out2\na, b = myfunc(5, 2, 4)"
+        },
+        {
+          "code": "# answer F\nfrom math import sqrt\ndef func2(sigma, n):\n    error = sigma / sqrt(n)\n    return error\ndef func1(x):\n    resid = 0\n    avg = sum(x) / len(x)\n    for i in x:\n        resid += (i - avg) ** 2\n    stdev = resid / (len(x) - 1)\n    error = func2(stdev, len(x))\n    return error\ndata = [2, 5, 3, 7, 4, 9, 1, 2, 5, 8, 9, 3, 4]\nprint(func1(data))"
+        },
+        {
+          "code": "# answer G\nmylist, square = [1, 3, 5, 7, 9], []\nfor i in mylist:\n    square += i ** 2\nprint(sum(square))"
+        }
+      ],
+      "text": "Which of the following code snippets below will execute without error?\n```\n# answer A\nlistA = [1, 2, 3, 4, 5]\nlistB = [4, 6, 8, 10, 12]\nlistC = []\nfor i in range(5):\n    listC += [listA[i] + listB[i]]\nprint(listC)\n```\n```\n# answer B\nlistA = [6, 5, 4, 3, 2, 1]\nlistB = [1, 3, 5, 7, 9, 11]\nlistC = []\nfor i in range(1, 7):\n    listC += [listA[i] + listB[i]]\nprint(listC)\n```\n```\n# answer C\nmyList = [7, 8, 6, 4, 2]\nfor num in myList:\n    if num < 3:\n        print(item)\n```\n```\n# answer D\nwith open(\"data.txt\", \"w\") as newfile:\n    newfile.write(\"15\\n30\\n45\\n90\\n60\\n60\")\ndata_list = []\nnumbers.open(\"data.txt\", \"r\")\nfor line in numbers:\n    data_list.append(line.strip())\nprint(data_list)\n```\n```\n# answer E\ndef myfunc(a, b=7, c):\n    out1 = a + b / c\n    out2 = a - c * b\n    return out1, out2\na, b = myfunc(5, 2, 4)\n```\n```\n# answer F\nfrom math import sqrt\ndef func2(sigma, n):\n    error = sigma / sqrt(n)\n    return error\ndef func1(x):\n    resid = 0\n    avg = sum(x) / len(x)\n    for i in x:\n        resid += (i - avg) ** 2\n    stdev = resid / (len(x) - 1)\n    error = func2(stdev, len(x))\n    return error\ndata = [2, 5, 3, 7, 4, 9, 1, 2, 5, 8, 9, 3, 4]\nprint(func1(data))\n```\n```\n# answer G\nmylist, square = [1, 3, 5, 7, 9], []\nfor i in mylist:\n    square += i ** 2\nprint(sum(square))\n```",
+      "answer": {
+        "blocks": [
+          "A and F execute without error in a fresh namespace. A prints [5, 8, 11, 14, 17]. F computes a numeric result, although its variable stdev actually stores sample variance, not standard deviation. B indexes past the lists; C uses undefined item; D uses undefined numbers; E has an invalid parameter order; G tries to extend a list with an integer."
+        ],
+        "text": "['A and F execute without error in a fresh namespace. A prints [5, 8, 11, 14, 17]. F computes a numeric result, although its variable stdev actually stores sample variance, not standard deviation. B indexes past the lists; C uses undefined item; D uses undefined numbers; E has an invalid parameter order; G tries to extend a list with an integer.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-049",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 49 · Harder",
+      "kind": "frq",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "What are the contents of the file result.csv after the following lines of code have executed?",
+        {
+          "code": "def output(mystr, num):\n    outstring = mystr\n    with open(\"result.csv\", \"w\") as outfile:\n        for i in range(num):\n            outfile.write(outstring[-1] + \",\")\n            outstring = outstring[:-1]\n        if len(mystr) - num == 1:\n            outfile.write(mystr[0])\n        elif num < len(mystr):\n            for i in range(len(mystr) - (num + 1), -1, -1):\n                outfile.write(outstring[i] + \",\")\n        return outstring\noutput(\"gateman\", 5)"
+        }
+      ],
+      "text": "What are the contents of the file `result.csv` after the following lines of code have executed?\n```\ndef output(mystr, num):\n    outstring = mystr\n    with open(\"result.csv\", \"w\") as outfile:\n        for i in range(num):\n            outfile.write(outstring[-1] + \",\")\n            outstring = outstring[:-1]\n        if len(mystr) - num == 1:\n            outfile.write(mystr[0])\n        elif num < len(mystr):\n            for i in range(len(mystr) - (num + 1), -1, -1):\n                outfile.write(outstring[i] + \",\")\n        return outstring\noutput(\"gateman\", 5)\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "n,a,m,e,t,a,g,"
+          },
+          "Exact output as a Python string: 'n,a,m,e,t,a,g,'",
+          "The pasted typographic dash was normalized to Python’s minus sign."
+        ],
+        "text": "[{'code': 'n,a,m,e,t,a,g,'}, \"Exact output as a Python string: 'n,a,m,e,t,a,g,'\", 'The pasted typographic dash was normalized to Python’s minus sign.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-050",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 50",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Which of the code snippets below will execute without error? Choose all that apply.",
+        {
+          "code": "# answer A\nfrom numpy import *\na = arange(15).reshape(3, 5)\nprint(a)"
+        },
+        {
+          "code": "# answer B\nimport numpy\na = arange(15).reshape(3, 5)\nprint(a)"
+        },
+        {
+          "code": "# answer C\nfrom math import *\na = math.sqrt(25)\nprint(a)"
+        },
+        {
+          "code": "# answer D\nimport math\na = math.sqrt(25)\nprint(a)"
+        }
+      ],
+      "text": "Which of the code snippets below will execute without error? Choose all that apply.\n```\n# answer A\nfrom numpy import *\na = arange(15).reshape(3, 5)\nprint(a)\n```\n```\n# answer B\nimport numpy\na = arange(15).reshape(3, 5)\nprint(a)\n```\n```\n# answer C\nfrom math import *\na = math.sqrt(25)\nprint(a)\n```\n```\n# answer D\nimport math\na = math.sqrt(25)\nprint(a)\n```",
+      "answer": {
+        "blocks": [
+          "A and D. In B, importing numpy does not define bare arange. In C, importing names from math does not bind the name math. Assume a fresh namespace."
+        ],
+        "text": "['A and D. In B, importing numpy does not define bare arange. In C, importing names from math does not bind the name math. Assume a fresh namespace.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-051",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 51",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write a single line of code to import either an entire module or just the required functions in such a way that the following code executes without error."
+      ],
+      "text": "Write a single line of code to import either an entire module or just the required functions in such a way that the following code executes without error.\n```",
+      "answer": {
+        "blocks": [
+          "import matplotlib.pyplot as pyp"
+        ],
+        "text": "['import matplotlib.pyplot as pyp']"
+      }
+    },
+    {
+      "id": "ENGR-E2-052",
+      "review": "engr-exam2",
+      "section": "trace",
+      "title": "Problem 52",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write a single line of code to import either an entire module or just the required functions in such a way that the following code executes without error."
+      ],
+      "text": "Write a single line of code to import either an entire module or just the required functions in such a way that the following code executes without error.\n```",
+      "answer": {
+        "blocks": [
+          "from numpy import arange"
+        ],
+        "text": "['from numpy import arange']"
+      }
+    },
+    {
+      "id": "ENGR-E2-053",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 53",
+      "kind": "coding",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write a Python program that uses a loop to sum the numbers 1 to 10 (inclusive) and print the sum."
+      ],
+      "text": "Write a Python program that uses a loop to sum the numbers 1 to 10 (inclusive) and print the sum.",
+      "answer": {
+        "blocks": [
+          {
+            "code": "total = 0\nfor n in range(1, 11):\n    total += n\nprint(total)  # 55"
+          }
+        ],
+        "text": "[{'code': 'total = 0\\nfor n in range(1, 11):\\n    total += n\\nprint(total)  # 55'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-054",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 54",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Create a top-down hierarchy for the following problem statement: A birdwatcher wants a program that will allow them to input their bird sightings and output requested statistical information. Inputs include the species/family, number of individuals, date, time, and location of sighting. Outputs include the total number of species seen (overall and in a particular location), total number of places or dates birded, number of sightings of a particular species, and family with the highest number of species seen."
+      ],
+      "text": "Create a top-down hierarchy for the following problem statement: A birdwatcher wants a program that will allow them to input their bird sightings and output requested statistical information. Inputs include the species/family, number of individuals, date, time, and location of sighting. Outputs include the total number of species seen (overall and in a particular location), total number of places or dates birded, number of sightings of a particular species, and family with the highest number of species seen.",
+      "answer": {
+        "blocks": [
+          "Birdwatcher program → collect sightings, analyze records, report results. Collect → read species/family/count/date/time/location, validate and store. Analyze → count unique species overall/by location; count unique places/dates; count sighting records by requested species; group unique species by family and find the largest group. Report → accept query, format and display requested statistic. Keep individual-bird totals separate from the number of sighting records."
+        ],
+        "text": "['Birdwatcher program → collect sightings, analyze records, report results. Collect → read species/family/count/date/time/location, validate and store. Analyze → count unique species overall/by location; count unique places/dates; count sighting records by requested species; group unique species by family and find the largest group. Report → accept query, format and display requested statistic. Keep individual-bird totals separate from the number of sighting records.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-055",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 55 · Harder",
+      "kind": "coding",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write a Python program to take as input 5 birthdays from 5 users (1 each) and output them in chronological order. Dates should be entered with the month and day (not year) in the format June 6 as a single input per user. Format the output as shown below. You MUST use a dictionary.",
+        "Example output (using inputs December 12, January 15, April 12, November 25, and April 1):",
+        {
+          "code": "User 1 please enter a birthday: December 12\nUser 2 please enter a birthday: January 15\nUser 3 please enter a birthday: April 12\nUser 4 please enter a birthday: November 25\nUser 5 please enter a birthday: April 1\n------------------------------------------------\nJanuary 15\nApril 1\nApril 12\nNovember 25\nDecember 12"
+        }
+      ],
+      "text": "Write a Python program to take as input 5 birthdays from 5 users (1 each) and output them in chronological order. Dates should be entered with the month and day (not year) in the format `June 6` as a single input per user. Format the output as shown below. You MUST use a dictionary.\n\nExample output (using inputs `December 12`, `January 15`, `April 12`, `November 25`, and `April 1`):\n```\nUser 1 please enter a birthday: December 12\nUser 2 please enter a birthday: January 15\nUser 3 please enter a birthday: April 12\nUser 4 please enter a birthday: November 25\nUser 5 please enter a birthday: April 1\n------------------------------------------------\nJanuary 15\nApril 1\nApril 12\nNovember 25\nDecember 12\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "months = {name: i + 1 for i, name in enumerate([\n    \"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n    \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"])}\nbirthdays = []\nfor user in range(1, 6):\n    month, day = input(f\"User {user} please enter a birthday: \").split()\n    birthdays.append((months[month], int(day), month))\nbirthdays.sort()\nprint(\"-\" * 48)\nfor month_number, day, month in birthdays:\n    print(month, day)"
+          }
+        ],
+        "text": "[{'code': 'months = {name: i + 1 for i, name in enumerate([\\n    \"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\\n    \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"])}\\nbirthdays = []\\nfor user in range(1, 6):\\n    month, day = input(f\"User {user} please enter a birthday: \").split()\\n    birthdays.append((months[month], int(day), month))\\nbirthdays.sort()\\nprint(\"-\" * 48)\\nfor month_number, day, month in birthdays:\\n    print(month, day)'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-056",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 56",
+      "kind": "coding",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "A schematic for converting phone letters to digits mapping is shown in the image below. Write a Python program that prompts the user to enter a 10-character phone number in this format XXX-XXXXXXX. Your program should replace the last seven alphabetic characters by their equivalent digits and display the entered phone number in this format XXX-XXX-XXXX. For example, if the user enters 800-GOFEDEX, your program output would convert the number to 800-463-3339. You may assume that the last seven characters are alphabetic characters from A to Z. You MUST use a dictionary.",
+        "Standard phone keypad: ABC=2, DEF=3, GHI=4, JKL=5, MNO=6, PQRS=7, TUV=8, WXYZ=9.",
+        "Example output for input 800-GOFEDEX:",
+        {
+          "code": "Enter a phone number in this format XXX-XXXXXXX: 800-GOFEDEX\n800-GOFEDEX is equivalent to 800-463-3339"
+        }
+      ],
+      "text": "A schematic for converting phone letters to digits mapping is shown in the image below. Write a Python program that prompts the user to enter a 10-character phone number in this format `XXX-XXXXXXX`. Your program should replace the last seven alphabetic characters by their equivalent digits and display the entered phone number in this format `XXX-XXX-XXXX`. For example, if the user enters `800-GOFEDEX`, your program output would convert the number to `800-463-3339`. You may assume that the last seven characters are alphabetic characters from A to Z. You MUST use a dictionary.\n\n![New #ios6 dial pad design | Jakob Montrasio | Flickr](exam1_practice_prob_7.jpg)\n\nExample output for input `800-GOFEDEX`:\n```\nEnter a phone number in this format XXX-XXXXXXX: 800-GOFEDEX\n800-GOFEDEX is equivalent to 800-463-3339\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "mapping = {}\nfor digit, letters in enumerate([\"ABC\", \"DEF\", \"GHI\", \"JKL\", \"MNO\", \"PQRS\", \"TUV\", \"WXYZ\"], 2):\n    for letter in letters:\n        mapping[letter] = str(digit)\nphone = input(\"Enter a phone number in this format XXX-XXXXXXX: \")\ndigits = \"\".join(mapping[c] for c in phone[4:])\nprint(f\"{phone} is equivalent to {phone[:3]}-{digits[:3]}-{digits[3:]}\")"
+          }
+        ],
+        "text": "[{'code': 'mapping = {}\\nfor digit, letters in enumerate([\"ABC\", \"DEF\", \"GHI\", \"JKL\", \"MNO\", \"PQRS\", \"TUV\", \"WXYZ\"], 2):\\n    for letter in letters:\\n        mapping[letter] = str(digit)\\nphone = input(\"Enter a phone number in this format XXX-XXXXXXX: \")\\ndigits = \"\".join(mapping[c] for c in phone[4:])\\nprint(f\"{phone} is equivalent to {phone[:3]}-{digits[:3]}-{digits[3:]}\")'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-057",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 57",
+      "kind": "coding",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write a Python program that takes as input from the user the names, blood pressure, pulse, and blood glucose values of patients. Have your program prompt the user for the number of patients first, and then take as input that many names and their corresponding information. Store the information for each patient in a dictionary using the names as keys. Then, take as input from the user a name and print their information using the format shown below.",
+        "Example output:",
+        {
+          "code": "Enter the number of patients: 5\nEnter the next name and information: Amari 120/75 78 102\nEnter the next name and information: Blake 134/82 73 116\n...\nEnter a name: Cameron\nHere is information on Cameron:\nBlood pressure: 118/76, Pulse: 75, Blood glucose: 93"
+        }
+      ],
+      "text": "Write a Python program that takes as input from the user the names, blood pressure, pulse, and blood glucose values of patients. Have your program prompt the user for the number of patients first, and then take as input that many names and their corresponding information. Store the information for each patient in a dictionary using the names as keys. Then, take as input from the user a name and print their information using the format shown below.\n\nExample output:\n```\nEnter the number of patients: 5\nEnter the next name and information: Amari 120/75 78 102\nEnter the next name and information: Blake 134/82 73 116\n...\nEnter a name: Cameron\nHere is information on Cameron:\nBlood pressure: 118/76, Pulse: 75, Blood glucose: 93\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "patients = {}\nfor i in range(int(input(\"Enter the number of patients: \"))):\n    name, pressure, pulse, glucose = input(\"Enter the next name and information: \").split()\n    patients[name] = (pressure, pulse, glucose)\nname = input(\"Enter a name: \")\nif name in patients:\n    pressure, pulse, glucose = patients[name]\n    print(f\"Here is information on {name}:\")\n    print(f\"Blood pressure: {pressure}, Pulse: {pulse}, Blood glucose: {glucose}\")\nelse:\n    print(\"Name not found\")"
+          }
+        ],
+        "text": "[{'code': 'patients = {}\\nfor i in range(int(input(\"Enter the number of patients: \"))):\\n    name, pressure, pulse, glucose = input(\"Enter the next name and information: \").split()\\n    patients[name] = (pressure, pulse, glucose)\\nname = input(\"Enter a name: \")\\nif name in patients:\\n    pressure, pulse, glucose = patients[name]\\n    print(f\"Here is information on {name}:\")\\n    print(f\"Blood pressure: {pressure}, Pulse: {pulse}, Blood glucose: {glucose}\")\\nelse:\\n    print(\"Name not found\")'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-058",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 58",
+      "kind": "coding",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write a Python function named numcondition which takes in as parameters two integers. If the integers add to more than 10 and multiply to more than 20, return True. If neither condition is satisfied, return False. If one condition is satisfied, return which condition. Don't forget to document your function!",
+        "Examples:\n- numcondition(2, 3) returns False\n- numcondition(20, 28) returns True\n- numcondition(12, -1) returns addition only\n- numcondition(3, 7) returns multiplication only"
+      ],
+      "text": "Write a Python function named `numcondition` which takes in as parameters two integers. If the integers add to more than 10 and multiply to more than 20, return `True`. If neither condition is satisfied, return `False`. If one condition is satisfied, return which condition. **Don't forget to document your function!**\n\nExamples:\n- `numcondition(2, 3)` returns `False`\n- `numcondition(20, 28)` returns `True`\n- `numcondition(12, -1)` returns `addition only`\n- `numcondition(3, 7)` returns `multiplication only`",
+      "answer": {
+        "blocks": [
+          {
+            "code": "def numcondition(a, b):\n    \"\"\"Describe whether the sum exceeds 10 and the product exceeds 20.\"\"\"\n    addition = a + b > 10\n    multiplication = a * b > 20\n    if addition and multiplication:\n        return True\n    if addition:\n        return \"addition only\"\n    if multiplication:\n        return \"multiplication only\"\n    return False"
+          }
+        ],
+        "text": "[{'code': 'def numcondition(a, b):\\n    \"\"\"Describe whether the sum exceeds 10 and the product exceeds 20.\"\"\"\\n    addition = a + b > 10\\n    multiplication = a * b > 20\\n    if addition and multiplication:\\n        return True\\n    if addition:\\n        return \"addition only\"\\n    if multiplication:\\n        return \"multiplication only\"\\n    return False'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-059",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 59 · Harder",
+      "kind": "coding",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Assume a function isprime() is available for you to use in a module called ENGR102 which determines whether or not a number is a prime number. The function isprime() takes in as a parameter a single integer, and returns either True or False. Write a Python program that takes as input from the user two integers. If the user gives bad input, continue to prompt them to try again until they enter two integers. Then, test only the odd numbers between and including those two numbers, to check if they are prime using the isprime() function. Have your program print a list of the prime numbers found. If no prime numbers were found, have your program print a message stating that. Start your code with: from ENGR102 import isprime. You do not have to write the function isprime(), you only need to call it.",
+        "Example output (bad input):",
+        {
+          "code": "Enter an integer: no\nBad input! Try again: 1\nEnter another integer: 1.5\nBad input! Try again: 5\nPrimes: [3, 5]"
+        },
+        "Example output (good input):",
+        {
+          "code": "Enter an integer: 8\nEnter another integer: 10\nNo primes found!"
+        }
+      ],
+      "text": "Assume a function `isprime()` is available for you to use in a module called `ENGR102` which determines whether or not a number is a prime number. The function `isprime()` takes in as a parameter a single integer, and returns either `True` or `False`. Write a Python program that takes as input from the user two integers. If the user gives bad input, continue to prompt them to try again until they enter two integers. Then, test only the odd numbers between and including those two numbers, to check if they are prime using the `isprime()` function. Have your program print a list of the prime numbers found. If no prime numbers were found, have your program print a message stating that. Start your code with: `from ENGR102 import isprime`. You do not have to write the function `isprime()`, you only need to call it.\n\nExample output (bad input):\n```\nEnter an integer: no\nBad input! Try again: 1\nEnter another integer: 1.5\nBad input! Try again: 5\nPrimes: [3, 5]\n```\n\nExample output (good input):\n```\nEnter an integer: 8\nEnter another integer: 10\nNo primes found!\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "from ENGR102 import isprime\n\ndef read_integer(prompt):\n    \"\"\"Prompt until a valid integer is entered.\"\"\"\n    while True:\n        try:\n            return int(input(prompt))\n        except ValueError:\n            prompt = \"Bad input! Try again: \"\n\na = read_integer(\"Enter an integer: \")\nb = read_integer(\"Enter another integer: \")\nprimes = []\nfor n in range(min(a, b), max(a, b) + 1):\n    if n % 2 != 0 and isprime(n):\n        primes.append(n)\nif primes:\n    print(\"Primes:\", primes)\nelse:\n    print(\"No primes found!\")"
+          }
+        ],
+        "text": "[{'code': 'from ENGR102 import isprime\\n\\ndef read_integer(prompt):\\n    \"\"\"Prompt until a valid integer is entered.\"\"\"\\n    while True:\\n        try:\\n            return int(input(prompt))\\n        except ValueError:\\n            prompt = \"Bad input! Try again: \"\\n\\na = read_integer(\"Enter an integer: \")\\nb = read_integer(\"Enter another integer: \")\\nprimes = []\\nfor n in range(min(a, b), max(a, b) + 1):\\n    if n % 2 != 0 and isprime(n):\\n        primes.append(n)\\nif primes:\\n    print(\"Primes:\", primes)\\nelse:\\n    print(\"No primes found!\")'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-060",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 60",
+      "kind": "coding",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write a Python function named max_min that takes in as parameters six (6) integers and returns three (3) values in the following order: a list that includes the six (6) integers ordered from largest to smallest, the sum of the six (6) integers, and a count of the number of even integers. Don't forget to document your function!",
+        "Examples:\n- max_min(1, 6, 2, 5, 3, 4) returns [6, 5, 4, 3, 2, 1], 21, and 3\n- max_min(8, 6, 7, 5, 3, 9) returns [9, 8, 7, 6, 5, 3], 38, and 2\n- max_min(102, 67, 234, 216, 185, 217) returns [234, 217, 216, 185, 102, 67], 1021, and 3"
+      ],
+      "text": "Write a Python function named `max_min` that takes in as parameters six (6) integers and returns three (3) values in the following order: a list that includes the six (6) integers ordered from largest to smallest, the sum of the six (6) integers, and a count of the number of even integers. **Don't forget to document your function!**\n\nExamples:\n- `max_min(1, 6, 2, 5, 3, 4)` returns `[6, 5, 4, 3, 2, 1]`, `21`, and `3`\n- `max_min(8, 6, 7, 5, 3, 9)` returns `[9, 8, 7, 6, 5, 3]`, `38`, and `2`\n- `max_min(102, 67, 234, 216, 185, 217)` returns `[234, 217, 216, 185, 102, 67]`, `1021`, and `3`",
+      "answer": {
+        "blocks": [
+          {
+            "code": "def max_min(a, b, c, d, e, f):\n    \"\"\"Return descending values, their sum, and the even-value count.\"\"\"\n    values = [a, b, c, d, e, f]\n    even = 0\n    for value in values:\n        if value % 2 == 0:\n            even += 1\n    return sorted(values, reverse=True), sum(values), even"
+          }
+        ],
+        "text": "[{'code': 'def max_min(a, b, c, d, e, f):\\n    \"\"\"Return descending values, their sum, and the even-value count.\"\"\"\\n    values = [a, b, c, d, e, f]\\n    even = 0\\n    for value in values:\\n        if value % 2 == 0:\\n            even += 1\\n    return sorted(values, reverse=True), sum(values), even'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-061",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 61 · Harder",
+      "kind": "coding",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write a Python function that takes in as parameters two numpy arrays A and B, checks that the inner dimensions of A and B match, and if they do calculate and return C = AB (matrix multiplication (not elementwise multiplication)). If they don't match, have your function return an empty numpy array. The inner dimensions of two matrices multiplied together are the two interior numbers. For matrices with dimensions 2x3 and 3x4, the inner dimensions match (both 3). For matrices with dimensions 3x2 and 3x4, the inner dimensions do not match (2 and 3). Don't forget to document your function!",
+        "Examples:\nArray A: [[0 1 2] [3 4 5]]\nArray B: [[ 0  1  2  3] [ 4  5  6  7] [ 8  9 10 11]]\nFunction returns [[20 23 26 29] [56 68 80 92]]",
+        "Array A: [[0 1] [2 3]]\nArray B: [[ 0  1  2  3] [ 4  5  6  7] [ 8  9 10 11]]\nFunction returns []"
+      ],
+      "text": "Write a Python function that takes in as parameters two `numpy` arrays `A` and `B`, checks that the inner dimensions of `A` and `B` match, and if they do calculate and return `C = AB` (matrix multiplication (not elementwise multiplication)). If they don't match, have your function return an empty numpy array. The inner dimensions of two matrices multiplied together are the two interior numbers. For matrices with dimensions 2x3 and 3x4, the inner dimensions match (both 3). For matrices with dimensions 3x2 and 3x4, the inner dimensions do not match (2 and 3). **Don't forget to document your function!**\n\nExamples:<br>\nArray A: `[[0 1 2] [3 4 5]]`<br>\nArray B: `[[ 0  1  2  3] [ 4  5  6  7] [ 8  9 10 11]]`<br>\nFunction returns `[[20 23 26 29] [56 68 80 92]]`\n\nArray A: `[[0 1] [2 3]]`<br>\nArray B: `[[ 0  1  2  3] [ 4  5  6  7] [ 8  9 10 11]]`<br>\nFunction returns `[]`",
+      "answer": {
+        "blocks": [
+          {
+            "code": "import numpy as np\n\ndef matrix_product(A, B):\n    \"\"\"Return the product of compatible 2D arrays, or an empty array.\"\"\"\n    if A.ndim != 2 or B.ndim != 2 or A.shape[1] != B.shape[0]:\n        return np.array([])\n    return A @ B"
+          }
+        ],
+        "text": "[{'code': 'import numpy as np\\n\\ndef matrix_product(A, B):\\n    \"\"\"Return the product of compatible 2D arrays, or an empty array.\"\"\"\\n    if A.ndim != 2 or B.ndim != 2 or A.shape[1] != B.shape[0]:\\n        return np.array([])\\n    return A @ B'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-062",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 62 · Harder",
+      "kind": "coding",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write a Python function named myinsert that takes in as parameters a sorted string of arbitrary length and a character (string of length one). Have your function insert the character so the new string remains sorted, and return it. Do NOT use the sort or sorted functions. Don't forget to document your function!",
+        "Examples:\n- myinsert(\"abde\", \"c\") returns \"abcde\"\n- myinsert(\"abdehijmnqr\", \"y\") returns \"abdehijmnqry\"\n- myinsert(\"123589\", \"7\") returns \"1235789\"",
+        "Now write a second Python function named myinsert2 that takes in as parameters a sorted list of arbitrary length and a value. Have your function insert the value so the new list remains sorted, and return it. Do NOT use the sort or sorted functions. Don't forget to document your function!",
+        "Examples:\n- myinsert2([1, 2, 4, 5], 3) returns [1, 2, 3, 4, 5]\n- myinsert2([1, 4, 5, 12, 20, 28], 0) returns [0, 1, 4, 5, 12, 20, 28]\n- myinsert2([\"a\", \"b\", \"d\", \"e\"], \"c\") returns [\"a\", \"b\", \"c\", \"d\", \"e\"]"
+      ],
+      "text": "Write a Python function named `myinsert` that takes in as parameters a sorted string of arbitrary length and a character (string of length one). Have your function insert the character so the new string remains sorted, and return it. Do NOT use the `sort` or `sorted` functions. **Don't forget to document your function!**\n\nExamples:\n- `myinsert(\"abde\", \"c\")` returns `\"abcde\"`\n- `myinsert(\"abdehijmnqr\", \"y\")` returns `\"abdehijmnqry\"`\n- `myinsert(\"123589\", \"7\")` returns `\"1235789\"`\n\nNow write a second Python function named `myinsert2` that takes in as parameters a sorted list of arbitrary length and a value. Have your function insert the value so the new list remains sorted, and return it. Do NOT use the `sort` or `sorted` functions. **Don't forget to document your function!**\n\nExamples:\n- `myinsert2([1, 2, 4, 5], 3)` returns `[1, 2, 3, 4, 5]`\n- `myinsert2([1, 4, 5, 12, 20, 28], 0)` returns `[0, 1, 4, 5, 12, 20, 28]`\n- `myinsert2([\"a\", \"b\", \"d\", \"e\"], \"c\")` returns `[\"a\", \"b\", \"c\", \"d\", \"e\"]`",
+      "answer": {
+        "blocks": [
+          {
+            "code": "def myinsert(text, char):\n    \"\"\"Insert a character into an ascending string without sorting.\"\"\"\n    i = 0\n    while i < len(text) and text[i] <= char:\n        i += 1\n    return text[:i] + char + text[i:]\n\ndef myinsert2(values, value):\n    \"\"\"Return a new ascending list with value inserted, without sorting.\"\"\"\n    i = 0\n    while i < len(values) and values[i] <= value:\n        i += 1\n    return values[:i] + [value] + values[i:]"
+          }
+        ],
+        "text": "[{'code': 'def myinsert(text, char):\\n    \"\"\"Insert a character into an ascending string without sorting.\"\"\"\\n    i = 0\\n    while i < len(text) and text[i] <= char:\\n        i += 1\\n    return text[:i] + char + text[i:]\\n\\ndef myinsert2(values, value):\\n    \"\"\"Return a new ascending list with value inserted, without sorting.\"\"\"\\n    i = 0\\n    while i < len(values) and values[i] <= value:\\n        i += 1\\n    return values[:i] + [value] + values[i:]'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-063",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 63 · Harder",
+      "kind": "coding",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write a Python function that takes in as a parameter a list of numbers then calculates and returns the mean (\\(\\bar{x}\\)) and sample variance (\\(s^2\\)) of the numbers. Do NOT use the numpy or statistics modules. Instead, calculate the values using the equations below. You MUST use a loop. Dont forget to document your function!",
+        "\\(\\bar{x}=\\frac{1}{n}\\sum_{i=1}^{n}x_i\\)",
+        "\\(s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(x_i-\\bar{x})^2\\)",
+        "Now rewrite your function using the numpy module."
+      ],
+      "text": "Write a Python function that takes in as a parameter a list of numbers then calculates and returns the mean ($\\bar{x}$) and sample variance ($s^2$) of the numbers. Do NOT use the `numpy` or `statistics` modules. Instead, calculate the values using the equations below. You MUST use a loop. **Dont forget to document your function!**\n\n$$\\bar{x}=\\frac{1}{n}\\sum_{i=1}^{n}x_i$$\n\n$$s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(x_i-\\bar{x})^2$$\n\nNow rewrite your function using the `numpy` module.",
+      "answer": {
+        "blocks": [
+          {
+            "code": "def mean_variance(values):\n    \"\"\"Return mean and sample variance; require at least two values.\"\"\"\n    if len(values) < 2:\n        raise ValueError(\"At least two values are required\")\n    total = 0\n    for value in values:\n        total += value\n    mean = total / len(values)\n    squares = 0\n    for value in values:\n        squares += (value - mean) ** 2\n    return mean, squares / (len(values) - 1)\n\nimport numpy as np\ndef mean_variance_numpy(values):\n    \"\"\"Return mean and sample variance using NumPy.\"\"\"\n    if len(values) < 2:\n        raise ValueError(\"At least two values are required\")\n    return float(np.mean(values)), float(np.var(values, ddof=1))"
+          }
+        ],
+        "text": "[{'code': 'def mean_variance(values):\\n    \"\"\"Return mean and sample variance; require at least two values.\"\"\"\\n    if len(values) < 2:\\n        raise ValueError(\"At least two values are required\")\\n    total = 0\\n    for value in values:\\n        total += value\\n    mean = total / len(values)\\n    squares = 0\\n    for value in values:\\n        squares += (value - mean) ** 2\\n    return mean, squares / (len(values) - 1)\\n\\nimport numpy as np\\ndef mean_variance_numpy(values):\\n    \"\"\"Return mean and sample variance using NumPy.\"\"\"\\n    if len(values) < 2:\\n        raise ValueError(\"At least two values are required\")\\n    return float(np.mean(values)), float(np.var(values, ddof=1))'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-064",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 64 · Harder",
+      "kind": "coding",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "An Armstrong number is a positive integer, where the sum of its digits, each raised to the power of the number of digits, is equal to the integer itself. For example, 371 is an Armstrong number because \\(3^3 + 7^3 + 1^3 = 371\\). Write a Python function called Armstrong_number that takes in as parameters two positive integers and returns a list containing all the Armstrong numbers between and including these two integers. Next, write main code that takes as input from the user two integers. If the user gives bad input, continue to prompt them to try again until they enter two integers that are both positive values. Then, call your function and print the resulting list. Don't forget to document your function!",
+        "Example output (bad input):",
+        {
+          "code": "Enter an integer: -1\nNeed a positive integer: 0.5\nBad input! Try again: 4\nEnter another integer: 2.7\nBad input! Try again: -12\nNeed a positive integer: 12\nArmstrong numbers: [4, 5, 6, 7, 8, 9]"
+        },
+        "Example output (good input):",
+        {
+          "code": "Enter an integer: 100\nEnter another integer: 400\nArmstrong numbers: [153, 370, 371]"
+        }
+      ],
+      "text": "An Armstrong number is a positive integer, where the sum of its digits, each raised to the power of the number of digits, is equal to the integer itself. For example, 371 is an Armstrong number because $3^3 + 7^3 + 1^3 = 371$. Write a Python function called `Armstrong_number` that takes in as parameters two positive integers and returns a list containing all the Armstrong numbers between and including these two integers. Next, write main code that takes as input from the user two integers. If the user gives bad input, continue to prompt them to try again until they enter two integers that are both positive values. Then, call your function and print the resulting list. **Don't forget to document your function!**\n\nExample output (bad input):\n```\nEnter an integer: -1\nNeed a positive integer: 0.5\nBad input! Try again: 4\nEnter another integer: 2.7\nBad input! Try again: -12\nNeed a positive integer: 12\nArmstrong numbers: [4, 5, 6, 7, 8, 9]\n```\n\nExample output (good input):\n```\nEnter an integer: 100\nEnter another integer: 400\nArmstrong numbers: [153, 370, 371]\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "def Armstrong_number(a, b):\n    \"\"\"Return Armstrong numbers in the inclusive interval between a and b.\"\"\"\n    result = []\n    for n in range(min(a, b), max(a, b) + 1):\n        digits = str(n)\n        total = 0\n        for digit in digits:\n            total += int(digit) ** len(digits)\n        if total == n:\n            result.append(n)\n    return result\n\ndef read_positive(prompt):\n    \"\"\"Prompt until a positive integer is entered.\"\"\"\n    while True:\n        try:\n            n = int(input(prompt))\n        except ValueError:\n            prompt = \"Bad input! Try again: \"\n            continue\n        if n > 0:\n            return n\n        prompt = \"Need a positive integer: \"\n\na = read_positive(\"Enter an integer: \")\nb = read_positive(\"Enter another integer: \")\nprint(\"Armstrong numbers:\", Armstrong_number(a, b))"
+          }
+        ],
+        "text": "[{'code': 'def Armstrong_number(a, b):\\n    \"\"\"Return Armstrong numbers in the inclusive interval between a and b.\"\"\"\\n    result = []\\n    for n in range(min(a, b), max(a, b) + 1):\\n        digits = str(n)\\n        total = 0\\n        for digit in digits:\\n            total += int(digit) ** len(digits)\\n        if total == n:\\n            result.append(n)\\n    return result\\n\\ndef read_positive(prompt):\\n    \"\"\"Prompt until a positive integer is entered.\"\"\"\\n    while True:\\n        try:\\n            n = int(input(prompt))\\n        except ValueError:\\n            prompt = \"Bad input! Try again: \"\\n            continue\\n        if n > 0:\\n            return n\\n        prompt = \"Need a positive integer: \"\\n\\na = read_positive(\"Enter an integer: \")\\nb = read_positive(\"Enter another integer: \")\\nprint(\"Armstrong numbers:\", Armstrong_number(a, b))'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-065",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 65",
+      "kind": "coding",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "A perfect number is a positive integer greater than 1 that is equal to the sum of its proper divisors. The smallest perfect number is 6 since the sum of the proper divisors for 6 are 1, 2, and 3 which added together equals 6. The integer 28 is also a perfect number since the divisors for 28 are 1, 2, 4, 7, and 14 and the sum of these divisors equals 28. Write a Python function that takes as input a positive integer greater than or equal to 1, and returns True if the number is a perfect number or False if it is not. Next, write main code that takes as input from the user one integer greater than or equal to 1. If the user gives bad input, continue to prompt them to try again until they enter a positive integer. Then, call your function and print if the number is a perfect number (or not). Don't forget to document your function!",
+        "Hint: The proper divisors of a positive integer N are those numbers, other than N itself, that divide N without remainder. For N > 1 they will always include 1, but for N == 1 there are no proper divisors. The proper divisors of 6 are 1, 2, and 3. The proper divisors of 100 are 1, 2, 4, 5, 10, 20, 25, and 50.",
+        "Example output (bad input):",
+        {
+          "code": "Enter an integer: -5\nNeed a positive integer: 0.5\nBad input! Try again: a\nBad input! Try again: 28\n28 is a perfect number"
+        },
+        "Example output (good input):",
+        {
+          "code": "Enter an integer: 1\n1 is not a perfect number"
+        },
+        "Example output (good input):",
+        {
+          "code": "Enter an integer: 6\n6 is a perfect number"
+        }
+      ],
+      "text": "A perfect number is a positive integer greater than 1 that is equal to the sum of its proper divisors. The smallest perfect number is 6 since the sum of the proper divisors for 6 are 1, 2, and 3 which added together equals 6. The integer 28 is also a perfect number since the divisors for 28 are 1, 2, 4, 7, and 14 and the sum of these divisors equals 28. Write a Python function that takes as input a positive integer greater than or equal to 1, and returns `True` if the number is a perfect number or `False` if it is not. Next, write main code that takes as input from the user one integer greater than or equal to 1. If the user gives bad input, continue to prompt them to try again until they enter a positive integer. Then, call your function and print if the number is a perfect number (or not). **Don't forget to document your function!**\n\n**Hint:** The proper divisors of a positive integer N are those numbers, other than N itself, that divide N without remainder. For N > 1 they will always include 1, but for N == 1 there are no proper divisors. The proper divisors of 6 are 1, 2, and 3. The proper divisors of 100 are 1, 2, 4, 5, 10, 20, 25, and 50.\n\nExample output (bad input):\n```\nEnter an integer: -5\nNeed a positive integer: 0.5\nBad input! Try again: a\nBad input! Try again: 28\n28 is a perfect number\n```\n\nExample output (good input):\n```\nEnter an integer: 1\n1 is not a perfect number\n```\n\nExample output (good input):\n```\nEnter an integer: 6\n6 is a perfect number\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "def is_perfect(n):\n    \"\"\"Return whether n is a perfect number; 1 is not perfect.\"\"\"\n    total = 0\n    for divisor in range(1, n):\n        if n % divisor == 0:\n            total += divisor\n    return n > 1 and total == n\n\ndef read_positive(prompt):\n    \"\"\"Prompt until a positive integer is entered.\"\"\"\n    while True:\n        try:\n            n = int(input(prompt))\n        except ValueError:\n            prompt = \"Bad input! Try again: \"\n            continue\n        if n > 0:\n            return n\n        prompt = \"Need a positive integer: \"\n\nn = read_positive(\"Enter an integer: \")\nprint(f\"{n} is {'a perfect number' if is_perfect(n) else 'not a perfect number'}\")"
+          }
+        ],
+        "text": "[{'code': 'def is_perfect(n):\\n    \"\"\"Return whether n is a perfect number; 1 is not perfect.\"\"\"\\n    total = 0\\n    for divisor in range(1, n):\\n        if n % divisor == 0:\\n            total += divisor\\n    return n > 1 and total == n\\n\\ndef read_positive(prompt):\\n    \"\"\"Prompt until a positive integer is entered.\"\"\"\\n    while True:\\n        try:\\n            n = int(input(prompt))\\n        except ValueError:\\n            prompt = \"Bad input! Try again: \"\\n            continue\\n        if n > 0:\\n            return n\\n        prompt = \"Need a positive integer: \"\\n\\nn = read_positive(\"Enter an integer: \")\\nprint(f\"{n} is {\\'a perfect number\\' if is_perfect(n) else \\'not a perfect number\\'}\")'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-066",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 66 · Harder",
+      "kind": "coding",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "The function below is very important in probability and statistics. Write a Python function that takes in as parameters individual values for \\(\\mu\\) and \\(\\sigma\\) and a list of values for \\(x\\) and returns a list of the values of the function evaluated at those values. Don't forget to document your function!",
+        "\\(P(x)=\\frac{1}{\\sqrt{2 \\pi \\sigma^2}}e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}\\)",
+        "In your main code, call your function, then plot the results. Be sure to include a title and axis labels and show the plot."
+      ],
+      "text": "The function below is very important in probability and statistics. Write a Python function that takes in as parameters individual values for $\\mu$ and $\\sigma$ and a list of values for $x$ and returns a list of the values of the function evaluated at those values. **Don't forget to document your function!**\n\n$$P(x)=\\frac{1}{\\sqrt{2 \\pi \\sigma^2}}e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}$$\n\nIn your main code, call your function, then plot the results. Be sure to include a title and axis labels and show the plot.",
+      "answer": {
+        "blocks": [
+          {
+            "code": "from math import pi, sqrt, exp\nimport matplotlib.pyplot as plt\n\ndef normal_values(mu, sigma, xs):\n    \"\"\"Return normal-density values; sigma must be positive.\"\"\"\n    if sigma <= 0:\n        raise ValueError(\"sigma must be positive\")\n    result = []\n    for x in xs:\n        result.append(exp(-(x - mu) ** 2 / (2 * sigma ** 2)) / sqrt(2 * pi * sigma ** 2))\n    return result\n\nxs = [i / 20 for i in range(-80, 81)]\nys = normal_values(0, 1, xs)\nplt.plot(xs, ys)\nplt.xlabel(\"x\")\nplt.ylabel(\"P(x)\")\nplt.title(\"Normal probability density\")\nplt.show()"
+          }
+        ],
+        "text": "[{'code': 'from math import pi, sqrt, exp\\nimport matplotlib.pyplot as plt\\n\\ndef normal_values(mu, sigma, xs):\\n    \"\"\"Return normal-density values; sigma must be positive.\"\"\"\\n    if sigma <= 0:\\n        raise ValueError(\"sigma must be positive\")\\n    result = []\\n    for x in xs:\\n        result.append(exp(-(x - mu) ** 2 / (2 * sigma ** 2)) / sqrt(2 * pi * sigma ** 2))\\n    return result\\n\\nxs = [i / 20 for i in range(-80, 81)]\\nys = normal_values(0, 1, xs)\\nplt.plot(xs, ys)\\nplt.xlabel(\"x\")\\nplt.ylabel(\"P(x)\")\\nplt.title(\"Normal probability density\")\\nplt.show()'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-067",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 67 · Harder",
+      "kind": "coding",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "The Taylor series to approximate \\(\\cos(x)\\) for all values of x is defined as",
+        "\\(\\cos(x)=\\sum_{n=0}^{\\infty}\\frac{(-1)^n}{(2n)!}x^{2n}\\)",
+        "Write a Python function named tay_term that takes in as parameters values for \\(n\\) and \\(x\\), then calculates and returns the value of the term for only that value of \\(n\\). For example, if the values \\(n=3\\) and \\(x=0.5\\) are passed to the function, it would return",
+        "\\(\\frac{(-1)^3}{(2\\cdot3)!}0.5^{2\\cdot3}=-0.00002170138\\)",
+        "In your main code take as input from the user a value for \\(x\\), then approximate the value for cosine of \\(x\\) by starting at \\(n=0\\) and repeatedly call the function tay_term with increasing values of \\(n\\), and sum those returned values until the absolute value returned by the function is less than \\(10^{-7}\\). Display your result with seven (7) decimal places. Dont forget to document your function!",
+        "Example output:",
+        {
+          "code": "Enter a value for x: 0.5\nThe cosine of 0.5 is 0.8775825"
+        }
+      ],
+      "text": "The Taylor series to approximate $\\cos(x)$ for all values of x is defined as\n\n$$\\cos(x)=\\sum_{n=0}^{\\infty}\\frac{(-1)^n}{(2n)!}x^{2n}$$\n\nWrite a Python function named `tay_term` that takes in as parameters values for $n$ and $x$, then calculates and returns the value of the term for only that value of $n$. For example, if the values $n=3$ and $x=0.5$ are passed to the function, it would return \n\n$$\\frac{(-1)^3}{(2\\cdot3)!}0.5^{2\\cdot3}=-0.00002170138$$\n\nIn your main code take as input from the user a value for $x$, then approximate the value for cosine of $x$ by starting at $n=0$ and repeatedly call the function `tay_term` with increasing values of $n$, and sum those returned values until the absolute value returned by the function is less than $10^{-7}$. Display your result with seven (7) decimal places. **Dont forget to document your function!**\n\nExample output:\n```\nEnter a value for x: 0.5\nThe cosine of 0.5 is 0.8775825\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "from math import factorial\n\ndef tay_term(n, x):\n    \"\"\"Return term n of the Maclaurin series for cos(x), in radians.\"\"\"\n    return (-1) ** n * x ** (2 * n) / factorial(2 * n)\n\nx = float(input(\"Enter a value for x: \"))\ntotal = 0.0\nn = 0\nwhile True:\n    term = tay_term(n, x)\n    total += term\n    if abs(term) < 1e-7:\n        break\n    n += 1\nprint(f\"The cosine of {x} is {total:.7f}\")"
+          }
+        ],
+        "text": "[{'code': 'from math import factorial\\n\\ndef tay_term(n, x):\\n    \"\"\"Return term n of the Maclaurin series for cos(x), in radians.\"\"\"\\n    return (-1) ** n * x ** (2 * n) / factorial(2 * n)\\n\\nx = float(input(\"Enter a value for x: \"))\\ntotal = 0.0\\nn = 0\\nwhile True:\\n    term = tay_term(n, x)\\n    total += term\\n    if abs(term) < 1e-7:\\n        break\\n    n += 1\\nprint(f\"The cosine of {x} is {total:.7f}\")'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-068",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 68",
+      "kind": "coding",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Without knowing the contents of fileID.txt and after executing the following three lines of code, write an additional line of code that writes the first character and last character of file_string to myfile separated by a colon (:) and followed by a new line.",
+        {
+          "code": "with open(\"fileID.txt\", \"r\") as file1:\n    file_string = file1.read().strip()\nwith open(\"output_file.txt\", \"w\") as myfile:\n    ## your additional line of code goes here ##"
+        }
+      ],
+      "text": "Without knowing the contents of `fileID.txt` and after executing the following three lines of code, write an additional line of code that writes the first character and last character of `file_string` to `myfile` separated by a colon (`:`) and followed by a new line.\n\n```\nwith open(\"fileID.txt\", \"r\") as file1:\n    file_string = file1.read().strip()\nwith open(\"output_file.txt\", \"w\") as myfile:\n    ## your additional line of code goes here ##\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "myfile.write(file_string[0] + \":\" + file_string[-1] + \"\\n\")"
+          },
+          "Insert this inside the output-file with block. Assumes the stripped file is nonempty; an empty string has no first or last character."
+        ],
+        "text": "[{'code': 'myfile.write(file_string[0] + \":\" + file_string[-1] + \"\\\\n\")'}, 'Insert this inside the output-file with block. Assumes the stripped file is nonempty; an empty string has no first or last character.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-069",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 69",
+      "kind": "coding",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write a Python program that takes as input from the user a filename, opens the file, reads the contents, and counts how many times each letter appears, then prints the results to the screen. Combine uppercase and lowercase letters, and only print the letters that appear in the file. This problem is good practice for using dictionaries.",
+        "Example output:",
+        {
+          "code": "Enter a filename: sample.txt\nsample.txt contains the following letters:\na: 11, c: 6, d: 7, e: 8, f: 1, g: 2, h: 3, i: 2, l: 1, m: 4, n: 9, o: 8, p: 2, r: 8, s: 4, t: 9, u: 4, w: 2, y: 1"
+        }
+      ],
+      "text": "Write a Python program that takes as input from the user a filename, opens the file, reads the contents, and counts how many times each letter appears, then prints the results to the screen. Combine uppercase and lowercase letters, and only print the letters that appear in the file. This problem is good practice for using dictionaries.\n\nExample output:\n```\nEnter a filename: sample.txt\nsample.txt contains the following letters:\na: 11, c: 6, d: 7, e: 8, f: 1, g: 2, h: 3, i: 2, l: 1, m: 4, n: 9, o: 8, p: 2, r: 8, s: 4, t: 9, u: 4, w: 2, y: 1\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "filename = input(\"Enter a filename: \")\ncounts = {}\nwith open(filename) as file:\n    for character in file.read().lower():\n        if character.isalpha():\n            counts[character] = counts.get(character, 0) + 1\nprint(f\"{filename} contains the following letters:\")\nprint(\", \".join(f\"{letter}: {counts[letter]}\" for letter in sorted(counts)))"
+          }
+        ],
+        "text": "[{'code': 'filename = input(\"Enter a filename: \")\\ncounts = {}\\nwith open(filename) as file:\\n    for character in file.read().lower():\\n        if character.isalpha():\\n            counts[character] = counts.get(character, 0) + 1\\nprint(f\"{filename} contains the following letters:\")\\nprint(\", \".join(f\"{letter}: {counts[letter]}\" for letter in sorted(counts)))'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-070",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 70",
+      "kind": "coding",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write a Python program that will take as input from the user grades from a recent ENGR 102 quiz, save it to a file named grades.txt, and print the average quiz grade to the screen. Have your program prompt the user for the number of students first, and then take as input that many names and their corresponding scores. You may assume the user provides valid input. Write your code using standard file I/O commands. Use the format shown below for your output file, which includes a header line and aligned columns.",
+        "Example output:",
+        {
+          "code": "Enter the number of students: 5\nEnter the next name and score: Amari 85\nEnter the next name and score: Blake 76.5\nEnter the next name and score: Cameron 89\nEnter the next name and score: Dylan 59.5\nEnter the next name and score: Emerson 97\nThe average grade for this quiz is 81.4"
+        },
+        "Example grades.txt file:",
+        {
+          "code": "Name     Score\nAmari    85.0\nBlake    76.5\nCameron  89.0\nDylan    59.5\nEmerson  97.0"
+        }
+      ],
+      "text": "Write a Python program that will take as input from the user grades from a recent ENGR 102 quiz, save it to a file named `grades.txt`, and print the average quiz grade to the screen. Have your program prompt the user for the number of students first, and then take as input that many names and their corresponding scores. You may assume the user provides valid input. Write your code using standard file I/O commands. Use the format shown below for your output file, which includes a header line and aligned columns.\n\nExample output:\n```\nEnter the number of students: 5\nEnter the next name and score: Amari 85\nEnter the next name and score: Blake 76.5\nEnter the next name and score: Cameron 89\nEnter the next name and score: Dylan 59.5\nEnter the next name and score: Emerson 97\nThe average grade for this quiz is 81.4\n```\n\nExample `grades.txt` file:\n```\nName     Score\nAmari    85.0\nBlake    76.5\nCameron  89.0\nDylan    59.5\nEmerson  97.0\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "n = int(input(\"Enter the number of students: \"))\nrecords = []\ntotal = 0\nfor i in range(n):\n    name, score = input(\"Enter the next name and score: \").split()\n    score = float(score)\n    records.append((name, score))\n    total += score\nwidth = max([len(\"Name\")] + [len(name) for name, score in records]) + 2\nwith open(\"grades.txt\", \"w\") as file:\n    file.write(f\"{'Name':<{width}}Score\\n\")\n    for name, score in records:\n        file.write(f\"{name:<{width}}{score:.1f}\\n\")\nif n > 0:\n    print(f\"The average grade for this quiz is {total / n:g}\")\nelse:\n    print(\"No grades entered\")"
+          }
+        ],
+        "text": "[{'code': 'n = int(input(\"Enter the number of students: \"))\\nrecords = []\\ntotal = 0\\nfor i in range(n):\\n    name, score = input(\"Enter the next name and score: \").split()\\n    score = float(score)\\n    records.append((name, score))\\n    total += score\\nwidth = max([len(\"Name\")] + [len(name) for name, score in records]) + 2\\nwith open(\"grades.txt\", \"w\") as file:\\n    file.write(f\"{\\'Name\\':<{width}}Score\\\\n\")\\n    for name, score in records:\\n        file.write(f\"{name:<{width}}{score:.1f}\\\\n\")\\nif n > 0:\\n    print(f\"The average grade for this quiz is {total / n:g}\")\\nelse:\\n    print(\"No grades entered\")'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-071",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 71",
+      "kind": "coding",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "A file named item_cost.dat is stored on a computer's hard drive. In a text editor the file displays the first few lines of the file below. The rest of the file is not shown. Write a Python program that reads the contents of this file, determines the most expensive item and prints the information about that item and its cost to the screen using the format shown below. Write your code using standard file I/O commands; do not use the csv module or any csv reader available in some Python package. Do not use any built-in sorting functions. You may assume that all costs are unique (no two items cost the same).",
+        "Contents of item_cost.dat:",
+        {
+          "code": "Item,Cost ($)\nItem1,5.75\nItem2,3.50\nItem3,2.75\nItem4,4.50\n..."
+        },
+        "Example output:",
+        {
+          "code": "The most expensive item is Item67 and costs $8.19"
+        }
+      ],
+      "text": "A file named `item_cost.dat` is stored on a computer's hard drive. In a text editor the file displays the first few lines of the file below. The rest of the file is not shown. Write a Python program that reads the contents of this file, determines the most expensive item and prints the information about that item and its cost to the screen using the format shown below. Write your code using standard file I/O commands; do not use the csv module or any csv reader available in some Python package. Do not use any built-in sorting functions. You may assume that all costs are unique (no two items cost the same).\n\nContents of `item_cost.dat`:\n```\nItem,Cost ($)\nItem1,5.75\nItem2,3.50\nItem3,2.75\nItem4,4.50\n...\n```\n\nExample output:\n```\nThe most expensive item is Item67 and costs $8.19\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "best_name = None\nbest_cost = None\nwith open(\"item_cost.dat\") as file:\n    file.readline()\n    for line in file:\n        if not line.strip():\n            continue\n        name, cost = line.strip().split(\",\")\n        cost = float(cost)\n        if best_cost is None or cost > best_cost:\n            best_name, best_cost = name, cost\nif best_name is not None:\n    print(f\"The most expensive item is {best_name} and costs ${best_cost:.2f}\")\nelse:\n    print(\"No items found\")"
+          }
+        ],
+        "text": "[{'code': 'best_name = None\\nbest_cost = None\\nwith open(\"item_cost.dat\") as file:\\n    file.readline()\\n    for line in file:\\n        if not line.strip():\\n            continue\\n        name, cost = line.strip().split(\",\")\\n        cost = float(cost)\\n        if best_cost is None or cost > best_cost:\\n            best_name, best_cost = name, cost\\nif best_name is not None:\\n    print(f\"The most expensive item is {best_name} and costs ${best_cost:.2f}\")\\nelse:\\n    print(\"No items found\")'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-072",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 72",
+      "kind": "coding",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "A file named grades.txt contains exam grades. There is no header and each grade is on a new line in the file (the file contains only numbers). Write a Python program that opens the file, calculates the average, maximum, and minimum scores, then prints the information to the screen. Write your code using standard file I/O commands; do not use the csv module or any csv reader available in some Python package."
+      ],
+      "text": "A file named `grades.txt` contains exam grades. There is no header and each grade is on a new line in the file (the file contains only numbers). Write a Python program that opens the file, calculates the average, maximum, and minimum scores, then prints the information to the screen. Write your code using standard file I/O commands; do not use the csv module or any csv reader available in some Python package.",
+      "answer": {
+        "blocks": [
+          {
+            "code": "grades = []\nwith open(\"grades.txt\") as file:\n    for line in file:\n        if line.strip():\n            grades.append(float(line))\nif grades:\n    print(\"Average:\", sum(grades) / len(grades))\n    print(\"Maximum:\", max(grades))\n    print(\"Minimum:\", min(grades))\nelse:\n    print(\"No grades found\")"
+          }
+        ],
+        "text": "[{'code': 'grades = []\\nwith open(\"grades.txt\") as file:\\n    for line in file:\\n        if line.strip():\\n            grades.append(float(line))\\nif grades:\\n    print(\"Average:\", sum(grades) / len(grades))\\n    print(\"Maximum:\", max(grades))\\n    print(\"Minimum:\", min(grades))\\nelse:\\n    print(\"No grades found\")'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-073",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 73",
+      "kind": "coding",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "A sentence is a set of words that are separated by a single space with no leading or trailing spaces. The file sentences.txt contains many sentences, one on each line. A sample is shown below, the entire file is over one hundred lines long. Write a Python program to read the contents of this file and print the maximum number of words that appear in a single sentence.",
+        "Contents of sentences.txt:",
+        {
+          "code": "This is a sentence.\nThis is also a sentence!\nThe quick brown fox jumped over the lazy dog.\nHow much wood can a woodchuck chuck if a woodchuck could chuck wood?\n..."
+        },
+        "Example output:",
+        {
+          "code": "The maximum number of words in a single sentence is 29"
+        }
+      ],
+      "text": "A sentence is a set of words that are separated by a single space with no leading or trailing spaces. The file `sentences.txt` contains many sentences, one on each line. A sample is shown below, the entire file is over one hundred lines long. Write a Python program to read the contents of this file and print the maximum number of words that appear in a single sentence.\n\nContents of `sentences.txt`:\n```\nThis is a sentence.\nThis is also a sentence!\nThe quick brown fox jumped over the lazy dog.\nHow much wood can a woodchuck chuck if a woodchuck could chuck wood?\n...\n```\n\nExample output:\n```\nThe maximum number of words in a single sentence is 29\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "maximum = 0\nwith open(\"sentences.txt\") as file:\n    for line in file:\n        maximum = max(maximum, len(line.split()))\nprint(f\"The maximum number of words in a single sentence is {maximum}\")"
+          }
+        ],
+        "text": "[{'code': 'maximum = 0\\nwith open(\"sentences.txt\") as file:\\n    for line in file:\\n        maximum = max(maximum, len(line.split()))\\nprint(f\"The maximum number of words in a single sentence is {maximum}\")'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-074",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 74 · Harder",
+      "kind": "coding",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "A text file named data.dat is stored on a computer's hard drive. In a text editor the file displays the snippet below. The entire file is over one hundred lines long.",
+        "Contents of data.dat:",
+        {
+          "code": "# Created on November 5, 2025 \n# Time,Temperature,Windspeed \n# (min),(deg F),(knots) \n0,33.47,1.27 \n5,32.59,1.95 \n10,33.62,0.76 \n15,33.79,1.12\n..."
+        },
+        "Write a Python program that reads the contents of this file, assigns the header lines to a variable that is a list of strings, and assigns the data to a variable that is a floating point numpy array that contains all of the data in the file. (The data should be in an \\(n\\)x3 array.) Then, find and print the minimum temperature and maximum windspeed recorded in the file. Write this code using standard file I/O commands; do not use the csv module or any other csv reader that you may know of in some Python package.",
+        "Example output (using the entire file):",
+        {
+          "code": "Minimum temperature is 31.28 F\nMaximum windspeed is 7.82 knots"
+        }
+      ],
+      "text": "A text file named `data.dat` is stored on a computer's hard drive. In a text editor the file displays the snippet below. The entire file is over one hundred lines long.\n\nContents of `data.dat`:\n```\n# Created on November 5, 2025 \n# Time,Temperature,Windspeed \n# (min),(deg F),(knots) \n0,33.47,1.27 \n5,32.59,1.95 \n10,33.62,0.76 \n15,33.79,1.12\n...\n```\n\nWrite a Python program that reads the contents of this file, assigns the header lines to a variable that is a list of strings, and assigns the data to a variable that is a floating point numpy array that contains all of the data in the file. (The data should be in an $n$x3 array.) Then, find and print the minimum temperature and maximum windspeed recorded in the file. Write this code using standard file I/O commands; do not use the csv module or any other csv reader that you may know of in some Python package.\n\nExample output (using the entire file):\n```\nMinimum temperature is 31.28 F\nMaximum windspeed is 7.82 knots\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "import numpy as np\nheaders = []\nrows = []\nwith open(\"data.dat\") as file:\n    for line in file:\n        if line.lstrip().startswith(\"#\"):\n            headers.append(line.rstrip(\"\\n\"))\n        elif line.strip():\n            fields = line.strip().split(\",\")\n            rows.append([float(value) for value in fields])\ndata = np.array(rows, dtype=float).reshape(-1, 3)\nif len(data):\n    print(f\"Minimum temperature is {data[:, 1].min():.2f} F\")\n    print(f\"Maximum windspeed is {data[:, 2].max():.2f} knots\")\nelse:\n    print(\"No data rows\")"
+          }
+        ],
+        "text": "[{'code': 'import numpy as np\\nheaders = []\\nrows = []\\nwith open(\"data.dat\") as file:\\n    for line in file:\\n        if line.lstrip().startswith(\"#\"):\\n            headers.append(line.rstrip(\"\\\\n\"))\\n        elif line.strip():\\n            fields = line.strip().split(\",\")\\n            rows.append([float(value) for value in fields])\\ndata = np.array(rows, dtype=float).reshape(-1, 3)\\nif len(data):\\n    print(f\"Minimum temperature is {data[:, 1].min():.2f} F\")\\n    print(f\"Maximum windspeed is {data[:, 2].max():.2f} knots\")\\nelse:\\n    print(\"No data rows\")'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-075",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 75 · Harder",
+      "kind": "coding",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "A file named peanut.dat is stored on a computer's hard drive. In a text editor the file displays the first few lines of the file below. The rest of the file is not shown. Write a Python program that reads the contents of this file and prints the number, major diameter, minor diameter, and diameter ratio of each peanut. Format the output as shown below. You MUST use f-strings; do NOT use the round() function. Write your code using standard file I/O commands; do not use the csv module or any csv reader available in some Python package.",
+        "Contents of peanut.dat:",
+        {
+          "code": "Number    MajorDia    MinorDia\n     1       17.61        5.46\n     2       16.47        5.87\n     3       18.08        6.12\n..."
+        },
+        "Example output:",
+        {
+          "code": "Number MajorDia MinorDia Ratio\n   1     17.61    5.46   3.23\n   2     16.47    5.83   2.81\n   3     18.08    6.12   2.95\n..."
+        }
+      ],
+      "text": "A file named `peanut.dat` is stored on a computer's hard drive. In a text editor the file displays the first few lines of the file below. The rest of the file is not shown. Write a Python program that reads the contents of this file and prints the number, major diameter, minor diameter, and diameter ratio of each peanut. Format the output as shown below. You MUST use f-strings; do NOT use the `round()` function. Write your code using standard file I/O commands; do not use the csv module or any csv reader available in some Python package.\n\nContents of `peanut.dat`:\n```\nNumber    MajorDia    MinorDia\n     1       17.61        5.46\n     2       16.47        5.87\n     3       18.08        6.12\n...\n```\n\nExample output:\n```\nNumber MajorDia MinorDia Ratio\n   1     17.61    5.46   3.23\n   2     16.47    5.83   2.81\n   3     18.08    6.12   2.95\n...\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "print(\"Number MajorDia MinorDia Ratio\")\nwith open(\"peanut.dat\") as file:\n    file.readline()\n    for line in file:\n        if not line.strip():\n            continue\n        number, major, minor = line.split()\n        number, major, minor = int(number), float(major), float(minor)\n        ratio = major / minor\n        print(f\"{number:4d} {major:9.2f} {minor:7.2f} {ratio:6.2f}\")"
+          },
+          "The source sample output has a typo: row 2 input says 5.87, but output says 5.83. The supplied input yields minor diameter 5.87 and ratio 2.81; do not change the input to match the typo."
+        ],
+        "text": "[{'code': 'print(\"Number MajorDia MinorDia Ratio\")\\nwith open(\"peanut.dat\") as file:\\n    file.readline()\\n    for line in file:\\n        if not line.strip():\\n            continue\\n        number, major, minor = line.split()\\n        number, major, minor = int(number), float(major), float(minor)\\n        ratio = major / minor\\n        print(f\"{number:4d} {major:9.2f} {minor:7.2f} {ratio:6.2f}\")'}, 'The source sample output has a typo: row 2 input says 5.87, but output says 5.83. The supplied input yields minor diameter 5.87 and ratio 2.81; do not change the input to match the typo.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-076",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 76 · Harder",
+      "kind": "coding",
+      "difficulty": "hard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "It's flounder fishing season! The Fishing Pier Company is keeping track of each fisherman's catch in a file named fishtotals.txt. A sample is shown below, the entire file is over 100 lines long.",
+        "Contents of fishtotals.txt:",
+        {
+          "code": "Fisherman A: catfish 12 inches, tarpon 20 inches\nFisherman B: trout 15 inches, flounder 20 inches\nFisherman C: flounder 12 inches, redfish 20 inches, flounder 16 inches\n..."
+        },
+        "Write a Python program that reads the contents of fishtotals.txt, identifies each flounder caught along with its size, and writes the information to a new file named flounder.txt. At the end of the file include the total number of flounders caught. Write your code using standard file I/O commands; do not use the csv module or any csv reader available in some Python package.",
+        "Contents of flounder.txt:",
+        {
+          "code": "Fisherman B: flounder 20 inches\nFisherman C: flounder 12 inches, flounder 16 inches\n...\nTotal: 102 flounders caught"
+        }
+      ],
+      "text": "It's flounder fishing season! The Fishing Pier Company is keeping track of each fisherman's catch in a file named `fishtotals.txt`. A sample is shown below, the entire file is over 100 lines long. \n\nContents of `fishtotals.txt`:\n```\nFisherman A: catfish 12 inches, tarpon 20 inches\nFisherman B: trout 15 inches, flounder 20 inches\nFisherman C: flounder 12 inches, redfish 20 inches, flounder 16 inches\n...\n```\n\nWrite a Python program that reads the contents of `fishtotals.txt`, identifies each flounder caught along with its size, and writes the information to a new file named `flounder.txt`. At the end of the file include the total number of flounders caught. Write your code using standard file I/O commands; do not use the csv module or any csv reader available in some Python package.\n\nContents of `flounder.txt`:\n```\nFisherman B: flounder 20 inches\nFisherman C: flounder 12 inches, flounder 16 inches\n...\nTotal: 102 flounders caught\n```",
+      "answer": {
+        "blocks": [
+          {
+            "code": "total = 0\nwith open(\"fishtotals.txt\") as infile, open(\"flounder.txt\", \"w\") as outfile:\n    for line in infile:\n        if not line.strip():\n            continue\n        fisherman, catches = line.strip().split(\":\", 1)\n        kept = []\n        for catch in catches.split(\",\"):\n            fields = catch.strip().split()\n            if fields and fields[0].lower() == \"flounder\":\n                kept.append(\" \".join(fields))\n                total += 1\n        if kept:\n            outfile.write(f\"{fisherman}: {', '.join(kept)}\\n\")\n    outfile.write(f\"Total: {total} flounders caught\\n\")"
+          }
+        ],
+        "text": "[{'code': 'total = 0\\nwith open(\"fishtotals.txt\") as infile, open(\"flounder.txt\", \"w\") as outfile:\\n    for line in infile:\\n        if not line.strip():\\n            continue\\n        fisherman, catches = line.strip().split(\":\", 1)\\n        kept = []\\n        for catch in catches.split(\",\"):\\n            fields = catch.strip().split()\\n            if fields and fields[0].lower() == \"flounder\":\\n                kept.append(\" \".join(fields))\\n                total += 1\\n        if kept:\\n            outfile.write(f\"{fisherman}: {\\', \\'.join(kept)}\\\\n\")\\n    outfile.write(f\"Total: {total} flounders caught\\\\n\")'}]"
+      }
+    },
+    {
+      "id": "ENGR-E2-077",
+      "review": "engr-exam2",
+      "section": "code",
+      "title": "Problem 77",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Draw the plot produced by the following code:",
+        {
+          "code": "import numpy as np\nimport matplotlib.pyplot as plt\nx = np.linspace(-2, 2, 25)\ny1 = x\ny2 = x ** 2\nplt.plot(x, y1, \"g\", linewidth = 3)\nplt.plot(x, y2, \"k\", marker = \"o\", markerfacecolor = \"b\")\nplt.axis([-2, 2, -2, 4])\nplt.xlabel(\"x\")\nplt.ylabel(\"f(x) \")\nplt.title(\"Plots for 2 polynomials\")\nplt.legend([\"straight\", \"curved\"], loc = \"upper center\")\nplt.show()"
+        }
+      ],
+      "text": "Draw the plot produced by the following code:\n```\nimport numpy as np\nimport matplotlib.pyplot as plt\nx = np.linspace(-2, 2, 25)\ny1 = x\ny2 = x ** 2\nplt.plot(x, y1, \"g\", linewidth = 3)\nplt.plot(x, y2, \"k\", marker = \"o\", markerfacecolor = \"b\")\nplt.axis([-2, 2, -2, 4])\nplt.xlabel(\"x\")\nplt.ylabel(\"f(x) \")\nplt.title(\"Plots for 2 polynomials\")\nplt.legend([\"straight\", \"curved\"], loc = \"upper center\")\nplt.show()\n```",
+      "answer": {
+        "blocks": [
+          "Draw y=x as a green line of width 3 and y=x² as a black curve with blue-filled circle markers at 25 equally spaced x values from -2 to 2. Limits: x from -2 to 2, y from -2 to 4. Labels: x and f(x). Title: Plots for 2 polynomials. Legend at upper center: straight, curved."
+        ],
+        "text": "['Draw y=x as a green line of width 3 and y=x² as a black curve with blue-filled circle markers at 25 equally spaced x values from -2 to 2. Limits: x from -2 to 2, y from -2 to 4. Labels: x and f(x). Title: Plots for 2 polynomials. Legend at upper center: straight, curved.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-078",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 78",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "List 5 good coding practices that have been mentioned in this course."
+      ],
+      "text": "List 5 good coding practices that have been mentioned in this course.",
+      "answer": {
+        "blocks": [
+          "Use descriptive names, consistent indentation, useful comments/docstrings, small focused functions, and tests including boundary cases. These are representative good practices; the pasted source does not enumerate the course’s exact five."
+        ],
+        "text": "['Use descriptive names, consistent indentation, useful comments/docstrings, small focused functions, and tests including boundary cases. These are representative good practices; the pasted source does not enumerate the course’s exact five.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-079",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 79",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "In the following dictionary, identify the keys and values. Write the command to add the key \"Orange\" with value 1 to the dictionary. Write code to loop through the dictionary and check for a particular key or value.",
+        {
+          "code": "mydict = {\"Apple\" : 3, \"Pear\" : 5, \"Banana\" : 2}"
+        }
+      ],
+      "text": "In the following dictionary, identify the keys and values. Write the command to add the key `\"Orange\"` with value `1` to the dictionary. Write code to loop through the dictionary and check for a particular key or value.\n```\nmydict = {\"Apple\" : 3, \"Pear\" : 5, \"Banana\" : 2}\n```",
+      "answer": {
+        "blocks": [
+          "Keys: Apple, Pear, Banana. Values: 3, 5, 2. Add with mydict[\"Orange\"] = 1. Loop over keys and compare key or mydict[key] with the desired target."
+        ],
+        "text": "['Keys: Apple, Pear, Banana. Values: 3, 5, 2. Add with mydict[\"Orange\"] = 1. Loop over keys and compare key or mydict[key] with the desired target.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-080",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 80",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Explain how dictionaries are different from lists, and how lists are different from tuples."
+      ],
+      "text": "Explain how dictionaries are different from lists, and how lists are different from tuples.",
+      "answer": {
+        "blocks": [
+          "Dictionaries map unique hashable keys to values; lists are ordered mutable sequences indexed by position. Tuples are ordered sequences whose slots cannot be reassigned. Lists and dictionaries are mutable; a tuple can still contain a mutable object."
+        ],
+        "text": "['Dictionaries map unique hashable keys to values; lists are ordered mutable sequences indexed by position. Tuples are ordered sequences whose slots cannot be reassigned. Lists and dictionaries are mutable; a tuple can still contain a mutable object.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-081",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 81",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Identify and explain 3 ways strings are similar to lists."
+      ],
+      "text": "Identify and explain 3 ways strings are similar to lists.",
+      "answer": {
+        "blocks": [
+          "Strings and lists are ordered, support indexing and slicing, and can be traversed with loops. Both support len() and membership. Strings are immutable; lists are mutable."
+        ],
+        "text": "['Strings and lists are ordered, support indexing and slicing, and can be traversed with loops. Both support len() and membership. Strings are immutable; lists are mutable.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-082",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 82",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "List all of the data types we have seen in this course and provide an example of each. Identify which ones are mutable and which are immutable."
+      ],
+      "text": "List all of the data types we have seen in this course and provide an example of each. Identify which ones are mutable and which are immutable.",
+      "answer": {
+        "blocks": [
+          "Common course types: int (3), float (3.5), bool (True), str (\"Hi\"), list ([1,2]), tuple ((1,2)), dict ({\"a\":1}), and NoneType (None). Lists and dictionaries are mutable; the others listed are immutable. NumPy ndarray is mutable. The supplied practice sheet does not establish an exhaustive syllabus-wide list."
+        ],
+        "text": "['Common course types: int (3), float (3.5), bool (True), str (\"Hi\"), list ([1,2]), tuple ((1,2)), dict ({\"a\":1}), and NoneType (None). Lists and dictionaries are mutable; the others listed are immutable. NumPy ndarray is mutable. The supplied practice sheet does not establish an exhaustive syllabus-wide list.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-083",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 83",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "In your own words, explain the difference between the top-down and bottom-up design methods. Name at least one advantage and one disadvantage for each."
+      ],
+      "text": "In your own words, explain the difference between the top-down and bottom-up design methods. Name at least one advantage and one disadvantage for each.",
+      "answer": {
+        "blocks": [
+          "Top-down divides a large goal into smaller tasks: clear overall structure, but low-level constraints may surface late. Bottom-up builds and combines small components: reusable and independently testable pieces, but integration and overall direction can be harder."
+        ],
+        "text": "['Top-down divides a large goal into smaller tasks: clear overall structure, but low-level constraints may surface late. Bottom-up builds and combines small components: reusable and independently testable pieces, but integration and overall direction can be harder.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-084",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 84",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Describe the various components of a hierarchy. How can we use one in program design?"
+      ],
+      "text": "Describe the various components of a hierarchy. How can we use one in program design?",
+      "answer": {
+        "blocks": [
+          "A hierarchy has a root, nodes, parent–child relationships, and leaves. In program design, refine major tasks into subtasks until leaf tasks are straightforward to implement."
+        ],
+        "text": "['A hierarchy has a root, nodes, parent–child relationships, and leaves. In program design, refine major tasks into subtasks until leaf tasks are straightforward to implement.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-085",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 85",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Does it matter if we use the same variable names inside a user defined function and the main program? Why (not)?"
+      ],
+      "text": "Does it matter if we use the same variable names inside a user defined function and the main program? Why (not)?",
+      "answer": {
+        "blocks": [
+          "Usually no: each function call has its own local bindings. Rebinding a local name does not reassign an identically named global. Mutating a shared object can affect the caller, and global explicitly changes binding rules."
+        ],
+        "text": "['Usually no: each function call has its own local bindings. Rebinding a local name does not reassign an identically named global. Mutating a shared object can affect the caller, and global explicitly changes binding rules.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-086",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 86",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Does it matter where in our code we write function definitions?"
+      ],
+      "text": "Does it matter where in our code we write function definitions?",
+      "answer": {
+        "blocks": [
+          "A def statement must execute before the function is called. A function can refer to another function defined later in the file if the later definition executes before that call actually occurs."
+        ],
+        "text": "['A def statement must execute before the function is called. A function can refer to another function defined later in the file if the later definition executes before that call actually occurs.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-087",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 87",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Can functions access main memory? How do we pass information into a function? Can functions return multiple values?"
+      ],
+      "text": "Can functions access main memory? How do we pass information into a function? Can functions return multiple values?",
+      "answer": {
+        "blocks": [
+          "Functions can read module globals unless shadowed, but assigning a name normally makes it local. Pass information with arguments bound to parameters. return a, b returns one tuple, which can be unpacked into multiple names."
+        ],
+        "text": "['Functions can read module globals unless shadowed, but assigning a name normally makes it local. Pass information with arguments bound to parameters. return a, b returns one tuple, which can be unpacked into multiple names.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-088",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 88",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "What type of coding error do you hate the most and why?"
+      ],
+      "text": "What type of coding error do you hate the most and why?",
+      "answer": {
+        "blocks": [
+          "Open-ended example: logic errors are frustrating because the program runs but produces a wrong result. Explain your own choice; there is no unique correct answer."
+        ],
+        "text": "['Open-ended example: logic errors are frustrating because the program runs but produces a wrong result. Explain your own choice; there is no unique correct answer.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-089",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 89",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Explain what happens when the following code is executed: print(int(\"5.5\"))"
+      ],
+      "text": "Explain what happens when the following code is executed: `print(int(\"5.5\"))`",
+      "answer": {
+        "blocks": [
+          "int(\"5.5\") raises ValueError; print never receives a value. int(float(\"5.5\")) would produce 5 by truncating toward zero, if that behavior is intended."
+        ],
+        "text": "['int(\"5.5\") raises ValueError; print never receives a value. int(float(\"5.5\")) would produce 5 by truncating toward zero, if that behavior is intended.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-090",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 90",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "When you are trying to fix your code, what are some alternatives to using a debugger?"
+      ],
+      "text": "When you are trying to fix your code, what are some alternatives to using a debugger?",
+      "answer": {
+        "blocks": [
+          "Trace with a variable table, add temporary print statements, reduce to a small failing example, test boundaries, read the traceback, and explain the algorithm aloud or to another person."
+        ],
+        "text": "['Trace with a variable table, add temporary print statements, reduce to a small failing example, test boundaries, read the traceback, and explain the algorithm aloud or to another person.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-091",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 91",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "When would it be best to use the myfile = open(...) and myfile.close() commands for opening files as opposed to the with open(...) as myfile: command?"
+      ],
+      "text": "When would it be best to use the `myfile = open(...)` and `myfile.close()` commands for opening files as opposed to the `with open(...) as myfile:` command?",
+      "answer": {
+        "blocks": [
+          "Use explicit open/close when the file’s lifetime must span code that does not fit one with block, such as a file object returned to a caller. Use try/finally to guarantee closing. Prefer with for ordinary file processing."
+        ],
+        "text": "['Use explicit open/close when the file’s lifetime must span code that does not fit one with block, such as a file object returned to a caller. Use try/finally to guarantee closing. Prefer with for ordinary file processing.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-092",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 92",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "When opening files, what is the difference between the designators r, w, r+, and a?"
+      ],
+      "text": "When opening files, what is the difference between the designators `r`, `w`, `r+`, and `a`?",
+      "answer": {
+        "blocks": [
+          "r reads an existing file and fails if missing. w writes, truncating an existing file or creating a new one. r+ reads/writes an existing file without initially truncating; it fails if missing. a writes at the end, creating the file if needed."
+        ],
+        "text": "['r reads an existing file and fails if missing. w writes, truncating an existing file or creating a new one. r+ reads/writes an existing file without initially truncating; it fails if missing. a writes at the end, creating the file if needed.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-093",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 93",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "What are the differences between myfile.read(), myfile.readline(), myfile.readlines(), and list(myfile)?"
+      ],
+      "text": "What are the differences between `myfile.read()`, `myfile.readline()`, `myfile.readlines()`, and `list(myfile)`?",
+      "answer": {
+        "blocks": [
+          "read() returns all remaining text as one string; readline() returns the next line as a string, or \"\" at EOF; readlines() and list(file) return remaining lines as a list of strings. These consume the file from its current position."
+        ],
+        "text": "['read() returns all remaining text as one string; readline() returns the next line as a string, or \"\" at EOF; readlines() and list(file) return remaining lines as a list of strings. These consume the file from its current position.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-094",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 94",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "What command(s) are used to remove the leading and trailing whitespace in a string? To separate a string into a list of its components with a specified delimiter? Write an example using both."
+      ],
+      "text": "What command(s) are used to remove the leading and trailing whitespace in a string? To separate a string into a list of its components with a specified delimiter? Write an example using both.",
+      "answer": {
+        "blocks": [
+          "strip() removes leading/trailing whitespace; split(delimiter) separates into a list. Example: fields = \" 12,25\\n\".strip().split(\",\") gives [\"12\", \"25\"]."
+        ],
+        "text": "['strip() removes leading/trailing whitespace; split(delimiter) separates into a list. Example: fields = \" 12,25\\\\n\".strip().split(\",\") gives [\"12\", \"25\"].']"
+      }
+    },
+    {
+      "id": "ENGR-E2-095",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 95",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the command to print the value of pi to 4 decimal places to the screen. Don't forget to import pi from the math module!"
+      ],
+      "text": "Write the command to print the value of `pi` to 4 decimal places to the screen. Don't forget to import `pi` from the `math` module!",
+      "answer": {
+        "blocks": [
+          "from math import pi\nprint(f\"{pi:.4f}\")\n\nOutput: 3.1416"
+        ],
+        "text": "['from math import pi\\nprint(f\"{pi:.4f}\")\\n\\nOutput: 3.1416']"
+      }
+    },
+    {
+      "id": "ENGR-E2-096",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 96",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Write the command to import the coolfunc function from the neatomod module in the funpack package and rename it to coolf. Now write the command to import all functions from the neatomod module. What command can we use to display all of the functions inside the module?"
+      ],
+      "text": "Write the command to import the `coolfunc` function from the `neatomod` module in the `funpack` package and rename it to `coolf`. Now write the command to import all functions from the `neatomod` module. What command can we use to display all of the functions inside the module?",
+      "answer": {
+        "blocks": [
+          "from funpack.neatomod import coolfunc as coolf\nfrom funpack.neatomod import *\n\nFor inspection: import funpack.neatomod as neatomod; dir(neatomod). dir lists names, not only functions; help(neatomod) shows documentation. Star import respects __all__ when defined and otherwise excludes underscore-prefixed names."
+        ],
+        "text": "['from funpack.neatomod import coolfunc as coolf\\nfrom funpack.neatomod import *\\n\\nFor inspection: import funpack.neatomod as neatomod; dir(neatomod). dir lists names, not only functions; help(neatomod) shows documentation. Star import respects __all__ when defined and otherwise excludes underscore-prefixed names.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-097",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 97",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "What are the differences between np.arange(), np.array(), and np.linspace()? How many rows and columns will the matrix np.arange(15).reshape(5, 3) have?"
+      ],
+      "text": "What are the differences between `np.arange()`, `np.array()`, and `np.linspace()`? How many rows and columns will the matrix `np.arange(15).reshape(5, 3)` have?",
+      "answer": {
+        "blocks": [
+          "np.arange generates values using a step; np.array constructs an array from supplied data; np.linspace generates a requested number of equally spaced values, including the endpoint by default. reshape(5,3) has 5 rows and 3 columns."
+        ],
+        "text": "['np.arange generates values using a step; np.array constructs an array from supplied data; np.linspace generates a requested number of equally spaced values, including the endpoint by default. reshape(5,3) has 5 rows and 3 columns.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-098",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 98",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "What are the differences between plt.plot(), plt.bar(), plt.hist(), and plt.scatter()? How do you set the color of a line? The marker shapes? The axis labels? The title? The legend?"
+      ],
+      "text": "What are the differences between `plt.plot()`, `plt.bar()`, `plt.hist()`, and `plt.scatter()`? How do you set the color of a line? The marker shapes? The axis labels? The title? The legend?",
+      "answer": {
+        "blocks": [
+          "plot: connected lines; bar: bars for categories/positions; hist: frequencies in numeric bins; scatter: independent points. Use color= and marker=, then xlabel(), ylabel(), title(), and legend() with labeled series."
+        ],
+        "text": "['plot: connected lines; bar: bars for categories/positions; hist: frequencies in numeric bins; scatter: independent points. Use color= and marker=, then xlabel(), ylabel(), title(), and legend() with labeled series.']"
+      }
+    },
+    {
+      "id": "ENGR-E2-099",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Problem 99",
+      "kind": "frq",
+      "difficulty": "standard",
+      "practiceSet": "engr-exam2",
+      "body": [
+        "Why is it important to include docstrings when writing functions?"
+      ],
+      "text": "Why is it important to include docstrings when writing functions?",
+      "answer": {
+        "blocks": [
+          "Docstrings explain a function’s purpose, parameters, return values, assumptions, and units. They support help(), improve reuse, and reduce mistakes at call sites."
+        ],
+        "text": "['Docstrings explain a function’s purpose, parameters, return values, assumptions, and units. They support help(), improve reuse, and reduce mistakes at call sites.']"
+      }
     }
   ],
   "guides": [
@@ -29215,6 +31608,17 @@
           ]
         }
       ]
+    },
+    {
+      "id": "ENGR-E2-checklist",
+      "review": "engr-exam2",
+      "section": "concept",
+      "title": "Source checklist · items 100–102",
+      "body": [
+        "100. Review lecture examples and quizzes.",
+        "101. Review textbook examples.",
+        "102. Review optional labs for more coding practice."
+      ]
     }
   ],
   "reviews": [
@@ -29265,6 +31669,11 @@
       "id": "pols-exam-2",
       "title": "Exam 2 · Vocabulary",
       "course": "POLS 207"
+    },
+    {
+      "id": "engr-exam2",
+      "title": "ENGR 102 · Exam 2 review",
+      "course": "ENGR 102"
     }
   ],
   "chemistryExam2": {

@@ -27702,7 +27702,8 @@
           "Exact output as a Python string: '[82, 85, 88, 96]'"
         ],
         "text": "[{'code': '[82, 85, 88, 96]'}, \"Exact output as a Python string: '[82, 85, 88, 96]'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-002",
@@ -27727,7 +27728,8 @@
           "Exact output as a Python string: '3 + j\\n'"
         ],
         "text": "[{'code': '3 + j'}, \"Exact output as a Python string: '3 + j\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-003",
@@ -27752,7 +27754,9 @@
           "Exact output as a Python string: '74\\n'"
         ],
         "text": "[{'code': '74'}, \"Exact output as a Python string: '74\\\\n'\"]"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Loops and control flow"
     },
     {
       "id": "ENGR-E2-004",
@@ -27777,7 +27781,8 @@
           "Exact output as a Python string: '\"A\" is for 12 Apples!'"
         ],
         "text": "[{'code': '\"A\" is for 12 Apples!'}, 'Exact output as a Python string: \\'\"A\" is for 12 Apples!\\'']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-005",
@@ -27802,7 +27807,8 @@
           "Exact output as a Python string: \"1, 2, 3, 4, and that's it...or is it? \""
         ],
         "text": "[{'code': \"1, 2, 3, 4, and that's it...or is it? \"}, 'Exact output as a Python string: \"1, 2, 3, 4, and that\\'s it...or is it? \"']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-006",
@@ -27827,7 +27833,8 @@
           "Exact output as a Python string: 'Hi Ann\\n'"
         ],
         "text": "[{'code': 'Hi Ann'}, \"Exact output as a Python string: 'Hi Ann\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-007",
@@ -27852,7 +27859,8 @@
           "Exact output as a Python string: 'Sunspot>Calendar\\n'"
         ],
         "text": "[{'code': 'Sunspot>Calendar'}, \"Exact output as a Python string: 'Sunspot>Calendar\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-008",
@@ -27877,7 +27885,8 @@
           "Exact output as a Python string: 'Length: 5\\nMax: 5\\nMin: 1\\nCrazy: 3\\n'"
         ],
         "text": "[{'code': 'Length: 5\\nMax: 5\\nMin: 1\\nCrazy: 3'}, \"Exact output as a Python string: 'Length: 5\\\\nMax: 5\\\\nMin: 1\\\\nCrazy: 3\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-009",
@@ -27903,7 +27912,9 @@
           "The pasted typographic dash was normalized to Python’s minus sign."
         ],
         "text": "[{'code': 'Total fruit inventory equals: 2 apples + 3 oranges + 4 bananas = 9 fruit'}, \"Exact output as a Python string: 'Total fruit inventory equals: 2 apples + 3 oranges + 4 bananas = 9 fruit\\\\n'\", 'The pasted typographic dash was normalized to Python’s minus sign.']"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Dictionaries and iteration"
     },
     {
       "id": "ENGR-E2-010",
@@ -27929,7 +27940,8 @@
           "The pasted typographic dash was normalized to Python’s minus sign."
         ],
         "text": "[{'code': '23 : 5'}, \"Exact output as a Python string: '23 : 5\\\\n'\", 'The pasted typographic dash was normalized to Python’s minus sign.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-011",
@@ -27954,7 +27966,9 @@
           "Exact output as a Python string: '300131'"
         ],
         "text": "[{'code': '300131'}, \"Exact output as a Python string: '300131'\"]"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Lists, tuples, aliasing"
     },
     {
       "id": "ENGR-E2-012",
@@ -27976,7 +27990,8 @@
           "TypeError: can't multiply sequence by non-int of type 'tuple'"
         ],
         "text": "[\"TypeError: can't multiply sequence by non-int of type 'tuple'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-013",
@@ -28001,7 +28016,9 @@
           "Exact output as a Python string: \"('Howdy', [2, 0, 2, 9])\\n\""
         ],
         "text": "[{'code': \"('Howdy', [2, 0, 2, 9])\"}, 'Exact output as a Python string: \"(\\'Howdy\\', [2, 0, 2, 9])\\\\n\"']"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Mutability"
     },
     {
       "id": "ENGR-E2-014",
@@ -28026,7 +28043,8 @@
           "Exact output as a Python string: '5\\n5\\n'"
         ],
         "text": "[{'code': '5\\n5'}, \"Exact output as a Python string: '5\\\\n5\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-015",
@@ -28051,7 +28069,8 @@
           "Exact output as a Python string: '3\\n'"
         ],
         "text": "[{'code': '3'}, \"Exact output as a Python string: '3\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-016",
@@ -28077,7 +28096,8 @@
           "The module label and spacing can vary by Python environment."
         ],
         "text": "['help() displays the function signature and docstring; it does not call myfun.', {'code': 'Help on function myfun ...\\n\\nmyfun()\\n    This function prints a message.'}, 'The module label and spacing can vary by Python environment.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-017",
@@ -28102,7 +28122,9 @@
           "Exact output as a Python string: '6 / 3 = 2\\n'"
         ],
         "text": "[{'code': '6 / 3 = 2'}, \"Exact output as a Python string: '6 / 3 = 2\\\\n'\"]"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Functions, returns, scope"
     },
     {
       "id": "ENGR-E2-018",
@@ -28127,7 +28149,8 @@
           "Exact output as a Python string: '2 Too big!\\n'"
         ],
         "text": "[{'code': '2 Too big!'}, \"Exact output as a Python string: '2 Too big!\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-019",
@@ -28149,7 +28172,9 @@
           "SyntaxError: parameter without a default follows parameter with a default"
         ],
         "text": "['SyntaxError: parameter without a default follows parameter with a default']"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Parameters and syntax errors"
     },
     {
       "id": "ENGR-E2-020",
@@ -28174,7 +28199,8 @@
           "Exact output as a Python string: '10 0 7\\n'"
         ],
         "text": "[{'code': '10 0 7'}, \"Exact output as a Python string: '10 0 7\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-021",
@@ -28199,7 +28225,8 @@
           "Exact output as a Python string: 'False\\n'"
         ],
         "text": "[{'code': 'False'}, \"Exact output as a Python string: 'False\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-022",
@@ -28224,7 +28251,8 @@
           "Exact output as a Python string: '110 10\\n'"
         ],
         "text": "[{'code': '110 10'}, \"Exact output as a Python string: '110 10\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-023",
@@ -28249,7 +28277,8 @@
           "Exact output as a Python string: '7\\n'"
         ],
         "text": "[{'code': '7'}, \"Exact output as a Python string: '7\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-024",
@@ -28274,7 +28303,8 @@
           "Exact output as a Python string: '****\\n'"
         ],
         "text": "[{'code': '****'}, \"Exact output as a Python string: '****\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-025",
@@ -28299,7 +28329,8 @@
           "Exact output as a Python string: '# =\\n# # =\\n\\n'"
         ],
         "text": "[{'code': '# =\\n# # ='}, \"Exact output as a Python string: '# =\\\\n# # =\\\\n\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-026",
@@ -28324,7 +28355,8 @@
           "Exact output as a Python string: '4\\n'"
         ],
         "text": "[{'code': '4'}, \"Exact output as a Python string: '4\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-027",
@@ -28350,7 +28382,9 @@
           "The pasted typographic dash was normalized to Python’s minus sign."
         ],
         "text": "[{'code': '[5, 7]'}, \"Exact output as a Python string: '[5, 7]\\\\n'\", 'The pasted typographic dash was normalized to Python’s minus sign.']"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Indexing and early returns"
     },
     {
       "id": "ENGR-E2-028",
@@ -28375,7 +28409,8 @@
           "Exact output as a Python string: '69\\n'"
         ],
         "text": "[{'code': '69'}, \"Exact output as a Python string: '69\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-029",
@@ -28400,7 +28435,8 @@
           "Exact output as a Python string: '#1 Cat Quinn 2017\\n'"
         ],
         "text": "[{'code': '#1 Cat Quinn 2017'}, \"Exact output as a Python string: '#1 Cat Quinn 2017\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-030",
@@ -28422,7 +28458,8 @@
           "NameError: name 'timestwo' is not defined"
         ],
         "text": "[\"NameError: name 'timestwo' is not defined\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-031",
@@ -28448,7 +28485,9 @@
           "The input prompt is Enter a number: ; the supplied response 5.0 causes int(\"5.0\") to fail, so the except branch runs."
         ],
         "text": "[{'code': 'x is the float 5.0'}, \"Exact output as a Python string: 'x is the float 5.0\\\\n'\", 'The input prompt is Enter a number: ; the supplied response 5.0 causes int(\"5.0\") to fail, so the except branch runs.']"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Input conversion and exceptions"
     },
     {
       "id": "ENGR-E2-032",
@@ -28473,7 +28512,8 @@
           "Exact output as a Python string: 'Howdy Texas A&M Engineering students! \\n'"
         ],
         "text": "[{'code': 'Howdy Texas A&M Engineering students! '}, \"Exact output as a Python string: 'Howdy Texas A&M Engineering students! \\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-033",
@@ -28498,7 +28538,8 @@
           "Exact output as a Python string: '0.0:3!'"
         ],
         "text": "[{'code': '0.0:3!'}, \"Exact output as a Python string: '0.0:3!'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-034",
@@ -28523,7 +28564,8 @@
           "Exact output as a Python string: '1::bc\\n'"
         ],
         "text": "[{'code': '1::bc'}, \"Exact output as a Python string: '1::bc\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-035",
@@ -28548,7 +28590,9 @@
           "Exact output as a Python string: 'VRL\\t11\\t07\\t2025\\n'"
         ],
         "text": "[{'code': 'VRL\\t11\\t07\\t2025'}, \"Exact output as a Python string: 'VRL\\\\t11\\\\t07\\\\t2025\\\\n'\"]"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "String parsing and formatting"
     },
     {
       "id": "ENGR-E2-036",
@@ -28573,7 +28617,8 @@
           "Exact output as a Python string: '1 3 4 5 7 9 '"
         ],
         "text": "[{'code': '1 3 4 5 7 9 '}, \"Exact output as a Python string: '1 3 4 5 7 9 '\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-037",
@@ -28599,7 +28644,8 @@
           "The question asks for printed output: r. The file results.csv contains s,t,i,n,k,e,r."
         ],
         "text": "[{'code': 'r'}, \"Exact output as a Python string: 'r\\\\n'\", 'The question asks for printed output: r. The file results.csv contains s,t,i,n,k,e,r.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-038",
@@ -28624,7 +28670,8 @@
           "Exact output as a Python string: '[[5 2 3]\\n [4 5 6]\\n [7 8 5]]\\n'"
         ],
         "text": "[{'code': '[[5 2 3]\\n [4 5 6]\\n [7 8 5]]'}, \"Exact output as a Python string: '[[5 2 3]\\\\n [4 5 6]\\\\n [7 8 5]]\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-039",
@@ -28649,7 +28696,8 @@
           "Exact output as a Python string: '2\\n'"
         ],
         "text": "[{'code': '2'}, \"Exact output as a Python string: '2\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-040",
@@ -28675,7 +28723,8 @@
           "The pasted typographic dash was normalized to Python’s minus sign."
         ],
         "text": "[{'code': 'x,y\\n1.0,0.0\\n2.0,3.0\\n3.0,8.0\\n4.0,15.0\\n5.0,24.0\\n6.0,35.0\\n7.0,48.0\\n8.0,63.0\\n9.0,80.0\\n10.0,99.0'}, \"Exact output as a Python string: 'x,y\\\\n1.0,0.0\\\\n2.0,3.0\\\\n3.0,8.0\\\\n4.0,15.0\\\\n5.0,24.0\\\\n6.0,35.0\\\\n7.0,48.0\\\\n8.0,63.0\\\\n9.0,80.0\\\\n10.0,99.0\\\\n\\\\n'\", 'The pasted typographic dash was normalized to Python’s minus sign.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-041",
@@ -28704,7 +28753,9 @@
           "Exact output as a Python string: '[60.0, 60.0, 85.0]\\n'"
         ],
         "text": "[{'code': '[60.0, 60.0, 85.0]'}, \"Exact output as a Python string: '[60.0, 60.0, 85.0]\\\\n'\"]"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Reading CSV and aggregation"
     },
     {
       "id": "ENGR-E2-042",
@@ -28730,7 +28781,8 @@
           "The gaps between 1/2/3 and 4/5/6 are tab characters, not commas."
         ],
         "text": "[{'code': '1\\t2\\t3\\n4\\t5\\t6\\n5.6.7.8.9'}, \"Exact output as a Python string: '1\\\\t2\\\\t3\\\\n4\\\\t5\\\\t6\\\\n5.6.7.8.9'\", 'The gaps between 1/2/3 and 4/5/6 are tab characters, not commas.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-043",
@@ -28754,7 +28806,8 @@
           "Exact output as a Python string: '145\\n'"
         ],
         "text": "[{'code': '145'}, \"Exact output as a Python string: '145\\\\n'\"]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-044",
@@ -28794,7 +28847,8 @@
           "B, C, E, and F print 1, 3, 5 without a trailing comma. A prints a trailing comma and space (often accepted if only the values matter). D prints 2, 4, then raises IndexError. G treats list values as indices and eventually raises IndexError."
         ],
         "text": "['B, C, E, and F print 1, 3, 5 without a trailing comma. A prints a trailing comma and space (often accepted if only the values matter). D prints 2, 4, then raises IndexError. G treats list values as indices and eventually raises IndexError.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-045",
@@ -28829,7 +28883,8 @@
           "A, B, C, and D all print 1234 with no spaces."
         ],
         "text": "['A, B, C, and D all print 1234 with no spaces.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-046",
@@ -28869,7 +28924,9 @@
           "The valid third lines are a_var = the_list[0] + int(the_str[-1]), some_var = the_str, the_list, and a = the_str[the_list[2]]. They produce 6, a tuple, and \"A\", respectively. 1_var is an invalid identifier; the other two invalid expressions use strings as indices."
         ],
         "text": "['The valid third lines are a_var = the_list[0] + int(the_str[-1]), some_var = the_str, the_list, and a = the_str[the_list[2]]. They produce 6, a tuple, and \"A\", respectively. 1_var is an invalid identifier; the other two invalid expressions use strings as indices.']"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Types and indexing"
     },
     {
       "id": "ENGR-E2-047",
@@ -28906,7 +28963,8 @@
           "Lines 1, 3, 4, and 6 are valid opens, assuming existing accessible paths and permissions. The w mode opens but truncates the file. my-file is not a valid variable name, and a+ must be quoted. A with statement also needs an indented body."
         ],
         "text": "['Lines 1, 3, 4, and 6 are valid opens, assuming existing accessible paths and permissions. The w mode opens but truncates the file. my-file is not a valid variable name, and a+ must be quoted. A with statement also needs an indented body.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-048",
@@ -28946,7 +29004,8 @@
           "A and F execute without error in a fresh namespace. A prints [5, 8, 11, 14, 17]. F computes a numeric result, although its variable stdev actually stores sample variance, not standard deviation. B indexes past the lists; C uses undefined item; D uses undefined numbers; E has an invalid parameter order; G tries to extend a list with an integer."
         ],
         "text": "['A and F execute without error in a fresh namespace. A prints [5, 8, 11, 14, 17]. F computes a numeric result, although its variable stdev actually stores sample variance, not standard deviation. B indexes past the lists; C uses undefined item; D uses undefined numbers; E has an invalid parameter order; G tries to extend a list with an integer.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-049",
@@ -28972,7 +29031,8 @@
           "The pasted typographic dash was normalized to Python’s minus sign."
         ],
         "text": "[{'code': 'n,a,m,e,t,a,g,'}, \"Exact output as a Python string: 'n,a,m,e,t,a,g,'\", 'The pasted typographic dash was normalized to Python’s minus sign.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-050",
@@ -29003,7 +29063,9 @@
           "A and D. In B, importing numpy does not define bare arange. In C, importing names from math does not bind the name math. Assume a fresh namespace."
         ],
         "text": "['A and D. In B, importing numpy does not define bare arange. In C, importing names from math does not bind the name math. Assume a fresh namespace.']"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Imports and namespaces"
     },
     {
       "id": "ENGR-E2-051",
@@ -29025,7 +29087,8 @@
           "import matplotlib.pyplot as pyp"
         ],
         "text": "['import matplotlib.pyplot as pyp']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-052",
@@ -29047,7 +29110,8 @@
           "from numpy import arange"
         ],
         "text": "['from numpy import arange']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-053",
@@ -29068,7 +29132,8 @@
           }
         ],
         "text": "[{'code': 'total = 0\\nfor n in range(1, 11):\\n    total += n\\nprint(total)  # 55'}]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-054",
@@ -29087,7 +29152,9 @@
           "Birdwatcher program → collect sightings, analyze records, report results. Collect → read species/family/count/date/time/location, validate and store. Analyze → count unique species overall/by location; count unique places/dates; count sighting records by requested species; group unique species by family and find the largest group. Report → accept query, format and display requested statistic. Keep individual-bird totals separate from the number of sighting records."
         ],
         "text": "['Birdwatcher program → collect sightings, analyze records, report results. Collect → read species/family/count/date/time/location, validate and store. Analyze → count unique species overall/by location; count unique places/dates; count sighting records by requested species; group unique species by family and find the largest group. Report → accept query, format and display requested statistic. Keep individual-bird totals separate from the number of sighting records.']"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Top-down design and hierarchy"
     },
     {
       "id": "ENGR-E2-055",
@@ -29112,7 +29179,8 @@
           }
         ],
         "text": "[{'code': 'months = {name: i + 1 for i, name in enumerate([\\n    \"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\\n    \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"])}\\nbirthdays = []\\nfor user in range(1, 6):\\n    month, day = input(f\"User {user} please enter a birthday: \").split()\\n    birthdays.append((months[month], int(day), month))\\nbirthdays.sort()\\nprint(\"-\" * 48)\\nfor month_number, day, month in birthdays:\\n    print(month, day)'}]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-056",
@@ -29138,7 +29206,9 @@
           }
         ],
         "text": "[{'code': 'mapping = {}\\nfor digit, letters in enumerate([\"ABC\", \"DEF\", \"GHI\", \"JKL\", \"MNO\", \"PQRS\", \"TUV\", \"WXYZ\"], 2):\\n    for letter in letters:\\n        mapping[letter] = str(digit)\\nphone = input(\"Enter a phone number in this format XXX-XXXXXXX: \")\\ndigits = \"\".join(mapping[c] for c in phone[4:])\\nprint(f\"{phone} is equivalent to {phone[:3]}-{digits[:3]}-{digits[3:]}\")'}]"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Dictionary-based program"
     },
     {
       "id": "ENGR-E2-057",
@@ -29163,7 +29233,8 @@
           }
         ],
         "text": "[{'code': 'patients = {}\\nfor i in range(int(input(\"Enter the number of patients: \"))):\\n    name, pressure, pulse, glucose = input(\"Enter the next name and information: \").split()\\n    patients[name] = (pressure, pulse, glucose)\\nname = input(\"Enter a name: \")\\nif name in patients:\\n    pressure, pulse, glucose = patients[name]\\n    print(f\"Here is information on {name}:\")\\n    print(f\"Blood pressure: {pressure}, Pulse: {pulse}, Blood glucose: {glucose}\")\\nelse:\\n    print(\"Name not found\")'}]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-058",
@@ -29185,7 +29256,9 @@
           }
         ],
         "text": "[{'code': 'def numcondition(a, b):\\n    \"\"\"Describe whether the sum exceeds 10 and the product exceeds 20.\"\"\"\\n    addition = a + b > 10\\n    multiplication = a * b > 20\\n    if addition and multiplication:\\n        return True\\n    if addition:\\n        return \"addition only\"\\n    if multiplication:\\n        return \"multiplication only\"\\n    return False'}]"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Boolean conditions and returns"
     },
     {
       "id": "ENGR-E2-059",
@@ -29214,7 +29287,9 @@
           }
         ],
         "text": "[{'code': 'from ENGR102 import isprime\\n\\ndef read_integer(prompt):\\n    \"\"\"Prompt until a valid integer is entered.\"\"\"\\n    while True:\\n        try:\\n            return int(input(prompt))\\n        except ValueError:\\n            prompt = \"Bad input! Try again: \"\\n\\na = read_integer(\"Enter an integer: \")\\nb = read_integer(\"Enter another integer: \")\\nprimes = []\\nfor n in range(min(a, b), max(a, b) + 1):\\n    if n % 2 != 0 and isprime(n):\\n        primes.append(n)\\nif primes:\\n    print(\"Primes:\", primes)\\nelse:\\n    print(\"No primes found!\")'}]"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Input validation and module calls"
     },
     {
       "id": "ENGR-E2-060",
@@ -29236,7 +29311,8 @@
           }
         ],
         "text": "[{'code': 'def max_min(a, b, c, d, e, f):\\n    \"\"\"Return descending values, their sum, and the even-value count.\"\"\"\\n    values = [a, b, c, d, e, f]\\n    even = 0\\n    for value in values:\\n        if value % 2 == 0:\\n            even += 1\\n    return sorted(values, reverse=True), sum(values), even'}]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-061",
@@ -29259,7 +29335,9 @@
           }
         ],
         "text": "[{'code': 'import numpy as np\\n\\ndef matrix_product(A, B):\\n    \"\"\"Return the product of compatible 2D arrays, or an empty array.\"\"\"\\n    if A.ndim != 2 or B.ndim != 2 or A.shape[1] != B.shape[0]:\\n        return np.array([])\\n    return A @ B'}]"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "NumPy arrays and matrix multiplication"
     },
     {
       "id": "ENGR-E2-062",
@@ -29283,7 +29361,9 @@
           }
         ],
         "text": "[{'code': 'def myinsert(text, char):\\n    \"\"\"Insert a character into an ascending string without sorting.\"\"\"\\n    i = 0\\n    while i < len(text) and text[i] <= char:\\n        i += 1\\n    return text[:i] + char + text[i:]\\n\\ndef myinsert2(values, value):\\n    \"\"\"Return a new ascending list with value inserted, without sorting.\"\"\"\\n    i = 0\\n    while i < len(values) and values[i] <= value:\\n        i += 1\\n    return values[:i] + [value] + values[i:]'}]"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Sequence insertion without sorting"
     },
     {
       "id": "ENGR-E2-063",
@@ -29307,7 +29387,9 @@
           }
         ],
         "text": "[{'code': 'def mean_variance(values):\\n    \"\"\"Return mean and sample variance; require at least two values.\"\"\"\\n    if len(values) < 2:\\n        raise ValueError(\"At least two values are required\")\\n    total = 0\\n    for value in values:\\n        total += value\\n    mean = total / len(values)\\n    squares = 0\\n    for value in values:\\n        squares += (value - mean) ** 2\\n    return mean, squares / (len(values) - 1)\\n\\nimport numpy as np\\ndef mean_variance_numpy(values):\\n    \"\"\"Return mean and sample variance using NumPy.\"\"\"\\n    if len(values) < 2:\\n        raise ValueError(\"At least two values are required\")\\n    return float(np.mean(values)), float(np.var(values, ddof=1))'}]"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Loops, statistics, NumPy"
     },
     {
       "id": "ENGR-E2-064",
@@ -29336,7 +29418,8 @@
           }
         ],
         "text": "[{'code': 'def Armstrong_number(a, b):\\n    \"\"\"Return Armstrong numbers in the inclusive interval between a and b.\"\"\"\\n    result = []\\n    for n in range(min(a, b), max(a, b) + 1):\\n        digits = str(n)\\n        total = 0\\n        for digit in digits:\\n            total += int(digit) ** len(digits)\\n        if total == n:\\n            result.append(n)\\n    return result\\n\\ndef read_positive(prompt):\\n    \"\"\"Prompt until a positive integer is entered.\"\"\"\\n    while True:\\n        try:\\n            n = int(input(prompt))\\n        except ValueError:\\n            prompt = \"Bad input! Try again: \"\\n            continue\\n        if n > 0:\\n            return n\\n        prompt = \"Need a positive integer: \"\\n\\na = read_positive(\"Enter an integer: \")\\nb = read_positive(\"Enter another integer: \")\\nprint(\"Armstrong numbers:\", Armstrong_number(a, b))'}]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-065",
@@ -29370,7 +29453,8 @@
           }
         ],
         "text": "[{'code': 'def is_perfect(n):\\n    \"\"\"Return whether n is a perfect number; 1 is not perfect.\"\"\"\\n    total = 0\\n    for divisor in range(1, n):\\n        if n % divisor == 0:\\n            total += divisor\\n    return n > 1 and total == n\\n\\ndef read_positive(prompt):\\n    \"\"\"Prompt until a positive integer is entered.\"\"\"\\n    while True:\\n        try:\\n            n = int(input(prompt))\\n        except ValueError:\\n            prompt = \"Bad input! Try again: \"\\n            continue\\n        if n > 0:\\n            return n\\n        prompt = \"Need a positive integer: \"\\n\\nn = read_positive(\"Enter an integer: \")\\nprint(f\"{n} is {\\'a perfect number\\' if is_perfect(n) else \\'not a perfect number\\'}\")'}]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-066",
@@ -29393,7 +29477,8 @@
           }
         ],
         "text": "[{'code': 'from math import pi, sqrt, exp\\nimport matplotlib.pyplot as plt\\n\\ndef normal_values(mu, sigma, xs):\\n    \"\"\"Return normal-density values; sigma must be positive.\"\"\"\\n    if sigma <= 0:\\n        raise ValueError(\"sigma must be positive\")\\n    result = []\\n    for x in xs:\\n        result.append(exp(-(x - mu) ** 2 / (2 * sigma ** 2)) / sqrt(2 * pi * sigma ** 2))\\n    return result\\n\\nxs = [i / 20 for i in range(-80, 81)]\\nys = normal_values(0, 1, xs)\\nplt.plot(xs, ys)\\nplt.xlabel(\"x\")\\nplt.ylabel(\"P(x)\")\\nplt.title(\"Normal probability density\")\\nplt.show()'}]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-067",
@@ -29422,7 +29507,9 @@
           }
         ],
         "text": "[{'code': 'from math import factorial\\n\\ndef tay_term(n, x):\\n    \"\"\"Return term n of the Maclaurin series for cos(x), in radians.\"\"\"\\n    return (-1) ** n * x ** (2 * n) / factorial(2 * n)\\n\\nx = float(input(\"Enter a value for x: \"))\\ntotal = 0.0\\nn = 0\\nwhile True:\\n    term = tay_term(n, x)\\n    total += term\\n    if abs(term) < 1e-7:\\n        break\\n    n += 1\\nprint(f\"The cosine of {x} is {total:.7f}\")'}]"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Taylor series and convergence"
     },
     {
       "id": "ENGR-E2-068",
@@ -29447,7 +29534,8 @@
           "Insert this inside the output-file with block. Assumes the stripped file is nonempty; an empty string has no first or last character."
         ],
         "text": "[{'code': 'myfile.write(file_string[0] + \":\" + file_string[-1] + \"\\\\n\")'}, 'Insert this inside the output-file with block. Assumes the stripped file is nonempty; an empty string has no first or last character.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-069",
@@ -29472,7 +29560,9 @@
           }
         ],
         "text": "[{'code': 'filename = input(\"Enter a filename: \")\\ncounts = {}\\nwith open(filename) as file:\\n    for character in file.read().lower():\\n        if character.isalpha():\\n            counts[character] = counts.get(character, 0) + 1\\nprint(f\"{filename} contains the following letters:\")\\nprint(\", \".join(f\"{letter}: {counts[letter]}\" for letter in sorted(counts)))'}]"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Text files and dictionaries"
     },
     {
       "id": "ENGR-E2-070",
@@ -29501,7 +29591,9 @@
           }
         ],
         "text": "[{'code': 'n = int(input(\"Enter the number of students: \"))\\nrecords = []\\ntotal = 0\\nfor i in range(n):\\n    name, score = input(\"Enter the next name and score: \").split()\\n    score = float(score)\\n    records.append((name, score))\\n    total += score\\nwidth = max([len(\"Name\")] + [len(name) for name, score in records]) + 2\\nwith open(\"grades.txt\", \"w\") as file:\\n    file.write(f\"{\\'Name\\':<{width}}Score\\\\n\")\\n    for name, score in records:\\n        file.write(f\"{name:<{width}}{score:.1f}\\\\n\")\\nif n > 0:\\n    print(f\"The average grade for this quiz is {total / n:g}\")\\nelse:\\n    print(\"No grades entered\")'}]"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Writing aligned files"
     },
     {
       "id": "ENGR-E2-071",
@@ -29530,7 +29622,8 @@
           }
         ],
         "text": "[{'code': 'best_name = None\\nbest_cost = None\\nwith open(\"item_cost.dat\") as file:\\n    file.readline()\\n    for line in file:\\n        if not line.strip():\\n            continue\\n        name, cost = line.strip().split(\",\")\\n        cost = float(cost)\\n        if best_cost is None or cost > best_cost:\\n            best_name, best_cost = name, cost\\nif best_name is not None:\\n    print(f\"The most expensive item is {best_name} and costs ${best_cost:.2f}\")\\nelse:\\n    print(\"No items found\")'}]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-072",
@@ -29551,7 +29644,8 @@
           }
         ],
         "text": "[{'code': 'grades = []\\nwith open(\"grades.txt\") as file:\\n    for line in file:\\n        if line.strip():\\n            grades.append(float(line))\\nif grades:\\n    print(\"Average:\", sum(grades) / len(grades))\\n    print(\"Maximum:\", max(grades))\\n    print(\"Minimum:\", min(grades))\\nelse:\\n    print(\"No grades found\")'}]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-073",
@@ -29580,7 +29674,8 @@
           }
         ],
         "text": "[{'code': 'maximum = 0\\nwith open(\"sentences.txt\") as file:\\n    for line in file:\\n        maximum = max(maximum, len(line.split()))\\nprint(f\"The maximum number of words in a single sentence is {maximum}\")'}]"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-074",
@@ -29610,7 +29705,9 @@
           }
         ],
         "text": "[{'code': 'import numpy as np\\nheaders = []\\nrows = []\\nwith open(\"data.dat\") as file:\\n    for line in file:\\n        if line.lstrip().startswith(\"#\"):\\n            headers.append(line.rstrip(\"\\\\n\"))\\n        elif line.strip():\\n            fields = line.strip().split(\",\")\\n            rows.append([float(value) for value in fields])\\ndata = np.array(rows, dtype=float).reshape(-1, 3)\\nif len(data):\\n    print(f\"Minimum temperature is {data[:, 1].min():.2f} F\")\\n    print(f\"Maximum windspeed is {data[:, 2].max():.2f} knots\")\\nelse:\\n    print(\"No data rows\")'}]"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Headers, arrays, min/max"
     },
     {
       "id": "ENGR-E2-075",
@@ -29640,7 +29737,8 @@
           "The source sample output has a typo: row 2 input says 5.87, but output says 5.83. The supplied input yields minor diameter 5.87 and ratio 2.81; do not change the input to match the typo."
         ],
         "text": "[{'code': 'print(\"Number MajorDia MinorDia Ratio\")\\nwith open(\"peanut.dat\") as file:\\n    file.readline()\\n    for line in file:\\n        if not line.strip():\\n            continue\\n        number, major, minor = line.split()\\n        number, major, minor = int(number), float(major), float(minor)\\n        ratio = major / minor\\n        print(f\"{number:4d} {major:9.2f} {minor:7.2f} {ratio:6.2f}\")'}, 'The source sample output has a typo: row 2 input says 5.87, but output says 5.83. The supplied input yields minor diameter 5.87 and ratio 2.81; do not change the input to match the typo.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-076",
@@ -29670,7 +29768,9 @@
           }
         ],
         "text": "[{'code': 'total = 0\\nwith open(\"fishtotals.txt\") as infile, open(\"flounder.txt\", \"w\") as outfile:\\n    for line in infile:\\n        if not line.strip():\\n            continue\\n        fisherman, catches = line.strip().split(\":\", 1)\\n        kept = []\\n        for catch in catches.split(\",\"):\\n            fields = catch.strip().split()\\n            if fields and fields[0].lower() == \"flounder\":\\n                kept.append(\" \".join(fields))\\n                total += 1\\n        if kept:\\n            outfile.write(f\"{fisherman}: {\\', \\'.join(kept)}\\\\n\")\\n    outfile.write(f\"Total: {total} flounders caught\\\\n\")'}]"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Nested file parsing and output"
     },
     {
       "id": "ENGR-E2-077",
@@ -29692,7 +29792,9 @@
           "Draw y=x as a green line of width 3 and y=x² as a black curve with blue-filled circle markers at 25 equally spaced x values from -2 to 2. Limits: x from -2 to 2, y from -2 to 4. Labels: x and f(x). Title: Plots for 2 polynomials. Legend at upper center: straight, curved."
         ],
         "text": "['Draw y=x as a green line of width 3 and y=x² as a black curve with blue-filled circle markers at 25 equally spaced x values from -2 to 2. Limits: x from -2 to 2, y from -2 to 4. Labels: x and f(x). Title: Plots for 2 polynomials. Legend at upper center: straight, curved.']"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Reading plots"
     },
     {
       "id": "ENGR-E2-078",
@@ -29711,7 +29813,9 @@
           "Use descriptive names, consistent indentation, useful comments/docstrings, small focused functions, and tests including boundary cases. These are representative good practices; the pasted source does not enumerate the course’s exact five."
         ],
         "text": "['Use descriptive names, consistent indentation, useful comments/docstrings, small focused functions, and tests including boundary cases. These are representative good practices; the pasted source does not enumerate the course’s exact five.']"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Coding practices"
     },
     {
       "id": "ENGR-E2-079",
@@ -29733,7 +29837,8 @@
           "Keys: Apple, Pear, Banana. Values: 3, 5, 2. Add with mydict[\"Orange\"] = 1. Loop over keys and compare key or mydict[key] with the desired target."
         ],
         "text": "['Keys: Apple, Pear, Banana. Values: 3, 5, 2. Add with mydict[\"Orange\"] = 1. Loop over keys and compare key or mydict[key] with the desired target.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-080",
@@ -29752,7 +29857,8 @@
           "Dictionaries map unique hashable keys to values; lists are ordered mutable sequences indexed by position. Tuples are ordered sequences whose slots cannot be reassigned. Lists and dictionaries are mutable; a tuple can still contain a mutable object."
         ],
         "text": "['Dictionaries map unique hashable keys to values; lists are ordered mutable sequences indexed by position. Tuples are ordered sequences whose slots cannot be reassigned. Lists and dictionaries are mutable; a tuple can still contain a mutable object.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-081",
@@ -29771,7 +29877,8 @@
           "Strings and lists are ordered, support indexing and slicing, and can be traversed with loops. Both support len() and membership. Strings are immutable; lists are mutable."
         ],
         "text": "['Strings and lists are ordered, support indexing and slicing, and can be traversed with loops. Both support len() and membership. Strings are immutable; lists are mutable.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-082",
@@ -29790,7 +29897,8 @@
           "Common course types: int (3), float (3.5), bool (True), str (\"Hi\"), list ([1,2]), tuple ((1,2)), dict ({\"a\":1}), and NoneType (None). Lists and dictionaries are mutable; the others listed are immutable. NumPy ndarray is mutable. The supplied practice sheet does not establish an exhaustive syllabus-wide list."
         ],
         "text": "['Common course types: int (3), float (3.5), bool (True), str (\"Hi\"), list ([1,2]), tuple ((1,2)), dict ({\"a\":1}), and NoneType (None). Lists and dictionaries are mutable; the others listed are immutable. NumPy ndarray is mutable. The supplied practice sheet does not establish an exhaustive syllabus-wide list.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-083",
@@ -29809,7 +29917,9 @@
           "Top-down divides a large goal into smaller tasks: clear overall structure, but low-level constraints may surface late. Bottom-up builds and combines small components: reusable and independently testable pieces, but integration and overall direction can be harder."
         ],
         "text": "['Top-down divides a large goal into smaller tasks: clear overall structure, but low-level constraints may surface late. Bottom-up builds and combines small components: reusable and independently testable pieces, but integration and overall direction can be harder.']"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Top-down and bottom-up design"
     },
     {
       "id": "ENGR-E2-084",
@@ -29828,7 +29938,8 @@
           "A hierarchy has a root, nodes, parent–child relationships, and leaves. In program design, refine major tasks into subtasks until leaf tasks are straightforward to implement."
         ],
         "text": "['A hierarchy has a root, nodes, parent–child relationships, and leaves. In program design, refine major tasks into subtasks until leaf tasks are straightforward to implement.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-085",
@@ -29847,7 +29958,8 @@
           "Usually no: each function call has its own local bindings. Rebinding a local name does not reassign an identically named global. Mutating a shared object can affect the caller, and global explicitly changes binding rules."
         ],
         "text": "['Usually no: each function call has its own local bindings. Rebinding a local name does not reassign an identically named global. Mutating a shared object can affect the caller, and global explicitly changes binding rules.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-086",
@@ -29866,7 +29978,8 @@
           "A def statement must execute before the function is called. A function can refer to another function defined later in the file if the later definition executes before that call actually occurs."
         ],
         "text": "['A def statement must execute before the function is called. A function can refer to another function defined later in the file if the later definition executes before that call actually occurs.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-087",
@@ -29885,7 +29998,8 @@
           "Functions can read module globals unless shadowed, but assigning a name normally makes it local. Pass information with arguments bound to parameters. return a, b returns one tuple, which can be unpacked into multiple names."
         ],
         "text": "['Functions can read module globals unless shadowed, but assigning a name normally makes it local. Pass information with arguments bound to parameters. return a, b returns one tuple, which can be unpacked into multiple names.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-088",
@@ -29904,7 +30018,8 @@
           "Open-ended example: logic errors are frustrating because the program runs but produces a wrong result. Explain your own choice; there is no unique correct answer."
         ],
         "text": "['Open-ended example: logic errors are frustrating because the program runs but produces a wrong result. Explain your own choice; there is no unique correct answer.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-089",
@@ -29923,7 +30038,8 @@
           "int(\"5.5\") raises ValueError; print never receives a value. int(float(\"5.5\")) would produce 5 by truncating toward zero, if that behavior is intended."
         ],
         "text": "['int(\"5.5\") raises ValueError; print never receives a value. int(float(\"5.5\")) would produce 5 by truncating toward zero, if that behavior is intended.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-090",
@@ -29942,7 +30058,9 @@
           "Trace with a variable table, add temporary print statements, reduce to a small failing example, test boundaries, read the traceback, and explain the algorithm aloud or to another person."
         ],
         "text": "['Trace with a variable table, add temporary print statements, reduce to a small failing example, test boundaries, read the traceback, and explain the algorithm aloud or to another person.']"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Debugging"
     },
     {
       "id": "ENGR-E2-091",
@@ -29961,7 +30079,8 @@
           "Use explicit open/close when the file’s lifetime must span code that does not fit one with block, such as a file object returned to a caller. Use try/finally to guarantee closing. Prefer with for ordinary file processing."
         ],
         "text": "['Use explicit open/close when the file’s lifetime must span code that does not fit one with block, such as a file object returned to a caller. Use try/finally to guarantee closing. Prefer with for ordinary file processing.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-092",
@@ -29980,7 +30099,9 @@
           "r reads an existing file and fails if missing. w writes, truncating an existing file or creating a new one. r+ reads/writes an existing file without initially truncating; it fails if missing. a writes at the end, creating the file if needed."
         ],
         "text": "['r reads an existing file and fails if missing. w writes, truncating an existing file or creating a new one. r+ reads/writes an existing file without initially truncating; it fails if missing. a writes at the end, creating the file if needed.']"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "File modes"
     },
     {
       "id": "ENGR-E2-093",
@@ -29999,7 +30120,8 @@
           "read() returns all remaining text as one string; readline() returns the next line as a string, or \"\" at EOF; readlines() and list(file) return remaining lines as a list of strings. These consume the file from its current position."
         ],
         "text": "['read() returns all remaining text as one string; readline() returns the next line as a string, or \"\" at EOF; readlines() and list(file) return remaining lines as a list of strings. These consume the file from its current position.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-094",
@@ -30018,7 +30140,8 @@
           "strip() removes leading/trailing whitespace; split(delimiter) separates into a list. Example: fields = \" 12,25\\n\".strip().split(\",\") gives [\"12\", \"25\"]."
         ],
         "text": "['strip() removes leading/trailing whitespace; split(delimiter) separates into a list. Example: fields = \" 12,25\\\\n\".strip().split(\",\") gives [\"12\", \"25\"].']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-095",
@@ -30037,7 +30160,8 @@
           "from math import pi\nprint(f\"{pi:.4f}\")\n\nOutput: 3.1416"
         ],
         "text": "['from math import pi\\nprint(f\"{pi:.4f}\")\\n\\nOutput: 3.1416']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-096",
@@ -30056,7 +30180,9 @@
           "from funpack.neatomod import coolfunc as coolf\nfrom funpack.neatomod import *\n\nFor inspection: import funpack.neatomod as neatomod; dir(neatomod). dir lists names, not only functions; help(neatomod) shows documentation. Star import respects __all__ when defined and otherwise excludes underscore-prefixed names."
         ],
         "text": "['from funpack.neatomod import coolfunc as coolf\\nfrom funpack.neatomod import *\\n\\nFor inspection: import funpack.neatomod as neatomod; dir(neatomod). dir lists names, not only functions; help(neatomod) shows documentation. Star import respects __all__ when defined and otherwise excludes underscore-prefixed names.']"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Packages and imports"
     },
     {
       "id": "ENGR-E2-097",
@@ -30075,7 +30201,8 @@
           "np.arange generates values using a step; np.array constructs an array from supplied data; np.linspace generates a requested number of equally spaced values, including the endpoint by default. reshape(5,3) has 5 rows and 3 columns."
         ],
         "text": "['np.arange generates values using a step; np.array constructs an array from supplied data; np.linspace generates a requested number of equally spaced values, including the endpoint by default. reshape(5,3) has 5 rows and 3 columns.']"
-      }
+      },
+      "everythingPractice": false
     },
     {
       "id": "ENGR-E2-098",
@@ -30094,7 +30221,9 @@
           "plot: connected lines; bar: bars for categories/positions; hist: frequencies in numeric bins; scatter: independent points. Use color= and marker=, then xlabel(), ylabel(), title(), and legend() with labeled series."
         ],
         "text": "['plot: connected lines; bar: bars for categories/positions; hist: frequencies in numeric bins; scatter: independent points. Use color= and marker=, then xlabel(), ylabel(), title(), and legend() with labeled series.']"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Plot types and styling"
     },
     {
       "id": "ENGR-E2-099",
@@ -30113,7 +30242,9 @@
           "Docstrings explain a function’s purpose, parameters, return values, assumptions, and units. They support help(), improve reuse, and reduce mistakes at call sites."
         ],
         "text": "['Docstrings explain a function’s purpose, parameters, return values, assumptions, and units. They support help(), improve reuse, and reduce mistakes at call sites.']"
-      }
+      },
+      "everythingPractice": true,
+      "exam2Coverage": "Function documentation"
     }
   ],
   "guides": [

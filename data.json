@@ -27684,16 +27684,16 @@
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 1",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "grades = [77, 82, 85, 88, 96, 97]\nfor i in range(1, 2):\n    print(grades[i:-i], end=\"\")"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\ngrades = [77, 82, 85, 88, 96, 97]\nfor i in range(1, 2):\n    print(grades[i:-i], end=\"\")\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\ngrades = [77, 82, 85, 88, 96, 97]\nfor i in range(1, 2):\n    print(grades[i:-i], end=\"\")",
       "answer": {
         "blocks": [
           {
@@ -27703,23 +27703,34 @@
         ],
         "text": "[{'code': '[82, 85, 88, 96]'}, \"Exact output as a Python string: '[82, 85, 88, 96]'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'[82, 85, 88, 96]'",
+        "'[77, 82, 85, 88, 96]'",
+        "'[82, 85, 88]'",
+        "'[82, 85, 88, 96, 97]'"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-002",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 2",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "i = 0\nj = -1\nwhile i < 3:\n    if j > 1:\n        continue\n        i += 2\n    else:\n        i += 1\n    j += 1\nprint(f\"{i} + j\")"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\ni = 0\nj = -1\nwhile i < 3:\n    if j > 1:\n        continue\n        i += 2\n    else:\n        i += 1\n    j += 1\nprint(f\"{i} + j\")\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\ni = 0\nj = -1\nwhile i < 3:\n    if j > 1:\n        continue\n        i += 2\n    else:\n        i += 1\n    j += 1\nprint(f\"{i} + j\")",
       "answer": {
         "blocks": [
           {
@@ -27729,23 +27740,34 @@
         ],
         "text": "[{'code': '3 + j'}, \"Exact output as a Python string: '3 + j\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'{i} + j\\n'",
+        "'3 + 2\\n'",
+        "'3 + j\\n'",
+        "'2 + j\\n'"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-003",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 3 · Harder",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "sums = 1\nfor i in range(1, 5):\n    while i < 3:\n        sums += i\n        i += 1\n        if sums % 2 == 0:\n            sums += 1\n            break\n    else:\n        sums *= i\n    sums -= 2\nprint(sums)"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\nsums = 1\nfor i in range(1, 5):\n    while i < 3:\n        sums += i\n        i += 1\n        if sums % 2 == 0:\n            sums += 1\n            break\n    else:\n        sums *= i\n    sums -= 2\nprint(sums)\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\nsums = 1\nfor i in range(1, 5):\n    while i < 3:\n        sums += i\n        i += 1\n        if sums % 2 == 0:\n            sums += 1\n            break\n    else:\n        sums *= i\n    sums -= 2\nprint(sums)",
       "answer": {
         "blocks": [
           {
@@ -27756,23 +27778,34 @@
         "text": "[{'code': '74'}, \"Exact output as a Python string: '74\\\\n'\"]"
       },
       "everythingPractice": true,
-      "exam2Coverage": "Loops and control flow"
+      "exam2Coverage": "Loops and control flow",
+      "choices": [
+        "'74\\n'",
+        "'18\\n'",
+        "'76\\n'",
+        "'72\\n'"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-004",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 4",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "a, i = 0, 3\nwhile a <= 3:\n    for i in range(1, 3):\n        if i == 1:\n            i += 1\n            a += 1\n        else:\n            a += 11\nprint(\"\\\"A\\\" is for\", f\"{a}\", \"Apples\", sep=\" \", end=\"!\")"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\na, i = 0, 3\nwhile a <= 3:\n    for i in range(1, 3):\n        if i == 1:\n            i += 1\n            a += 1\n        else:\n            a += 11\nprint(\"\\\"A\\\" is for\", f\"{a}\", \"Apples\", sep=\" \", end=\"!\")\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\na, i = 0, 3\nwhile a <= 3:\n    for i in range(1, 3):\n        if i == 1:\n            i += 1\n            a += 1\n        else:\n            a += 11\nprint(\"\\\"A\\\" is for\", f\"{a}\", \"Apples\", sep=\" \", end=\"!\")",
       "answer": {
         "blocks": [
           {
@@ -27782,23 +27815,34 @@
         ],
         "text": "[{'code': '\"A\" is for 12 Apples!'}, 'Exact output as a Python string: \\'\"A\" is for 12 Apples!\\'']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'\"A\" is for 12 Apples!'",
+        "'\"A\" is for 14 Apples!'",
+        "'\"A\" is for 3 Apples!'",
+        "'A is for 12 Apples!'"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-005",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 5",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "j = 1\nfor i in range(0, 4, 2):\n    print(f\"{i+1}\", f\"{j+1}\", sep=\", \", end=\", \")\n    j += 2\nprint(\"and that's it\", end=\"...or is it? \")"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\nj = 1\nfor i in range(0, 4, 2):\n    print(f\"{i+1}\", f\"{j+1}\", sep=\", \", end=\", \")\n    j += 2\nprint(\"and that's it\", end=\"...or is it? \")\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\nj = 1\nfor i in range(0, 4, 2):\n    print(f\"{i+1}\", f\"{j+1}\", sep=\", \", end=\", \")\n    j += 2\nprint(\"and that's it\", end=\"...or is it? \")",
       "answer": {
         "blocks": [
           {
@@ -27808,23 +27852,34 @@
         ],
         "text": "[{'code': \"1, 2, 3, 4, and that's it...or is it? \"}, 'Exact output as a Python string: \"1, 2, 3, 4, and that\\'s it...or is it? \"']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "\"1 2 3 4 and that's it...or is it?\"",
+        "\"0, 2, 2, 4, and that's it...or is it? \"",
+        "\"1, 2, 3, 4, and that's it\"",
+        "\"1, 2, 3, 4, and that's it...or is it? \""
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-006",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 6",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "mydict = {\"Ann\" : 18, \"Bob\" : 20, \"Charlie\" : 19}\nif \"Joe\" in mydict:\n    print(\"Joe is here\")\nelif \"Ann\" in mydict:\n    print(\"Hi Ann\")\nelse:\n    print(\"Anyone?\")"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\nmydict = {\"Ann\" : 18, \"Bob\" : 20, \"Charlie\" : 19}\nif \"Joe\" in mydict:\n    print(\"Joe is here\")\nelif \"Ann\" in mydict:\n    print(\"Hi Ann\")\nelse:\n    print(\"Anyone?\")\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\nmydict = {\"Ann\" : 18, \"Bob\" : 20, \"Charlie\" : 19}\nif \"Joe\" in mydict:\n    print(\"Joe is here\")\nelif \"Ann\" in mydict:\n    print(\"Hi Ann\")\nelse:\n    print(\"Anyone?\")",
       "answer": {
         "blocks": [
           {
@@ -27834,23 +27889,34 @@
         ],
         "text": "[{'code': 'Hi Ann'}, \"Exact output as a Python string: 'Hi Ann\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'Hi Ann\\n'",
+        "'Anyone?\\n'",
+        "'Joe is here\\n'",
+        "'KeyError\\n'"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-007",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 7",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "name = {\"Two\" : \"Rosewood\"}\nname[4] = \"Lever\"\nname[2] = \"Calendar\"\nname[\"Two\"] = \"Cartograph\"\nname[\"Two\"] = \"Sunspot\"\nprint(name[\"Two\"], name[2], sep=\">\")"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\nname = {\"Two\" : \"Rosewood\"}\nname[4] = \"Lever\"\nname[2] = \"Calendar\"\nname[\"Two\"] = \"Cartograph\"\nname[\"Two\"] = \"Sunspot\"\nprint(name[\"Two\"], name[2], sep=\">\")\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\nname = {\"Two\" : \"Rosewood\"}\nname[4] = \"Lever\"\nname[2] = \"Calendar\"\nname[\"Two\"] = \"Cartograph\"\nname[\"Two\"] = \"Sunspot\"\nprint(name[\"Two\"], name[2], sep=\">\")",
       "answer": {
         "blocks": [
           {
@@ -27860,23 +27926,34 @@
         ],
         "text": "[{'code': 'Sunspot>Calendar'}, \"Exact output as a Python string: 'Sunspot>Calendar\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'Rosewood>Calendar\\n'",
+        "'Cartograph>Calendar\\n'",
+        "'Sunspot>Lever\\n'",
+        "'Sunspot>Calendar\\n'"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-008",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 8",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "mydict = {}\nmylist = [1, 2, 3, 4, 5]\nmydict[\"Length\"] = len(mylist)\nmydict[\"Max\"] = max(mylist)\nmydict[\"Min\"] = min(mylist)\nmydict[\"Crazy\"] = mylist[1] * mylist[3] - mylist[-1]\nfor key in mydict:\n    print(f\"{key}: {mydict[key]}\")"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\nmydict = {}\nmylist = [1, 2, 3, 4, 5]\nmydict[\"Length\"] = len(mylist)\nmydict[\"Max\"] = max(mylist)\nmydict[\"Min\"] = min(mylist)\nmydict[\"Crazy\"] = mylist[1] * mylist[3] - mylist[-1]\nfor key in mydict:\n    print(f\"{key}: {mydict[key]}\")\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\nmydict = {}\nmylist = [1, 2, 3, 4, 5]\nmydict[\"Length\"] = len(mylist)\nmydict[\"Max\"] = max(mylist)\nmydict[\"Min\"] = min(mylist)\nmydict[\"Crazy\"] = mylist[1] * mylist[3] - mylist[-1]\nfor key in mydict:\n    print(f\"{key}: {mydict[key]}\")",
       "answer": {
         "blocks": [
           {
@@ -27886,23 +27963,34 @@
         ],
         "text": "[{'code': 'Length: 5\\nMax: 5\\nMin: 1\\nCrazy: 3'}, \"Exact output as a Python string: 'Length: 5\\\\nMax: 5\\\\nMin: 1\\\\nCrazy: 3\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'Length: 5\\nMax: 1\\nMin: 5\\nCrazy: 3\\n'",
+        "'Length: 5\\nMax: 5\\nMin: 1\\nCrazy: 3\\n'",
+        "'Length: 6\\nMax: 5\\nMin: 1\\nCrazy: 3\\n'",
+        "'Length: 5\\nMax: 5\\nMin: 1\\nCrazy: 2\\n'"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-009",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 9",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "mydict = {\"apple\" : 2, \"orange\" : 3}\nmydict[\"banana\"] = 4\nmylist = []\ni = 0\nprint(\"Total fruit inventory equals: \", end=\"\")   # empty string\nfor key in mydict:\n    mylist.append(mydict[key])\n    if i < len(mydict) - 1:\n        print(mylist[i], key + \"s\", end=\" + \")\n    else:\n        print(mylist[i], key + \"s\", end=\" = \")\n    i += 1\nprint(sum(mylist), \"fruit\")"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\nmydict = {\"apple\" : 2, \"orange\" : 3}\nmydict[\"banana\"] = 4\nmylist = []\ni = 0\nprint(\"Total fruit inventory equals: \", end=\"\")   # empty string\nfor key in mydict:\n    mylist.append(mydict[key])\n    if i < len(mydict) - 1:\n        print(mylist[i], key + \"s\", end=\" + \")\n    else:\n        print(mylist[i], key + \"s\", end=\" = \")\n    i += 1\nprint(sum(mylist), \"fruit\")\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\nmydict = {\"apple\" : 2, \"orange\" : 3}\nmydict[\"banana\"] = 4\nmylist = []\ni = 0\nprint(\"Total fruit inventory equals: \", end=\"\")   # empty string\nfor key in mydict:\n    mylist.append(mydict[key])\n    if i < len(mydict) - 1:\n        print(mylist[i], key + \"s\", end=\" + \")\n    else:\n        print(mylist[i], key + \"s\", end=\" = \")\n    i += 1\nprint(sum(mylist), \"fruit\")",
       "answer": {
         "blocks": [
           {
@@ -27914,23 +28002,34 @@
         "text": "[{'code': 'Total fruit inventory equals: 2 apples + 3 oranges + 4 bananas = 9 fruit'}, \"Exact output as a Python string: 'Total fruit inventory equals: 2 apples + 3 oranges + 4 bananas = 9 fruit\\\\n'\", 'The pasted typographic dash was normalized to Python’s minus sign.']"
       },
       "everythingPractice": true,
-      "exam2Coverage": "Dictionaries and iteration"
+      "exam2Coverage": "Dictionaries and iteration",
+      "choices": [
+        "'Total fruit inventory equals: 2 apples + 3 oranges + 4 bananas = 9 fruit\\n'",
+        "'Total fruit inventory equals: 2 apples + 3 oranges + 4 bananas = 2 fruit\\n'",
+        "'Total fruit inventory equals: 2 apples + 3 oranges + 4 bananas = 234 fruit\\n'",
+        "'TypeError\\n'"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-010",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 10 · Harder",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "mylist = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]\nmydict = {}\nmysum = 0\nfor i in range(0, len(mylist) - 1, 2):\n    if mylist[i] + mylist[i+1] <= 2 * mylist[i] + 4:\n        mydict[i] = i + 1\n    else:\n        mydict[i] = i\nfor item in mydict:\n    mysum += mydict[item]\nprint(mysum, mydict[4], sep=\" : \")"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\nmylist = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]\nmydict = {}\nmysum = 0\nfor i in range(0, len(mylist) - 1, 2):\n    if mylist[i] + mylist[i+1] <= 2 * mylist[i] + 4:\n        mydict[i] = i + 1\n    else:\n        mydict[i] = i\nfor item in mydict:\n    mysum += mydict[item]\nprint(mysum, mydict[4], sep=\" : \")\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\nmylist = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]\nmydict = {}\nmysum = 0\nfor i in range(0, len(mylist) - 1, 2):\n    if mylist[i] + mylist[i+1] <= 2 * mylist[i] + 4:\n        mydict[i] = i + 1\n    else:\n        mydict[i] = i\nfor item in mydict:\n    mysum += mydict[item]\nprint(mysum, mydict[4], sep=\" : \")",
       "answer": {
         "blocks": [
           {
@@ -27941,23 +28040,34 @@
         ],
         "text": "[{'code': '23 : 5'}, \"Exact output as a Python string: '23 : 5\\\\n'\", 'The pasted typographic dash was normalized to Python’s minus sign.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'23 : 6\\n'",
+        "'5 : 23\\n'",
+        "'23 : 5\\n'",
+        "'18 : 5\\n'"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-011",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 11 · Harder",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "mylist = [\"apples\", 4.5, True]\nmytuple = (\"oranges\", 3, False)\nmydict = {\"bananas\" : 2, \"strawberries\" : 12}\nfor key in mydict:\n    mylist += [mydict[key]]\nmytuple = [mytuple, mylist]\nmylist[4] = 13\nprint(mytuple[0][1], mytuple[1][4], sep=\"00\", end=\"1\")"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\nmylist = [\"apples\", 4.5, True]\nmytuple = (\"oranges\", 3, False)\nmydict = {\"bananas\" : 2, \"strawberries\" : 12}\nfor key in mydict:\n    mylist += [mydict[key]]\nmytuple = [mytuple, mylist]\nmylist[4] = 13\nprint(mytuple[0][1], mytuple[1][4], sep=\"00\", end=\"1\")\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\nmylist = [\"apples\", 4.5, True]\nmytuple = (\"oranges\", 3, False)\nmydict = {\"bananas\" : 2, \"strawberries\" : 12}\nfor key in mydict:\n    mylist += [mydict[key]]\nmytuple = [mytuple, mylist]\nmylist[4] = 13\nprint(mytuple[0][1], mytuple[1][4], sep=\"00\", end=\"1\")",
       "answer": {
         "blocks": [
           {
@@ -27968,14 +28078,25 @@
         "text": "[{'code': '300131'}, \"Exact output as a Python string: '300131'\"]"
       },
       "everythingPractice": true,
-      "exam2Coverage": "Lists, tuples, aliasing"
+      "exam2Coverage": "Lists, tuples, aliasing",
+      "choices": [
+        "'3 0 0 1 3 1'",
+        "'30013'",
+        "'300131'",
+        "'301131'"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-012",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 12",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
@@ -27984,30 +28105,41 @@
           "code": "vector1 = (1, 2, 3)\nvector2 = (2, 3, 4)\ndotp = vector1 * vector2\nprint(f\"The dot product is {dotp}\")"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\nvector1 = (1, 2, 3)\nvector2 = (2, 3, 4)\ndotp = vector1 * vector2\nprint(f\"The dot product is {dotp}\")\n```",
+      "text": "Write the output, or identify the error.\n\nvector1 = (1, 2, 3)\nvector2 = (2, 3, 4)\ndotp = vector1 * vector2\nprint(f\"The dot product is {dotp}\")",
       "answer": {
         "blocks": [
           "TypeError: can't multiply sequence by non-int of type 'tuple'"
         ],
         "text": "[\"TypeError: can't multiply sequence by non-int of type 'tuple'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "ValueError",
+        "[1, 2, 3, 4]",
+        "[1, 2, 1, 2]",
+        "TypeError: can't multiply sequence by non-int of type 'tuple'"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-013",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 13",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "mystr = \"Howdy\"\nmylist = [2, 0, 2, 0]\nmytuple = (mystr, mylist)\nmytuple[1][3] = 9\nprint(mytuple)"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\nmystr = \"Howdy\"\nmylist = [2, 0, 2, 0]\nmytuple = (mystr, mylist)\nmytuple[1][3] = 9\nprint(mytuple)\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\nmystr = \"Howdy\"\nmylist = [2, 0, 2, 0]\nmytuple = (mystr, mylist)\nmytuple[1][3] = 9\nprint(mytuple)",
       "answer": {
         "blocks": [
           {
@@ -28018,23 +28150,34 @@
         "text": "[{'code': \"('Howdy', [2, 0, 2, 9])\"}, 'Exact output as a Python string: \"(\\'Howdy\\', [2, 0, 2, 9])\\\\n\"']"
       },
       "everythingPractice": true,
-      "exam2Coverage": "Mutability"
+      "exam2Coverage": "Mutability",
+      "choices": [
+        "\"('Howdy', 2, 0, 2, 9)\\n\"",
+        "'TypeError\\n'",
+        "\"['Howdy', [2, 0, 2, 9]]\\n\"",
+        "\"('Howdy', [2, 0, 2, 9])\\n\""
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-014",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 14",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "def myfunc(x):\n    a = 1\n    print(x)\na = 5\nmyfunc(a)\nprint(a)"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\ndef myfunc(x):\n    a = 1\n    print(x)\na = 5\nmyfunc(a)\nprint(a)\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\ndef myfunc(x):\n    a = 1\n    print(x)\na = 5\nmyfunc(a)\nprint(a)",
       "answer": {
         "blocks": [
           {
@@ -28044,23 +28187,34 @@
         ],
         "text": "[{'code': '5\\n5'}, \"Exact output as a Python string: '5\\\\n5\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'5\\n'",
+        "'5\\nNone\\n'",
+        "'5\\n5\\n'",
+        "'None\\n5\\n'"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-015",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 15",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "def plus1_3(x):\n    return x + 1, x + 3\nprint(plus1_3(2)[0])"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\ndef plus1_3(x):\n    return x + 1, x + 3\nprint(plus1_3(2)[0])\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\ndef plus1_3(x):\n    return x + 1, x + 3\nprint(plus1_3(2)[0])",
       "answer": {
         "blocks": [
           {
@@ -28070,23 +28224,34 @@
         ],
         "text": "[{'code': '3'}, \"Exact output as a Python string: '3\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'3\\n'",
+        "'2\\n'",
+        "'6\\n'",
+        "'None\\n'"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-016",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 16",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "What does the help() call do?",
         {
           "code": "def myfun():\n    \"\"\"This function prints a message.\"\"\"\n    print(\"Gig 'em Aggies!\")\nhelp(myfun)"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\ndef myfun():\n    \"\"\"This function prints a message.\"\"\"\n    print(\"Gig 'em Aggies!\")\nhelp(myfun)\n```",
+      "text": "What does the help() call do?\n\ndef myfun():\n    \"\"\"This function prints a message.\"\"\"\n    print(\"Gig 'em Aggies!\")\nhelp(myfun)",
       "answer": {
         "blocks": [
           "help() displays the function signature and docstring; it does not call myfun.",
@@ -28097,23 +28262,34 @@
         ],
         "text": "['help() displays the function signature and docstring; it does not call myfun.', {'code': 'Help on function myfun ...\\n\\nmyfun()\\n    This function prints a message.'}, 'The module label and spacing can vary by Python environment.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "A NameError occurs because help cannot accept functions",
+        "help returns only the function's numeric result",
+        "The function runs and prints its message",
+        "help() displays the function signature and docstring; it does not call myfun."
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-017",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 17 · Harder",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "def myfunc(b, a):\n    a = 3\n    c = b + a\n    return c, a\na, b = 3, 2\na, b = myfunc(a, b)\nprint(a, f\"{b} = {a / b:.0f}\", sep=\" / \")"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\ndef myfunc(b, a):\n    a = 3\n    c = b + a\n    return c, a\na, b = 3, 2\na, b = myfunc(a, b)\nprint(a, f\"{b} = {a / b:.0f}\", sep=\" / \")\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\ndef myfunc(b, a):\n    a = 3\n    c = b + a\n    return c, a\na, b = 3, 2\na, b = myfunc(a, b)\nprint(a, f\"{b} = {a / b:.0f}\", sep=\" / \")",
       "answer": {
         "blocks": [
           {
@@ -28124,23 +28300,34 @@
         "text": "[{'code': '6 / 3 = 2'}, \"Exact output as a Python string: '6 / 3 = 2\\\\n'\"]"
       },
       "everythingPractice": true,
-      "exam2Coverage": "Functions, returns, scope"
+      "exam2Coverage": "Functions, returns, scope",
+      "choices": [
+        "'6 / 3 = 2.0\\n'",
+        "'6 / 3 = 2\\n'",
+        "'6 / 3 = 3\\n'",
+        "'{a} / {b} = {a/b}\\n'"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-018",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 18",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "def add1(x):\n    if x + 1 < 10:\n        return x + 1\n    else:\n        return \"Too big!\"\nprint(add1(1), add1(12))"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\ndef add1(x):\n    if x + 1 < 10:\n        return x + 1\n    else:\n        return \"Too big!\"\nprint(add1(1), add1(12))\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\ndef add1(x):\n    if x + 1 < 10:\n        return x + 1\n    else:\n        return \"Too big!\"\nprint(add1(1), add1(12))",
       "answer": {
         "blocks": [
           {
@@ -28150,14 +28337,25 @@
         ],
         "text": "[{'code': '2 Too big!'}, \"Exact output as a Python string: '2 Too big!\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'3 Too big!\\n'",
+        "'2 Too small!\\n'",
+        "'2 Too big!\\n'",
+        "'Too big!\\n'"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-019",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 19",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
@@ -28166,7 +28364,7 @@
           "code": "def myfunction(a, b=5, c):\n    return a * b * c\nprint(myfunction(1, 2, 3))"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\ndef myfunction(a, b=5, c):\n    return a * b * c\nprint(myfunction(1, 2, 3))\n```",
+      "text": "Write the output, or identify the error.\n\ndef myfunction(a, b=5, c):\n    return a * b * c\nprint(myfunction(1, 2, 3))",
       "answer": {
         "blocks": [
           "SyntaxError: parameter without a default follows parameter with a default"
@@ -28174,23 +28372,34 @@
         "text": "['SyntaxError: parameter without a default follows parameter with a default']"
       },
       "everythingPractice": true,
-      "exam2Coverage": "Parameters and syntax errors"
+      "exam2Coverage": "Parameters and syntax errors",
+      "choices": [
+        "The function definition succeeds with all parameters optional",
+        "TypeError during the first call",
+        "SyntaxError: parameter without a default follows parameter with a default",
+        "The function definition succeeds with all parameters required"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-020",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 20",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "def clip(v, lo=0, hi=10):\n    if v < lo:\n        return lo\n    if v > hi:\n        return hi\n    return v\nprint(clip(15), clip(-1), clip(7))"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\ndef clip(v, lo=0, hi=10):\n    if v < lo:\n        return lo\n    if v > hi:\n        return hi\n    return v\nprint(clip(15), clip(-1), clip(7))\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\ndef clip(v, lo=0, hi=10):\n    if v < lo:\n        return lo\n    if v > hi:\n        return hi\n    return v\nprint(clip(15), clip(-1), clip(7))",
       "answer": {
         "blocks": [
           {
@@ -28200,23 +28409,34 @@
         ],
         "text": "[{'code': '10 0 7'}, \"Exact output as a Python string: '10 0 7\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'0 0 7\\n'",
+        "'10 0 7\\n'",
+        "'10 7 7\\n'",
+        "'10 0 0\\n'"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-021",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 21",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "def myfunc1(x=10, y=3, z=False):\n    if z:\n        var = x * y\n    else:\n        var = x / y\n    return var\ndef myfunc2(myvar):\n    if myvar > 5:\n        return True\n    elif myvar < 5:\n        return False\n    else:\n        return 30\nprint(myfunc2(myfunc1()))"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\ndef myfunc1(x=10, y=3, z=False):\n    if z:\n        var = x * y\n    else:\n        var = x / y\n    return var\ndef myfunc2(myvar):\n    if myvar > 5:\n        return True\n    elif myvar < 5:\n        return False\n    else:\n        return 30\nprint(myfunc2(myfunc1()))\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\ndef myfunc1(x=10, y=3, z=False):\n    if z:\n        var = x * y\n    else:\n        var = x / y\n    return var\ndef myfunc2(myvar):\n    if myvar > 5:\n        return True\n    elif myvar < 5:\n        return False\n    else:\n        return 30\nprint(myfunc2(myfunc1()))",
       "answer": {
         "blocks": [
           {
@@ -28226,23 +28446,34 @@
         ],
         "text": "[{'code': 'False'}, \"Exact output as a Python string: 'False\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'True\\n'",
+        "'False\\n'",
+        "'TypeError\\n'",
+        "'None\\n'"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-022",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 22",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "def myfunc(x, y=\"Green\", z=100, Flag=False):\n    if z == 100:\n        z += 10\n        return z, x\n    elif y == \"Green\":\n        Flag = True\n        print(x, z)\n        return x, z\n    return Flag\nout1, out2 = myfunc(10)\nprint(out1, out2)"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\ndef myfunc(x, y=\"Green\", z=100, Flag=False):\n    if z == 100:\n        z += 10\n        return z, x\n    elif y == \"Green\":\n        Flag = True\n        print(x, z)\n        return x, z\n    return Flag\nout1, out2 = myfunc(10)\nprint(out1, out2)\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\ndef myfunc(x, y=\"Green\", z=100, Flag=False):\n    if z == 100:\n        z += 10\n        return z, x\n    elif y == \"Green\":\n        Flag = True\n        print(x, z)\n        return x, z\n    return Flag\nout1, out2 = myfunc(10)\nprint(out1, out2)",
       "answer": {
         "blocks": [
           {
@@ -28252,23 +28483,34 @@
         ],
         "text": "[{'code': '110 10'}, \"Exact output as a Python string: '110 10\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'110 110\\n'",
+        "'10 10\\n'",
+        "'110 10\\n'",
+        "'10 110\\n'"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-023",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 23 · Harder",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "def aplus(i):\n    j = 0\n    while i != 1:\n        if i % 2 == 0:\n            i /= 2\n        else:\n            i = i * 3 + 1\n        j += 1\n    return j\nprint(aplus(20))"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\ndef aplus(i):\n    j = 0\n    while i != 1:\n        if i % 2 == 0:\n            i /= 2\n        else:\n            i = i * 3 + 1\n        j += 1\n    return j\nprint(aplus(20))\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\ndef aplus(i):\n    j = 0\n    while i != 1:\n        if i % 2 == 0:\n            i /= 2\n        else:\n            i = i * 3 + 1\n        j += 1\n    return j\nprint(aplus(20))",
       "answer": {
         "blocks": [
           {
@@ -28278,23 +28520,34 @@
         ],
         "text": "[{'code': '7'}, \"Exact output as a Python string: '7\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'8\\n'",
+        "'0\\n'",
+        "'7\\n'",
+        "'6\\n'"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-024",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 24",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "def drawStar(a=6):\n    print(\"*\" * int(a))\na = \"4\"\ndrawStar(a)"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\ndef drawStar(a=6):\n    print(\"*\" * int(a))\na = \"4\"\ndrawStar(a)\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\ndef drawStar(a=6):\n    print(\"*\" * int(a))\na = \"4\"\ndrawStar(a)",
       "answer": {
         "blocks": [
           {
@@ -28304,23 +28557,34 @@
         ],
         "text": "[{'code': '****'}, \"Exact output as a Python string: '****\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'*****\\n'",
+        "'***\\n'",
+        "\"['*', '*', '*', '*']\\n\"",
+        "'****\\n'"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-025",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 25 · Harder",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "def go(x):\n    s = \"\"\n    for i in range(1, x + 1):\n        for j in range(1, i + 1):\n            s += \"# \"\n        s += \"=\\n\"\n    return s\nprint(go(2))"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\ndef go(x):\n    s = \"\"\n    for i in range(1, x + 1):\n        for j in range(1, i + 1):\n            s += \"# \"\n        s += \"=\\n\"\n    return s\nprint(go(2))\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\ndef go(x):\n    s = \"\"\n    for i in range(1, x + 1):\n        for j in range(1, i + 1):\n            s += \"# \"\n        s += \"=\\n\"\n    return s\nprint(go(2))",
       "answer": {
         "blocks": [
           {
@@ -28330,23 +28594,34 @@
         ],
         "text": "[{'code': '# =\\n# # ='}, \"Exact output as a Python string: '# =\\\\n# # =\\\\n\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'# = # # ='",
+        "'# =\\n# # =\\n'",
+        "'# # =\\n# =\\n'",
+        "'# =\\n# # =\\n\\n'"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-026",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 26 · Harder",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "def combo(n):\n    s, i = 0, 0\n    while i < n:\n        j = 0\n        while j < 3:\n            s += 1\n            if j == 1:\n                break\n            j += 1\n        else:\n            s += 10\n        i += 1\n    return s\nprint(combo(2))"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\ndef combo(n):\n    s, i = 0, 0\n    while i < n:\n        j = 0\n        while j < 3:\n            s += 1\n            if j == 1:\n                break\n            j += 1\n        else:\n            s += 10\n        i += 1\n    return s\nprint(combo(2))\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\ndef combo(n):\n    s, i = 0, 0\n    while i < n:\n        j = 0\n        while j < 3:\n            s += 1\n            if j == 1:\n                break\n            j += 1\n        else:\n            s += 10\n        i += 1\n    return s\nprint(combo(2))",
       "answer": {
         "blocks": [
           {
@@ -28356,23 +28631,34 @@
         ],
         "text": "[{'code': '4'}, \"Exact output as a Python string: '4\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'4\\n'",
+        "'0\\n'",
+        "'3\\n'",
+        "'5\\n'"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-027",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 27 · Harder",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "def A_function(one, two, three):\n    list1 = []\n    list2 = []\n    for i in one:\n        if i <= len(one) - 1:\n            list1.append(one[i])\n        if i % two == 0:\n            list1.append(i)\n        elif i % 3 == 1:\n            list2.append(i + 1)\n        return list1, list2\nmylist = [4, 3, 22, 15, 7]\na, b = 3, 2\nx, y = A_function(mylist, a, b)\nprint(y + x)"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\ndef A_function(one, two, three):\n    list1 = []\n    list2 = []\n    for i in one:\n        if i <= len(one) - 1:\n            list1.append(one[i])\n        if i % two == 0:\n            list1.append(i)\n        elif i % 3 == 1:\n            list2.append(i + 1)\n        return list1, list2\nmylist = [4, 3, 22, 15, 7]\na, b = 3, 2\nx, y = A_function(mylist, a, b)\nprint(y + x)\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\ndef A_function(one, two, three):\n    list1 = []\n    list2 = []\n    for i in one:\n        if i <= len(one) - 1:\n            list1.append(one[i])\n        if i % two == 0:\n            list1.append(i)\n        elif i % 3 == 1:\n            list2.append(i + 1)\n        return list1, list2\nmylist = [4, 3, 22, 15, 7]\na, b = 3, 2\nx, y = A_function(mylist, a, b)\nprint(y + x)",
       "answer": {
         "blocks": [
           {
@@ -28384,23 +28670,34 @@
         "text": "[{'code': '[5, 7]'}, \"Exact output as a Python string: '[5, 7]\\\\n'\", 'The pasted typographic dash was normalized to Python’s minus sign.']"
       },
       "everythingPractice": true,
-      "exam2Coverage": "Indexing and early returns"
+      "exam2Coverage": "Indexing and early returns",
+      "choices": [
+        "'[5, 7, 9]\\n'",
+        "'[7, 5]\\n'",
+        "'[5, 7]\\n'",
+        "'[3, 5, 7]\\n'"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-028",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 28",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "def f(a, b=2):\n    return a * b\nprint(f\"{f(3)}{f(3, 3)}\")  # no space"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\ndef f(a, b=2):\n    return a * b\nprint(f\"{f(3)}{f(3, 3)}\")  # no space\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\ndef f(a, b=2):\n    return a * b\nprint(f\"{f(3)}{f(3, 3)}\")  # no space",
       "answer": {
         "blocks": [
           {
@@ -28410,23 +28707,34 @@
         ],
         "text": "[{'code': '69'}, \"Exact output as a Python string: '69\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'69\\n'",
+        "'96\\n'",
+        "'70\\n'",
+        "'68\\n'"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-029",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 29 · Harder",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "def B_function(a, b):\n    for i in a:\n        if i == 5:\n            continue\n        if a[i] == \"Cat\":\n            print(f\"#{str(b.index(10))} {a[i]} {i}\", end=\" \")\n            x = 2010\n            break\na = [5, 10, 15, 20, 25]\nb = {\"Quinn\" : \"Cat\", \"Juliet\" : \"Dog\", \"Banjo\" : \"Dog\"}\nx = \"2017\"\nB_function(b, a)\nprint(x)"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\ndef B_function(a, b):\n    for i in a:\n        if i == 5:\n            continue\n        if a[i] == \"Cat\":\n            print(f\"#{str(b.index(10))} {a[i]} {i}\", end=\" \")\n            x = 2010\n            break\na = [5, 10, 15, 20, 25]\nb = {\"Quinn\" : \"Cat\", \"Juliet\" : \"Dog\", \"Banjo\" : \"Dog\"}\nx = \"2017\"\nB_function(b, a)\nprint(x)\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\ndef B_function(a, b):\n    for i in a:\n        if i == 5:\n            continue\n        if a[i] == \"Cat\":\n            print(f\"#{str(b.index(10))} {a[i]} {i}\", end=\" \")\n            x = 2010\n            break\na = [5, 10, 15, 20, 25]\nb = {\"Quinn\" : \"Cat\", \"Juliet\" : \"Dog\", \"Banjo\" : \"Dog\"}\nx = \"2017\"\nB_function(b, a)\nprint(x)",
       "answer": {
         "blocks": [
           {
@@ -28436,14 +28744,25 @@
         ],
         "text": "[{'code': '#1 Cat Quinn 2017'}, \"Exact output as a Python string: '#1 Cat Quinn 2017\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'#0 Cat Quinn 2017\\n'",
+        "'#1 Quinn Cat 2017\\n'",
+        "'#1 Cat Quinn 2017\\n'",
+        "'#1 Cat Quinn 2018\\n'"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-030",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 30",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
@@ -28452,30 +28771,41 @@
           "code": "x = 4\ny = timestwo(x)\ndef timestwo(x):\n    return x * 2\nprint(y)"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\nx = 4\ny = timestwo(x)\ndef timestwo(x):\n    return x * 2\nprint(y)\n```",
+      "text": "Write the output, or identify the error.\n\nx = 4\ny = timestwo(x)\ndef timestwo(x):\n    return x * 2\nprint(y)",
       "answer": {
         "blocks": [
           "NameError: name 'timestwo' is not defined"
         ],
         "text": "[\"NameError: name 'timestwo' is not defined\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "TypeError: incorrect number of arguments",
+        "The function returns None silently",
+        "NameError: name 'timestwo' is not defined",
+        "The function prints twice the argument"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-031",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 31",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "number = input(\"Enter a number: \")  # assume the user enters 5.0\ntry:\n    x = int(number)\n    print(f\"x is the integer {x}\")\nexcept:\n    x = float(number)\n    print(f\"x is the float {x}\")"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\nnumber = input(\"Enter a number: \")  # assume the user enters 5.0\ntry:\n    x = int(number)\n    print(f\"x is the integer {x}\")\nexcept:\n    x = float(number)\n    print(f\"x is the float {x}\")\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\nnumber = input(\"Enter a number: \")  # assume the user enters 5.0\ntry:\n    x = int(number)\n    print(f\"x is the integer {x}\")\nexcept:\n    x = float(number)\n    print(f\"x is the float {x}\")",
       "answer": {
         "blocks": [
           {
@@ -28487,23 +28817,34 @@
         "text": "[{'code': 'x is the float 5.0'}, \"Exact output as a Python string: 'x is the float 5.0\\\\n'\", 'The input prompt is Enter a number: ; the supplied response 5.0 causes int(\"5.0\") to fail, so the except branch runs.']"
       },
       "everythingPractice": true,
-      "exam2Coverage": "Input conversion and exceptions"
+      "exam2Coverage": "Input conversion and exceptions",
+      "choices": [
+        "'x is the float 5.0\\n'",
+        "'ValueError is unhandled\\n'",
+        "'x is the integer 5\\n'",
+        "'x is the float 5\\n'"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-032",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 32 · Harder",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "mystr = \"Howdy! Welcome to Texas A&M Engineering!\"\nmylist = mystr.split()\nnewstr = \"\"  # empty string\nfor i in range(3, len(mylist)):\n    newstr += mylist[i] + \" \"\nprint(mylist[0][:5] + \" \" + newstr[:-2] + \" students! \")"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\nmystr = \"Howdy! Welcome to Texas A&M Engineering!\"\nmylist = mystr.split()\nnewstr = \"\"  # empty string\nfor i in range(3, len(mylist)):\n    newstr += mylist[i] + \" \"\nprint(mylist[0][:5] + \" \" + newstr[:-2] + \" students! \")\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\nmystr = \"Howdy! Welcome to Texas A&M Engineering!\"\nmylist = mystr.split()\nnewstr = \"\"  # empty string\nfor i in range(3, len(mylist)):\n    newstr += mylist[i] + \" \"\nprint(mylist[0][:5] + \" \" + newstr[:-2] + \" students! \")",
       "answer": {
         "blocks": [
           {
@@ -28513,23 +28854,34 @@
         ],
         "text": "[{'code': 'Howdy Texas A&M Engineering students! '}, \"Exact output as a Python string: 'Howdy Texas A&M Engineering students! \\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'Howdy Texas A&M Engineering students!\\n\\n'",
+        "'Howdy Texas A&M Engineering students!'",
+        "'HowdyTexasA&MEngineeringstudents!'",
+        "'Howdy Texas A&M Engineering students! \\n'"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-033",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 33 · Harder",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "a, b = 3, 0\ncountStr = \"\"  # empty string\nwhile a > b:\n    try:\n        c = a / b\n        countStr += str(a)\n    except:\n        countStr += str(b)\n        a -= 1\ncountList = list(countStr)\nfor i in range(len(countList)):\n    countList[i] = float(countList[i])\nprint(sum(countList), countList.count(0), sep=\":\", end=\"!\")"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\na, b = 3, 0\ncountStr = \"\"  # empty string\nwhile a > b:\n    try:\n        c = a / b\n        countStr += str(a)\n    except:\n        countStr += str(b)\n        a -= 1\ncountList = list(countStr)\nfor i in range(len(countList)):\n    countList[i] = float(countList[i])\nprint(sum(countList), countList.count(0), sep=\":\", end=\"!\")\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\na, b = 3, 0\ncountStr = \"\"  # empty string\nwhile a > b:\n    try:\n        c = a / b\n        countStr += str(a)\n    except:\n        countStr += str(b)\n        a -= 1\ncountList = list(countStr)\nfor i in range(len(countList)):\n    countList[i] = float(countList[i])\nprint(sum(countList), countList.count(0), sep=\":\", end=\"!\")",
       "answer": {
         "blocks": [
           {
@@ -28539,23 +28891,34 @@
         ],
         "text": "[{'code': '0.0:3!'}, \"Exact output as a Python string: '0.0:3!'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'0:3!'",
+        "'0.0:3!'",
+        "'0.0 3!'",
+        "'0.0:3.0!'"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-034",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 34",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "mystring = \"   \\t\\n123abc   \\n\"\nout_value = \"::\".join(mystring.strip().split(\"23a\"))\nprint(out_value)"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\nmystring = \"   \\t\\n123abc   \\n\"\nout_value = \"::\".join(mystring.strip().split(\"23a\"))\nprint(out_value)\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\nmystring = \"   \\t\\n123abc   \\n\"\nout_value = \"::\".join(mystring.strip().split(\"23a\"))\nprint(out_value)",
       "answer": {
         "blocks": [
           {
@@ -28565,23 +28928,34 @@
         ],
         "text": "[{'code': '1::bc'}, \"Exact output as a Python string: '1::bc\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'1::bc\\n'",
+        "'1:bc\\n'",
+        "'1::cb\\n'",
+        "'0::bc\\n'"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-035",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 35 · Harder",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "mystring = \"AXVRL:2025/11/07\"\nmylist = mystring.split(\":\")\nmylist[1] = mylist[1].split(\"/\")\nfor i in range(len(mylist)):\n    if i == 0:\n        print(mylist[i][-3:], \"\\t\", sep=\"\", end=\"\")  # both empty str\n    else:\n        print(f\"{mylist[i][1]}\\t{mylist[i][2]}\\t{mylist[i][0]}\")"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\nmystring = \"AXVRL:2025/11/07\"\nmylist = mystring.split(\":\")\nmylist[1] = mylist[1].split(\"/\")\nfor i in range(len(mylist)):\n    if i == 0:\n        print(mylist[i][-3:], \"\\t\", sep=\"\", end=\"\")  # both empty str\n    else:\n        print(f\"{mylist[i][1]}\\t{mylist[i][2]}\\t{mylist[i][0]}\")\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\nmystring = \"AXVRL:2025/11/07\"\nmylist = mystring.split(\":\")\nmylist[1] = mylist[1].split(\"/\")\nfor i in range(len(mylist)):\n    if i == 0:\n        print(mylist[i][-3:], \"\\t\", sep=\"\", end=\"\")  # both empty str\n    else:\n        print(f\"{mylist[i][1]}\\t{mylist[i][2]}\\t{mylist[i][0]}\")",
       "answer": {
         "blocks": [
           {
@@ -28592,23 +28966,34 @@
         "text": "[{'code': 'VRL\\t11\\t07\\t2025'}, \"Exact output as a Python string: 'VRL\\\\t11\\\\t07\\\\t2025\\\\n'\"]"
       },
       "everythingPractice": true,
-      "exam2Coverage": "String parsing and formatting"
+      "exam2Coverage": "String parsing and formatting",
+      "choices": [
+        "'VRL\\t11\\t7\\t2025\\n'",
+        "'VRL\\t11\\t07\\t2025\\n'",
+        "'VRL\\n11\\n07\\n2025\\n'",
+        "'VRL 11 07 2025\\n'"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-036",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 36",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "mylist = [5, 3, 7, 9, 1, 2]\nmylist.pop()\nmylist.insert(2, 4)\nmylist.sort()\nfor num in mylist:\n    print(num, end = \" \")"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\nmylist = [5, 3, 7, 9, 1, 2]\nmylist.pop()\nmylist.insert(2, 4)\nmylist.sort()\nfor num in mylist:\n    print(num, end = \" \")\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\nmylist = [5, 3, 7, 9, 1, 2]\nmylist.pop()\nmylist.insert(2, 4)\nmylist.sort()\nfor num in mylist:\n    print(num, end = \" \")",
       "answer": {
         "blocks": [
           {
@@ -28618,23 +29003,34 @@
         ],
         "text": "[{'code': '1 3 4 5 7 9 '}, \"Exact output as a Python string: '1 3 4 5 7 9 '\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'1 3 5 7 9 '",
+        "'1 3 4 5 7 9 '",
+        "'0 1 3 4 5 7 9 '",
+        "'1 3 4 5 7 9'"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-037",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 37 · Harder",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "def output(mystr, num):\n    outstring = mystr\n    with open(\"results.csv\", \"w\") as outfile:\n        for i in range(num):\n            outfile.write(outstring[-1] + \",\")\n            outstring = outstring[:-1]\n        outfile.write(mystr[0])\n    return outstring\nprint(output(\"reknits\", 6))"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\ndef output(mystr, num):\n    outstring = mystr\n    with open(\"results.csv\", \"w\") as outfile:\n        for i in range(num):\n            outfile.write(outstring[-1] + \",\")\n            outstring = outstring[:-1]\n        outfile.write(mystr[0])\n    return outstring\nprint(output(\"reknits\", 6))\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\ndef output(mystr, num):\n    outstring = mystr\n    with open(\"results.csv\", \"w\") as outfile:\n        for i in range(num):\n            outfile.write(outstring[-1] + \",\")\n            outstring = outstring[:-1]\n        outfile.write(mystr[0])\n    return outstring\nprint(output(\"reknits\", 6))",
       "answer": {
         "blocks": [
           {
@@ -28645,23 +29041,34 @@
         ],
         "text": "[{'code': 'r'}, \"Exact output as a Python string: 'r\\\\n'\", 'The question asks for printed output: r. The file results.csv contains s,t,i,n,k,e,r.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'IndexError\\n'",
+        "'r\\n'",
+        "'s,t,i,n,k,e,r\\n'",
+        "'results.csv\\n'"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-038",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 38",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "import numpy as np\nmygrid = np.arange(1, 10).reshape(3, 3)\nfor i in range(len(mygrid)):\n    mygrid[i][i] = 5\nprint(mygrid)"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\nimport numpy as np\nmygrid = np.arange(1, 10).reshape(3, 3)\nfor i in range(len(mygrid)):\n    mygrid[i][i] = 5\nprint(mygrid)\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\nimport numpy as np\nmygrid = np.arange(1, 10).reshape(3, 3)\nfor i in range(len(mygrid)):\n    mygrid[i][i] = 5\nprint(mygrid)",
       "answer": {
         "blocks": [
           {
@@ -28671,23 +29078,34 @@
         ],
         "text": "[{'code': '[[5 2 3]\\n [4 5 6]\\n [7 8 5]]'}, \"Exact output as a Python string: '[[5 2 3]\\\\n [4 5 6]\\\\n [7 8 5]]\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'[[5 5 5]\\n [4 5 6]\\n [7 8 9]]\\n'",
+        "'[[5 2 3]\\n [4 5 6]\\n [7 8 9]]\\n'",
+        "'[[5 2 3]\\n [4 5 6]\\n [7 8 5]]\\n'",
+        "'[[1 2 3]\\n [4 5 6]\\n [7 8 9]]\\n'"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-039",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 39 · Harder",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "mystr = \"2-g:gig'em\\n3-s:aggies\\n1-o:whoop\"\nmylist = mystr.split(\"\\n\")\ngood = 0\nfor item in mylist:\n    key, word = item.strip().split(\":\")\n    key = key.split(\"-\")\n    if word.count(key[1]) >= int(key[0]):\n        good += 1\nprint(good)"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\nmystr = \"2-g:gig'em\\n3-s:aggies\\n1-o:whoop\"\nmylist = mystr.split(\"\\n\")\ngood = 0\nfor item in mylist:\n    key, word = item.strip().split(\":\")\n    key = key.split(\"-\")\n    if word.count(key[1]) >= int(key[0]):\n        good += 1\nprint(good)\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\nmystr = \"2-g:gig'em\\n3-s:aggies\\n1-o:whoop\"\nmylist = mystr.split(\"\\n\")\ngood = 0\nfor item in mylist:\n    key, word = item.strip().split(\":\")\n    key = key.split(\"-\")\n    if word.count(key[1]) >= int(key[0]):\n        good += 1\nprint(good)",
       "answer": {
         "blocks": [
           {
@@ -28697,23 +29115,34 @@
         ],
         "text": "[{'code': '2'}, \"Exact output as a Python string: '2\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'1\\n'",
+        "'2\\n'",
+        "'0\\n'",
+        "'3\\n'"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-040",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 40 · Harder",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write the output, or identify the error.",
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "import numpy as np\nx = np.linspace(1.0, 10.0, 10)\ny = x ** 2 - 1\nwith open(\"zfile.txt\", \"w\") as zfile:\n    zfile.write(\"x\\ty\\n\")\n    for i in range(len(x)):\n        mystr = str(x[i]) + \"\\t\" + str(y[i])\n        zfile.write(mystr + \"\\n\")\nwith open(\"zfile.txt\") as myfile:\n    all_of_it = myfile.read().split(\"\\t\")\noutput = \",\".join(all_of_it)\nprint(output)"
         }
       ],
-      "text": "Write the output, or identify the error.\n\n```python\nimport numpy as np\nx = np.linspace(1.0, 10.0, 10)\ny = x ** 2 - 1\nwith open(\"zfile.txt\", \"w\") as zfile:\n    zfile.write(\"x\\ty\\n\")\n    for i in range(len(x)):\n        mystr = str(x[i]) + \"\\t\" + str(y[i])\n        zfile.write(mystr + \"\\n\")\nwith open(\"zfile.txt\") as myfile:\n    all_of_it = myfile.read().split(\"\\t\")\noutput = \",\".join(all_of_it)\nprint(output)\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\nimport numpy as np\nx = np.linspace(1.0, 10.0, 10)\ny = x ** 2 - 1\nwith open(\"zfile.txt\", \"w\") as zfile:\n    zfile.write(\"x\\ty\\n\")\n    for i in range(len(x)):\n        mystr = str(x[i]) + \"\\t\" + str(y[i])\n        zfile.write(mystr + \"\\n\")\nwith open(\"zfile.txt\") as myfile:\n    all_of_it = myfile.read().split(\"\\t\")\noutput = \",\".join(all_of_it)\nprint(output)",
       "answer": {
         "blocks": [
           {
@@ -28724,14 +29153,25 @@
         ],
         "text": "[{'code': 'x,y\\n1.0,0.0\\n2.0,3.0\\n3.0,8.0\\n4.0,15.0\\n5.0,24.0\\n6.0,35.0\\n7.0,48.0\\n8.0,63.0\\n9.0,80.0\\n10.0,99.0'}, \"Exact output as a Python string: 'x,y\\\\n1.0,0.0\\\\n2.0,3.0\\\\n3.0,8.0\\\\n4.0,15.0\\\\n5.0,24.0\\\\n6.0,35.0\\\\n7.0,48.0\\\\n8.0,63.0\\\\n9.0,80.0\\\\n10.0,99.0\\\\n\\\\n'\", 'The pasted typographic dash was normalized to Python’s minus sign.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'No output; write() never prints anything\\n'",
+        "'x,y\\n1.0,1.0\\n2.0,4.0\\n3.0,9.0\\n'",
+        "'x,y\\n0.0,-1.0\\n1.0,0.0\\n2.0,3.0\\n'",
+        "'x,y\\n1.0,0.0\\n2.0,3.0\\n3.0,8.0\\n4.0,15.0\\n5.0,24.0\\n6.0,35.0\\n7.0,48.0\\n8.0,63.0\\n9.0,80.0\\n10.0,99.0\\n\\n'"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-041",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 41 · Harder",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
@@ -28744,7 +29184,7 @@
           "code": "with open(\"scores.csv\") as file1:\n    count = 0\n    score_dict = {}\n    for i in file1:\n        i = i.strip().split(\",\")\n        score_dict[i[0]] = i[1:]\ndel(score_dict[\"ID\"])\navg1, avg2, avg3 = 0, 0, 0\nfor i in score_dict:\n    avg1 += int(score_dict[i][0])\n    avg2 += int(score_dict[i][1])\n    avg3 += int(score_dict[i][2])\nvalue = [avg1/len(score_dict), avg2/len(score_dict), avg3/len(score_dict)]\nprint(value)"
         }
       ],
-      "text": "The file `scores.csv` contains the following text:\n```\nID,Score1,Score2,Score3\n121,30,50,90\n045,90,70,80\n217,60,60,85\n```\nWrite the output of the following code.\n```\nwith open(\"scores.csv\") as file1:\n    count = 0\n    score_dict = {}\n    for i in file1:\n        i = i.strip().split(\",\")\n        score_dict[i[0]] = i[1:]\ndel(score_dict[\"ID\"])\navg1, avg2, avg3 = 0, 0, 0\nfor i in score_dict:\n    avg1 += int(score_dict[i][0])\n    avg2 += int(score_dict[i][1])\n    avg3 += int(score_dict[i][2])\nvalue = [avg1/len(score_dict), avg2/len(score_dict), avg3/len(score_dict)]\nprint(value)\n```",
+      "text": "The file scores.csv contains the following text:\n\nID,Score1,Score2,Score3\n121,30,50,90\n045,90,70,80\n217,60,60,85\n\nWrite the output of the following code.\n\nwith open(\"scores.csv\") as file1:\n    count = 0\n    score_dict = {}\n    for i in file1:\n        i = i.strip().split(\",\")\n        score_dict[i[0]] = i[1:]\ndel(score_dict[\"ID\"])\navg1, avg2, avg3 = 0, 0, 0\nfor i in score_dict:\n    avg1 += int(score_dict[i][0])\n    avg2 += int(score_dict[i][1])\n    avg3 += int(score_dict[i][2])\nvalue = [avg1/len(score_dict), avg2/len(score_dict), avg3/len(score_dict)]\nprint(value)",
       "answer": {
         "blocks": [
           {
@@ -28755,14 +29195,25 @@
         "text": "[{'code': '[60.0, 60.0, 85.0]'}, \"Exact output as a Python string: '[60.0, 60.0, 85.0]\\\\n'\"]"
       },
       "everythingPractice": true,
-      "exam2Coverage": "Reading CSV and aggregation"
+      "exam2Coverage": "Reading CSV and aggregation",
+      "choices": [
+        "'[60, 60, 85]\\n'",
+        "'[60.0, 60.0, 85.0, 85.0]\\n'",
+        "'[60.0, 60.0, 85.0]\\n'",
+        "'[60.0, 85.0]\\n'"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-042",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 42",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
@@ -28771,7 +29222,7 @@
           "code": "nextfile = open(\"afile2.csv\", \"w\")\nnextfile.write(\"\\t\".join(\"1,2,3\\n\".split(\",\")))\nnextfile.write(\"\\t\".join(\"4,5,6\\n\".split(\",\")))\nlist1 = \".\".join([\"5\", \"6\", \"7\", \"8\", \"9\"])\nnextfile.write(list1)\nnextfile.close()"
         }
       ],
-      "text": "What are the contents of the file `afile2.csv` after the following lines of code have executed?\n```\nnextfile = open(\"afile2.csv\", \"w\")\nnextfile.write(\"\\t\".join(\"1,2,3\\n\".split(\",\")))\nnextfile.write(\"\\t\".join(\"4,5,6\\n\".split(\",\")))\nlist1 = \".\".join([\"5\", \"6\", \"7\", \"8\", \"9\"])\nnextfile.write(list1)\nnextfile.close()\n```",
+      "text": "What are the contents of the file afile2.csv after the following lines of code have executed?\n\nnextfile = open(\"afile2.csv\", \"w\")\nnextfile.write(\"\\t\".join(\"1,2,3\\n\".split(\",\")))\nnextfile.write(\"\\t\".join(\"4,5,6\\n\".split(\",\")))\nlist1 = \".\".join([\"5\", \"6\", \"7\", \"8\", \"9\"])\nnextfile.write(list1)\nnextfile.close()",
       "answer": {
         "blocks": [
           {
@@ -28782,22 +29233,34 @@
         ],
         "text": "[{'code': '1\\t2\\t3\\n4\\t5\\t6\\n5.6.7.8.9'}, \"Exact output as a Python string: '1\\\\t2\\\\t3\\\\n4\\\\t5\\\\t6\\\\n5.6.7.8.9'\", 'The gaps between 1/2/3 and 4/5/6 are tab characters, not commas.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'1\\t2\\t3\\n4\\t5\\t6\\n5.6.7.8.9\\n'",
+        "'1\\t2\\t3\\n4\\t5\\t6\\n5.6.7.8.9'",
+        "'1,2,3\\n4,5,6\\n5.6.7.8.9'",
+        "'1\\t2\\t3\\n4\\t5\\t6\\n5 6 7 8 9'"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-043",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 43",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
         {
           "code": "# problem 43\nmystr = \"1.1\".join(\"1,2,3\".split(\",\"))\nmystr2 = mystr.split(\".\")\nmysum = 0\nfor num in mystr2:\n    mysum += int(num)\nprint(mysum)"
         }
       ],
-      "text": "```\n# problem 43\nmystr = \"1.1\".join(\"1,2,3\".split(\",\"))\nmystr2 = mystr.split(\".\")\nmysum = 0\nfor num in mystr2:\n    mysum += int(num)\nprint(mysum)\n```",
+      "text": "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.\n\n# problem 43\nmystr = \"1.1\".join(\"1,2,3\".split(\",\"))\nmystr2 = mystr.split(\".\")\nmysum = 0\nfor num in mystr2:\n    mysum += int(num)\nprint(mysum)",
       "answer": {
         "blocks": [
           {
@@ -28807,118 +29270,111 @@
         ],
         "text": "[{'code': '145'}, \"Exact output as a Python string: '145\\\\n'\"]"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'145\\n'",
+        "'144\\n'",
+        "'146\\n'",
+        "'145.0\\n'"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-044",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 44 · Harder",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Given the list: my_list = [1, 2, 3, 4, 5], which of the following code snippets below will output 1, 3, 5? Choose all that apply.",
-        {
-          "code": "# answer A\nfor i in range(0, 5, 2):\n    print(my_list[i], end=\", \")"
-        },
-        {
-          "code": "# answer B\ni = 0\nout = my_list[i]\nwhile i < 4:\n    print(out, end=\", \")\n    i += 2\n    out = my_list[i]\nprint(out)"
-        },
-        {
-          "code": "# answer C\nfor i, value in enumerate(my_list):\n    if value % 2 == 1 and i < 4:\n        print(my_list[i], end=\", \")\nprint(my_list[-1])"
-        },
-        {
-          "code": "# answer D\ni = 1\nout = my_list[i]\nwhile i < 5:\n    print(out, end=\", \")\n    i += 2\n    out = my_list[i]\nprint(out)"
-        },
-        {
-          "code": "# answer E\nfor i in range(len(my_list)):\n    if i % 2 == 0:\n        print(my_list[i], end=\"\")\n        if i + 1 < len(my_list):\n            print(\", \", end=\"\")"
-        },
-        {
-          "code": "# answer F\ncount = 0\nfor i in my_list:\n    if i % 2 == 1 and count < 4:\n        print(i, end=\", \")\n    elif count == 4:\n        print(i)\n    count += 1"
-        },
-        {
-          "code": "# answer G\nfor i in my_list:\n    print(my_list[i], end=\", \")"
-        }
+        "Given my_list = [1, 2, 3, 4, 5], select every snippet that prints exactly 1, 3, 5 with no trailing comma. A final newline is allowed."
       ],
-      "text": "Given the list: `my_list = [1, 2, 3, 4, 5]`, which of the following code snippets below will output `1, 3, 5`? Choose all that apply.\n```\n# answer A\nfor i in range(0, 5, 2):\n    print(my_list[i], end=\", \")\n```\n```\n# answer B\ni = 0\nout = my_list[i]\nwhile i < 4:\n    print(out, end=\", \")\n    i += 2\n    out = my_list[i]\nprint(out)\n```\n```\n# answer C\nfor i, value in enumerate(my_list):\n    if value % 2 == 1 and i < 4:\n        print(my_list[i], end=\", \")\nprint(my_list[-1])\n```\n```\n# answer D\ni = 1\nout = my_list[i]\nwhile i < 5:\n    print(out, end=\", \")\n    i += 2\n    out = my_list[i]\nprint(out)\n```\n```\n# answer E\nfor i in range(len(my_list)):\n    if i % 2 == 0:\n        print(my_list[i], end=\"\")\n        if i + 1 < len(my_list):\n            print(\", \", end=\"\")\n```\n```\n# answer F\ncount = 0\nfor i in my_list:\n    if i % 2 == 1 and count < 4:\n        print(i, end=\", \")\n    elif count == 4:\n        print(i)\n    count += 1\n```\n```\n# answer G\nfor i in my_list:\n    print(my_list[i], end=\", \")\n```",
+      "text": "Given my_list = [1, 2, 3, 4, 5], select every snippet that prints exactly 1, 3, 5 with no trailing comma. A final newline is allowed.",
       "answer": {
         "blocks": [
           "B, C, E, and F print 1, 3, 5 without a trailing comma. A prints a trailing comma and space (often accepted if only the values matter). D prints 2, 4, then raises IndexError. G treats list values as indices and eventually raises IndexError."
         ],
         "text": "['B, C, E, and F print 1, 3, 5 without a trailing comma. A prints a trailing comma and space (often accepted if only the values matter). D prints 2, 4, then raises IndexError. G treats list values as indices and eventually raises IndexError.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "for i in range(0, 5, 2):\n    print(my_list[i], end=\", \")",
+        "i = 0\nout = my_list[i]\nwhile i < 4:\n    print(out, end=\", \")\n    i += 2\n    out = my_list[i]\nprint(out)",
+        "for i, value in enumerate(my_list):\n    if value % 2 == 1 and i < 4:\n        print(my_list[i], end=\", \")\nprint(my_list[-1])",
+        "i = 1\nout = my_list[i]\nwhile i < 5:\n    print(out, end=\", \")\n    i += 2\n    out = my_list[i]\nprint(out)",
+        "for i in range(len(my_list)):\n    if i % 2 == 0:\n        print(my_list[i], end=\"\")\n        if i + 1 < len(my_list):\n            print(\", \", end=\"\")",
+        "count = 0\nfor i in my_list:\n    if i % 2 == 1 and count < 4:\n        print(i, end=\", \")\n    elif count == 4:\n        print(i)\n    count += 1",
+        "for i in my_list:\n    print(my_list[i], end=\", \")"
+      ],
+      "correctChoices": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "multiple": true,
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "codeChoices": true
     },
     {
       "id": "ENGR-E2-045",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 45",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
         "Which of the code snippets below produces the same output as:",
+        "Select all that apply.",
         {
           "code": "for i in range(4):\n    print(f\"{i+1}\", end=\"\")"
-        },
-        "Choose all that apply.",
-        {
-          "code": "# answer A\nfor j in range(4):\n    print(f\"{j+1}\", end=\"\")"
-        },
-        {
-          "code": "# answer B\ni = 0\nwhile i <= 3:\n    print(f\"{i+1}\", end=\"\")\n    i += 1"
-        },
-        {
-          "code": "# answer C\nfor i in range(1, 5):\n    print(i, end=\"\")"
-        },
-        {
-          "code": "# answer D\nfor i in range(5):\n    if i == 4:\n        break\n    print(i + 1, end=\"\")"
         }
       ],
-      "text": "Which of the code snippets below produces the same output as: \n```\nfor i in range(4):\n    print(f\"{i+1}\", end=\"\")\n```\nChoose all that apply.\n```\n# answer A\nfor j in range(4):\n    print(f\"{j+1}\", end=\"\")\n```\n```\n# answer B\ni = 0\nwhile i <= 3:\n    print(f\"{i+1}\", end=\"\")\n    i += 1\n```\n```\n# answer C\nfor i in range(1, 5):\n    print(i, end=\"\")\n```\n```\n# answer D\nfor i in range(5):\n    if i == 4:\n        break\n    print(i + 1, end=\"\")\n```",
+      "text": "Which of the code snippets below produces the same output as:\n\nSelect all that apply.\n\nfor i in range(4):\n    print(f\"{i+1}\", end=\"\")",
       "answer": {
         "blocks": [
           "A, B, C, and D all print 1234 with no spaces."
         ],
         "text": "['A, B, C, and D all print 1234 with no spaces.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "for j in range(4):\n    print(f\"{j+1}\", end=\"\")",
+        "i = 0\nwhile i <= 3:\n    print(f\"{i+1}\", end=\"\")\n    i += 1",
+        "for i in range(1, 5):\n    print(i, end=\"\")",
+        "for i in range(5):\n    if i == 4:\n        break\n    print(i + 1, end=\"\")"
+      ],
+      "correctChoices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "multiple": true,
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "codeChoices": true
     },
     {
       "id": "ENGR-E2-046",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 46",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "After executing the two lines of code below, which of the following potential third lines of code will NOT result in an error? Choose all that apply.",
+        "After executing the two lines of code below, which of the following potential third lines of code will NOT result in an error? Select all that apply.",
         {
           "code": "# Execute the following two lines of code first\nthe_list = [3, \"5\", 0]\nthe_str = \"A1B2C3\"\n## third line of code goes here ##"
-        },
-        {
-          "code": "1_var = {the_list[1]:the_str}"
-        },
-        {
-          "code": "myvar = the_list[the_str[1]]"
-        },
-        {
-          "code": "a_var = the_list[0] + int(the_str[-1])"
-        },
-        {
-          "code": "some_var = the_str, the_list"
-        },
-        {
-          "code": "the_var = the_str[the_list[1]]"
-        },
-        {
-          "code": "a = the_str[the_list[2]]"
         }
       ],
-      "text": "After executing the two lines of code below, which of the following potential third lines of code will **NOT** result in an error? Choose all that apply.\n```\n# Execute the following two lines of code first\nthe_list = [3, \"5\", 0]\nthe_str = \"A1B2C3\"\n## third line of code goes here ##\n```\n- `1_var = {the_list[1]:the_str}`\n- `myvar = the_list[the_str[1]]`\n- `a_var = the_list[0] + int(the_str[-1])`\n- `some_var = the_str, the_list`\n- `the_var = the_str[the_list[1]]`\n- `a = the_str[the_list[2]]`",
+      "text": "After executing the two lines of code below, which of the following potential third lines of code will NOT result in an error? Select all that apply.\n\n# Execute the following two lines of code first\nthe_list = [3, \"5\", 0]\nthe_str = \"A1B2C3\"\n## third line of code goes here ##",
       "answer": {
         "blocks": [
           "The valid third lines are a_var = the_list[0] + int(the_str[-1]), some_var = the_str, the_list, and a = the_str[the_list[2]]. They produce 6, a tuple, and \"A\", respectively. 1_var is an invalid identifier; the other two invalid expressions use strings as indices."
@@ -28926,93 +29382,103 @@
         "text": "['The valid third lines are a_var = the_list[0] + int(the_str[-1]), some_var = the_str, the_list, and a = the_str[the_list[2]]. They produce 6, a tuple, and \"A\", respectively. 1_var is an invalid identifier; the other two invalid expressions use strings as indices.']"
       },
       "everythingPractice": true,
-      "exam2Coverage": "Types and indexing"
+      "exam2Coverage": "Types and indexing",
+      "choices": [
+        "1_var = {the_list[1]:the_str}",
+        "myvar = the_list[the_str[1]]",
+        "a_var = the_list[0] + int(the_str[-1])",
+        "some_var = the_str, the_list",
+        "the_var = the_str[the_list[1]]",
+        "a = the_str[the_list[2]]"
+      ],
+      "correctChoices": [
+        2,
+        3,
+        5
+      ],
+      "multiple": true,
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "codeChoices": true
     },
     {
       "id": "ENGR-E2-047",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 47",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Which of the following lines of code correctly opens an existing file? Choose all that apply.",
-        {
-          "code": "myfile = open(\"grades.csv\", \"r\")"
-        },
-        {
-          "code": "with open(\"data.dat\", \"r+\") as my-file:"
-        },
-        {
-          "code": "myfile = open(\"stats.csv\", \"w\")"
-        },
-        {
-          "code": "with open(\"datafile.txt\", \"a\") as myfile:"
-        },
-        {
-          "code": "this_file = open(\"weather.odb\", a+)"
-        },
-        {
-          "code": "with open(\"barcodes.txt\") as bfile:"
-        }
+        "Select every valid file-opening statement below. Assume accessible existing paths, permissions, and an indented body for each with statement. Opening in write mode may truncate the file."
       ],
-      "text": "Which of the following lines of code correctly opens an existing file? Choose all that apply.\n- `myfile = open(\"grades.csv\", \"r\")`\n- `with open(\"data.dat\", \"r+\") as my-file:`\n- `myfile = open(\"stats.csv\", \"w\")`\n- `with open(\"datafile.txt\", \"a\") as myfile:`\n- `this_file = open(\"weather.odb\", a+)`\n- `with open(\"barcodes.txt\") as bfile:`",
+      "text": "Select every valid file-opening statement below. Assume accessible existing paths, permissions, and an indented body for each with statement. Opening in write mode may truncate the file.",
       "answer": {
         "blocks": [
           "Lines 1, 3, 4, and 6 are valid opens, assuming existing accessible paths and permissions. The w mode opens but truncates the file. my-file is not a valid variable name, and a+ must be quoted. A with statement also needs an indented body."
         ],
         "text": "['Lines 1, 3, 4, and 6 are valid opens, assuming existing accessible paths and permissions. The w mode opens but truncates the file. my-file is not a valid variable name, and a+ must be quoted. A with statement also needs an indented body.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "myfile = open(\"grades.csv\", \"r\")",
+        "with open(\"data.dat\", \"r+\") as my-file:",
+        "myfile = open(\"stats.csv\", \"w\")",
+        "with open(\"datafile.txt\", \"a\") as myfile:",
+        "this_file = open(\"weather.odb\", a+)",
+        "with open(\"barcodes.txt\") as bfile:"
+      ],
+      "correctChoices": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "multiple": true,
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "codeChoices": true
     },
     {
       "id": "ENGR-E2-048",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 48 · Harder",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Which of the following code snippets below will execute without error?",
-        {
-          "code": "# answer A\nlistA = [1, 2, 3, 4, 5]\nlistB = [4, 6, 8, 10, 12]\nlistC = []\nfor i in range(5):\n    listC += [listA[i] + listB[i]]\nprint(listC)"
-        },
-        {
-          "code": "# answer B\nlistA = [6, 5, 4, 3, 2, 1]\nlistB = [1, 3, 5, 7, 9, 11]\nlistC = []\nfor i in range(1, 7):\n    listC += [listA[i] + listB[i]]\nprint(listC)"
-        },
-        {
-          "code": "# answer C\nmyList = [7, 8, 6, 4, 2]\nfor num in myList:\n    if num < 3:\n        print(item)"
-        },
-        {
-          "code": "# answer D\nwith open(\"data.txt\", \"w\") as newfile:\n    newfile.write(\"15\\n30\\n45\\n90\\n60\\n60\")\ndata_list = []\nnumbers.open(\"data.txt\", \"r\")\nfor line in numbers:\n    data_list.append(line.strip())\nprint(data_list)"
-        },
-        {
-          "code": "# answer E\ndef myfunc(a, b=7, c):\n    out1 = a + b / c\n    out2 = a - c * b\n    return out1, out2\na, b = myfunc(5, 2, 4)"
-        },
-        {
-          "code": "# answer F\nfrom math import sqrt\ndef func2(sigma, n):\n    error = sigma / sqrt(n)\n    return error\ndef func1(x):\n    resid = 0\n    avg = sum(x) / len(x)\n    for i in x:\n        resid += (i - avg) ** 2\n    stdev = resid / (len(x) - 1)\n    error = func2(stdev, len(x))\n    return error\ndata = [2, 5, 3, 7, 4, 9, 1, 2, 5, 8, 9, 3, 4]\nprint(func1(data))"
-        },
-        {
-          "code": "# answer G\nmylist, square = [1, 3, 5, 7, 9], []\nfor i in mylist:\n    square += i ** 2\nprint(sum(square))"
-        }
+        "Select every snippet that executes without error in a fresh namespace."
       ],
-      "text": "Which of the following code snippets below will execute without error?\n```\n# answer A\nlistA = [1, 2, 3, 4, 5]\nlistB = [4, 6, 8, 10, 12]\nlistC = []\nfor i in range(5):\n    listC += [listA[i] + listB[i]]\nprint(listC)\n```\n```\n# answer B\nlistA = [6, 5, 4, 3, 2, 1]\nlistB = [1, 3, 5, 7, 9, 11]\nlistC = []\nfor i in range(1, 7):\n    listC += [listA[i] + listB[i]]\nprint(listC)\n```\n```\n# answer C\nmyList = [7, 8, 6, 4, 2]\nfor num in myList:\n    if num < 3:\n        print(item)\n```\n```\n# answer D\nwith open(\"data.txt\", \"w\") as newfile:\n    newfile.write(\"15\\n30\\n45\\n90\\n60\\n60\")\ndata_list = []\nnumbers.open(\"data.txt\", \"r\")\nfor line in numbers:\n    data_list.append(line.strip())\nprint(data_list)\n```\n```\n# answer E\ndef myfunc(a, b=7, c):\n    out1 = a + b / c\n    out2 = a - c * b\n    return out1, out2\na, b = myfunc(5, 2, 4)\n```\n```\n# answer F\nfrom math import sqrt\ndef func2(sigma, n):\n    error = sigma / sqrt(n)\n    return error\ndef func1(x):\n    resid = 0\n    avg = sum(x) / len(x)\n    for i in x:\n        resid += (i - avg) ** 2\n    stdev = resid / (len(x) - 1)\n    error = func2(stdev, len(x))\n    return error\ndata = [2, 5, 3, 7, 4, 9, 1, 2, 5, 8, 9, 3, 4]\nprint(func1(data))\n```\n```\n# answer G\nmylist, square = [1, 3, 5, 7, 9], []\nfor i in mylist:\n    square += i ** 2\nprint(sum(square))\n```",
+      "text": "Select every snippet that executes without error in a fresh namespace.",
       "answer": {
         "blocks": [
           "A and F execute without error in a fresh namespace. A prints [5, 8, 11, 14, 17]. F computes a numeric result, although its variable stdev actually stores sample variance, not standard deviation. B indexes past the lists; C uses undefined item; D uses undefined numbers; E has an invalid parameter order; G tries to extend a list with an integer."
         ],
         "text": "['A and F execute without error in a fresh namespace. A prints [5, 8, 11, 14, 17]. F computes a numeric result, although its variable stdev actually stores sample variance, not standard deviation. B indexes past the lists; C uses undefined item; D uses undefined numbers; E has an invalid parameter order; G tries to extend a list with an integer.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "listA = [1, 2, 3, 4, 5]\nlistB = [4, 6, 8, 10, 12]\nlistC = []\nfor i in range(5):\n    listC += [listA[i] + listB[i]]\nprint(listC)",
+        "listA = [6, 5, 4, 3, 2, 1]\nlistB = [1, 3, 5, 7, 9, 11]\nlistC = []\nfor i in range(1, 7):\n    listC += [listA[i] + listB[i]]\nprint(listC)",
+        "myList = [7, 8, 6, 4, 2]\nfor num in myList:\n    if num < 3:\n        print(item)",
+        "with open(\"data.txt\", \"w\") as newfile:\n    newfile.write(\"15\\n30\\n45\\n90\\n60\\n60\")\ndata_list = []\nnumbers.open(\"data.txt\", \"r\")\nfor line in numbers:\n    data_list.append(line.strip())\nprint(data_list)",
+        "def myfunc(a, b=7, c):\n    out1 = a + b / c\n    out2 = a - c * b\n    return out1, out2\na, b = myfunc(5, 2, 4)",
+        "from math import sqrt\ndef func2(sigma, n):\n    error = sigma / sqrt(n)\n    return error\ndef func1(x):\n    resid = 0\n    avg = sum(x) / len(x)\n    for i in x:\n        resid += (i - avg) ** 2\n    stdev = resid / (len(x) - 1)\n    error = func2(stdev, len(x))\n    return error\ndata = [2, 5, 3, 7, 4, 9, 1, 2, 5, 8, 9, 3, 4]\nprint(func1(data))",
+        "mylist, square = [1, 3, 5, 7, 9], []\nfor i in mylist:\n    square += i ** 2\nprint(sum(square))"
+      ],
+      "correctChoices": [
+        0,
+        5
+      ],
+      "multiple": true,
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "codeChoices": true
     },
     {
       "id": "ENGR-E2-049",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 49 · Harder",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
@@ -29021,7 +29487,7 @@
           "code": "def output(mystr, num):\n    outstring = mystr\n    with open(\"result.csv\", \"w\") as outfile:\n        for i in range(num):\n            outfile.write(outstring[-1] + \",\")\n            outstring = outstring[:-1]\n        if len(mystr) - num == 1:\n            outfile.write(mystr[0])\n        elif num < len(mystr):\n            for i in range(len(mystr) - (num + 1), -1, -1):\n                outfile.write(outstring[i] + \",\")\n        return outstring\noutput(\"gateman\", 5)"
         }
       ],
-      "text": "What are the contents of the file `result.csv` after the following lines of code have executed?\n```\ndef output(mystr, num):\n    outstring = mystr\n    with open(\"result.csv\", \"w\") as outfile:\n        for i in range(num):\n            outfile.write(outstring[-1] + \",\")\n            outstring = outstring[:-1]\n        if len(mystr) - num == 1:\n            outfile.write(mystr[0])\n        elif num < len(mystr):\n            for i in range(len(mystr) - (num + 1), -1, -1):\n                outfile.write(outstring[i] + \",\")\n        return outstring\noutput(\"gateman\", 5)\n```",
+      "text": "What are the contents of the file result.csv after the following lines of code have executed?\n\ndef output(mystr, num):\n    outstring = mystr\n    with open(\"result.csv\", \"w\") as outfile:\n        for i in range(num):\n            outfile.write(outstring[-1] + \",\")\n            outstring = outstring[:-1]\n        if len(mystr) - num == 1:\n            outfile.write(mystr[0])\n        elif num < len(mystr):\n            for i in range(len(mystr) - (num + 1), -1, -1):\n                outfile.write(outstring[i] + \",\")\n        return outstring\noutput(\"gateman\", 5)",
       "answer": {
         "blocks": [
           {
@@ -29032,32 +29498,31 @@
         ],
         "text": "[{'code': 'n,a,m,e,t,a,g,'}, \"Exact output as a Python string: 'n,a,m,e,t,a,g,'\", 'The pasted typographic dash was normalized to Python’s minus sign.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "'n,a,m,e,t,g,a,'",
+        "'n,a,m,e,t,a,g,'",
+        "'n,a,m,e,t,a,g'",
+        "'g,a,t,e,m,a,n,'"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-050",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 50",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Which of the code snippets below will execute without error? Choose all that apply.",
-        {
-          "code": "# answer A\nfrom numpy import *\na = arange(15).reshape(3, 5)\nprint(a)"
-        },
-        {
-          "code": "# answer B\nimport numpy\na = arange(15).reshape(3, 5)\nprint(a)"
-        },
-        {
-          "code": "# answer C\nfrom math import *\na = math.sqrt(25)\nprint(a)"
-        },
-        {
-          "code": "# answer D\nimport math\na = math.sqrt(25)\nprint(a)"
-        }
+        "Which of the code snippets below will execute without error? Select all that apply."
       ],
-      "text": "Which of the code snippets below will execute without error? Choose all that apply.\n```\n# answer A\nfrom numpy import *\na = arange(15).reshape(3, 5)\nprint(a)\n```\n```\n# answer B\nimport numpy\na = arange(15).reshape(3, 5)\nprint(a)\n```\n```\n# answer C\nfrom math import *\na = math.sqrt(25)\nprint(a)\n```\n```\n# answer D\nimport math\na = math.sqrt(25)\nprint(a)\n```",
+      "text": "Which of the code snippets below will execute without error? Select all that apply.",
       "answer": {
         "blocks": [
           "A and D. In B, importing numpy does not define bare arange. In C, importing names from math does not bind the name math. Assume a fresh namespace."
@@ -29065,53 +29530,90 @@
         "text": "['A and D. In B, importing numpy does not define bare arange. In C, importing names from math does not bind the name math. Assume a fresh namespace.']"
       },
       "everythingPractice": true,
-      "exam2Coverage": "Imports and namespaces"
+      "exam2Coverage": "Imports and namespaces",
+      "choices": [
+        "from numpy import *\na = arange(15).reshape(3, 5)\nprint(a)",
+        "import numpy\na = arange(15).reshape(3, 5)\nprint(a)",
+        "from math import *\na = math.sqrt(25)\nprint(a)",
+        "import math\na = math.sqrt(25)\nprint(a)"
+      ],
+      "correctChoices": [
+        0,
+        3
+      ],
+      "multiple": true,
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "codeChoices": true
     },
     {
       "id": "ENGR-E2-051",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 51",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write a single line of code to import either an entire module or just the required functions in such a way that the following code executes without error.",
+        "Which single import statement makes the following code run in a fresh namespace?",
         {
           "code": "## Your single line of code here ##\nimport numpy as np\nx = np.linspace(0, 10, 21)\ny = 2 * x ** 2 - 6 * x - 4\nz = x ** (1 / 2) + 6\na = x\npyp.plot(x, y, \"k-\", x, z, \"rv\", x, a, \"b1\")\npyp.xlabel(\"Time [ns]\")\npyp.ylabel(\"Space [ly^3]\")\npyp.title(\"Plot of Something Important\")\npyp.show()"
         }
       ],
-      "text": "Write a single line of code to import either an entire module or just the required functions in such a way that the following code executes without error.\n```\n## Your single line of code here ##\nimport numpy as np\nx = np.linspace(0, 10, 21)\ny = 2 * x ** 2 - 6 * x - 4\nz = x ** (1 / 2) + 6\na = x\npyp.plot(x, y, \"k-\", x, z, \"rv\", x, a, \"b1\")\npyp.xlabel(\"Time [ns]\")\npyp.ylabel(\"Space [ly^3]\")\npyp.title(\"Plot of Something Important\")\npyp.show()\n```",
+      "text": "Which single import statement makes the following code run in a fresh namespace?\n\n## Your single line of code here ##\nimport numpy as np\nx = np.linspace(0, 10, 21)\ny = 2 * x ** 2 - 6 * x - 4\nz = x ** (1 / 2) + 6\na = x\npyp.plot(x, y, \"k-\", x, z, \"rv\", x, a, \"b1\")\npyp.xlabel(\"Time [ns]\")\npyp.ylabel(\"Space [ly^3]\")\npyp.title(\"Plot of Something Important\")\npyp.show()",
       "answer": {
         "blocks": [
           "import matplotlib.pyplot as pyp"
         ],
         "text": "['import matplotlib.pyplot as pyp']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "import matplotlib.pyplot as pyp",
+        "import matplotlib.pyplot",
+        "from matplotlib.pyplot import plot",
+        "import matplotlib as pyp"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "codeChoices": true
     },
     {
       "id": "ENGR-E2-052",
       "review": "engr-exam2",
       "section": "trace",
       "title": "Problem 52",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Write a single line of code to import either an entire module or just the required functions in such a way that the following code executes without error.",
+        "Which single import statement makes the following code run in a fresh namespace?",
         {
           "code": "## Your single line of code here ##\nx = arange(0, 10.5, 0.5).reshape(7, 3)\nprint(f\"x = {x}\")"
         }
       ],
-      "text": "Write a single line of code to import either an entire module or just the required functions in such a way that the following code executes without error.\n```\n## Your single line of code here ##\nx = arange(0, 10.5, 0.5).reshape(7, 3)\nprint(f\"x = {x}\")\n```",
+      "text": "Which single import statement makes the following code run in a fresh namespace?\n\n## Your single line of code here ##\nx = arange(0, 10.5, 0.5).reshape(7, 3)\nprint(f\"x = {x}\")",
       "answer": {
         "blocks": [
           "from numpy import arange"
         ],
         "text": "['from numpy import arange']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "from numpy import arange",
+        "from math import arange",
+        "import numpy",
+        "import numpy as np"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "codeChoices": true
     },
     {
       "id": "ENGR-E2-053",
@@ -29140,13 +29642,13 @@
       "review": "engr-exam2",
       "section": "code",
       "title": "Problem 54",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Create a top-down hierarchy for the following problem statement: A birdwatcher wants a program that will allow them to input their bird sightings and output requested statistical information. Inputs include the species/family, number of individuals, date, time, and location of sighting. Outputs include the total number of species seen (overall and in a particular location), total number of places or dates birded, number of sightings of a particular species, and family with the highest number of species seen."
+        "Which hierarchy best organizes the following problem statement: A birdwatcher wants a program that will allow them to input their bird sightings and output requested statistical information. Inputs include the species/family, number of individuals, date, time, and location of sighting. Outputs include the total number of species seen (overall and in a particular location), total number of places or dates birded, number of sightings of a particular species, and family with the highest number of species seen."
       ],
-      "text": "Create a top-down hierarchy for the following problem statement: A birdwatcher wants a program that will allow them to input their bird sightings and output requested statistical information. Inputs include the species/family, number of individuals, date, time, and location of sighting. Outputs include the total number of species seen (overall and in a particular location), total number of places or dates birded, number of sightings of a particular species, and family with the highest number of species seen.",
+      "text": "Which hierarchy best organizes the following problem statement: A birdwatcher wants a program that will allow them to input their bird sightings and output requested statistical information. Inputs include the species/family, number of individuals, date, time, and location of sighting. Outputs include the total number of species seen (overall and in a particular location), total number of places or dates birded, number of sightings of a particular species, and family with the highest number of species seen.",
       "answer": {
         "blocks": [
           "Birdwatcher program → collect sightings, analyze records, report results. Collect → read species/family/count/date/time/location, validate and store. Analyze → count unique species overall/by location; count unique places/dates; count sighting records by requested species; group unique species by family and find the largest group. Report → accept query, format and display requested statistic. Keep individual-bird totals separate from the number of sighting records."
@@ -29154,7 +29656,18 @@
         "text": "['Birdwatcher program → collect sightings, analyze records, report results. Collect → read species/family/count/date/time/location, validate and store. Analyze → count unique species overall/by location; count unique places/dates; count sighting records by requested species; group unique species by family and find the largest group. Report → accept query, format and display requested statistic. Keep individual-bird totals separate from the number of sighting records.']"
       },
       "everythingPractice": true,
-      "exam2Coverage": "Top-down design and hierarchy"
+      "exam2Coverage": "Top-down design and hierarchy",
+      "choices": [
+        "Split the program into collecting and validating sightings, calculating distinct-species and sighting statistics, and reporting requested results",
+        "Count individual birds for every requested statistic, including unique species and unique dates",
+        "Make a separate root program for every bird and never combine their statistics",
+        "Start with printing every input and omit data storage and analysis"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-055",
@@ -29777,16 +30290,16 @@
       "review": "engr-exam2",
       "section": "code",
       "title": "Problem 77",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Draw the plot produced by the following code:",
+        "Which description matches the plot produced by this code?",
         {
           "code": "import numpy as np\nimport matplotlib.pyplot as plt\nx = np.linspace(-2, 2, 25)\ny1 = x\ny2 = x ** 2\nplt.plot(x, y1, \"g\", linewidth = 3)\nplt.plot(x, y2, \"k\", marker = \"o\", markerfacecolor = \"b\")\nplt.axis([-2, 2, -2, 4])\nplt.xlabel(\"x\")\nplt.ylabel(\"f(x) \")\nplt.title(\"Plots for 2 polynomials\")\nplt.legend([\"straight\", \"curved\"], loc = \"upper center\")\nplt.show()"
         }
       ],
-      "text": "Draw the plot produced by the following code:\n```\nimport numpy as np\nimport matplotlib.pyplot as plt\nx = np.linspace(-2, 2, 25)\ny1 = x\ny2 = x ** 2\nplt.plot(x, y1, \"g\", linewidth = 3)\nplt.plot(x, y2, \"k\", marker = \"o\", markerfacecolor = \"b\")\nplt.axis([-2, 2, -2, 4])\nplt.xlabel(\"x\")\nplt.ylabel(\"f(x) \")\nplt.title(\"Plots for 2 polynomials\")\nplt.legend([\"straight\", \"curved\"], loc = \"upper center\")\nplt.show()\n```",
+      "text": "Which description matches the plot produced by this code?\n\nimport numpy as np\nimport matplotlib.pyplot as plt\nx = np.linspace(-2, 2, 25)\ny1 = x\ny2 = x ** 2\nplt.plot(x, y1, \"g\", linewidth = 3)\nplt.plot(x, y2, \"k\", marker = \"o\", markerfacecolor = \"b\")\nplt.axis([-2, 2, -2, 4])\nplt.xlabel(\"x\")\nplt.ylabel(\"f(x) \")\nplt.title(\"Plots for 2 polynomials\")\nplt.legend([\"straight\", \"curved\"], loc = \"upper center\")\nplt.show()",
       "answer": {
         "blocks": [
           "Draw y=x as a green line of width 3 and y=x² as a black curve with blue-filled circle markers at 25 equally spaced x values from -2 to 2. Limits: x from -2 to 2, y from -2 to 4. Labels: x and f(x). Title: Plots for 2 polynomials. Legend at upper center: straight, curved."
@@ -29794,20 +30307,31 @@
         "text": "['Draw y=x as a green line of width 3 and y=x² as a black curve with blue-filled circle markers at 25 equally spaced x values from -2 to 2. Limits: x from -2 to 2, y from -2 to 4. Labels: x and f(x). Title: Plots for 2 polynomials. Legend at upper center: straight, curved.']"
       },
       "everythingPractice": true,
-      "exam2Coverage": "Reading plots"
+      "exam2Coverage": "Reading plots",
+      "choices": [
+        "Green y=x² curve and black y=x line with red-filled circles, lower-center legend",
+        "Two scatter plots without connected lines, with x limited to [0,25]",
+        "Blue y=x line of width 3, green y=x² curve, axes x=[−2,4] and y=[−2,2]",
+        "Green y=x line of width 3, black y=x² curve with blue-filled circles, 25 x-values, axes x=[−2,2] and y=[−2,4], upper-center legend"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-078",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 78",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "List 5 good coding practices that have been mentioned in this course."
+        "Which set consists of good coding practices?"
       ],
-      "text": "List 5 good coding practices that have been mentioned in this course.",
+      "text": "Which set consists of good coding practices?",
       "answer": {
         "blocks": [
           "Use descriptive names, consistent indentation, useful comments/docstrings, small focused functions, and tests including boundary cases. These are representative good practices; the pasted source does not enumerate the course’s exact five."
@@ -29815,103 +30339,162 @@
         "text": "['Use descriptive names, consistent indentation, useful comments/docstrings, small focused functions, and tests including boundary cases. These are representative good practices; the pasted source does not enumerate the course’s exact five.']"
       },
       "everythingPractice": true,
-      "exam2Coverage": "Coding practices"
+      "exam2Coverage": "Coding practices",
+      "choices": [
+        "Descriptive names, consistent indentation, focused functions, useful documentation, and boundary tests",
+        "Change indentation randomly and add comments that repeat every line verbatim",
+        "Single-letter names everywhere, no indentation, very long functions, no comments, and no testing",
+        "Test only typical inputs and delete all error checks before reuse"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-079",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 79",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the correct response to the following question.",
         "In the following dictionary, identify the keys and values. Write the command to add the key \"Orange\" with value 1 to the dictionary. Write code to loop through the dictionary and check for a particular key or value.",
         {
           "code": "mydict = {\"Apple\" : 3, \"Pear\" : 5, \"Banana\" : 2}"
         }
       ],
-      "text": "In the following dictionary, identify the keys and values. Write the command to add the key `\"Orange\"` with value `1` to the dictionary. Write code to loop through the dictionary and check for a particular key or value.\n```\nmydict = {\"Apple\" : 3, \"Pear\" : 5, \"Banana\" : 2}\n```",
+      "text": "Choose the correct response to the following question.\n\nIn the following dictionary, identify the keys and values. Write the command to add the key \"Orange\" with value 1 to the dictionary. Write code to loop through the dictionary and check for a particular key or value.\n\nmydict = {\"Apple\" : 3, \"Pear\" : 5, \"Banana\" : 2}",
       "answer": {
         "blocks": [
           "Keys: Apple, Pear, Banana. Values: 3, 5, 2. Add with mydict[\"Orange\"] = 1. Loop over keys and compare key or mydict[key] with the desired target."
         ],
         "text": "['Keys: Apple, Pear, Banana. Values: 3, 5, 2. Add with mydict[\"Orange\"] = 1. Loop over keys and compare key or mydict[key] with the desired target.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "Keys are Apple, Pear, Banana; values are 3, 5, 2; add with mydict[\"Orange\"] = 1; key in mydict checks keys",
+        "Keys are Apple, Pear, Banana; add with mydict[\"Orange\"].append(1) on the absent key",
+        "Keys are 3, 5, 2; add with mydict.append(\"Orange\", 1); membership checks values",
+        "Values are Apple, Pear, Banana; keys must be consecutive integers"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-080",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 80",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the correct response to the following question.",
         "Explain how dictionaries are different from lists, and how lists are different from tuples."
       ],
-      "text": "Explain how dictionaries are different from lists, and how lists are different from tuples.",
+      "text": "Choose the correct response to the following question.\n\nExplain how dictionaries are different from lists, and how lists are different from tuples.",
       "answer": {
         "blocks": [
           "Dictionaries map unique hashable keys to values; lists are ordered mutable sequences indexed by position. Tuples are ordered sequences whose slots cannot be reassigned. Lists and dictionaries are mutable; a tuple can still contain a mutable object."
         ],
         "text": "['Dictionaries map unique hashable keys to values; lists are ordered mutable sequences indexed by position. Tuples are ordered sequences whose slots cannot be reassigned. Lists and dictionaries are mutable; a tuple can still contain a mutable object.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "Dictionaries map unique hashable keys to values; lists have mutable indexed positions; tuple slots cannot be reassigned",
+        "Dictionaries and lists both require consecutive integer keys; tuples are always mutable",
+        "Dictionary keys may always be lists; tuple contents can never contain mutable objects",
+        "Lists are immutable; tuples and dictionaries are mutable"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-081",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 81",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the correct response to the following question.",
         "Identify and explain 3 ways strings are similar to lists."
       ],
-      "text": "Identify and explain 3 ways strings are similar to lists.",
+      "text": "Choose the correct response to the following question.\n\nIdentify and explain 3 ways strings are similar to lists.",
       "answer": {
         "blocks": [
           "Strings and lists are ordered, support indexing and slicing, and can be traversed with loops. Both support len() and membership. Strings are immutable; lists are mutable."
         ],
         "text": "['Strings and lists are ordered, support indexing and slicing, and can be traversed with loops. Both support len() and membership. Strings are immutable; lists are mutable.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "Both allow assignment to individual indexed elements",
+        "Both support append() and remove()",
+        "Neither supports negative indices or slicing",
+        "Both are ordered and support indexing, slicing, len(), membership, and iteration"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-082",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 82",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "List all of the data types we have seen in this course and provide an example of each. Identify which ones are mutable and which are immutable."
+        "Which mutability classification is correct for these common Python types?"
       ],
-      "text": "List all of the data types we have seen in this course and provide an example of each. Identify which ones are mutable and which are immutable.",
+      "text": "Which mutability classification is correct for these common Python types?",
       "answer": {
         "blocks": [
           "Common course types: int (3), float (3.5), bool (True), str (\"Hi\"), list ([1,2]), tuple ((1,2)), dict ({\"a\":1}), and NoneType (None). Lists and dictionaries are mutable; the others listed are immutable. NumPy ndarray is mutable. The supplied practice sheet does not establish an exhaustive syllabus-wide list."
         ],
         "text": "['Common course types: int (3), float (3.5), bool (True), str (\"Hi\"), list ([1,2]), tuple ((1,2)), dict ({\"a\":1}), and NoneType (None). Lists and dictionaries are mutable; the others listed are immutable. NumPy ndarray is mutable. The supplied practice sheet does not establish an exhaustive syllabus-wide list.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "str, tuple, and dict are all mutable",
+        "int and tuple are mutable; list and dict are immutable",
+        "int, float, bool, str, tuple, and NoneType are immutable; list and dict are mutable",
+        "All Python types become mutable when passed to a function"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-083",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 83",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the correct response to the following question.",
         "In your own words, explain the difference between the top-down and bottom-up design methods. Name at least one advantage and one disadvantage for each."
       ],
-      "text": "In your own words, explain the difference between the top-down and bottom-up design methods. Name at least one advantage and one disadvantage for each.",
+      "text": "Choose the correct response to the following question.\n\nIn your own words, explain the difference between the top-down and bottom-up design methods. Name at least one advantage and one disadvantage for each.",
       "answer": {
         "blocks": [
           "Top-down divides a large goal into smaller tasks: clear overall structure, but low-level constraints may surface late. Bottom-up builds and combines small components: reusable and independently testable pieces, but integration and overall direction can be harder."
@@ -29919,140 +30502,223 @@
         "text": "['Top-down divides a large goal into smaller tasks: clear overall structure, but low-level constraints may surface late. Bottom-up builds and combines small components: reusable and independently testable pieces, but integration and overall direction can be harder.']"
       },
       "everythingPractice": true,
-      "exam2Coverage": "Top-down and bottom-up design"
+      "exam2Coverage": "Top-down and bottom-up design",
+      "choices": [
+        "Top-down builds isolated utilities first; bottom-up starts by decomposing the overall goal",
+        "Top-down decomposes an overall goal into subtasks; bottom-up combines small components; each still needs integration and feasibility checks",
+        "Both approaches prohibit functions and reuse",
+        "Top-down requires no testing; bottom-up requires no integration"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-084",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 84",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the correct response to the following question.",
         "Describe the various components of a hierarchy. How can we use one in program design?"
       ],
-      "text": "Describe the various components of a hierarchy. How can we use one in program design?",
+      "text": "Choose the correct response to the following question.\n\nDescribe the various components of a hierarchy. How can we use one in program design?",
       "answer": {
         "blocks": [
           "A hierarchy has a root, nodes, parent–child relationships, and leaves. In program design, refine major tasks into subtasks until leaf tasks are straightforward to implement."
         ],
         "text": "['A hierarchy has a root, nodes, parent–child relationships, and leaves. In program design, refine major tasks into subtasks until leaf tasks are straightforward to implement.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "Every leaf must have child nodes",
+        "A root represents the overall goal, parents divide into child subtasks, and leaves represent implementable tasks",
+        "The root represents the smallest operation and every child represents a larger program",
+        "A hierarchy specifies the exact execution order of every statement"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-085",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 85",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the correct response to the following question.",
         "Does it matter if we use the same variable names inside a user defined function and the main program? Why (not)?"
       ],
-      "text": "Does it matter if we use the same variable names inside a user defined function and the main program? Why (not)?",
+      "text": "Choose the correct response to the following question.\n\nDoes it matter if we use the same variable names inside a user defined function and the main program? Why (not)?",
       "answer": {
         "blocks": [
           "Usually no: each function call has its own local bindings. Rebinding a local name does not reassign an identically named global. Mutating a shared object can affect the caller, and global explicitly changes binding rules."
         ],
         "text": "['Usually no: each function call has its own local bindings. Rebinding a local name does not reassign an identically named global. Mutating a shared object can affect the caller, and global explicitly changes binding rules.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "Sharing a variable name always causes a SyntaxError",
+        "Local bindings usually stay separate; mutation of a shared object can affect the caller",
+        "Any local assignment automatically changes the same-named global",
+        "Functions cannot mutate any object passed as an argument"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-086",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 86",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the correct response to the following question.",
         "Does it matter where in our code we write function definitions?"
       ],
-      "text": "Does it matter where in our code we write function definitions?",
+      "text": "Choose the correct response to the following question.\n\nDoes it matter where in our code we write function definitions?",
       "answer": {
         "blocks": [
           "A def statement must execute before the function is called. A function can refer to another function defined later in the file if the later definition executes before that call actually occurs."
         ],
         "text": "['A def statement must execute before the function is called. A function can refer to another function defined later in the file if the later definition executes before that call actually occurs.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "Every function must be written above every other function that mentions it",
+        "The def statement must run before its function is called; a reference to a later-defined function is valid if that definition runs before the call",
+        "Functions can always be called before their def statements execute",
+        "All definitions must appear after the main program calls"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-087",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 87",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the correct response to the following question.",
         "Can functions access main memory? How do we pass information into a function? Can functions return multiple values?"
       ],
-      "text": "Can functions access main memory? How do we pass information into a function? Can functions return multiple values?",
+      "text": "Choose the correct response to the following question.\n\nCan functions access main memory? How do we pass information into a function? Can functions return multiple values?",
       "answer": {
         "blocks": [
           "Functions can read module globals unless shadowed, but assigning a name normally makes it local. Pass information with arguments bound to parameters. return a, b returns one tuple, which can be unpacked into multiple names."
         ],
         "text": "['Functions can read module globals unless shadowed, but assigning a name normally makes it local. Pass information with arguments bound to parameters. return a, b returns one tuple, which can be unpacked into multiple names.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "Functions cannot read any global or return more than one item",
+        "Arguments are bound directly to global names and return a, b returns two independent calls",
+        "Functions can read unshadowed globals, receive arguments, and return one tuple that can be unpacked",
+        "Assigning a local name always changes a global automatically"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-088",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 88",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "What type of coding error do you hate the most and why?"
+        "Which scenario describes a logic error?"
       ],
-      "text": "What type of coding error do you hate the most and why?",
+      "text": "Which scenario describes a logic error?",
       "answer": {
         "blocks": [
-          "Open-ended example: logic errors are frustrating because the program runs but produces a wrong result. Explain your own choice; there is no unique correct answer."
+          "A logic error produces an incorrect result even though execution completes. Syntax and runtime errors are different categories."
         ],
         "text": "['Open-ended example: logic errors are frustrating because the program runs but produces a wrong result. Explain your own choice; there is no unique correct answer.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "Python rejects malformed syntax before running",
+        "The program raises ZeroDivisionError during execution",
+        "A program runs without raising an exception but calculates the wrong result",
+        "The program raises FileNotFoundError when opening a missing file"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-089",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 89",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the correct response to the following question.",
         "Explain what happens when the following code is executed: print(int(\"5.5\"))"
       ],
-      "text": "Explain what happens when the following code is executed: `print(int(\"5.5\"))`",
+      "text": "Choose the correct response to the following question.\n\nExplain what happens when the following code is executed: print(int(\"5.5\"))",
       "answer": {
         "blocks": [
           "int(\"5.5\") raises ValueError; print never receives a value. int(float(\"5.5\")) would produce 5 by truncating toward zero, if that behavior is intended."
         ],
         "text": "['int(\"5.5\") raises ValueError; print never receives a value. int(float(\"5.5\")) would produce 5 by truncating toward zero, if that behavior is intended.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "It prints None",
+        "It prints 5",
+        "ValueError occurs before print receives a converted value",
+        "It prints 5.5"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-090",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 90",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the correct response to the following question.",
         "When you are trying to fix your code, what are some alternatives to using a debugger?"
       ],
-      "text": "When you are trying to fix your code, what are some alternatives to using a debugger?",
+      "text": "Choose the correct response to the following question.\n\nWhen you are trying to fix your code, what are some alternatives to using a debugger?",
       "answer": {
         "blocks": [
           "Trace with a variable table, add temporary print statements, reduce to a small failing example, test boundaries, read the traceback, and explain the algorithm aloud or to another person."
@@ -30060,40 +30726,64 @@
         "text": "['Trace with a variable table, add temporary print statements, reduce to a small failing example, test boundaries, read the traceback, and explain the algorithm aloud or to another person.']"
       },
       "everythingPractice": true,
-      "exam2Coverage": "Debugging"
+      "exam2Coverage": "Debugging",
+      "choices": [
+        "Change several unrelated lines at once and test only after all changes",
+        "Trace variables, print intermediate values, reduce a failing example, test boundaries, and read the traceback",
+        "Remove every check until the error message disappears",
+        "Ignore the traceback and repeat the same inputs without inspecting values"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-091",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 91",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the correct response to the following question.",
         "When would it be best to use the myfile = open(...) and myfile.close() commands for opening files as opposed to the with open(...) as myfile: command?"
       ],
-      "text": "When would it be best to use the `myfile = open(...)` and `myfile.close()` commands for opening files as opposed to the `with open(...) as myfile:` command?",
+      "text": "Choose the correct response to the following question.\n\nWhen would it be best to use the myfile = open(...) and myfile.close() commands for opening files as opposed to the with open(...) as myfile: command?",
       "answer": {
         "blocks": [
           "Use explicit open/close when the file’s lifetime must span code that does not fit one with block, such as a file object returned to a caller. Use try/finally to guarantee closing. Prefer with for ordinary file processing."
         ],
         "text": "['Use explicit open/close when the file’s lifetime must span code that does not fit one with block, such as a file object returned to a caller. Use try/finally to guarantee closing. Prefer with for ordinary file processing.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "Whenever reading multiple lines, because with closes after one read",
+        "When file lifetime must extend beyond one with block, manage ownership explicitly and ensure closing with try/finally",
+        "Whenever writing, because with cannot open writable files",
+        "Always, because close() is optional for explicitly opened files"
+      ],
+      "correctChoices": [
+        1
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-092",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 92",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the correct response to the following question.",
         "When opening files, what is the difference between the designators r, w, r+, and a?"
       ],
-      "text": "When opening files, what is the difference between the designators `r`, `w`, `r+`, and `a`?",
+      "text": "Choose the correct response to the following question.\n\nWhen opening files, what is the difference between the designators r, w, r+, and a?",
       "answer": {
         "blocks": [
           "r reads an existing file and fails if missing. w writes, truncating an existing file or creating a new one. r+ reads/writes an existing file without initially truncating; it fails if missing. a writes at the end, creating the file if needed."
@@ -30101,80 +30791,128 @@
         "text": "['r reads an existing file and fails if missing. w writes, truncating an existing file or creating a new one. r+ reads/writes an existing file without initially truncating; it fails if missing. a writes at the end, creating the file if needed.']"
       },
       "everythingPractice": true,
-      "exam2Coverage": "File modes"
+      "exam2Coverage": "File modes",
+      "choices": [
+        "r and r+ truncate immediately; w and a only read",
+        "w and a always delete the file when it closes",
+        "r reads existing; w creates or truncates; r+ reads/writes existing without initial truncation; a creates or appends",
+        "r creates missing files; w appends; r+ truncates; a requires an existing file"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-093",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 93",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the correct response to the following question.",
         "What are the differences between myfile.read(), myfile.readline(), myfile.readlines(), and list(myfile)?"
       ],
-      "text": "What are the differences between `myfile.read()`, `myfile.readline()`, `myfile.readlines()`, and `list(myfile)`?",
+      "text": "Choose the correct response to the following question.\n\nWhat are the differences between myfile.read(), myfile.readline(), myfile.readlines(), and list(myfile)?",
       "answer": {
         "blocks": [
           "read() returns all remaining text as one string; readline() returns the next line as a string, or \"\" at EOF; readlines() and list(file) return remaining lines as a list of strings. These consume the file from its current position."
         ],
         "text": "['read() returns all remaining text as one string; readline() returns the next line as a string, or \"\" at EOF; readlines() and list(file) return remaining lines as a list of strings. These consume the file from its current position.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "Each method resets the file position automatically before reading",
+        "read() and readline() both return lists; readlines() returns one string",
+        "readline() returns None at EOF and read() preserves the position",
+        "read() gives remaining text; readline() gives one line; readlines() and list(file) give lists of remaining lines, consuming the current position"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-094",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 94",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the correct response to the following question.",
         "What command(s) are used to remove the leading and trailing whitespace in a string? To separate a string into a list of its components with a specified delimiter? Write an example using both."
       ],
-      "text": "What command(s) are used to remove the leading and trailing whitespace in a string? To separate a string into a list of its components with a specified delimiter? Write an example using both.",
+      "text": "Choose the correct response to the following question.\n\nWhat command(s) are used to remove the leading and trailing whitespace in a string? To separate a string into a list of its components with a specified delimiter? Write an example using both.",
       "answer": {
         "blocks": [
           "strip() removes leading/trailing whitespace; split(delimiter) separates into a list. Example: fields = \" 12,25\\n\".strip().split(\",\") gives [\"12\", \"25\"]."
         ],
         "text": "['strip() removes leading/trailing whitespace; split(delimiter) separates into a list. Example: fields = \" 12,25\\\\n\".strip().split(\",\") gives [\"12\", \"25\"].']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "strip() removes all interior spaces and split() always returns one string",
+        "split(\",\") mutates the original string in place",
+        "strip(\",\") splits on commas and returns a list",
+        "strip() removes end whitespace; split(\",\") separates fields; \" 12,25\\n\".strip().split(\",\") gives [\"12\", \"25\"]"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-095",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 95",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the correct response to the following question.",
         "Write the command to print the value of pi to 4 decimal places to the screen. Don't forget to import pi from the math module!"
       ],
-      "text": "Write the command to print the value of `pi` to 4 decimal places to the screen. Don't forget to import `pi` from the `math` module!",
+      "text": "Choose the correct response to the following question.\n\nWrite the command to print the value of pi to 4 decimal places to the screen. Don't forget to import pi from the math module!",
       "answer": {
         "blocks": [
           "from math import pi\nprint(f\"{pi:.4f}\")\n\nOutput: 3.1416"
         ],
         "text": "['from math import pi\\nprint(f\"{pi:.4f}\")\\n\\nOutput: 3.1416']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "import math followed by print(f\"{pi:.4f}\")",
+        "from math import pi followed by print(f\"{pi:4f}\")",
+        "from math import pi followed by print(f\"{pi:.4f}\")",
+        "from math import pi followed by print(round(pi, 3))"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-096",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 96",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the correct response to the following question.",
         "Write the command to import the coolfunc function from the neatomod module in the funpack package and rename it to coolf. Now write the command to import all functions from the neatomod module. What command can we use to display all of the functions inside the module?"
       ],
-      "text": "Write the command to import the `coolfunc` function from the `neatomod` module in the `funpack` package and rename it to `coolf`. Now write the command to import all functions from the `neatomod` module. What command can we use to display all of the functions inside the module?",
+      "text": "Choose the correct response to the following question.\n\nWrite the command to import the coolfunc function from the neatomod module in the funpack package and rename it to coolf. Now write the command to import all functions from the neatomod module. What command can we use to display all of the functions inside the module?",
       "answer": {
         "blocks": [
           "from funpack.neatomod import coolfunc as coolf\nfrom funpack.neatomod import *\n\nFor inspection: import funpack.neatomod as neatomod; dir(neatomod). dir lists names, not only functions; help(neatomod) shows documentation. Star import respects __all__ when defined and otherwise excludes underscore-prefixed names."
@@ -30182,40 +30920,64 @@
         "text": "['from funpack.neatomod import coolfunc as coolf\\nfrom funpack.neatomod import *\\n\\nFor inspection: import funpack.neatomod as neatomod; dir(neatomod). dir lists names, not only functions; help(neatomod) shows documentation. Star import respects __all__ when defined and otherwise excludes underscore-prefixed names.']"
       },
       "everythingPractice": true,
-      "exam2Coverage": "Packages and imports"
+      "exam2Coverage": "Packages and imports",
+      "choices": [
+        "from funpack.neatomod import coolfunc as coolf; from funpack.neatomod import *; dir() lists names and help() shows documentation",
+        "from funpack import coolf as neatomod; help() executes all module functions",
+        "import funpack.neatomod as coolf imports coolfunc directly; star import binds all names including every underscore name",
+        "import coolfunc from funpack.neatomod as coolf; dir() lists only functions"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-097",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 97",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the correct response to the following question.",
         "What are the differences between np.arange(), np.array(), and np.linspace()? How many rows and columns will the matrix np.arange(15).reshape(5, 3) have?"
       ],
-      "text": "What are the differences between `np.arange()`, `np.array()`, and `np.linspace()`? How many rows and columns will the matrix `np.arange(15).reshape(5, 3)` have?",
+      "text": "Choose the correct response to the following question.\n\nWhat are the differences between np.arange(), np.array(), and np.linspace()? How many rows and columns will the matrix np.arange(15).reshape(5, 3) have?",
       "answer": {
         "blocks": [
           "np.arange generates values using a step; np.array constructs an array from supplied data; np.linspace generates a requested number of equally spaced values, including the endpoint by default. reshape(5,3) has 5 rows and 3 columns."
         ],
         "text": "['np.arange generates values using a step; np.array constructs an array from supplied data; np.linspace generates a requested number of equally spaced values, including the endpoint by default. reshape(5,3) has 5 rows and 3 columns.']"
       },
-      "everythingPractice": false
+      "everythingPractice": false,
+      "choices": [
+        "array generates evenly spaced values from a count; reshape changes the number of elements",
+        "arange uses a count, linspace uses a step; reshape(5,3) gives 3 rows and 5 columns",
+        "arange uses a step, array uses supplied data, linspace uses a count including endpoints by default; reshape(5,3) gives 5 rows and 3 columns",
+        "linspace excludes the endpoint by default; reshape(5,3) produces 15 rows"
+      ],
+      "correctChoices": [
+        2
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-098",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 98",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the correct response to the following question.",
         "What are the differences between plt.plot(), plt.bar(), plt.hist(), and plt.scatter()? How do you set the color of a line? The marker shapes? The axis labels? The title? The legend?"
       ],
-      "text": "What are the differences between `plt.plot()`, `plt.bar()`, `plt.hist()`, and `plt.scatter()`? How do you set the color of a line? The marker shapes? The axis labels? The title? The legend?",
+      "text": "Choose the correct response to the following question.\n\nWhat are the differences between plt.plot(), plt.bar(), plt.hist(), and plt.scatter()? How do you set the color of a line? The marker shapes? The axis labels? The title? The legend?",
       "answer": {
         "blocks": [
           "plot: connected lines; bar: bars for categories/positions; hist: frequencies in numeric bins; scatter: independent points. Use color= and marker=, then xlabel(), ylabel(), title(), and legend() with labeled series."
@@ -30223,20 +30985,32 @@
         "text": "['plot: connected lines; bar: bars for categories/positions; hist: frequencies in numeric bins; scatter: independent points. Use color= and marker=, then xlabel(), ylabel(), title(), and legend() with labeled series.']"
       },
       "everythingPractice": true,
-      "exam2Coverage": "Plot types and styling"
+      "exam2Coverage": "Plot types and styling",
+      "choices": [
+        "plot connects lines, bar draws bars, hist counts observations in bins, scatter draws points; color/marker set styles and xlabel/ylabel/title/legend annotate",
+        "hist draws one bar for each named category; bar automatically bins raw numeric data",
+        "xlabel sets both axis limits, title sets markers, and legend creates the source data",
+        "scatter always connects points; plot can never draw markers"
+      ],
+      "correctChoices": [
+        0
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     },
     {
       "id": "ENGR-E2-099",
       "review": "engr-exam2",
       "section": "concept",
       "title": "Problem 99",
-      "kind": "frq",
+      "kind": "mcq",
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
+        "Choose the correct response to the following question.",
         "Why is it important to include docstrings when writing functions?"
       ],
-      "text": "Why is it important to include docstrings when writing functions?",
+      "text": "Choose the correct response to the following question.\n\nWhy is it important to include docstrings when writing functions?",
       "answer": {
         "blocks": [
           "Docstrings explain a function’s purpose, parameters, return values, assumptions, and units. They support help(), improve reuse, and reduce mistakes at call sites."
@@ -30244,7 +31018,18 @@
         "text": "['Docstrings explain a function’s purpose, parameters, return values, assumptions, and units. They support help(), improve reuse, and reduce mistakes at call sites.']"
       },
       "everythingPractice": true,
-      "exam2Coverage": "Function documentation"
+      "exam2Coverage": "Function documentation",
+      "choices": [
+        "Docstrings make incorrect algorithms mathematically correct",
+        "Docstrings replace the function body and determine its return value",
+        "Docstrings are executed as input validation automatically",
+        "Docstrings document purpose, parameters, return values, assumptions and units, and help() can display them"
+      ],
+      "correctChoices": [
+        3
+      ],
+      "multiple": false,
+      "choiceVersion": "engr-exam2-mcq-v1"
     }
   ],
   "guides": [

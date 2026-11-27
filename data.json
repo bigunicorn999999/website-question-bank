@@ -27688,7 +27688,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "grades = [77, 82, 85, 88, 96, 97]\nfor i in range(1, 2):\n    print(grades[i:-i], end=\"\")"
         }
@@ -27714,7 +27714,25 @@
         0
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "[82, 85, 88, 96]",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "[77, 82, 85, 88, 96]",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "[82, 85, 88]",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "[82, 85, 88, 96, 97]",
+          "whitespace": "No final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-002",
@@ -27725,7 +27743,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "i = 0\nj = -1\nwhile i < 3:\n    if j > 1:\n        continue\n        i += 2\n    else:\n        i += 1\n    j += 1\nprint(f\"{i} + j\")"
         }
@@ -27751,7 +27769,25 @@
         2
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "{i} + j\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "3 + 2\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "3 + j\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "2 + j\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-003",
@@ -27762,7 +27798,7 @@
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "sums = 1\nfor i in range(1, 5):\n    while i < 3:\n        sums += i\n        i += 1\n        if sums % 2 == 0:\n            sums += 1\n            break\n    else:\n        sums *= i\n    sums -= 2\nprint(sums)"
         }
@@ -27789,7 +27825,25 @@
         0
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "74\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "18\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "76\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "72\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-004",
@@ -27800,7 +27854,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "a, i = 0, 3\nwhile a <= 3:\n    for i in range(1, 3):\n        if i == 1:\n            i += 1\n            a += 1\n        else:\n            a += 11\nprint(\"\\\"A\\\" is for\", f\"{a}\", \"Apples\", sep=\" \", end=\"!\")"
         }
@@ -27826,7 +27880,25 @@
         0
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "\"A\" is for 12 Apples!",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "\"A\" is for 14 Apples!",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "\"A\" is for 3 Apples!",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "A is for 12 Apples!",
+          "whitespace": "No final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-005",
@@ -27837,7 +27909,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "j = 1\nfor i in range(0, 4, 2):\n    print(f\"{i+1}\", f\"{j+1}\", sep=\", \", end=\", \")\n    j += 2\nprint(\"and that's it\", end=\"...or is it? \")"
         }
@@ -27863,7 +27935,25 @@
         3
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "1 2 3 4 and that's it...or is it?",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "0, 2, 2, 4, and that's it...or is it? ",
+          "whitespace": "No final newline · 1 trailing space"
+        },
+        {
+          "text": "1, 2, 3, 4, and that's it",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "1, 2, 3, 4, and that's it...or is it? ",
+          "whitespace": "No final newline · 1 trailing space"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-006",
@@ -27874,7 +27964,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "mydict = {\"Ann\" : 18, \"Bob\" : 20, \"Charlie\" : 19}\nif \"Joe\" in mydict:\n    print(\"Joe is here\")\nelif \"Ann\" in mydict:\n    print(\"Hi Ann\")\nelse:\n    print(\"Anyone?\")"
         }
@@ -27900,7 +27990,25 @@
         0
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "Hi Ann\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "Anyone?\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "Joe is here\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "KeyError\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-007",
@@ -27911,7 +28019,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "name = {\"Two\" : \"Rosewood\"}\nname[4] = \"Lever\"\nname[2] = \"Calendar\"\nname[\"Two\"] = \"Cartograph\"\nname[\"Two\"] = \"Sunspot\"\nprint(name[\"Two\"], name[2], sep=\">\")"
         }
@@ -27937,7 +28045,25 @@
         3
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "Rosewood>Calendar\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "Cartograph>Calendar\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "Sunspot>Lever\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "Sunspot>Calendar\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-008",
@@ -27948,7 +28074,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "mydict = {}\nmylist = [1, 2, 3, 4, 5]\nmydict[\"Length\"] = len(mylist)\nmydict[\"Max\"] = max(mylist)\nmydict[\"Min\"] = min(mylist)\nmydict[\"Crazy\"] = mylist[1] * mylist[3] - mylist[-1]\nfor key in mydict:\n    print(f\"{key}: {mydict[key]}\")"
         }
@@ -27974,7 +28100,25 @@
         1
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "Length: 5\nMax: 1\nMin: 5\nCrazy: 3\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "Length: 5\nMax: 5\nMin: 1\nCrazy: 3\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "Length: 6\nMax: 5\nMin: 1\nCrazy: 3\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "Length: 5\nMax: 5\nMin: 1\nCrazy: 2\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-009",
@@ -27985,7 +28129,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "mydict = {\"apple\" : 2, \"orange\" : 3}\nmydict[\"banana\"] = 4\nmylist = []\ni = 0\nprint(\"Total fruit inventory equals: \", end=\"\")   # empty string\nfor key in mydict:\n    mylist.append(mydict[key])\n    if i < len(mydict) - 1:\n        print(mylist[i], key + \"s\", end=\" + \")\n    else:\n        print(mylist[i], key + \"s\", end=\" = \")\n    i += 1\nprint(sum(mylist), \"fruit\")"
         }
@@ -28013,7 +28157,25 @@
         0
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "Total fruit inventory equals: 2 apples + 3 oranges + 4 bananas = 9 fruit\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "Total fruit inventory equals: 2 apples + 3 oranges + 4 bananas = 2 fruit\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "Total fruit inventory equals: 2 apples + 3 oranges + 4 bananas = 234 fruit\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "TypeError\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-010",
@@ -28024,7 +28186,7 @@
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "mylist = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]\nmydict = {}\nmysum = 0\nfor i in range(0, len(mylist) - 1, 2):\n    if mylist[i] + mylist[i+1] <= 2 * mylist[i] + 4:\n        mydict[i] = i + 1\n    else:\n        mydict[i] = i\nfor item in mydict:\n    mysum += mydict[item]\nprint(mysum, mydict[4], sep=\" : \")"
         }
@@ -28051,7 +28213,25 @@
         2
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "23 : 6\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "5 : 23\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "23 : 5\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "18 : 5\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-011",
@@ -28062,7 +28242,7 @@
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "mylist = [\"apples\", 4.5, True]\nmytuple = (\"oranges\", 3, False)\nmydict = {\"bananas\" : 2, \"strawberries\" : 12}\nfor key in mydict:\n    mylist += [mydict[key]]\nmytuple = [mytuple, mylist]\nmylist[4] = 13\nprint(mytuple[0][1], mytuple[1][4], sep=\"00\", end=\"1\")"
         }
@@ -28089,7 +28269,25 @@
         2
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "3 0 0 1 3 1",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "30013",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "300131",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "301131",
+          "whitespace": "No final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-012",
@@ -28134,7 +28332,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "mystr = \"Howdy\"\nmylist = [2, 0, 2, 0]\nmytuple = (mystr, mylist)\nmytuple[1][3] = 9\nprint(mytuple)"
         }
@@ -28161,7 +28359,25 @@
         3
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "('Howdy', 2, 0, 2, 9)\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "TypeError\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "['Howdy', [2, 0, 2, 9]]\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "('Howdy', [2, 0, 2, 9])\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-014",
@@ -28172,7 +28388,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "def myfunc(x):\n    a = 1\n    print(x)\na = 5\nmyfunc(a)\nprint(a)"
         }
@@ -28198,7 +28414,25 @@
         2
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "5\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "5\nNone\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "5\n5\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "None\n5\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-015",
@@ -28209,7 +28443,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "def plus1_3(x):\n    return x + 1, x + 3\nprint(plus1_3(2)[0])"
         }
@@ -28235,7 +28469,25 @@
         0
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "3\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "2\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "6\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "None\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-016",
@@ -28284,7 +28536,7 @@
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "def myfunc(b, a):\n    a = 3\n    c = b + a\n    return c, a\na, b = 3, 2\na, b = myfunc(a, b)\nprint(a, f\"{b} = {a / b:.0f}\", sep=\" / \")"
         }
@@ -28311,7 +28563,25 @@
         1
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "6 / 3 = 2.0\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "6 / 3 = 2\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "6 / 3 = 3\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "{a} / {b} = {a/b}\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-018",
@@ -28322,7 +28592,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "def add1(x):\n    if x + 1 < 10:\n        return x + 1\n    else:\n        return \"Too big!\"\nprint(add1(1), add1(12))"
         }
@@ -28348,7 +28618,25 @@
         2
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "3 Too big!\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "2 Too small!\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "2 Too big!\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "Too big!\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-019",
@@ -28394,7 +28682,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "def clip(v, lo=0, hi=10):\n    if v < lo:\n        return lo\n    if v > hi:\n        return hi\n    return v\nprint(clip(15), clip(-1), clip(7))"
         }
@@ -28420,7 +28708,25 @@
         1
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "0 0 7\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "10 0 7\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "10 7 7\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "10 0 0\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-021",
@@ -28431,7 +28737,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "def myfunc1(x=10, y=3, z=False):\n    if z:\n        var = x * y\n    else:\n        var = x / y\n    return var\ndef myfunc2(myvar):\n    if myvar > 5:\n        return True\n    elif myvar < 5:\n        return False\n    else:\n        return 30\nprint(myfunc2(myfunc1()))"
         }
@@ -28457,7 +28763,25 @@
         1
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "True\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "False\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "TypeError\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "None\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-022",
@@ -28468,7 +28792,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "def myfunc(x, y=\"Green\", z=100, Flag=False):\n    if z == 100:\n        z += 10\n        return z, x\n    elif y == \"Green\":\n        Flag = True\n        print(x, z)\n        return x, z\n    return Flag\nout1, out2 = myfunc(10)\nprint(out1, out2)"
         }
@@ -28494,7 +28818,25 @@
         2
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "110 110\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "10 10\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "110 10\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "10 110\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-023",
@@ -28505,7 +28847,7 @@
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "def aplus(i):\n    j = 0\n    while i != 1:\n        if i % 2 == 0:\n            i /= 2\n        else:\n            i = i * 3 + 1\n        j += 1\n    return j\nprint(aplus(20))"
         }
@@ -28531,7 +28873,25 @@
         2
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "8\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "0\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "7\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "6\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-024",
@@ -28542,7 +28902,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "def drawStar(a=6):\n    print(\"*\" * int(a))\na = \"4\"\ndrawStar(a)"
         }
@@ -28568,7 +28928,25 @@
         3
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "*****\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "***\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "['*', '*', '*', '*']\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "****\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-025",
@@ -28579,7 +28957,7 @@
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "def go(x):\n    s = \"\"\n    for i in range(1, x + 1):\n        for j in range(1, i + 1):\n            s += \"# \"\n        s += \"=\\n\"\n    return s\nprint(go(2))"
         }
@@ -28605,7 +28983,25 @@
         3
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "# = # # =",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "# =\n# # =\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "# # =\n# =\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "# =\n# # =\n\n",
+          "whitespace": "2 final newlines"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-026",
@@ -28616,7 +29012,7 @@
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "def combo(n):\n    s, i = 0, 0\n    while i < n:\n        j = 0\n        while j < 3:\n            s += 1\n            if j == 1:\n                break\n            j += 1\n        else:\n            s += 10\n        i += 1\n    return s\nprint(combo(2))"
         }
@@ -28642,7 +29038,25 @@
         0
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "4\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "0\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "3\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "5\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-027",
@@ -28653,7 +29067,7 @@
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "def A_function(one, two, three):\n    list1 = []\n    list2 = []\n    for i in one:\n        if i <= len(one) - 1:\n            list1.append(one[i])\n        if i % two == 0:\n            list1.append(i)\n        elif i % 3 == 1:\n            list2.append(i + 1)\n        return list1, list2\nmylist = [4, 3, 22, 15, 7]\na, b = 3, 2\nx, y = A_function(mylist, a, b)\nprint(y + x)"
         }
@@ -28681,7 +29095,25 @@
         2
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "[5, 7, 9]\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "[7, 5]\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "[5, 7]\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "[3, 5, 7]\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-028",
@@ -28692,7 +29124,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "def f(a, b=2):\n    return a * b\nprint(f\"{f(3)}{f(3, 3)}\")  # no space"
         }
@@ -28718,7 +29150,25 @@
         0
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "69\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "96\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "70\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "68\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-029",
@@ -28729,7 +29179,7 @@
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "def B_function(a, b):\n    for i in a:\n        if i == 5:\n            continue\n        if a[i] == \"Cat\":\n            print(f\"#{str(b.index(10))} {a[i]} {i}\", end=\" \")\n            x = 2010\n            break\na = [5, 10, 15, 20, 25]\nb = {\"Quinn\" : \"Cat\", \"Juliet\" : \"Dog\", \"Banjo\" : \"Dog\"}\nx = \"2017\"\nB_function(b, a)\nprint(x)"
         }
@@ -28755,7 +29205,25 @@
         2
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "#0 Cat Quinn 2017\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "#1 Quinn Cat 2017\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "#1 Cat Quinn 2017\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "#1 Cat Quinn 2018\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-030",
@@ -28800,7 +29268,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "number = input(\"Enter a number: \")  # assume the user enters 5.0\ntry:\n    x = int(number)\n    print(f\"x is the integer {x}\")\nexcept:\n    x = float(number)\n    print(f\"x is the float {x}\")"
         }
@@ -28828,7 +29296,25 @@
         0
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "x is the float 5.0\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "ValueError is unhandled\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "x is the integer 5\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "x is the float 5\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-032",
@@ -28839,7 +29325,7 @@
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "mystr = \"Howdy! Welcome to Texas A&M Engineering!\"\nmylist = mystr.split()\nnewstr = \"\"  # empty string\nfor i in range(3, len(mylist)):\n    newstr += mylist[i] + \" \"\nprint(mylist[0][:5] + \" \" + newstr[:-2] + \" students! \")"
         }
@@ -28865,7 +29351,25 @@
         3
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "Howdy Texas A&M Engineering students!\n\n",
+          "whitespace": "2 final newlines"
+        },
+        {
+          "text": "Howdy Texas A&M Engineering students!",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "HowdyTexasA&MEngineeringstudents!",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "Howdy Texas A&M Engineering students! \n",
+          "whitespace": "1 final newline · 1 trailing space"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-033",
@@ -28876,7 +29380,7 @@
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "a, b = 3, 0\ncountStr = \"\"  # empty string\nwhile a > b:\n    try:\n        c = a / b\n        countStr += str(a)\n    except:\n        countStr += str(b)\n        a -= 1\ncountList = list(countStr)\nfor i in range(len(countList)):\n    countList[i] = float(countList[i])\nprint(sum(countList), countList.count(0), sep=\":\", end=\"!\")"
         }
@@ -28902,7 +29406,25 @@
         1
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "0:3!",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "0.0:3!",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "0.0 3!",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "0.0:3.0!",
+          "whitespace": "No final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-034",
@@ -28913,7 +29435,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "mystring = \"   \\t\\n123abc   \\n\"\nout_value = \"::\".join(mystring.strip().split(\"23a\"))\nprint(out_value)"
         }
@@ -28939,7 +29461,25 @@
         0
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "1::bc\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "1:bc\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "1::cb\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "0::bc\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-035",
@@ -28950,7 +29490,7 @@
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "mystring = \"AXVRL:2025/11/07\"\nmylist = mystring.split(\":\")\nmylist[1] = mylist[1].split(\"/\")\nfor i in range(len(mylist)):\n    if i == 0:\n        print(mylist[i][-3:], \"\\t\", sep=\"\", end=\"\")  # both empty str\n    else:\n        print(f\"{mylist[i][1]}\\t{mylist[i][2]}\\t{mylist[i][0]}\")"
         }
@@ -28977,7 +29517,25 @@
         1
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "VRL\t11\t7\t2025\n",
+          "whitespace": "1 final newline · Contains tabs"
+        },
+        {
+          "text": "VRL\t11\t07\t2025\n",
+          "whitespace": "1 final newline · Contains tabs"
+        },
+        {
+          "text": "VRL\n11\n07\n2025\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "VRL 11 07 2025\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-036",
@@ -28988,7 +29546,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "mylist = [5, 3, 7, 9, 1, 2]\nmylist.pop()\nmylist.insert(2, 4)\nmylist.sort()\nfor num in mylist:\n    print(num, end = \" \")"
         }
@@ -29014,7 +29572,25 @@
         1
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "1 3 5 7 9 ",
+          "whitespace": "No final newline · 1 trailing space"
+        },
+        {
+          "text": "1 3 4 5 7 9 ",
+          "whitespace": "No final newline · 1 trailing space"
+        },
+        {
+          "text": "0 1 3 4 5 7 9 ",
+          "whitespace": "No final newline · 1 trailing space"
+        },
+        {
+          "text": "1 3 4 5 7 9",
+          "whitespace": "No final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-037",
@@ -29025,7 +29601,7 @@
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "def output(mystr, num):\n    outstring = mystr\n    with open(\"results.csv\", \"w\") as outfile:\n        for i in range(num):\n            outfile.write(outstring[-1] + \",\")\n            outstring = outstring[:-1]\n        outfile.write(mystr[0])\n    return outstring\nprint(output(\"reknits\", 6))"
         }
@@ -29052,7 +29628,25 @@
         1
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "IndexError\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "r\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "s,t,i,n,k,e,r\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "results.csv\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-038",
@@ -29063,7 +29657,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "import numpy as np\nmygrid = np.arange(1, 10).reshape(3, 3)\nfor i in range(len(mygrid)):\n    mygrid[i][i] = 5\nprint(mygrid)"
         }
@@ -29089,7 +29683,25 @@
         2
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "[[5 5 5]\n [4 5 6]\n [7 8 9]]\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "[[5 2 3]\n [4 5 6]\n [7 8 9]]\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "[[5 2 3]\n [4 5 6]\n [7 8 5]]\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "[[1 2 3]\n [4 5 6]\n [7 8 9]]\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-039",
@@ -29100,7 +29712,7 @@
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "mystr = \"2-g:gig'em\\n3-s:aggies\\n1-o:whoop\"\nmylist = mystr.split(\"\\n\")\ngood = 0\nfor item in mylist:\n    key, word = item.strip().split(\":\")\n    key = key.split(\"-\")\n    if word.count(key[1]) >= int(key[0]):\n        good += 1\nprint(good)"
         }
@@ -29126,7 +29738,25 @@
         1
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "1\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "2\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "0\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "3\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-040",
@@ -29137,7 +29767,7 @@
       "difficulty": "hard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "import numpy as np\nx = np.linspace(1.0, 10.0, 10)\ny = x ** 2 - 1\nwith open(\"zfile.txt\", \"w\") as zfile:\n    zfile.write(\"x\\ty\\n\")\n    for i in range(len(x)):\n        mystr = str(x[i]) + \"\\t\" + str(y[i])\n        zfile.write(mystr + \"\\n\")\nwith open(\"zfile.txt\") as myfile:\n    all_of_it = myfile.read().split(\"\\t\")\noutput = \",\".join(all_of_it)\nprint(output)"
         }
@@ -29164,7 +29794,25 @@
         3
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "No output; write() never prints anything\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "x,y\n1.0,1.0\n2.0,4.0\n3.0,9.0\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "x,y\n0.0,-1.0\n1.0,0.0\n2.0,3.0\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "x,y\n1.0,0.0\n2.0,3.0\n3.0,8.0\n4.0,15.0\n5.0,24.0\n6.0,35.0\n7.0,48.0\n8.0,63.0\n9.0,80.0\n10.0,99.0\n\n",
+          "whitespace": "2 final newlines"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-041",
@@ -29206,7 +29854,25 @@
         2
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "[60, 60, 85]\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "[60.0, 60.0, 85.0, 85.0]\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "[60.0, 60.0, 85.0]\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "[60.0, 85.0]\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-042",
@@ -29244,7 +29910,25 @@
         1
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "1\t2\t3\n4\t5\t6\n5.6.7.8.9\n",
+          "whitespace": "1 final newline · Contains tabs"
+        },
+        {
+          "text": "1\t2\t3\n4\t5\t6\n5.6.7.8.9",
+          "whitespace": "No final newline · Contains tabs"
+        },
+        {
+          "text": "1,2,3\n4,5,6\n5.6.7.8.9",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "1\t2\t3\n4\t5\t6\n5 6 7 8 9",
+          "whitespace": "No final newline · Contains tabs"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-043",
@@ -29255,7 +29939,7 @@
       "difficulty": "standard",
       "practiceSet": "engr-exam2",
       "body": [
-        "Choose the exact output or error. Output choices use Python string notation: \\n is a newline, \\t is a tab, and spaces inside quotes count.",
+        "Choose the exact output or error. Each output block preserves line breaks and spacing; its caption describes invisible whitespace.",
         {
           "code": "# problem 43\nmystr = \"1.1\".join(\"1,2,3\".split(\",\"))\nmystr2 = mystr.split(\".\")\nmysum = 0\nfor num in mystr2:\n    mysum += int(num)\nprint(mysum)"
         }
@@ -29281,7 +29965,25 @@
         0
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "145\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "144\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "146\n",
+          "whitespace": "1 final newline"
+        },
+        {
+          "text": "145.0\n",
+          "whitespace": "1 final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-044",
@@ -29509,7 +30211,25 @@
         1
       ],
       "multiple": false,
-      "choiceVersion": "engr-exam2-mcq-v1"
+      "choiceVersion": "engr-exam2-mcq-v1",
+      "choiceDisplay": [
+        {
+          "text": "n,a,m,e,t,g,a,",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "n,a,m,e,t,a,g,",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "n,a,m,e,t,a,g",
+          "whitespace": "No final newline"
+        },
+        {
+          "text": "g,a,t,e,m,a,n,",
+          "whitespace": "No final newline"
+        }
+      ]
     },
     {
       "id": "ENGR-E2-050",
